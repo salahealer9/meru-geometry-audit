@@ -1,7 +1,11 @@
-asset_id,related_source,url,research_role,commit_policy
-A01,S02,"https://www.meru.org/3220lecture/theta.gif","Theta symbol completing the displayed equation r theta = 1","Reference URL only"
-A02,S08,"https://www.meru.org/Posters/lightin.jpg","Poster showing the flame or ribbon inside the tetrahedral vessel","Reference URL only"
-A03,S01,"https://www.meru.org/lightintent/Photocrop640smooth.gif","Early toroidal-vortex illustration","Reference URL only"
-A04,S01,"https://www.meru.org/lightintent/mapscrop640smooth.gif","Seven-region toroidal ribbon illustration","Reference URL only"
-A05,S06,"https://www.meru.org/Gestures/frsthand873.jpg","First Hand Hebrew-letter shadowgram chart","Reference URL only"
-A06,S04,"https://www.meru.org/Posters/krst2feb7.jpg","3,10 torus-knot and tetrahelix construction poster","Reference URL only"
+asset_id,related_source,title,url,source_page,research_role,commit_policy
+A01,S02,"Reciprocal spiral theta symbol","https://www.meru.org/3220lecture/theta.gif","https://www.meru.org/3220lecture/asymspir.html","Completes the displayed equation r theta = 1","Local snapshot only; metadata committed"
+A02,S08,"Light in the Meeting Tent poster","https://www.meru.org/Posters/lightin.jpg","https://www.meru.org/Posters/ColorLightinTent.html","Flame or ribbon placed within tetrahedral vessel","Local snapshot only; metadata committed"
+A03,S01,"Early toroidal vortex illustration","https://www.meru.org/lightintent/Photocrop640smooth.gif","https://www.meru.org/lightintent/lightin.html","Early view of toroidal vortex or flame","Local snapshot only; metadata committed"
+A04,S01,"Seven-region toroidal ribbon illustration","https://www.meru.org/lightintent/mapscrop640smooth.gif","https://www.meru.org/lightintent/lightin.html","Ribbon and seven-region toroidal map","Local snapshot only; metadata committed"
+A05,S01,"Tetrahedral correspondence illustration","https://www.meru.org/lightintent/tetracrop640smooth.gif","https://www.meru.org/lightintent/lightin.html","Tetrahedral axes and vortex correspondence","Local snapshot only; metadata committed"
+A06,S01,"Hebrew letter projection examples","https://www.meru.org/lightintent/Letters640.gif","https://www.meru.org/lightintent/lightin.html","Examples claimed to arise from flame projections","Local snapshot only; metadata committed"
+A07,S01,"Arabic letter projection examples","https://www.meru.org/lightintent/Arabic640.gif","https://www.meru.org/lightintent/lightin.html","Arabic comparison examples","Local snapshot only; metadata committed"
+A08,S01,"Lah swath illustration","https://www.meru.org/lightintent/lah800.gif","https://www.meru.org/lightintent/lightin.html","Unfurling flame or swath geometry","Local snapshot only; metadata committed"
+A09,S06,"First Hand Hebrew chart","https://www.meru.org/Gestures/frsthand873.jpg","https://www.meru.org/Gestures/Alphachart.html","Later hand-shadowgram and letter correspondence chart","Local snapshot only; metadata committed"
+A10,S04,"3,10 knot and tetrahelix poster","https://www.meru.org/Posters/krst2feb7.jpg","https://www.meru.org/Posters/trsknotrngsphere.html","Dimpled-sphere knot and tetrahelix construction","Local snapshot only; metadata committed"
