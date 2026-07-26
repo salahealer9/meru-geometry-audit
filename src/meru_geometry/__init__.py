@@ -4,6 +4,16 @@ from meru_geometry.embeddings import (
     ReciprocalTorusCandidate,
     candidate_reciprocal_torus_embedding,
 )
+from meru_geometry.projection_orbits import (
+    PlanarAlignment,
+    best_curve_alignment,
+    camera_direction,
+    camera_direction_classes,
+    equivalence_classes_from_errors,
+    frame_planar_transform,
+    pairwise_curve_alignment_errors,
+    planar_similarity_alignment,
+)
 from meru_geometry.projections import orthographic_project
 from meru_geometry.reciprocal_spiral import reciprocal_spiral
 from meru_geometry.rotations import (
@@ -25,14 +35,22 @@ from meru_geometry.torus import (
     torus_surface,
 )
 
-__version__ = "0.4.0"
+__version__ = "0.5.0"
 
 __all__ = [
+    "PlanarAlignment",
     "ReciprocalTorusCandidate",
     "apply_rotation",
+    "best_curve_alignment",
+    "camera_direction",
+    "camera_direction_classes",
     "candidate_reciprocal_torus_embedding",
+    "equivalence_classes_from_errors",
+    "frame_planar_transform",
     "is_rotation_matrix",
     "orthographic_project",
+    "pairwise_curve_alignment_errors",
+    "planar_similarity_alignment",
     "reciprocal_spiral",
     "regular_tetrahedron",
     "tetrahedral_rotation_group",

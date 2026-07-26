@@ -58,17 +58,22 @@ Implemented:
 - standard coprime torus-knot parametrisation;
 - exact baseline implementation of the \((3,10)\) torus knot;
 - candidate C0 reciprocal-radius-to-poloidal-angle embedding;
-- automated geometric, topological-boundary, and group-theoretic tests;
-- reproducible three-dimensional and projection visualisations.
+- exact camera-direction orbit classification;
+- signed and unoriented viewing-axis multiplicities;
+- SO(2) and O(2) planar similarity alignment;
+- cyclic-shift and traversal-reversal handling for closed curves;
+- object-specific projection-equivalence classification;
+- automated geometric, group-theoretic, and orbit-analysis tests;
+- reproducible three-dimensional, projection, and error-matrix figures.
 
 Not yet implemented:
 
 - dimpled spherical-torus reconstruction;
 - finite-width ribbon or flame geometry;
 - source-derived Meru surface parameters;
-- alphabet target data;
-- silhouette extraction;
-- shape-comparison metrics;
+- historical alphabet target data;
+- silhouette extraction from finite-width models;
+- broader shape-comparison metrics;
 - geometric null models;
 - confirmatory letter-matching tests.
 
@@ -150,21 +155,23 @@ construction.
 
 ## Current development checkpoint
 
-`v0.4.0 — Canonical torus and candidate embedding baseline`
+`v0.5.0 — Tetrahedral projection-orbit audit`
 
 This checkpoint contains:
 
 - the verified source-reconstruction boundary;
-- the exact tetrahedral rotation and projection framework;
-- a canonical ring-torus parametrisation;
-- a coprime \((p,q)\) torus-knot implementation;
-- the exact mathematical \((3,10)\) baseline;
-- candidate C0 for mapping the reciprocal spiral onto a torus;
-- automated surface, closure, and embedding tests;
-- reproducible three-dimensional and tetrahedral-projection figures.
+- the tetrahedron, torus, and candidate-embedding baselines;
+- exact recovery of the six signed tetrahedral camera directions;
+- exact recovery of the three unoriented viewing axes;
+- planar similarity alignment under SO(2) and O(2);
+- cyclic-shift and traversal-reversal handling for closed curves;
+- projection-class audits of the diagnostic probe, \((3,10)\) knot,
+  and candidate C0;
+- reproducible projection and pairwise-error figures;
+- a generated mathematical results report.
 
-The candidate C0 embedding is explicitly an inferred mathematical baseline,
-not a faithful reconstruction of the unresolved Meru flame.
+The 12 proper tetrahedral rotations are therefore not interpreted as 12
+independent viewing directions.
 
 ## Author
 
