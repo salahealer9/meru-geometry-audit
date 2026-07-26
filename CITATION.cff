@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software or research audit, please cite it using the metadata below."
+title: "Meru Geometry Audit"
+type: software
+authors:
+  - family-names: "Gherbi"
+    given-names: "Salah-Eddin"
+    orcid: "https://orcid.org/0009-0005-4017-1095"
+version: 0.1.0
+abstract: >-
+  A reproducible mathematical audit of Stan Tenen's Meru Foundation geometry,
+  including reciprocal-spiral, toroidal, tetrahedral, combinatorial, and
+  alphabet-projection claims.
+keywords:
+  - geometry
+  - computational geometry
+  - tetrahedron
+  - torus
+  - torus knot
+  - reciprocal spiral
+  - Hebrew alphabet
+  - Meru Foundation
+license: MIT
