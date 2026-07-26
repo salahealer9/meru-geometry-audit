@@ -6,3 +6,6 @@ __pycache__/
 .DS_Store
 data/derived/*
 !data/derived/.gitkeep
+
+# Local snapshots of externally copyrighted primary sources
+data/raw/source_snapshots/
