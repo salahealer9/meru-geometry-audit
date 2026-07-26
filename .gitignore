@@ -9,3 +9,6 @@ data/derived/*
 
 # Local snapshots of externally copyrighted primary sources
 data/raw/source_snapshots/
+
+# Generated Python package metadata
+*.egg-info/
