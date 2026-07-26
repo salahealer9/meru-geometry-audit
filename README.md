@@ -46,23 +46,27 @@ The repository is currently at the geometric-baseline stage.
 
 Implemented:
 
-- primary-source audit structure;
-- formal claim register;
-- model-version separation;
+- reproducible primary-source manifests and checksums;
+- formal claim register and evidence boundary;
+- historical model-version separation;
 - planar reciprocal spiral;
-- basic tests;
-- baseline visualisation.
+- regular tetrahedron with unit-circumradius normalisation;
+- all 12 proper tetrahedral rotations;
+- vertex-permutation representation of the rotation group;
+- orthographic projection;
+- automated geometric and group-theoretic tests;
+- baseline and diagnostic visualisations.
 
 Not yet implemented:
 
-- torus embeddings;
+- conventional torus embeddings;
 - dimpled spherical-torus reconstruction;
-- regular tetrahedron;
-- three-dimensional rotations;
-- projection pipeline;
+- finite-width ribbon or flame geometry;
 - alphabet target data;
+- silhouette extraction;
 - shape-comparison metrics;
-- null models.
+- geometric null models;
+- confirmatory letter-matching tests.
 
 ## Repository structure
 
@@ -140,19 +144,21 @@ will distinguish clearly between:
 No inferred parameter will be silently presented as part of Tenen's original
 construction.
 
-## Planned first checkpoint
+## Current development checkpoint
 
-`v0.1.0 — Meru source audit and geometric baseline`
+`v0.3.0 — Tetrahedral symmetry and projection baseline`
 
-The checkpoint will contain:
+This checkpoint contains:
 
-* the primary-source chronology;
-* the claim register;
-* the evidence boundary;
-* the model-version framework;
-* the reciprocal-spiral baseline;
-* automated tests;
-* an initial reproducible figure.
+- the verified source-reconstruction boundary;
+- an exact regular-tetrahedron model;
+- the 12 proper tetrahedral rotations;
+- their induced even vertex permutations;
+- orthographic projection;
+- automated group-closure and geometry tests;
+- reproducible diagnostic figures.
+
+The Meru spiral-to-torus embedding remains explicitly unresolved.
 
 ## Author
 
