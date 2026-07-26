@@ -54,14 +54,18 @@ Implemented:
 - all 12 proper tetrahedral rotations;
 - vertex-permutation representation of the rotation group;
 - orthographic projection;
-- automated geometric and group-theoretic tests;
-- baseline and diagnostic visualisations.
+- canonical ring-torus parametrisation;
+- standard coprime torus-knot parametrisation;
+- exact baseline implementation of the \((3,10)\) torus knot;
+- candidate C0 reciprocal-radius-to-poloidal-angle embedding;
+- automated geometric, topological-boundary, and group-theoretic tests;
+- reproducible three-dimensional and projection visualisations.
 
 Not yet implemented:
 
-- conventional torus embeddings;
 - dimpled spherical-torus reconstruction;
 - finite-width ribbon or flame geometry;
+- source-derived Meru surface parameters;
 - alphabet target data;
 - silhouette extraction;
 - shape-comparison metrics;
@@ -146,19 +150,21 @@ construction.
 
 ## Current development checkpoint
 
-`v0.3.0 — Tetrahedral symmetry and projection baseline`
+`v0.4.0 — Canonical torus and candidate embedding baseline`
 
 This checkpoint contains:
 
 - the verified source-reconstruction boundary;
-- an exact regular-tetrahedron model;
-- the 12 proper tetrahedral rotations;
-- their induced even vertex permutations;
-- orthographic projection;
-- automated group-closure and geometry tests;
-- reproducible diagnostic figures.
+- the exact tetrahedral rotation and projection framework;
+- a canonical ring-torus parametrisation;
+- a coprime \((p,q)\) torus-knot implementation;
+- the exact mathematical \((3,10)\) baseline;
+- candidate C0 for mapping the reciprocal spiral onto a torus;
+- automated surface, closure, and embedding tests;
+- reproducible three-dimensional and tetrahedral-projection figures.
 
-The Meru spiral-to-torus embedding remains explicitly unresolved.
+The candidate C0 embedding is explicitly an inferred mathematical baseline,
+not a faithful reconstruction of the unresolved Meru flame.
 
 ## Author
 
