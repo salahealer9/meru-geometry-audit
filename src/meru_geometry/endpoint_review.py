@@ -42,6 +42,7 @@ VALID_REASON_CODES = {
     "crossing_conflict",
     "tangent_conflict",
     "different_feature",
+    "colour_intersection",
     "insufficient_resolution",
     "other",
 }

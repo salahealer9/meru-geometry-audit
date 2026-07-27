@@ -1,8 +1,8 @@
 candidate_id,layer,candidate_type,rank,component_a,component_b,segment_a,endpoint_a,segment_b,endpoint_b,distance_px,tangent_mismatch_deg,score,status,confidence,reason_code,notes,reviewed_utc
-R_M_C01_C02_S01E_S02S,red,merge,1,1,2,1,end,2,start,12.358054604993459,7.544655804634412,12.876039429490977,unreviewed,,,,
-R_M_C01_C02_S01S_S07E,red,merge,2,1,2,1,start,7,end,28.148854164246192,87.19883767687824,41.785228414569644,unreviewed,,,,
-R_M_C01_C02_S01E_S07E,red,merge,3,1,2,1,end,7,end,59.61583295417418,61.66310766072257,80.03859698604582,unreviewed,,,,
-R_M_C01_C02_S01S_S02S,red,merge,4,1,2,1,start,2,start,77.7532799948658,98.1880724138061,120.1668615867926,unreviewed,,,,
+R_M_C01_C02_S01E_S02S,red,merge,1,1,2,1,end,2,start,12.358054604993459,7.544655804634412,12.876039429490977,accepted,high,occlusion_supported,Same red line continues across a locally occluding blue centreline.,2026-07-27T18:25:55+00:00
+R_M_C01_C02_S01S_S07E,red,merge,2,1,2,1,start,7,end,28.148854164246192,87.19883767687824,41.785228414569644,rejected,high,colour_intersection,"The endpoints are red-blue and red-green intersections on the equatorial region, not a same-red-line continuation.",2026-07-27T18:25:55+00:00
+R_M_C01_C02_S01E_S07E,red,merge,3,1,2,1,end,7,end,59.61583295417418,61.66310766072257,80.03859698604582,rejected,high,colour_intersection,"S01E is at a red-green equatorial intersection, while S07E belongs to a distinct upper toroidal region between the blue and green paths.",2026-07-27T18:25:55+00:00
+R_M_C01_C02_S01S_S02S,red,merge,4,1,2,1,start,2,start,77.7532799948658,98.1880724138061,120.1668615867926,rejected,high,colour_intersection,"S01S is at a red-blue equatorial intersection, while S02S belongs to a distinct upper toroidal region between the green and blue paths.",2026-07-27T18:25:55+00:00
 G_M_C01_C02_S01E_S02S,green,merge,1,1,2,1,end,2,start,7.827956904582448,6.254872335196235,8.099972855046788,unreviewed,,,,
 G_M_C01_C03_S01E_S03E,green,merge,2,1,3,1,end,3,end,18.759508095896333,8.998317817994456,19.697308184541416,unreviewed,,,,
 G_M_C01_C04_S01E_S08S,green,merge,3,1,4,1,end,8,start,73.42778894430909,22.859229089730228,82.7528036611442,unreviewed,,,,
@@ -18,4 +18,4 @@ G_M_C03_C06_S07S_S10S,green,merge,12,3,6,7,start,10,start,35.44249899724905,51.5
 G_M_C04_C05_S08E_S09S,green,merge,13,4,5,8,end,9,start,6.389087938821939,58.75693048383715,8.474661249246845,unreviewed,,,,
 G_M_C04_C06_S08S_S10S,green,merge,14,4,6,8,start,10,start,28.282465834859586,135.15198122901745,49.51819523276664,unreviewed,,,,
 G_M_C05_C06_S09E_S10S,green,merge,15,5,6,9,end,10,start,9.694793256691955,10.012578586428207,10.234070364257525,unreviewed,,,,
-B_C_C01_C01_S01S_S06E,blue,close,1,1,1,1,start,6,end,119.5048902987656,89.21569931105736,178.73662562707432,unreviewed,,,,
+B_C_C01_C01_S01S_S06E,blue,close,1,1,1,1,start,6,end,119.5048902987656,89.21569931105736,178.73662562707432,rejected,high,colour_intersection,The proposed closure joins blue-green and blue-red equatorial intersections rather than one continuous blue line.,2026-07-27T18:25:55+00:00

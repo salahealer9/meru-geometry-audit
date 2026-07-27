@@ -105,3 +105,19 @@ def test_invalid_status_is_rejected() -> None:
         match="invalid status",
     ):
         validate_adjudication_rows(rows)
+
+
+def test_colour_intersection_reason_is_valid() -> None:
+    rows = merge_adjudication_rows(
+        [candidate_row()]
+    )
+
+    rows[0]["status"] = "rejected"
+    rows[0]["confidence"] = "high"
+    rows[0]["reason_code"] = "colour_intersection"
+    rows[0]["notes"] = (
+        "Endpoints are mixed-colour intersections, "
+        "not same-line continuations."
+    )
+
+    validate_adjudication_rows(rows)
