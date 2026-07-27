@@ -1,0 +1,13 @@
+candidate_id,rank,layer_a,segment_a,endpoint_a,layer_b,segment_b,endpoint_b,distance_px,tangent_mismatch_deg,score,status,confidence,reason_code,notes,reviewed_utc
+X_RG_R_S07E_G_S11E,1,red,7,end,green,11,end,2.8307373897979313,3.79709120542552,2.8904516567294363,unreviewed,,,,
+X_RB_R_S01S_B_S06E,2,red,1,start,blue,6,end,2.8965951943618222,15.949480423822306,3.1532573518518867,unreviewed,,,,
+X_GB_G_S01S_B_S01S,3,green,1,start,blue,1,start,3.5007315421208824,10.062270996899176,3.696427705810955,unreviewed,,,,
+X_GB_G_S11E_B_S06E,4,green,11,end,blue,6,end,27.716776996072248,80.35834777492468,40.09052369079672,unreviewed,,,,
+X_RB_R_S07E_B_S06E,5,red,7,end,blue,6,end,27.35560000000001,90.0,41.033400000000015,unreviewed,,,,
+X_RG_R_S01S_G_S11E,6,red,1,start,green,11,end,28.224099999999993,89.156289823648,42.20385577562012,unreviewed,,,,
+X_RG_R_S07E_G_S01S,7,red,7,end,green,1,start,91.62886079969563,88.56886319794296,136.71477211720452,unreviewed,,,,
+X_RB_R_S07E_B_S01S,8,red,7,end,blue,1,start,92.17763335755589,88.53607560372336,137.5167773348718,unreviewed,,,,
+X_GB_G_S11E_B_S01S,9,green,11,end,blue,1,start,91.85748517616842,95.30341205655839,140.49266162185498,unreviewed,,,,
+X_GB_G_S01S_B_S06E,10,green,1,start,blue,6,end,118.98233163932366,88.56886319794296,177.5274974945211,unreviewed,,,,
+X_RG_R_S01S_G_S01S,11,red,1,start,green,1,start,119.63625251423584,90.79441519441087,179.98238353135199,unreviewed,,,,
+X_RB_R_S01S_B_S01S,12,red,1,start,blue,1,start,120.07669970747864,94.45970188020638,183.09008446929806,unreviewed,,,,

@@ -121,3 +121,25 @@ def test_colour_intersection_reason_is_valid() -> None:
     )
 
     validate_adjudication_rows(rows)
+
+
+
+def test_colour_transition_reason_codes_are_valid() -> None:
+    rows = merge_adjudication_rows(
+        [candidate_row()]
+    )
+
+    rows[0]["status"] = "accepted"
+    rows[0]["confidence"] = "high"
+    rows[0]["reason_code"] = (
+        "colour_transition_supported"
+    )
+
+    validate_adjudication_rows(rows)
+
+    rows[0]["status"] = "rejected"
+    rows[0]["reason_code"] = (
+        "colour_transition_conflict"
+    )
+
+    validate_adjudication_rows(rows)
