@@ -155,6 +155,41 @@ construction.
 
 ## Current development checkpoint
 
+`v0.6.0 — Source-derived A10 closed-cycle reconstruction`
+
+The v0.6.0 checkpoint reconstructs the visible two-dimensional connectivity
+of the completed dimpled-sphere knot drawing in source panel A10_P03.
+
+Main result:
+
+- 24 visible coloured fragments;
+- 21 manually adjudicated same-colour continuations;
+- 3 manually adjudicated cross-colour transitions;
+- 48 endpoint vertices and 48 graph edges;
+- one connected component;
+- degree 2 at every endpoint vertex;
+- one connected, non-branched closed cycle containing every visible fragment.
+
+Canonical cycle traversal:
+
+```text
+R:S01+ → R:S02+ → R:S03+ → R:S04− → R:S05+ → R:S06− →
+R:S07+ → G:S11− → G:S10− → G:S09− → G:S08− → G:S07+ →
+G:S06− → G:S05− → G:S04− → G:S03+ → G:S02− → G:S01− →
+B:S01+ → B:S02− → B:S03+ → B:S04+ → B:S05+ → B:S06+
+```
+
+Reproduce the exact audit with:
+
+```bash
+python scripts/audit_a10_p03_global_cycle.py
+```
+
+The result establishes source-supported planar connectivity. It does not yet
+establish a unique three-dimensional embedding, dimpled-surface equation,
+complete crossing-depth assignment, equivalence with the canonical `(3,10)`
+torus knot, or the claimed Hebrew-letter projection system.
+
 `v0.5.0 — Tetrahedral projection-orbit audit`
 
 This checkpoint contains:
