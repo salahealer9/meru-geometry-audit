@@ -12,3 +12,6 @@ data/raw/source_snapshots/
 
 # Generated Python package metadata
 *.egg-info/
+
+# Local snapshots of copyrighted Meru geometric assets
+data/raw/geometric_assets/

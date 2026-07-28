@@ -1,0 +1,304 @@
+panel_id,asset_id,layer,layer_label,segment_id,point_index,panel_x,panel_y,source_x,source_y,closed_layer,connected_layer
+A10_P03,A10,red,Red centreline,0,0,172.374,79.0832,557.374,434.08320000000003,False,True
+A10_P03,A10,red,Red centreline,0,1,171.7226,72.787,556.7226,427.78700000000003,False,True
+A10_P03,A10,red,Red centreline,0,2,171.2884,65.6224,556.2884,420.62239999999997,False,True
+A10_P03,A10,red,Red centreline,0,3,170.2029,58.8921,555.2029,413.8921,False,True
+A10_P03,A10,red,Red centreline,0,4,168.9002,50.2078,553.9002,405.2078,False,True
+A10_P03,A10,red,Red centreline,0,5,165.8607,44.1287,550.8607,399.1287,False,True
+A10_P03,A10,red,Red centreline,0,6,162.8212,38.9182,547.8212,393.9182,False,True
+A10_P03,A10,red,Red centreline,0,7,157.1764,33.2733,542.1764000000001,388.2733,False,True
+A10_P03,A10,red,Red centreline,0,8,149.5776,29.3654,534.5776,384.3654,False,True
+A10_P03,A10,red,Red centreline,0,9,143.2815,26.7601,528.2815,381.7601,False,True
+A10_P03,A10,red,Red centreline,0,10,135.0314,25.2403,520.0314,380.2403,False,True
+A10_P03,A10,red,Red centreline,0,11,127.6497,25.4574,512.6496999999999,380.4574,False,True
+A10_P03,A10,red,Red centreline,0,12,123.9589,25.8917,508.95889999999997,380.8917,False,True
+A10_P03,A10,red,Red centreline,1,0,112.235,29.7996,497.235,384.7996,False,True
+A10_P03,A10,red,Red centreline,1,1,110.0639,30.668,495.0639,385.668,False,True
+A10_P03,A10,red,Red centreline,1,2,107.8929,31.5365,492.8929,386.5365,False,True
+A10_P03,A10,red,Red centreline,2,0,101.8138,36.3129,486.8138,391.3129,False,True
+A10_P03,A10,red,Red centreline,2,1,102.248,39.5695,487.248,394.5695,False,True
+A10_P03,A10,red,Red centreline,2,2,103.3336,42.609,488.3336,397.609,False,True
+A10_P03,A10,red,Red centreline,2,3,106.156,44.7801,491.156,399.7801,False,True
+A10_P03,A10,red,Red centreline,2,4,108.7613,48.0367,493.7613,403.0367,False,True
+A10_P03,A10,red,Red centreline,2,5,112.0179,50.8591,497.0179,405.8591,False,True
+A10_P03,A10,red,Red centreline,2,6,114.8403,53.2473,499.8403,408.2473,False,True
+A10_P03,A10,red,Red centreline,2,7,117.0114,56.2868,502.0114,411.28679999999997,False,True
+A10_P03,A10,red,Red centreline,2,8,118.0969,59.3263,503.0969,414.3263,False,True
+A10_P03,A10,red,Red centreline,2,9,117.6627,62.3658,502.6627,417.3658,False,True
+A10_P03,A10,red,Red centreline,2,10,116.7943,65.6224,501.7943,420.62239999999997,False,True
+A10_P03,A10,red,Red centreline,3,0,113.9719,74.9581,498.9719,429.9581,False,True
+A10_P03,A10,red,Red centreline,3,1,114.4061,73.4383,499.4061,428.4383,False,True
+A10_P03,A10,red,Red centreline,3,2,114.6232,71.0502,499.6232,426.0502,False,True
+A10_P03,A10,red,Red centreline,4,0,114.4061,84.0766,499.4061,439.0766,False,True
+A10_P03,A10,red,Red centreline,4,1,114.4061,86.4648,499.4061,441.46479999999997,False,True
+A10_P03,A10,red,Red centreline,4,2,116.143,90.1557,501.14300000000003,445.1557,False,True
+A10_P03,A10,red,Red centreline,4,3,117.4456,92.3267,502.4456,447.3267,False,True
+A10_P03,A10,red,Red centreline,4,4,117.8798,95.5834,502.8798,450.5834,False,True
+A10_P03,A10,red,Red centreline,4,5,118.0969,99.0571,503.0969,454.0571,False,True
+A10_P03,A10,red,Red centreline,5,0,111.1495,108.827,496.1495,463.827,False,True
+A10_P03,A10,red,Red centreline,5,1,112.4521,107.7414,497.4521,462.7414,False,True
+A10_P03,A10,red,Red centreline,5,2,114.4061,105.7875,499.4061,460.7875,False,True
+A10_P03,A10,red,Red centreline,6,0,106.3731,113.1691,491.3731,468.1691,False,True
+A10_P03,A10,red,Red centreline,6,1,104.4191,115.3402,489.4191,470.3402,False,True
+A10_P03,A10,red,Red centreline,6,2,102.248,118.8139,487.248,473.8139,False,True
+A10_P03,A10,red,Red centreline,6,3,102.248,121.8535,487.248,476.8535,False,True
+A10_P03,A10,red,Red centreline,6,4,104.8533,125.7614,489.8533,480.7614,False,True
+A10_P03,A10,red,Red centreline,6,5,108.5442,129.4522,493.5442,484.4522,False,True
+A10_P03,A10,red,Red centreline,6,6,113.3206,132.0575,498.3206,487.0575,False,True
+A10_P03,A10,red,Red centreline,6,7,119.6167,134.2286,504.6167,489.22860000000003,False,True
+A10_P03,A10,red,Red centreline,6,8,125.0444,134.0115,510.0444,489.0115,False,True
+A10_P03,A10,red,Red centreline,6,9,131.7748,132.0575,516.7748,487.0575,False,True
+A10_P03,A10,red,Red centreline,6,10,136.9853,128.5838,521.9853,483.5838,False,True
+A10_P03,A10,red,Red centreline,6,11,139.8078,123.8074,524.8078,478.80740000000003,False,True
+A10_P03,A10,red,Red centreline,6,12,142.413,115.7744,527.413,470.7744,False,True
+A10_P03,A10,red,Red centreline,6,13,142.8473,109.4783,527.8473,464.4783,False,True
+A10_P03,A10,red,Red centreline,6,14,144.1499,102.0966,529.1499,457.09659999999997,False,True
+A10_P03,A10,red,Red centreline,6,15,143.7157,92.9781,528.7157,447.9781,False,True
+A10_P03,A10,red,Red centreline,6,16,144.367,88.4188,529.367,443.41880000000003,False,True
+A10_P03,A10,red,Red centreline,6,17,144.367,81.9056,529.367,436.9056,False,True
+A10_P03,A10,green,Green centreline,0,0,52.7474,80.6029,437.74739999999997,435.6029,False,True
+A10_P03,A10,green,Green centreline,0,1,52.5303,84.9451,437.5303,439.9451,False,True
+A10_P03,A10,green,Green centreline,0,2,53.3987,91.2412,438.3987,446.2412,False,True
+A10_P03,A10,green,Green centreline,0,3,54.05,95.8005,439.05,450.8005,False,True
+A10_P03,A10,green,Green centreline,0,4,55.5698,102.965,440.5698,457.96500000000003,False,True
+A10_P03,A10,green,Green centreline,0,5,57.3067,107.9585,442.3067,462.9585,False,True
+A10_P03,A10,green,Green centreline,0,6,60.3462,112.7349,445.3462,467.7349,False,True
+A10_P03,A10,green,Green centreline,0,7,62.9515,116.6429,447.9515,471.6429,False,True
+A10_P03,A10,green,Green centreline,0,8,66.2081,120.3337,451.2081,475.3337,False,True
+A10_P03,A10,green,Green centreline,0,9,70.5503,123.8074,455.5503,478.80740000000003,False,True
+A10_P03,A10,green,Green centreline,0,10,74.8924,127.064,459.8924,482.06399999999996,False,True
+A10_P03,A10,green,Green centreline,0,11,79.8859,128.8009,464.8859,483.8009,False,True
+A10_P03,A10,green,Green centreline,0,12,85.7478,129.4522,470.7478,484.4522,False,True
+A10_P03,A10,green,Green centreline,0,13,90.9584,127.7154,475.9584,482.7154,False,True
+A10_P03,A10,green,Green centreline,0,14,95.9519,125.5443,480.9519,480.5443,False,True
+A10_P03,A10,green,Green centreline,0,15,98.7743,124.0245,483.7743,479.0245,False,True
+A10_P03,A10,green,Green centreline,1,0,105.2876,119.6824,490.2876,474.68240000000003,False,True
+A10_P03,A10,green,Green centreline,1,1,107.0244,118.8139,492.0244,473.8139,False,True
+A10_P03,A10,green,Green centreline,1,2,109.1955,117.7284,494.1955,472.72839999999997,False,True
+A10_P03,A10,green,Green centreline,2,0,120.7022,116.6429,505.7022,471.6429,False,True
+A10_P03,A10,green,Green centreline,2,1,118.314,115.9915,503.31399999999996,470.9915,False,True
+A10_P03,A10,green,Green centreline,2,2,115.9259,116.4257,500.9259,471.4257,False,True
+A10_P03,A10,green,Green centreline,3,0,124.8273,118.3797,509.8273,473.3797,False,True
+A10_P03,A10,green,Green centreline,3,1,126.7813,119.4653,511.7813,474.4653,False,True
+A10_P03,A10,green,Green centreline,3,2,128.301,121.4192,513.3009999999999,476.4192,False,True
+A10_P03,A10,green,Green centreline,3,3,129.1695,123.8074,514.1695,478.80740000000003,False,True
+A10_P03,A10,green,Green centreline,3,4,126.5642,125.9785,511.5642,480.9785,False,True
+A10_P03,A10,green,Green centreline,3,5,122.6562,125.7614,507.6562,480.7614,False,True
+A10_P03,A10,green,Green centreline,3,6,118.0969,123.8074,503.0969,478.80740000000003,False,True
+A10_P03,A10,green,Green centreline,3,7,115.7087,120.5508,500.7087,475.5508,False,True
+A10_P03,A10,green,Green centreline,3,8,112.6692,116.6429,497.6692,471.6429,False,True
+A10_P03,A10,green,Green centreline,3,9,110.4982,112.5178,495.4982,467.51779999999997,False,True
+A10_P03,A10,green,Green centreline,3,10,108.5442,108.827,493.5442,463.827,False,True
+A10_P03,A10,green,Green centreline,3,11,106.5902,104.4848,491.5902,459.4848,False,True
+A10_P03,A10,green,Green centreline,3,12,107.6757,100.5769,492.6757,455.5769,False,True
+A10_P03,A10,green,Green centreline,3,13,108.5442,97.7545,493.5442,452.7545,False,True
+A10_P03,A10,green,Green centreline,4,0,112.6692,93.4123,497.6692,448.4123,False,True
+A10_P03,A10,green,Green centreline,4,1,113.5377,92.3267,498.5377,447.3267,False,True
+A10_P03,A10,green,Green centreline,4,2,113.9719,91.2412,498.9719,446.2412,False,True
+A10_P03,A10,green,Green centreline,5,0,117.0114,86.0306,502.0114,441.0306,False,True
+A10_P03,A10,green,Green centreline,5,1,116.3601,82.774,501.3601,437.774,False,True
+A10_P03,A10,green,Green centreline,5,2,114.8403,79.7345,499.8403,434.7345,False,True
+A10_P03,A10,green,Green centreline,5,3,112.8863,77.1292,497.8863,432.12919999999997,False,True
+A10_P03,A10,green,Green centreline,5,4,110.9324,73.6554,495.93240000000003,428.6554,False,True
+A10_P03,A10,green,Green centreline,5,5,110.0639,70.6159,495.0639,425.6159,False,True
+A10_P03,A10,green,Green centreline,5,6,111.3666,67.7935,496.3666,422.7935,False,True
+A10_P03,A10,green,Green centreline,6,0,115.9259,59.7605,500.9259,414.7605,False,True
+A10_P03,A10,green,Green centreline,6,1,115.0574,61.0632,500.05740000000003,416.0632,False,True
+A10_P03,A10,green,Green centreline,6,2,113.9719,63.2343,498.9719,418.2343,False,True
+A10_P03,A10,green,Green centreline,7,0,119.8338,53.6815,504.8338,408.6815,False,True
+A10_P03,A10,green,Green centreline,7,1,120.9193,50.2078,505.9193,405.2078,False,True
+A10_P03,A10,green,Green centreline,7,2,119.8338,46.734,504.8338,401.734,False,True
+A10_P03,A10,green,Green centreline,7,3,117.8798,44.7801,502.8798,399.7801,False,True
+A10_P03,A10,green,Green centreline,7,4,115.2745,41.9577,500.2745,396.9577,False,True
+A10_P03,A10,green,Green centreline,7,5,112.6692,39.7866,497.6692,394.7866,False,True
+A10_P03,A10,green,Green centreline,7,6,109.6297,37.3984,494.6297,392.3984,False,True
+A10_P03,A10,green,Green centreline,7,7,106.8073,35.6615,491.8073,390.6615,False,True
+A10_P03,A10,green,Green centreline,7,8,104.202,33.2733,489.202,388.2733,False,True
+A10_P03,A10,green,Green centreline,7,9,101.5967,32.1878,486.5967,387.1878,False,True
+A10_P03,A10,green,Green centreline,7,10,99.2085,30.4509,484.2085,385.4509,False,True
+A10_P03,A10,green,Green centreline,7,11,96.8203,28.497,481.8203,383.497,False,True
+A10_P03,A10,green,Green centreline,8,0,95.7348,22.2008,480.7348,377.2008,False,True
+A10_P03,A10,green,Green centreline,8,1,98.7743,20.8982,483.7743,375.8982,False,True
+A10_P03,A10,green,Green centreline,8,2,102.248,20.464,487.248,375.464,False,True
+A10_P03,A10,green,Green centreline,8,3,107.0244,19.8126,492.0244,374.8126,False,True
+A10_P03,A10,green,Green centreline,8,4,111.1495,20.0297,496.1495,375.0297,False,True
+A10_P03,A10,green,Green centreline,8,5,115.4916,20.2469,500.4916,375.2469,False,True
+A10_P03,A10,green,Green centreline,8,6,120.4851,21.5495,505.4851,376.5495,False,True
+A10_P03,A10,green,Green centreline,8,7,123.3075,22.4179,508.3075,377.4179,False,True
+A10_P03,A10,green,Green centreline,9,0,131.3405,27.8456,516.3405,382.8456,False,True
+A10_P03,A10,green,Green centreline,9,1,133.5116,29.1483,518.5116,384.1483,False,True
+A10_P03,A10,green,Green centreline,9,2,135.2485,30.668,520.2485,385.668,False,True
+A10_P03,A10,green,Green centreline,10,0,138.0709,34.1418,523.0708999999999,389.1418,False,True
+A10_P03,A10,green,Green centreline,10,1,139.3735,37.1813,524.3735,392.1813,False,True
+A10_P03,A10,green,Green centreline,10,2,140.6762,41.0892,525.6762,396.0892,False,True
+A10_P03,A10,green,Green centreline,10,3,141.9788,45.6485,526.9788,400.6485,False,True
+A10_P03,A10,green,Green centreline,10,4,142.413,50.642,527.413,405.642,False,True
+A10_P03,A10,green,Green centreline,10,5,143.2815,55.2013,528.2815,410.2013,False,True
+A10_P03,A10,green,Green centreline,10,6,143.7157,60.1947,528.7157,415.1947,False,True
+A10_P03,A10,green,Green centreline,10,7,143.7157,66.2738,528.7157,421.2738,False,True
+A10_P03,A10,green,Green centreline,10,8,143.9328,70.3988,528.9328,425.3988,False,True
+A10_P03,A10,green,Green centreline,10,9,143.7157,75.8265,528.7157,430.8265,False,True
+A10_P03,A10,green,Green centreline,10,10,144.1499,79.0832,529.1499,434.08320000000003,False,True
+A10_P03,A10,blue,Blue centreline,0,0,52.3132,77.1292,437.3132,432.12919999999997,False,True
+A10_P03,A10,blue,Blue centreline,0,1,52.5303,73.0041,437.5303,428.0041,False,True
+A10_P03,A10,blue,Blue centreline,0,2,53.3987,67.5764,438.3987,422.57640000000004,False,True
+A10_P03,A10,blue,Blue centreline,0,3,54.7014,60.1947,439.7014,415.1947,False,True
+A10_P03,A10,blue,Blue centreline,0,4,57.0896,52.596,442.0896,407.596,False,True
+A10_P03,A10,blue,Blue centreline,0,5,60.9975,47.6025,445.9975,402.6025,False,True
+A10_P03,A10,blue,Blue centreline,0,6,64.6883,40.8721,449.6883,395.8721,False,True
+A10_P03,A10,blue,Blue centreline,0,7,70.116,35.4444,455.116,390.4444,False,True
+A10_P03,A10,blue,Blue centreline,0,8,75.7609,30.668,460.7609,385.668,False,True
+A10_P03,A10,blue,Blue centreline,0,9,82.4912,28.497,467.4912,383.497,False,True
+A10_P03,A10,blue,Blue centreline,0,10,90.7413,26.543,475.7413,381.543,False,True
+A10_P03,A10,blue,Blue centreline,0,11,98.123,25.8917,483.123,380.8917,False,True
+A10_P03,A10,blue,Blue centreline,0,12,105.5047,26.1088,490.5047,381.1088,False,True
+A10_P03,A10,blue,Blue centreline,0,13,113.3206,27.1943,498.3206,382.1943,False,True
+A10_P03,A10,blue,Blue centreline,0,14,119.8338,28.7141,504.8338,383.7141,False,True
+A10_P03,A10,blue,Blue centreline,0,15,126.1299,30.2338,511.1299,385.2338,False,True
+A10_P03,A10,blue,Blue centreline,0,16,129.1695,33.2733,514.1695,388.2733,False,True
+A10_P03,A10,blue,Blue centreline,0,17,127.8668,36.53,512.8668,391.53,False,True
+A10_P03,A10,blue,Blue centreline,0,18,125.4786,39.1353,510.47860000000003,394.13530000000003,False,True
+A10_P03,A10,blue,Blue centreline,0,19,122.6562,41.3063,507.6562,396.3063,False,True
+A10_P03,A10,blue,Blue centreline,0,20,120.4851,43.2603,505.4851,398.26030000000003,False,True
+A10_P03,A10,blue,Blue centreline,1,0,114.189,49.1222,499.18899999999996,404.1222,False,True
+A10_P03,A10,blue,Blue centreline,1,1,115.4916,48.2538,500.4916,403.2538,False,True
+A10_P03,A10,blue,Blue centreline,1,2,116.5772,46.9512,501.5772,401.9512,False,True
+A10_P03,A10,blue,Blue centreline,2,0,109.4126,53.4644,494.4126,408.4644,False,True
+A10_P03,A10,blue,Blue centreline,2,1,108.3271,56.0697,493.3271,411.0697,False,True
+A10_P03,A10,blue,Blue centreline,2,2,108.5442,58.4579,493.5442,413.4579,False,True
+A10_P03,A10,blue,Blue centreline,2,3,110.0639,61.0632,495.0639,416.0632,False,True
+A10_P03,A10,blue,Blue centreline,2,4,112.235,64.5369,497.235,419.5369,False,True
+A10_P03,A10,blue,Blue centreline,2,5,114.6232,66.4909,499.6232,421.4909,False,True
+A10_P03,A10,blue,Blue centreline,2,6,116.143,69.5304,501.14300000000003,424.5304,False,True
+A10_P03,A10,blue,Blue centreline,2,7,116.7943,73.4383,501.7943,428.4383,False,True
+A10_P03,A10,blue,Blue centreline,2,8,116.143,76.4779,501.14300000000003,431.4779,False,True
+A10_P03,A10,blue,Blue centreline,3,0,111.8008,81.9056,496.8008,436.9056,False,True
+A10_P03,A10,blue,Blue centreline,3,1,109.8468,84.728,494.84680000000003,439.728,False,True
+A10_P03,A10,blue,Blue centreline,3,2,109.6297,89.5043,494.6297,444.5043,False,True
+A10_P03,A10,blue,Blue centreline,3,3,110.9324,93.4123,495.93240000000003,448.4123,False,True
+A10_P03,A10,blue,Blue centreline,3,4,113.3206,97.5373,498.3206,452.5373,False,True
+A10_P03,A10,blue,Blue centreline,3,5,115.4916,101.0111,500.4916,456.0111,False,True
+A10_P03,A10,blue,Blue centreline,3,6,118.5312,106.0046,503.5312,461.0046,False,True
+A10_P03,A10,blue,Blue centreline,3,7,120.7022,109.4783,505.7022,464.4783,False,True
+A10_P03,A10,blue,Blue centreline,3,8,122.0049,113.8205,507.0049,468.8205,False,True
+A10_P03,A10,blue,Blue centreline,3,9,122.222,117.2942,507.222,472.2942,False,True
+A10_P03,A10,blue,Blue centreline,3,10,119.1825,120.1166,504.1825,475.1166,False,True
+A10_P03,A10,blue,Blue centreline,4,0,112.235,123.1561,497.235,478.1561,False,True
+A10_P03,A10,blue,Blue centreline,4,1,110.281,123.8074,495.281,478.80740000000003,False,True
+A10_P03,A10,blue,Blue centreline,4,2,107.8929,125.5443,492.8929,480.5443,False,True
+A10_P03,A10,blue,Blue centreline,5,0,101.5967,128.8009,486.5967,483.8009,False,True
+A10_P03,A10,blue,Blue centreline,5,1,99.4256,131.1891,484.42560000000003,486.1891,False,True
+A10_P03,A10,blue,Blue centreline,5,2,97.2546,134.8799,482.2546,489.8799,False,True
+A10_P03,A10,blue,Blue centreline,5,3,99.2085,138.3537,484.2085,493.3537,False,True
+A10_P03,A10,blue,Blue centreline,5,4,102.8994,140.0905,487.8994,495.0905,False,True
+A10_P03,A10,blue,Blue centreline,5,5,106.8073,140.959,491.8073,495.959,False,True
+A10_P03,A10,blue,Blue centreline,5,6,113.1035,142.0445,498.1035,497.04449999999997,False,True
+A10_P03,A10,blue,Blue centreline,5,7,120.9193,142.6958,505.9193,497.69579999999996,False,True
+A10_P03,A10,blue,Blue centreline,5,8,130.4721,140.959,515.4721,495.959,False,True
+A10_P03,A10,blue,Blue centreline,5,9,140.0249,137.4852,525.0249,492.48519999999996,False,True
+A10_P03,A10,blue,Blue centreline,5,10,147.8408,133.7944,532.8408,488.7944,False,True
+A10_P03,A10,blue,Blue centreline,5,11,153.4856,129.2351,538.4856,484.2351,False,True
+A10_P03,A10,blue,Blue centreline,5,12,157.6106,125.5443,542.6106,480.5443,False,True
+A10_P03,A10,blue,Blue centreline,5,13,162.1699,118.8139,547.1699,473.8139,False,True
+A10_P03,A10,blue,Blue centreline,5,14,164.9923,112.952,549.9923,467.952,False,True
+A10_P03,A10,blue,Blue centreline,5,15,167.8147,107.7414,552.8147,462.7414,False,True
+A10_P03,A10,blue,Blue centreline,5,16,169.5516,101.0111,554.5516,456.0111,False,True
+A10_P03,A10,blue,Blue centreline,5,17,171.2884,95.5834,556.2884,450.5834,False,True
+A10_P03,A10,blue,Blue centreline,5,18,171.7226,88.853,556.7226,443.853,False,True
+A10_P03,A10,blue,Blue centreline,5,19,171.7226,81.9056,556.7226,436.9056,False,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,0,47.7539,83.2082,432.7539,438.20820000000003,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,1,47.971,73.2212,432.971,428.2212,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,2,49.7079,61.4974,434.7079,416.49739999999997,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,3,53.3987,49.7736,438.3987,404.7736,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,4,58.8264,40.655,443.8264,395.655,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,5,65.5568,33.9247,450.5568,388.92470000000003,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,6,74.2411,27.1943,459.2411,382.1943,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,7,83.3596,22.635,468.3596,377.635,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,8,92.044,18.9442,477.044,373.9442,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,9,103.5507,16.7731,488.5507,371.7731,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,10,117.4456,16.556,502.4456,371.556,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,11,129.1695,18.0758,514.1695,373.0758,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,12,140.4591,21.7666,525.4591,376.7666,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,13,148.9263,25.4574,533.9263,380.4574,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,14,158.6962,30.668,543.6962,385.668,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,15,165.6436,36.3129,550.6436,391.3129,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,16,172.374,43.9116,557.374,398.9116,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,17,177.1503,53.0302,562.1503,408.0302,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,18,179.3214,63.8856,564.3214,418.8856,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,19,180.8412,74.9581,565.8412,429.9581,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,20,180.8412,83.2082,565.8412,438.20820000000003,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,21,179.1043,94.0636,564.1043,449.0636,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,22,176.499,103.8335,561.499,458.8335,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,23,172.374,112.952,557.374,467.952,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,24,167.8147,119.8995,552.8147,474.8995,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,25,161.9528,125.3272,546.9528,480.3272,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,26,156.308,130.972,541.308,485.972,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,27,146.1039,137.4852,531.1039000000001,492.48519999999996,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,28,135.4656,142.0445,520.4656,497.04449999999997,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,29,123.5246,144.2156,508.5246,499.2156,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,30,109.6297,144.6498,494.6297,499.6498,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,31,96.6032,142.6958,481.6032,497.69579999999996,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,32,83.3596,137.9195,468.3596,492.91949999999997,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,33,74.6753,133.5773,459.6753,488.57730000000004,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,34,66.2081,126.1956,451.2081,481.1956,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,35,58.3922,116.6429,443.3922,471.6429,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,36,53.1816,106.6559,438.1816,461.6559,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,37,50.1421,98.1887,435.1421,453.1887,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,38,48.6223,91.2412,433.6223,446.2412,True,True
+A10_P03,A10,outer_boundary,Outer dimpled-sphere boundary,0,39,47.7539,86.6819,432.7539,441.6819,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,0,0,68.5963,32.8391,453.5963,387.83910000000003,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,0,1,70.5503,31.5365,455.5503,386.5365,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,0,2,73.1556,30.2338,458.1556,385.2338,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,1,0,83.5767,30.668,468.5767,385.668,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,1,1,87.0505,31.7536,472.0505,386.7536,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,1,2,90.9584,33.0562,475.9584,388.0562,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,1,3,93.9979,34.7931,478.9979,389.7931,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,1,4,96.3861,36.53,481.3861,391.53,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,1,5,98.5572,39.5695,483.55719999999997,394.5695,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,1,6,100.5112,43.0432,485.51120000000003,398.0432,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,1,7,102.4652,46.9512,487.4652,401.9512,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,1,8,104.6362,50.642,489.63620000000003,405.642,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,1,9,105.9389,54.3328,490.9389,409.3328,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,1,10,106.8073,60.1947,491.8073,415.1947,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,1,11,108.5442,69.0962,493.5442,424.0962,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,1,12,108.5442,75.3923,493.5442,430.3923,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,1,13,108.5442,82.1227,493.5442,437.1227,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,1,14,107.6757,90.3728,492.6757,445.3728,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,1,15,107.8929,94.7149,492.8929,449.7149,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,2,0,104.6362,108.827,489.63620000000003,463.827,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,2,1,102.6823,112.952,487.6823,467.952,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,2,2,100.077,116.2086,485.077,471.2086,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,2,3,97.2546,120.1166,482.2546,475.1166,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,2,4,91.6097,124.2416,476.6097,479.2416,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,2,5,85.3136,125.7614,470.3136,480.7614,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,2,6,79.6688,126.4127,464.66880000000003,481.4127,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,3,0,62.9515,120.7679,447.9515,475.7679,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,3,1,64.2541,121.8535,449.2541,476.8535,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,3,2,65.7739,123.3732,450.7739,478.3732,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,4,0,166.512,119.2482,551.512,474.2482,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,4,1,164.9923,120.5508,549.9923,475.5508,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,4,2,163.2554,121.8535,548.2554,476.8535,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,5,0,154.1369,124.893,539.1369,479.89300000000003,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,5,1,150.8803,125.5443,535.8803,480.5443,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,5,2,146.9723,125.9785,531.9723,480.9785,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,5,3,142.413,125.3272,527.413,480.3272,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,6,0,135.4656,123.1561,520.4656,478.1561,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,6,1,131.9919,120.985,516.9919,475.985,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,6,2,128.9523,118.5968,513.9523,473.59680000000003,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,6,3,125.2615,114.6889,510.2615,469.6889,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,6,4,123.0904,109.2612,508.0904,464.26120000000003,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,6,5,120.7022,102.3137,505.7022,457.3137,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,6,6,120.0509,94.932,505.0509,449.932,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,6,7,119.1825,89.5043,504.1825,444.5043,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,6,8,118.9654,82.9911,503.9654,437.9911,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,6,9,117.8798,76.695,502.8798,431.695,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,6,10,118.5312,69.5304,503.5312,424.5304,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,6,11,119.8338,59.5434,504.8338,414.5434,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,6,12,122.0049,52.8131,507.0049,407.8131,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,6,13,123.9589,46.9512,508.95889999999997,401.9512,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,6,14,126.9984,41.7406,511.9984,396.7406,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,6,15,129.8208,38.2668,514.8208,393.2668,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,6,16,133.5116,34.576,518.5116,389.576,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,6,17,138.288,31.7536,523.288,386.7536,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,6,18,143.4986,30.668,528.4986,385.668,True,True
+A10_P03,A10,dimple_boundary,Central dimple boundary,6,19,146.7552,30.8851,531.7552000000001,385.8851,True,True
