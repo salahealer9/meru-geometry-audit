@@ -1,0 +1,87 @@
+{
+  "certificate": {
+    "complete_pair_partition_pass": true,
+    "incident_face_pass": true,
+    "mesh_topology_pass": true,
+    "structured_tube_pass": true,
+    "surface_embedding_pass": true,
+    "vertex_disjoint_face_pass": true
+  },
+  "complete_face_pair_partition": {
+    "partition_complete": true,
+    "shared_edge_pairs": 18000,
+    "shared_vertex_only_pairs": 54000,
+    "total_distinct_face_pairs": 71994000,
+    "vertex_disjoint_aabb_candidates": 21622,
+    "vertex_disjoint_aabb_rejected": 71900378,
+    "vertex_disjoint_pairs": 71922000
+  },
+  "incident_face_audit": {
+    "incident_pairs": 72000,
+    "minimum_coplanar_shared_edge_side_margin": 5.699999999999996,
+    "minimum_noncoplanar_shared_edge_sine": 4.683460104146184e-06,
+    "minimum_shared_vertex_margin": 0.0017315807629502814,
+    "shared_edge_coplanar": 82,
+    "shared_edge_excess_intersections": 0,
+    "shared_edge_noncoplanar": 17918,
+    "shared_edge_pairs": 18000,
+    "shared_vertex_coplanar": 0,
+    "shared_vertex_excess_intersections": 0,
+    "shared_vertex_noncoplanar": 54000,
+    "shared_vertex_only_pairs": 54000,
+    "tolerances": {
+      "angular_tolerance": 1e-10,
+      "area_tolerance": 4.845507999999999e-06,
+      "length_tolerance": 2.2012514622368794e-08,
+      "plane_tolerance": 2.2012514622368794e-08,
+      "scale": 220.12514622368792
+    }
+  },
+  "margin_ratios": {
+    "coplanar_shared_edge_margin_to_tolerance": 1176347.2478014682,
+    "noncoplanar_shared_edge_sine_to_tolerance": 46834.601041461836,
+    "shared_vertex_margin_to_tolerance": 78663.46906094384,
+    "vertex_disjoint_sat_margin_to_tolerance": 1896024.0938627028
+  },
+  "mesh": {
+    "boundary_edges": 0,
+    "edges": 18000,
+    "euler_characteristic": 0,
+    "faces": 12000,
+    "maximum_triangle_area": 12.718026312679179,
+    "minimum_triangle_area": 2.6832815729997543,
+    "nonmanifold_edges": 0,
+    "vertices": 6000,
+    "zero_area_triangles": 0
+  },
+  "scope": {
+    "all_distinct_face_pairs_accounted_for": true,
+    "formal_exact_arithmetic": false,
+    "method": "exhaustive tolerance-aware double-precision simplicial face-pair census"
+  },
+  "source": {
+    "canonical_url": "https://www.meru.org/compuimages/10_3.wrl",
+    "filename": "f24de4a08a_10_3.wrl",
+    "sha256": "855c46cfeeb31e4394b7a4a294b397aac4cbc14154e172a326e33243dd9e384b"
+  },
+  "structured_tube": {
+    "invalid_strip_faces": 0,
+    "minimum_passing_local_exclusion": 2,
+    "points_per_section": 20,
+    "remote_capsule_margin": 0.47979600821071067,
+    "remote_capsule_pass": true,
+    "section_count": 300,
+    "strip_count": 300,
+    "triangles_per_strip_values": [
+      40
+    ]
+  },
+  "vertex_disjoint_audit": {
+    "aabb_candidates_total": 93622,
+    "broad_tolerance": 2.201251462236879e-10,
+    "minimum_sat_separation_margin": 0.04173625809051629,
+    "narrow_phase_pairs": 21622,
+    "narrow_tolerance": 2.2012514622368794e-08,
+    "overlaps": 0
+  }
+}

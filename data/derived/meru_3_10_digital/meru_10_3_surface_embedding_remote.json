@@ -1,0 +1,236 @@
+{
+  "mesh": {
+    "boundary_edges": 0,
+    "edges": 18000,
+    "euler_characteristic": 0,
+    "faces": 12000,
+    "maximum_triangle_area": 12.718026312679179,
+    "minimum_triangle_area": 2.6832815729997543,
+    "nonmanifold_edges": 0,
+    "vertices": 6000,
+    "zero_area_triangles": 0
+  },
+  "scope": {
+    "expected_shared_vertex_and_edge_incidences_are_excluded": true,
+    "formal_exact_arithmetic": false,
+    "tests_all_aabb_overlapping_vertex_disjoint_face_pairs": true
+  },
+  "source": {
+    "canonical_url": "https://www.meru.org/compuimages/10_3.wrl",
+    "filename": "f24de4a08a_10_3.wrl",
+    "sha256": "855c46cfeeb31e4394b7a4a294b397aac4cbc14154e172a326e33243dd9e384b"
+  },
+  "structured_tube": {
+    "clearance_profile": [
+      {
+        "local_exclusion": 1,
+        "minimum_remote_centreline_distance": 5.344653997222357,
+        "minimum_remote_centreline_pair": [
+          1,
+          299
+        ],
+        "remote_capsule_margin": -4.790257990555343
+      },
+      {
+        "local_exclusion": 2,
+        "minimum_remote_centreline_distance": 10.614707995988411,
+        "minimum_remote_centreline_pair": [
+          72,
+          75
+        ],
+        "remote_capsule_margin": 0.47979600821071067
+      },
+      {
+        "local_exclusion": 3,
+        "minimum_remote_centreline_distance": 14.87454069216983,
+        "minimum_remote_centreline_pair": [
+          82,
+          172
+        ],
+        "remote_capsule_margin": 4.73962870439213
+      },
+      {
+        "local_exclusion": 4,
+        "minimum_remote_centreline_distance": 14.87454069216983,
+        "minimum_remote_centreline_pair": [
+          82,
+          172
+        ],
+        "remote_capsule_margin": 4.73962870439213
+      },
+      {
+        "local_exclusion": 5,
+        "minimum_remote_centreline_distance": 14.87454069216983,
+        "minimum_remote_centreline_pair": [
+          82,
+          172
+        ],
+        "remote_capsule_margin": 4.73962870439213
+      },
+      {
+        "local_exclusion": 6,
+        "minimum_remote_centreline_distance": 14.87454069216983,
+        "minimum_remote_centreline_pair": [
+          82,
+          172
+        ],
+        "remote_capsule_margin": 4.73962870439213
+      },
+      {
+        "local_exclusion": 7,
+        "minimum_remote_centreline_distance": 14.87454069216983,
+        "minimum_remote_centreline_pair": [
+          82,
+          172
+        ],
+        "remote_capsule_margin": 4.73962870439213
+      },
+      {
+        "local_exclusion": 8,
+        "minimum_remote_centreline_distance": 14.87454069216983,
+        "minimum_remote_centreline_pair": [
+          82,
+          172
+        ],
+        "remote_capsule_margin": 4.73962870439213
+      },
+      {
+        "local_exclusion": 9,
+        "minimum_remote_centreline_distance": 14.87454069216983,
+        "minimum_remote_centreline_pair": [
+          82,
+          172
+        ],
+        "remote_capsule_margin": 4.73962870439213
+      },
+      {
+        "local_exclusion": 10,
+        "minimum_remote_centreline_distance": 14.87454069216983,
+        "minimum_remote_centreline_pair": [
+          82,
+          172
+        ],
+        "remote_capsule_margin": 4.73962870439213
+      },
+      {
+        "local_exclusion": 11,
+        "minimum_remote_centreline_distance": 14.87454069216983,
+        "minimum_remote_centreline_pair": [
+          82,
+          172
+        ],
+        "remote_capsule_margin": 4.73962870439213
+      },
+      {
+        "local_exclusion": 12,
+        "minimum_remote_centreline_distance": 14.87454069216983,
+        "minimum_remote_centreline_pair": [
+          82,
+          172
+        ],
+        "remote_capsule_margin": 4.73962870439213
+      },
+      {
+        "local_exclusion": 13,
+        "minimum_remote_centreline_distance": 14.87454069216983,
+        "minimum_remote_centreline_pair": [
+          82,
+          172
+        ],
+        "remote_capsule_margin": 4.73962870439213
+      },
+      {
+        "local_exclusion": 14,
+        "minimum_remote_centreline_distance": 14.87454069216983,
+        "minimum_remote_centreline_pair": [
+          82,
+          172
+        ],
+        "remote_capsule_margin": 4.73962870439213
+      },
+      {
+        "local_exclusion": 15,
+        "minimum_remote_centreline_distance": 14.87454069216983,
+        "minimum_remote_centreline_pair": [
+          82,
+          172
+        ],
+        "remote_capsule_margin": 4.73962870439213
+      },
+      {
+        "local_exclusion": 16,
+        "minimum_remote_centreline_distance": 14.87454069216983,
+        "minimum_remote_centreline_pair": [
+          82,
+          172
+        ],
+        "remote_capsule_margin": 4.73962870439213
+      },
+      {
+        "local_exclusion": 17,
+        "minimum_remote_centreline_distance": 14.87454069216983,
+        "minimum_remote_centreline_pair": [
+          82,
+          172
+        ],
+        "remote_capsule_margin": 4.73962870439213
+      },
+      {
+        "local_exclusion": 18,
+        "minimum_remote_centreline_distance": 14.87454069216983,
+        "minimum_remote_centreline_pair": [
+          82,
+          172
+        ],
+        "remote_capsule_margin": 4.73962870439213
+      },
+      {
+        "local_exclusion": 19,
+        "minimum_remote_centreline_distance": 14.87454069216983,
+        "minimum_remote_centreline_pair": [
+          82,
+          172
+        ],
+        "remote_capsule_margin": 4.73962870439213
+      },
+      {
+        "local_exclusion": 20,
+        "minimum_remote_centreline_distance": 14.87454069216983,
+        "minimum_remote_centreline_pair": [
+          82,
+          172
+        ],
+        "remote_capsule_margin": 4.73962870439213
+      }
+    ],
+    "invalid_strip_faces": 0,
+    "maximum_exclusion_searched": 20,
+    "maximum_section_radius": 5.06745599388885,
+    "minimum_passing_local_exclusion": 2,
+    "minimum_remote_centreline_distance": 10.614707995988411,
+    "minimum_remote_centreline_pair": [
+      72,
+      75
+    ],
+    "points_per_section": 20,
+    "remote_capsule_margin": 0.47979600821071067,
+    "remote_capsule_pass": true,
+    "section_count": 300,
+    "strip_count": 300,
+    "triangles_per_strip_values": [
+      40
+    ]
+  },
+  "triangle_pair_census": {
+    "aabb_candidates": 93622,
+    "broad_tolerance": 2.201251462236879e-10,
+    "coplanar_disjoint": 0,
+    "minimum_positive_sat_separation_margin": 0.04173625809051629,
+    "narrow_tolerance": 2.2012514622368794e-08,
+    "overlap_examples": [],
+    "shared_edge": 18000,
+    "shared_vertex_only": 54000,
+    "vertex_disjoint": 21622,
+    "vertex_disjoint_overlaps": 0
+  }
+}
