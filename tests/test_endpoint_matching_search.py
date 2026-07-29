@@ -183,3 +183,33 @@ def test_exact_tie_reverses_with_candidate_direction() -> None:
         "E02O",
         "E01O",
     )
+
+
+def test_same_colour_layer_schema_is_supported() -> None:
+    """The generic enumerator must accept the one-layer schema."""
+    rows = [
+        {
+            "candidate_id": "SAME_R_01",
+            "layer": "red",
+            "segment_a": 1,
+            "endpoint_a": "start",
+            "segment_b": 2,
+            "endpoint_b": "end",
+            "distance_px": 1.5,
+            "score": 2.0,
+            "status": "accepted",
+        }
+    ]
+
+    matchings = enumerate_endpoint_perfect_matchings(
+        rows
+    )
+
+    assert len(matchings) == 1
+
+    assert matchings[0].candidate_ids == (
+        "SAME_R_01",
+    )
+
+    assert matchings[0].endpoint_count == 2
+    assert matchings[0].accepted_edge_count == 1

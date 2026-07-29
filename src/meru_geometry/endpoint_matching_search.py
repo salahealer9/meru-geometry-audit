@@ -24,18 +24,81 @@ class EndpointPerfectMatching:
     accepted_edge_count: int
 
 
+def _candidate_layers(
+    row: Mapping[str, object],
+) -> tuple[str, str]:
+    """Return endpoint layers from either supported CSV schema."""
+    layer_a = str(
+        row.get(
+            "layer_a",
+            "",
+        )
+    ).strip()
+
+    layer_b = str(
+        row.get(
+            "layer_b",
+            "",
+        )
+    ).strip()
+
+    if layer_a and layer_b:
+        return layer_a, layer_b
+
+    layer = str(
+        row.get(
+            "layer",
+            "",
+        )
+    ).strip()
+
+    if layer:
+        return layer, layer
+
+    raise ValueError(
+        f"{row.get('candidate_id', '<unknown>')}: "
+        "candidate has neither `layer` nor "
+        "`layer_a`/`layer_b`."
+    )
+
+
+def _float_field(
+    row: Mapping[str, object],
+    field: str,
+) -> float:
+    """Read an optional numeric diagnostic field."""
+    value = row.get(
+        field,
+        "",
+    )
+
+    if value is None:
+        return 0.0
+
+    text = str(value).strip()
+
+    if not text:
+        return 0.0
+
+    return float(text)
+
+
 def endpoint_pair(
     row: Mapping[str, object],
 ) -> tuple[Node, Node]:
     """Return the two endpoint nodes represented by one candidate."""
+    layer_a, layer_b = (
+        _candidate_layers(row)
+    )
+
     node_a = (
-        str(row["layer_a"]),
+        layer_a,
         int(row["segment_a"]),
         str(row["endpoint_a"]),
     )
 
     node_b = (
-        str(row["layer_b"]),
+        layer_b,
         int(row["segment_b"]),
         str(row["endpoint_b"]),
     )
@@ -55,7 +118,6 @@ def endpoint_pair(
             )
 
     return node_a, node_b
-
 
 def enumerate_endpoint_perfect_matchings(
     candidate_rows: Iterable[
@@ -201,15 +263,15 @@ def enumerate_endpoint_perfect_matchings(
                     all_nodes
                 ),
                 "total_score": sum(
-                    float(row["score"])
+                    _float_field(row, "score")
                     for row in selected_rows
                 ),
                 "total_distance_px": sum(
-                    float(row["distance_px"])
+                    _float_field(row, "distance_px")
                     for row in selected_rows
                 ),
                 "maximum_distance_px": max(
-                    float(row["distance_px"])
+                    _float_field(row, "distance_px")
                     for row in selected_rows
                 ),
                 "accepted_edge_count": sum(
