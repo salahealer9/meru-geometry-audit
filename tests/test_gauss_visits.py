@@ -7,6 +7,7 @@ import pytest
 
 from meru_geometry.gauss_visits import (
     CrossingVisit,
+    apply_order_reviews,
     build_crossing_visits,
     find_close_visit_pairs,
     find_order_ties,
@@ -226,3 +227,127 @@ def test_unique_tokens_reject_tie_but_provisional_preserves_it() -> None:
         match="unresolved",
     ):
         unique_gauss_tokens(visits)
+
+
+def order_review_row(
+    *,
+    status: str = "accepted",
+    accepted_first: str = "E01O",
+    accepted_second: str = "E02U",
+) -> dict[str, object]:
+    """Construct one local order-review row."""
+    return {
+        "review_id": "ORDER_R_S01_E01O_E02U",
+        "review_kind": "exact_tie",
+        "layer": "red",
+        "segment_id": 1,
+        "provisional_first": "E01O",
+        "provisional_second": "E02U",
+        "status": status,
+        "accepted_first": (
+            accepted_first
+            if status == "accepted"
+            else ""
+        ),
+        "accepted_second": (
+            accepted_second
+            if status == "accepted"
+            else ""
+        ),
+        "confidence": (
+            "high"
+            if status == "accepted"
+            else ""
+        ),
+        "reviewed_utc": (
+            "2026-07-29T08:30:00+00:00"
+            if status == "accepted"
+            else ""
+        ),
+    }
+
+
+def test_apply_order_reviews_resolves_exact_tie() -> None:
+    visits = (
+        make_visit("E01", "O", 1.0),
+        make_visit("E02", "U", 1.0),
+    )
+
+    result = apply_order_reviews(
+        visits,
+        [order_review_row()],
+    )
+
+    assert tuple(
+        visit.token
+        for visit in result
+    ) == (
+        "E01O",
+        "E02U",
+    )
+
+
+def test_apply_order_reviews_can_reverse_close_pair() -> None:
+    visits = (
+        make_visit("E01", "O", 0.20),
+        make_visit("E02", "U", 0.22),
+    )
+
+    result = apply_order_reviews(
+        visits,
+        [
+            order_review_row(
+                accepted_first="E02U",
+                accepted_second="E01O",
+            )
+        ],
+    )
+
+    assert tuple(
+        visit.token
+        for visit in result
+    ) == (
+        "E02U",
+        "E01O",
+    )
+
+
+def test_apply_order_reviews_requires_completion() -> None:
+    visits = (
+        make_visit("E01", "O", 0.20),
+        make_visit("E02", "U", 0.22),
+    )
+
+    with pytest.raises(
+        ValueError,
+        match="Unresolved order review",
+    ):
+        apply_order_reviews(
+            visits,
+            [
+                order_review_row(
+                    status="unreviewed"
+                )
+            ],
+        )
+
+
+def test_apply_order_reviews_rejects_changed_pair() -> None:
+    visits = (
+        make_visit("E01", "O", 0.20),
+        make_visit("E02", "U", 0.22),
+    )
+
+    with pytest.raises(
+        ValueError,
+        match="differs from the provisional",
+    ):
+        apply_order_reviews(
+            visits,
+            [
+                order_review_row(
+                    accepted_first="E01O",
+                    accepted_second="E03U",
+                )
+            ],
+        )

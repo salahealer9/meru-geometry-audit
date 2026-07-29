@@ -486,3 +486,320 @@ def unique_gauss_tokens(
         visit.token
         for visit in _ordered_visits(visits)
     )
+
+
+def apply_order_reviews(
+    visits: Iterable[CrossingVisit],
+    review_rows: Iterable[Mapping[str, object]],
+    require_complete: bool = True,
+) -> tuple[CrossingVisit, ...]:
+    """Apply accepted local visit-order decisions.
+
+    The raw geometric order remains the default. A reviewed pair may
+    confirm that order or reverse two consecutive visits on the same
+    visible segment. Exact positional ties are thereby resolved without
+    modifying their measured arc-length coordinates.
+    """
+    ordered = list(
+        _ordered_visits(visits)
+    )
+
+    token_to_visit: dict[str, CrossingVisit] = {}
+
+    for visit in ordered:
+        if visit.token in token_to_visit:
+            raise ValueError(
+                f"Duplicate Gauss-visit token: {visit.token}"
+            )
+
+        token_to_visit[visit.token] = visit
+
+    reviews = [
+        dict(row)
+        for row in review_rows
+    ]
+
+    seen_review_ids: set[str] = set()
+    accepted_reviews: list[
+        tuple[
+            str,
+            str,
+            str,
+            SegmentKey,
+        ]
+    ] = []
+
+    for row in reviews:
+        review_id = str(
+            row.get("review_id", "")
+        ).strip()
+
+        if not review_id:
+            raise ValueError(
+                "Every order-review row requires review_id."
+            )
+
+        if review_id in seen_review_ids:
+            raise ValueError(
+                f"Duplicate order-review identifier: {review_id}"
+            )
+
+        seen_review_ids.add(review_id)
+
+        status = str(
+            row.get("status", "")
+        ).strip()
+
+        if status not in {
+            "unreviewed",
+            "accepted",
+        }:
+            raise ValueError(
+                f"{review_id}: invalid review status {status!r}."
+            )
+
+        provisional_first = str(
+            row.get("provisional_first", "")
+        ).strip()
+
+        provisional_second = str(
+            row.get("provisional_second", "")
+        ).strip()
+
+        provisional_tokens = {
+            provisional_first,
+            provisional_second,
+        }
+
+        if (
+            len(provisional_tokens) != 2
+            or "" in provisional_tokens
+        ):
+            raise ValueError(
+                f"{review_id}: provisional visit pair is incomplete."
+            )
+
+        missing = (
+            provisional_tokens
+            - set(token_to_visit)
+        )
+
+        if missing:
+            raise ValueError(
+                f"{review_id}: unknown provisional visit tokens: "
+                + ", ".join(sorted(missing))
+            )
+
+        first_visit = token_to_visit[
+            provisional_first
+        ]
+
+        second_visit = token_to_visit[
+            provisional_second
+        ]
+
+        if (
+            first_visit.segment_key
+            != second_visit.segment_key
+        ):
+            raise ValueError(
+                f"{review_id}: reviewed visits are not on "
+                "the same visible segment."
+            )
+
+        row_key = (
+            str(row.get("layer", "")).strip(),
+            int(row["segment_id"]),
+        )
+
+        if row_key != first_visit.segment_key:
+            raise ValueError(
+                f"{review_id}: review-row segment does not "
+                "match the visit pair."
+            )
+
+        if status == "unreviewed":
+            if require_complete:
+                raise ValueError(
+                    f"Unresolved order review: {review_id}"
+                )
+
+            continue
+
+        accepted_first = str(
+            row.get("accepted_first", "")
+        ).strip()
+
+        accepted_second = str(
+            row.get("accepted_second", "")
+        ).strip()
+
+        accepted_tokens = {
+            accepted_first,
+            accepted_second,
+        }
+
+        if accepted_tokens != provisional_tokens:
+            raise ValueError(
+                f"{review_id}: accepted visit pair differs "
+                "from the provisional review pair."
+            )
+
+        if not str(
+            row.get("confidence", "")
+        ).strip():
+            raise ValueError(
+                f"{review_id}: accepted order requires confidence."
+            )
+
+        if not str(
+            row.get("reviewed_utc", "")
+        ).strip():
+            raise ValueError(
+                f"{review_id}: accepted order requires reviewed_utc."
+            )
+
+        accepted_reviews.append(
+            (
+                review_id,
+                accepted_first,
+                accepted_second,
+                first_visit.segment_key,
+            )
+        )
+
+    for (
+        review_id,
+        accepted_first,
+        accepted_second,
+        segment_key,
+    ) in accepted_reviews:
+        segment_tokens = [
+            visit.token
+            for visit in ordered
+            if visit.segment_key == segment_key
+        ]
+
+        local_first = segment_tokens.index(
+            accepted_first
+        )
+
+        local_second = segment_tokens.index(
+            accepted_second
+        )
+
+        if abs(local_first - local_second) != 1:
+            raise ValueError(
+                f"{review_id}: reviewed visits are no longer "
+                "consecutive on their segment."
+            )
+
+        if local_first < local_second:
+            continue
+
+        global_first = next(
+            index
+            for index, visit in enumerate(ordered)
+            if visit.token == accepted_first
+        )
+
+        global_second = next(
+            index
+            for index, visit in enumerate(ordered)
+            if visit.token == accepted_second
+        )
+
+        ordered[
+            global_first
+        ], ordered[
+            global_second
+        ] = (
+            ordered[global_second],
+            ordered[global_first],
+        )
+
+    final_token_positions = {
+        visit.token: index
+        for index, visit in enumerate(ordered)
+    }
+
+    for (
+        review_id,
+        accepted_first,
+        accepted_second,
+        _segment_key,
+    ) in accepted_reviews:
+        if (
+            final_token_positions[accepted_first]
+            >= final_token_positions[accepted_second]
+        ):
+            raise ValueError(
+                f"{review_id}: accepted ordering was not applied."
+            )
+
+    return tuple(ordered)
+
+
+def validate_complete_gauss_visits(
+    visits: Iterable[CrossingVisit],
+    expected_event_count: int | None = None,
+) -> None:
+    """Validate a complete ordered O/U Gauss-visit sequence."""
+    ordered = tuple(visits)
+
+    token_counts = Counter(
+        visit.token
+        for visit in ordered
+    )
+
+    duplicate_tokens = [
+        token
+        for token, count in token_counts.items()
+        if count != 1
+    ]
+
+    if duplicate_tokens:
+        raise ValueError(
+            "Gauss-visit tokens are not unique: "
+            + ", ".join(sorted(duplicate_tokens))
+        )
+
+    by_event: dict[
+        str,
+        list[CrossingVisit],
+    ] = defaultdict(list)
+
+    for visit in ordered:
+        by_event[visit.event_id].append(
+            visit
+        )
+
+    if (
+        expected_event_count is not None
+        and len(by_event) != expected_event_count
+    ):
+        raise ValueError(
+            f"Expected {expected_event_count} crossing events; "
+            f"found {len(by_event)}."
+        )
+
+    for event_id, event_visits in by_event.items():
+        if len(event_visits) != 2:
+            raise ValueError(
+                f"{event_id}: expected exactly two visits."
+            )
+
+        roles = Counter(
+            visit.role
+            for visit in event_visits
+        )
+
+        if roles != Counter(
+            {
+                "O": 1,
+                "U": 1,
+            }
+        ):
+            raise ValueError(
+                f"{event_id}: expected one over and one under visit."
+            )
