@@ -1,0 +1,286 @@
+{
+  "audit_name": "Meru 10_3 native geometry and centreline audit",
+  "centerline_embedding": {
+    "embedded_polygonal_centerline": true,
+    "exact_nonadjacent_intersection_count": 0,
+    "intersection_tolerance": 1e-08,
+    "median_tube_diameter": 10.002566331265113,
+    "minimum_nonadjacent_segment_distance": 5.344653997222357,
+    "minimum_nonadjacent_segment_pair": [
+      1,
+      299
+    ],
+    "minimum_remote_segment_distance": 14.874540692169829,
+    "minimum_remote_segment_pair": [
+      82,
+      172
+    ],
+    "remote_clearance_to_diameter_ratio": 1.4870724371680837,
+    "remote_segment_exclusion": 5
+  },
+  "conclusions": {
+    "embedded_polygonal_centerline": true,
+    "interpretive_boundary": "This audit does not yet identify the complete model-to-A10_P03 crossing correspondence, certify the surrounding tube against all triangle-triangle self-intersections, or determine chirality under a separate knot-diagram convention.",
+    "monotonic_toroidal_phases": true,
+    "native_geometry_interpretation": "The source-defined cross-section centroids form an embedded polygonal toroidal centreline with signed winding pair (3,-10) under the selected y-axis coordinate convention and unsigned pair {3,10}.",
+    "single_connected_closed_genus_one_mesh": true,
+    "source_defined_tube_parameterization": true,
+    "unsigned_winding_pair_matches_3_10": true
+  },
+  "mesh_topology": {
+    "boundary_edge_count": 0,
+    "candidate_genus": 1,
+    "closed_orientable_manifold": true,
+    "component_vertex_counts": [
+      6000
+    ],
+    "connected_component_count": 1,
+    "coordinate_vertex_count": 6000,
+    "edge_incidence_histogram": {
+      "2": 18000
+    },
+    "euler_characteristic": 0,
+    "face_count": 12000,
+    "face_size_histogram": {
+      "3": 12000
+    },
+    "nonmanifold_edge_count": 0,
+    "orientation_conflict_count": 0,
+    "repeated_index_face_count": 0,
+    "unique_edge_count": 18000,
+    "unused_vertex_count": 0,
+    "used_vertex_count": 6000,
+    "vertex_valence_histogram": {
+      "6": 6000
+    },
+    "zero_area_triangle_count": 0
+  },
+  "schema_version": 1,
+  "source": {
+    "byte_count": 429161,
+    "canonical_url": "https://www.meru.org/compuimages/10_3.wrl",
+    "media_type": "model/vrml",
+    "sha256": "855c46cfeeb31e4394b7a4a294b397aac4cbc14154e172a326e33243dd9e384b",
+    "snapshot_filename": "f24de4a08a_10_3.wrl",
+    "snapshot_policy": "local untracked third-party research copy",
+    "vrml_header": "#VRML V2.0 utf8"
+  },
+  "toroidal_winding": {
+    "best_axis": "y",
+    "candidate_axes": [
+      {
+        "axial_coordinate_index": 0,
+        "axis": "x",
+        "major_phase": {
+          "direction_reversal_count": null,
+          "fitted_winding": 1.3226584085844806,
+          "linear_phase_rms": 2.2300768648043,
+          "phase_step_maximum": 1.204246832471719,
+          "phase_step_minimum": -1.2042954507659598,
+          "rounded_winding": 0,
+          "total_winding": 0.0
+        },
+        "major_radial_maximum": 67.05125407386636,
+        "major_radial_minimum": 4.086476894492444,
+        "major_radius_mean": 38.456535649062644,
+        "minor_phase": {
+          "direction_reversal_count": null,
+          "fitted_winding": -1.0632137329575027,
+          "linear_phase_rms": 2.498585050975861,
+          "phase_step_maximum": 0.9945875785111694,
+          "phase_step_minimum": -0.9952895933838877,
+          "rounded_winding": 0,
+          "total_winding": 1.4135798584282297e-16
+        },
+        "minor_radius_cv": 0.4470175626906261,
+        "minor_radius_maximum": 71.40131765282977,
+        "minor_radius_mean": 31.326840747818768,
+        "minor_radius_minimum": 3.98563369852917,
+        "transverse_coordinate_indices": [
+          1,
+          2
+        ]
+      },
+      {
+        "axial_coordinate_index": 1,
+        "axis": "y",
+        "major_phase": {
+          "direction_reversal_count": 0,
+          "fitted_winding": 3.0000020496548916,
+          "linear_phase_rms": 0.00013833144920932604,
+          "phase_step_maximum": 0.06337246835497157,
+          "phase_step_minimum": 0.06229102756626226,
+          "rounded_winding": 3,
+          "total_winding": 3.0
+        },
+        "major_radial_maximum": 66.37358160456152,
+        "major_radial_minimum": 25.042759748117895,
+        "major_radius_mean": 40.824435794363474,
+        "minor_phase": {
+          "direction_reversal_count": 0,
+          "fitted_winding": -10.00507715935883,
+          "linear_phase_rms": 0.27155545317312113,
+          "phase_step_maximum": -0.10458646855956077,
+          "phase_step_minimum": -0.5305824000563162,
+          "rounded_winding": -10,
+          "total_winding": -10.0
+        },
+        "minor_radius_cv": 0.27513592753435173,
+        "minor_radius_maximum": 41.09675467737052,
+        "minor_radius_mean": 30.33303247211818,
+        "minor_radius_minimum": 15.988956588767689,
+        "transverse_coordinate_indices": [
+          2,
+          0
+        ]
+      },
+      {
+        "axial_coordinate_index": 2,
+        "axis": "z",
+        "major_phase": {
+          "direction_reversal_count": null,
+          "fitted_winding": 0.012499709031720208,
+          "linear_phase_rms": 3.275374487457405,
+          "phase_step_maximum": 1.2043038049059762,
+          "phase_step_minimum": -1.2040026904459042,
+          "rounded_winding": 0,
+          "total_winding": 0.0
+        },
+        "major_radial_maximum": 67.0680613040122,
+        "major_radial_minimum": 4.086962378413413,
+        "major_radius_mean": 38.45649887530877,
+        "minor_phase": {
+          "direction_reversal_count": null,
+          "fitted_winding": 0.7212778965744046,
+          "linear_phase_rms": 2.8723302148674117,
+          "phase_step_maximum": 0.9970074037617391,
+          "phase_step_minimum": -0.9962052811388024,
+          "rounded_winding": 0,
+          "total_winding": 2.8271597168564594e-16
+        },
+        "minor_radius_cv": 0.4470108777596332,
+        "minor_radius_maximum": 71.40280568494705,
+        "minor_radius_mean": 31.326956394920327,
+        "minor_radius_minimum": 3.9804507039861305,
+        "transverse_coordinate_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "dominant_axial_fourier_modes": [
+      {
+        "amplitude": 19.23425391692336,
+        "frequency": 10
+      },
+      {
+        "amplitude": 19.23425391692336,
+        "frequency": -10
+      },
+      {
+        "amplitude": 4.6230164343718325,
+        "frequency": -20
+      },
+      {
+        "amplitude": 4.623016434371832,
+        "frequency": 20
+      },
+      {
+        "amplitude": 1.1127127789176372,
+        "frequency": 30
+      },
+      {
+        "amplitude": 1.1127127789176372,
+        "frequency": -30
+      },
+      {
+        "amplitude": 0.2680923164756496,
+        "frequency": 40
+      },
+      {
+        "amplitude": 0.2680923164756494,
+        "frequency": -40
+      },
+      {
+        "amplitude": 0.0637150669648331,
+        "frequency": -50
+      },
+      {
+        "amplitude": 0.06371506696483183,
+        "frequency": 50
+      }
+    ],
+    "dominant_transverse_fourier_modes": [
+      {
+        "amplitude": 40.824435415054246,
+        "frequency": 3
+      },
+      {
+        "amplitude": 9.814929051009173,
+        "frequency": -7
+      },
+      {
+        "amplitude": 9.81347184126065,
+        "frequency": 13
+      },
+      {
+        "amplitude": 2.359848311836338,
+        "frequency": 23
+      },
+      {
+        "amplitude": 2.3596825427711763,
+        "frequency": -17
+      },
+      {
+        "amplitude": 0.5672191405894065,
+        "frequency": 33
+      },
+      {
+        "amplitude": 0.5669983952549208,
+        "frequency": -27
+      },
+      {
+        "amplitude": 0.13734311449381398,
+        "frequency": 43
+      },
+      {
+        "amplitude": 0.13706713405045753,
+        "frequency": -37
+      },
+      {
+        "amplitude": 0.03386632361346616,
+        "frequency": 53
+      }
+    ],
+    "major_phase_monotonic": true,
+    "matches_unsigned_3_10": true,
+    "minor_phase_monotonic": true,
+    "signed_winding_pair": [
+      3,
+      -10
+    ],
+    "unsigned_winding_pair": [
+      3,
+      10
+    ]
+  },
+  "tube_parameterization": {
+    "centreline_station_count": 300,
+    "closure_segment_length": 5.4301119812486345,
+    "closure_to_ordinary_median_ratio": 0.9823915069112269,
+    "maximum_section_radius": 5.011844991218093,
+    "mean_section_radius": 5.000926072702402,
+    "median_circularity_ratio": 1.0026025095477427,
+    "median_planarity_ratio": 0.006986034928708692,
+    "median_section_radius": 5.0012831656325565,
+    "minimum_section_radius": 4.985245695933385,
+    "section_count": 300,
+    "section_radius_cv": 0.0011282208097659304,
+    "segment_length_cv": 0.4018971297378166,
+    "segment_length_maximum": 14.490286410212876,
+    "segment_length_mean": 7.112545310502019,
+    "segment_length_median": 5.526637164894695,
+    "segment_length_minimum": 5.344653997222357,
+    "vertices_per_section": 20
+  }
+}
