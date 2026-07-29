@@ -133,3 +133,39 @@ def test_report_preserves_the_topological_boundary() -> None:
         "published label alone."
         in normalized
     )
+
+
+def test_one_three_asset_is_classified_separately() -> None:
+    """The 1/3–3/1 model must not be classified as a 3,10 model."""
+    rows = {
+        row["canonical_url"]: row
+        for row in read_manifest()
+    }
+
+    url = (
+        "https://www.meru.org/compuimages/"
+        "1_3-3_1B.wrl"
+    )
+
+    assert rows[url]["audit_role"] == (
+        "separate 3-around-1 / 1-around-3 "
+        "Tree of Life model"
+    )
+
+    normalized = " ".join(
+        REPORT_PATH.read_text(
+            encoding="utf-8",
+        ).split()
+    )
+
+    assert (
+        "It is not presented as an alternative native "
+        "model of the 3,10 torus knot."
+        in normalized
+    )
+
+    assert (
+        "excluded from the A10_P03-to-3,10 model "
+        "correspondence analysis"
+        in normalized
+    )

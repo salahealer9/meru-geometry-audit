@@ -35,13 +35,17 @@ This filename and source context identify the author's intended asset.
 They do not by themselves prove that the encoded geometry is
 topologically equivalent to the mathematical torus knot T(3,10).
 
-## Companion VRML asset
+## Separate 3-around-1 / 1-around-3 asset
 
-The file `1_3-3_1B.wrl` is retained as a companion source. Its geometric
-and conceptual relationship to `10_3.wrl` has not yet been established.
+The file `1_3-3_1B.wrl` is linked by Meru under the separate
+“3-Around-1 and 1-Around-3” construction associated with its Tree of
+Life research. It is not presented as an alternative native model of
+the 3,10 torus knot.
 
-It must be parsed and compared rather than assumed to represent the
-same curve.
+Direct structural inspection finds two closed genus-one tube meshes
+and eight marker spheres. The asset remains catalogued as contextual
+Meru source material, but it is excluded from the A10_P03-to-3,10
+model correspondence analysis.
 
 ## Source-preservation policy
 
