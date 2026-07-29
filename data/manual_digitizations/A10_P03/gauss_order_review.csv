@@ -1,5 +1,5 @@
 review_id,review_kind,layer,segment_id,traversal_forward,provisional_first,provisional_second,gap_fraction,status,accepted_first,accepted_second,confidence,notes,reviewed_utc
-ORDER_R_S01_E21O_E24U,exact_tie,red,1,True,E21O,E24U,0.0,unreviewed,,,,,
-ORDER_R_S07_E31O_E08O,close_order,red,7,True,E31O,E08O,0.020195930396692013,unreviewed,,,,,
-ORDER_B_S01_E27O_E12O,close_order,blue,1,True,E27O,E12O,0.004278182599607994,unreviewed,,,,,
-ORDER_B_S04_E01O_E16O,close_order,blue,4,True,E01O,E16O,0.017201576097120808,unreviewed,,,,,
+ORDER_R_S01_E21O_E24U,exact_tie,red,1,True,E21O,E24U,0.0,accepted,E21O,E24U,high,"Along the traversal direction of red S01, the arrow reaches E21 first, where red S01 passes over green S09, and then E24, where red S01 passes under blue S01.",2026-07-29T08:31:11+00:00
+ORDER_R_S07_E31O_E08O,close_order,red,7,True,E31O,E08O,0.020195930396692013,accepted,E31O,E08O,high,"Along the traversal direction of red S07, the arrow reaches E31 first, where red S07 passes over blue S06, and then E08, where red S07 passes over blue S05.",2026-07-29T08:31:11+00:00
+ORDER_B_S01_E27O_E12O,close_order,blue,1,True,E27O,E12O,0.004278182599607994,accepted,E27O,E12O,high,"Along the traversal direction of blue S01, the arrow reaches E27 first, where blue S01 passes over green S09, and then E12, where blue S01 passes over green S08.",2026-07-29T08:31:11+00:00
+ORDER_B_S04_E01O_E16O,close_order,blue,4,True,E01O,E16O,0.017201576097120808,accepted,E01O,E16O,high,"Along the traversal direction of blue S04, the arrow reaches E01 first, where blue S04 passes over green S03, and then E16, where blue S04 passes over green S04.",2026-07-29T08:31:11+00:00
