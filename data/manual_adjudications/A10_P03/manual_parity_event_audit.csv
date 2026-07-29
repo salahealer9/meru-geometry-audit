@@ -1,0 +1,17 @@
+review_date,source_panel,event_id,classical_even_condition,over_strand,under_strand,review_family,local_visit_order_confirmed,over_under_confirmed,reviewed_segment_interior_complete,additional_crossing_observed,confidence,note
+2026-07-29,A10_P03.png,E01,violate,Blue S04,Green S03,Blue S04,yes,yes,yes,no,high,Blue S04 was continuously visible through E01; no additional crossing was observed.
+2026-07-29,A10_P03.png,E03,violate,Blue S03,Red S04,Red S04 central cluster,yes,yes,yes,no,high,E03 was confirmed as a distinct member of the E03/E04/E17 three-strand cluster.
+2026-07-29,A10_P03.png,E05,violate,Red S03,Green S07,Red S03,yes,yes,yes,no,high,Red S03 was fully visible and locally complete.
+2026-07-29,A10_P03.png,E07,violate,Green S04,Red S06,Green S04,yes,yes,yes,no,high,Green S04 was fully visible and locally complete.
+2026-07-29,A10_P03.png,E09,violate,Blue S03,Red S03,Red S03,yes,yes,yes,no,high,Red S03 was fully visible and locally complete.
+2026-07-29,A10_P03.png,E13,violate,Red S01,Green S10,Red S01,yes,yes,yes,no,high,Red S01 was fully visible and locally complete.
+2026-07-29,A10_P03.png,E14,violate,Red S03,Blue S02,Red S03,yes,yes,yes,no,high,Red S03 source-forward order was confirmed.
+2026-07-29,A10_P03.png,E15,violate,Blue S01,Red S02,Blue S01 and Red S02,yes,yes,yes,no,high,E15 was independently confirmed from both participating segment traces.
+2026-07-29,A10_P03.png,E16,violate,Blue S04,Green S04,Green S04 and Blue S04,yes,yes,yes,no,high,E16 was confirmed from both participating segment families.
+2026-07-29,A10_P03.png,E17,violate,Green S06,Blue S03,Green S06 and central cluster,yes,yes,yes,no,high,E17 was confirmed as the green-over-blue member of the E03/E04/E17 cluster.
+2026-07-29,A10_P03.png,E21,violate,Red S01,Green S09,Red S01,yes,yes,yes,no,high,Red S01 was fully visible and locally complete.
+2026-07-29,A10_P03.png,E22,violate,Green S04,Green S02,Green S04,yes,yes,yes,no,high,The same-colour crossing and local ordering were confirmed at high confidence.
+2026-07-29,A10_P03.png,E23,violate,Green S06,Blue S04,Green S06 and Blue S04,yes,yes,yes,no,high,E23 was spatially distinct from the central E17/E04 cluster and confirmed from both strands.
+2026-07-29,A10_P03.png,E24,violate,Blue S01,Red S01,Red S01 and Blue S01,yes,yes,yes,no,high,E24 was confirmed from both participating segment families.
+2026-07-29,A10_P03.png,E28,violate,Green S04,Red S07,Green S04,yes,yes,yes,no,high,Green S04 was fully visible and locally complete.
+2026-07-29,A10_P03.png,E30,violate,Green S04,Blue S05,Green S04,yes,yes,yes,no,high,Green S04 was fully visible and locally complete.
