@@ -1,0 +1,5 @@
+review_id,review_kind,layer,segment_id,traversal_forward,provisional_first,provisional_second,gap_fraction,status,accepted_first,accepted_second,confidence,notes,reviewed_utc
+ORDER_R_S01_E21O_E24U,exact_tie,red,1,True,E21O,E24U,0.0,unreviewed,,,,,
+ORDER_R_S07_E31O_E08O,close_order,red,7,True,E31O,E08O,0.020195930396692013,unreviewed,,,,,
+ORDER_B_S01_E27O_E12O,close_order,blue,1,True,E27O,E12O,0.004278182599607994,unreviewed,,,,,
+ORDER_B_S04_E01O_E16O,close_order,blue,4,True,E01O,E16O,0.017201576097120808,unreviewed,,,,,
