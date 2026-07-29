@@ -1,5 +1,5 @@
 event_id,candidate_id,over_layer,over_segment,under_layer,under_segment,derived_sign,primary_angle_deg,minimum_angle_deg,stable_across_spans,status,accepted_sign,confidence,notes,reviewed_utc
-E03,XING_R_S04_B_S03,blue,3,red,4,-1,20.77428069916063,14.656513361111577,True,unreviewed,,,,
-E21,XING_R_S01_G_S09,red,1,green,9,-1,23.774454762153415,20.640105509302586,True,unreviewed,,,,
-E24,XING_R_S01_B_S01,blue,1,red,1,-1,20.2812071157881,20.2812071157881,True,unreviewed,,,,
-E27,XING_G_S09_B_S01,blue,1,green,9,-1,19.214225199464646,12.71450293064569,True,unreviewed,,,,
+E03,XING_R_S04_B_S03,blue,3,red,4,-1,20.77428069916063,14.656513361111577,True,accepted,-1,high,"Blue S03 is over red S04. Along the frozen orientations, rotating from the solid blue tangent to the dashed red tangent is clockwise, so the determinant is negative.",2026-07-29T09:27:08+00:00
+E21,XING_R_S01_G_S09,red,1,green,9,-1,23.774454762153415,20.640105509302586,True,accepted,-1,high,"Red S01 is over green S09. Along the frozen orientations, rotating from the solid red tangent to the dashed green tangent is clockwise, so the determinant is negative.",2026-07-29T09:27:08+00:00
+E24,XING_R_S01_B_S01,blue,1,red,1,-1,20.2812071157881,20.2812071157881,True,accepted,-1,high,"Blue S01 is over red S01. Along the frozen orientations, rotating from the solid blue tangent to the dashed red tangent is clockwise, so the determinant is negative.",2026-07-29T09:27:08+00:00
+E27,XING_G_S09_B_S01,blue,1,green,9,-1,19.214225199464646,12.71450293064569,True,accepted,-1,high,"Blue S01 is over green S09. Along the frozen orientations, rotating from the solid blue tangent to the dashed green tangent is clockwise, so the determinant is negative.",2026-07-29T09:27:08+00:00
