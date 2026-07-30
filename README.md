@@ -213,3 +213,53 @@ independent viewing directions.
 Salah-Eddin Gherbi
 Independent Researcher, United Kingdom
 ORCID: 0009-0005-4017-1095
+
+<!-- v0.7.0-result-summary:start -->
+## v0.7.0 — native Meru 3,10 geometry certificate
+
+Version `v0.7.0` separates source correspondence from mathematical
+certification and establishes the strongest source-grounded result of
+the audit so far.
+
+### Main findings
+
+- Meru's native `10_3.wrl` asset is a closed, consistently oriented
+  genus-one triangulated tube with 6,000 vertices, 12,000 triangular
+  faces and 18,000 edges.
+- The source-defined centreline has signed toroidal winding `(3, -10)`
+  under the recorded coordinate convention and unsigned winding pair
+  `{3, 10}`.
+- An exhaustive tolerance-aware census accounts for all 71,994,000
+  distinct face pairs and finds no surface intersections beyond the
+  shared edges and vertices prescribed by the mesh.
+- An independent piecewise-linear braid reconstruction gives
+
+  \[
+  (\sigma_2^{-1}\sigma_1^{-1})^{10},
+  \]
+
+  with 20 crossings, writhe `-20`, a one-component closure and the
+  Alexander polynomial of \(T(3,10)\).
+- A10_P03 is classified as a simplified schematic corresponding
+  structurally to a vertically reflected `tumble.gif` frame `000`.
+  It is not treated as a complete classical knot diagram.
+
+### Principal reports
+
+- [`reports/meru_10_3_native_geometry_audit.md`](reports/meru_10_3_native_geometry_audit.md)
+- [`reports/meru_10_3_surface_embedding_audit.md`](reports/meru_10_3_surface_embedding_audit.md)
+- [`reports/meru_10_3_braid_invariant_audit.md`](reports/meru_10_3_braid_invariant_audit.md)
+- [`reports/A10_P03_tumble_correspondence.md`](reports/A10_P03_tumble_correspondence.md)
+
+### Interpretation boundary
+
+The geometric results are deterministic, source-identified and
+reproducible, but they are numerical rather than formal
+exact-arithmetic proofs. The negative braid signs are relative to the
+explicitly recorded phase, viewing and generator conventions.
+
+These results certify the topology and embedding of the recovered
+native digital geometry. They do not independently establish broader
+linguistic, cosmological, extraterrestrial or consciousness-related
+claims associated with the Meru material.
+<!-- v0.7.0-result-summary:end -->
