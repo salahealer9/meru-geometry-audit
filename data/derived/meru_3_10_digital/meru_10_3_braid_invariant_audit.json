@@ -1,0 +1,645 @@
+{
+  "alexander": {
+    "computed_polynomial": "t**18 - t**17 + t**15 - t**14 + t**12 - t**11 + t**9 - t**7 + t**6 - t**4 + t**3 - t + 1",
+    "degree": 18,
+    "determinant_absolute_delta_minus_one": 3,
+    "expected_T_3_10_polynomial": "t**18 - t**17 + t**15 - t**14 + t**12 - t**11 + t**9 - t**7 + t**6 - t**4 + t**3 - t + 1",
+    "matches_T_3_10": true,
+    "raw_burau_expression": "(t**18 - t**17 + t**15 - t**14 + t**12 - t**11 + t**9 - t**7 + t**6 - t**4 + t**3 - t + 1)/t**20"
+  },
+  "braid": {
+    "all_negative": true,
+    "all_positive": false,
+    "closure_component_count": 1,
+    "induced_permutation": [
+      2,
+      0,
+      1
+    ],
+    "negative_3_10_torus_pattern_up_to_cyclic_shift": true,
+    "positive_3_10_torus_pattern_up_to_cyclic_shift": false,
+    "signed_word": [
+      -2,
+      -1,
+      -2,
+      -1,
+      -2,
+      -1,
+      -2,
+      -1,
+      -2,
+      -1,
+      -2,
+      -1,
+      -2,
+      -1,
+      -2,
+      -1,
+      -2,
+      -1,
+      -2,
+      -1
+    ],
+    "word_text": "sigma_2^-1 sigma_1^-1 sigma_2^-1 sigma_1^-1 sigma_2^-1 sigma_1^-1 sigma_2^-1 sigma_1^-1 sigma_2^-1 sigma_1^-1 sigma_2^-1 sigma_1^-1 sigma_2^-1 sigma_1^-1 sigma_2^-1 sigma_1^-1 sigma_2^-1 sigma_1^-1 sigma_2^-1 sigma_1^-1",
+    "writhe": -20
+  },
+  "braid_projection": {
+    "axis": "y",
+    "crossing_count": 20,
+    "depth_coordinate": "sqrt(x^2+z^2)",
+    "diagram_coordinate": "y",
+    "minimum_crossing_margin_at_breakpoints": 1.5010498276133362,
+    "minimum_depth_gap": 36.92972698148989,
+    "minimum_event_to_breakpoint_margin": 0.0052929747167476116,
+    "minimum_third_strand_projection_gap": 50.71273763682673,
+    "phase_coordinate": "atan2(z,x)",
+    "piecewise_linear_breakpoint_count": 301,
+    "positive_generator_convention": "the upper strand before the crossing passes over the lower strand",
+    "selected_phase_offset_radians": 2.2929263048075503,
+    "start_projection_margin": 40.403876648188984,
+    "strand_order_convention": "descending y before each crossing",
+    "viewer_convention": "larger radial coordinate is over"
+  },
+  "centreline": {
+    "exact_major_turns_used_for_closure": 3,
+    "maximum_azimuth_step": 0.06337257663029805,
+    "minimum_azimuth_step": 0.06229133533349929,
+    "orientation_reversed_for_increasing_phase": true,
+    "points_per_section": 20,
+    "section_count": 300
+  },
+  "events": [
+    {
+      "depth_gap": 36.954393181136155,
+      "event_to_breakpoint_margin": 0.005312734466574848,
+      "exponent": -1,
+      "generator_index": 2,
+      "interval_index": 12,
+      "order_after": [
+        2,
+        1,
+        0
+      ],
+      "order_before": [
+        2,
+        0,
+        1
+      ],
+      "over_strand": 1,
+      "phase_fraction": 0.03592914482605311,
+      "phase_radians": 0.22574947487058436,
+      "signed_generator": -2,
+      "strand_pair": [
+        0,
+        1
+      ],
+      "third_strand": 2,
+      "third_strand_projection_gap": 50.750478294348,
+      "under_strand": 0
+    },
+    {
+      "depth_gap": 36.942376358647834,
+      "event_to_breakpoint_margin": 0.005546844287326824,
+      "exponent": -1,
+      "generator_index": 1,
+      "interval_index": 18,
+      "order_after": [
+        1,
+        2,
+        0
+      ],
+      "order_before": [
+        2,
+        1,
+        0
+      ],
+      "over_strand": 1,
+      "phase_fraction": 0.06418611545104524,
+      "phase_radians": 0.40329325752694006,
+      "signed_generator": -1,
+      "strand_pair": [
+        1,
+        2
+      ],
+      "third_strand": 0,
+      "third_strand_projection_gap": 50.71650560798401,
+      "under_strand": 2
+    },
+    {
+      "depth_gap": 36.92972698148989,
+      "event_to_breakpoint_margin": 0.005611395000274966,
+      "exponent": -1,
+      "generator_index": 2,
+      "interval_index": 42,
+      "order_after": [
+        1,
+        0,
+        2
+      ],
+      "order_before": [
+        1,
+        2,
+        0
+      ],
+      "over_strand": 0,
+      "phase_fraction": 0.13597189094081746,
+      "phase_radians": 0.8543365873487694,
+      "signed_generator": -2,
+      "strand_pair": [
+        0,
+        2
+      ],
+      "third_strand": 1,
+      "third_strand_projection_gap": 50.75124401171955,
+      "under_strand": 2
+    },
+    {
+      "depth_gap": 36.951732010020294,
+      "event_to_breakpoint_margin": 0.005539630305833709,
+      "exponent": -1,
+      "generator_index": 1,
+      "interval_index": 48,
+      "order_after": [
+        0,
+        1,
+        2
+      ],
+      "order_before": [
+        1,
+        0,
+        2
+      ],
+      "over_strand": 0,
+      "phase_fraction": 0.16419252873550916,
+      "phase_radians": 1.031652084099613,
+      "signed_generator": -1,
+      "strand_pair": [
+        0,
+        1
+      ],
+      "third_strand": 2,
+      "third_strand_projection_gap": 50.71273763682673,
+      "under_strand": 1
+    },
+    {
+      "depth_gap": 36.93819868317813,
+      "event_to_breakpoint_margin": 0.005584804468454108,
+      "exponent": -1,
+      "generator_index": 2,
+      "interval_index": 72,
+      "order_after": [
+        0,
+        2,
+        1
+      ],
+      "order_before": [
+        0,
+        1,
+        2
+      ],
+      "over_strand": 2,
+      "phase_fraction": 0.23596809953603406,
+      "phase_radians": 1.4826312959678993,
+      "signed_generator": -2,
+      "strand_pair": [
+        1,
+        2
+      ],
+      "third_strand": 0,
+      "third_strand_projection_gap": 50.74728532793695,
+      "under_strand": 1
+    },
+    {
+      "depth_gap": 36.94354281454287,
+      "event_to_breakpoint_margin": 0.005448119403363316,
+      "exponent": -1,
+      "generator_index": 1,
+      "interval_index": 78,
+      "order_after": [
+        2,
+        0,
+        1
+      ],
+      "order_before": [
+        0,
+        2,
+        1
+      ],
+      "over_strand": 2,
+      "phase_fraction": 0.26418693215256955,
+      "phase_radians": 1.6599354504498753,
+      "signed_generator": -1,
+      "strand_pair": [
+        0,
+        2
+      ],
+      "third_strand": 1,
+      "third_strand_projection_gap": 50.737953987897896,
+      "under_strand": 0
+    },
+    {
+      "depth_gap": 36.95352256485409,
+      "event_to_breakpoint_margin": 0.005402104661317519,
+      "exponent": -1,
+      "generator_index": 2,
+      "interval_index": 102,
+      "order_after": [
+        2,
+        1,
+        0
+      ],
+      "order_before": [
+        2,
+        0,
+        1
+      ],
+      "over_strand": 1,
+      "phase_fraction": 0.33596802645204993,
+      "phase_radians": 2.1109493674856425,
+      "signed_generator": -2,
+      "strand_pair": [
+        0,
+        1
+      ],
+      "third_strand": 2,
+      "third_strand_projection_gap": 50.73689499138075,
+      "under_strand": 0
+    },
+    {
+      "depth_gap": 36.934222330468785,
+      "event_to_breakpoint_margin": 0.005598510945246105,
+      "exponent": -1,
+      "generator_index": 1,
+      "interval_index": 108,
+      "order_after": [
+        1,
+        2,
+        0
+      ],
+      "order_before": [
+        2,
+        1,
+        0
+      ],
+      "over_strand": 1,
+      "phase_fraction": 0.3641877126030885,
+      "phase_radians": 2.2882588848830676,
+      "signed_generator": -1,
+      "strand_pair": [
+        1,
+        2
+      ],
+      "third_strand": 0,
+      "third_strand_projection_gap": 50.739265769367904,
+      "under_strand": 2
+    },
+    {
+      "depth_gap": 36.951948878610246,
+      "event_to_breakpoint_margin": 0.005543386993670296,
+      "exponent": -1,
+      "generator_index": 2,
+      "interval_index": 131,
+      "order_after": [
+        1,
+        0,
+        2
+      ],
+      "order_before": [
+        1,
+        2,
+        0
+      ],
+      "over_strand": 0,
+      "phase_fraction": 0.4359826431289335,
+      "phase_radians": 2.739359737493036,
+      "signed_generator": -2,
+      "strand_pair": [
+        0,
+        2
+      ],
+      "third_strand": 1,
+      "third_strand_projection_gap": 50.74143928814358,
+      "under_strand": 2
+    },
+    {
+      "depth_gap": 36.95416856937459,
+      "event_to_breakpoint_margin": 0.005440891206168086,
+      "exponent": -1,
+      "generator_index": 1,
+      "interval_index": 137,
+      "order_after": [
+        0,
+        1,
+        2
+      ],
+      "order_before": [
+        1,
+        0,
+        2
+      ],
+      "over_strand": 0,
+      "phase_fraction": 0.4642256139611,
+      "phase_radians": 2.916815556856806,
+      "signed_generator": -1,
+      "strand_pair": [
+        0,
+        1
+      ],
+      "third_strand": 2,
+      "third_strand_projection_gap": 50.73593751863275,
+      "under_strand": 1
+    },
+    {
+      "depth_gap": 36.954584318765455,
+      "event_to_breakpoint_margin": 0.0052929747167476116,
+      "exponent": -1,
+      "generator_index": 2,
+      "interval_index": 161,
+      "order_after": [
+        0,
+        2,
+        1
+      ],
+      "order_before": [
+        0,
+        1,
+        2
+      ],
+      "over_strand": 2,
+      "phase_fraction": 0.5359259999641941,
+      "phase_radians": 3.3673223687105516,
+      "signed_generator": -2,
+      "strand_pair": [
+        1,
+        2
+      ],
+      "third_strand": 0,
+      "third_strand_projection_gap": 50.75487412986253,
+      "under_strand": 1
+    },
+    {
+      "depth_gap": 36.947903506964636,
+      "event_to_breakpoint_margin": 0.0055563621239338445,
+      "exponent": -1,
+      "generator_index": 1,
+      "interval_index": 167,
+      "order_after": [
+        2,
+        0,
+        1
+      ],
+      "order_before": [
+        0,
+        2,
+        1
+      ],
+      "over_strand": 2,
+      "phase_fraction": 0.564176541415833,
+      "phase_radians": 3.544825755679357,
+      "signed_generator": -1,
+      "strand_pair": [
+        0,
+        2
+      ],
+      "third_strand": 1,
+      "third_strand_projection_gap": 50.71385892220158,
+      "under_strand": 0
+    },
+    {
+      "depth_gap": 36.93369887140358,
+      "event_to_breakpoint_margin": 0.005595548868028821,
+      "exponent": -1,
+      "generator_index": 2,
+      "interval_index": 191,
+      "order_after": [
+        2,
+        1,
+        0
+      ],
+      "order_before": [
+        2,
+        0,
+        1
+      ],
+      "over_strand": 1,
+      "phase_fraction": 0.6359691856730747,
+      "phase_radians": 3.995912243240029,
+      "signed_generator": -2,
+      "strand_pair": [
+        0,
+        1
+      ],
+      "third_strand": 2,
+      "third_strand_projection_gap": 50.746934596744254,
+      "under_strand": 0
+    },
+    {
+      "depth_gap": 36.9520669789287,
+      "event_to_breakpoint_margin": 0.005554288671022256,
+      "exponent": -1,
+      "generator_index": 1,
+      "interval_index": 197,
+      "order_after": [
+        1,
+        2,
+        0
+      ],
+      "order_before": [
+        2,
+        1,
+        0
+      ],
+      "over_strand": 1,
+      "phase_fraction": 0.664190195784232,
+      "phase_radians": 4.173230079324219,
+      "signed_generator": -1,
+      "strand_pair": [
+        1,
+        2
+      ],
+      "third_strand": 0,
+      "third_strand_projection_gap": 50.717906291814934,
+      "under_strand": 2
+    },
+    {
+      "depth_gap": 36.93917166903064,
+      "event_to_breakpoint_margin": 0.005544596855510342,
+      "exponent": -1,
+      "generator_index": 2,
+      "interval_index": 221,
+      "order_after": [
+        1,
+        0,
+        2
+      ],
+      "order_before": [
+        1,
+        2,
+        0
+      ],
+      "over_strand": 0,
+      "phase_fraction": 0.735971272184495,
+      "phase_radians": 4.624243883895887,
+      "signed_generator": -2,
+      "strand_pair": [
+        0,
+        2
+      ],
+      "third_strand": 1,
+      "third_strand_projection_gap": 50.752706355804655,
+      "under_strand": 2
+    },
+    {
+      "depth_gap": 36.94358828190798,
+      "event_to_breakpoint_margin": 0.005461332347016956,
+      "exponent": -1,
+      "generator_index": 1,
+      "interval_index": 227,
+      "order_after": [
+        0,
+        1,
+        2
+      ],
+      "order_before": [
+        1,
+        0,
+        2
+      ],
+      "over_strand": 0,
+      "phase_fraction": 0.7641848292472746,
+      "phase_radians": 4.801514891096017,
+      "signed_generator": -1,
+      "strand_pair": [
+        0,
+        1
+      ],
+      "third_strand": 2,
+      "third_strand_projection_gap": 50.737631009234654,
+      "under_strand": 1
+    },
+    {
+      "depth_gap": 36.95399290768776,
+      "event_to_breakpoint_margin": 0.005425777428057721,
+      "exponent": -1,
+      "generator_index": 2,
+      "interval_index": 251,
+      "order_after": [
+        0,
+        2,
+        1
+      ],
+      "order_before": [
+        0,
+        1,
+        2
+      ],
+      "over_strand": 2,
+      "phase_fraction": 0.8359717940898933,
+      "phase_radians": 5.252565693842176,
+      "signed_generator": -2,
+      "strand_pair": [
+        1,
+        2
+      ],
+      "third_strand": 0,
+      "third_strand_projection_gap": 50.73481380157348,
+      "under_strand": 1
+    },
+    {
+      "depth_gap": 36.93297073057913,
+      "event_to_breakpoint_margin": 0.005569305552685755,
+      "exponent": -1,
+      "generator_index": 1,
+      "interval_index": 257,
+      "order_after": [
+        2,
+        0,
+        1
+      ],
+      "order_before": [
+        0,
+        2,
+        1
+      ],
+      "over_strand": 2,
+      "phase_fraction": 0.8641896069835928,
+      "phase_radians": 5.429863441216612,
+      "signed_generator": -1,
+      "strand_pair": [
+        0,
+        2
+      ],
+      "third_strand": 1,
+      "third_strand_projection_gap": 50.73942096185143,
+      "under_strand": 0
+    },
+    {
+      "depth_gap": 36.95215539971528,
+      "event_to_breakpoint_margin": 0.005559840537005201,
+      "exponent": -1,
+      "generator_index": 2,
+      "interval_index": 281,
+      "order_after": [
+        2,
+        1,
+        0
+      ],
+      "order_before": [
+        2,
+        0,
+        1
+      ],
+      "over_strand": 1,
+      "phase_fraction": 0.9359852617916866,
+      "phase_radians": 5.880968844626164,
+      "signed_generator": -2,
+      "strand_pair": [
+        0,
+        1
+      ],
+      "third_strand": 2,
+      "third_strand_projection_gap": 50.74068794537724,
+      "under_strand": 0
+    },
+    {
+      "depth_gap": 36.95375390253834,
+      "event_to_breakpoint_margin": 0.005423602313683773,
+      "exponent": -1,
+      "generator_index": 1,
+      "interval_index": 287,
+      "order_after": [
+        1,
+        2,
+        0
+      ],
+      "order_before": [
+        2,
+        1,
+        0
+      ],
+      "over_strand": 1,
+      "phase_fraction": 0.9642283655738,
+      "phase_radians": 6.058425499339087,
+      "signed_generator": -1,
+      "strand_pair": [
+        1,
+        2
+      ],
+      "third_strand": 0,
+      "third_strand_projection_gap": 50.745190555260876,
+      "under_strand": 2
+    }
+  ],
+  "scope": {
+    "alexander_polynomial_distinguishes_mirror_image": false,
+    "chirality_evidence_comes_from_signed_braid_word": true,
+    "crossing_roots_enumerated_on_every_piecewise_linear_interval": true,
+    "formal_exact_arithmetic": false,
+    "projection_is_piecewise_linear": true
+  },
+  "source": {
+    "canonical_url": "https://www.meru.org/compuimages/10_3.wrl",
+    "filename": "f24de4a08a_10_3.wrl",
+    "sha256": "855c46cfeeb31e4394b7a4a294b397aac4cbc14154e172a326e33243dd9e384b"
+  }
+}
