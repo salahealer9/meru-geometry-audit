@@ -41,7 +41,7 @@ These are:
 
 - the equator-at-horizon limb;
 - six neutral rim nodes;
-- the central black reference node;
+- the central filled circular reference node;
 - the unlabelled upper interior crossing;
 - the flat-panel unit marker;
 - the spherical-panel unit marker;
@@ -192,3 +192,49 @@ from visual expectation.
 
 This revised protocol contains no landmark coordinates, fitted geometry,
 projection verdict, scale selection, or self-embedment result.
+
+## Post-census incidence-landmark addendum
+
+Inspection of the first neutral-census overlay revealed three additional
+filled internal nodes that were not part of the original blind-pass
+vocabulary:
+
+```text
+AOG-LM-P07-X1-UC-LL-INTERSECTION
+AOG-LM-P07-X1-UC-LR-INTERSECTION
+AOG-LM-P07-YAXIS-UC-UCLR-INTERSECTION
+```
+
+The second x=1 node carries the workflow alias `UCLR`.
+
+These landmarks are registered only after the original two neutral
+passes were committed. They therefore use the distinct status:
+
+```text
+preregistered_incidence_addendum
+```
+
+They must be acquired in separate point-only pass files. The original
+neutral pass CSV files and checksum manifest remain immutable.
+
+The central source node is morphologically a filled circle, not a
+square. Its stable ID remains unchanged. This terminology correction
+does not alter its frozen coordinates.
+
+The y-axis addendum node is distinct from the central circular node. The
+printed y-axis visually passes through both points; that relation is
+tested later as an image-space incidence or collinearity diagnostic.
+
+The UCLR node also defines a source-geometric angle with the central
+circular node and lower-right shared rim node:
+
+```text
+angle(UCLR, central, LR)
+```
+
+This node-defined angle may be compared with 30 degrees. The visually
+ambiguous printed 30-degree arc remains deferred and is not revived by
+this amendment.
+
+No great-circle trace, projective map, scale choice, truncation
+reconciliation, S1, S1.5, or S2 result is introduced by this addendum.
