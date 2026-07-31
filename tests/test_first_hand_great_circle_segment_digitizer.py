@@ -307,3 +307,19 @@ def test_script_declares_blind_no_bridge_boundary() -> None:
 
     assert "outside the equator-at-horizon limb" in domain_rule
     assert "exterior arrow or label leader" in domain_rule
+
+
+def test_y0_guidance_includes_dashed_backside() -> None:
+    """GC-Y0 must include its source-rendered dashed continuation."""
+    module = load_module()
+
+    rule = " ".join(
+        module.Y0_DASHED_BACKSIDE_RULE
+        .lower()
+        .split()
+    )
+
+    assert "dashed back-hemisphere continuation" in rule
+    assert "regular dash spacing as line style" in rule
+    assert "genuine occlusion" in rule
+

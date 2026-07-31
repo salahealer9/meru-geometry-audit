@@ -234,3 +234,18 @@ location.
 For `GC-Y0`, the exterior continuation beyond the lower-right shared
 node is excluded. The three or more interior segments should cover only
 the unambiguous visible portions inside the spherical panel.
+
+## GC-Y0 dashed back-hemisphere continuation
+
+The dashed diagonal between the upper-left rim node and the central
+region is included as the back-hemisphere continuation of `GC-Y0`.
+
+Regular gaps between the small printed dash marks are a rendering style,
+not unknown geometry. Samples from one uninterrupted dashed run therefore
+remain under one `segment_id`.
+
+A new segment is required where the dashed run is interrupted by the
+thick reciprocal spiral, a filled node, or another genuine occlusion.
+
+The exterior arrow-bearing continuation beyond the spherical horizon
+remains excluded.

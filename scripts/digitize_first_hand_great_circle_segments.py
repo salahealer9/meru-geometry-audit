@@ -76,6 +76,14 @@ CURVE_DOMAIN_RULE = (
     "leader, even when it is collinear with the in-sphere curve."
 )
 
+Y0_DASHED_BACKSIDE_RULE = (
+    "For GC-Y0, include the dashed back-hemisphere continuation "
+    "between the upper-left rim node and the central region. "
+    "Treat regular dash spacing as line style within one visible run. "
+    "Start a new segment only where a node, spiral stroke, or other "
+    "genuine occlusion interrupts that dashed run."
+)
+
 CURVE_GUIDANCE = {
     "AOG-LM-P07-GC-Y0": {
         "short_name": "GC-Y0",
@@ -534,6 +542,11 @@ def capture_curve(
     print(
         CURVE_DOMAIN_RULE
     )
+
+    if spec.landmark_id == "AOG-LM-P07-GC-Y0":
+        print(
+            Y0_DASHED_BACKSIDE_RULE
+        )
 
     while True:
         input(
