@@ -302,3 +302,29 @@ def test_script_declares_expanded_source_only_scope() -> None:
     assert "choose a unit convention" in text
     assert "reconcile truncations" in text
     assert "compute s1, s1.5, or s2" in text
+
+
+def test_overlay_renders_from_verified_prepared_crop(
+    tmp_path: Path,
+) -> None:
+    """The full overlay path must use the verified crop manifest."""
+    module = load_module()
+
+    analysis, rows, _ = (
+        module.build_expanded_analysis()
+    )
+
+    output_path = (
+        tmp_path
+        / "expanded_neutral_overlay.png"
+    )
+
+    module.write_overlay(
+        output_path,
+        analysis,
+        rows,
+    )
+
+    assert output_path.is_file()
+    assert output_path.stat().st_size > 1000
+

@@ -33,6 +33,7 @@ if str(ROOT) not in sys.path:
     )
 
 from scripts import audit_first_hand_neutral_geometry as neutral  # noqa: E402
+from scripts import digitize_first_hand_diagram_landmarks as digitizer  # noqa: E402
 
 
 DATA_DIR = (
@@ -1360,23 +1361,30 @@ def write_overlay(
         "crop_id"
     ]
 
-    crop_path, manifest_row = neutral.read_crop_path(
-        crop_id
-    )
+    crops = digitizer.read_crop_manifest()
 
-    if sha256_path(
-        crop_path
-    ) != manifest_row[
-        "file_sha256"
-    ]:
+    if crop_id not in crops:
         raise RuntimeError(
-            "Prepared crop file hash mismatch."
+            f"Prepared crop is missing from the manifest: {crop_id}"
         )
 
-    with Image.open(
-        crop_path
-    ) as opened:
-        image = opened.convert(
+    verified_image = digitizer.verify_crop(
+        crops[crop_id]
+    )
+
+    if hasattr(
+        verified_image,
+        "convert",
+    ):
+        image = verified_image.convert(
+            "RGB"
+        )
+    else:
+        image = Image.fromarray(
+            np.asarray(
+                verified_image
+            )
+        ).convert(
             "RGB"
         )
 
