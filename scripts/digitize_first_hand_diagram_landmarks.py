@@ -577,7 +577,10 @@ def select_specs(
     return [
         spec
         for spec in all_specs
-        if spec.fit_partition in allowed_partitions
+        if (
+            spec.fit_partition in allowed_partitions
+            and spec.status == "preregistered_not_digitized"
+        )
     ]
 
 

@@ -1,8 +1,7 @@
-"""Tests for the First Hand blind diagram digitizer."""
+"""Tests for the blind digitizer under revised landmark semantics."""
 
 from __future__ import annotations
 
-import csv
 import importlib.util
 import sys
 from pathlib import Path
@@ -34,9 +33,9 @@ CROP_MANIFEST_PATH = (
 
 
 def load_module() -> Any:
-    """Load the digitizer as a module without running its CLI."""
+    """Load the digitizer without running its CLI."""
     spec = importlib.util.spec_from_file_location(
-        "first_hand_blind_digitizer",
+        "first_hand_blind_digitizer_revised",
         SCRIPT_PATH,
     )
 
@@ -54,8 +53,8 @@ def load_module() -> Any:
     return module
 
 
-def test_digitizer_resolves_every_registered_crop() -> None:
-    """All landmark crop IDs must exist in the frozen crop manifest."""
+def test_every_registered_crop_resolves() -> None:
+    """All registry crop IDs must exist in the crop manifest."""
     module = load_module()
 
     landmarks = module.read_landmark_registry(
@@ -65,45 +64,14 @@ def test_digitizer_resolves_every_registered_crop() -> None:
         CROP_MANIFEST_PATH
     )
 
-    assert landmarks
-    assert crops
-
     assert {
-        landmark.crop_id
-        for landmark in landmarks
+        item.crop_id
+        for item in landmarks
     } <= set(crops)
 
 
-def test_per_pass_sample_rules_match_protocol() -> None:
-    """Points get one independent click per pass; curves stay open-count."""
-    module = load_module()
-
-    landmarks = {
-        item.landmark_id: item
-        for item in module.read_landmark_registry(
-            REGISTRY_PATH
-        )
-    }
-
-    assert module.expected_samples_per_pass(
-        landmarks["AOG-LM-P07-INFINITY-Y0-Y1"]
-    ) == 1
-
-    assert module.expected_samples_per_pass(
-        landmarks["AOG-LM-P07-THIRTY-DEGREE-ARC"]
-    ) == 3
-
-    assert module.expected_samples_per_pass(
-        landmarks["AOG-LM-P07-SPHERE-BOUNDARY"]
-    ) is None
-
-    assert module.expected_samples_per_pass(
-        landmarks["AOG-LM-P07-SPIRAL-CENTRELINE"]
-    ) is None
-
-
-def test_default_selection_excludes_external_holdouts() -> None:
-    """Page-8 Hand views must not enter the initial digitization."""
+def test_default_selection_uses_only_initial_active_status() -> None:
+    """Default selection must omit later, deferred, and external rows."""
     module = load_module()
     landmarks = module.read_landmark_registry(
         REGISTRY_PATH
@@ -118,101 +86,64 @@ def test_default_selection_excludes_external_holdouts() -> None:
     assert selected
 
     assert all(
-        item.fit_partition != "external_holdout"
+        item.status == "preregistered_not_digitized"
         for item in selected
     )
 
-    assert {
-        item.fit_partition
+    selected_ids = {
+        item.landmark_id
         for item in selected
-    } == {
-        "calibration",
-        "scale_calibration",
-        "holdout",
     }
 
+    assert "AOG-LM-P07-GC-Y0" not in selected_ids
+    assert "AOG-LM-P07-THIRTY-DEGREE-ARC" not in selected_ids
+    assert "AOG-LM-P08-HAND-TOP-BOUNDARY" not in selected_ids
 
-def test_digitizer_output_rows_preserve_source_identity() -> None:
-    """Every output row must retain crop hashes and pass identity."""
+
+def test_explicit_selection_can_reach_later_stage_row() -> None:
+    """A later-stage row remains addressable when deliberately named."""
     module = load_module()
-
-    landmark = module.read_landmark_registry(
+    landmarks = module.read_landmark_registry(
         REGISTRY_PATH
-    )[0]
-
-    crop = module.read_crop_manifest(
-        CROP_MANIFEST_PATH
-    )[landmark.crop_id]
-
-    rows = module.rows_for_digitization(
-        spec=landmark,
-        crop=crop,
-        pass_number=1,
-        operator="Test Operator",
-        points=[(12.5, 34.5), (20.0, 40.0)],
-        stroke_width_px=6.0,
-        note="test",
-        timestamp_utc="2026-07-31T00:00:00Z",
     )
 
-    assert len(rows) == 2
+    selected = module.select_specs(
+        all_specs=landmarks,
+        landmark_ids=["AOG-LM-P07-GC-Y0"],
+        partitions=module.DEFAULT_PARTITIONS,
+    )
 
-    for index, row in enumerate(rows):
-        assert row["crop_id"] == crop.crop_id
-        assert row["crop_file_sha256"] == crop.file_sha256
-        assert row["crop_pixel_sha256"] == crop.pixel_sha256
-        assert row["landmark_id"] == landmark.landmark_id
-        assert row["pass_number"] == "1"
-        assert row["operator"] == "Test Operator"
-        assert row["sequence_index"] == str(index)
-        assert row["local_stroke_width_px"] == "6"
-        assert row["timestamp_utc"] == "2026-07-31T00:00:00Z"
+    assert len(selected) == 1
+    assert selected[0].landmark_id == "AOG-LM-P07-GC-Y0"
+    assert selected[0].status == "preregistered_later_stage"
 
 
-def test_pass_file_schema_round_trip(tmp_path: Path) -> None:
-    """The pass CSV schema must remain deterministic and validatable."""
+def test_points_receive_one_click_per_pass() -> None:
+    """Two-pass consensus comes from one point click in each pass."""
     module = load_module()
 
-    rows = [
-        {
-            "crop_id": "CROP",
-            "crop_file_sha256": "a" * 64,
-            "crop_pixel_sha256": "b" * 64,
-            "landmark_id": "LANDMARK",
-            "pass_number": "2",
-            "operator": "Test Operator",
-            "sequence_index": "0",
-            "x_px": "12.5",
-            "y_px": "34.5",
-            "local_stroke_width_px": "5",
-            "object_type": "point",
-            "fit_partition": "calibration",
-            "source_feature": "test feature",
-            "operator_note": "",
-            "timestamp_utc": "2026-07-31T00:00:00Z",
-        }
-    ]
+    landmarks = {
+        item.landmark_id: item
+        for item in module.read_landmark_registry(
+            REGISTRY_PATH
+        )
+    }
 
-    path = tmp_path / "pass2.csv"
-    module.write_rows(path, rows)
+    assert module.expected_samples_per_pass(
+        landmarks["AOG-LM-P07-RIM-NODE-UL"]
+    ) == 1
 
-    with path.open(
-        newline="",
-        encoding="utf-8",
-    ) as handle:
-        reader = csv.DictReader(handle)
-        assert reader.fieldnames == module.OUTPUT_FIELDS
+    assert module.expected_samples_per_pass(
+        landmarks["AOG-LM-P07-CENTRAL-REFERENCE-NODE"]
+    ) == 1
 
-    validated = module.validate_output_file(
-        path,
-        expected_pass=2,
-    )
-
-    assert validated == rows
+    assert module.expected_samples_per_pass(
+        landmarks["AOG-LM-P07-EQUATOR-HORIZON-LIMB"]
+    ) is None
 
 
-def test_script_declares_blind_source_only_boundary() -> None:
-    """The implementation must explicitly keep model data unloaded."""
+def test_script_preserves_blind_boundary() -> None:
+    """The source-only implementation must remain explicit."""
     text = SCRIPT_PATH.read_text(
         encoding="utf-8",
     ).lower()

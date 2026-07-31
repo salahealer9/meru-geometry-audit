@@ -1,66 +1,35 @@
 # First Hand blind two-pass digitizer
 
-**Status:** implementation checkpoint  
-**Scope:** source landmarks only; no model overlays or fit scores
+**Status:** revised neutral-census workflow  
+**Scope:** source geometry only; no model overlays or fit scores
 
-## Files
+## Initial default run
 
-```text
-scripts/digitize_first_hand_diagram_landmarks.py
-data/derived/first_hand_arm_of_god/
-    diagram_landmarks_pass1.csv
-    diagram_landmarks_pass2.csv
-```
+The registry now uses status to separate acquisition stages.
 
-The script reads the preregistered landmark registry and the frozen crop
-manifest. It verifies both the PNG file hash and canonical pixel hash
-before displaying a crop.
-
-It does not import the spherical-map audit or any self-embedment code.
-
-## Controls
-
-For point landmarks:
+The default run selects only:
 
 ```text
-left click once
+preregistered_not_digitized
 ```
 
-The independent second click is made in the other pass.
+That initial set contains the horizon limb, six neutral rim nodes, the
+central reference node, upper interior crossing, two separate unit
+markers, and two separate inner endpoints.
 
-For the 30-degree angular annotation:
+It excludes:
 
 ```text
-left click first endpoint
-left click arc midpoint
-left click second endpoint
+preregistered_later_stage
+deferred_source_ambiguous
+preregistered_external_holdout
 ```
 
-For curves and contours:
-
-```text
-left click      add ordered point
-right click     remove most recent point
-middle click    finish
-Enter           finish
-```
-
-The source crop is opened fresh for every landmark. Earlier landmarks,
-the other pass, model curves, residuals, and fitted overlays are not
-shown.
-
-## Registry listing
-
-```bash
-python scripts/digitize_first_hand_diagram_landmarks.py \
-  --list
-```
+Therefore the four great-circle traces, both spiral traces, the
+ambiguous 30-degree arc, and page-8 Hand views do not enter the initial
+passes.
 
 ## Pass 1
-
-The default partitions are the page-7 calibration, scale-calibration,
-and holdout objects. Page-8 Hand views remain excluded as external
-holdouts.
 
 ```bash
 python scripts/digitize_first_hand_diagram_landmarks.py \
@@ -68,19 +37,17 @@ python scripts/digitize_first_hand_diagram_landmarks.py \
   --operator "Salah-Eddin Gherbi"
 ```
 
-The script writes after every completed landmark, so an interrupted
-session can be resumed with the same command. Existing landmarks are
-skipped.
+For the horizon limb, trace the middle of the black outer stroke and
+finish with Enter or middle click.
 
-## Separation between passes
+For each point, click once at the visual centre requested by the
+registry instruction.
 
-Do not inspect, plot, average, or fit pass 1 before pass 2 is complete.
-
-A genuine separation is preferable. Close the digitizer and take a
-break before starting pass 2. The second pass begins from untouched
-source crops and does not load pass 1.
+Do not inspect the output CSV after pass 1.
 
 ## Pass 2
+
+After a real break, repeat from untouched source crops:
 
 ```bash
 python scripts/digitize_first_hand_diagram_landmarks.py \
@@ -88,63 +55,36 @@ python scripts/digitize_first_hand_diagram_landmarks.py \
   --operator "Salah-Eddin Gherbi"
 ```
 
-## Validate pass files
+The digitizer does not load pass 1 while pass 2 is collected.
+
+## Later-stage curves
+
+A printed great circle may be activated only by explicit ID after the
+neutral census is committed:
+
+```bash
+python scripts/digitize_first_hand_diagram_landmarks.py \
+  --pass-number 1 \
+  --operator "Salah-Eddin Gherbi" \
+  --landmark-id AOG-LM-P07-GC-Y0
+```
+
+Its hidden continuation must not be guessed. The trace follows only
+clean stroke segments identified by the printed label.
+
+## Deferred annotation
+
+`AOG-LM-P07-THIRTY-DEGREE-ARC` is not digitized. Its intended endpoints
+are source-ambiguous and require a later protocol amendment.
+
+## Validation
 
 ```bash
 python scripts/digitize_first_hand_diagram_landmarks.py \
   --validate \
   data/derived/first_hand_arm_of_god/diagram_landmarks_pass1.csv
-
-python scripts/digitize_first_hand_diagram_landmarks.py \
-  --validate \
-  data/derived/first_hand_arm_of_god/diagram_landmarks_pass2.csv
 ```
 
-## Correcting one landmark
-
-A correction must be explicit. This replaces only the selected landmark
-in the selected pass file:
-
-```bash
-python scripts/digitize_first_hand_diagram_landmarks.py \
-  --pass-number 1 \
-  --operator "Salah-Eddin Gherbi" \
-  --landmark-id AOG-LM-P07-GC-Y1 \
-  --replace
-```
-
-The reason for replacement should be entered in the operator note.
-
-## Restarting an entire pass
-
-Use only when the pass is known to be invalid:
-
-```bash
-python scripts/digitize_first_hand_diagram_landmarks.py \
-  --pass-number 1 \
-  --operator "Salah-Eddin Gherbi" \
-  --restart-pass
-```
-
-## External holdouts
-
-The page-8 Hand boundaries are intentionally not included in the default
-run. They may be digitized later, after the map, scale, truncation, and
-three-copy construction are frozen:
-
-```bash
-python scripts/digitize_first_hand_diagram_landmarks.py \
-  --pass-number 1 \
-  --operator "Salah-Eddin Gherbi" \
-  --partitions external_holdout
-```
-
-A corresponding independent pass 2 is then required.
-
-## Data boundary
-
-The two raw pass files preserve operator clicks. They should not be
-manually edited. Consensus coordinates and uncertainty estimates belong
-to a separate deterministic script after both passes are complete.
+The pass files preserve raw clicks and are not manually edited.
 
 No projection or self-embedment verdict is issued by the digitizer.

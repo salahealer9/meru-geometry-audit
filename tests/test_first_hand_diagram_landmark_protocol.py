@@ -1,4 +1,4 @@
-"""Tests for the First Hand diagram landmark protocol."""
+"""Tests for the revised First Hand landmark semantics."""
 
 from __future__ import annotations
 
@@ -21,27 +21,22 @@ PROTOCOL_PATH = (
     / "first_hand_diagram_landmark_protocol.md"
 )
 
-REQUIRED_PARTITIONS = {
-    "calibration",
-    "scale_calibration",
-    "holdout",
-    "external_holdout",
+INITIAL_STATUS = "preregistered_not_digitized"
+
+RIM_IDS = {
+    "AOG-LM-P07-RIM-NODE-UL",
+    "AOG-LM-P07-RIM-NODE-UR",
+    "AOG-LM-P07-RIM-NODE-R",
+    "AOG-LM-P07-RIM-NODE-LR-SHARED",
+    "AOG-LM-P07-RIM-NODE-LL",
+    "AOG-LM-P07-RIM-NODE-L",
 }
 
-REQUIRED_IDS = {
-    "AOG-LM-P07-SPHERE-BOUNDARY",
-    "AOG-LM-P07-EQUATOR-ARC",
+GREAT_CIRCLE_IDS = {
     "AOG-LM-P07-GC-Y0",
     "AOG-LM-P07-GC-Y1",
-    "AOG-LM-P07-GC-X1",
     "AOG-LM-P07-GC-YAXIS",
-    "AOG-LM-P07-INFINITY-Y0-Y1",
-    "AOG-LM-P07-UNIT-R1-THETA1",
-    "AOG-LM-P07-INNER-END-DIAGRAM",
-    "AOG-LM-P07-SPIRAL-CENTRELINE",
-    "AOG-LM-P07-THIRTY-DEGREE-ARC",
-    "AOG-LM-P08-HAND-TOP-BOUNDARY",
-    "AOG-LM-P08-HAND-SIDE-BOUNDARY",
+    "AOG-LM-P07-GC-X1",
 }
 
 
@@ -65,128 +60,103 @@ def normalized_protocol() -> str:
     )
 
 
-def test_registry_has_unique_complete_ids() -> None:
-    """The preregistered landmark vocabulary must remain stable."""
+def test_registry_ids_are_unique_and_rim_nodes_are_neutral() -> None:
+    """The six rim nodes must be unique neutral source points."""
     rows = read_registry()
+    ids = [row["landmark_id"] for row in rows]
 
-    ids = [
-        row["landmark_id"]
-        for row in rows
-    ]
-
-    assert len(rows) == len(REQUIRED_IDS)
     assert len(ids) == len(set(ids))
-    assert set(ids) == REQUIRED_IDS
-
-    assert all(
-        row["status"] == "preregistered_not_digitized"
-        for row in rows
-    )
-
-
-def test_registry_separates_fit_partitions() -> None:
-    """Calibration, scale, and holdout objects must stay distinct."""
-    rows = read_registry()
-
-    partitions = {
-        row["fit_partition"]
-        for row in rows
-    }
-
-    assert partitions == REQUIRED_PARTITIONS
+    assert RIM_IDS <= set(ids)
 
     by_id = {
         row["landmark_id"]: row
         for row in rows
     }
 
-    assert (
-        by_id[
-            "AOG-LM-P07-SPIRAL-CENTRELINE"
-        ]["fit_partition"]
-        == "holdout"
-    )
-
-    assert (
-        by_id[
-            "AOG-LM-P07-UNIT-R1-THETA1"
-        ]["fit_partition"]
-        == "scale_calibration"
-    )
-
-    assert (
-        by_id[
-            "AOG-LM-P08-HAND-TOP-BOUNDARY"
-        ]["fit_partition"]
-        == "external_holdout"
-    )
+    for landmark_id in RIM_IDS:
+        assert (
+            "no coordinate-line meaning assigned in advance"
+            in by_id[landmark_id]["geometry_role"]
+            or
+            landmark_id == "AOG-LM-P07-RIM-NODE-LR-SHARED"
+        )
 
 
-def test_protocol_blinds_digitization_from_model_results() -> None:
-    """Landmark selection must precede overlays and fit scores."""
+def test_shared_source_objects_are_not_duplicated() -> None:
+    """The horizon limb and lower-right shared node each occur once."""
+    rows = read_registry()
+    ids = [row["landmark_id"] for row in rows]
+
+    assert ids.count(
+        "AOG-LM-P07-EQUATOR-HORIZON-LIMB"
+    ) == 1
+
+    assert ids.count(
+        "AOG-LM-P07-RIM-NODE-LR-SHARED"
+    ) == 1
+
+    assert "AOG-LM-P07-SPHERE-BOUNDARY" not in ids
+    assert "AOG-LM-P07-EQUATOR-ARC" not in ids
+    assert "AOG-LM-P07-INFINITY-Y0-Y1" not in ids
+
+
+def test_unit_and_inner_endpoint_variants_remain_separate() -> None:
+    """Panel-specific unit markers and endpoints must not merge."""
+    ids = {
+        row["landmark_id"]
+        for row in read_registry()
+    }
+
+    assert {
+        "AOG-LM-P07-FLAT-UNIT-R1-THETA1RAD",
+        "AOG-LM-P07-SPHERE-UNIT-R1-ONEMONTH",
+        "AOG-LM-P07-FLAT-INNER-END",
+        "AOG-LM-P07-SPHERE-INNER-END",
+    } <= ids
+
+
+def test_great_circles_are_later_stage_without_node_assignments() -> None:
+    """Printed great circles stay valid but do not drive pass 1."""
+    by_id = {
+        row["landmark_id"]: row
+        for row in read_registry()
+    }
+
+    for landmark_id in GREAT_CIRCLE_IDS:
+        row = by_id[landmark_id]
+
+        assert row["status"] == "preregistered_later_stage"
+        assert (
+            "no preregistered rim-node assignment"
+            in row["geometry_role"]
+        )
+
+
+def test_thirty_degree_arc_is_explicitly_deferred() -> None:
+    """The ambiguous angular annotation must not enter a blind pass."""
+    by_id = {
+        row["landmark_id"]: row
+        for row in read_registry()
+    }
+
+    row = by_id[
+        "AOG-LM-P07-THIRTY-DEGREE-ARC"
+    ]
+
+    assert row["status"] == "deferred_source_ambiguous"
+    assert "do not digitize" in row["exclusions"]
+
+
+def test_protocol_freezes_neutral_census_and_no_verdict() -> None:
+    """The revised protocol must remain pre-model and source-neutral."""
     text = normalized_protocol()
 
-    assert "no theoretical curve" in text
-    assert "projection overlay" in text
-    assert "self-embedment score may be displayed" in text
+    assert "initial neutral census" in text
+    assert "a sixfold rim arrangement is tested rather than assumed" in text
+    assert "general projective map may preserve incidences without preserving right angles" in text
 
     assert (
-        "point landmarks are clicked twice "
-        "in independent passes"
+        "contains no landmark coordinates, fitted geometry, "
+        "projection verdict, scale selection, or self-embedment result"
         in text
     )
-
-    assert (
-        "moving landmarks after seeing residuals"
-        in text
-    )
-
-
-def test_protocol_freezes_scale_selection_boundary() -> None:
-    """Scale must not be chosen from self-embedment performance."""
-    text = normalized_protocol()
-
-    for scale_id in (
-        "g30",
-        "ghalf",
-        "gunit",
-        "gone",
-    ):
-        assert scale_id in text
-
-    assert (
-        "no scale may be selected using "
-        "s1, s1.5, s2, or the final hand shape"
-        in text
-    )
-
-    assert (
-        "a continuous scale fit may be reported only "
-        "as a sensitivity analysis"
-        in text
-    )
-
-
-def test_protocol_contains_no_coordinates_or_verdict() -> None:
-    """This checkpoint must remain purely preregistrational."""
-    text = normalized_protocol()
-
-    assert (
-        "this protocol contains no landmark coordinates"
-        in text
-    )
-
-    assert "fitted parameters" in text
-    assert "projection verdict" in text
-    assert "scale selection" in text
-    assert "self-embedment result" in text
-
-    assert (
-        "each registered geometric object receives "
-        "equal top-level weight"
-        in text
-    )
-
-    assert "metric-compatible" in text
-    assert "schematic-compatible" in text
-    assert "incompatible" in text

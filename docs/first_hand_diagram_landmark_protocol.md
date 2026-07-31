@@ -1,211 +1,194 @@
 # First Hand diagram landmark and uncertainty protocol
 
-**Version:** v0.8.0 source-image calibration protocol  
-**Status:** preregistered; no landmarks digitized  
-**Primary crops:** `AOG_P07_SPHERICAL_PROJECTION`, `AOG_P08_HAND_VIEWS`
+**Version:** v0.8.0 semantic revision 2  
+**Status:** preregistered; no valid landmark pass files exist  
+**Primary crop:** `AOG_P07_SPHERICAL_PROJECTION`
 
-## Purpose
+## Reason for revision
 
-This protocol freezes which visual features may be measured from the
-published *Arm of God* diagrams, how they are acquired, how uncertainty
-is assigned, and which measurements may calibrate the spherical map.
+The first landmark vocabulary assigned coordinate meanings to particular
+rim nodes before the published curves had been measured. That was too
+strong. The revised protocol separates three evidential layers:
 
-The source drawing is treated as potentially schematic. A close image
-fit is therefore evidence of diagram correspondence, not automatically
-evidence that the underlying physical sculpture has the same geometry.
+1. neutral visible geometry;
+2. printed curve labels and incidences;
+3. later mathematical interpretation.
+
+No rim node is assigned to `x=1`, the y-axis, `y=0`, or `y=1` merely from
+its apparent bearing.
+
+## One source object, one weight
+
+The outer circular limb is explicitly labelled `Equator Great Circle
+(at horizon)`. It is one sampled object serving two semantic roles:
+image-sphere boundary and equator-at-horizon.
+
+The lower-right rim node is likewise one geometric point with several
+source roles: a rim node, the visible meeting point of the labelled
+`y=0` and `y=1` curves, and the visible outer terminus of the thick
+spiral. It is digitized and weighted once.
+
+## Initial neutral census
+
+The first two independent passes contain only rows whose registry status
+is:
+
+```text
+preregistered_not_digitized
+```
+
+These are:
+
+- the equator-at-horizon limb;
+- six neutral rim nodes;
+- the central black reference node;
+- the unlabelled upper interior crossing;
+- the flat-panel unit marker;
+- the spherical-panel unit marker;
+- the flat-panel inner endpoint;
+- and the spherical-panel inner endpoint.
+
+This stage contains no great-circle traces, spiral traces, 30-degree arc,
+or page-8 Hand boundaries.
+
+## Curve-label stage
+
+The four printed great-circle curves are legitimate source objects:
+
+```text
+GC-Y0
+GC-Y1
+GC-YAXIS
+GC-X1
+```
+
+They remain `preregistered_later_stage`.
+
+When activated, the operator follows only the stroke identified by the
+printed label. Expected endpoints are not used to identify the curve.
+Hidden continuations are not invented. The `GC-Y0` trace excludes the
+central region where its stroke is entangled with the annotation arrow
+labelled `r`.
+
+## Unit-angle discrepancy
+
+The flat and spherical panels contain separate unit markers:
+
+```text
+flat panel:
+    r=1
+    theta=1 radian, approximately 57 degrees
+
+spherical panel:
+    r=1
+    theta=1 MONTH, linked in the drawing to approximately 30 degrees
+```
+
+They are separate landmarks. Their disagreement is a result to measure,
+not an ambiguity to average away.
+
+The annotated 30-degree arc remains deferred because its intended
+endpoints are not sufficiently unambiguous in the source image.
+
+## Truncation variants
+
+Two non-equivalent source conventions remain frozen:
+
+```text
+AOG-PROSE:
+    theta_outer -> 0+
+    theta_inner = 3*pi
+
+AOG-DIAGRAM:
+    theta_outer = 1
+    theta_inner = 1 + 3*pi
+```
+
+Both span 1.5 turns, but they define different curve segments and
+different inner endpoint tangents.
+
+The flat-panel inner endpoint represents the diagram convention. The
+spherical-panel inner endpoint is a separate projected holdout.
 
 ## Coordinate convention
 
-Every digitized record uses prepared-crop pixel coordinates:
+Digitization uses prepared-crop pixels:
 
 ```text
 origin:      upper-left
-x:           increases rightward
-y:           increases downward
-units:       pixels in the frozen prepared PNG
-point:       centre of the intended stroke or node
-curve order: explicitly recorded when the source supplies an orientation
+x:           rightward
+y:           downward
+units:       pixels
+point:       visual centre of the intended node or marker
+curve:       middle of the intended stroke
 ```
 
-The exact crop ID and pixel SHA-256 must accompany every digitization.
+Text, arrowheads, leader lines, and labels are never geometry.
 
-## Acquisition rule
+## Blind acquisition
 
-No theoretical curve, fitted great circle, projection overlay, residual,
-or self-embedment score may be displayed while landmarks are selected.
+No theoretical curve, fitted great circle, projective overlay, residual,
+pass comparison, or self-embedment score may be shown while clicking.
 
-Point landmarks are clicked twice in independent passes. Curve objects
-are traced twice independently where practical. The second pass must
-begin from the untouched source crop, not from the first trace.
+Each point receives one click in pass 1 and one independent click in
+pass 2. Curves, when later activated, receive two independent traces.
 
-Text, arrowheads, leader lines, and labels are never treated as geometry.
-Black intersection blobs are used only for registry rows explicitly
-classified as point landmarks.
+Pass 1 must not be plotted, summarized, or inspected before pass 2 is
+complete.
 
-## Uncertainty model
+## Uncertainty
 
-For point landmark clicks `p1` and `p2`, define the stored point as their
-componentwise mean. Its isotropic pixel uncertainty is
+For a point with pass clicks `p1` and `p2`:
 
 ```text
+consensus = (p1 + p2) / 2
+
 sigma_point = max(
-    registry minimum,
-    local visible node/stroke radius,
+    registry floor,
+    local visible node or stroke radius,
     0.5 * ||p1 - p2||
 )
 ```
 
-For curve samples, each vertex receives
+Curve uncertainty is the larger of the registry floor and local
+half-stroke-width.
 
-```text
-sigma_curve = max(
-    registry minimum,
-    local half-stroke-width
-)
-```
+## First computation after consensus
 
-The uncertainty is descriptive rather than a claim of Gaussian image
-noise. Results must be reported both in pixels and normalized by the
-fitted image-sphere radius.
+The neutral-census result is limited to:
 
-A disagreement above 8 px for a point or above 12 px median nearest-curve
-distance for a traced curve triggers manual review and is not silently
-averaged.
+- circle or ellipse fit to the outer limb;
+- rim-node bearings around the fitted centre;
+- regular-sixfold residual as an empirical diagnostic;
+- central-node offset from the fitted centre;
+- upper-crossing location;
+- panel-specific unit-marker positions;
+- and panel-specific inner-endpoint positions.
 
-## Fit partitions
+It computes no projection-map fit, great-circle identity, scale
+selection, S1, S1.5, or S2.
 
-### Calibration
+A sixfold rim arrangement is tested rather than assumed. Even if found,
+it is reported first as a measured source feature, not automatically as
+a unique cuboctahedral interpretation.
 
-The sphere boundary and labelled great-circle scaffold may determine:
+## Later fitting boundary
 
-- image centre and radius or ellipse;
-- global image rotation;
-- visible great-circle planes;
-- central-projective pose;
-- and admissible projective gauge.
+A general projective map may preserve incidences without preserving
+right angles. Therefore apparent 60-degree rim spacing does not by
+itself disprove a labelled coordinate construction.
 
-### Scale calibration
+Possible outcomes include:
 
-The labelled `r=1, theta=1` point and the independent 30-degree arc may
-compare the frozen scale hypotheses:
+- isotropic coordinate chart drawn schematically;
+- non-isotropic projective gauge;
+- alignment to a hexagonal or cuboctahedral scaffold;
+- label or draughting inconsistency.
 
-```text
-G30:    k = tan(30 degrees)
-GHALF:  k = tan(0.5 radians)
-GUNIT:  k = 1
-GONE:   k = tan(1 radian)
-```
+The audit must distinguish these possibilities rather than choosing one
+from visual expectation.
 
-No scale may be selected using S1, S1.5, S2, or the final Hand shape.
+## Scope
 
-### Holdout
-
-The projected spiral centreline and its visible inner endpoint are
-withheld from projective-gauge calibration. They assess whether a map
-fitted to the labelled scaffold also reproduces the published spiral.
-
-### External holdout
-
-The page-8 Hand views are withheld until the spherical map, scale,
-truncation convention, and three-copy construction have all been frozen.
-
-## Weighting rule
-
-Dense tracing must not make one object dominate merely because it has
-more sampled pixels. Each registered geometric object receives equal
-top-level weight. Samples within one object share that object's weight.
-
-Results must also be reported object by object; a single pooled score is
-insufficient.
-
-## Fit hierarchy
-
-1. Fit the visible sphere boundary independently.
-2. Fit the labelled great-circle scaffold and incidence points.
-3. Compare the frozen discrete scale hypotheses using only the
-   scale-calibration landmarks.
-4. Evaluate the projected spiral as a holdout.
-5. Evaluate the page-8 Hand views only after the three-copy region is
-   generated.
-6. Compute no self-embedment predicate during image calibration.
-
-A continuous scale fit may be reported only as a sensitivity analysis
-after the four frozen discrete hypotheses have been evaluated.
-
-## Metrics
-
-Point objects:
-
-```text
-Euclidean pixel residual
-residual / fitted image-sphere radius
-residual / registered sigma
-```
-
-Curve objects:
-
-```text
-symmetric Chamfer distance
-95th-percentile bidirectional distance
-maximum bidirectional distance
-topology and ordering checks where applicable
-```
-
-For thick source strokes, distances are computed to the digitized
-centreline, with the registered stroke uncertainty reported separately.
-
-## Diagram exactness
-
-The audit must test rather than assume whether the drawing is metrically
-consistent. Three outcomes are allowed:
-
-```text
-metric-compatible:
-    one source-constrained map explains the labelled scaffold within
-    digitization uncertainty
-
-schematic-compatible:
-    incidence and topology agree, but metric residuals substantially
-    exceed digitization uncertainty
-
-incompatible:
-    even the labelled incidence structure cannot be reproduced
-```
-
-A schematic-compatible result does not invalidate the underlying
-construction; it means the published drawing cannot uniquely calibrate
-its metric parameters.
-
-## Prohibited choices
-
-The following are not allowed:
-
-- moving landmarks after seeing residuals;
-- choosing a scale because it improves endpoint alignment;
-- fitting the spiral before the scaffold;
-- using the Hand silhouette to tune the spherical map;
-- tracing label leaders as great-circle segments;
-- deleting inconvenient landmarks without a recorded source-quality
-  reason;
-- silently changing from the prose truncation to the diagram truncation.
-
-## Outputs of the later digitization stage
-
-The future digitizer must write:
-
-```text
-data/derived/first_hand_arm_of_god/
-    diagram_landmarks_pass1.csv
-    diagram_landmarks_pass2.csv
-    diagram_landmarks_consensus.csv
-    diagram_landmark_uncertainty.json
-```
-
-Every row must include the crop ID, landmark ID, pass number, sequence
-index, x, y, local stroke-width estimate, operator note, and source-image
-pixel hash.
-
-## Scope boundary
-
-This protocol contains no landmark coordinates, fitted parameters,
+This revised protocol contains no landmark coordinates, fitted geometry,
 projection verdict, scale selection, or self-embedment result.
