@@ -1014,10 +1014,19 @@ def build_expanded_analysis() -> tuple[
                     "coordinate perturbations. It is not a confidence "
                     "interval."
                 ),
+                "compatibility_assessment": (
+                    "compatible with an intended 30-degree construction "
+                    "at the resolution of the hand-drawn source"
+                ),
                 "interpretation_boundary": (
-                    "This direct image-space angle is distinct from "
-                    "the deferred printed 30-degree arc and does not "
-                    "assume an angle-preserving projective map."
+                    "The measured residual is smaller than the linearized "
+                    "coordinate-sensitivity scale. Because the source is "
+                    "hand-drawn and drafting, line-width, scanning, and "
+                    "page-deformation effects are not included in that "
+                    "sensitivity, the result is compatible with an intended "
+                    "30-degree construction. It does not assume an "
+                    "angle-preserving projective map and does not certify "
+                    "an exact 30-degree angle."
                 ),
             },
             "yaxis_two_node_diagnostic": {
@@ -1268,10 +1277,14 @@ def build_report(
             (
                 "The sensitivity is a first-order propagation of the "
                 "protocol point scales, not a confidence interval. The "
-                "angle is an image-space three-node diagnostic and does "
-                "not assume that the eventual projective map preserves "
-                "angles. The ambiguous printed 30-degree arc remains "
-                "deferred."
+                "2.363-degree residual is smaller than the 2.449-degree "
+                "linearized sensitivity scale. Because the source is "
+                "hand-drawn, additional drafting, line-width, scanning, "
+                "and page-deformation effects are not represented by that "
+                "scale. The result is therefore compatible with an intended "
+                "30-degree construction, but it does not certify an exact "
+                "30-degree angle or an angle-preserving projective map. "
+                "The ambiguous printed 30-degree arc remains deferred."
             ),
             "",
             "## Y-axis two-node diagnostic",

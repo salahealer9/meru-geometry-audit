@@ -328,3 +328,43 @@ def test_overlay_renders_from_verified_prepared_crop(
     assert output_path.is_file()
     assert output_path.stat().st_size > 1000
 
+
+def test_report_states_hand_drawn_source_interpretation() -> None:
+    """The result must distinguish compatibility from exactness."""
+    module = load_module()
+
+    analysis, _, _ = (
+        module.build_expanded_analysis()
+    )
+
+    diagnostic = analysis[
+        "incidence_addendum"
+    ][
+        "node_defined_thirty_degree_diagnostic"
+    ]
+
+    assert (
+        diagnostic[
+            "compatibility_assessment"
+        ]
+        == (
+            "compatible with an intended 30-degree construction "
+            "at the resolution of the hand-drawn source"
+        )
+    )
+
+    boundary = diagnostic[
+        "interpretation_boundary"
+    ].lower()
+
+    assert "hand-drawn" in boundary
+    assert "does not certify an exact 30-degree angle" in boundary
+
+    report = module.build_report(
+        analysis
+    ).lower()
+
+    assert "hand-drawn" in report
+    assert "compatible with an intended 30-degree construction" in report
+    assert "does not certify an exact 30-degree angle" in report
+

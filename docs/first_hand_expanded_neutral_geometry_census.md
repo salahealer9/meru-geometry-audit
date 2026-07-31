@@ -142,3 +142,26 @@ S1
 S1.5
 S2
 ```
+
+## Hand-drawn source interpretation
+
+The source panel is a hand-drawn and subsequently reproduced diagram.
+The measured node-defined angle is therefore interpreted at the
+resolution of that source rather than as a machine-drafted exact
+construction.
+
+The measured angle is approximately 27.637 degrees, with a residual of
+approximately -2.363 degrees from 30 degrees. This residual is smaller
+than the approximately 2.449-degree linearized coordinate-sensitivity
+scale.
+
+That sensitivity includes the registered point-coordinate scales but
+does not include all possible hand-drafting, line-width, scanning, or
+page-deformation effects. The result is therefore compatible with an
+intended 30-degree construction, but it does not certify an exact
+30-degree angle.
+
+The very small normalized distance from the fitted limb centre to the
+two-node y-axis direction supports intentional central alignment in the
+drawing. Identification of the complete printed curve as a projected
+great circle remains reserved for the segment-aware curve stage.
