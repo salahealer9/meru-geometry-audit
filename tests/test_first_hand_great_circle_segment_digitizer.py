@@ -296,3 +296,14 @@ def test_script_declares_blind_no_bridge_boundary() -> None:
     assert "separate segment" in text
     assert "projective maps" in text
     assert "self-embedment results" in text
+
+    module = load_module()
+
+    domain_rule = " ".join(
+        module.CURVE_DOMAIN_RULE
+        .lower()
+        .split()
+    )
+
+    assert "outside the equator-at-horizon limb" in domain_rule
+    assert "exterior arrow or label leader" in domain_rule

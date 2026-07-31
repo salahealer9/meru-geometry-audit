@@ -217,3 +217,20 @@ This acquisition stage does not decide whether any printed curve is
 exactly a circle, conic, projected great circle, or image of a particular
 planar coordinate line. It creates the source observations needed for
 those later tests.
+
+## Spherical-panel domain boundary
+
+Only the visible centreline at or inside the outer equator-at-horizon
+limb belongs to the spherical projected-curve observation.
+
+A straight or curved continuation outside that limb which terminates in
+an arrow or supports a text label is an annotation leader and must not
+be digitized, even when it is collinear with the in-sphere curve.
+
+At a filled rim node, stop the curve samples before entering the node
+blob. The separately digitized node landmark supplies the incidence
+location.
+
+For `GC-Y0`, the exterior continuation beyond the lower-right shared
+node is excluded. The three or more interior segments should cover only
+the unambiguous visible portions inside the spherical panel.

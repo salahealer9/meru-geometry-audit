@@ -59,6 +59,23 @@ CURVE_IDS = (
 MINIMUM_POINTS_PER_SEGMENT = 4
 MINIMUM_POINTS_PER_CURVE = 12
 
+CURVE_DOMAIN_RULE = (
+    "Digitize only the visible curve centreline at or inside the "
+    "equator-at-horizon limb. "
+    "Do not digitize any continuation outside the "
+    "equator-at-horizon limb, including an exterior arrow "
+    "or label leader. "
+    "A collinear exterior continuation remains an annotation, "
+    "not part of the spherical curve observation."
+)
+
+CURVE_DOMAIN_RULE = (
+    "Digitize only the visible curve centreline at or inside the "
+    "equator-at-horizon limb. Do not digitize any continuation outside "
+    "the equator-at-horizon limb, including an exterior arrow or label "
+    "leader, even when it is collinear with the in-sphere curve."
+)
+
 CURVE_GUIDANCE = {
     "AOG-LM-P07-GC-Y0": {
         "short_name": "GC-Y0",
@@ -68,7 +85,9 @@ CURVE_GUIDANCE = {
         ),
         "breaks": (
             "Break at the central r-arrow entanglement, filled nodes, "
-            "spiral overlaps, labels, gaps, and uncertain crossings."
+            "spiral overlaps, labels, gaps, and uncertain crossings. "
+            "Stop before the lower-right node blob and exclude the "
+            "exterior arrow or label leader beyond the spherical limb."
         ),
     },
     "AOG-LM-P07-GC-Y1": {
@@ -511,6 +530,9 @@ def capture_curve(
     print(
         "No hidden interpolation: each disconnected visible fragment "
         "must be a separate segment."
+    )
+    print(
+        CURVE_DOMAIN_RULE
     )
 
     while True:
