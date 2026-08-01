@@ -323,3 +323,29 @@ def test_y0_guidance_includes_dashed_backside() -> None:
     assert "regular dash spacing as line style" in rule
     assert "genuine occlusion" in rule
 
+
+
+def test_scaffold_curve_remains_holdout() -> None:
+    """The fifth curve must remain independent of calibration."""
+    module = load_module()
+
+    by_id = {
+        spec.landmark_id: spec
+        for spec in module.read_curve_specs()
+    }
+
+    holdout = by_id[
+        "AOG-LM-P07-GC-SCAFFOLD-UR-UC-X1LL-LL"
+    ]
+
+    assert holdout.fit_partition == "scaffold_holdout"
+
+    assert (
+        "no planar coordinate-line identity assigned in advance"
+        in holdout.geometry_role
+    )
+
+    assert (
+        "do not fit projective map or scale"
+        in holdout.allowed_use
+    )

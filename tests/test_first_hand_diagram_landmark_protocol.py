@@ -160,3 +160,29 @@ def test_protocol_freezes_neutral_census_and_no_verdict() -> None:
         "projection verdict, scale selection, or self-embedment result"
         in text
     )
+
+
+def test_scaffold_curve_is_independent_holdout() -> None:
+    """The added scaffold curve must not become a coordinate constraint."""
+    by_id = {
+        row["landmark_id"]: row
+        for row in read_registry()
+    }
+
+    row = by_id[
+        "AOG-LM-P07-GC-SCAFFOLD-UR-UC-X1LL-LL"
+    ]
+
+    assert row["status"] == "preregistered_later_stage"
+    assert row["object_type"] == "open_curve"
+    assert row["fit_partition"] == "scaffold_holdout"
+
+    assert (
+        "no planar coordinate-line identity assigned in advance"
+        in row["geometry_role"]
+    )
+
+    assert (
+        "do not fit projective map or scale"
+        in row["allowed_use"]
+    )

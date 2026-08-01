@@ -249,3 +249,37 @@ thick reciprocal spiral, a filled node, or another genuine occlusion.
 
 The exterior arrow-bearing continuation beyond the spherical horizon
 remains excluded.
+
+## Unlabelled scaffold holdout addendum
+
+After completion and validation of labelled-curve pass 1, an additional
+internal scaffold curve was recognized in the untouched source panel.
+
+It runs visually from the upper-right rim through the upper interior
+crossing region and the X1-UC-LL incidence region toward the lower-left
+rim.
+
+It is registered as:
+
+```text
+AOG-LM-P07-GC-SCAFFOLD-UR-UC-X1LL-LL
+````
+
+The `GC` designation records a great-circle candidate, not a fitted
+verdict. No planar coordinate-line identity is assigned.
+
+This curve is an independent `scaffold_holdout`. It must not be used to
+fit the projective map, orientation, gauge, or scale.
+
+The previously frozen coordinates of the upper-right rim node, upper
+interior crossing, X1-UC-LL incidence node, and lower-left rim node are
+not displayed during curve acquisition and are not used to guide the
+trace. Their incidence with the fitted holdout curve is reserved for
+post-calibration testing.
+
+Regular printed dash gaps, when present, are treated as line style
+within a visible run. Genuine node, spiral, label, or ambiguous
+occlusions require a new segment.
+
+The equator-at-horizon limb is not reacquired here because it already
+has two independent frozen neutral digitization passes.

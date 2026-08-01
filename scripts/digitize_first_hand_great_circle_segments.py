@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Blind segment-aware digitizer for four First Hand labelled curves.
+"""Blind segment-aware digitizer for four labelled First Hand curves plus one unlabelled scaffold holdout.
 
 Each visible curve fragment receives its own ``segment_id``. The tool
 never joins fragments across node blobs, labels, arrows, spiral
@@ -54,6 +54,7 @@ CURVE_IDS = (
     "AOG-LM-P07-GC-Y1",
     "AOG-LM-P07-GC-YAXIS",
     "AOG-LM-P07-GC-X1",
+    "AOG-LM-P07-GC-SCAFFOLD-UR-UC-X1LL-LL",
 )
 
 MINIMUM_POINTS_PER_SEGMENT = 4
@@ -133,6 +134,21 @@ CURVE_GUIDANCE = {
             "crossings."
         ),
     },
+    "AOG-LM-P07-GC-SCAFFOLD-UR-UC-X1LL-LL": {
+        "short_name": "GC-SCAFFOLD-HOLDOUT",
+        "instruction": (
+            "Trace only clearly visible centreline fragments of the "
+            "unlabelled scaffold curve running from the upper-right "
+            "rim through the upper interior region toward the "
+            "lower-left rim."
+        ),
+        "breaks": (
+            "Break at filled nodes, reciprocal-spiral overlaps, "
+            "labels, gaps, and uncertain crossings. Do not use "
+            "previously digitized node coordinates as guides."
+        ),
+    },
+
 }
 
 
@@ -144,7 +160,7 @@ def output_path_for_pass(pass_number: int) -> Path:
 
 
 def read_curve_specs() -> list[Any]:
-    """Return exactly the four frozen later-stage curve rows."""
+    """Return the four labelled curves and one scaffold holdout."""
     all_specs = core.read_landmark_registry()
     by_id = {spec.landmark_id: spec for spec in all_specs}
 
