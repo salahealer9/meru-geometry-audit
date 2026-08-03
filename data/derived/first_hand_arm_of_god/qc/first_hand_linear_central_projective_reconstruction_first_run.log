@@ -1,0 +1,29 @@
+================================================================================================
+FIRST HAND LINEAR CENTRAL-PROJECTIVE RECONSTRUCTION
+================================================================================================
+G =
+  [0.000628602157, -1.018041679680]
+  [1.000458823865, -0.609568332751]
+det(G): 1.018125605529
+cond(G): 1.815073259
+inverse available: True
+L =
+  [-0.598716238390, -0.982647738582]
+  [0.999917568275, 0.000617411205]
+singular values: 1.335200232564, 0.735617819084
+sigma1/sigma2: 1.815073259408
+------------------------------------------------------------------------------------------------
+eta_x (X1 predicts YAXIS): 30.008196754 deg
+eta_y (Y1 predicts Y0): 0.436938761 deg
+angle(g_x,g_y): 59.052276590 deg
+|90-angle(g_x,g_y)|: 30.947723410 deg
+------------------------------------------------------------------------------------------------
+k_x(center): 0.999541189259
+k_y(center): 0.842755091168
+delta_x(center prediction): 44.986853025 deg
+delta_y(center prediction): 40.122684847 deg
+delta_x(observed line/circle): 52.232240366 deg
+delta_y(observed line/circle): 40.124661708 deg
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_linear_central_projective_reconstruction.json
+Wrote /home/salahealer/meru-geometry-audit/reports/first_hand_linear_central_projective_reconstruction.md
+No curve/refit, unrestricted projective map, spiral projection, or self-embedment score was computed.
