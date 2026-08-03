@@ -4,7 +4,7 @@
 **Question:** Does the printed `x=1` annotation unambiguously designate the
 visible stroke frozen as `AOG-LM-P07-GC-X1`?
 
-**Status:** blank review ledger frozen before focused visual classification.
+**Status:** completed source-semantic visual classification; Question-1 outcome selected before opening Question 2.
 
 ## Evidence boundary
 
@@ -61,27 +61,27 @@ Allowed segment identity classes:
 
 Printed text location:
 
-    [TO FILL]
+    Near the middle-right node of the spherical diagram
 
 Leader / pointer present:
 
-    [TO FILL]
+    Yes — a short line connects the label to the curve
 
 Leader endpoint or apparent target:
 
-    [TO FILL]
+    Points directly to the middle-right node at the outer boundary, endpoint of the frozen X1 stroke
 
 Local stroke identified without geometric inference:
 
-    [TO FILL]
+    The curve immediately below the label — same as the frozen trace
 
 Initial label-to-stroke assessment:
 
-    [TO FILL]
+    CONFIRMED — the label clearly designates the traced stroke
 
 Notes:
 
-    [TO FILL]
+    No ambiguity in the label-to-stroke relationship
 
 ---
 
@@ -103,31 +103,31 @@ Overlay file:
 
 Visible start feature:
 
-    [TO FILL]
+    Middle-left filled node on the horizon limb
 
 Visible end feature:
 
-    [TO FILL]
+    UCLL filled node
 
 Relevant crossings / occlusions:
 
-    [TO FILL]
+    None — stroke is clearly visible between nodes
 
 Continuity classification:
 
-    [TO FILL]
+    VISIBLE_CONTINUATION
 
 Does frozen overlay remain on the source-visible stroke?
 
-    [TO FILL]
+    Yes
 
 Segment identity class:
 
-    [TO FILL]
+    CONFIRMED
 
 Evidence note:
 
-    [TO FILL]
+    The frozen trace follows the visible stroke exactly from the middle-left node to the UCLL node.
 
 ---
 
@@ -148,31 +148,31 @@ Overlay file:
 
 Visible start feature:
 
-    [TO FILL]
+    UCLL filled node
 
 Visible end feature:
 
-    [TO FILL]
+    Intersection with the projected y=0 (x-axis) great circle
 
 Relevant crossings / occlusions:
 
-    [TO FILL]
+    Crosses the y=0 great circle at the end of the segment
 
 Continuity classification:
 
-    [TO FILL]
+    VISIBLE_CONTINUATION
 
 Does frozen overlay remain on the source-visible stroke?
 
-    [TO FILL]
+    Yes
 
 Segment identity class:
 
-    [TO FILL]
+    CONFIRMED
 
 Evidence note:
 
-    [TO FILL]
+    The frozen trace follows the visible stroke from UCLL node to the y=0 crossing. The stroke remains clearly visible throughout.
 
 ---
 
@@ -193,31 +193,31 @@ Overlay file:
 
 Visible start feature:
 
-    [TO FILL]
+    Intersection with the projected y=0 (x-axis) great circle
 
 Visible end feature:
 
-    [TO FILL]
+    Spiral occlusion / UCLR node region (stroke disappears behind the thick spiral)
 
 Relevant crossings / occlusions:
 
-    [TO FILL]
+    Ends at a spiral occlusion — the stroke goes behind the thick spiral
 
 Continuity classification:
 
-    [TO FILL]
+    OCCLUDED_OR_UNRESOLVED
 
 Does frozen overlay remain on the source-visible stroke?
 
-    [TO FILL]
+    Yes — up to the occlusion point
 
 Segment identity class:
 
-    [TO FILL]
+    CONFIRMED
 
 Evidence note:
 
-    [TO FILL]
+    The frozen trace follows the visible stroke from the y=0 crossing to the point where the thick spiral occludes it. The stroke is clearly visible before the occlusion.
 
 ---
 
@@ -238,31 +238,31 @@ Overlay file:
 
 Visible start feature:
 
-    [TO FILL]
+    UCLR node region (resumes after spiral occlusion)
 
 Visible end feature:
 
-    [TO FILL]
+    Printed theta = 1 MONTH annotation region
 
 Relevant crossings / occlusions:
 
-    [TO FILL]
+    Resumes after the spiral occlusion; ends near the annotation text
 
 Continuity classification:
 
-    [TO FILL]
+    VISIBLE_CONTINUATION
 
 Does frozen overlay remain on the source-visible stroke?
 
-    [TO FILL]
+    Yes — the stroke is clearly visible between the UCLR node and the annotation
 
 Segment identity class:
 
-    [TO FILL]
+    CONFIRMED
 
 Evidence note:
 
-    [TO FILL]
+    The frozen trace follows the visible stroke from the UCLR node to the theta = 1 MONTH annotation. The stroke remains clear throughout.
 
 ---
 
@@ -283,31 +283,31 @@ Overlay file:
 
 Visible start feature:
 
-    [TO FILL]
+    Theta = 1 MONTH annotation region
 
 Visible end feature:
 
-    [TO FILL]
+    Middle-right filled node on the horizon limb
 
 Relevant crossings / occlusions:
 
-    [TO FILL]
+    None — stroke remains visible from the annotation to the horizon node
 
 Continuity classification:
 
-    [TO FILL]
+    VISIBLE_CONTINUATION
 
 Does frozen overlay remain on the source-visible stroke?
 
-    [TO FILL]
+    Yes — the stroke is clearly visible and the overlay follows it exactly
 
 Segment identity class:
 
-    [TO FILL]
+    CONFIRMED
 
 Evidence note:
 
-    [TO FILL]
+    The frozen trace follows the visible stroke from the theta = 1 MONTH annotation to the middle-right horizon node. No ambiguity or occlusion.
 
 ---
 
@@ -321,11 +321,11 @@ Boundary feature:
 
 Continuity status:
 
-    [TO FILL]
+    VISIBLE_CONTINUATION
 
 Evidence:
 
-    [TO FILL]
+    The two segments meet at the UCLL filled node. The visible stroke is continuous through the node, and the frozen trace follows it without interruption.
 
 ## S02 -> S03
 
@@ -335,11 +335,11 @@ Boundary feature:
 
 Continuity status:
 
-    [TO FILL]
+    VISIBLE_CONTINUATION
 
 Evidence:
 
-    [TO FILL]
+    The two segments connect at the y=0 great circle crossing. The stroke passes through the intersection and continues clearly on the other side.
 
 ## S03 -> S04
 
@@ -349,11 +349,11 @@ Boundary feature:
 
 Continuity status:
 
-    [TO FILL]
+    OCCLUDED_OR_UNRESOLVED
 
 Evidence:
 
-    [TO FILL]
+    The stroke disappears behind the thick spiral near the UCLR node. S03 ends at the occlusion; S04 resumes after the UCLR node. The spiral and the UCLR node touch each other, so no new segment is possible between the two. The frozen trace does not invent the hidden portion.
 
 ## S04 -> S05
 
@@ -363,11 +363,11 @@ Boundary feature:
 
 Continuity status:
 
-    [TO FILL]
+    VISIBLE_CONTINUATION
 
 Evidence:
 
-    [TO FILL]
+    The stroke passes through the annotation region without interruption. S04 ends near the label; S05 continues from the same visible stroke up to the middle right node.
 
 ---
 
@@ -376,14 +376,14 @@ Evidence:
 Select exactly one only after all five segments and four inter-segment
 boundaries have been reviewed.
 
-    [ ] X1_LABEL_TRACE_CONFIRMED
+    [X] X1_LABEL_TRACE_CONFIRMED
     [ ] X1_LABEL_TRACE_AMBIGUOUS
     [ ] X1_LABEL_TRACE_CONTRADICTED
     [ ] X1_LABEL_NOT_RESOLVABLE
 
 Justification:
 
-    [TO FILL]
+    The printed x=1 label unambiguously designates the source-visible stroke represented by the frozen five-segment X1 trace. Visual inspection of the source-only and overlay crops confirms that the label's leader identifies this stroke and that every frozen segment remains on it wherever the stroke is visible. The S01→S02, S02→S03, and S04→S05 boundaries are visibly continuous. At S03→S04, the stroke is hidden by the thick spiral / UCLR region, so continuity through the hidden interval is not directly observed; the frozen acquisition appropriately stops before the occlusion and resumes only where the stroke becomes visible again. No source-visible alternative branch is indicated at any reviewed visible crossing.
 
 ## Interpretation boundary
 
