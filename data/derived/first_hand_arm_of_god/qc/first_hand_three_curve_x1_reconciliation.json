@@ -1,0 +1,154 @@
+{
+  "analysis_class": "deterministic_post_hoc_three_curve_x1_reconciliation",
+  "analysis_status": "post_hoc_coordinate_consistency_diagnostic",
+  "anisotropic_scale_reconciliation": {
+    "branch_selection_claimed": false,
+    "branches": {
+      "minus_frozen_yaxis_normal": {
+        "A": -0.6124623359884368,
+        "B": 0.7069445112615022,
+        "horizontal_dot_observed_x1_with_yaxis_direction": -0.6124623359884368,
+        "limit_r_to_infinity_plane_angle_deg": 52.23224036628167,
+        "limit_r_to_zero_plane_angle_deg": 45.01314697527861,
+        "maximum_absolute_plane_correlation": 0.7069445112615022,
+        "minimum_x1_plane_angle_residual_deg": 45.01314697527861,
+        "optimal_k_x": null,
+        "optimal_r_x": null,
+        "optimum_class": "LIMIT_R_TO_ZERO",
+        "sign": -1
+      },
+      "plus_frozen_yaxis_normal": {
+        "A": 0.6124623359884368,
+        "B": 0.7069445112615022,
+        "horizontal_dot_observed_x1_with_yaxis_direction": -0.6124623359884368,
+        "limit_r_to_infinity_plane_angle_deg": 52.23224036628167,
+        "limit_r_to_zero_plane_angle_deg": 45.01314697527861,
+        "maximum_absolute_plane_correlation": 0.9353505519361054,
+        "minimum_x1_plane_angle_residual_deg": 20.715146971088032,
+        "optimal_k_x": 1.154266098862362,
+        "optimal_r_x": 0.8663513560569736,
+        "optimum_class": "FINITE_INTERIOR",
+        "sign": 1
+      }
+    },
+    "horizontal_direction_frozen_from": "AOG-LM-P07-GC-YAXIS",
+    "minimum_over_both_unoriented_sign_branches_deg": 20.715146971088032,
+    "optimizer_used": false,
+    "parameter": "r_x > 0 with k_x = 1/r_x"
+  },
+  "checkpoint": "first_hand_three_curve_x1_reconciliation_v0.8",
+  "construction_partition": {
+    "finite_offset_magnitude_input": "AOG-LM-P07-GC-Y1",
+    "scaffold_used": false,
+    "x1_used_as_isotropic_holdout": true,
+    "x1_used_as_post_hoc_anisotropic_residual_target": true,
+    "x1_used_to_construct_isotropic_candidate": false,
+    "x_direction_input": "AOG-LM-P07-GC-YAXIS",
+    "y_zero_line_context": "AOG-LM-P07-GC-Y0"
+  },
+  "frozen_coordinate_context": {
+    "delta_x_deg": 52.23224036628167,
+    "delta_y_deg": 40.12466170797136,
+    "k_x_prior_descriptor": 1.2906912375597608,
+    "k_y_prior_descriptor": 0.842814100705873
+  },
+  "interpretation_boundary": "The isotropic candidate is an explicitly post-hoc three-curve prediction with two mandatory orientation branches. The anisotropic analysis asks only whether x-scale freedom can reconcile the source-confirmed X1 stroke with the frozen YAXIS-derived x-family direction. The analytic minimum is geometrically related to earlier x-family directional diagnostics and is not independent statistical evidence. No cause of any residual incompatibility is inferred.",
+  "isotropic_three_curve_candidate": {
+    "branches": {
+      "minus_frozen_yaxis_normal": {
+        "g_x": [
+          0.592793451591981,
+          -1.0278999647859033
+        ],
+        "predicted_circle_center_u": 0.592793451591981,
+        "predicted_circle_center_v": -1.0278999647859033,
+        "predicted_unit_plane_normal": [
+          -0.3820117683176848,
+          0.6624059057113589,
+          0.644426430979914
+        ],
+        "sign": -1,
+        "x1_circle_center_displacement": 2.1130306633846847,
+        "x1_plane_angle_residual_deg": 89.2691387107352
+      },
+      "plus_frozen_yaxis_normal": {
+        "g_x": [
+          -0.592793451591981,
+          1.0278999647859033
+        ],
+        "predicted_circle_center_u": -0.592793451591981,
+        "predicted_circle_center_v": 1.0278999647859033,
+        "predicted_unit_plane_normal": [
+          0.3820117683176848,
+          -0.6624059057113589,
+          0.644426430979914
+        ],
+        "sign": 1,
+        "x1_circle_center_displacement": 0.594056184287893,
+        "x1_plane_angle_residual_deg": 22.496479193791075
+      }
+    },
+    "k_y": 0.8427550911677107,
+    "r_y": 1.1865843475527542,
+    "u_x_from_frozen_yaxis": [
+      -0.49957969934002194,
+      0.8662679285344306
+    ]
+  },
+  "observed_x1": {
+    "normalized_circle_center_u": 0.0006286021569952505,
+    "normalized_circle_center_v": 1.0004588238650503,
+    "unit_plane_normal": [
+      -0.0004443868446549334,
+      -0.7072688742745352,
+      0.7069445112615022
+    ]
+  },
+  "provenance": {
+    "plane_result_path": "data/derived/first_hand_arm_of_god/qc/first_hand_stereographic_plane_angles.json",
+    "plane_result_sha256": "5a4ac4d289c7f47847e6eb37a41467c632eb63c57b592b96f714458fb1916597",
+    "protocol_path": "docs/first_hand_three_curve_x1_reconciliation_protocol.md",
+    "protocol_sha256": "794f23d9a8e7a240879472e9c28085404c9e16fcb3a982e86fb56a1986a2fd23",
+    "question1_ledger_path": "reports/first_hand_x1_source_semantic_question1_ledger.md",
+    "question1_ledger_sha256": "26b77c9e16f5186cc9d263313a4d88d6490a3e55a748e4773d1cd4b4eae58235",
+    "question2_ledger_path": "reports/first_hand_x1_source_semantic_question2_ledger.md",
+    "question2_ledger_sha256": "3e49fe36f81e8edc5320b9fefccdc0ae4fa48a4731a398b90765702eac3acf6b"
+  },
+  "rendering_closure_context": {
+    "AOG-LM-P07-GC-X1": {
+      "delta_R_px": -0.5342697559333942,
+      "delta_antipodal_deg": 0.1788411052144454,
+      "epsilon_power": -0.0031227976297902764
+    },
+    "AOG-LM-P07-GC-Y1": {
+      "delta_R_px": -8.743111375754154,
+      "delta_antipodal_deg": 2.438130126947101,
+      "epsilon_power": -0.05048938675863168
+    }
+  },
+  "scope": {
+    "circle_refits": 0,
+    "construction_scale_candidate_selected": false,
+    "curve_refits": 0,
+    "general_2x2_refit": false,
+    "general_3x3_fit": false,
+    "line_refits": 0,
+    "nonlinear_fit": false,
+    "optimizer_calls": 0,
+    "s1_5_computed": false,
+    "s1_computed": false,
+    "s2_computed": false,
+    "spiral_projection_computed": false,
+    "x1_reclassified_as_scaffold": false
+  },
+  "source_semantic_prerequisites": {
+    "x1_label_trace_outcome": "X1_LABEL_TRACE_CONFIRMED",
+    "x1_scaffold_role_outcome": "SCAFFOLD_ROLE_NOT_SUPPORTED_BY_SOURCE"
+  },
+  "sweep_specification": {
+    "log10_k_max": 3.0,
+    "log10_k_min": -3.0,
+    "points": 1201,
+    "primary_minimum_determined_by_sweep": false
+  }
+}
