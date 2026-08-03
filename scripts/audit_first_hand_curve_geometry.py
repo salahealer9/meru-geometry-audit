@@ -403,45 +403,294 @@ def fit_circle(
     sample_sets: Sequence[ResampledCurve],
     limb_radius_px: float,
 ) -> dict[str, Any]:
-    """Weighted geometric circle fit."""
-    points, sigma, weights = combined_points(sample_sets)
-    center0 = np.sum(points * weights[:, None], axis=0)
-    radius0 = float(
-        np.sum(weights * np.linalg.norm(points - center0, axis=1))
+    """Weighted geometric circle fit with normalized numerical coordinates.
+
+    The scientific objective remains the weighted exact radial residual.
+    Coordinate normalization and the weighted algebraic circle are used
+    only to make the nonlinear optimization numerically well conditioned.
+    """
+    points, sigma, weights = combined_points(
+        sample_sets
     )
 
-    def objective(parameters: np.ndarray) -> np.ndarray:
-        cx, cy, log_r = parameters
-        radius = math.exp(float(log_r))
-        radial = np.linalg.norm(
-            points - np.asarray([cx, cy], dtype=np.float64), axis=1
+    origin = np.sum(
+        points
+        * weights[:, None],
+        axis=0,
+    )
+
+    centered = (
+        points
+        - origin
+    )
+
+    normalization_scale = float(
+        np.sqrt(
+            np.sum(
+                weights
+                * np.sum(
+                    centered
+                    * centered,
+                    axis=1,
+                )
+            )
         )
-        return (radial - radius) * np.sqrt(weights)
+    )
+
+    if not (
+        math.isfinite(
+            normalization_scale
+        )
+        and normalization_scale > 1.0e-12
+    ):
+        raise RuntimeError(
+            "Circle fit has insufficient geometric spread."
+        )
+
+    normalized = (
+        centered
+        / normalization_scale
+    )
+
+    x = normalized[:, 0]
+    y = normalized[:, 1]
+
+    # Weighted algebraic circle seed:
+    #
+    # x^2 + y^2 =
+    #     2*cx*x + 2*cy*y + q
+    #
+    # with
+    #
+    # r^2 = q + cx^2 + cy^2.
+    design = np.column_stack(
+        (
+            2.0 * x,
+            2.0 * y,
+            np.ones_like(x),
+        )
+    )
+
+    target = (
+        x * x
+        + y * y
+    )
+
+    sqrt_weights = np.sqrt(
+        weights
+    )
+
+    solution, _, rank, _ = (
+        np.linalg.lstsq(
+            design
+            * sqrt_weights[:, None],
+            target
+            * sqrt_weights,
+            rcond=None,
+        )
+    )
+
+    seed_kind = (
+        "weighted_algebraic_circle"
+    )
+
+    center_x0 = float(
+        solution[0]
+    )
+    center_y0 = float(
+        solution[1]
+    )
+
+    radius_squared0 = float(
+        solution[2]
+        + center_x0 * center_x0
+        + center_y0 * center_y0
+    )
+
+    if (
+        rank < 3
+        or not math.isfinite(
+            radius_squared0
+        )
+        or radius_squared0 <= 0.0
+    ):
+        # Deterministic numerical fallback only.
+        # This does not alter the objective being minimized.
+        center_x0 = 0.0
+        center_y0 = 0.0
+
+        radius0 = float(
+            np.sum(
+                weights
+                * np.linalg.norm(
+                    normalized,
+                    axis=1,
+                )
+            )
+        )
+
+        seed_kind = (
+            "weighted_centroid_fallback"
+        )
+    else:
+        radius0 = math.sqrt(
+            radius_squared0
+        )
+
+    if not (
+        math.isfinite(
+            radius0
+        )
+        and radius0 > 0.0
+    ):
+        raise RuntimeError(
+            "Circle fit produced an invalid initial radius."
+        )
+
+    def objective(
+        parameters: np.ndarray,
+    ) -> np.ndarray:
+        center_x = float(
+            parameters[0]
+        )
+        center_y = float(
+            parameters[1]
+        )
+        radius = float(
+            parameters[2]
+        )
+
+        radial = np.linalg.norm(
+            normalized
+            - np.asarray(
+                [
+                    center_x,
+                    center_y,
+                ],
+                dtype=np.float64,
+            ),
+            axis=1,
+        )
+
+        return (
+            radial
+            - radius
+        ) * sqrt_weights
 
     result = least_squares(
         objective,
-        np.asarray([center0[0], center0[1], math.log(radius0)]),
+        np.asarray(
+            [
+                center_x0,
+                center_y0,
+                radius0,
+            ],
+            dtype=np.float64,
+        ),
+        bounds=(
+            np.asarray(
+                [
+                    -np.inf,
+                    -np.inf,
+                    1.0e-12,
+                ],
+                dtype=np.float64,
+            ),
+            np.asarray(
+                [
+                    np.inf,
+                    np.inf,
+                    np.inf,
+                ],
+                dtype=np.float64,
+            ),
+        ),
         method="trf",
-        max_nfev=5000,
-        xtol=1.0e-12,
-        ftol=1.0e-12,
-        gtol=1.0e-12,
+        x_scale="jac",
+        max_nfev=20000,
+        xtol=1.0e-10,
+        ftol=1.0e-10,
+        gtol=1.0e-10,
     )
-    if not result.success:
-        raise RuntimeError("Circle fit failed: " + result.message)
 
-    cx = float(result.x[0])
-    cy = float(result.x[1])
-    radius = math.exp(float(result.x[2]))
-    residual = np.linalg.norm(points - np.asarray([cx, cy]), axis=1) - radius
+    if not result.success:
+        raise RuntimeError(
+            "Circle fit failed after normalized geometric "
+            "optimization: "
+            f"{result.message}; "
+            f"nfev={result.nfev}; "
+            f"optimality={result.optimality:.6e}"
+        )
+
+    center_normalized = np.asarray(
+        [
+            result.x[0],
+            result.x[1],
+        ],
+        dtype=np.float64,
+    )
+
+    center = (
+        origin
+        + normalization_scale
+        * center_normalized
+    )
+
+    radius = float(
+        normalization_scale
+        * result.x[2]
+    )
+
+    residual = (
+        np.linalg.norm(
+            points
+            - center,
+            axis=1,
+        )
+        - radius
+    )
 
     return {
         "model": "circle",
-        "center_x_px": cx,
-        "center_y_px": cy,
+        "center_x_px": float(
+            center[0]
+        ),
+        "center_y_px": float(
+            center[1]
+        ),
         "radius_px": radius,
-        "residual_definition": "signed exact radial circle residual",
-        "residuals": residual_summary(residual, sigma, weights, limb_radius_px),
+        "residual_definition": (
+            "signed exact radial circle residual"
+        ),
+        "solver": {
+            "objective": (
+                "equal-pass arc-length-weighted geometric "
+                "radial least squares"
+            ),
+            "coordinate_normalization": (
+                "weighted-centroid translation and weighted "
+                "RMS radial scale"
+            ),
+            "initialization": seed_kind,
+            "algebraic_seed_rank": int(
+                rank
+            ),
+            "success": bool(
+                result.success
+            ),
+            "nfev": int(
+                result.nfev
+            ),
+            "optimality": float(
+                result.optimality
+            ),
+        },
+        "residuals": residual_summary(
+            residual,
+            sigma,
+            weights,
+            limb_radius_px,
+        ),
     }
 
 
@@ -499,36 +748,121 @@ def fit_ellipse(
             * np.sqrt(weights)
         )
 
+    lower = np.asarray(
+        [
+            np.min(points[:, 0])
+            - 10.0 * span,
+            np.min(points[:, 1])
+            - 10.0 * span,
+            math.log(
+                min_axis
+            ),
+            math.log(
+                min_axis
+            ),
+            -math.pi,
+        ],
+        dtype=np.float64,
+    )
+
+    upper = np.asarray(
+        [
+            np.max(points[:, 0])
+            + 10.0 * span,
+            np.max(points[:, 1])
+            + 10.0 * span,
+            math.log(
+                max_axis
+            ),
+            math.log(
+                max_axis
+            ),
+            math.pi,
+        ],
+        dtype=np.float64,
+    )
+
+    # The circle fit is only an ellipse solver seed.
+    # Clip it strictly inside the already-frozen ellipse
+    # admissible bounds; this does not change those bounds.
+    center_x0 = float(
+        np.clip(
+            cx0,
+            lower[0]
+            + 1.0e-9,
+            upper[0]
+            - 1.0e-9,
+        )
+    )
+
+    center_y0 = float(
+        np.clip(
+            cy0,
+            lower[1]
+            + 1.0e-9,
+            upper[1]
+            - 1.0e-9,
+        )
+    )
+
+    semi_major0 = float(
+        np.clip(
+            1.02 * r0,
+            min_axis
+            * (
+                1.0
+                + 1.0e-9
+            ),
+            max_axis
+            * (
+                1.0
+                - 1.0e-9
+            ),
+        )
+    )
+
+    semi_minor0 = float(
+        np.clip(
+            0.98 * r0,
+            min_axis
+            * (
+                1.0
+                + 1.0e-9
+            ),
+            max_axis
+            * (
+                1.0
+                - 1.0e-9
+            ),
+        )
+    )
+
     result = least_squares(
         objective,
         np.asarray(
-            [cx0, cy0, math.log(1.02 * r0), math.log(0.98 * r0), angle0]
+            [
+                center_x0,
+                center_y0,
+                math.log(
+                    semi_major0
+                ),
+                math.log(
+                    semi_minor0
+                ),
+                angle0,
+            ],
+            dtype=np.float64,
         ),
         bounds=(
-            np.asarray(
-                [
-                    np.min(points[:, 0]) - 10.0 * span,
-                    np.min(points[:, 1]) - 10.0 * span,
-                    math.log(min_axis),
-                    math.log(min_axis),
-                    -math.pi,
-                ]
-            ),
-            np.asarray(
-                [
-                    np.max(points[:, 0]) + 10.0 * span,
-                    np.max(points[:, 1]) + 10.0 * span,
-                    math.log(max_axis),
-                    math.log(max_axis),
-                    math.pi,
-                ]
-            ),
+            lower,
+            upper,
         ),
         method="trf",
-        max_nfev=10000,
-        xtol=1.0e-12,
-        ftol=1.0e-12,
-        gtol=1.0e-12,
+        x_scale="jac",
+        max_nfev=20000,
+        xtol=1.0e-10,
+        ftol=1.0e-10,
+        gtol=1.0e-10,
     )
     if not result.success:
         raise RuntimeError("Ellipse fit failed: " + result.message)

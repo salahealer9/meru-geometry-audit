@@ -285,3 +285,184 @@ def test_frozen_limb_reference_interface() -> None:
             "radius_px"
         ] > 0.0
     )
+
+
+def test_circle_fit_converges_on_shallow_large_radius_arc() -> None:
+    """A shallow arc must not fail solely because its centre is remote."""
+    module = load_module()
+
+    radius = 10000.0
+    center_x = 1000.0
+    center_y = 2000.0
+
+    theta = np.linspace(
+        -0.03,
+        0.03,
+        301,
+    )
+
+    points = np.column_stack(
+        (
+            center_x
+            + radius
+            * np.cos(
+                theta
+            ),
+            center_y
+            + radius
+            * np.sin(
+                theta
+            ),
+        )
+    )
+
+    sample = module.ResampledCurve(
+        points=points,
+        sigma_px=np.full(
+            len(points),
+            2.0,
+        ),
+        weights=np.full(
+            len(points),
+            1.0
+            / len(points),
+        ),
+        total_arc_length_px=600.0,
+        segment_count=1,
+    )
+
+    result = module.fit_circle(
+        [
+            sample
+        ],
+        limb_radius_px=500.0,
+    )
+
+    assert result[
+        "solver"
+    ][
+        "success"
+    ]
+
+    assert math.isclose(
+        result[
+            "center_x_px"
+        ],
+        center_x,
+        abs_tol=1.0e-5,
+    )
+
+    assert math.isclose(
+        result[
+            "center_y_px"
+        ],
+        center_y,
+        abs_tol=1.0e-5,
+    )
+
+    assert math.isclose(
+        result[
+            "radius_px"
+        ],
+        radius,
+        rel_tol=1.0e-8,
+    )
+
+    assert (
+        result[
+            "residuals"
+        ][
+            "absolute_px"
+        ][
+            "rms"
+        ]
+        < 1.0e-6
+    )
+
+
+def test_circle_fit_is_stable_under_large_image_translation() -> None:
+    """Pixel-coordinate magnitude must not control convergence."""
+    module = load_module()
+
+    center_x = 1000000.0
+    center_y = -2000000.0
+    radius = 500000.0
+
+    theta = np.linspace(
+        0.0,
+        2.0
+        * math.pi,
+        240,
+        endpoint=False,
+    )
+
+    points = np.column_stack(
+        (
+            center_x
+            + radius
+            * np.cos(
+                theta
+            ),
+            center_y
+            + radius
+            * np.sin(
+                theta
+            ),
+        )
+    )
+
+    sample = module.ResampledCurve(
+        points=points,
+        sigma_px=np.full(
+            len(points),
+            2.0,
+        ),
+        weights=np.full(
+            len(points),
+            1.0
+            / len(points),
+        ),
+        total_arc_length_px=(
+            2.0
+            * math.pi
+            * radius
+        ),
+        segment_count=1,
+    )
+
+    result = module.fit_circle(
+        [
+            sample
+        ],
+        limb_radius_px=500.0,
+    )
+
+    assert result[
+        "solver"
+    ][
+        "success"
+    ]
+
+    assert math.isclose(
+        result[
+            "center_x_px"
+        ],
+        center_x,
+        abs_tol=1.0e-4,
+    )
+
+    assert math.isclose(
+        result[
+            "center_y_px"
+        ],
+        center_y,
+        abs_tol=1.0e-4,
+    )
+
+    assert math.isclose(
+        result[
+            "radius_px"
+        ],
+        radius,
+        rel_tol=1.0e-10,
+    )
