@@ -1,0 +1,821 @@
+{
+  "analysis_class": "post_hoc_model_neutral_morphology_census",
+  "checkpoint": "first_hand_curve_morphology_census_v0.8",
+  "curves": {
+    "AOG-LM-P07-GC-SCAFFOLD-UR-UC-X1LL-LL": {
+      "analysis_partition": "independent_scaffold_holdout",
+      "circle": {
+        "center_x_px": 1576.3337806849624,
+        "center_y_px": 875.469083931186,
+        "model": "circle",
+        "radius_px": 502.057295230344,
+        "residual_definition": "signed exact radial circle residual",
+        "residuals": {
+          "absolute_over_limb_radius": {
+            "maximum": 0.006971801835072931,
+            "median": 0.0022093133040796335,
+            "p95": 0.0046058085372309935,
+            "rms": 0.002648575246226755
+          },
+          "absolute_over_source_sigma": {
+            "maximum": 0.7945680049904619,
+            "median": 0.25179282285252685,
+            "p95": 0.5249185486577138,
+            "rms": 0.30185498659393545
+          },
+          "absolute_px": {
+            "maximum": 2.3837040149713857,
+            "median": 0.7553784685575806,
+            "p95": 1.5747556459731413,
+            "rms": 0.9055649597818063
+          }
+        },
+        "solver": {
+          "algebraic_seed_rank": 3,
+          "coordinate_normalization": "weighted-centroid translation and weighted RMS radial scale",
+          "initialization": "weighted_algebraic_circle",
+          "nfev": 3,
+          "objective": "equal-pass arc-length-weighted geometric radial least squares",
+          "optimality": 2.5276704330974505e-11,
+          "success": true
+        }
+      },
+      "descriptive_comparison": {
+        "circle_minus_ellipse_rms_px": 0.08692202897970303,
+        "circle_radius_over_frozen_limb_radius": 1.4684054522770444,
+        "circle_radius_px": 502.057295230344,
+        "circle_rms_px": 0.9055649597818063,
+        "ellipse_axis_ratio_minor_over_major": 0.9131356616562377,
+        "ellipse_rms_px": 0.8186429308021033,
+        "frozen_limb_radius_px": 341.906449919406,
+        "line_minus_circle_rms_px": 37.9946681200955,
+        "line_over_circle_rms": 42.956866494978144,
+        "line_rms_px": 38.9002330798773
+      },
+      "ellipse": {
+        "angle_degrees": 38.586357240933275,
+        "angle_radians": 0.6734589802050406,
+        "axis_ratio_minor_over_major": 0.9131356616562377,
+        "center_x_px": 1643.5936038633754,
+        "center_y_px": 928.7569658477883,
+        "model": "ellipse",
+        "residual_definition": "signed center-radial image-space residual; not an orthogonal-distance or great-circle claim",
+        "residuals": {
+          "absolute_over_limb_radius": {
+            "maximum": 0.005726932904369104,
+            "median": 0.002053494111359492,
+            "p95": 0.004000531703682558,
+            "rms": 0.0023943477258035737
+          },
+          "absolute_over_source_sigma": {
+            "maximum": 0.652691766086491,
+            "median": 0.23403429384844307,
+            "p95": 0.4559358641987122,
+            "rms": 0.2728809769340344
+          },
+          "absolute_px": {
+            "maximum": 1.9580752982594731,
+            "median": 0.7021028815453292,
+            "p95": 1.3678075925961366,
+            "rms": 0.8186429308021033
+          }
+        },
+        "semi_major_px": 588.2813517472898,
+        "semi_minor_px": 537.1806813677874
+      },
+      "line": {
+        "center_x_px": 1175.7558026900701,
+        "center_y_px": 652.3600896951547,
+        "direction_x": 0.49317674106011117,
+        "direction_y": -0.8699291362388826,
+        "model": "orthogonal_line",
+        "residual_definition": "signed orthogonal image-space distance to weighted TLS line",
+        "residuals": {
+          "absolute_over_limb_radius": {
+            "maximum": 0.2405548190664661,
+            "median": 0.10182915597863877,
+            "p95": 0.20556332908489694,
+            "rms": 0.11377449325406656
+          },
+          "absolute_over_source_sigma": {
+            "maximum": 27.415748066006824,
+            "median": 11.60534840631528,
+            "p95": 23.427809360343897,
+            "rms": 12.966744359959101
+          },
+          "absolute_px": {
+            "maximum": 82.24724419802047,
+            "median": 34.81604521894584,
+            "p95": 70.28342808103169,
+            "rms": 38.9002330798773
+          }
+        },
+        "unoriented_bearing_deg": 119.54959428081312,
+        "weighted_covariance_eigenvalues": [
+          1513.2281336687802,
+          40308.779844756304
+        ]
+      },
+      "sampling_sensitivity": {
+        "1.0": {
+          "circle_absolute_px": {
+            "maximum": 2.383813933816157,
+            "median": 0.7501938359692986,
+            "p95": 1.572060972983195,
+            "rms": 0.905754153568121
+          },
+          "ellipse_absolute_px": {
+            "maximum": 1.9910613706271079,
+            "median": 0.6937278157273568,
+            "p95": 1.368173571391253,
+            "rms": 0.8188934222160112
+          },
+          "line_absolute_px": {
+            "maximum": 82.24812366366653,
+            "median": 34.95484963649755,
+            "p95": 70.36479746430315,
+            "rms": 38.8992867101379
+          }
+        },
+        "4.0": {
+          "circle_absolute_px": {
+            "maximum": 2.3840571092367213,
+            "median": 0.7599190752460458,
+            "p95": 1.5942139290953605,
+            "rms": 0.9054679228184894
+          },
+          "ellipse_absolute_px": {
+            "maximum": 1.9579154945041637,
+            "median": 0.7011692776912923,
+            "p95": 1.3668720495045363,
+            "rms": 0.8184882114035726
+          },
+          "line_absolute_px": {
+            "maximum": 82.24496848442635,
+            "median": 34.92454759670491,
+            "p95": 70.28287615080731,
+            "rms": 38.90373618306381
+          }
+        }
+      }
+    },
+    "AOG-LM-P07-GC-X1": {
+      "analysis_partition": "calibration_labelled_curve",
+      "circle": {
+        "center_x_px": 1255.3417618875174,
+        "center_y_px": 352.5394567452774,
+        "model": "circle",
+        "radius_px": 483.26217493838544,
+        "residual_definition": "signed exact radial circle residual",
+        "residuals": {
+          "absolute_over_limb_radius": {
+            "maximum": 0.009323889575878569,
+            "median": 0.0017145379163152246,
+            "p95": 0.006860615305648955,
+            "rms": 0.0029933428518951416
+          },
+          "absolute_over_source_sigma": {
+            "maximum": 1.0626326614430657,
+            "median": 0.195403857406518,
+            "p95": 0.7818962078057249,
+            "rms": 0.3411477426276994
+          },
+          "absolute_px": {
+            "maximum": 3.1878979843291972,
+            "median": 0.586211572219554,
+            "p95": 2.3456886234171748,
+            "rms": 1.0234432278830983
+          }
+        },
+        "solver": {
+          "algebraic_seed_rank": 3,
+          "coordinate_normalization": "weighted-centroid translation and weighted RMS radial scale",
+          "initialization": "weighted_algebraic_circle",
+          "nfev": 3,
+          "objective": "equal-pass arc-length-weighted geometric radial least squares",
+          "optimality": 2.7063747121620397e-11,
+          "success": true
+        }
+      },
+      "descriptive_comparison": {
+        "circle_minus_ellipse_rms_px": 0.10233258589884564,
+        "circle_radius_over_frozen_limb_radius": 1.4134339233796256,
+        "circle_radius_px": 483.26217493838544,
+        "circle_rms_px": 1.0234432278830983,
+        "ellipse_axis_ratio_minor_over_major": 0.9642792133504541,
+        "ellipse_rms_px": 0.9211106419842526,
+        "frozen_limb_radius_px": 341.906449919406,
+        "line_minus_circle_rms_px": 41.28298174491914,
+        "line_over_circle_rms": 41.33734419280817,
+        "line_rms_px": 42.30642497280224
+      },
+      "ellipse": {
+        "angle_degrees": 30.61079504857808,
+        "angle_radians": 0.5342591602508651,
+        "axis_ratio_minor_over_major": 0.9642792133504541,
+        "center_x_px": 1242.8805014205936,
+        "center_y_px": 367.19370669345307,
+        "model": "ellipse",
+        "residual_definition": "signed center-radial image-space residual; not an orthogonal-distance or great-circle claim",
+        "residuals": {
+          "absolute_over_limb_radius": {
+            "maximum": 0.010964816274037018,
+            "median": 0.0016510140481355705,
+            "p95": 0.00573756015359072,
+            "rms": 0.002694042894485835
+          },
+          "absolute_over_source_sigma": {
+            "maximum": 1.2496471354248417,
+            "median": 0.18816411732170005,
+            "p95": 0.6539029411044149,
+            "rms": 0.30703688066141754
+          },
+          "absolute_px": {
+            "maximum": 3.7489414062745254,
+            "median": 0.5644923519651002,
+            "p95": 1.961708823313245,
+            "rms": 0.9211106419842526
+          }
+        },
+        "semi_major_px": 481.31663796292526,
+        "semi_minor_px": 464.1236290273749
+      },
+      "line": {
+        "center_x_px": 1222.350923034943,
+        "center_y_px": 791.8975122266122,
+        "direction_x": 0.9997650183048953,
+        "direction_y": 0.021677365472132837,
+        "model": "orthogonal_line",
+        "residual_definition": "signed orthogonal image-space distance to weighted TLS line",
+        "residuals": {
+          "absolute_over_limb_radius": {
+            "maximum": 0.2666413850713845,
+            "median": 0.11149307279524025,
+            "p95": 0.2260424601629661,
+            "rms": 0.1237368437558715
+          },
+          "absolute_over_source_sigma": {
+            "maximum": 30.388803123783457,
+            "median": 12.706733570008831,
+            "p95": 25.761791695122835,
+            "rms": 14.102141657600747
+          },
+          "absolute_px": {
+            "maximum": 91.16640937135037,
+            "median": 38.120200710026495,
+            "p95": 77.2853750853685,
+            "rms": 42.30642497280224
+          }
+        },
+        "unoriented_bearing_deg": 1.242118845770664,
+        "weighted_covariance_eigenvalues": [
+          1789.833593979345,
+          37629.64720371033
+        ]
+      },
+      "sampling_sensitivity": {
+        "1.0": {
+          "circle_absolute_px": {
+            "maximum": 3.1879229967205447,
+            "median": 0.5849099655102918,
+            "p95": 2.3545642787363477,
+            "rms": 1.0233258980293531
+          },
+          "ellipse_absolute_px": {
+            "maximum": 3.7495552385116753,
+            "median": 0.5639424524421202,
+            "p95": 1.953337649752882,
+            "rms": 0.9206499376182893
+          },
+          "line_absolute_px": {
+            "maximum": 91.16678606705396,
+            "median": 38.096546411798556,
+            "p95": 77.0539157394745,
+            "rms": 42.30544818765
+          }
+        },
+        "4.0": {
+          "circle_absolute_px": {
+            "maximum": 3.18651975563688,
+            "median": 0.6005910271844073,
+            "p95": 2.346038141878921,
+            "rms": 1.0243400769444873
+          },
+          "ellipse_absolute_px": {
+            "maximum": 3.7463530023779867,
+            "median": 0.5690145437559408,
+            "p95": 1.9704202130542967,
+            "rms": 0.9228124602288184
+          },
+          "line_absolute_px": {
+            "maximum": 91.16528728230345,
+            "median": 38.18983883728843,
+            "p95": 77.2842062520348,
+            "rms": 42.310670398377695
+          }
+        }
+      }
+    },
+    "AOG-LM-P07-GC-Y0": {
+      "analysis_partition": "calibration_labelled_curve",
+      "circle": {
+        "center_x_px": 1059060.929694207,
+        "center_y_px": -621775.0177287298,
+        "model": "circle",
+        "radius_px": 1227369.2419463787,
+        "residual_definition": "signed exact radial circle residual",
+        "residuals": {
+          "absolute_over_limb_radius": {
+            "maximum": 0.004725241203784374,
+            "median": 0.0005643020955190942,
+            "p95": 0.001800586425756961,
+            "rms": 0.0009295185659819981
+          },
+          "absolute_over_source_sigma": {
+            "maximum": 0.8077952224994078,
+            "median": 0.09646926308050752,
+            "p95": 0.3078160563018173,
+            "rms": 0.15890419651454105
+          },
+          "absolute_px": {
+            "maximum": 1.6155904449988157,
+            "median": 0.19293852616101503,
+            "p95": 0.6156321126036346,
+            "rms": 0.3178083930290821
+          }
+        },
+        "solver": {
+          "algebraic_seed_rank": 3,
+          "coordinate_normalization": "weighted-centroid translation and weighted RMS radial scale",
+          "initialization": "weighted_algebraic_circle",
+          "nfev": 35,
+          "objective": "equal-pass arc-length-weighted geometric radial least squares",
+          "optimality": 1.95603364044962e-12,
+          "success": true
+        }
+      },
+      "descriptive_comparison": {
+        "circle_minus_ellipse_rms_px": -0.008420490837224848,
+        "circle_radius_over_frozen_limb_radius": 3589.7808954340976,
+        "circle_radius_px": 1227369.2419463787,
+        "circle_rms_px": 0.3178083930290821,
+        "ellipse_axis_ratio_minor_over_major": 0.06467802945896471,
+        "ellipse_rms_px": 0.32622888386630694,
+        "frozen_limb_radius_px": 341.906449919406,
+        "line_minus_circle_rms_px": 2.9507715679166768e-05,
+        "line_over_circle_rms": 1.0000928475028552,
+        "line_rms_px": 0.31783790074476126
+      },
+      "ellipse": {
+        "angle_degrees": 59.526085752564406,
+        "angle_radians": 1.0389261872067355,
+        "axis_ratio_minor_over_major": 0.06467802945896471,
+        "center_x_px": 2130.303643860832,
+        "center_y_px": 175.68086015624382,
+        "model": "ellipse",
+        "residual_definition": "signed center-radial image-space residual; not an orthogonal-distance or great-circle claim",
+        "residuals": {
+          "absolute_over_limb_radius": {
+            "maximum": 0.00458215484860387,
+            "median": 0.0005911172133891506,
+            "p95": 0.0018818748548189669,
+            "rms": 0.0009541466209344849
+          },
+          "absolute_over_source_sigma": {
+            "maximum": 0.7833341486335712,
+            "median": 0.10105339395806823,
+            "p95": 0.32171257540187526,
+            "rms": 0.16311444193315347
+          },
+          "absolute_px": {
+            "maximum": 1.5666682972671424,
+            "median": 0.20210678791613645,
+            "p95": 0.6434251508037505,
+            "rms": 0.32622888386630694
+          }
+        },
+        "semi_major_px": 15818.308585019973,
+        "semi_minor_px": 1023.0970286529162
+      },
+      "line": {
+        "center_x_px": 1254.7466862068156,
+        "center_y_px": 704.940242989957,
+        "direction_x": 0.5071591227513815,
+        "direction_y": 0.8618524376075345,
+        "model": "orthogonal_line",
+        "residual_definition": "signed orthogonal image-space distance to weighted TLS line",
+        "residuals": {
+          "absolute_over_limb_radius": {
+            "maximum": 0.004763074437179128,
+            "median": 0.0005476125695279017,
+            "p95": 0.0017908444751383941,
+            "rms": 0.000929604869459707
+          },
+          "absolute_over_source_sigma": {
+            "maximum": 0.8142629357588942,
+            "median": 0.09361613478926438,
+            "p95": 0.3061506384261751,
+            "rms": 0.15891895037238063
+          },
+          "absolute_px": {
+            "maximum": 1.6285258715177884,
+            "median": 0.18723226957852876,
+            "p95": 0.6123012768523503,
+            "rms": 0.31783790074476126
+          }
+        },
+        "unoriented_bearing_deg": 59.525215079858995,
+        "weighted_covariance_eigenvalues": [
+          0.10102093114528543,
+          37189.60106138157
+        ]
+      },
+      "sampling_sensitivity": {
+        "1.0": {
+          "circle_absolute_px": {
+            "maximum": 1.6150021222420037,
+            "median": 0.19221304450184107,
+            "p95": 0.6125739165581763,
+            "rms": 0.3176332904644807
+          },
+          "ellipse_absolute_px": {
+            "maximum": 1.5662781787957556,
+            "median": 0.20191568216318956,
+            "p95": 0.6412088534855229,
+            "rms": 0.32602645333231073
+          },
+          "line_absolute_px": {
+            "maximum": 1.6281920165809962,
+            "median": 0.19200468050921163,
+            "p95": 0.6091896419343893,
+            "rms": 0.3176670851168254
+          }
+        },
+        "4.0": {
+          "circle_absolute_px": {
+            "maximum": 1.6219009612686932,
+            "median": 0.19316417770460248,
+            "p95": 0.6151673551648855,
+            "rms": 0.31889986164149964
+          },
+          "ellipse_absolute_px": {
+            "maximum": 1.567536841132096,
+            "median": 0.20422060141345355,
+            "p95": 0.6423931268802789,
+            "rms": 0.327335731453083
+          },
+          "line_absolute_px": {
+            "maximum": 1.6295113777486945,
+            "median": 0.19029084535861363,
+            "p95": 0.6132062299794057,
+            "rms": 0.318965896300587
+          }
+        }
+      }
+    },
+    "AOG-LM-P07-GC-Y1": {
+      "analysis_partition": "calibration_labelled_curve",
+      "circle": {
+        "center_x_px": 907.0518221863667,
+        "center_y_px": 903.0181261375672,
+        "model": "circle",
+        "radius_px": 524.9676020366946,
+        "residual_definition": "signed exact radial circle residual",
+        "residuals": {
+          "absolute_over_limb_radius": {
+            "maximum": 0.011899417383269214,
+            "median": 0.002171415904290382,
+            "p95": 0.005856264104450792,
+            "rms": 0.0031667303007563005
+          },
+          "absolute_over_source_sigma": {
+            "maximum": 2.0342437768114223,
+            "median": 0.2954293807619403,
+            "p95": 0.9038904264152734,
+            "rms": 0.4645948361771964
+          },
+          "absolute_px": {
+            "maximum": 4.068487553622845,
+            "median": 0.7424211031344612,
+            "p95": 2.0022944697432195,
+            "rms": 1.0827255149837995
+          }
+        },
+        "solver": {
+          "algebraic_seed_rank": 3,
+          "coordinate_normalization": "weighted-centroid translation and weighted RMS radial scale",
+          "initialization": "weighted_algebraic_circle",
+          "nfev": 3,
+          "objective": "equal-pass arc-length-weighted geometric radial least squares",
+          "optimality": 4.693032605055628e-11,
+          "success": true
+        }
+      },
+      "descriptive_comparison": {
+        "circle_minus_ellipse_rms_px": 0.28370855321461597,
+        "circle_radius_over_frozen_limb_radius": 1.5354129825876046,
+        "circle_radius_px": 524.9676020366946,
+        "circle_rms_px": 1.0827255149837995,
+        "ellipse_axis_ratio_minor_over_major": 0.5644932624695077,
+        "ellipse_rms_px": 0.7990169617691836,
+        "frozen_limb_radius_px": 341.906449919406,
+        "line_minus_circle_rms_px": 35.20212007909286,
+        "line_over_circle_rms": 33.5125062556779,
+        "line_rms_px": 36.28484559407666
+      },
+      "ellipse": {
+        "angle_degrees": -32.41108846971067,
+        "angle_radians": -0.5656802079516217,
+        "axis_ratio_minor_over_major": 0.5644932624695077,
+        "center_x_px": 49.41547200275504,
+        "center_y_px": 1446.8839659718142,
+        "model": "ellipse",
+        "residual_definition": "signed center-radial image-space residual; not an orthogonal-distance or great-circle claim",
+        "residuals": {
+          "absolute_over_limb_radius": {
+            "maximum": 0.009029442229486845,
+            "median": 0.001630939554432482,
+            "p95": 0.004049678079303627,
+            "rms": 0.002336946149911847
+          },
+          "absolute_over_source_sigma": {
+            "maximum": 1.5436122687181069,
+            "median": 0.21451372107715846,
+            "p95": 0.6565790381980605,
+            "rms": 0.3493442857316668
+          },
+          "absolute_px": {
+            "maximum": 3.0872245374362137,
+            "median": 0.5576287530891477,
+            "p95": 1.384611055411142,
+            "rms": 0.7990169617691836
+          }
+        },
+        "semi_major_px": 1541.2647131018346,
+        "semi_minor_px": 870.0335462279844
+      },
+      "line": {
+        "center_x_px": 1325.0688684670552,
+        "center_y_px": 658.5120329353036,
+        "direction_x": 0.5056531256556234,
+        "direction_y": 0.8627368755968986,
+        "model": "orthogonal_line",
+        "residual_definition": "signed orthogonal image-space distance to weighted TLS line",
+        "residuals": {
+          "absolute_over_limb_radius": {
+            "maximum": 0.21044287259748853,
+            "median": 0.09764565521405444,
+            "p95": 0.1847188259788058,
+            "rms": 0.10612506901414027
+          },
+          "absolute_over_source_sigma": {
+            "maximum": 35.691105834185905,
+            "median": 13.207467946672375,
+            "p95": 27.52623740141898,
+            "rms": 15.400680132956314
+          },
+          "absolute_px": {
+            "maximum": 71.95177548064915,
+            "median": 33.38567932429169,
+            "p95": 63.15655802369403,
+            "rms": 36.28484559407666
+          }
+        },
+        "unoriented_bearing_deg": 59.625282098658225,
+        "weighted_covariance_eigenvalues": [
+          1316.59001978599,
+          39754.0848687693
+        ]
+      },
+      "sampling_sensitivity": {
+        "1.0": {
+          "circle_absolute_px": {
+            "maximum": 4.069295830045121,
+            "median": 0.7461626304896072,
+            "p95": 1.98959926242037,
+            "rms": 1.081977492958172
+          },
+          "ellipse_absolute_px": {
+            "maximum": 3.087501459588111,
+            "median": 0.55646955117777,
+            "p95": 1.3698697677020846,
+            "rms": 0.7980245255630803
+          },
+          "line_absolute_px": {
+            "maximum": 71.95240236151186,
+            "median": 33.3853554159158,
+            "p95": 63.30573496792631,
+            "rms": 36.28387683089674
+          }
+        },
+        "4.0": {
+          "circle_absolute_px": {
+            "maximum": 4.067092098698254,
+            "median": 0.7458693738904003,
+            "p95": 2.0081751981714433,
+            "rms": 1.086415773519632
+          },
+          "ellipse_absolute_px": {
+            "maximum": 3.085815134962104,
+            "median": 0.5539655699365085,
+            "p95": 1.3864472421457776,
+            "rms": 0.8021719043020608
+          },
+          "line_absolute_px": {
+            "maximum": 71.94856514630781,
+            "median": 33.3873231810422,
+            "p95": 63.15666174130171,
+            "rms": 36.28923489567768
+          }
+        }
+      }
+    },
+    "AOG-LM-P07-GC-YAXIS": {
+      "analysis_partition": "calibration_labelled_curve",
+      "circle": {
+        "center_x_px": -24737.129593518115,
+        "center_y_px": -44568.395494862016,
+        "model": "circle",
+        "radius_px": 52195.401417601475,
+        "residual_definition": "signed exact radial circle residual",
+        "residuals": {
+          "absolute_over_limb_radius": {
+            "maximum": 0.0031194230411244585,
+            "median": 0.0006059486916059657,
+            "p95": 0.0017234579845870938,
+            "rms": 0.0008932917415237928
+          },
+          "absolute_over_source_sigma": {
+            "maximum": 0.5332754288938304,
+            "median": 0.10358888299015234,
+            "p95": 0.2946307005477138,
+            "rms": 0.1527111040433618
+          },
+          "absolute_px": {
+            "maximum": 1.0665508577876608,
+            "median": 0.20717776598030468,
+            "p95": 0.5892614010954276,
+            "rms": 0.3054222080867236
+          }
+        },
+        "solver": {
+          "algebraic_seed_rank": 3,
+          "coordinate_normalization": "weighted-centroid translation and weighted RMS radial scale",
+          "initialization": "weighted_algebraic_circle",
+          "nfev": 14,
+          "objective": "equal-pass arc-length-weighted geometric radial least squares",
+          "optimality": 7.669953395482757e-13,
+          "success": true
+        }
+      },
+      "descriptive_comparison": {
+        "circle_minus_ellipse_rms_px": -0.00029966253249075203,
+        "circle_radius_over_frozen_limb_radius": 152.6598911190618,
+        "circle_radius_px": 52195.401417601475,
+        "circle_rms_px": 0.3054222080867236,
+        "ellipse_axis_ratio_minor_over_major": 0.23796589041409022,
+        "ellipse_rms_px": 0.30572187061921435,
+        "frozen_limb_radius_px": 341.906449919406,
+        "line_minus_circle_rms_px": 0.04125458565734813,
+        "line_over_circle_rms": 1.1350739552168847,
+        "line_rms_px": 0.34667679374407173
+      },
+      "ellipse": {
+        "angle_degrees": -29.98712338371208,
+        "angle_radians": -0.5233740362475587,
+        "axis_ratio_minor_over_major": 0.23796589041409022,
+        "center_x_px": -116.53506905279339,
+        "center_y_px": -1901.8616243225936,
+        "model": "ellipse",
+        "residual_definition": "signed center-radial image-space residual; not an orthogonal-distance or great-circle claim",
+        "residuals": {
+          "absolute_over_limb_radius": {
+            "maximum": 0.003124151437700599,
+            "median": 0.0006034657481982682,
+            "p95": 0.0017279924915142117,
+            "rms": 0.0008941681875006423
+          },
+          "absolute_over_source_sigma": {
+            "maximum": 0.53408376353741,
+            "median": 0.10316441580721403,
+            "p95": 0.2954058891305067,
+            "rms": 0.15286093530960718
+          },
+          "absolute_px": {
+            "maximum": 1.06816752707482,
+            "median": 0.20632883161442805,
+            "p95": 0.5908117782610134,
+            "rms": 0.30572187061921435
+          }
+        },
+        "semi_major_px": 12332.869041599979,
+        "semi_minor_px": 2934.8021628447063
+      },
+      "line": {
+        "center_x_px": 1359.873348412765,
+        "center_y_px": 634.3151714718463,
+        "direction_x": 0.8662679285344306,
+        "direction_y": -0.49957969934002194,
+        "model": "orthogonal_line",
+        "residual_definition": "signed orthogonal image-space distance to weighted TLS line",
+        "residuals": {
+          "absolute_over_limb_radius": {
+            "maximum": 0.0028960725749617687,
+            "median": 0.0007138142478800183,
+            "p95": 0.0019383175483076607,
+            "rms": 0.0010139521902139904
+          },
+          "absolute_over_source_sigma": {
+            "maximum": 0.4950929464070655,
+            "median": 0.12202884769727396,
+            "p95": 0.3313616358791795,
+            "rms": 0.17333839687203587
+          },
+          "absolute_px": {
+            "maximum": 0.990185892814131,
+            "median": 0.2440576953945479,
+            "p95": 0.662723271758359,
+            "rms": 0.34667679374407173
+          }
+        },
+        "unoriented_bearing_deg": 150.0278029742671,
+        "weighted_covariance_eigenvalues": [
+          0.12018479931930415,
+          21314.982212852876
+        ]
+      },
+      "sampling_sensitivity": {
+        "1.0": {
+          "circle_absolute_px": {
+            "maximum": 1.066627038671868,
+            "median": 0.20720065315981628,
+            "p95": 0.5938089361879975,
+            "rms": 0.30479885381001903
+          },
+          "ellipse_absolute_px": {
+            "maximum": 1.0682056133664446,
+            "median": 0.20724591554198923,
+            "p95": 0.5958666277024349,
+            "rms": 0.30509786551601487
+          },
+          "line_absolute_px": {
+            "maximum": 0.990305593498014,
+            "median": 0.2454826680840709,
+            "p95": 0.6965617453659455,
+            "rms": 0.34607540175090257
+          }
+        },
+        "4.0": {
+          "circle_absolute_px": {
+            "maximum": 1.0646043546876172,
+            "median": 0.20961060031550005,
+            "p95": 0.5883641105465358,
+            "rms": 0.30619632080291115
+          },
+          "ellipse_absolute_px": {
+            "maximum": 1.0662332453393901,
+            "median": 0.2086592233263218,
+            "p95": 0.5899518390360754,
+            "rms": 0.3065016789772856
+          },
+          "line_absolute_px": {
+            "maximum": 0.9884143938322919,
+            "median": 0.23330039220361665,
+            "p95": 0.661356356701672,
+            "rms": 0.347203711577021
+          }
+        }
+      }
+    }
+  },
+  "frozen_limb_reference": {
+    "center_x_px": 1255.1268387556074,
+    "center_y_px": 694.602781503521,
+    "radius_px": 341.906449919406
+  },
+  "input_result": "data/derived/first_hand_arm_of_god/qc/first_hand_curve_geometry_qc_sensitivity.json",
+  "interpretation_boundary": "Line, circle, and ellipse fits are descriptive image-space models of a hand-drawn source. Large fitted circle radius may represent the straight-line limit. No fitted family is interpreted here as proof of great-circle identity or a specific spherical projection.",
+  "method": {
+    "circle_ellipse_results_recomputed": false,
+    "circle_ellipse_results_source": "data/derived/first_hand_arm_of_god/qc/first_hand_curve_geometry_qc_sensitivity.json",
+    "formal_model_selection_performed": false,
+    "line_fit": "equal-pass arc-length-weighted orthogonal total least squares",
+    "line_fit_applied_to_all_curves": true,
+    "primary_resampling_spacing_px": 2.0,
+    "sensitivity_resampling_spacings_px": [
+      1.0,
+      4.0
+    ]
+  },
+  "scope": {
+    "great_circle_certification_issued": false,
+    "neutral_line_circle_ellipse_census_computed": true,
+    "projective_gauge_selected": false,
+    "projective_map_fitted": false,
+    "reciprocal_spiral_verdict_issued": false,
+    "s1_5_computed": false,
+    "s1_computed": false,
+    "s2_computed": false,
+    "spherical_scale_selected": false
+  }
+}

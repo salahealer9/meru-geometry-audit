@@ -1,0 +1,11 @@
+================================================================================================
+FIRST HAND NEUTRAL CURVE MORPHOLOGY CENSUS
+================================================================================================
+AOG-LM-P07-GC-Y0: line=0.317838 px, circle=0.317808 px, ellipse=0.326229 px, line/circle=1.000, Rcircle/Rlimb=3589.780895
+AOG-LM-P07-GC-Y1: line=36.284846 px, circle=1.082726 px, ellipse=0.799017 px, line/circle=33.513, Rcircle/Rlimb=1.535413
+AOG-LM-P07-GC-YAXIS: line=0.346677 px, circle=0.305422 px, ellipse=0.305722 px, line/circle=1.135, Rcircle/Rlimb=152.659891
+AOG-LM-P07-GC-X1: line=42.306425 px, circle=1.023443 px, ellipse=0.921111 px, line/circle=41.337, Rcircle/Rlimb=1.413434
+AOG-LM-P07-GC-SCAFFOLD-UR-UC-X1LL-LL: line=38.900233 px, circle=0.905565 px, ellipse=0.818643 px, line/circle=42.957, Rcircle/Rlimb=1.468405
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_curve_morphology_census.json
+Wrote /home/salahealer/meru-geometry-audit/reports/first_hand_curve_morphology_census.md
+No projective map, great-circle verdict, or self-embedment score was computed.
