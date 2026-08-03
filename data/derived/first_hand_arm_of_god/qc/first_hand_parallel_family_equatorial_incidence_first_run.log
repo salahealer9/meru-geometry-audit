@@ -1,0 +1,23 @@
+================================================================================================
+FIRST HAND PARALLEL-FAMILY EQUATORIAL-INCIDENCE DIAGNOSTIC
+================================================================================================
+y-family (Y0, Y1)
+  |s_z|: 0.009048457837
+  equatorial departure: 0.518445520 deg
+  azimuth pair: 120.474784920 deg, 300.474784920 deg
+  frozen LR-node bearing: 299.783644635 deg
+  nearest predicted azimuth: 300.474784920 deg
+  node angular separation: 0.691140285 deg
+  node page-space separation: 4.150278 px
+------------------------------------------------------------------------------------------------
+x-family (YAXIS, X1)
+  |s_z|: 0.447466454616
+  equatorial departure: 26.581250131 deg
+  horizontal-projection azimuth pair: 29.972197026 deg, 209.972197026 deg
+------------------------------------------------------------------------------------------------
+prior eta_y: 0.436938761 deg
+prior eta_x: 30.008196754 deg
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_parallel_family_equatorial_incidence.json
+Wrote /home/salahealer/meru-geometry-audit/reports/first_hand_parallel_family_equatorial_incidence.md
+No x-family rim node was selected.
+No refit, construction-scale selection, spiral projection, or self-embedment score was computed.

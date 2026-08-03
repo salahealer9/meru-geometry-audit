@@ -1,0 +1,143 @@
+{
+  "analysis_class": "post_hoc_parallel_family_equatorial_incidence_diagnostic",
+  "analysis_status": "deterministic_post_hoc_structural_diagnostic",
+  "checkpoint": "first_hand_parallel_family_equatorial_incidence_v0.8",
+  "families": {
+    "x_family": {
+      "absolute_z": 0.44746645461639,
+      "azimuth_is_horizontal_projection_when_non_equatorial": true,
+      "cross_product_norm": 0.7904997703956576,
+      "epsilon_equator_deg": 26.58125013056178,
+      "family": "x",
+      "horizontal_azimuth_antipode_deg": 209.9721970257329,
+      "horizontal_azimuth_canonical_deg": 29.9721970257329,
+      "intersection_line_unoriented": true,
+      "normal_a": [
+        -0.49957969934002194,
+        0.8662679285344306,
+        0.0
+      ],
+      "normal_b": [
+        -0.0004443868446549334,
+        -0.7072688742745352,
+        0.7069445112615022
+      ],
+      "normalized_intersection_direction": [
+        0.774704029392405,
+        0.4467744831972947,
+        0.44746645461639
+      ],
+      "offset_curve_id": "AOG-LM-P07-GC-X1",
+      "raw_cross_product": [
+        0.6124033573592869,
+        0.3531751263861,
+        0.3537221296340152
+      ],
+      "source_landmark_validation": null,
+      "zero_curve_id": "AOG-LM-P07-GC-YAXIS"
+    },
+    "y_family": {
+      "absolute_z": 0.009048457836678485,
+      "azimuth_is_horizontal_projection_when_non_equatorial": true,
+      "cross_product_norm": 0.6444528136746395,
+      "epsilon_equator_deg": 0.5184455198935366,
+      "family": "y",
+      "horizontal_azimuth_antipode_deg": 300.474784920141,
+      "horizontal_azimuth_canonical_deg": 120.47478492014102,
+      "intersection_line_unoriented": true,
+      "normal_a": [
+        0.8618524376075345,
+        0.5071591227513815,
+        0.0
+      ],
+      "normal_b": [
+        0.6560529662247208,
+        0.39282194511284074,
+        0.644426430979914
+      ],
+      "normalized_intersection_direction": [
+        0.507138360603977,
+        -0.8618171549781825,
+        0.009048457836678485
+      ],
+      "offset_curve_id": "AOG-LM-P07-GC-Y1",
+      "raw_cross_product": [
+        0.3268267434135769,
+        -0.5554004903987625,
+        0.005831304112263791
+      ],
+      "source_landmark_validation": {
+        "delta_node_deg": 0.6911402852749688,
+        "delta_node_px": 4.150278207239715,
+        "frozen_node_bearing_deg": 299.78364463486605,
+        "frozen_node_consensus_x_px": 1425.17910152,
+        "frozen_node_consensus_y_px": 991.72740946,
+        "frozen_node_radial_distance_px": 342.3460480414022,
+        "frozen_node_radial_residual_from_limb_circle_px": 0.4395981219961982,
+        "landmark_id": "AOG-LM-P07-RIM-NODE-LR-SHARED",
+        "node_used_to_fit_planes": false,
+        "node_used_to_select_model": false,
+        "other_antipodal_azimuth_deg": 120.47478492014102,
+        "predicted_limb_x_px": 1428.5278139597724,
+        "predicted_limb_y_px": 989.2756888002996,
+        "selected_predicted_azimuth_deg": 300.474784920141
+      },
+      "zero_curve_id": "AOG-LM-P07-GC-Y0"
+    }
+  },
+  "interpretation_boundary": "The equatorial-incidence calculation is an algebraic restatement of the same affine-parallel condition tested directionally by the prior eta diagnostic and is therefore not counted as independent statistical evidence. The y-family comparison with the independently frozen lower-right rim landmark is a separate source-landmark consistency check. No x-family rim landmark is selected retrospectively.",
+  "model_condition": {
+    "post_hoc_pass_threshold_added": false,
+    "required_exact_absolute_z": 0.0,
+    "required_exact_epsilon_equator_deg": 0.0,
+    "statement": "An affine-parallel pair under the tested equator-preserving central-projective model must have a great-circle intersection direction with z=0."
+  },
+  "prior_related_diagnostic": {
+    "eta_x_deg": 30.008196754047585,
+    "eta_y_deg": 0.43693876148820004,
+    "independent_statistical_evidence_claimed": false
+  },
+  "provenance": {
+    "expanded_neutral_result": "data/derived/first_hand_arm_of_god/expanded_neutral_geometry_census.json",
+    "expanded_neutral_sha256": "ccd8b9641379fde4b3c389cd2a03ae2972042a0ecacff6e6cec35924173f5645",
+    "frozen_limb_reference": {
+      "center_x_px": 1255.1268387556074,
+      "center_y_px": 694.602781503521,
+      "radius_px": 341.906449919406
+    },
+    "linear_result": "data/derived/first_hand_arm_of_god/qc/first_hand_linear_central_projective_reconstruction.json",
+    "linear_sha256": "965be84c5cc115c3888f1a7bd463abe226a1f17633fc52e5dcea4e952fbafb14",
+    "plane_result": "data/derived/first_hand_arm_of_god/qc/first_hand_stereographic_plane_angles.json",
+    "plane_sha256": "5a4ac4d289c7f47847e6eb37a41467c632eb63c57b592b96f714458fb1916597",
+    "protocol_path": "docs/first_hand_parallel_family_equatorial_incidence_protocol.md",
+    "protocol_sha256": "78f47775749778cea4191df93236fbd787aebca52aab3f3d4cf9f4c5c3d39fbf"
+  },
+  "rendering_closure_context": {
+    "AOG-LM-P07-GC-X1": {
+      "delta_R_px": -0.5342697559333942,
+      "delta_antipodal_deg": 0.1788411052144454,
+      "epsilon_power": -0.0031227976297902764
+    },
+    "AOG-LM-P07-GC-Y1": {
+      "delta_R_px": -8.743111375754154,
+      "delta_antipodal_deg": 2.438130126947101,
+      "epsilon_power": -0.05048938675863168
+    }
+  },
+  "scope": {
+    "circle_refits": 0,
+    "construction_scale_selected": false,
+    "curve_refits": 0,
+    "general_3x3_projective_fit": false,
+    "line_refits": 0,
+    "linear_map_refit": false,
+    "optimizer_calls": 0,
+    "reciprocal_spiral_projection_computed": false,
+    "s1_5_computed": false,
+    "s1_computed": false,
+    "s2_computed": false,
+    "stereographic_refit": false,
+    "x1_reclassified_as_scaffold": false,
+    "x_family_rim_node_selected": false
+  }
+}
