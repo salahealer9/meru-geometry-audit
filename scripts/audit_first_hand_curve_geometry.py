@@ -26,8 +26,8 @@ PASS_PATHS = {
 SEAL_PATH = DATA_DIR / "great_circle_segment_passes.sha256"
 OUTPUT_JSON = DATA_DIR / "first_hand_curve_geometry_audit.json"
 OUTPUT_REPORT = ROOT / "reports" / "first_hand_curve_geometry_audit.md"
-EXPANDED_NEUTRAL_SCRIPT = (
-    ROOT / "scripts" / "audit_first_hand_expanded_neutral_geometry.py"
+NEUTRAL_GEOMETRY_SCRIPT = (
+    ROOT / "scripts" / "audit_first_hand_neutral_geometry.py"
 )
 
 CALIBRATION_IDS = (
@@ -565,30 +565,130 @@ def fit_ellipse(
 
 
 def load_frozen_limb_reference() -> dict[str, float]:
-    """Regenerate the already-frozen neutral census and extract its limb circle."""
-    if not EXPANDED_NEUTRAL_SCRIPT.exists():
+    """Regenerate and extract the previously frozen neutral limb circle.
+
+    This function deliberately calls the original neutral geometry census,
+    because that census owns the equator-at-horizon limb fit. The later
+    expanded census adds incidence landmarks but does not redefine the
+    frozen limb geometry.
+    """
+    if not NEUTRAL_GEOMETRY_SCRIPT.exists():
         raise RuntimeError(
-            f"Missing frozen neutral analysis script: {EXPANDED_NEUTRAL_SCRIPT}"
+            "Missing frozen neutral geometry script: "
+            f"{NEUTRAL_GEOMETRY_SCRIPT}"
         )
+
     root_text = str(ROOT)
+
     if root_text not in sys.path:
-        sys.path.insert(0, root_text)
+        sys.path.insert(
+            0,
+            root_text,
+        )
 
     spec = importlib.util.spec_from_file_location(
-        "first_hand_expanded_neutral_geometry_for_curve_audit",
-        EXPANDED_NEUTRAL_SCRIPT,
+        "first_hand_neutral_geometry_for_curve_audit",
+        NEUTRAL_GEOMETRY_SCRIPT,
     )
+
     if spec is None or spec.loader is None:
-        raise RuntimeError("Could not load expanded neutral geometry module")
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    analysis, _, _ = module.build_expanded_analysis()
-    circle = analysis["limb_geometry"]["equal_pass_weight_circle"]
-    return {
-        "center_x_px": float(circle["center_x_px"]),
-        "center_y_px": float(circle["center_y_px"]),
-        "radius_px": float(circle["radius_px"]),
+        raise RuntimeError(
+            "Could not load frozen neutral geometry module."
+        )
+
+    module = importlib.util.module_from_spec(
+        spec
+    )
+
+    spec.loader.exec_module(
+        module
+    )
+
+    analysis, _, _ = module.build_analysis()
+
+    if "limb_geometry" not in analysis:
+        raise RuntimeError(
+            "Frozen neutral analysis does not expose limb_geometry."
+        )
+
+    limb_geometry = analysis[
+        "limb_geometry"
+    ]
+
+    if "equal_pass_weight_circle" not in limb_geometry:
+        raise RuntimeError(
+            "Frozen neutral limb geometry does not expose "
+            "equal_pass_weight_circle."
+        )
+
+    circle = limb_geometry[
+        "equal_pass_weight_circle"
+    ]
+
+    required = {
+        "center_x_px",
+        "center_y_px",
+        "radius_px",
     }
+
+    missing = (
+        required
+        - set(circle)
+    )
+
+    if missing:
+        raise RuntimeError(
+            "Frozen limb circle is missing fields: "
+            + ", ".join(
+                sorted(
+                    missing
+                )
+            )
+        )
+
+    result = {
+        "center_x_px": float(
+            circle[
+                "center_x_px"
+            ]
+        ),
+        "center_y_px": float(
+            circle[
+                "center_y_px"
+            ]
+        ),
+        "radius_px": float(
+            circle[
+                "radius_px"
+            ]
+        ),
+    }
+
+    if not (
+        math.isfinite(
+            result[
+                "center_x_px"
+            ]
+        )
+        and math.isfinite(
+            result[
+                "center_y_px"
+            ]
+        )
+        and math.isfinite(
+            result[
+                "radius_px"
+            ]
+        )
+        and result[
+            "radius_px"
+        ] > 0.0
+    ):
+        raise RuntimeError(
+            "Frozen neutral limb reference is invalid."
+        )
+
+    return result
 
 
 def fit_bundle(

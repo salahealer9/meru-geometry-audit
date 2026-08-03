@@ -230,3 +230,58 @@ def test_source_code_keeps_model_verdicts_disabled() -> None:
     assert '"s1_computed": false' in text
     assert '"s1_5_computed": false' in text
     assert '"s2_computed": false' in text
+
+
+def test_limb_reference_comes_from_original_neutral_census() -> None:
+    """The limb belongs to the frozen neutral census, not its addendum."""
+    module = load_module()
+
+    assert (
+        module.NEUTRAL_GEOMETRY_SCRIPT.name
+        == "audit_first_hand_neutral_geometry.py"
+    )
+
+    assert (
+        "expanded_neutral"
+        not in str(
+            module.NEUTRAL_GEOMETRY_SCRIPT
+        )
+    )
+
+
+def test_frozen_limb_reference_interface() -> None:
+    """The existing neutral census exposes the required frozen limb."""
+    module = load_module()
+
+    limb = (
+        module.load_frozen_limb_reference()
+    )
+
+    assert set(
+        limb
+    ) == {
+        "center_x_px",
+        "center_y_px",
+        "radius_px",
+    }
+
+    assert math.isfinite(
+        limb[
+            "center_x_px"
+        ]
+    )
+    assert math.isfinite(
+        limb[
+            "center_y_px"
+        ]
+    )
+    assert (
+        math.isfinite(
+            limb[
+                "radius_px"
+            ]
+        )
+        and limb[
+            "radius_px"
+        ] > 0.0
+    )
