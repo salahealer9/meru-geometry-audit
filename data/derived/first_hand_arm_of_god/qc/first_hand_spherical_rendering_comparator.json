@@ -1,0 +1,191 @@
+{
+  "analysis_class": "preregistered_parameter_free_spherical_rendering_comparator",
+  "branch_allocation": {
+    "allocation_changed_after_result": false,
+    "curved_holdout_circle_branch": "AOG-LM-P07-GC-SCAFFOLD-UR-UC-X1LL-LL",
+    "curved_labelled_circle_branch": [
+      "AOG-LM-P07-GC-Y1",
+      "AOG-LM-P07-GC-X1"
+    ],
+    "line_branch": [
+      "AOG-LM-P07-GC-Y0",
+      "AOG-LM-P07-GC-YAXIS"
+    ]
+  },
+  "checkpoint": "first_hand_spherical_rendering_comparator_v0.8",
+  "holdout": {
+    "curve_id": "AOG-LM-P07-GC-SCAFFOLD-UR-UC-X1LL-LL",
+    "evaluated_after_labelled_block_frozen_in_memory": true,
+    "result": {
+      "R_implied_px": 340.844552247128,
+      "antipodal_separation_deg": 179.67041095648943,
+      "branch": "stereographic_great_circle_circle",
+      "centre_offset_d_px": 368.62788676043436,
+      "centre_offset_over_R": 1.0781542344326267,
+      "circle_center_x_px": 1576.3337806849624,
+      "circle_center_y_px": 875.469083931186,
+      "circle_radius_over_R": 1.4684054522770444,
+      "circle_radius_px": 502.057295230344,
+      "delta_R_over_R": -0.003105813512814156,
+      "delta_R_px": -1.0618976722780076,
+      "delta_antipodal_deg": 0.32958904351056617,
+      "delta_power_px2": -725.011699946117,
+      "epsilon_power": -0.006201980948051913,
+      "equator_intersections": {
+        "intersection_count": 2,
+        "points_px": [
+          [
+            1088.2289198975323,
+            993.0070461803759
+          ],
+          [
+            1423.738531672303,
+            397.1635145795703
+          ]
+        ]
+      },
+      "frozen_circle_refitted": false,
+      "frozen_circle_rms_px": 0.9055649597818063,
+      "power_term_r2_minus_d2_px2": 116175.00879654515
+    },
+    "used_for_calibration": false
+  },
+  "interpretation_boundary": "This checkpoint evaluates parameter-free algebraic consequences of stereographic rendering using only previously frozen line, circle, and limb fits. Small closure residuals support compatibility but do not prove that the historical image was generated stereographically. Large residuals reject this exact rendering relation for the frozen measured geometry. No new post-hoc binary threshold is introduced.",
+  "labelled_curves": {
+    "AOG-LM-P07-GC-X1": {
+      "R_implied_px": 341.3721801634726,
+      "antipodal_separation_deg": 179.82115889478555,
+      "branch": "stereographic_great_circle_circle",
+      "centre_offset_d_px": 342.0633922778295,
+      "centre_offset_over_R": 1.0004590213447582,
+      "circle_center_x_px": 1255.3417618875174,
+      "circle_center_y_px": 352.5394567452774,
+      "circle_radius_over_R": 1.4134339233796256,
+      "circle_radius_px": 483.26217493838544,
+      "delta_R_over_R": -0.001562619705066494,
+      "delta_R_px": -0.5342697559333942,
+      "delta_antipodal_deg": 0.1788411052144454,
+      "delta_power_px2": -365.05510692887765,
+      "epsilon_power": -0.0031227976297902764,
+      "equator_intersections": {
+        "intersection_count": 2,
+        "points_px": [
+          [
+            1597.0331400632554,
+            694.2839984815623
+          ],
+          [
+            913.2212079936753,
+            693.8543499590801
+          ]
+        ]
+      },
+      "frozen_circle_refitted": false,
+      "frozen_circle_rms_px": 1.0234432278830983,
+      "frozen_orthographic_gc_rms_px": 12.303530425963114,
+      "power_term_r2_minus_d2_px2": 116534.96538956239
+    },
+    "AOG-LM-P07-GC-Y0": {
+      "branch": "stereographic_great_circle_line",
+      "direction_x": 0.5071591227513815,
+      "direction_y": 0.8618524376075345,
+      "frozen_line_refitted": false,
+      "frozen_line_rms_px": 0.31783790074476126,
+      "frozen_orthographic_gc_rms_px": 1.080069846003344,
+      "line_center_x_px": 1254.7466862068156,
+      "line_center_y_px": 704.940242989957,
+      "line_to_frozen_sphere_center_over_R": 0.01629209773927651,
+      "line_to_frozen_sphere_center_px": 5.570373299776012,
+      "unoriented_bearing_deg": 59.525215079858995
+    },
+    "AOG-LM-P07-GC-Y1": {
+      "R_implied_px": 333.16333854365183,
+      "antipodal_separation_deg": 177.5618698730529,
+      "branch": "stereographic_great_circle_circle",
+      "centre_offset_d_px": 405.7008418016968,
+      "centre_offset_over_R": 1.1865843475527542,
+      "circle_center_x_px": 907.0518221863667,
+      "circle_center_y_px": 903.0181261375672,
+      "circle_radius_over_R": 1.5354129825876046,
+      "circle_radius_px": 524.9676020366946,
+      "delta_R_over_R": -0.025571647969247366,
+      "delta_R_px": -8.743111375754154,
+      "delta_antipodal_deg": 2.438130126947101,
+      "delta_power_px2": -5902.210346939319,
+      "epsilon_power": -0.05048938675863168,
+      "equator_intersections": {
+        "intersection_count": 2,
+        "points_px": [
+          [
+            1073.2826226972086,
+            405.06400761892087
+          ],
+          [
+            1424.4892979684525,
+            991.6152019607616
+          ]
+        ]
+      },
+      "frozen_circle_refitted": false,
+      "frozen_circle_rms_px": 1.0827255149837995,
+      "frozen_orthographic_gc_rms_px": 13.803554751795,
+      "power_term_r2_minus_d2_px2": 110997.81014955195
+    },
+    "AOG-LM-P07-GC-YAXIS": {
+      "branch": "stereographic_great_circle_line",
+      "direction_x": 0.8662679285344306,
+      "direction_y": -0.49957969934002194,
+      "frozen_line_refitted": false,
+      "frozen_line_rms_px": 0.34667679374407173,
+      "frozen_orthographic_gc_rms_px": 0.22611626084477526,
+      "line_center_x_px": 1359.873348412765,
+      "line_center_y_px": 634.3151714718463,
+      "line_to_frozen_sphere_center_over_R": 0.0003041964930277094,
+      "line_to_frozen_sphere_center_px": 0.10400674300903745,
+      "unoriented_bearing_deg": 150.0278029742671
+    }
+  },
+  "mapping_distinction": {
+    "construction_and_rendering_maps_conflated": false,
+    "construction_map_recomputed": false,
+    "page_rendering_map_tested": "stereographic"
+  },
+  "method": {
+    "antipodal_invariant": "angular separation of frozen curve-circle/equator-circle intersections",
+    "circle_invariant": "r^2 - d^2 - R^2",
+    "curve_refits": 0,
+    "free_parameters": 0,
+    "line_invariant": "distance from frozen sphere centre to frozen orthogonal line fit",
+    "optimizer_calls": 0,
+    "post_hoc_binary_threshold_added": false
+  },
+  "protocol_checkpoint": "1fd428a",
+  "provenance": {
+    "frozen_limb_reference": {
+      "center_x_px": 1255.1268387556074,
+      "center_y_px": 694.602781503521,
+      "radius_px": 341.906449919406
+    },
+    "labelled_result_block_sha256_before_holdout": "b9ce78ce3f10a7653300278a703f935dca2cb32721c83806952eb78e924e7609",
+    "morphology_result": "data/derived/first_hand_arm_of_god/qc/first_hand_curve_morphology_census.json",
+    "morphology_sha256": "a8ac35df36711096d8effd050bffe21c0e06fb39bb6b1ee91fd02d226440eac3",
+    "orthographic_result": "data/derived/first_hand_arm_of_god/qc/first_hand_great_circle_reconstruction.json",
+    "orthographic_sha256": "5236da092decffc57fd48d7f78cd07ca26689faa5a6faed35975c04c52bfbde4",
+    "protocol_path": "docs/first_hand_spherical_rendering_comparator_protocol.md",
+    "protocol_sha256": "1d00f74f47482b308a7acdca949f75fedaa1d1c022fa2492fed60c7f6dd3334f"
+  },
+  "scope": {
+    "construction_scale_selected": false,
+    "fixed_scale_candidate_verdict_issued": false,
+    "new_construction_map_fitted": false,
+    "new_curve_fit_computed": false,
+    "orthographic_result_overwritten": false,
+    "projective_gauge_selected": false,
+    "reciprocal_spiral_projection_computed": false,
+    "s1_5_computed": false,
+    "s1_computed": false,
+    "s2_computed": false,
+    "spherical_plane_angles_reconstructed": false,
+    "stereographic_rendering_invariants_computed": true
+  }
+}
