@@ -1,0 +1,214 @@
+{
+  "analysis_class": "preregistered_stereographic_plane_angle_reconstruction",
+  "checkpoint": "first_hand_stereographic_plane_angle_reconstruction_v0.8",
+  "fit_partition": {
+    "labelled_plane_reconstruction": [
+      "AOG-LM-P07-GC-Y0",
+      "AOG-LM-P07-GC-Y1",
+      "AOG-LM-P07-GC-YAXIS",
+      "AOG-LM-P07-GC-X1"
+    ],
+    "scaffold_holdout": "AOG-LM-P07-GC-SCAFFOLD-UR-UC-X1LL-LL",
+    "scaffold_used_for_plane_reconstruction": false,
+    "scaffold_used_for_scale_comparison": false
+  },
+  "fixed_scale_comparison": {
+    "G30": {
+      "candidate_reoptimized": false,
+      "delta_x_minus_candidate_deg": 22.232240366281676,
+      "delta_y_minus_candidate_deg": 10.124661707971367,
+      "predicted_delta_degrees": 29.999999999999996,
+      "predicted_delta_radians": 0.5235987755982988,
+      "scale_k": 0.5773502691896257,
+      "source_role": "hypothesis motivated by the page-8 30-degree cube-octahedral division",
+      "two_axis_angular_rms_deg": 17.273987472569644
+    },
+    "GHALF": {
+      "candidate_reoptimized": false,
+      "delta_x_minus_candidate_deg": 23.58435060974051,
+      "delta_y_minus_candidate_deg": 11.476771951430202,
+      "predicted_delta_degrees": 28.64788975654116,
+      "predicted_delta_radians": 0.5,
+      "scale_k": 0.5463024898437905,
+      "source_role": "hypothesis motivated by the page-8 half-radian candidate",
+      "two_axis_angular_rms_deg": 18.546399759903572
+    },
+    "GONE": {
+      "candidate_reoptimized": false,
+      "delta_x_minus_candidate_deg": -5.06353914680065,
+      "delta_y_minus_candidate_deg": -17.17111780511096,
+      "predicted_delta_degrees": 57.29577951308232,
+      "predicted_delta_radians": 1.0,
+      "scale_k": 1.5574077246549023,
+      "source_role": "hypothesis in which unit planar radius maps to one radian of central angle",
+      "two_axis_angular_rms_deg": 12.658726542748708
+    },
+    "GUNIT": {
+      "candidate_reoptimized": false,
+      "delta_x_minus_candidate_deg": 7.2322403662816726,
+      "delta_y_minus_candidate_deg": -4.875338292028637,
+      "predicted_delta_degrees": 45.0,
+      "predicted_delta_radians": 0.7853981633974483,
+      "scale_k": 1.0,
+      "source_role": "neutral affine scale baseline",
+      "two_axis_angular_rms_deg": 6.167423456249569
+    }
+  },
+  "image_derived_coordinate_separations": {
+    "absolute_delta_difference_deg": 12.10757865831031,
+    "delta_difference_deg": 12.10757865831031,
+    "delta_x_deg": 52.23224036628167,
+    "delta_x_rad": 0.9116245700847042,
+    "delta_y_deg": 40.12466170797136,
+    "delta_y_rad": 0.7003074580529918,
+    "isotropy_equality_imposed": false,
+    "k_x_over_k_y": 1.5314067912233338,
+    "k_x_tan_delta_x": 1.2906912375597608,
+    "k_y_tan_delta_y": 0.842814100705873,
+    "single_k_selected": false
+  },
+  "interpretation_boundary": "The reported spherical plane angles are algebraic reconstructions under the stereographic page-rendering hypothesis using already-frozen line and circle geometry. They inherit the measured rendering misclosure, especially for GC-Y1. Agreement with a source-motivated scale is descriptive and does not prove the historical construction. No uncertainty interval or post-hoc equality threshold is introduced.",
+  "method": {
+    "circle_normal_rule": "normalize frozen circle-centre displacement; n=(-cu,-cv,1)",
+    "circle_radius_used_for_plane_normal": false,
+    "curve_refits": 0,
+    "isotropic_equality_imposed": false,
+    "line_normal_rule": "convert frozen line direction to y-up; n=(-dv,du,0)",
+    "line_offset_used_for_plane_normal": false,
+    "optimizer_calls": 0,
+    "plane_angle_rule": "acos(abs(n1 dot n2))"
+  },
+  "provenance": {
+    "frozen_limb_reference": {
+      "center_x_px": 1255.1268387556074,
+      "center_y_px": 694.602781503521,
+      "radius_px": 341.906449919406
+    },
+    "morphology_result": "data/derived/first_hand_arm_of_god/qc/first_hand_curve_morphology_census.json",
+    "morphology_sha256": "a8ac35df36711096d8effd050bffe21c0e06fb39bb6b1ee91fd02d226440eac3",
+    "protocol_path": "docs/first_hand_stereographic_plane_angle_protocol.md",
+    "protocol_sha256": "2ef83f9110fddebffca5c3e93009be2ecdf21bd657f899824336b49112b3011a",
+    "reconstructed_plane_block_sha256_before_angles": "d7b0d350f067d6acad28e836024fdde3c833ce1986f98e9638690db3a9f31151",
+    "rendering_comparator_result": "data/derived/first_hand_arm_of_god/qc/first_hand_spherical_rendering_comparator.json",
+    "rendering_comparator_sha256": "a68813074448d6fd3bb05983d72e8140f6ec913358497472d65b8afdd8243e95",
+    "spherical_map_family_result": "data/derived/first_hand_arm_of_god/spherical_map_family_audit.json",
+    "spherical_map_family_sha256": "43ba83c80341e7ec296e52e456e84115d486cf3490ce0193a9284bbad9ac8c25"
+  },
+  "reconstructed_planes": {
+    "AOG-LM-P07-GC-X1": {
+      "branch": "stereographic_finite_circle",
+      "circle_radius_used_for_plane_normal": false,
+      "normalized_circle_center_u": 0.0006286021569952505,
+      "normalized_circle_center_v": 1.0004588238650503,
+      "plane_normal_unoriented": true,
+      "raw_plane_normal": [
+        -0.0006286021569952505,
+        -1.0004588238650503,
+        1.0
+      ],
+      "unit_plane_normal": [
+        -0.0004443868446549334,
+        -0.7072688742745352,
+        0.7069445112615022
+      ]
+    },
+    "AOG-LM-P07-GC-Y0": {
+      "branch": "stereographic_diameter_line",
+      "image_direction_x": 0.5071591227513815,
+      "image_direction_y": 0.8618524376075345,
+      "line_offset_used_for_plane_normal": false,
+      "mathematical_direction_u": 0.5071591227513815,
+      "mathematical_direction_v": -0.8618524376075345,
+      "plane_normal_unoriented": true,
+      "raw_plane_normal": [
+        0.8618524376075345,
+        0.5071591227513815,
+        0.0
+      ],
+      "unit_plane_normal": [
+        0.8618524376075345,
+        0.5071591227513815,
+        0.0
+      ]
+    },
+    "AOG-LM-P07-GC-Y1": {
+      "branch": "stereographic_finite_circle",
+      "circle_radius_used_for_plane_normal": false,
+      "normalized_circle_center_u": -1.0180416796795988,
+      "normalized_circle_center_v": -0.6095683327505922,
+      "plane_normal_unoriented": true,
+      "raw_plane_normal": [
+        1.0180416796795988,
+        0.6095683327505922,
+        1.0
+      ],
+      "unit_plane_normal": [
+        0.6560529662247208,
+        0.39282194511284074,
+        0.644426430979914
+      ]
+    },
+    "AOG-LM-P07-GC-YAXIS": {
+      "branch": "stereographic_diameter_line",
+      "image_direction_x": 0.8662679285344306,
+      "image_direction_y": -0.49957969934002194,
+      "line_offset_used_for_plane_normal": false,
+      "mathematical_direction_u": 0.8662679285344306,
+      "mathematical_direction_v": 0.49957969934002194,
+      "plane_normal_unoriented": true,
+      "raw_plane_normal": [
+        -0.49957969934002194,
+        0.8662679285344306,
+        0.0
+      ],
+      "unit_plane_normal": [
+        -0.49957969934002194,
+        0.8662679285344306,
+        0.0
+      ]
+    }
+  },
+  "rendering_closure_context": {
+    "AOG-LM-P07-GC-X1": {
+      "branch": "circle",
+      "delta_R_px": -0.5342697559333942,
+      "delta_antipodal_deg": 0.1788411052144454,
+      "epsilon_power": -0.0031227976297902764
+    },
+    "AOG-LM-P07-GC-Y0": {
+      "branch": "line",
+      "line_to_frozen_sphere_center_over_R": 0.01629209773927651,
+      "line_to_frozen_sphere_center_px": 5.570373299776012
+    },
+    "AOG-LM-P07-GC-Y1": {
+      "branch": "circle",
+      "delta_R_px": -8.743111375754154,
+      "delta_antipodal_deg": 2.438130126947101,
+      "epsilon_power": -0.05048938675863168
+    },
+    "AOG-LM-P07-GC-YAXIS": {
+      "branch": "line",
+      "line_to_frozen_sphere_center_over_R": 0.0003041964930277094,
+      "line_to_frozen_sphere_center_px": 0.10400674300903745
+    },
+    "scaffold_holdout": {
+      "curve_id": "AOG-LM-P07-GC-SCAFFOLD-UR-UC-X1LL-LL",
+      "delta_R_px": -1.0618976722780076,
+      "delta_antipodal_deg": 0.32958904351056617,
+      "epsilon_power": -0.006201980948051913,
+      "used_for_plane_angle_reconstruction": false
+    }
+  },
+  "scope": {
+    "general_projective_gauge_selected": false,
+    "new_curve_fit_computed": false,
+    "new_rendering_fit_computed": false,
+    "reciprocal_spiral_projection_computed": false,
+    "s1_5_computed": false,
+    "s1_computed": false,
+    "s2_computed": false,
+    "scaffold_plane_identity_assigned": false,
+    "single_construction_scale_selected": false,
+    "stereographic_plane_angles_computed": true
+  }
+}
