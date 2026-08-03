@@ -1,0 +1,13 @@
+==============================================================================
+FIRST HAND ACQUISITION-QC CURVE GEOMETRY SENSITIVITY
+==============================================================================
+AOG-LM-P07-GC-Y0: median=0.172122 px, RMS=0.364852 px, P95=0.670148 px
+AOG-LM-P07-GC-Y1: median=0.252148 px, RMS=0.470462 px, P95=0.965620 px
+AOG-LM-P07-GC-YAXIS: median=0.227375 px, RMS=0.571250 px, P95=0.918736 px
+AOG-LM-P07-GC-X1: median=0.254857 px, RMS=0.406347 px, P95=0.724291 px
+AOG-LM-P07-GC-SCAFFOLD-UR-UC-X1LL-LL: median=0.275083 px, RMS=0.444380 px, P95=0.830368 px
+Manual review triggered: False
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_curve_geometry_qc_sensitivity.json
+Wrote /home/salahealer/meru-geometry-audit/reports/first_hand_curve_geometry_qc_sensitivity.md
+Primary raw result was not overwritten.
+No projective map, scale, great-circle verdict, or self-embedment score was computed.
