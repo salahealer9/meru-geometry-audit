@@ -13,13 +13,22 @@ import argparse
 import hashlib
 import json
 import math
+import sys
 from pathlib import Path
 from typing import Any
 
-from scripts import audit_first_hand_curve_geometry as base
-
 
 ROOT = Path(__file__).resolve().parents[1]
+
+root_text = str(ROOT)
+
+if root_text not in sys.path:
+    sys.path.insert(
+        0,
+        root_text,
+    )
+
+from scripts import audit_first_hand_curve_geometry as base
 
 DATA_DIR = (
     ROOT

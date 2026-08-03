@@ -148,3 +148,32 @@ def test_scope_boundary_is_explicit_in_source() -> None:
         '"s2_computed":false',
     ):
         assert flag in normalized
+
+
+def test_direct_script_invocation_imports_from_repo_root() -> None:
+    """Direct CLI execution must resolve the sibling scripts package."""
+    import subprocess
+    import sys
+
+    result = subprocess.run(
+        [
+            sys.executable,
+            str(SCRIPT),
+            "--help",
+        ],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+
+    assert result.returncode == 0, (
+        result.stdout
+        + "\n"
+        + result.stderr
+    )
+
+    assert (
+        "acquisition-QC"
+        in result.stdout
+    )
