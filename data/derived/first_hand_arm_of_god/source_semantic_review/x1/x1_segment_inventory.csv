@@ -1,0 +1,11 @@
+landmark_id,pass_number,segment_id,sample_count,min_x_px,max_x_px,min_y_px,max_y_px,operator_notes
+AOG-LM-P07-GC-X1,1,S01,38,924.219961923,1065.9300623,703.546809877,795.867798918,solid front-side run started near middle lower left node; stopped before UCLL node
+AOG-LM-P07-GC-X1,1,S02,31,1098.37072103,1324.70730704,809.624374144,835.562216482,solid front-side run started near UCLL node; stopped before great circle of projection y = 0 (x-axis)
+AOG-LM-P07-GC-X1,1,S03,10,1334.41419082,1391.75704332,818.025294402,830.616899996,solid front-side run started near  great circle of projection y = 0 (x-axis); stopped before spiral occlusion
+AOG-LM-P07-GC-X1,1,S04,11,1440.36497119,1477.01413508,778.390947037,801.148332615,"solid front-side run started near UCLR node; stopped before a part of label 1 MONTH from full label r = 1, θ = 1 MONTH"
+AOG-LM-P07-GC-X1,1,S05,20,1525.30484044,1582.9923696,708.642352557,752.795869055,"solid front-side run started near a part of label 1 MONTH from full label r = 1, θ = 1 MONTH; stopped before the middle right side node on the outer boundary"
+AOG-LM-P07-GC-X1,2,S01,41,922.454606602,1067.64855905,700.629340097,797.753987404,solid front-side run started near filled middle left node; stopped before filled UCLL node
+AOG-LM-P07-GC-X1,2,S02,28,1096.79276149,1322.14444658,809.147475587,835.416795332,solid front-side run started near filled UCLL node; stopped before great circle projection of y = 0 (x axis)
+AOG-LM-P07-GC-X1,2,S03,12,1332.93070022,1389.79019536,818.816608007,830.794274054,solid front-side run started near great circle projection of y = 0 (x axis); stopped before bottom spiral occlusion near UCLR filled node
+AOG-LM-P07-GC-X1,2,S04,15,1437.81378581,1476.54846164,778.613285298,802.395974866,solid front-side run started near UCLR filled node; stopped before label θ = 1 MONTH from the full label r = 1 θ = 1 MONTH
+AOG-LM-P07-GC-X1,2,S05,23,1525.12757192,1582.95689845,708.528500184,753.103045767,solid front-side run started near label θ = 1 MONTH from the full label r = 1 θ = 1 MONTH; stopped before filled middle right side node at outer boundary (horizon limb)
