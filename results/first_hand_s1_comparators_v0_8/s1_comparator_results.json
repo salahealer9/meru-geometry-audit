@@ -1,0 +1,1097 @@
+{
+  "checkpoint": "first_hand_s1_comparator_preregistration_v0.8",
+  "image_pixel_data_used": false,
+  "log_grid_summary": {
+    "G30": "RECIPROCAL_BEATS_ALL_REGISTERED_LOG_GRID_POINTS",
+    "GHALF": "RECIPROCAL_BEATS_ALL_REGISTERED_LOG_GRID_POINTS"
+  },
+  "primary_checkpoint_summary": "RECIPROCAL_NOT_STRICTLY_BEST_ALL_PRIMARY_CELLS",
+  "primary_scale_summary": {
+    "G30": "RECIPROCAL_NOT_STRICTLY_BEST_NAMED_COMPARATORS",
+    "GHALF": "RECIPROCAL_NOT_STRICTLY_BEST_NAMED_COMPARATORS"
+  },
+  "reciprocal_recomputed": false,
+  "results": [
+    {
+      "cell_id": "ARCHIMEDES-ENDPOINT-MATCHED-G30",
+      "comparator_id": "ARCHIMEDES-ENDPOINT-MATCHED",
+      "cross_norm_c": 0.645554485168389,
+      "delta_s1_deg": 139.79273839892204,
+      "delta_s1_rad": 2.4398435554402957,
+      "difference_d_deg": -4.784883709985454,
+      "difference_d_rad": -0.08351197506428765,
+      "dot_d": -0.7637142179369032,
+      "equation_label": "r(u)=1-((1-q_R)/L)u",
+      "family": "Archimedean",
+      "growth_parameter": null,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": null,
+      "normalization": "r(0)=1 and r(L)=q_R",
+      "p_inner": [
+        -0.029877507268076215,
+        -0.04653146061273485,
+        0.9984699082760038
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "primary_named": true,
+      "r_inner": 0.09592530447777492,
+      "r_outer": 1.0,
+      "reciprocal_reference_deg": 144.5776221089075,
+      "reciprocal_reference_rad": 2.5233555305045834,
+      "residual_r_s1": 1.8781449453846224,
+      "scale": "G30",
+      "state": "COMPARATOR_SMALLER_MISMATCH",
+      "tau_inner": [
+        -0.9766398991891957,
+        -0.21130056165891914,
+        -0.03907147238514001
+      ],
+      "tau_outer": [
+        0.8773203845173031,
+        -0.47811657166483984,
+        -0.04139428474888016
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5789247564764534,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681398,
+        1.2682483541073007e-17
+      ],
+      "transported_tau_outer": [
+        0.8832447404431514,
+        -0.46888993398231843,
+        0.004578022451539614
+      ],
+      "u_inner": 9.42477796076938,
+      "u_outer": 0.0
+    },
+    {
+      "cell_id": "ARCHIMEDES-ENDPOINT-MATCHED-GHALF",
+      "comparator_id": "ARCHIMEDES-ENDPOINT-MATCHED",
+      "cross_norm_c": 0.6447744710868927,
+      "delta_s1_deg": 139.8512318072602,
+      "delta_s1_rad": 2.4408644580065104,
+      "difference_d_deg": -4.351031365014083,
+      "difference_d_rad": -0.07593982317703896,
+      "dot_d": -0.7643728680654605,
+      "equation_label": "r(u)=1-((1-q_R)/L)u",
+      "family": "Archimedean",
+      "growth_parameter": null,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": null,
+      "normalization": "r(0)=1 and r(L)=q_R",
+      "p_inner": [
+        -0.028275329464599135,
+        -0.04403621652532902,
+        0.9986297198550635
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "primary_named": true,
+      "r_inner": 0.09592530447777492,
+      "r_outer": 1.0,
+      "reciprocal_reference_deg": 144.2022631722743,
+      "reciprocal_reference_rad": 2.5168042811835494,
+      "residual_r_s1": 1.8784956045013577,
+      "scale": "GHALF",
+      "state": "COMPARATOR_SMALLER_MISMATCH",
+      "tau_inner": [
+        -0.9766838821754712,
+        -0.21147371149706717,
+        -0.036979232608393246
+      ],
+      "tau_outer": [
+        0.8782803411577733,
+        -0.4764517193819424,
+        -0.04021692969106244
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5523563406657096,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        1.3224633369724575e-17
+      ],
+      "transported_tau_outer": [
+        0.8837666362740116,
+        -0.46790732098817656,
+        0.004389940157481497
+      ],
+      "u_inner": 9.42477796076938,
+      "u_outer": 0.0
+    },
+    {
+      "cell_id": "LOG-ENDPOINT-MATCHED-G30",
+      "comparator_id": "LOG-ENDPOINT-MATCHED",
+      "cross_norm_c": 0.0312543437970317,
+      "delta_s1_deg": 178.20896633780404,
+      "delta_s1_rad": 3.1103332191704216,
+      "difference_d_deg": 33.631344228896545,
+      "difference_d_rad": 0.5869776886658382,
+      "dot_d": -0.9995114636630321,
+      "equation_label": "r(u)=exp(-0.24872580324847479 u)",
+      "family": "Logarithmic",
+      "growth_parameter": 0.2487258032484748,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 1.0,
+      "normalization": "r(0)=1 and r(L)=q_R",
+      "p_inner": [
+        -0.02987750726807621,
+        -0.046531460612734846,
+        0.9984699082760038
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "primary_named": true,
+      "r_inner": 0.0959253044777749,
+      "r_outer": 1.0,
+      "reciprocal_reference_deg": 144.5776221089075,
+      "reciprocal_reference_rad": 2.5233555305045834,
+      "residual_r_s1": 1.9997557169129594,
+      "scale": "G30",
+      "state": "RECIPROCAL_SMALLER_MISMATCH",
+      "tau_inner": [
+        -0.9466902138054035,
+        0.3218695410366662,
+        -0.013328077052796155
+      ],
+      "tau_outer": [
+        0.9211340477638811,
+        -0.3747356479497953,
+        -0.10528656232290506
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5789247564764534,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681398,
+        1.2682483541073007e-17
+      ],
+      "transported_tau_outer": [
+        0.9362026755513628,
+        -0.3512676506336216,
+        0.01164422212109187
+      ],
+      "u_inner": 9.42477796076938,
+      "u_outer": 0.0
+    },
+    {
+      "cell_id": "LOG-ENDPOINT-MATCHED-GHALF",
+      "comparator_id": "LOG-ENDPOINT-MATCHED",
+      "cross_norm_c": 0.028547524449261324,
+      "delta_s1_deg": 178.36412508643232,
+      "delta_s1_rad": 3.1130412501972593,
+      "difference_d_deg": 34.161861914158024,
+      "difference_d_rad": 0.5962369690137099,
+      "dot_d": -0.9995924363698531,
+      "equation_label": "r(u)=exp(-0.24872580324847479 u)",
+      "family": "Logarithmic",
+      "growth_parameter": 0.2487258032484748,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 1.0,
+      "normalization": "r(0)=1 and r(L)=q_R",
+      "p_inner": [
+        -0.028275329464599132,
+        -0.04403621652532901,
+        0.9986297198550635
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "primary_named": true,
+      "r_inner": 0.0959253044777749,
+      "r_outer": 1.0,
+      "reciprocal_reference_deg": 144.2022631722743,
+      "reciprocal_reference_rad": 2.5168042811835494,
+      "residual_r_s1": 1.9997962078021114,
+      "scale": "GHALF",
+      "state": "RECIPROCAL_SMALLER_MISMATCH",
+      "tau_inner": [
+        -0.9467230369252585,
+        0.3218017192601224,
+        -0.01261526203631718
+      ],
+      "tau_outer": [
+        0.9232315947468461,
+        -0.37039209649824517,
+        -0.10224048763982921
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5523563406657096,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        1.3224633369724575e-17
+      ],
+      "transported_tau_outer": [
+        0.9371789918338211,
+        -0.3486703125361609,
+        0.011160216005010522
+      ],
+      "u_inner": 9.42477796076938,
+      "u_outer": 0.0
+    },
+    {
+      "cell_id": "GOLDEN-MEAN-G30",
+      "comparator_id": "GOLDEN-MEAN",
+      "cross_norm_c": 0.03778583578619355,
+      "delta_s1_deg": 177.83451557340433,
+      "delta_s1_rad": 3.1037978204450374,
+      "difference_d_deg": 33.256893464496855,
+      "difference_d_rad": 0.580442289940454,
+      "dot_d": -0.9992858603092203,
+      "equation_label": "r(u)=exp(-0.30634896253003313 u)",
+      "family": "Golden Mean logarithmic",
+      "growth_parameter": 0.30634896253003313,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": null,
+      "normalization": "quarter-turn radius ratio phi; r(0)=1",
+      "p_inner": [
+        -0.017375034521486924,
+        -0.02706001297990931,
+        0.9994827981875948
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "primary_named": true,
+      "r_inner": 0.05572809000084122,
+      "r_outer": 1.0,
+      "reciprocal_reference_deg": 144.5776221089075,
+      "reciprocal_reference_rad": 2.5233555305045834,
+      "residual_r_s1": 1.9996428982741994,
+      "scale": "G30",
+      "state": "RECIPROCAL_SMALLER_MISMATCH",
+      "tau_inner": [
+        -0.9627037222699389,
+        0.27039397295726403,
+        -0.009415015453547738
+      ],
+      "tau_outer": [
+        0.9333232515854902,
+        -0.3353625431777215,
+        -0.12821728699071142
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5557623077895127,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681397,
+        8.220019713484701e-18
+      ],
+      "transported_tau_outer": [
+        0.9518140660688066,
+        -0.3065648058662438,
+        0.008246419693269615
+      ],
+      "u_inner": 9.42477796076938,
+      "u_outer": 0.0
+    },
+    {
+      "cell_id": "GOLDEN-MEAN-GHALF",
+      "comparator_id": "GOLDEN-MEAN",
+      "cross_norm_c": 0.034498346351599,
+      "delta_s1_deg": 178.0229980713949,
+      "delta_s1_rad": 3.107087460617356,
+      "difference_d_deg": 33.8207348991206,
+      "difference_d_rad": 0.5902831794338068,
+      "dot_d": -0.9994047548911329,
+      "equation_label": "r(u)=exp(-0.30634896253003313 u)",
+      "family": "Golden Mean logarithmic",
+      "growth_parameter": 0.30634896253003313,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": null,
+      "normalization": "quarter-turn radius ratio phi; r(0)=1",
+      "p_inner": [
+        -0.01644155869654971,
+        -0.02560621051937348,
+        0.9995368913304128
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "primary_named": true,
+      "r_inner": 0.05572809000084122,
+      "r_outer": 1.0,
+      "reciprocal_reference_deg": 144.2022631722743,
+      "reciprocal_reference_rad": 2.5168042811835494,
+      "residual_r_s1": 1.9997023552974742,
+      "scale": "GHALF",
+      "state": "RECIPROCAL_SMALLER_MISMATCH",
+      "tau_inner": [
+        -0.9627163701040902,
+        0.2703660651141346,
+        -0.008909633455084394
+      ],
+      "tau_outer": [
+        0.9357209003658766,
+        -0.33005016304351126,
+        -0.1244720309685073
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5304349936402878,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        8.572316448451674e-18
+      ],
+      "transported_tau_outer": [
+        0.9528283257564574,
+        -0.3034069265912635,
+        0.007900540018905196
+      ],
+      "u_inner": 9.42477796076938,
+      "u_outer": 0.0
+    },
+    {
+      "cell_id": "LOG-GRID-M050-G30",
+      "comparator_id": "LOG-GRID-M050",
+      "cross_norm_c": 0.014526571503111697,
+      "delta_s1_deg": 179.16765948673287,
+      "delta_s1_rad": 3.1270655711355424,
+      "difference_d_deg": 34.5900373778254,
+      "difference_d_rad": 0.603710040630959,
+      "dot_d": -0.9998944837933477,
+      "equation_label": "r(u)=exp(-0.1243629016242374 u)",
+      "family": "Logarithmic sensitivity grid",
+      "growth_parameter": 0.1243629016242374,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 0.5,
+      "normalization": "r(0)=1; b fixed by preregistered multiplier of b_*",
+      "p_inner": [
+        -0.09510605713009498,
+        -0.14811890803588026,
+        0.9843859136433362
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "primary_named": false,
+      "r_inner": 0.30971810485952367,
+      "r_outer": 1.0,
+      "reciprocal_reference_deg": 144.5776221089075,
+      "reciprocal_reference_rad": 2.5233555305045834,
+      "residual_r_s1": 1.999947241200801,
+      "scale": "G30",
+      "state": "RECIPROCAL_SMALLER_MISMATCH",
+      "tau_inner": [
+        -0.8998645734322938,
+        0.4356446322934325,
+        -0.021389339294053834
+      ],
+      "tau_outer": [
+        0.886738081867128,
+        -0.4591611117130602,
+        -0.05354108382385631
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.7005444716733203,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681398,
+        3.229224777417926e-17
+      ],
+      "transported_tau_outer": [
+        0.8935860353605531,
+        -0.4484960560443223,
+        0.018849008496371666
+      ],
+      "u_inner": 9.42477796076938,
+      "u_outer": 0.0
+    },
+    {
+      "cell_id": "LOG-GRID-M050-GHALF",
+      "comparator_id": "LOG-GRID-M050",
+      "cross_norm_c": 0.013302145275044858,
+      "delta_s1_deg": 179.23782073857865,
+      "delta_s1_rad": 3.128290115987572,
+      "difference_d_deg": 35.03555756630435,
+      "difference_d_rad": 0.6114858348040224,
+      "dot_d": -0.9999115225514111,
+      "equation_label": "r(u)=exp(-0.1243629016242374 u)",
+      "family": "Logarithmic sensitivity grid",
+      "growth_parameter": 0.1243629016242374,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 0.5,
+      "normalization": "r(0)=1; b fixed by preregistered multiplier of b_*",
+      "p_inner": [
+        -0.09013787269736658,
+        -0.1403814192228388,
+        0.985985913206966
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "primary_named": false,
+      "r_inner": 0.30971810485952367,
+      "r_outer": 1.0,
+      "reciprocal_reference_deg": 144.2022631722743,
+      "reciprocal_reference_rad": 2.5168042811835494,
+      "residual_r_s1": 1.9999557607864287,
+      "scale": "GHALF",
+      "state": "RECIPROCAL_SMALLER_MISMATCH",
+      "tau_inner": [
+        -0.9000532193740759,
+        0.43530670947004213,
+        -0.02030445726252944
+      ],
+      "tau_outer": [
+        0.887947552318248,
+        -0.4569940720321149,
+        -0.05201502147974653
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.6676123033012454,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681398,
+        3.3623413054142233e-17
+      ],
+      "transported_tau_outer": [
+        0.8943021366422932,
+        -0.44709739331887566,
+        0.01809998023467136
+      ],
+      "u_inner": 9.42477796076938,
+      "u_outer": 0.0
+    },
+    {
+      "cell_id": "LOG-GRID-M075-G30",
+      "comparator_id": "LOG-GRID-M075",
+      "cross_norm_c": 0.02336796479625749,
+      "delta_s1_deg": 178.6609923590221,
+      "delta_s1_rad": 3.1182225615453665,
+      "difference_d_deg": 34.083370250114605,
+      "difference_d_rad": 0.5948670310407831,
+      "dot_d": -0.9997269318275271,
+      "equation_label": "r(u)=exp(-0.18654435243635609 u)",
+      "family": "Logarithmic sensitivity grid",
+      "growth_parameter": 0.1865443524363561,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 0.75,
+      "normalization": "r(0)=1; b fixed by preregistered multiplier of b_*",
+      "p_inner": [
+        -0.0535039930085168,
+        -0.08332753201134588,
+        0.9950848431872746
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "primary_named": false,
+      "r_inner": 0.17236531991943516,
+      "r_outer": 1.0,
+      "reciprocal_reference_deg": 144.5776221089075,
+      "reciprocal_reference_rad": 2.5233555305045834,
+      "residual_r_s1": 1.9998634612530561,
+      "scale": "G30",
+      "state": "RECIPROCAL_SMALLER_MISMATCH",
+      "tau_inner": [
+        -0.9254633971393786,
+        0.3784056813773094,
+        -0.018073208254621123
+      ],
+      "tau_outer": [
+        0.9053257450914555,
+        -0.4171648120998545,
+        -0.07974217717302555
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.622787369294115,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        2.973974067729713e-17
+      ],
+      "transported_tau_outer": [
+        0.9164467665787893,
+        -0.39984484732942777,
+        0.01579310265239072
+      ],
+      "u_inner": 9.42477796076938,
+      "u_outer": 0.0
+    },
+    {
+      "cell_id": "LOG-GRID-M075-GHALF",
+      "comparator_id": "LOG-GRID-M075",
+      "cross_norm_c": 0.021360250257090378,
+      "delta_s1_deg": 178.77605472595295,
+      "delta_s1_rad": 3.120230778693448,
+      "difference_d_deg": 34.57379155367866,
+      "difference_d_rad": 0.6034264975098984,
+      "dot_d": -0.9997718438268576,
+      "equation_label": "r(u)=exp(-0.18654435243635609 u)",
+      "family": "Logarithmic sensitivity grid",
+      "growth_parameter": 0.1865443524363561,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 0.75,
+      "normalization": "r(0)=1; b fixed by preregistered multiplier of b_*",
+      "p_inner": [
+        -0.050652744182656806,
+        -0.0788869750650383,
+        0.9955958741737805
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "primary_named": false,
+      "r_inner": 0.17236531991943516,
+      "r_outer": 1.0,
+      "reciprocal_reference_deg": 144.2022631722743,
+      "reciprocal_reference_rad": 2.5168042811835494,
+      "residual_r_s1": 1.9998859186597906,
+      "scale": "GHALF",
+      "state": "RECIPROCAL_SMALLER_MISMATCH",
+      "tau_inner": [
+        -0.9255483722141095,
+        0.3782422043057311,
+        -0.017118573940423442
+      ],
+      "tau_outer": [
+        0.9070209143246251,
+        -0.4139007335074666,
+        -0.07745478538929888
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5938867652966443,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        1.8600057647204445e-17
+      ],
+      "transported_tau_outer": [
+        0.9173222825399815,
+        -0.3978573030743561,
+        0.01514583593066034
+      ],
+      "u_inner": 9.42477796076938,
+      "u_outer": 0.0
+    },
+    {
+      "cell_id": "LOG-GRID-M100-G30",
+      "comparator_id": "LOG-GRID-M100",
+      "cross_norm_c": 0.0312543437970317,
+      "delta_s1_deg": 178.20896633780404,
+      "delta_s1_rad": 3.1103332191704216,
+      "difference_d_deg": 33.631344228896545,
+      "difference_d_rad": 0.5869776886658382,
+      "dot_d": -0.9995114636630321,
+      "equation_label": "r(u)=exp(-0.24872580324847479 u)",
+      "family": "Logarithmic sensitivity grid",
+      "growth_parameter": 0.2487258032484748,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 1.0,
+      "normalization": "r(0)=1; b fixed by preregistered multiplier of b_*",
+      "p_inner": [
+        -0.02987750726807621,
+        -0.046531460612734846,
+        0.9984699082760038
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "primary_named": false,
+      "r_inner": 0.0959253044777749,
+      "r_outer": 1.0,
+      "reciprocal_reference_deg": 144.5776221089075,
+      "reciprocal_reference_rad": 2.5233555305045834,
+      "residual_r_s1": 1.9997557169129594,
+      "scale": "G30",
+      "state": "RECIPROCAL_SMALLER_MISMATCH",
+      "tau_inner": [
+        -0.9466902138054035,
+        0.3218695410366662,
+        -0.013328077052796155
+      ],
+      "tau_outer": [
+        0.9211340477638811,
+        -0.3747356479497953,
+        -0.10528656232290506
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5789247564764534,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681398,
+        1.2682483541073007e-17
+      ],
+      "transported_tau_outer": [
+        0.9362026755513628,
+        -0.3512676506336216,
+        0.01164422212109187
+      ],
+      "u_inner": 9.42477796076938,
+      "u_outer": 0.0
+    },
+    {
+      "cell_id": "LOG-GRID-M100-GHALF",
+      "comparator_id": "LOG-GRID-M100",
+      "cross_norm_c": 0.028547524449261324,
+      "delta_s1_deg": 178.36412508643232,
+      "delta_s1_rad": 3.1130412501972593,
+      "difference_d_deg": 34.161861914158024,
+      "difference_d_rad": 0.5962369690137099,
+      "dot_d": -0.9995924363698531,
+      "equation_label": "r(u)=exp(-0.24872580324847479 u)",
+      "family": "Logarithmic sensitivity grid",
+      "growth_parameter": 0.2487258032484748,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 1.0,
+      "normalization": "r(0)=1; b fixed by preregistered multiplier of b_*",
+      "p_inner": [
+        -0.028275329464599132,
+        -0.04403621652532901,
+        0.9986297198550635
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "primary_named": false,
+      "r_inner": 0.0959253044777749,
+      "r_outer": 1.0,
+      "reciprocal_reference_deg": 144.2022631722743,
+      "reciprocal_reference_rad": 2.5168042811835494,
+      "residual_r_s1": 1.9997962078021114,
+      "scale": "GHALF",
+      "state": "RECIPROCAL_SMALLER_MISMATCH",
+      "tau_inner": [
+        -0.9467230369252585,
+        0.3218017192601224,
+        -0.01261526203631718
+      ],
+      "tau_outer": [
+        0.9232315947468461,
+        -0.37039209649824517,
+        -0.10224048763982921
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5523563406657096,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        1.3224633369724575e-17
+      ],
+      "transported_tau_outer": [
+        0.9371789918338211,
+        -0.3486703125361609,
+        0.011160216005010522
+      ],
+      "u_inner": 9.42477796076938,
+      "u_outer": 0.0
+    },
+    {
+      "cell_id": "LOG-GRID-M125-G30",
+      "comparator_id": "LOG-GRID-M125",
+      "cross_norm_c": 0.03827324753322555,
+      "delta_s1_deg": 177.80656872081175,
+      "delta_s1_rad": 3.1033100558517273,
+      "difference_d_deg": 33.22894661190427,
+      "difference_d_rad": 0.5799545253471439,
+      "dot_d": -0.9992673108449313,
+      "equation_label": "r(u)=exp(-0.3109072540605935 u)",
+      "family": "Logarithmic sensitivity grid",
+      "growth_parameter": 0.3109072540605935,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 1.25,
+      "normalization": "r(0)=1; b fixed by preregistered multiplier of b_*",
+      "p_inner": [
+        -0.016645103129411126,
+        -0.02592321219142235,
+        0.9995253511599841
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "primary_named": false,
+      "r_inner": 0.053384660228952954,
+      "r_outer": 1.0,
+      "reciprocal_reference_deg": 144.5776221089075,
+      "reciprocal_reference_rad": 2.5233555305045834,
+      "residual_r_s1": 1.9996336218642312,
+      "scale": "G30",
+      "state": "RECIPROCAL_SMALLER_MISMATCH",
+      "tau_inner": [
+        -0.9638286410795066,
+        0.2663658552452834,
+        -0.009142307929629265
+      ],
+      "tau_outer": [
+        0.9341882238805082,
+        -0.3322546326130306,
+        -0.12999700561998315
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5544106691900934,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        1.1533138101351326e-17
+      ],
+      "transported_tau_outer": [
+        0.9529416775533477,
+        -0.30304785899899245,
+        0.008009640312685808
+      ],
+      "u_inner": 9.42477796076938,
+      "u_outer": 0.0
+    },
+    {
+      "cell_id": "LOG-GRID-M125-GHALF",
+      "comparator_id": "LOG-GRID-M125",
+      "cross_norm_c": 0.034942276210871724,
+      "delta_s1_deg": 177.99754741884183,
+      "delta_s1_rad": 3.1066432629335243,
+      "difference_d_deg": 33.795284246567554,
+      "difference_d_rad": 0.589838981749975,
+      "dot_d": -0.999389332209026,
+      "equation_label": "r(u)=exp(-0.3109072540605935 u)",
+      "family": "Logarithmic sensitivity grid",
+      "growth_parameter": 0.3109072540605935,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 1.25,
+      "normalization": "r(0)=1; b fixed by preregistered multiplier of b_*",
+      "p_inner": [
+        -0.015750772835827008,
+        -0.02453037528380157,
+        0.9995749966078133
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "primary_named": false,
+      "r_inner": 0.053384660228952954,
+      "r_outer": 1.0,
+      "reciprocal_reference_deg": 144.2022631722743,
+      "reciprocal_reference_rad": 2.5168042811835494,
+      "residual_r_s1": 1.9996946427937572,
+      "scale": "GHALF",
+      "state": "RECIPROCAL_SMALLER_MISMATCH",
+      "tau_inner": [
+        -0.9638403456985968,
+        0.266339895115519,
+        -0.008651489667327627
+      ],
+      "tau_outer": [
+        0.9366067315313751,
+        -0.32686730530311686,
+        -0.12619665278442888
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.529155908500551,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681398,
+        5.154635687390072e-18
+      ],
+      "transported_tau_outer": [
+        0.9539566081659333,
+        -0.29984647341064613,
+        0.007673468560338057
+      ],
+      "u_inner": 9.42477796076938,
+      "u_outer": 0.0
+    },
+    {
+      "cell_id": "LOG-GRID-M150-G30",
+      "comparator_id": "LOG-GRID-M150",
+      "cross_norm_c": 0.04451473233278162,
+      "delta_s1_deg": 177.44865062838156,
+      "delta_s1_rad": 3.097063206686363,
+      "difference_d_deg": 32.87102851947408,
+      "difference_d_rad": 0.5737076761817796,
+      "dot_d": -0.999008727992574,
+      "equation_label": "r(u)=exp(-0.37308870487271217 u)",
+      "family": "Logarithmic sensitivity grid",
+      "growth_parameter": 0.3730887048727122,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 1.5,
+      "normalization": "r(0)=1; b fixed by preregistered multiplier of b_*",
+      "p_inner": [
+        -0.009266422388545333,
+        -0.014431597807835622,
+        0.9998529203842084
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "primary_named": false,
+      "r_inner": 0.029709803510929233,
+      "r_outer": 1.0,
+      "reciprocal_reference_deg": 144.5776221089075,
+      "reciprocal_reference_rad": 2.5233555305045834,
+      "residual_r_s1": 1.9995043025673005,
+      "scale": "G30",
+      "state": "RECIPROCAL_SMALLER_MISMATCH",
+      "tau_inner": [
+        -0.9772144273232551,
+        0.21216981979674704,
+        -0.0059942137681481
+      ],
+      "tau_outer": [
+        0.944575120767354,
+        -0.2900790240071202,
+        -0.15372703424712028
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5407500566778781,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        4.212300033599998e-18
+      ],
+      "transported_tau_outer": [
+        0.9668062991942561,
+        -0.2554560149968813,
+        0.005272972616999467
+      ],
+      "u_inner": 9.42477796076938,
+      "u_outer": 0.0
+    },
+    {
+      "cell_id": "LOG-GRID-M150-GHALF",
+      "comparator_id": "LOG-GRID-M150",
+      "cross_norm_c": 0.04062398914843869,
+      "delta_s1_deg": 177.67177619386672,
+      "delta_s1_rad": 3.1009574824494535,
+      "difference_d_deg": 33.46951302159244,
+      "difference_d_rad": 0.5841532012659041,
+      "dot_d": -0.9991745050318622,
+      "equation_label": "r(u)=exp(-0.37308870487271217 u)",
+      "family": "Logarithmic sensitivity grid",
+      "growth_parameter": 0.3730887048727122,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 1.5,
+      "normalization": "r(0)=1; b fixed by preregistered multiplier of b_*",
+      "p_inner": [
+        -0.008768243153076151,
+        -0.013655729618253244,
+        0.9998683108092793
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "primary_named": false,
+      "r_inner": 0.029709803510929233,
+      "r_outer": 1.0,
+      "reciprocal_reference_deg": 144.2022631722743,
+      "reciprocal_reference_rad": 2.5168042811835494,
+      "residual_r_s1": 1.9995872099170178,
+      "scale": "GHALF",
+      "state": "RECIPROCAL_SMALLER_MISMATCH",
+      "tau_inner": [
+        -0.9772184025393407,
+        0.21216036812762276,
+        -0.005672030889423269
+      ],
+      "tau_outer": [
+        0.9472383145564243,
+        -0.2836990919120526,
+        -0.14917908930068297
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5162291146500742,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        4.39300251738468e-18
+      ],
+      "transported_tau_outer": [
+        0.967797194735927,
+        -0.2516805331102404,
+        0.005049664802249471
+      ],
+      "u_inner": 9.42477796076938,
+      "u_outer": 0.0
+    },
+    {
+      "cell_id": "LOG-GRID-M200-G30",
+      "comparator_id": "LOG-GRID-M200",
+      "cross_norm_c": 0.0547958743797582,
+      "delta_s1_deg": 176.85885439634833,
+      "delta_s1_rad": 3.086769320521527,
+      "difference_d_deg": 32.281232287440865,
+      "difference_d_rad": 0.5634137900169436,
+      "dot_d": -0.9984975774387025,
+      "equation_label": "r(u)=exp(-0.49745160649694958 u)",
+      "family": "Logarithmic sensitivity grid",
+      "growth_parameter": 0.4974516064969496,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 2.0,
+      "normalization": "r(0)=1; b fixed by preregistered multiplier of b_*",
+      "p_inner": [
+        -0.002870360452897013,
+        -0.004470321541885747,
+        0.9999858885285244
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "primary_named": false,
+      "r_inner": 0.009201664039153823,
+      "r_outer": 1.0,
+      "reciprocal_reference_deg": 144.5776221089075,
+      "reciprocal_reference_rad": 2.5233555305045834,
+      "residual_r_s1": 1.999248647586739,
+      "scale": "G30",
+      "state": "RECIPROCAL_SMALLER_MISMATCH",
+      "tau_inner": [
+        -0.9940407366582622,
+        0.10898355586303665,
+        -0.00236609707069797
+      ],
+      "tau_outer": [
+        0.9579391108899841,
+        -0.20788819144833615,
+        -0.19782608443692803
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5289113088291743,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        2.1486636636131727e-18
+      ],
+      "transported_tau_outer": [
+        0.986576082051436,
+        -0.1632887513507712,
+        0.00210190540796168
+      ],
+      "u_inner": 9.42477796076938,
+      "u_outer": 0.0
+    },
+    {
+      "cell_id": "LOG-GRID-M200-GHALF",
+      "comparator_id": "LOG-GRID-M200",
+      "cross_norm_c": 0.04996410200679194,
+      "delta_s1_deg": 177.13607539488768,
+      "delta_s1_rad": 3.0916077397017045,
+      "difference_d_deg": 32.93381222261338,
+      "difference_d_rad": 0.5748034585181552,
+      "dot_d": -0.9987510142726537,
+      "equation_label": "r(u)=exp(-0.49745160649694958 u)",
+      "family": "Logarithmic sensitivity grid",
+      "growth_parameter": 0.4974516064969496,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 2.0,
+      "normalization": "r(0)=1; b fixed by preregistered multiplier of b_*",
+      "p_inner": [
+        -0.0027160070095554934,
+        -0.004229930296898584,
+        0.9999873654179873
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "primary_named": false,
+      "r_inner": 0.009201664039153823,
+      "r_outer": 1.0,
+      "reciprocal_reference_deg": 144.2022631722743,
+      "reciprocal_reference_rad": 2.5168042811835494,
+      "residual_r_s1": 1.9993754096080376,
+      "scale": "GHALF",
+      "state": "RECIPROCAL_SMALLER_MISMATCH",
+      "tau_inner": [
+        -0.9940411562370293,
+        0.10898241692759976,
+        -0.002238863008033422
+      ],
+      "tau_outer": [
+        0.9608946449424838,
+        -0.19972182735681407,
+        -0.1918141626630131
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5050268496333494,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681398,
+        8.963479486261633e-19
+      ],
+      "transported_tau_outer": [
+        0.9873549463938728,
+        -0.15851234947972348,
+        0.0020111921764007223
+      ],
+      "u_inner": 9.42477796076938,
+      "u_outer": 0.0
+    }
+  ],
+  "variant": "A"
+}
