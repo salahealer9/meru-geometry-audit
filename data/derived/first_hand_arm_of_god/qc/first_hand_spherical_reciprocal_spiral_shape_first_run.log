@@ -1,0 +1,55 @@
+========================================================================================
+FIRST HAND SPHERICAL RECIPROCAL-SPIRAL SHAPE AUDIT
+========================================================================================
+PASS 1
+  rho range: 0.083771389 -> 0.963139650
+  rho >= 1: 0
+  observed unwrapped angular span: -10.374183345 rad (-594.396922 deg)
+  maximum inter-segment angular jump: 9.533283 deg
+  PRIMARY length-weighted:
+    k: 1.768957243729
+    signed slope: 1.768957243729
+    handedness: +1
+    alpha0: 274.715695396 deg
+    weighted R^2: 0.935638314990
+    angular RMS: 41.263379334 deg
+    angular p95: 64.815527425 deg
+    angular chord RMS: 63.993468596 px
+    angular chord p95: 108.270972267 px
+  SECONDARY equal-segment:
+    k: 1.776394199464
+    weighted R^2: 0.956197751744
+    angular RMS: 40.405102832 deg
+----------------------------------------------------------------------------------------
+PASS 2
+  rho range: 0.086363860 -> 0.968397417
+  rho >= 1: 0
+  observed unwrapped angular span: -10.367107878 rad (-593.991527 deg)
+  maximum inter-segment angular jump: 11.754316 deg
+  PRIMARY length-weighted:
+    k: 1.806808782103
+    signed slope: 1.806808782103
+    handedness: +1
+    alpha0: 272.555265566 deg
+    weighted R^2: 0.941790997491
+    angular RMS: 39.448741257 deg
+    angular p95: 64.380505521 deg
+    angular chord RMS: 64.256317126 px
+    angular chord p95: 109.187918627 px
+  SECONDARY equal-segment:
+    k: 1.808358801843
+    weighted R^2: 0.963032524869
+    angular RMS: 37.144967262 deg
+----------------------------------------------------------------------------------------
+CROSS-PASS PRIMARY REPLICATION
+  |k1-k2|: 0.037851538375
+  relative k difference: 0.021171149399
+  handedness agrees: True
+  alpha0 circular difference: 2.160429830 deg
+----------------------------------------------------------------------------------------
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_shape.json
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_shape_segments.csv
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_shape_samples.csv
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_shape.png
+Wrote /home/salahealer/meru-geometry-audit/reports/first_hand_spherical_reciprocal_spiral_shape.md
+No coordinate curve, endpoint theta convention, scaffold, or expanded model was used.
