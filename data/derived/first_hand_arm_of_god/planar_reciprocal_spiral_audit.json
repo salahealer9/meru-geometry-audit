@@ -1,0 +1,172 @@
+{
+  "analytic_limits": {
+    "numerical_outer_limit_samples": [
+      {
+        "absolute_y_minus_one": 0.0016658335317184525,
+        "tangent_angle_to_positive_x_degrees": 0.01898481380779172,
+        "theta": 0.1,
+        "x": 9.950041652780259,
+        "x_times_theta_minus_one": -0.004995834721974068,
+        "y": 0.9983341664682815
+      },
+      {
+        "absolute_y_minus_one": 1.6666583333546647e-05,
+        "tangent_angle_to_positive_x_degrees": 1.9090959104164312e-05,
+        "theta": 0.01,
+        "x": 99.99500004166653,
+        "x_times_theta_minus_one": -4.999958333473664e-05,
+        "y": 0.9999833334166665
+      },
+      {
+        "absolute_y_minus_one": 1.666666583632903e-07,
+        "tangent_angle_to_positive_x_degrees": 0.0,
+        "theta": 0.001,
+        "x": 999.9995000000416,
+        "x_times_theta_minus_one": -4.999999583255033e-07,
+        "y": 0.9999998333333416
+      },
+      {
+        "absolute_y_minus_one": 1.66666658252268e-09,
+        "tangent_angle_to_positive_x_degrees": 0.0,
+        "theta": 0.0001,
+        "x": 9999.99995,
+        "x_times_theta_minus_one": -4.999999969612645e-09,
+        "y": 0.9999999983333334
+      },
+      {
+        "absolute_y_minus_one": 1.6666779067975313e-11,
+        "tangent_angle_to_positive_x_degrees": 0.0,
+        "theta": 1e-05,
+        "x": 99999.99999499999,
+        "x_times_theta_minus_one": -5.000000413701855e-11,
+        "y": 0.9999999999833332
+      },
+      {
+        "absolute_y_minus_one": 1.66644475996236e-13,
+        "tangent_angle_to_positive_x_degrees": 0.0,
+        "theta": 1e-06,
+        "x": 999999.9999995,
+        "x_times_theta_minus_one": -5.000444502911705e-13,
+        "y": 0.9999999999998334
+      }
+    ],
+    "theta_to_positive_infinity": {
+      "radius": 0.0,
+      "x": 0.0,
+      "y": 0.0
+    },
+    "theta_to_zero_positive": {
+      "oriented_tangent_inner_to_outer": [
+        1.0,
+        0.0
+      ],
+      "planar_arc_length_to_limit": "diverges",
+      "radius": "positive infinity",
+      "x": "positive infinity",
+      "y": 1.0
+    }
+  },
+  "checks": {
+    "diagram_angular_span_is_three_pi": true,
+    "outer_limit_tangent_convergence_pass": true,
+    "outer_limit_y_convergence_pass": true,
+    "prose_angular_span_is_three_pi": true,
+    "reciprocal_relation_max_residual": 2.220446049250313e-16,
+    "source_identity_pass": true,
+    "variants_are_distinct": true
+  },
+  "curve": {
+    "cartesian_parameterization": [
+      "x(theta)=cos(theta)/theta",
+      "y(theta)=sin(theta)/theta"
+    ],
+    "name": "unitary reciprocal spiral",
+    "orientation_for_endpoint_tests": "inner-to-outer, corresponding to decreasing theta",
+    "parameter_domain": "theta>0",
+    "polar_equation": "r*theta=1",
+    "radius_function": "r(theta)=1/theta"
+  },
+  "scope": {
+    "formal_exact_arithmetic": false,
+    "reason_no_self_embedment_verdict": "the source-level claim concerns the compactified spherical or dimpled-surface construction, whose coordinate map has not yet been frozen",
+    "s1_5_frame_alignment_verdict": null,
+    "s1_endpoint_alignment_verdict": null,
+    "s2_recursive_nesting_verdict": null,
+    "self_embedment_verdict": null
+  },
+  "source": {
+    "asset_id": "AOG_PDF_2005A",
+    "bytes": 1343797,
+    "canonical_url": "https://www.meru.org/NewReleases/ARMOFGODRef21sep0CPC.2005A.pdf",
+    "filename": "ARMOFGODRef21sep0CPC.2005A.pdf",
+    "sha256": "80d52f4b6afefe65ae50e4c01378765c34ae4fde1ad44e8b299870c2e1d3e6fa",
+    "source_pages": [
+      5,
+      6,
+      7
+    ]
+  },
+  "truncation_variants": {
+    "AOG_DIAGRAM": {
+      "angular_span_radians": 9.42477796076938,
+      "directed_planar_tangent_mismatch_degrees": 140.47934975805714,
+      "finite_planar_arc_length": 2.567874846510595,
+      "inner_endpoint": {
+        "oriented_tangent_inner_to_outer": [
+          -0.8892178742164623,
+          0.45748395837882216
+        ],
+        "r_times_theta_residual": 2.220446049250313e-16,
+        "radius": 0.09592530447777488,
+        "theta": 10.42477796076938,
+        "x": -0.051828663200445185,
+        "y": -0.08071836042691054
+      },
+      "outer_endpoint": {
+        "oriented_tangent_inner_to_outer": [
+          0.9770612638994757,
+          0.21295841515929614
+        ],
+        "r_times_theta_residual": 0.0,
+        "radius": 1.0,
+        "theta": 1.0,
+        "x": 0.5403023058681398,
+        "y": 0.8414709848078965
+      },
+      "outer_endpoint_absolute_y_minus_one": 0.1585290151921035,
+      "source_interpretation": "the marked unit point theta=1 begins a 3*pi-radian finite interval",
+      "theta_inner": 10.42477796076938,
+      "theta_outer": 1.0,
+      "turns": 1.5
+    },
+    "AOG_PROSE": {
+      "angular_span_radians": 9.42477796076938,
+      "directed_planar_tangent_mismatch_degrees": 96.05661059423021,
+      "inner_endpoint": {
+        "oriented_tangent_inner_to_outer": [
+          -0.10551104075352266,
+          0.9944181315116436
+        ],
+        "r_times_theta_residual": 0.0,
+        "radius": 0.1061032953945969,
+        "theta": 9.42477796076938,
+        "x": -0.1061032953945969,
+        "y": 3.8981718325193755e-17
+      },
+      "outer_endpoint": {
+        "oriented_tangent_inner_to_outer": [
+          1.0,
+          0.0
+        ],
+        "type": "asymptotic planar endpoint",
+        "x": "positive infinity",
+        "y": 1.0
+      },
+      "planar_arc_length": "infinite",
+      "source_interpretation": "the inner endpoint is 3*pi radians from the projected asymptotic outer end",
+      "theta_inner": 9.42477796076938,
+      "theta_outer": "0+",
+      "turns": 1.5
+    }
+  }
+}

@@ -1,0 +1,11 @@
+asset_id,frozen_description,construction_role,recovery_state,metric_value,new_recovery_result,source_context
+A01,Reciprocal spiral / theta construction,seed radial law,INGREDIENT_ONLY,formula-level,r*theta=1 recovered; no finished 3-D shaping,Arm of God / Most Asymmetric Spiral
+A02,Meeting Tent source image,historical working model,DESCRIPTIVE_ONLY,non-metric,tetrahedron/vortex duality only,Light in the Meeting Tent
+A03,Early toroidal vortex,early toroidal concept,DESCRIPTIVE_ONLY,non-metric,qualitative axle-to-rim vortex only,Light in the Meeting Tent
+A04,Seven-region toroidal ribbon,topological scaffold,PARTIAL_UNDERDETERMINED,topological,7-region/full-ribbon structure; no metric embedding,Light in the Meeting Tent
+A05,Tetrahedral correspondence,viewing/symmetry scaffold,PARTIAL_UNDERDETERMINED,correspondence-level,"tetrahedron constrains viewing frame, not vortex metric",Meeting Tent / Appendix
+A06,Hebrew letter projections,downstream projection output,DESCRIPTIVE_ONLY,non-invertible output,does not recover physical model geometry,Hebrew Letters / gestures
+A07,Arabic-letter comparison,downstream cross-alphabet output,DESCRIPTIVE_ONLY,non-metric,no shaping information,Meeting Tent / Arabic correspondence material
+A08,LAH Swath,symbolic hierarchical schema,DESCRIPTIVE_ONLY,non-metric,no FIRST HAND metric construction,LAH Swath poster
+A09,FIRST HAND Hebrew chart,physical-model shadowgram output,DESCRIPTIVE_ONLY,explicitly hand-drawn/non-metric,source admits distortions and truncated/simplified views,Alphachart / TORUS 2#4
+A10,"3,10 knot & tetrahelix",discrete/topological scaffold,PARTIAL_UNDERDETERMINED,discrete counts/topology,no metric ring-to-dimple/hand deformation,"3,10 poster"

@@ -1,0 +1,57 @@
+========================================================================================
+FIRST HAND RECIPROCAL-SPIRAL TRANSLATION SIGNATURE
+========================================================================================
+PASS 1
+  PRIMARY length-weighted:
+    c_x: 0.152681322402
+    c_y: -0.204631623887
+    |c|: 0.255314879522
+    direction: 306.727638909 deg
+    parent SSE explained: 0.264823719816
+    remaining angular RMS: 35.380220530 deg
+    remaining angular p95: 52.745359562 deg
+  SECONDARY equal-segment:
+    |c|: 0.181936120591
+    direction: 309.307753998 deg
+    parent SSE explained: 0.213820929759
+  S04-EXCLUDED sensitivity:
+    |c|: 0.257079658970
+    direction: 307.389853870 deg
+    parent SSE explained: 0.256129443984
+  RADIAL amplitude test:
+    eligible bands: 1
+    status: RADIAL_AMPLITUDE_TEST_NOT_IDENTIFIABLE
+----------------------------------------------------------------------------------------
+PASS 2
+  PRIMARY length-weighted:
+    c_x: 0.174215465673
+    c_y: -0.221364349518
+    |c|: 0.281697006937
+    direction: 308.203020909 deg
+    parent SSE explained: 0.331608239708
+    remaining angular RMS: 32.251409076 deg
+    remaining angular p95: 52.516952003 deg
+  SECONDARY equal-segment:
+    |c|: 0.214431396911
+    direction: 311.320419426 deg
+    parent SSE explained: 0.305921900176
+  S04-EXCLUDED sensitivity:
+    |c|: 0.286560629944
+    direction: 309.991239833 deg
+    parent SSE explained: 0.328293354523
+  RADIAL amplitude test:
+    eligible bands: 1
+    status: RADIAL_AMPLITUDE_TEST_NOT_IDENTIFIABLE
+----------------------------------------------------------------------------------------
+CROSS-PASS PRIMARY TRANSLATION-SIGNATURE REPLICATION
+  coefficient separation: 0.027270926523
+  relative magnitude difference: 0.09825528290827842
+  direction difference: 1.475382000 deg
+----------------------------------------------------------------------------------------
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_translation_signature.json
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_translation_signature_radial.csv
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_translation_signature_occupancy.csv
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_translation_signature.png
+Wrote /home/salahealer/meru-geometry-audit/reports/first_hand_spherical_reciprocal_spiral_translation_signature.md
+Parent model refitted: NO
+Nonlinear translated-isotropic model fit: NO

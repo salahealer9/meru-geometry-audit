@@ -1,0 +1,20 @@
+========================================================================================
+FIRST HAND SPHERICAL SPIRAL ENDPOINT CONSISTENCY
+========================================================================================
+INNER
+  pass 1 distance: 5.573018634423 px
+  pass 2 distance: 5.356464843230 px
+  mean endpoint distance: 5.452027774990 px
+  spiral endpoint pass separation: 0.775936334840 px
+  prior landmark consensus uncertainty: 3.000000000000 px
+----------------------------------------------------------------------------------------
+OUTER
+  pass 1 distance: 13.109712967054 px
+  pass 2 distance: 11.379005745177 px
+  mean endpoint distance: 12.240276302710 px
+  spiral endpoint pass separation: 1.842616560175 px
+  prior landmark consensus uncertainty: 6.750000000000 px
+----------------------------------------------------------------------------------------
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_spiral_endpoint_consistency.json
+Wrote /home/salahealer/meru-geometry-audit/reports/first_hand_spherical_spiral_endpoint_consistency.md
+No snapping, fitting, extrapolation, registration, theoretical spiral, or coordinate model was used.

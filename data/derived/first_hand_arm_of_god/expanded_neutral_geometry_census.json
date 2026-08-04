@@ -1,0 +1,398 @@
+{
+  "analysis_id": "first_hand_expanded_neutral_geometry_census_v0_8",
+  "incidence_addendum": {
+    "node_defined_thirty_degree_diagnostic": {
+      "absolute_residual_from_30_deg": 2.3627000237470064,
+      "angle_deg": 27.637299976252994,
+      "central_to_lr_length_px": 340.5947913265928,
+      "central_to_uclr_length_px": 203.0971423817984,
+      "compatibility_assessment": "compatible with an intended 30-degree construction at the resolution of the hand-drawn source",
+      "first_ray_landmark_id": "AOG-LM-P07-X1-UC-LR-INTERSECTION",
+      "interpretation_boundary": "The measured residual is smaller than the linearized coordinate-sensitivity scale. Because the source is hand-drawn and drafting, line-width, scanning, and page-deformation effects are not included in that sensitivity, the result is compatible with an intended 30-degree construction. It does not assume an angle-preserving projective map and does not certify an exact 30-degree angle.",
+      "linearized_coordinate_sensitivity_deg": 2.449469058422082,
+      "ray_length_ratio_uclr_over_lr": 0.5963013749880004,
+      "second_ray_landmark_id": "AOG-LM-P07-RIM-NODE-LR-SHARED",
+      "sensitivity_note": "The reported angular sensitivity is a first-order propagation of the protocol point uncertainty scales under isotropic independent coordinate perturbations. It is not a confidence interval.",
+      "signed_residual_from_30_deg": -2.3627000237470064,
+      "vertex_landmark_id": "AOG-LM-P07-CENTRAL-REFERENCE-NODE"
+    },
+    "nodes": {
+      "AOG-LM-P07-X1-UC-LL-INTERSECTION": {
+        "bearing_from_limb_center_deg": 212.25678172285828,
+        "consensus_uncertainty_px": 6.75,
+        "consensus_x_px": 1079.42806254,
+        "consensus_y_px": 805.489530972,
+        "pass_separation_px": 1.670294874,
+        "radial_distance_from_limb_center_px": 207.76412387933428,
+        "radial_fraction_of_limb_radius": 0.6076636574955177
+      },
+      "AOG-LM-P07-X1-UC-LR-INTERSECTION": {
+        "bearing_from_limb_center_deg": 326.50239507789473,
+        "consensus_uncertainty_px": 6.75,
+        "consensus_x_px": 1422.67365922,
+        "consensus_y_px": 805.489530972,
+        "pass_separation_px": 2.36215366114,
+        "radial_distance_from_limb_center_px": 200.91741650591825,
+        "radial_fraction_of_limb_radius": 0.5876385676645715
+      },
+      "AOG-LM-P07-YAXIS-UC-UCLR-INTERSECTION": {
+        "bearing_from_limb_center_deg": 30.095034946073564,
+        "consensus_uncertainty_px": 5.5,
+        "consensus_x_px": 1359.20245398,
+        "consensus_y_px": 634.284306352,
+        "pass_separation_px": 3.73489287984,
+        "radial_distance_from_limb_center_px": 120.29152974727879,
+        "radial_fraction_of_limb_radius": 0.351825856972379
+      }
+    },
+    "x1_node_pair": {
+      "chord_bearing_deg": 0.0,
+      "chord_length_px": 343.24559668000006,
+      "first_landmark_id": "AOG-LM-P07-X1-UC-LL-INTERSECTION",
+      "interpretation_boundary": "This is an image-space chord between two source-labelled x=1 incidence nodes, not a great-circle or conic fit.",
+      "second_landmark_id": "AOG-LM-P07-X1-UC-LR-INTERSECTION"
+    },
+    "yaxis_two_node_diagnostic": {
+      "bearing_central_to_yaxis_node_deg": 30.899881666680024,
+      "central_landmark_id": "AOG-LM-P07-CENTRAL-REFERENCE-NODE",
+      "interpretation_boundary": "Two nodes define an image-space direction only. Agreement with the printed y-axis curve remains for the later segment-aware trace stage.",
+      "limb_center_distance_fraction_of_radius": 0.0049420145272607695,
+      "limb_center_distance_to_two_node_line_px": 1.689706642465861,
+      "node_separation_px": 128.47434349366137,
+      "separate_yaxis_landmark_id": "AOG-LM-P07-YAXIS-UC-UCLR-INTERSECTION"
+    }
+  },
+  "original_neutral_census": {
+    "analysis_id": "first_hand_neutral_geometry_census_v0_8",
+    "central_reference": {
+      "consensus_x_px": 1248.96299228,
+      "consensus_y_px": 700.260953889,
+      "landmark_id": "AOG-LM-P07-CENTRAL-REFERENCE-NODE",
+      "offset_fraction_of_limb_radius": 0.024471821025984428,
+      "offset_from_limb_center_px": 8.367073450057411,
+      "role": "Neutral central reference; origin or pole status is not assumed."
+    },
+    "limb_geometry": {
+      "circle_parameter_pass_difference": {
+        "center_separation_px": 0.4935175441961744,
+        "radius_difference_px": -0.28870849729531756
+      },
+      "ellipse_residual_note": "Approximate pixel-scale normalized-radial residual, not exact orthogonal distance.",
+      "equal_pass_weight_circle": {
+        "center_x_px": 1255.1268387556074,
+        "center_y_px": 694.602781503521,
+        "max_abs_radial_residual_px": 5.883719668930439,
+        "radius_px": 341.906449919406,
+        "rms_radial_residual_px": 2.7506968359747304,
+        "sample_count": 89,
+        "weighted_rms_radial_residual_px": 2.7353421171622947
+      },
+      "equal_pass_weight_ellipse": {
+        "axis_ratio_minor_major": 0.979116407651298,
+        "center_x_px": 1255.1908940849867,
+        "center_y_px": 694.3513144432201,
+        "major_axis_angle_deg_image": 95.86682749476807,
+        "max_abs_approx_radial_residual_px": 3.6308517397150615,
+        "rms_approx_radial_residual_px": 1.2109807683677374,
+        "sample_count": 89,
+        "semi_major_px": 345.61976631796597,
+        "semi_minor_px": 338.40198401052794,
+        "weighted_rms_approx_radial_residual_px": 1.2013528625377807
+      },
+      "pass1_circle": {
+        "center_x_px": 1255.3454915728878,
+        "center_y_px": 694.4902314298982,
+        "max_abs_radial_residual_px": 5.5112859062252255,
+        "radius_px": 341.7627364023953,
+        "rms_radial_residual_px": 2.87485119079076,
+        "sample_count": 49,
+        "weighted_rms_radial_residual_px": 2.87485119079076
+      },
+      "pass2_circle": {
+        "center_x_px": 1254.909583034677,
+        "center_y_px": 694.721625709742,
+        "max_abs_radial_residual_px": 4.930123569233672,
+        "radius_px": 342.05144489969064,
+        "rms_radial_residual_px": 2.5687292181189885,
+        "sample_count": 40,
+        "weighted_rms_radial_residual_px": 2.5687292181189885
+      },
+      "weighting": "Each blind pass contributes total weight 0.5, independent of sample count."
+    },
+    "panel_comparison_boundary": "Flat and spherical panel coordinates are preserved separately; raw crop-pixel separation is not interpreted physically because the panels have different image frames.",
+    "panel_specific_landmarks": {
+      "AOG-LM-P07-FLAT-INNER-END": {
+        "consensus_uncertainty_px": 3.0,
+        "consensus_x_px": 585.020779735,
+        "consensus_y_px": 513.187927963,
+        "pass_separation_px": 1.670294875
+      },
+      "AOG-LM-P07-FLAT-UNIT-R1-THETA1RAD": {
+        "consensus_uncertainty_px": 3.5,
+        "consensus_x_px": 757.433615803,
+        "consensus_y_px": 613.457826,
+        "pass_separation_px": 6.54657974375
+      },
+      "AOG-LM-P07-SPHERE-INNER-END": {
+        "consensus_uncertainty_px": 3.0,
+        "consensus_x_px": 1224.7437166,
+        "consensus_y_px": 686.063447457,
+        "pass_separation_px": 4.72430732936
+      },
+      "AOG-LM-P07-SPHERE-UNIT-R1-ONEMONTH": {
+        "consensus_uncertainty_px": 3.83907111534,
+        "consensus_x_px": 1393.11580899,
+        "consensus_y_px": 781.526313845,
+        "pass_separation_px": 7.67814223068
+      }
+    },
+    "pass_agreement": {
+      "limb_symmetric_chamfer": {
+        "equal_direction_symmetric_rms_px": 12.36544380725586,
+        "pass1_to_pass2": {
+          "max_px": 29.170445916619666,
+          "median_px": 10.160007080034779,
+          "p95_px": 25.085954396653815,
+          "rms_px": 13.790129412155208
+        },
+        "pass2_to_pass1": {
+          "max_px": 20.11301370472578,
+          "median_px": 8.755839665079339,
+          "p95_px": 17.518685506243123,
+          "rms_px": 10.75363807726559
+        }
+      },
+      "point_landmarks_by_separation_descending": [
+        {
+          "consensus_uncertainty_px": 3.83907111534,
+          "landmark_id": "AOG-LM-P07-SPHERE-UNIT-R1-ONEMONTH",
+          "pass_separation_px": 7.67814223068
+        },
+        {
+          "consensus_uncertainty_px": 3.5,
+          "landmark_id": "AOG-LM-P07-FLAT-UNIT-R1-THETA1RAD",
+          "pass_separation_px": 6.54657974375
+        },
+        {
+          "consensus_uncertainty_px": 6.75,
+          "landmark_id": "AOG-LM-P07-RIM-NODE-UR",
+          "pass_separation_px": 5.010884623
+        },
+        {
+          "consensus_uncertainty_px": 3.0,
+          "landmark_id": "AOG-LM-P07-SPHERE-INNER-END",
+          "pass_separation_px": 4.72430732936
+        },
+        {
+          "consensus_uncertainty_px": 6.75,
+          "landmark_id": "AOG-LM-P07-RIM-NODE-LL",
+          "pass_separation_px": 3.73489288431
+        },
+        {
+          "consensus_uncertainty_px": 6.8,
+          "landmark_id": "AOG-LM-P07-UPPER-INTERIOR-CROSSING",
+          "pass_separation_px": 3.73489288342
+        },
+        {
+          "consensus_uncertainty_px": 6.75,
+          "landmark_id": "AOG-LM-P07-RIM-NODE-UL",
+          "pass_separation_px": 3.340589749
+        },
+        {
+          "consensus_uncertainty_px": 6.75,
+          "landmark_id": "AOG-LM-P07-CENTRAL-REFERENCE-NODE",
+          "pass_separation_px": 2.36215366822
+        },
+        {
+          "consensus_uncertainty_px": 6.75,
+          "landmark_id": "AOG-LM-P07-RIM-NODE-L",
+          "pass_separation_px": 2.36215366397
+        },
+        {
+          "consensus_uncertainty_px": 3.0,
+          "landmark_id": "AOG-LM-P07-FLAT-INNER-END",
+          "pass_separation_px": 1.670294875
+        },
+        {
+          "consensus_uncertainty_px": 6.75,
+          "landmark_id": "AOG-LM-P07-RIM-NODE-R",
+          "pass_separation_px": 1.670294874
+        },
+        {
+          "consensus_uncertainty_px": 6.75,
+          "landmark_id": "AOG-LM-P07-RIM-NODE-LR-SHARED",
+          "pass_separation_px": 0.0
+        }
+      ]
+    },
+    "provenance": {
+      "checksum_manifest": "data/derived/first_hand_arm_of_god/diagram_landmark_passes.sha256",
+      "checksum_manifest_sha256": "753cdac19ced231401970c9e3b6ffafd23b4127eb4be120650621d41ee37024b",
+      "crop_file_sha256": "ef8b7d652edea5227166e54ca1bf6e81a4c02afd0d78c9d793e615a2db6906f6",
+      "crop_id": "AOG_P07_SPHERICAL_PROJECTION",
+      "crop_pixel_sha256": "afb1df2172f081fa426f2f86c56912079116f6441ba64df367861d00375fddc4",
+      "limb_sample_counts": {
+        "pass1": 49,
+        "pass2": 40
+      },
+      "pass_file_sha256": {
+        "diagram_landmarks_pass1.csv": "f2c7d2c9291dfc7608a5a3d6a1bb2d59020e20059479e1e94a79968a406028be",
+        "diagram_landmarks_pass2.csv": "8872c74b31b70d9fc2bca2c761733b28e91468f5fd4d401f6e409aaa65871683"
+      },
+      "pass_row_counts": {
+        "pass1": 61,
+        "pass2": 52
+      },
+      "point_landmark_count": 12
+    },
+    "rim_node_census": {
+      "interpretation_boundary": "Sixfold regularity is an empirical image-space diagnostic, not a unique cuboctahedral or coordinate identification.",
+      "nodes": [
+        {
+          "bearing_deg": 59.935898487798035,
+          "consensus_x_px": 1426.8493964,
+          "consensus_y_px": 397.937581635,
+          "landmark_id": "AOG-LM-P07-RIM-NODE-UR",
+          "radial_distance_px": 342.7810928522184,
+          "radial_residual_from_limb_circle_px": 0.874642932812435,
+          "sixfold_bearing_residual_deg": 0.11509392989479039
+        },
+        {
+          "bearing_deg": 359.6060729738082,
+          "consensus_x_px": 1592.20858896,
+          "consensus_y_px": 696.92036414,
+          "landmark_id": "AOG-LM-P07-RIM-NODE-R",
+          "radial_distance_px": 337.0897173010969,
+          "radial_residual_from_limb_circle_px": -4.816732618309061,
+          "sixfold_bearing_residual_deg": -0.21473158409503412
+        },
+        {
+          "bearing_deg": 299.78364463486605,
+          "consensus_x_px": 1425.17910152,
+          "consensus_y_px": 991.72740946,
+          "landmark_id": "AOG-LM-P07-RIM-NODE-LR-SHARED",
+          "radial_distance_px": 342.3460480414022,
+          "radial_residual_from_limb_circle_px": 0.4395981219961982,
+          "sixfold_bearing_residual_deg": -0.037159923037165754
+        },
+        {
+          "bearing_deg": 240.04010983097203,
+          "consensus_x_px": 1081.93350485,
+          "consensus_y_px": 995.067999208,
+          "landmark_id": "AOG-LM-P07-RIM-NODE-LL",
+          "radial_distance_px": 346.80726341808236,
+          "radial_residual_from_limb_circle_px": 4.900813498676371,
+          "sixfold_bearing_residual_deg": 0.2193052730687839
+        },
+        {
+          "bearing_deg": 178.70912087640156,
+          "consensus_x_px": 913.233722541,
+          "consensus_y_px": 686.898594894,
+          "landmark_id": "AOG-LM-P07-RIM-NODE-L",
+          "radial_distance_px": 341.9799078984749,
+          "radial_residual_from_limb_circle_px": 0.07345797906890539,
+          "sixfold_bearing_residual_deg": -1.1116836815016882
+        },
+        {
+          "bearing_deg": 120.84946333762832,
+          "consensus_x_px": 1079.42806254,
+          "consensus_y_px": 400.443023947,
+          "landmark_id": "AOG-LM-P07-RIM-NODE-UL",
+          "radial_distance_px": 342.6368674404045,
+          "radial_residual_from_limb_circle_px": 0.7304175209985146,
+          "sixfold_bearing_residual_deg": 1.0286587797250775
+        }
+      ],
+      "radial_max_abs_residual_from_limb_circle_px": 4.900813498676371,
+      "radial_rms_residual_from_limb_circle_px": 2.849445521019333,
+      "sixfold_fit": {
+        "bearing_max_abs_residual_deg": 1.1116836815016882,
+        "bearing_residuals_deg": [
+          0.11509392989479039,
+          -0.21473158409503412,
+          -0.037159923037165754,
+          0.2193052730687839,
+          -1.1116836815016882,
+          1.0286587797250775
+        ],
+        "bearing_rms_residual_deg": 0.6328258609081864,
+        "gap_max_abs_residual_from_60_deg": 2.1403424612267656,
+        "gap_rms_residual_from_60_deg": 1.1100517363819502,
+        "phase_deg_mod_60": 59.820804557903244,
+        "sixfold_resultant_strength": 0.9978063988163535,
+        "sorted_bearings_deg": [
+          59.935898487798035,
+          120.84946333762832,
+          178.70912087640156,
+          240.04010983097203,
+          299.78364463486605,
+          359.6060729738082
+        ],
+        "successive_gaps_deg": [
+          60.91356484983029,
+          57.859657538773234,
+          61.33098895457047,
+          59.74353480389402,
+          59.82242833894213,
+          60.329825513989874
+        ]
+      }
+    },
+    "scope": {
+      "does_not_compute": [
+        "projective map fit",
+        "great-circle identity or endpoint assignment",
+        "unit-angle scale selection",
+        "truncation reconciliation",
+        "S1 tangent alignment",
+        "S1.5 Darboux-frame alignment",
+        "S2 recursive nesting"
+      ],
+      "uses_only": [
+        "frozen prepared source crop",
+        "blind neutral pass 1",
+        "blind neutral pass 2"
+      ]
+    },
+    "upper_interior_crossing": {
+      "bearing_from_limb_center_deg": 93.21479473649165,
+      "consensus_x_px": 1243.95210766,
+      "consensus_y_px": 495.649831783,
+      "landmark_id": "AOG-LM-P07-UPPER-INTERIOR-CROSSING",
+      "radial_distance_from_limb_center_px": 199.2665321060094,
+      "radial_fraction_of_limb_radius": 0.5828100995257048,
+      "role": "Neutral incidence landmark; curve identities remain unassigned."
+    },
+    "verdict": "No projection, scale, truncation, or self-embedment verdict is issued at this stage."
+  },
+  "provenance": {
+    "addendum_pass_checksum_manifest": "data/derived/first_hand_arm_of_god/diagram_incidence_addendum_passes.sha256",
+    "addendum_pass_checksum_manifest_sha256": "dad156be86548101bb6e8b10caed02d6d25b2384d61487ab3ac2a00619d5d034",
+    "crop_file_sha256": "ef8b7d652edea5227166e54ca1bf6e81a4c02afd0d78c9d793e615a2db6906f6",
+    "crop_id": "AOG_P07_SPHERICAL_PROJECTION",
+    "crop_pixel_sha256": "afb1df2172f081fa426f2f86c56912079116f6441ba64df367861d00375fddc4",
+    "expanded_point_count": 15,
+    "incidence_addendum_point_count": 3,
+    "neutral_pass_checksum_manifest": "data/derived/first_hand_arm_of_god/diagram_landmark_passes.sha256",
+    "neutral_pass_checksum_manifest_sha256": "753cdac19ced231401970c9e3b6ffafd23b4127eb4be120650621d41ee37024b",
+    "original_neutral_point_count": 12
+  },
+  "scope": {
+    "does_not_compute": [
+      "great-circle trace or curve fit",
+      "hidden-curve interpolation",
+      "projective-map selection",
+      "unit-angle selection",
+      "truncation reconciliation",
+      "S1 tangent alignment",
+      "S1.5 Darboux-frame alignment",
+      "S2 recursive nesting"
+    ],
+    "uses_only": [
+      "frozen prepared source crop",
+      "two frozen original neutral passes",
+      "two frozen three-point incidence-addendum passes"
+    ]
+  },
+  "verdict": "No great-circle, projective-map, unit-angle, truncation, or self-embedment verdict is issued."
+}

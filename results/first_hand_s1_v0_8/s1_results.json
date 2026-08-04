@@ -1,0 +1,203 @@
+{
+  "branches": [
+    {
+      "branch_id": "S1-PROSE-G30",
+      "cross_norm_c": 0.8085513781801451,
+      "delta_s1_deg": 126.04536234593385,
+      "delta_s1_rad": 2.1999065798058295,
+      "dot_d": -0.5884255847964022,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "p_inner": [
+        -0.06114414770950192,
+        2.2463995433710346e-17,
+        0.9981289461792392
+      ],
+      "p_outer": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "residual_r_s1": 1.7823723431406817,
+      "scale": "G30",
+      "state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "tau_inner": [
+        -0.10511876402119794,
+        0.9944388261671256,
+        -0.006439445783990199
+      ],
+      "tau_outer": [
+        0.0,
+        -0.5,
+        -0.8660254037844387
+      ],
+      "technical_error": null,
+      "theta_inner": 9.42477796076938,
+      "theta_outer": null,
+      "theta_outer_spec": "theta_outer -> 0+ (exact analytic limit)",
+      "transport_angle_rad": 1.6319786377318368,
+      "transport_axis": [
+        0.0,
+        -1.0,
+        2.2506105568524782e-17
+      ],
+      "transported_tau_outer": [
+        0.8644050236438119,
+        -0.5,
+        0.05295238520917673
+      ],
+      "truncation": "AOG-PROSE",
+      "zero_tolerance_rad": 1e-10
+    },
+    {
+      "branch_id": "S1-PROSE-GHALF",
+      "cross_norm_c": 0.8221994151550578,
+      "delta_s1_deg": 124.69442641730707,
+      "delta_s1_rad": 2.176328299867805,
+      "dot_d": -0.5691995447281042,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "p_inner": [
+        -0.05786736220233532,
+        2.1260123968857143e-17,
+        0.9983242801774099
+      ],
+      "p_outer": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "residual_r_s1": 1.7715527340319874,
+      "scale": "GHALF",
+      "state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "tau_inner": [
+        -0.10515968328480034,
+        0.9944366674410802,
+        -0.0060955278786196596
+      ],
+      "tau_outer": [
+        0.0,
+        -0.479425538604203,
+        -0.8775825618903728
+      ],
+      "technical_error": null,
+      "theta_inner": 9.42477796076938,
+      "theta_outer": null,
+      "theta_outer_spec": "theta_outer -> 0+ (exact analytic limit)",
+      "transport_angle_rad": 1.628696033840603,
+      "transport_axis": [
+        0.0,
+        -1.0,
+        2.1295809779442662e-17
+      ],
+      "transported_tau_outer": [
+        0.8761119793954537,
+        -0.47942553860420306,
+        0.05078338797136351
+      ],
+      "truncation": "AOG-PROSE",
+      "zero_tolerance_rad": 1e-10
+    },
+    {
+      "branch_id": "S1-DIAGRAM-G30",
+      "cross_norm_c": 0.5795994908863324,
+      "delta_s1_deg": 144.5776221089075,
+      "delta_s1_rad": 2.5233555305045834,
+      "dot_d": -0.8149014849442257,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "p_inner": [
+        -0.02987750726807621,
+        -0.04653146061273484,
+        0.9984699082760038
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "residual_r_s1": 1.9052041806295856,
+      "scale": "G30",
+      "state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "tau_inner": [
+        -0.8890725085665676,
+        0.4577360356170584,
+        -0.005272210990604149
+      ],
+      "tau_outer": [
+        0.9424148891056268,
+        0.06863905338196455,
+        -0.3273268353539886
+      ],
+      "technical_error": null,
+      "theta_inner": 10.42477796076938,
+      "theta_outer": 1.0,
+      "theta_outer_spec": "1.0",
+      "transport_angle_rad": 0.5789247564764534,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681398,
+        1.585310442634126e-17
+      ],
+      "transported_tau_outer": [
+        0.9892619523773521,
+        0.14159903159874676,
+        0.03620088160316648
+      ],
+      "truncation": "AOG-DIAGRAM",
+      "zero_tolerance_rad": 1e-10
+    },
+    {
+      "branch_id": "S1-DIAGRAM-GHALF",
+      "cross_norm_c": 0.5849256376659845,
+      "delta_s1_deg": 144.2022631722743,
+      "delta_s1_rad": 2.5168042811835494,
+      "dot_d": -0.8110869240722856,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "p_inner": [
+        -0.02827532946459913,
+        -0.04403621652532901,
+        0.9986297198550637
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "residual_r_s1": 1.9032009479150043,
+      "scale": "GHALF",
+      "state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "tau_inner": [
+        -0.8890876811620606,
+        0.4577097249404188,
+        -0.004990280637022606
+      ],
+      "tau_outer": [
+        0.9452187336596601,
+        0.08099207119365641,
+        -0.31623065939688716
+      ],
+      "technical_error": null,
+      "theta_inner": 10.42477796076938,
+      "theta_outer": 1.0,
+      "theta_outer_spec": "1.0",
+      "transport_angle_rad": 0.5523563406657095,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        9.91847502729343e-18
+      ],
+      "transported_tau_outer": [
+        0.988358146229971,
+        0.1481777255677333,
+        0.03451863882641859
+      ],
+      "truncation": "AOG-DIAGRAM",
+      "zero_tolerance_rad": 1e-10
+    }
+  ],
+  "checkpoint": "first_hand_analytic_s1_preregistration_v0.8",
+  "cross_branch_state": "S1_NO_REGISTERED_BRANCH_COMPATIBLE",
+  "image_pixel_data_used": false
+}

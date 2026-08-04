@@ -1,0 +1,23 @@
+========================================================================================
+FIRST HAND SPHERICAL SPIRAL TWO-PASS REPRODUCIBILITY
+========================================================================================
+S01: median=0.255407 px  RMS=0.318416 px  p95=0.613370 px  max=0.909603 px
+S02: median=0.945721 px  RMS=0.987927 px  p95=1.550200 px  max=1.652057 px
+S03: median=0.823492 px  RMS=0.941529 px  p95=1.362041 px  max=2.123869 px
+S04: median=0.414486 px  RMS=0.470037 px  p95=0.775381 px  max=0.969623 px
+S05: median=0.540685 px  RMS=0.637941 px  p95=1.078516 px  max=1.264021 px
+S06: median=0.363659 px  RMS=0.556244 px  p95=1.166030 px  max=1.860996 px
+S07: median=0.640871 px  RMS=1.623169 px  p95=3.307334 px  max=3.505502 px
+S08: median=0.674793 px  RMS=0.827824 px  p95=1.418229 px  max=2.089126 px
+S09: median=1.046521 px  RMS=1.109138 px  p95=1.458487 px  max=1.470735 px
+S10: median=0.489072 px  RMS=0.648804 px  p95=1.095534 px  max=1.842617 px
+----------------------------------------------------------------------------------------
+RMS equal-segment: 0.887258846871 px
+RMS length-weighted: 0.956050554591 px
+Median descriptive source scale: 7.000000000000 px
+----------------------------------------------------------------------------------------
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_spiral_reproducibility.json
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_spiral_reproducibility_segments.csv
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_spiral_reproducibility.png
+Wrote /home/salahealer/meru-geometry-audit/reports/first_hand_spherical_spiral_reproducibility.md
+No theoretical spiral, registration, coordinate model, scaffold model, or endpoint holdout was used.

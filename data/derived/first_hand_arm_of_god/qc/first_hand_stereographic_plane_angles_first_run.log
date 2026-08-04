@@ -1,0 +1,17 @@
+================================================================================================
+FIRST HAND STEREOGRAPHIC SPHERICAL-PLANE RECONSTRUCTION
+================================================================================================
+delta_x (YAXIS vs X1): 52.232240366 deg
+delta_y (Y0 vs Y1): 40.124661708 deg
+|delta_x-delta_y|: 12.107578658 deg
+k_x: 1.290691237560
+k_y: 0.842814100706
+------------------------------------------------------------------------------------------------
+G30: pred=30.000000000 deg, dx-res=+22.232240366 deg, dy-res=+10.124661708 deg, RMS=17.273987473 deg
+GHALF: pred=28.647889757 deg, dx-res=+23.584350610 deg, dy-res=+11.476771951 deg, RMS=18.546399760 deg
+GUNIT: pred=45.000000000 deg, dx-res=+7.232240366 deg, dy-res=-4.875338292 deg, RMS=6.167423456 deg
+GONE: pred=57.295779513 deg, dx-res=-5.063539147 deg, dy-res=-17.171117805 deg, RMS=12.658726543 deg
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_stereographic_plane_angles.json
+Wrote /home/salahealer/meru-geometry-audit/reports/first_hand_stereographic_plane_angles.md
+Scaffold holdout was not used.
+No single construction scale, spiral projection, or self-embedment score was computed.

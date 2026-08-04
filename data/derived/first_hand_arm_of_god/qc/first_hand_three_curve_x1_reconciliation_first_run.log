@@ -1,0 +1,36 @@
+================================================================================================
+FIRST HAND THREE-CURVE X1 RECONSTRUCTION AND ANISOTROPIC RECONCILIATION
+================================================================================================
+r_y: 1.186584347553
+k_y: 0.842755091168
+------------------------------------------------------------------------------------------------
+ISOTROPIC TWO-BRANCH PREDICTION
+plus_frozen_yaxis_normal
+  predicted centre: (-0.592793451592, 1.027899964786)
+  X1 plane residual: 22.496479194 deg
+  X1 centre displacement: 0.594056184288
+minus_frozen_yaxis_normal
+  predicted centre: (0.592793451592, -1.027899964786)
+  X1 plane residual: 89.269138711 deg
+  X1 centre displacement: 2.113030663385
+------------------------------------------------------------------------------------------------
+ANISOTROPIC GLOBAL SCALE RECONCILIATION
+plus_frozen_yaxis_normal
+  optimum class: FINITE_INTERIOR
+  optimal r_x: 0.866351356057
+  optimal k_x: 1.154266098862
+  minimum X1 residual: 20.715146971 deg
+  r->0 residual: 45.013146975 deg
+  r->inf residual: 52.232240366 deg
+minus_frozen_yaxis_normal
+  optimum class: LIMIT_R_TO_ZERO
+  minimum X1 residual: 45.013146975 deg
+  r->0 residual: 45.013146975 deg
+  r->inf residual: 52.232240366 deg
+------------------------------------------------------------------------------------------------
+minimum over both sign branches: 20.715146971 deg
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_three_curve_x1_reconciliation.json
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_three_curve_x1_reconciliation_sweep.csv
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_three_curve_x1_reconciliation_sweep.png
+Wrote /home/salahealer/meru-geometry-audit/reports/first_hand_three_curve_x1_reconciliation.md
+No optimizer, map refit, scaffold reassignment, spiral projection, or self-embedment score was computed.

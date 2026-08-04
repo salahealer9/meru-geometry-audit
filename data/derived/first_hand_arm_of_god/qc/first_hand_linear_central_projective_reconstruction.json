@@ -1,0 +1,224 @@
+{
+  "analysis_class": "preregistered_linear_central_projective_reconstruction",
+  "calibration_vectors": {
+    "circle_radii_used": false,
+    "g_x_from_X1_circle_center": [
+      0.0006286021569952505,
+      1.0004588238650503
+    ],
+    "g_y_from_Y1_circle_center": [
+      -1.0180416796795988,
+      -0.6095683327505922
+    ],
+    "line_directions_used_to_construct_L": false
+  },
+  "centre_scale_diagnostics": {
+    "delta_x_center_minus_observed_deg": -7.245387341560274,
+    "delta_x_center_predicted_deg": 44.9868530247214,
+    "delta_y_center_minus_observed_deg": -0.0019768610249428775,
+    "delta_y_center_predicted_deg": 40.12268484694642,
+    "k_x_center": 0.9995411892591651,
+    "k_x_center_minus_angle_derived": -0.29115004830059565,
+    "k_y_center": 0.8427550911677107,
+    "k_y_center_minus_angle_derived": -5.9009538162291264e-05,
+    "norm_c_X1": 1.0004590213447582,
+    "norm_c_Y1": 1.1865843475527542,
+    "prior_delta_x_observed_deg": 52.23224036628167,
+    "prior_delta_y_observed_deg": 40.12466170797136,
+    "prior_k_x_tan_delta_x": 1.2906912375597608,
+    "prior_k_y_tan_delta_y": 0.842814100705873,
+    "single_isotropic_scale_imposed": false
+  },
+  "checkpoint": "first_hand_linear_central_projective_reconstruction_v0.8",
+  "fixed_source_scale_comparison": {
+    "G30": {
+      "candidate_reoptimized": false,
+      "candidate_selected": false,
+      "k_x_center_minus_candidate": 0.4221909200695394,
+      "k_y_center_minus_candidate": 0.265404821978085,
+      "predicted_delta_degrees": 29.999999999999996,
+      "scale_k": 0.5773502691896257,
+      "sigma_1_minus_candidate": 0.7578499633744216,
+      "sigma_2_minus_candidate": 0.15826754989465752
+    },
+    "GHALF": {
+      "candidate_reoptimized": false,
+      "candidate_selected": false,
+      "k_x_center_minus_candidate": 0.45323869941537465,
+      "k_y_center_minus_candidate": 0.29645260132392026,
+      "predicted_delta_degrees": 28.64788975654116,
+      "scale_k": 0.5463024898437905,
+      "sigma_1_minus_candidate": 0.7888977427202568,
+      "sigma_2_minus_candidate": 0.18931532924049277
+    },
+    "GONE": {
+      "candidate_reoptimized": false,
+      "candidate_selected": false,
+      "k_x_center_minus_candidate": -0.5578665353957372,
+      "k_y_center_minus_candidate": -0.7146526334871915,
+      "predicted_delta_degrees": 57.29577951308232,
+      "scale_k": 1.5574077246549023,
+      "sigma_1_minus_candidate": -0.222207492090855,
+      "sigma_2_minus_candidate": -0.821789905570619
+    },
+    "GUNIT": {
+      "candidate_reoptimized": false,
+      "candidate_selected": false,
+      "k_x_center_minus_candidate": -0.0004588107408348696,
+      "k_y_center_minus_candidate": -0.15724490883228925,
+      "predicted_delta_degrees": 45.0,
+      "scale_k": 1.0,
+      "sigma_1_minus_candidate": 0.3352002325640473,
+      "sigma_2_minus_candidate": -0.26438218091571675
+    }
+  },
+  "independent_zero_line_validation": {
+    "eta_x_deg": 30.008196754047585,
+    "eta_y_deg": 0.43693876148820004,
+    "gamma_G_deg": 59.0522765900561,
+    "gamma_G_deviation_from_90_deg": 30.947723409943897,
+    "observed_y0_normal": [
+      0.8618524376075345,
+      0.5071591227513815
+    ],
+    "observed_yaxis_normal": [
+      -0.49957969934002194,
+      0.8662679285344306
+    ],
+    "observed_zero_line_normal_angle_deg": 89.49741210559189,
+    "observed_zero_line_normal_deviation_from_90_deg": 0.5025878944081086,
+    "post_hoc_pass_threshold_added": false,
+    "predicted_y0_normal_from_Y1": [
+      -0.8579598085709097,
+      -0.5137168158401748
+    ],
+    "predicted_yaxis_normal_from_X1": [
+      0.000628313747573909,
+      0.9999998026108979
+    ]
+  },
+  "interpretation_boundary": "X1 and Y1 alone reconstruct the candidate 2x2 linear central-projective gauge. YAXIS and Y0 are independent directional validations and are not used to improve L. No post-hoc validation threshold is introduced. Rendering closure, especially the larger Y1 misclosure, must remain visible when interpreting the reconstructed map.",
+  "linear_map_reconstruction": {
+    "G": [
+      [
+        0.0006286021569952505,
+        -1.0180416796795988
+      ],
+      [
+        1.0004588238650503,
+        -0.6095683327505922
+      ]
+    ],
+    "L": [
+      [
+        -0.5987162383897046,
+        -0.9826477385815101
+      ],
+      [
+        0.9999175682754722,
+        0.0006174112050434189
+      ]
+    ],
+    "L_transpose_L": [
+      [
+        1.3582962774574512,
+        0.5889445180164445
+      ],
+      [
+        0.5889445180164445,
+        0.9655969593359519
+      ]
+    ],
+    "U": [
+      [
+        -0.7940803091786066,
+        0.6078128516038539
+      ],
+      [
+        0.6078128516038539,
+        0.7940803091786066
+      ]
+    ],
+    "Vt": [
+      [
+        0.8112577408355838,
+        0.5846887017331059
+      ],
+      [
+        0.5846887017331059,
+        -0.8112577408355838
+      ]
+    ],
+    "condition_number_G": 1.8150732594081813,
+    "condition_number_L": 1.8150732594081802,
+    "det_G": 1.0181256055290486,
+    "det_L": 0.9821970831195922,
+    "inverse_available": true,
+    "singular_value_ratio": 1.8150732594081807,
+    "singular_values_L": [
+      1.3352002325640473,
+      0.7356178190842833
+    ]
+  },
+  "model": {
+    "dual_vectors": "g_x=L^-T e_x; g_y=L^-T e_y",
+    "formula": "S_L(p)=normalize((L p,1))",
+    "matrix_relation": "G=[g_x g_y]=L^-T; L=(G^-1)^T",
+    "stereographic_offset_circle_relation": "c_X1=g_x; c_Y1=g_y"
+  },
+  "partition": {
+    "L_calibration": [
+      "AOG-LM-P07-GC-X1",
+      "AOG-LM-P07-GC-Y1"
+    ],
+    "independent_line_validation": [
+      "AOG-LM-P07-GC-YAXIS",
+      "AOG-LM-P07-GC-Y0"
+    ],
+    "scaffold_holdout": "AOG-LM-P07-GC-SCAFFOLD-UR-UC-X1LL-LL",
+    "scaffold_used": false
+  },
+  "provenance": {
+    "core_reconstruction_sha256_before_fixed_scale_comparison": "5d76528c1701d50f7a649fb9c34c593c2c81ab3bc462fb12d3f77e230a768e39",
+    "plane_angle_result": "data/derived/first_hand_arm_of_god/qc/first_hand_stereographic_plane_angles.json",
+    "plane_angle_sha256": "5a4ac4d289c7f47847e6eb37a41467c632eb63c57b592b96f714458fb1916597",
+    "protocol_path": "docs/first_hand_linear_central_projective_reconstruction_protocol.md",
+    "protocol_sha256": "70d2e2accdeb4cbd3af228b2bf9c9a12c58fb4dcebc9f1cf000c22a940e6d1a4",
+    "rendering_comparator_result": "data/derived/first_hand_arm_of_god/qc/first_hand_spherical_rendering_comparator.json",
+    "rendering_comparator_sha256": "a68813074448d6fd3bb05983d72e8140f6ec913358497472d65b8afdd8243e95"
+  },
+  "rendering_closure_context": {
+    "AOG-LM-P07-GC-X1": {
+      "delta_R_px": -0.5342697559333942,
+      "delta_antipodal_deg": 0.1788411052144454,
+      "epsilon_power": -0.0031227976297902764
+    },
+    "AOG-LM-P07-GC-Y1": {
+      "delta_R_px": -8.743111375754154,
+      "delta_antipodal_deg": 2.438130126947101,
+      "epsilon_power": -0.05048938675863168
+    },
+    "scaffold_holdout": {
+      "curve_id": "AOG-LM-P07-GC-SCAFFOLD-UR-UC-X1LL-LL",
+      "delta_R_px": -1.0618976722780076,
+      "delta_antipodal_deg": 0.32958904351056617,
+      "epsilon_power": -0.006201980948051913,
+      "used_for_linear_map_reconstruction": false
+    }
+  },
+  "scope": {
+    "curve_refits": 0,
+    "free_parameters_fitted": 0,
+    "general_3x3_projective_fit": false,
+    "nonlinear_map_fit": false,
+    "optimizer_calls": 0,
+    "reciprocal_spiral_projection_computed": false,
+    "rendering_refits": 0,
+    "s1_5_computed": false,
+    "s1_computed": false,
+    "s2_computed": false,
+    "scaffold_planar_identity_assigned": false,
+    "single_scale_selected": false,
+    "source_candidate_selected": false
+  }
+}

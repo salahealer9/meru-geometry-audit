@@ -6,12 +6,15 @@ authors:
   - family-names: "Gherbi"
     given-names: "Salah-Eddin"
     orcid: "https://orcid.org/0009-0005-4017-1095"
-version: 0.7.0
-date-released: 2026-07-30
+version: 0.8.0
+date-released: 2026-08-04
 abstract: >-
   A reproducible mathematical audit of Stan Tenen's Meru Foundation geometry,
   including reciprocal-spiral, toroidal, tetrahedral, combinatorial, and
-  alphabet-projection claims.
+  alphabet-projection claims. Version 0.8.0 adds preregistered FIRST HAND
+  endpoint-parallelism tests, truncation and comparator analyses, a bounded
+  dimpled-sphere carrier-family sweep, and a source-recovery audit of the
+  published FIRST HAND construction record.
 keywords:
   - geometry
   - computational geometry

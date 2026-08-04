@@ -1,0 +1,83 @@
+================================================================================================
+FIRST HAND TRANSLATED-ISOTROPIC RECIPROCAL-SPIRAL AUDIT
+================================================================================================
+PASS 1
+  PRIMARY length-weighted:
+    r_tau: 0.024697224138
+    phi_tau: 234.825259944 deg
+    t: (-0.028472125567, -0.040399612025)
+    |t|: 0.049424594951
+    J: 0.028643967678
+    weighted R^2: 0.971356032322
+    k: 1.967848571007
+    angular RMS: 27.309138458 deg
+    page RMS: 66.181120563 px
+    page p95: 145.876921607 px
+    intrinsic span: 578.810767365 deg
+    span - 540 deg: 38.810767365 deg
+    at radial boundary: False
+  EXPANDED bound:
+    r_tau: 0.024697237411
+    |t|: 0.049424621546
+    J: 0.028643967678
+    at radial boundary: False
+    primary/expanded translation separation: 0.000000028410
+  SECONDARY equal-segment:
+    r_tau: 0.020430291973
+    phi_tau: 239.352637562 deg
+    |t|: 0.040877646145
+    J: 0.015181932016
+------------------------------------------------------------------------------------------------
+PASS 2
+  PRIMARY length-weighted:
+    r_tau: 0.023116671758
+    phi_tau: 235.653553350 deg
+    t: (-0.026098592688, -0.038192562694)
+    |t|: 0.046258062924
+    J: 0.028743827698
+    weighted R^2: 0.971256172302
+    k: 1.983056988422
+    angular RMS: 27.516910130 deg
+    page RMS: 66.711415834 px
+    page p95: 145.360894412 px
+    intrinsic span: 579.817898889 deg
+    span - 540 deg: 39.817898889 deg
+    at radial boundary: False
+  EXPANDED bound:
+    r_tau: 0.023116668209
+    |t|: 0.046258055814
+    J: 0.028743827698
+    at radial boundary: False
+    primary/expanded translation separation: 0.000000013020
+  SECONDARY equal-segment:
+    r_tau: 0.018468406556
+    phi_tau: 240.207577902 deg
+    |t|: 0.036949415895
+    J: 0.015139332200
+------------------------------------------------------------------------------------------------
+CROSS-PASS PRIMARY REPLICATION
+  construction translation separation: 0.003241099362
+  tau-disk separation: 0.001617856351
+  relative |t| difference: 0.06618821209995598
+  translation direction difference: 0.828293406 deg
+  relative k difference: 0.007698699544589697
+  alpha0 difference: 0.184278444 deg
+  handedness agrees: True
+------------------------------------------------------------------------------------------------
+ZERO-REFIT CROSS-PREDICTION
+  pass1_model_on_pass2:
+    angular RMS: 27.685564465 deg
+    page RMS: 66.166327615 px
+    page p95: 145.169867514 px
+  pass2_model_on_pass1:
+    angular RMS: 27.518512046 deg
+    page RMS: 66.833923540 px
+    page p95: 146.063096408 px
+------------------------------------------------------------------------------------------------
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_translated_isotropic.json
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_translated_isotropic_segments.csv
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_translated_isotropic.png
+Wrote /home/salahealer/meru-geometry-audit/reports/first_hand_spherical_reciprocal_spiral_translated_isotropic.md
+First-order translation-signature result used: NO
+Coordinate curves used: NO
+3*pi used only as post-fit holdout.

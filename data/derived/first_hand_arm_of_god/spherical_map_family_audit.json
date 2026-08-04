@@ -1,0 +1,385 @@
+{
+  "broader_projective_family": {
+    "anisotropy_shear_and_projective_gauge_excluded_by_current_constraints": false,
+    "formula": "M_A(x,y)=normalize(A @ (x,y,1)), where A is invertible",
+    "global_spherical_rotation_identified": false,
+    "implication": "the source incidence statements select a central-projective class, not a unique coordinate map",
+    "line_to_great_circle_proof": "for planar line l^T p=0 and X parallel to A p, (A^{-T} l)^T X=0, a plane through the sphere centre"
+  },
+  "canonical_family": {
+    "formula": "M_k(x,y)=normalize((k*x,k*y,1)), k>0",
+    "mathematical_status": "all affine lines map to planes through the sphere centre and therefore to great circles",
+    "name": "isotropic inverse gnomonic family",
+    "scale_hypotheses": {
+      "G30": {
+        "scale": 0.5773502691896257,
+        "source_role": "hypothesis motivated by the page-8 30-degree cube-octahedral division",
+        "unit_radius_central_angle_radians": 0.5235987755982988
+      },
+      "GHALF": {
+        "scale": 0.5463024898437905,
+        "source_role": "hypothesis motivated by the page-8 half-radian candidate",
+        "unit_radius_central_angle_radians": 0.5
+      },
+      "GONE": {
+        "scale": 1.5574077246549023,
+        "source_role": "hypothesis in which unit planar radius maps to one radian of central angle",
+        "unit_radius_central_angle_radians": 1.0
+      },
+      "GUNIT": {
+        "scale": 1.0,
+        "source_role": "neutral affine scale baseline",
+        "unit_radius_central_angle_radians": 0.7853981633974483
+      }
+    },
+    "scale_identified_by_incidence_constraints": false,
+    "variant_results": {
+      "G30": {
+        "all_source_incidence_constraints_pass": true,
+        "infinity_constraints": {
+          "distinguished_infinity_directions_remain_distinct": true,
+          "horizontal_equator_max_abs_z": 1.7320508075688516e-07,
+          "horizontal_vertical_infinity_direction_dot": 2.999999999999911e-14,
+          "parallel_positive_ends_coalesce": true,
+          "positive_ends_approach_equator": true,
+          "positive_horizontal_parallel_pair_distance": 9.999999999999814e-08,
+          "positive_vertical_parallel_pair_distance": 9.999999999999814e-08,
+          "vertical_equator_max_abs_z": 1.7320508075688516e-07
+        },
+        "line_constraints": {
+          "x_axis": {
+            "best_origin_plane_normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "great_circle_max_abs_residual": 0.0,
+            "great_circle_rms_residual": 0.0,
+            "passes": true
+          },
+          "x_equals_1": {
+            "best_origin_plane_normal": [
+              0.8660254037844386,
+              0.0,
+              -0.5000000000000002
+            ],
+            "great_circle_max_abs_residual": 3.02364241296291e-16,
+            "great_circle_rms_residual": 9.403655913262065e-17,
+            "passes": true
+          },
+          "y_axis": {
+            "best_origin_plane_normal": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "great_circle_max_abs_residual": 0.0,
+            "great_circle_rms_residual": 0.0,
+            "passes": true
+          },
+          "y_equals_1": {
+            "best_origin_plane_normal": [
+              -0.0,
+              -0.8660254037844388,
+              0.4999999999999999
+            ],
+            "great_circle_max_abs_residual": 2.0709361045354988e-16,
+            "great_circle_rms_residual": 6.077642209893947e-17,
+            "passes": true
+          }
+        },
+        "name": "inverse_gnomonic_G30",
+        "scale_hypothesis": {
+          "scale": 0.5773502691896257,
+          "source_role": "hypothesis motivated by the page-8 30-degree cube-octahedral division",
+          "unit_radius_central_angle_radians": 0.5235987755982988
+        },
+        "self_embedment_scores_computed": false
+      },
+      "GHALF": {
+        "all_source_incidence_constraints_pass": true,
+        "infinity_constraints": {
+          "distinguished_infinity_directions_remain_distinct": true,
+          "horizontal_equator_max_abs_z": 1.8304877217124214e-07,
+          "horizontal_vertical_infinity_direction_dot": 3.350685299339931e-14,
+          "parallel_positive_ends_coalesce": true,
+          "positive_ends_approach_equator": true,
+          "positive_horizontal_parallel_pair_distance": 9.999999999999794e-08,
+          "positive_vertical_parallel_pair_distance": 9.999999999999794e-08,
+          "vertical_equator_max_abs_z": 1.8304877217124214e-07
+        },
+        "line_constraints": {
+          "x_axis": {
+            "best_origin_plane_normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "great_circle_max_abs_residual": 0.0,
+            "great_circle_rms_residual": 0.0,
+            "passes": true
+          },
+          "x_equals_1": {
+            "best_origin_plane_normal": [
+              0.8775825618903728,
+              -5.551115123125784e-17,
+              -0.479425538604203
+            ],
+            "great_circle_max_abs_residual": 1.00202104125968e-16,
+            "great_circle_rms_residual": 5.248642409263605e-17,
+            "passes": true
+          },
+          "y_axis": {
+            "best_origin_plane_normal": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "great_circle_max_abs_residual": 0.0,
+            "great_circle_rms_residual": 0.0,
+            "passes": true
+          },
+          "y_equals_1": {
+            "best_origin_plane_normal": [
+              0.0,
+              -0.877582561890373,
+              0.4794255386042028
+            ],
+            "great_circle_max_abs_residual": 3.5418520812210864e-16,
+            "great_circle_rms_residual": 1.155492257141585e-16,
+            "passes": true
+          }
+        },
+        "name": "inverse_gnomonic_GHALF",
+        "scale_hypothesis": {
+          "scale": 0.5463024898437905,
+          "source_role": "hypothesis motivated by the page-8 half-radian candidate",
+          "unit_radius_central_angle_radians": 0.5
+        },
+        "self_embedment_scores_computed": false
+      },
+      "GONE": {
+        "all_source_incidence_constraints_pass": true,
+        "infinity_constraints": {
+          "distinguished_infinity_directions_remain_distinct": true,
+          "horizontal_equator_max_abs_z": 6.420926159343293e-08,
+          "horizontal_vertical_infinity_direction_dot": 4.122829274373902e-15,
+          "parallel_positive_ends_coalesce": true,
+          "positive_ends_approach_equator": true,
+          "positive_horizontal_parallel_pair_distance": 9.999999999999943e-08,
+          "positive_vertical_parallel_pair_distance": 9.999999999999943e-08,
+          "vertical_equator_max_abs_z": 6.420926159343293e-08
+        },
+        "line_constraints": {
+          "x_axis": {
+            "best_origin_plane_normal": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "great_circle_max_abs_residual": 0.0,
+            "great_circle_rms_residual": 0.0,
+            "passes": true
+          },
+          "x_equals_1": {
+            "best_origin_plane_normal": [
+              0.5403023058681401,
+              -1.1102230246251565e-16,
+              -0.8414709848078963
+            ],
+            "great_circle_max_abs_residual": 5.342506670693747e-16,
+            "great_circle_rms_residual": 1.7422124484065088e-16,
+            "passes": true
+          },
+          "y_axis": {
+            "best_origin_plane_normal": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "great_circle_max_abs_residual": 0.0,
+            "great_circle_rms_residual": 0.0,
+            "passes": true
+          },
+          "y_equals_1": {
+            "best_origin_plane_normal": [
+              -0.0,
+              0.5403023058681398,
+              -0.8414709848078965
+            ],
+            "great_circle_max_abs_residual": 1.3726972253758635e-16,
+            "great_circle_rms_residual": 2.0712666948545652e-17,
+            "passes": true
+          }
+        },
+        "name": "inverse_gnomonic_GONE",
+        "scale_hypothesis": {
+          "scale": 1.5574077246549023,
+          "source_role": "hypothesis in which unit planar radius maps to one radian of central angle",
+          "unit_radius_central_angle_radians": 1.0
+        },
+        "self_embedment_scores_computed": false
+      },
+      "GUNIT": {
+        "all_source_incidence_constraints_pass": true,
+        "infinity_constraints": {
+          "distinguished_infinity_directions_remain_distinct": true,
+          "horizontal_equator_max_abs_z": 9.999999999999949e-08,
+          "horizontal_vertical_infinity_direction_dot": 9.999999999999899e-15,
+          "parallel_positive_ends_coalesce": true,
+          "positive_ends_approach_equator": true,
+          "positive_horizontal_parallel_pair_distance": 9.999999999999912e-08,
+          "positive_vertical_parallel_pair_distance": 9.999999999999912e-08,
+          "vertical_equator_max_abs_z": 9.999999999999949e-08
+        },
+        "line_constraints": {
+          "x_axis": {
+            "best_origin_plane_normal": [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "great_circle_max_abs_residual": 0.0,
+            "great_circle_rms_residual": 0.0,
+            "passes": true
+          },
+          "x_equals_1": {
+            "best_origin_plane_normal": [
+              -0.7071067811865475,
+              0.0,
+              0.7071067811865477
+            ],
+            "great_circle_max_abs_residual": 1.8367781781796267e-16,
+            "great_circle_rms_residual": 5.154593575091886e-17,
+            "passes": true
+          },
+          "y_axis": {
+            "best_origin_plane_normal": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "great_circle_max_abs_residual": 0.0,
+            "great_circle_rms_residual": 0.0,
+            "passes": true
+          },
+          "y_equals_1": {
+            "best_origin_plane_normal": [
+              0.0,
+              -0.7071067811865476,
+              0.7071067811865475
+            ],
+            "great_circle_max_abs_residual": 1.0205486196686094e-16,
+            "great_circle_rms_residual": 2.65316437738022e-17,
+            "passes": true
+          }
+        },
+        "name": "inverse_gnomonic_GUNIT",
+        "scale_hypothesis": {
+          "scale": 1.0,
+          "source_role": "neutral affine scale baseline",
+          "unit_radius_central_angle_radians": 0.7853981633974483
+        },
+        "self_embedment_scores_computed": false
+      }
+    }
+  },
+  "checks": {
+    "all_tested_gnomonic_scales_pass": true,
+    "gnomonic_max_line_residual": 5.342506670693747e-16,
+    "planar_audit_dependency_pass": true,
+    "scale_calibrated": false,
+    "self_embedment_scores_computed": false,
+    "source_identity_pass": true,
+    "stereographic_offset_lines_fail": true,
+    "unique_map_identified": false
+  },
+  "comparator": {
+    "all_source_incidence_constraints_pass": false,
+    "infinity_constraints": {
+      "distinguished_infinity_directions_remain_distinct": false,
+      "horizontal_equator_max_abs_z": 0.99999999999998,
+      "horizontal_vertical_infinity_direction_dot": 0.99999999999996,
+      "parallel_positive_ends_coalesce": true,
+      "positive_ends_approach_equator": false,
+      "positive_horizontal_parallel_pair_distance": 1.99999999999997e-14,
+      "positive_vertical_parallel_pair_distance": 1.99999999999997e-14,
+      "vertical_equator_max_abs_z": 0.99999999999998
+    },
+    "line_constraints": {
+      "x_axis": {
+        "best_origin_plane_normal": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "great_circle_max_abs_residual": 0.0,
+        "great_circle_rms_residual": 0.0,
+        "passes": true
+      },
+      "x_equals_1": {
+        "best_origin_plane_normal": [
+          0.9979666938041392,
+          -1.387778780781446e-17,
+          0.06373757178960929
+        ],
+        "great_circle_max_abs_residual": 0.9979666938041392,
+        "great_circle_rms_residual": 0.22863246573721438,
+        "passes": false
+      },
+      "y_axis": {
+        "best_origin_plane_normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "great_circle_max_abs_residual": 0.0,
+        "great_circle_rms_residual": 0.0,
+        "passes": true
+      },
+      "y_equals_1": {
+        "best_origin_plane_normal": [
+          0.0,
+          0.9979666938041392,
+          0.06373757178960937
+        ],
+        "great_circle_max_abs_residual": 0.9979666938041392,
+        "great_circle_rms_residual": 0.22863246573721438,
+        "passes": false
+      }
+    },
+    "name": "inverse_stereographic_unit_scale",
+    "self_embedment_scores_computed": false
+  },
+  "interpretation": {
+    "next_required_step": "source-image calibration of projective gauge, orientation, and scale before any S1 score",
+    "non_verdict": "this does not prove that Tenen used one unique gnomonic formula or fix the affine scale",
+    "primary_source_constrained_candidate": "inverse gnomonic / central-projective family",
+    "verdict": "the inverse gnomonic family satisfies the tested source incidence constraints exactly to numerical precision; inverse stereography does not"
+  },
+  "scope": {
+    "formal_exact_arithmetic": false,
+    "s1_5_frame_alignment_verdict": null,
+    "s1_endpoint_alignment_verdict": null,
+    "s2_recursive_nesting_verdict": null
+  },
+  "source": {
+    "asset_id": "AOG_PDF_2005A",
+    "sha256": "80d52f4b6afefe65ae50e4c01378765c34ae4fde1ad44e8b299870c2e1d3e6fa",
+    "source_pages": [
+      7,
+      8
+    ]
+  },
+  "source_constraints_tested": {
+    "horizontal_and_vertical_infinity_directions_are_distinct": true,
+    "labelled_planar_lines": [
+      "x_axis",
+      "y_axis",
+      "x_equals_1",
+      "y_equals_1"
+    ],
+    "mapped_lines_are_great_circles": true,
+    "parallel_positive_ends_meet_at_finite_equatorial_points": true
+  }
+}

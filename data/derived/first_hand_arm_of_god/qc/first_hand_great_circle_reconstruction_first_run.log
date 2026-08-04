@@ -1,0 +1,12 @@
+================================================================================================
+FIRST HAND LIMB-CONSTRAINED GREAT-CIRCLE RECONSTRUCTION
+================================================================================================
+AOG-LM-P07-GC-Y0: phi=120.475737 deg, q=0.019397396, RMS=1.080070 px, P95=2.157665 px, COMPATIBLE
+AOG-LM-P07-GC-Y1: phi=120.905044 deg, q=0.312915919, RMS=13.803555 px, P95=22.254483 px, ABOVE FLOOR
+AOG-LM-P07-GC-YAXIS: phi=29.960337 deg, q=0.000970100, RMS=0.226116 px, P95=0.457988 px, COMPATIBLE
+AOG-LM-P07-GC-X1: phi=178.936460 deg, q=0.385262289, RMS=12.303530 px, P95=24.772626 px, ABOVE FLOOR
+Aggregate equal-curve RMS: 9.261920 px
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_great_circle_reconstruction.json
+Wrote /home/salahealer/meru-geometry-audit/reports/first_hand_great_circle_reconstruction.md
+Scaffold holdout was not fitted.
+No projective map, scale, spiral verdict, or self-embedment score was computed.

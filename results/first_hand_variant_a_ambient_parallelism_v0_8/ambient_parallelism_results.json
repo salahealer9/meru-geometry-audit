@@ -1,0 +1,98 @@
+{
+  "checkpoint": "first_hand_variant_a_ambient_parallelism_preregistration_v0.8",
+  "directed_cross_scale_summary": "AMBIENT_DIRECTED_NOT_PARALLEL_ALL_SCALES",
+  "image_pixel_data_used": false,
+  "intrinsic_s1_recomputed": false,
+  "line_cross_scale_summary": "AMBIENT_LINE_NOT_PARALLEL_ALL_SCALES",
+  "parallel_transport_used": false,
+  "registered_branch_count": 2,
+  "results": [
+    {
+      "ambient_minus_intrinsic_deg": -0.9933506018465437,
+      "branch_id": "AMB-DIAGRAM-G30",
+      "cross_norm_c": 0.5936398188478773,
+      "delta_ambient_directed_deg": 143.58427150706095,
+      "delta_ambient_directed_rad": 2.506018291875694,
+      "delta_ambient_line_deg": 36.415728492939074,
+      "delta_ambient_line_rad": 0.6355743617140994,
+      "directed_state": "AMBIENT_DIRECTED_NOT_PARALLEL",
+      "dot_d": -0.8047308652451822,
+      "image_pixel_data_used": false,
+      "intrinsic_s1_reference_deg": 144.5776221089075,
+      "k": 0.5773502691896257,
+      "line_state": "AMBIENT_LINE_NOT_PARALLEL",
+      "p_inner": [
+        -0.02987750726807621,
+        -0.04653146061273484,
+        0.9984699082760038
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parallel_transport_used": false,
+      "residual_ambient_directed": 1.899858344848469,
+      "scale": "G30",
+      "tau_inner": [
+        -0.8890725085665676,
+        0.4577360356170584,
+        -0.005272210990604149
+      ],
+      "tau_outer": [
+        0.9424148891056268,
+        0.06863905338196455,
+        -0.3273268353539886
+      ],
+      "technical_error": null,
+      "theta_inner": 10.42477796076938,
+      "theta_outer": 1.0,
+      "truncation": "AOG-DIAGRAM",
+      "zero_tolerance_rad": 1e-10
+    },
+    {
+      "ambient_minus_intrinsic_deg": -0.9063136393992011,
+      "branch_id": "AMB-DIAGRAM-GHALF",
+      "cross_norm_c": 0.5976818261995474,
+      "delta_ambient_directed_deg": 143.29594953287508,
+      "delta_ambient_directed_rad": 2.5009861241203004,
+      "delta_ambient_line_deg": 36.70405046712493,
+      "delta_ambient_line_rad": 0.6406065294694927,
+      "directed_state": "AMBIENT_DIRECTED_NOT_PARALLEL",
+      "dot_d": -0.8017333937355821,
+      "image_pixel_data_used": false,
+      "intrinsic_s1_reference_deg": 144.2022631722743,
+      "k": 0.5463024898437905,
+      "line_state": "AMBIENT_LINE_NOT_PARALLEL",
+      "p_inner": [
+        -0.02827532946459913,
+        -0.04403621652532901,
+        0.9986297198550637
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parallel_transport_used": false,
+      "residual_ambient_directed": 1.89827995497797,
+      "scale": "GHALF",
+      "tau_inner": [
+        -0.8890876811620606,
+        0.4577097249404188,
+        -0.004990280637022606
+      ],
+      "tau_outer": [
+        0.9452187336596601,
+        0.08099207119365641,
+        -0.31623065939688716
+      ],
+      "technical_error": null,
+      "theta_inner": 10.42477796076938,
+      "theta_outer": 1.0,
+      "truncation": "AOG-DIAGRAM",
+      "zero_tolerance_rad": 1e-10
+    }
+  ],
+  "variant": "A"
+}

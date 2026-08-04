@@ -1,0 +1,45 @@
+========================================================================================
+FIRST HAND RECIPROCAL-SPIRAL RESIDUAL MORPHOLOGY
+========================================================================================
+PASS 1 — SEGMENT SSE FRACTIONS
+  S01: SSE fraction=0.026472  signed mean=37.497854 deg  RMS=39.116001 deg  chord RMS=20.398651 px
+  S02: SSE fraction=0.095621  signed mean=-47.235974 deg  RMS=51.120171 deg  chord RMS=25.547664 px
+  S03: SSE fraction=0.026962  signed mean=-27.741067 deg  RMS=30.450658 deg  chord RMS=18.549312 px
+  S04: SSE fraction=0.011437  signed mean=30.788753 deg  RMS=30.803595 deg  chord RMS=24.997169 px
+  S05: SSE fraction=0.229990  signed mean=59.826518 deg  RMS=60.032204 deg  chord RMS=62.512540 px
+  S06: SSE fraction=0.205647  signed mean=47.954945 deg  RMS=48.662747 deg  chord RMS=65.435857 px
+  S07: SSE fraction=0.093673  signed mean=-14.406604 deg  RMS=29.787390 deg  chord RMS=46.278199 px
+  S08: SSE fraction=0.286434  signed mean=-52.584118 deg  RMS=53.752553 deg  chord RMS=101.647409 px
+  S09: SSE fraction=0.007694  signed mean=-21.393709 deg  RMS=21.502374 deg  chord RMS=66.333218 px
+  S10: SSE fraction=0.016070  signed mean=5.175431 deg  RMS=11.558673 deg  chord RMS=58.503654 px
+----------------------------------------------------------------------------------------
+PASS 2 — SEGMENT SSE FRACTIONS
+  S01: SSE fraction=0.016621  signed mean=25.236955 deg  RMS=29.296164 deg  chord RMS=15.362360 px
+  S02: SSE fraction=0.073487  signed mean=-40.714716 deg  RMS=43.002808 deg  chord RMS=22.426145 px
+  S03: SSE fraction=0.027164  signed mean=-23.449254 deg  RMS=28.412022 deg  chord RMS=17.500206 px
+  S04: SSE fraction=0.006556  signed mean=22.159190 deg  RMS=22.261789 deg  chord RMS=18.065421 px
+  S05: SSE fraction=0.230608  signed mean=56.719002 deg  RMS=57.083341 deg  chord RMS=60.022242 px
+  S06: SSE fraction=0.202558  signed mean=45.912336 deg  RMS=46.644183 deg  chord RMS=62.699510 px
+  S07: SSE fraction=0.106319  signed mean=-13.807180 deg  RMS=30.275865 deg  chord RMS=47.098652 px
+  S08: SSE fraction=0.308125  signed mean=-52.251216 deg  RMS=53.650723 deg  chord RMS=101.616424 px
+  S09: SSE fraction=0.007579  signed mean=-19.910245 deg  RMS=20.062568 deg  chord RMS=62.142645 px
+  S10: SSE fraction=0.020984  signed mean=6.925473 deg  RMS=12.662639 deg  chord RMS=65.278018 px
+----------------------------------------------------------------------------------------
+POINTWISE CROSS-PASS REPLICATION
+  pairs: 4010
+  angular Pearson r: 0.9896151807735503
+  angular RMS difference: 6.563422908 deg
+  angular p95 difference: 14.742975956 deg
+  chord Pearson r: 0.9895642685462285
+  chord RMS difference: 5.266567288 px
+  chord p95 difference: 9.609956716 px
+  same nonzero residual sign fraction: 0.9768079800498753
+  opposite-sign fraction: 0.023192020
+----------------------------------------------------------------------------------------
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_residual_morphology.json
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_residual_segments.csv
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_residual_bins.csv
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_residual_crosspass.csv
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_residual_morphology.png
+Wrote /home/salahealer/meru-geometry-audit/reports/first_hand_spherical_reciprocal_spiral_residual_morphology.md
+No parent-model refit or expanded construction model was used.

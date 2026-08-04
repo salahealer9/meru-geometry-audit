@@ -42,7 +42,7 @@ See [`docs/claims/evidence_boundary.md`](docs/claims/evidence_boundary.md).
 
 ## Current status
 
-The repository is currently at the geometric-baseline stage.
+The repository is currently at the `v0.8.0` FIRST HAND self-embedment and construction-source-recovery checkpoint.
 
 Implemented:
 
@@ -64,11 +64,19 @@ Implemented:
 - cyclic-shift and traversal-reversal handling for closed curves;
 - object-specific projection-equivalence classification;
 - automated geometric, group-theoretic, and orbit-analysis tests;
-- reproducible three-dimensional, projection, and error-matrix figures.
+- reproducible three-dimensional, projection, and error-matrix figures;
+- native Meru `10_3.wrl` topology, winding, surface-embedding, braid, and
+  Alexander-polynomial audits;
+- preregistered FIRST HAND endpoint-parallelism tests under intrinsic and
+  ambient tangent semantics;
+- fixed reciprocal/Archimedean/logarithmic comparator and truncation-parity
+  analyses;
+- a source-constrained dimpled-sphere carrier-family sensitivity sweep;
+- bounded Tier A-C recovery of the published FIRST HAND construction record.
 
 Not yet implemented:
 
-- dimpled spherical-torus reconstruction;
+- a unique source-derived metric reconstruction of Tenen's dimpled-sphere carrier;
 - finite-width ribbon or flame geometry;
 - source-derived Meru surface parameters;
 - historical alphabet target data;
@@ -155,6 +163,120 @@ construction.
 
 ## Current development checkpoint
 
+`v0.8.0 — FIRST HAND self-embedment and construction-source recovery`
+
+Version `v0.8.0` tests whether the source-supported FIRST HAND ingredients
+actually determine the claimed endpoint-parallel finished form, and then audits
+the published construction record when the registered geometric realizations
+do not reproduce that condition.
+
+### Main findings
+
+- For the reciprocal spiral \(r\theta=1\), none of the preregistered
+  Variant-A branches/scales satisfies the directed endpoint-parallelism
+  criterion under intrinsic spherical comparison.
+- Independent ambient directed and unoriented endpoint comparisons also fail
+  for the registered Variant-A construction.
+- Comparator rankings are truncation-parity dependent rather than invariant:
+  integer and odd-half-turn intervals reverse the relative behavior of the
+  reciprocal and logarithmic families.
+- A frozen 400-cell Variant-B sweep over a source-constrained family of
+  dimpled-sphere carriers finds no exact reciprocal or logarithmic
+  endpoint-parallel cell.
+- Under matched Variant-B conditions, directed and unoriented-line tangent
+  semantics reverse the reciprocal-vs-logarithmic ranking uniformly.
+- The registered throat-width trends are predominantly non-monotone; the
+  source's qualitative "wider hole" statement does not define a universal
+  monotonic endpoint-alignment law.
+- Source recovery finds substantial published construction information but no
+  deterministic continuous rule that uniquely converts the reciprocal,
+  spherical, topological, and tetrahedral scaffold into the finished
+  endpoint-parallel FIRST HAND.
+
+### Final source-recovery state
+
+```text
+NO_REPRODUCIBLE_PUBLISHED_FIRST_HAND_CONSTRUCTION_RECOVERED
+```
+
+This result is deliberately narrow. It does **not** mean that Meru published no
+mathematics. The recovered corpus includes \(r\theta=1\), the later
+\(1.5\)-turn / \(3\pi\) span, cube-octahedral spherical projection,
+\(120^\circ\) three-copy structure, 3,10 topology, six-hand/seven-region
+structure, tetrahedral/sphere-pack constraints, and an authentic craft
+curl/bend construction.
+
+The missing published element is the deterministic continuous shaping rule for
+the finished endpoint-parallel sculpture. The only inspected route that
+explicitly guarantees endpoint parallelism does so by instructing the maker to
+bend the form until the required endpoint relation is reached.
+
+Principal closeout:
+
+- [`docs/first_hand_construction_source_recovery_closeout_v0.8.md`](docs/first_hand_construction_source_recovery_closeout_v0.8.md)
+- [`docs/first_hand_source_recovery_report_v0.8.md`](docs/first_hand_source_recovery_report_v0.8.md)
+- [`docs/first_hand_source_recovery_ledger_v0.8.csv`](docs/first_hand_source_recovery_ledger_v0.8.csv)
+- [`docs/first_hand_source_recovery_references_v0.8.csv`](docs/first_hand_source_recovery_references_v0.8.csv)
+
+### Interpretation boundary
+
+The v0.8.0 numerical failures apply to the preregistered mathematical
+realizations that were tested. They do not prove that every possible physical
+FIRST HAND is impossible, and the source-recovery null does not prove that
+unpublished construction notes never existed.
+
+## Earlier development checkpoints
+
+<!-- v0.7.0-result-summary:start -->
+`v0.7.0 — native Meru 3,10 geometry certificate`
+
+Version `v0.7.0` separates source correspondence from mathematical
+certification and establishes the strongest source-grounded result of
+the audit so far.
+
+### Main findings
+
+- Meru's native `10_3.wrl` asset is a closed, consistently oriented
+  genus-one triangulated tube with 6,000 vertices, 12,000 triangular
+  faces and 18,000 edges.
+- The source-defined centreline has signed toroidal winding `(3, -10)`
+  under the recorded coordinate convention and unsigned winding pair
+  `{3, 10}`.
+- An exhaustive tolerance-aware census accounts for all 71,994,000
+  distinct face pairs and finds no surface intersections beyond the
+  shared edges and vertices prescribed by the mesh.
+- An independent piecewise-linear braid reconstruction gives
+
+  \[
+  (\sigma_2^{-1}\sigma_1^{-1})^{10},
+  \]
+
+  with 20 crossings, writhe `-20`, a one-component closure and the
+  Alexander polynomial of \(T(3,10)\).
+- A10_P03 is classified as a simplified schematic corresponding
+  structurally to a vertically reflected `tumble.gif` frame `000`.
+  It is not treated as a complete classical knot diagram.
+
+### Principal reports
+
+- [`reports/meru_10_3_native_geometry_audit.md`](reports/meru_10_3_native_geometry_audit.md)
+- [`reports/meru_10_3_surface_embedding_audit.md`](reports/meru_10_3_surface_embedding_audit.md)
+- [`reports/meru_10_3_braid_invariant_audit.md`](reports/meru_10_3_braid_invariant_audit.md)
+- [`reports/A10_P03_tumble_correspondence.md`](reports/A10_P03_tumble_correspondence.md)
+
+### Interpretation boundary
+
+The geometric results are deterministic, source-identified and
+reproducible, but they are numerical rather than formal
+exact-arithmetic proofs. The negative braid signs are relative to the
+explicitly recorded phase, viewing and generator conventions.
+
+These results certify the topology and embedding of the recovered
+native digital geometry. They do not independently establish broader
+linguistic, cosmological, extraterrestrial or consciousness-related
+claims associated with the Meru material.
+<!-- v0.7.0-result-summary:end -->
+
 `v0.6.0 — Source-derived A10 closed-cycle reconstruction`
 
 The v0.6.0 checkpoint reconstructs the visible two-dimensional connectivity
@@ -214,52 +336,4 @@ Salah-Eddin Gherbi
 Independent Researcher, United Kingdom
 ORCID: 0009-0005-4017-1095
 
-<!-- v0.7.0-result-summary:start -->
-## v0.7.0 — native Meru 3,10 geometry certificate
 
-Version `v0.7.0` separates source correspondence from mathematical
-certification and establishes the strongest source-grounded result of
-the audit so far.
-
-### Main findings
-
-- Meru's native `10_3.wrl` asset is a closed, consistently oriented
-  genus-one triangulated tube with 6,000 vertices, 12,000 triangular
-  faces and 18,000 edges.
-- The source-defined centreline has signed toroidal winding `(3, -10)`
-  under the recorded coordinate convention and unsigned winding pair
-  `{3, 10}`.
-- An exhaustive tolerance-aware census accounts for all 71,994,000
-  distinct face pairs and finds no surface intersections beyond the
-  shared edges and vertices prescribed by the mesh.
-- An independent piecewise-linear braid reconstruction gives
-
-  \[
-  (\sigma_2^{-1}\sigma_1^{-1})^{10},
-  \]
-
-  with 20 crossings, writhe `-20`, a one-component closure and the
-  Alexander polynomial of \(T(3,10)\).
-- A10_P03 is classified as a simplified schematic corresponding
-  structurally to a vertically reflected `tumble.gif` frame `000`.
-  It is not treated as a complete classical knot diagram.
-
-### Principal reports
-
-- [`reports/meru_10_3_native_geometry_audit.md`](reports/meru_10_3_native_geometry_audit.md)
-- [`reports/meru_10_3_surface_embedding_audit.md`](reports/meru_10_3_surface_embedding_audit.md)
-- [`reports/meru_10_3_braid_invariant_audit.md`](reports/meru_10_3_braid_invariant_audit.md)
-- [`reports/A10_P03_tumble_correspondence.md`](reports/A10_P03_tumble_correspondence.md)
-
-### Interpretation boundary
-
-The geometric results are deterministic, source-identified and
-reproducible, but they are numerical rather than formal
-exact-arithmetic proofs. The negative braid signs are relative to the
-explicitly recorded phase, viewing and generator conventions.
-
-These results certify the topology and embedding of the recovered
-native digital geometry. They do not independently establish broader
-linguistic, cosmological, extraterrestrial or consciousness-related
-claims associated with the Meru material.
-<!-- v0.7.0-result-summary:end -->

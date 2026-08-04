@@ -1,0 +1,32 @@
+{
+  "excluded_row_count": 78,
+  "exclusion_manifest": "data/derived/first_hand_arm_of_god/qc/curve_acquisition_qc_exclusions.csv",
+  "exclusion_manifest_sha256": "ef3bd26f3a2c1ed60f45648e3d06508a0684fa22db89c3cd93ce8c0f1ca24a58",
+  "interpretation": "QC exclusion is based on exact duplicate acquisition events and metadata, not geometric-model fit.",
+  "qc_file": "data/derived/first_hand_arm_of_god/qc/great_circle_segments_pass2_qc.csv",
+  "qc_file_sha256": "028c67b79b4250bc38887c7336ef3dcc1cb126ddb44dc2343df0429e2d1bb971",
+  "qc_row_count": 588,
+  "raw_file": "data/derived/first_hand_arm_of_god/great_circle_segments_pass2.csv",
+  "raw_file_modified": false,
+  "raw_file_sha256": "30b232feddf839ac5cdd5f00fcb348b1af9e1793627a04773890c09fbd07e27d",
+  "raw_row_count": 666,
+  "sequence_indices_renumbered": false,
+  "status": "post_hoc_acquisition_qc_derivative",
+  "validation": [
+    {
+      "duplicate_timestamp_utc": "2026-08-03T08:37:42Z",
+      "duplicate_x_px": 704.765128489,
+      "duplicate_y_px": 882.940038685,
+      "excluded_row_count": 78,
+      "exclusion_code": "exact_duplicate_input_event_burst",
+      "first_retained_sequence_index": 78,
+      "landmark_id": "AOG-LM-P07-GC-X1",
+      "pass_number": 2,
+      "reason": "78 consecutive records have identical x/y coordinates and identical timestamp; all consecutive displacements are zero; their connection to sequence index 78 creates a spurious 283.947 px polyline edge.",
+      "segment_id": "S01",
+      "sequence_index_end": 77,
+      "sequence_index_start": 0,
+      "transition_to_first_retained_px": 283.9470015702841
+    }
+  ]
+}

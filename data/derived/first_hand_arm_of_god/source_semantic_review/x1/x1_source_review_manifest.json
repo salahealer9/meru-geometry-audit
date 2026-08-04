@@ -1,0 +1,330 @@
+{
+  "analysis_class": "neutral_source_semantic_review_asset_preparation",
+  "broad_label_region": {
+    "crop_box_px": [
+      907,
+      50,
+      2110,
+      983
+    ],
+    "fractions": [
+      0.43,
+      0.04,
+      1.0,
+      0.78
+    ],
+    "selection_rule": "fixed broad fractional region of prepared source image; not fitted to geometry"
+  },
+  "checkpoint": "first_hand_x1_source_semantic_review_preparation_v0.8",
+  "frozen_inputs": {
+    "pass1_path": "data/derived/first_hand_arm_of_god/great_circle_segments_pass1.csv",
+    "pass1_sha256": "d92aaf7d52f76be2d273bfb7ef0a8d9894325e077e39e8cbdcafdd118e4c6d0c",
+    "pass1_x1_rows": 110,
+    "pass2_qc_path": "data/derived/first_hand_arm_of_god/qc/great_circle_segments_pass2_qc.csv",
+    "pass2_qc_sha256": "028c67b79b4250bc38887c7336ef3dcc1cb126ddb44dc2343df0429e2d1bb971",
+    "pass2_qc_x1_rows": 119,
+    "protocol_path": "docs/first_hand_x1_source_semantic_trace_audit_protocol.md",
+    "protocol_sha256": "88bed18fa100a6581ac5cf6e51dd9e06a648b4a5dc11e5e872e1441680e71433"
+  },
+  "interpretation_boundary": "These assets support source-semantic and visible-topology review only. They do not determine whether X1 is a valid coordinate curve, scaffold curve, or member of any fitted geometric model.",
+  "outputs": [
+    {
+      "path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/01_source_context.png",
+      "role": "unaltered_frozen_source_context",
+      "sha256": "ef8b7d652edea5227166e54ca1bf6e81a4c02afd0d78c9d793e615a2db6906f6"
+    },
+    {
+      "crop_box_px": [
+        907,
+        50,
+        2110,
+        983
+      ],
+      "path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/02_x1_label_region_source_only.png",
+      "role": "source_only_broad_x1_annotation_region",
+      "sha256": "c2daa80da3b93234c6eac32e75766c2c385bb5df00897d8f5918dd917508ec76"
+    },
+    {
+      "pass1_marker": "hollow_red_circle",
+      "pass2_qc_marker": "blue_cross",
+      "path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/03_x1_frozen_trace_points_overlay.png",
+      "role": "neutral_frozen_x1_points_and_segment_ids_overlay",
+      "sample_connections_drawn": false,
+      "sha256": "b61ccbde7595f9df6c973e19d239a6db537e5077e6611cc073b8e2e7a5451c20"
+    },
+    {
+      "path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/x1_segment_inventory.csv",
+      "role": "x1_segment_inventory",
+      "sha256": "4ac29f3796854f09b44ca84fd74471cd352331a9d04b4210e12f215a43d7d900"
+    },
+    {
+      "path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_01_S01_source_only.png",
+      "role": "segment_source_only",
+      "segment_id": "S01",
+      "sha256": "2d990dec4f7294288b2d1b9e3940955f977414af347b7b38d8f0d908ee9deb16"
+    },
+    {
+      "path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_02_S02_source_only.png",
+      "role": "segment_source_only",
+      "segment_id": "S02",
+      "sha256": "a2d946209bda6e857fb520372cfa2b5ff966245857339337ab7c2a73da9fec5d"
+    },
+    {
+      "path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_03_S03_source_only.png",
+      "role": "segment_source_only",
+      "segment_id": "S03",
+      "sha256": "71323dd15b4d769ae3f704d9faed3a2256a66d97d963b813e802278f1498473d"
+    },
+    {
+      "path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_04_S04_source_only.png",
+      "role": "segment_source_only",
+      "segment_id": "S04",
+      "sha256": "efaa26f48351abfbcd3c78b62620c476517a4b34c19ba9d332df8f6c6dbac1f6"
+    },
+    {
+      "path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_05_S05_source_only.png",
+      "role": "segment_source_only",
+      "segment_id": "S05",
+      "sha256": "b79b662803583f5725a1c30fa24c1ab654a364f88fc4e8dc716ab264197083d5"
+    },
+    {
+      "path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_01_S01_overlay.png",
+      "role": "segment_neutral_overlay",
+      "segment_id": "S01",
+      "sha256": "e3bd2f02e15c04c7228d368c9631faa5de9fd663963c5628091e3358573453bc"
+    },
+    {
+      "path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_02_S02_overlay.png",
+      "role": "segment_neutral_overlay",
+      "segment_id": "S02",
+      "sha256": "1179b87d5467ce79935cae1638211bd4142501361c457031ced0a9bc54a49edc"
+    },
+    {
+      "path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_03_S03_overlay.png",
+      "role": "segment_neutral_overlay",
+      "segment_id": "S03",
+      "sha256": "4087ea9694b1842e1af2057815d713a39b4551b9dad2c75125b37fc90862bb90"
+    },
+    {
+      "path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_04_S04_overlay.png",
+      "role": "segment_neutral_overlay",
+      "segment_id": "S04",
+      "sha256": "019114ade19f7e859ce62acbacc1c25033c147d8e2cbf65258166b249e024fe2"
+    },
+    {
+      "path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_05_S05_overlay.png",
+      "role": "segment_neutral_overlay",
+      "segment_id": "S05",
+      "sha256": "83522d9730f885096b86ad9210366bb3bb36b9ae0489a05f8a737dbb79e15009"
+    }
+  ],
+  "overlay_policy": {
+    "fitted_circle": false,
+    "fitted_line": false,
+    "great_circle_overlay": false,
+    "points_only": true,
+    "predicted_x1": false,
+    "projective_map": false,
+    "scaffold_overlay": false,
+    "segments_connected": false,
+    "thirty_degree_guide": false
+  },
+  "segment_inventory": [
+    {
+      "landmark_id": "AOG-LM-P07-GC-X1",
+      "max_x_px": 1065.9300623,
+      "max_y_px": 795.867798918,
+      "min_x_px": 924.219961923,
+      "min_y_px": 703.546809877,
+      "operator_notes": "solid front-side run started near middle lower left node; stopped before UCLL node",
+      "pass_number": 1,
+      "sample_count": 38,
+      "segment_id": "S01"
+    },
+    {
+      "landmark_id": "AOG-LM-P07-GC-X1",
+      "max_x_px": 1324.70730704,
+      "max_y_px": 835.562216482,
+      "min_x_px": 1098.37072103,
+      "min_y_px": 809.624374144,
+      "operator_notes": "solid front-side run started near UCLL node; stopped before great circle of projection y = 0 (x-axis)",
+      "pass_number": 1,
+      "sample_count": 31,
+      "segment_id": "S02"
+    },
+    {
+      "landmark_id": "AOG-LM-P07-GC-X1",
+      "max_x_px": 1391.75704332,
+      "max_y_px": 830.616899996,
+      "min_x_px": 1334.41419082,
+      "min_y_px": 818.025294402,
+      "operator_notes": "solid front-side run started near  great circle of projection y = 0 (x-axis); stopped before spiral occlusion",
+      "pass_number": 1,
+      "sample_count": 10,
+      "segment_id": "S03"
+    },
+    {
+      "landmark_id": "AOG-LM-P07-GC-X1",
+      "max_x_px": 1477.01413508,
+      "max_y_px": 801.148332615,
+      "min_x_px": 1440.36497119,
+      "min_y_px": 778.390947037,
+      "operator_notes": "solid front-side run started near UCLR node; stopped before a part of label 1 MONTH from full label r = 1, \u03b8 = 1 MONTH",
+      "pass_number": 1,
+      "sample_count": 11,
+      "segment_id": "S04"
+    },
+    {
+      "landmark_id": "AOG-LM-P07-GC-X1",
+      "max_x_px": 1582.9923696,
+      "max_y_px": 752.795869055,
+      "min_x_px": 1525.30484044,
+      "min_y_px": 708.642352557,
+      "operator_notes": "solid front-side run started near a part of label 1 MONTH from full label r = 1, \u03b8 = 1 MONTH; stopped before the middle right side node on the outer boundary",
+      "pass_number": 1,
+      "sample_count": 20,
+      "segment_id": "S05"
+    },
+    {
+      "landmark_id": "AOG-LM-P07-GC-X1",
+      "max_x_px": 1067.64855905,
+      "max_y_px": 797.753987404,
+      "min_x_px": 922.454606602,
+      "min_y_px": 700.629340097,
+      "operator_notes": "solid front-side run started near filled middle left node; stopped before filled UCLL node",
+      "pass_number": 2,
+      "sample_count": 41,
+      "segment_id": "S01"
+    },
+    {
+      "landmark_id": "AOG-LM-P07-GC-X1",
+      "max_x_px": 1322.14444658,
+      "max_y_px": 835.416795332,
+      "min_x_px": 1096.79276149,
+      "min_y_px": 809.147475587,
+      "operator_notes": "solid front-side run started near filled UCLL node; stopped before great circle projection of y = 0 (x axis)",
+      "pass_number": 2,
+      "sample_count": 28,
+      "segment_id": "S02"
+    },
+    {
+      "landmark_id": "AOG-LM-P07-GC-X1",
+      "max_x_px": 1389.79019536,
+      "max_y_px": 830.794274054,
+      "min_x_px": 1332.93070022,
+      "min_y_px": 818.816608007,
+      "operator_notes": "solid front-side run started near great circle projection of y = 0 (x axis); stopped before bottom spiral occlusion near UCLR filled node",
+      "pass_number": 2,
+      "sample_count": 12,
+      "segment_id": "S03"
+    },
+    {
+      "landmark_id": "AOG-LM-P07-GC-X1",
+      "max_x_px": 1476.54846164,
+      "max_y_px": 802.395974866,
+      "min_x_px": 1437.81378581,
+      "min_y_px": 778.613285298,
+      "operator_notes": "solid front-side run started near UCLR filled node; stopped before label \u03b8 = 1 MONTH from the full label r = 1 \u03b8 = 1 MONTH",
+      "pass_number": 2,
+      "sample_count": 15,
+      "segment_id": "S04"
+    },
+    {
+      "landmark_id": "AOG-LM-P07-GC-X1",
+      "max_x_px": 1582.95689845,
+      "max_y_px": 753.103045767,
+      "min_x_px": 1525.12757192,
+      "min_y_px": 708.528500184,
+      "operator_notes": "solid front-side run started near label \u03b8 = 1 MONTH from the full label r = 1 \u03b8 = 1 MONTH; stopped before filled middle right side node at outer boundary (horizon limb)",
+      "pass_number": 2,
+      "sample_count": 23,
+      "segment_id": "S05"
+    }
+  ],
+  "segment_padding_px": 100,
+  "segment_review_assets": [
+    {
+      "crop_box_px": [
+        822,
+        600,
+        1168,
+        898
+      ],
+      "overlay_path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_01_S01_overlay.png",
+      "overlay_sha256": "e3bd2f02e15c04c7228d368c9631faa5de9fd663963c5628091e3358573453bc",
+      "sample_connections_drawn": false,
+      "segment_id": "S01",
+      "source_only_path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_01_S01_source_only.png",
+      "source_only_sha256": "2d990dec4f7294288b2d1b9e3940955f977414af347b7b38d8f0d908ee9deb16",
+      "theoretical_geometry_drawn": false
+    },
+    {
+      "crop_box_px": [
+        996,
+        709,
+        1425,
+        936
+      ],
+      "overlay_path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_02_S02_overlay.png",
+      "overlay_sha256": "1179b87d5467ce79935cae1638211bd4142501361c457031ced0a9bc54a49edc",
+      "sample_connections_drawn": false,
+      "segment_id": "S02",
+      "source_only_path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_02_S02_source_only.png",
+      "source_only_sha256": "a2d946209bda6e857fb520372cfa2b5ff966245857339337ab7c2a73da9fec5d",
+      "theoretical_geometry_drawn": false
+    },
+    {
+      "crop_box_px": [
+        1232,
+        718,
+        1492,
+        931
+      ],
+      "overlay_path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_03_S03_overlay.png",
+      "overlay_sha256": "4087ea9694b1842e1af2057815d713a39b4551b9dad2c75125b37fc90862bb90",
+      "sample_connections_drawn": false,
+      "segment_id": "S03",
+      "source_only_path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_03_S03_source_only.png",
+      "source_only_sha256": "71323dd15b4d769ae3f704d9faed3a2256a66d97d963b813e802278f1498473d",
+      "theoretical_geometry_drawn": false
+    },
+    {
+      "crop_box_px": [
+        1337,
+        678,
+        1578,
+        903
+      ],
+      "overlay_path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_04_S04_overlay.png",
+      "overlay_sha256": "019114ade19f7e859ce62acbacc1c25033c147d8e2cbf65258166b249e024fe2",
+      "sample_connections_drawn": false,
+      "segment_id": "S04",
+      "source_only_path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_04_S04_source_only.png",
+      "source_only_sha256": "efaa26f48351abfbcd3c78b62620c476517a4b34c19ba9d332df8f6c6dbac1f6",
+      "theoretical_geometry_drawn": false
+    },
+    {
+      "crop_box_px": [
+        1425,
+        608,
+        1683,
+        854
+      ],
+      "overlay_path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_05_S05_overlay.png",
+      "overlay_sha256": "83522d9730f885096b86ad9210366bb3bb36b9ae0489a05f8a737dbb79e15009",
+      "sample_connections_drawn": false,
+      "segment_id": "S05",
+      "source_only_path": "data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_05_S05_source_only.png",
+      "source_only_sha256": "b79b662803583f5725a1c30fa24c1ab654a364f88fc4e8dc716ab264197083d5",
+      "theoretical_geometry_drawn": false
+    }
+  ],
+  "source": {
+    "crop_id": "AOG_P07_SPHERICAL_PROJECTION",
+    "source_file_sha256": "ef8b7d652edea5227166e54ca1bf6e81a4c02afd0d78c9d793e615a2db6906f6",
+    "source_height_px": 1260,
+    "source_image_path": "data/source_snapshots/first_hand_arm_of_god/prepared/aog_p07_spherical_projection.png",
+    "source_pixel_sha256": "afb1df2172f081fa426f2f86c56912079116f6441ba64df367861d00375fddc4",
+    "source_width_px": 2110
+  }
+}

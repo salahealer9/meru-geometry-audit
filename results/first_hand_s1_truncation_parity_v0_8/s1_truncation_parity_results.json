@@ -1,0 +1,3774 @@
+{
+  "archimedes_vs_reciprocal": [
+    {
+      "difference_arch_minus_reciprocal_deg": 5.029642514415578,
+      "scale": "G30",
+      "turns": 1.0
+    },
+    {
+      "difference_arch_minus_reciprocal_deg": 4.575660772101095,
+      "scale": "GHALF",
+      "turns": 1.0
+    },
+    {
+      "difference_arch_minus_reciprocal_deg": -4.784883709985451,
+      "scale": "G30",
+      "turns": 1.5
+    },
+    {
+      "difference_arch_minus_reciprocal_deg": -4.35103136501408,
+      "scale": "GHALF",
+      "turns": 1.5
+    },
+    {
+      "difference_arch_minus_reciprocal_deg": 4.640043371515709,
+      "scale": "G30",
+      "turns": 2.0
+    },
+    {
+      "difference_arch_minus_reciprocal_deg": 4.21831230448371,
+      "scale": "GHALF",
+      "turns": 2.0
+    },
+    {
+      "difference_arch_minus_reciprocal_deg": -4.545475136025374,
+      "scale": "G30",
+      "turns": 2.5
+    },
+    {
+      "difference_arch_minus_reciprocal_deg": -4.1317223095329325,
+      "scale": "GHALF",
+      "turns": 2.5
+    }
+  ],
+  "checkpoint": "first_hand_s1_truncation_parity_preregistration_v0.8",
+  "generic_log_global_summary": "PARITY_SEPARATION_CONFIRMED_ALL_LOG_GRID_CELLS",
+  "golden_mean_global_summary": "PARITY_SEPARATION_CONFIRMED_GOLDEN_MEAN",
+  "image_pixel_data_used": false,
+  "inherited_reference_results": [
+    {
+      "cell_id": "LOG-M050-T1.5-G30",
+      "curve_id": "LOG-M050",
+      "delta_s1_deg": 179.16765948673287,
+      "delta_s1_rad": 3.1270655711355424,
+      "family": "Logarithmic",
+      "growth_parameter": 0.1243629016242374,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 0.5,
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "record_origin": "inherited_reference",
+      "scale": "G30",
+      "source_checkpoint": "first_hand_s1_comparator_preregistration_v0.8",
+      "span_rad": 9.42477796076938,
+      "theta0": 1.0,
+      "turns": 1.5
+    },
+    {
+      "cell_id": "LOG-M050-T1.5-GHALF",
+      "curve_id": "LOG-M050",
+      "delta_s1_deg": 179.23782073857865,
+      "delta_s1_rad": 3.128290115987572,
+      "family": "Logarithmic",
+      "growth_parameter": 0.1243629016242374,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 0.5,
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "record_origin": "inherited_reference",
+      "scale": "GHALF",
+      "source_checkpoint": "first_hand_s1_comparator_preregistration_v0.8",
+      "span_rad": 9.42477796076938,
+      "theta0": 1.0,
+      "turns": 1.5
+    },
+    {
+      "cell_id": "LOG-M075-T1.5-G30",
+      "curve_id": "LOG-M075",
+      "delta_s1_deg": 178.6609923590221,
+      "delta_s1_rad": 3.1182225615453665,
+      "family": "Logarithmic",
+      "growth_parameter": 0.1865443524363561,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 0.75,
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "record_origin": "inherited_reference",
+      "scale": "G30",
+      "source_checkpoint": "first_hand_s1_comparator_preregistration_v0.8",
+      "span_rad": 9.42477796076938,
+      "theta0": 1.0,
+      "turns": 1.5
+    },
+    {
+      "cell_id": "LOG-M075-T1.5-GHALF",
+      "curve_id": "LOG-M075",
+      "delta_s1_deg": 178.77605472595295,
+      "delta_s1_rad": 3.120230778693448,
+      "family": "Logarithmic",
+      "growth_parameter": 0.1865443524363561,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 0.75,
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "record_origin": "inherited_reference",
+      "scale": "GHALF",
+      "source_checkpoint": "first_hand_s1_comparator_preregistration_v0.8",
+      "span_rad": 9.42477796076938,
+      "theta0": 1.0,
+      "turns": 1.5
+    },
+    {
+      "cell_id": "LOG-M100-T1.5-G30",
+      "curve_id": "LOG-M100",
+      "delta_s1_deg": 178.20896633780404,
+      "delta_s1_rad": 3.110333219170422,
+      "family": "Logarithmic",
+      "growth_parameter": 0.2487258032484748,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 1.0,
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "record_origin": "inherited_reference",
+      "scale": "G30",
+      "source_checkpoint": "first_hand_s1_comparator_preregistration_v0.8",
+      "span_rad": 9.42477796076938,
+      "theta0": 1.0,
+      "turns": 1.5
+    },
+    {
+      "cell_id": "LOG-M100-T1.5-GHALF",
+      "curve_id": "LOG-M100",
+      "delta_s1_deg": 178.36412508643232,
+      "delta_s1_rad": 3.1130412501972597,
+      "family": "Logarithmic",
+      "growth_parameter": 0.2487258032484748,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 1.0,
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "record_origin": "inherited_reference",
+      "scale": "GHALF",
+      "source_checkpoint": "first_hand_s1_comparator_preregistration_v0.8",
+      "span_rad": 9.42477796076938,
+      "theta0": 1.0,
+      "turns": 1.5
+    },
+    {
+      "cell_id": "LOG-M125-T1.5-G30",
+      "curve_id": "LOG-M125",
+      "delta_s1_deg": 177.80656872081175,
+      "delta_s1_rad": 3.1033100558517273,
+      "family": "Logarithmic",
+      "growth_parameter": 0.3109072540605935,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 1.25,
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "record_origin": "inherited_reference",
+      "scale": "G30",
+      "source_checkpoint": "first_hand_s1_comparator_preregistration_v0.8",
+      "span_rad": 9.42477796076938,
+      "theta0": 1.0,
+      "turns": 1.5
+    },
+    {
+      "cell_id": "LOG-M125-T1.5-GHALF",
+      "curve_id": "LOG-M125",
+      "delta_s1_deg": 177.99754741884183,
+      "delta_s1_rad": 3.1066432629335243,
+      "family": "Logarithmic",
+      "growth_parameter": 0.3109072540605935,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 1.25,
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "record_origin": "inherited_reference",
+      "scale": "GHALF",
+      "source_checkpoint": "first_hand_s1_comparator_preregistration_v0.8",
+      "span_rad": 9.42477796076938,
+      "theta0": 1.0,
+      "turns": 1.5
+    },
+    {
+      "cell_id": "LOG-M150-T1.5-G30",
+      "curve_id": "LOG-M150",
+      "delta_s1_deg": 177.44865062838156,
+      "delta_s1_rad": 3.097063206686363,
+      "family": "Logarithmic",
+      "growth_parameter": 0.3730887048727122,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 1.5,
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "record_origin": "inherited_reference",
+      "scale": "G30",
+      "source_checkpoint": "first_hand_s1_comparator_preregistration_v0.8",
+      "span_rad": 9.42477796076938,
+      "theta0": 1.0,
+      "turns": 1.5
+    },
+    {
+      "cell_id": "LOG-M150-T1.5-GHALF",
+      "curve_id": "LOG-M150",
+      "delta_s1_deg": 177.67177619386672,
+      "delta_s1_rad": 3.1009574824494535,
+      "family": "Logarithmic",
+      "growth_parameter": 0.3730887048727122,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 1.5,
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "record_origin": "inherited_reference",
+      "scale": "GHALF",
+      "source_checkpoint": "first_hand_s1_comparator_preregistration_v0.8",
+      "span_rad": 9.42477796076938,
+      "theta0": 1.0,
+      "turns": 1.5
+    },
+    {
+      "cell_id": "LOG-M200-T1.5-G30",
+      "curve_id": "LOG-M200",
+      "delta_s1_deg": 176.85885439634833,
+      "delta_s1_rad": 3.086769320521527,
+      "family": "Logarithmic",
+      "growth_parameter": 0.4974516064969496,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 2.0,
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "record_origin": "inherited_reference",
+      "scale": "G30",
+      "source_checkpoint": "first_hand_s1_comparator_preregistration_v0.8",
+      "span_rad": 9.42477796076938,
+      "theta0": 1.0,
+      "turns": 1.5
+    },
+    {
+      "cell_id": "LOG-M200-T1.5-GHALF",
+      "curve_id": "LOG-M200",
+      "delta_s1_deg": 177.13607539488768,
+      "delta_s1_rad": 3.091607739701705,
+      "family": "Logarithmic",
+      "growth_parameter": 0.4974516064969496,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 2.0,
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "record_origin": "inherited_reference",
+      "scale": "GHALF",
+      "source_checkpoint": "first_hand_s1_comparator_preregistration_v0.8",
+      "span_rad": 9.42477796076938,
+      "theta0": 1.0,
+      "turns": 1.5
+    },
+    {
+      "cell_id": "GOLDEN-MEAN-T1.5-G30",
+      "curve_id": "GOLDEN-MEAN",
+      "delta_s1_deg": 177.83451557340433,
+      "delta_s1_rad": 3.1037978204450374,
+      "family": "Golden Mean logarithmic",
+      "growth_parameter": 0.30634896253003313,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": null,
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "record_origin": "inherited_reference",
+      "scale": "G30",
+      "source_checkpoint": "first_hand_s1_comparator_preregistration_v0.8",
+      "span_rad": 9.42477796076938,
+      "theta0": 1.0,
+      "turns": 1.5
+    },
+    {
+      "cell_id": "GOLDEN-MEAN-T1.5-GHALF",
+      "curve_id": "GOLDEN-MEAN",
+      "delta_s1_deg": 178.0229980713949,
+      "delta_s1_rad": 3.1070874606173566,
+      "family": "Golden Mean logarithmic",
+      "growth_parameter": 0.30634896253003313,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": null,
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "record_origin": "inherited_reference",
+      "scale": "GHALF",
+      "source_checkpoint": "first_hand_s1_comparator_preregistration_v0.8",
+      "span_rad": 9.42477796076938,
+      "theta0": 1.0,
+      "turns": 1.5
+    },
+    {
+      "cell_id": "RECIPROCAL-T1.5-G30",
+      "curve_id": "RECIPROCAL",
+      "delta_s1_deg": 144.5776221089075,
+      "delta_s1_rad": 2.5233555305045834,
+      "family": "Reciprocal",
+      "growth_parameter": null,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": null,
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "record_origin": "inherited_reference",
+      "scale": "G30",
+      "source_checkpoint": "first_hand_analytic_s1_preregistration_v0.8",
+      "span_rad": 9.42477796076938,
+      "theta0": 1.0,
+      "turns": 1.5
+    },
+    {
+      "cell_id": "RECIPROCAL-T1.5-GHALF",
+      "curve_id": "RECIPROCAL",
+      "delta_s1_deg": 144.2022631722743,
+      "delta_s1_rad": 2.5168042811835494,
+      "family": "Reciprocal",
+      "growth_parameter": null,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": null,
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "record_origin": "inherited_reference",
+      "scale": "GHALF",
+      "source_checkpoint": "first_hand_analytic_s1_preregistration_v0.8",
+      "span_rad": 9.42477796076938,
+      "theta0": 1.0,
+      "turns": 1.5
+    },
+    {
+      "cell_id": "ARCHIMEDES-ENDPOINT-MATCHED-T1.5-G30",
+      "curve_id": "ARCHIMEDES-ENDPOINT-MATCHED",
+      "delta_s1_deg": 139.79273839892204,
+      "delta_s1_rad": 2.4398435554402957,
+      "family": "Archimedean",
+      "growth_parameter": null,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": null,
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "record_origin": "inherited_reference",
+      "scale": "G30",
+      "source_checkpoint": "first_hand_s1_comparator_preregistration_v0.8",
+      "span_rad": 9.42477796076938,
+      "theta0": 1.0,
+      "turns": 1.5
+    },
+    {
+      "cell_id": "ARCHIMEDES-ENDPOINT-MATCHED-T1.5-GHALF",
+      "curve_id": "ARCHIMEDES-ENDPOINT-MATCHED",
+      "delta_s1_deg": 139.8512318072602,
+      "delta_s1_rad": 2.4408644580065104,
+      "family": "Archimedean",
+      "growth_parameter": null,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": null,
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "record_origin": "inherited_reference",
+      "scale": "GHALF",
+      "source_checkpoint": "first_hand_s1_comparator_preregistration_v0.8",
+      "span_rad": 9.42477796076938,
+      "theta0": 1.0,
+      "turns": 1.5
+    }
+  ],
+  "new_cells_executed": 54,
+  "new_cells_expected": 54,
+  "new_results": [
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M050-T1-G30",
+      "cross_norm_c": 0.01237197128796735,
+      "curve_id": "LOG-M050",
+      "delta_s1_deg": 0.7088798240365326,
+      "delta_s1_rad": 0.012372286930395533,
+      "dot_d": 0.9999234642343631,
+      "family": "Logarithmic",
+      "growth_parameter": 0.1243629016242374,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 0.5,
+      "p_inner": [
+        0.13805721456520403,
+        0.21501137240818793,
+        0.966804176264069
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.4577669092237294,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.01237220801933551,
+      "scale": "G30",
+      "span_rad": 6.283185307179586,
+      "tau_inner": [
+        0.8978112486282178,
+        -0.4393228440897156,
+        -0.030502467073401124
+      ],
+      "tau_outer": [
+        0.886738081867128,
+        -0.4591611117130602,
+        -0.05354108382385631
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.2652148459677439,
+      "transport_axis": [
+        0.8414709848078966,
+        -0.5403023058681395,
+        -7.941763722607838e-17
+      ],
+      "transported_tau_outer": [
+        0.8925688133153763,
+        -0.45008028551517,
+        -0.027361470855272182
+      ],
+      "turns": 1.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M050-T1-GHALF",
+      "cross_norm_c": 0.011358470843782083,
+      "curve_id": "LOG-M050",
+      "delta_s1_deg": 0.6508064355328689,
+      "delta_s1_rad": 0.011358715093216778,
+      "dot_d": 0.9999354904893069,
+      "family": "Logarithmic",
+      "growth_parameter": 0.1243629016242374,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 0.5,
+      "p_inner": [
+        0.13108162975891355,
+        0.20414754274688576,
+        0.9701244183764037
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.4577669092237294,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.011358654030562633,
+      "scale": "GHALF",
+      "span_rad": 6.283185307179586,
+      "tau_inner": [
+        0.8981962538552423,
+        -0.4386331564890574,
+        -0.02905931156884526
+      ],
+      "tau_outer": [
+        0.887947552318248,
+        -0.4569940720321149,
+        -0.05201502147974653
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.2549467949428766,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681397,
+        -8.254236028611504e-17
+      ],
+      "transported_tau_outer": [
+        0.8933723387607513,
+        -0.4485454677219569,
+        -0.026321620832240333
+      ],
+      "turns": 1.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M050-T2-G30",
+      "cross_norm_c": 0.0155524729177327,
+      "curve_id": "LOG-M050",
+      "delta_s1_deg": 0.8911269858520475,
+      "delta_s1_rad": 0.015553099956491156,
+      "dot_d": 0.9998790529789805,
+      "family": "Logarithmic",
+      "growth_parameter": 0.1243629016242374,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 0.5,
+      "p_inner": [
+        0.06489475634884646,
+        0.10106759482729116,
+        0.992760802950162
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.20955054318024613,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.015552943195379546,
+      "scale": "G30",
+      "span_rad": 12.566370614359172,
+      "tau_inner": [
+        0.9008553040318116,
+        -0.4338699426798808,
+        -0.014717134120104515
+      ],
+      "tau_outer": [
+        0.886738081867128,
+        -0.4591611117130602,
+        -0.05354108382385631
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.40319986962844606,
+      "transport_axis": [
+        0.8414709848078966,
+        -0.5403023058681397,
+        -4.4212138771360694e-17
+      ],
+      "transported_tau_outer": [
+        0.8940705791712725,
+        -0.44774142377057424,
+        -0.012861450161015236
+      ],
+      "turns": 2.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M050-T2-GHALF",
+      "cross_norm_c": 0.014223945373940021,
+      "curve_id": "LOG-M050",
+      "delta_s1_deg": 0.8149995213952839,
+      "delta_s1_rad": 0.014224425050525673,
+      "dot_d": 0.9998988345717778,
+      "family": "Logarithmic",
+      "growth_parameter": 0.1243629016242374,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 0.5,
+      "p_inner": [
+        0.06145136266561787,
+        0.09570482690600304,
+        0.9935111051887798
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.20955054318024613,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.014224305130469397,
+      "scale": "GHALF",
+      "span_rad": 12.566370614359172,
+      "tau_inner": [
+        0.90094446119844,
+        -0.433710237594943,
+        -0.013946599628261547
+      ],
+      "tau_outer": [
+        0.887947552318248,
+        -0.4569940720321149,
+        -0.05201502147974653
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.3860182066671393,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681397,
+        -5.5289607359800057e-17
+      ],
+      "transported_tau_outer": [
+        0.8947432619988648,
+        -0.4464103812810103,
+        -0.012339635009755354
+      ],
+      "turns": 2.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M050-T2.5-G30",
+      "cross_norm_c": 0.016030821235697688,
+      "curve_id": "LOG-M050",
+      "delta_s1_deg": 179.0814622561225,
+      "delta_s1_rad": 3.1255611456552903,
+      "dot_d": -0.9998714981288891,
+      "family": "Logarithmic",
+      "growth_parameter": 0.1243629016242374,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 0.5,
+      "p_inner": [
+        -0.04407954081307314,
+        -0.06864981736152105,
+        0.9966665423590472
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "r_inner": 0.14177869959217507,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 1.9999357480323658,
+      "scale": "G30",
+      "span_rad": 15.707963267948966,
+      "tau_inner": [
+        -0.9013201328886986,
+        0.4330373088434426,
+        -0.010035297660149442
+      ],
+      "tau_outer": [
+        0.886738081867128,
+        -0.4591611117130602,
+        -0.05354108382385631
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.6052726548862025,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681398,
+        3.658555783754155e-17
+      ],
+      "transported_tau_outer": [
+        0.8942965525289521,
+        -0.4473894911177577,
+        0.00873609593724671
+      ],
+      "turns": 2.5
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M050-T2.5-GHALF",
+      "cross_norm_c": 0.01465294096184236,
+      "curve_id": "LOG-M050",
+      "delta_s1_deg": 179.16041827935715,
+      "delta_s1_rad": 3.126939188225016,
+      "dot_d": -0.9998926398974886,
+      "family": "Logarithmic",
+      "growth_parameter": 0.1243629016242374,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 0.5,
+      "p_inner": [
+        -0.04172363972983241,
+        -0.06498071881595908,
+        0.9970138635294176
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "r_inner": 0.14177869959217507,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 1.999946319228338,
+      "scale": "GHALF",
+      "span_rad": 15.707963267948966,
+      "tau_inner": [
+        -0.9013615540379551,
+        0.4329631127427821,
+        -0.009502205342103408
+      ],
+      "tau_outer": [
+        0.887947552318248,
+        -0.4569940720321149,
+        -0.05201502147974653
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5772997260494936,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681399,
+        3.178527381171649e-17
+      ],
+      "transported_tau_outer": [
+        0.8949485930423425,
+        -0.44609059712778637,
+        0.0083782435931682
+      ],
+      "turns": 2.5
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M075-T1-G30",
+      "cross_norm_c": 0.0214384162799062,
+      "curve_id": "LOG-M075",
+      "delta_s1_deg": 1.228424883051264,
+      "delta_s1_rad": 0.021440058822670843,
+      "dot_d": 0.9997701707429612,
+      "family": "Logarithmic",
+      "growth_parameter": 0.1865443524363561,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 0.75,
+      "p_inner": [
+        0.09510605713009497,
+        0.1481189080358803,
+        0.9843859136433362
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.30971810485952367,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.02143964817990116,
+      "scale": "G30",
+      "span_rad": 6.283185307179586,
+      "tau_inner": [
+        0.9236937804541419,
+        -0.3818102557262096,
+        -0.031791957672057565
+      ],
+      "tau_outer": [
+        0.9053257450914555,
+        -0.4171648120998545,
+        -0.07974217717302555
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.34665307952327745,
+      "transport_axis": [
+        0.8414709848078966,
+        -0.5403023058681397,
+        -4.0846830697426125e-17
+      ],
+      "transported_tau_outer": [
+        0.9155248423406231,
+        -0.40128065925949435,
+        -0.028073039761362013
+      ],
+      "turns": 1.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M075-T1-GHALF",
+      "cross_norm_c": 0.01962714763296839,
+      "curve_id": "LOG-M075",
+      "delta_s1_deg": 1.12462493672453,
+      "delta_s1_rad": 0.01962840799587594,
+      "dot_d": 0.9998073689845428,
+      "family": "Logarithmic",
+      "growth_parameter": 0.1865443524363561,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 0.75,
+      "p_inner": [
+        0.09013787269736656,
+        0.14038141922283884,
+        0.985985913206966
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.30971810485952367,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.019628092900596607,
+      "scale": "GHALF",
+      "span_rad": 6.283185307179586,
+      "tau_inner": [
+        0.9239572784421176,
+        -0.3813032932646281,
+        -0.030178571195209475
+      ],
+      "tau_outer": [
+        0.9070209143246251,
+        -0.4139007335074666,
+        -0.07745478538929888
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.3323876966987546,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        -2.1265318383787888e-17
+      ],
+      "transported_tau_outer": [
+        0.9164834301720671,
+        -0.39916373823199097,
+        -0.026952408068751668
+      ],
+      "turns": 1.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M075-T2-G30",
+      "cross_norm_c": 0.02397815532022978,
+      "curve_id": "LOG-M075",
+      "delta_s1_deg": 1.3739787837723072,
+      "delta_s1_rad": 0.023980453629373996,
+      "dot_d": 0.9997124827006209,
+      "family": "Logarithmic",
+      "growth_parameter": 0.1865443524363561,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 0.75,
+      "p_inner": [
+        0.02987750726807622,
+        0.046531460612734846,
+        0.9984699082760038
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.0959253044777749,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.023979879039697137,
+      "scale": "G30",
+      "span_rad": 12.566370614359172,
+      "tau_inner": [
+        0.9260270347231292,
+        -0.3773213537837982,
+        -0.010125558782134142
+      ],
+      "tau_outer": [
+        0.9053257450914555,
+        -0.4171648120998545,
+        -0.07974217717302555
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.4682727947201444,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681397,
+        -2.3060685204096262e-17
+      ],
+      "transported_tau_outer": [
+        0.916738456839974,
+        -0.39939056666345196,
+        -0.00881912755945464
+      ],
+      "turns": 2.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M075-T2-GHALF",
+      "cross_norm_c": 0.021907143087165386,
+      "curve_id": "LOG-M075",
+      "delta_s1_deg": 1.2552872605945045,
+      "delta_s1_rad": 0.021908895755714173,
+      "dot_d": 0.9997600097432177,
+      "family": "Logarithmic",
+      "growth_parameter": 0.1865443524363561,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 0.75,
+      "p_inner": [
+        0.028275329464599135,
+        0.04403621652532901,
+        0.9986297198550635
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.0959253044777749,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.021908457580689916,
+      "scale": "GHALF",
+      "span_rad": 12.566370614359172,
+      "tau_inner": [
+        0.9260536889395048,
+        -0.3772700770147734,
+        -0.009584059202755223
+      ],
+      "tau_outer": [
+        0.9070209143246251,
+        -0.4139007335074666,
+        -0.07745478538929888
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.44764365933429046,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681397,
+        -2.003873466443854e-17
+      ],
+      "transported_tau_outer": [
+        0.9175871065743787,
+        -0.3974448640775116,
+        -0.008454694960096815
+      ],
+      "turns": 2.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M075-T2.5-G30",
+      "cross_norm_c": 0.02416837888326744,
+      "curve_id": "LOG-M075",
+      "delta_s1_deg": 178.61511904940363,
+      "delta_s1_rad": 3.1174219212537375,
+      "dot_d": -0.9997079020704774,
+      "family": "Logarithmic",
+      "growth_parameter": 0.1865443524363561,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 0.75,
+      "p_inner": [
+        -0.016645103129411132,
+        -0.025923212191422348,
+        0.9995253511599841
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "r_inner": 0.053384660228952954,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 1.9998539457022746,
+      "scale": "G30",
+      "span_rad": 15.707963267948966,
+      "tau_inner": [
+        -0.9262031411819597,
+        0.37698256537653996,
+        -0.00564682802940939
+      ],
+      "tau_outer": [
+        0.9053257450914555,
+        -0.4171648120998545,
+        -0.07974217717302555
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5544106691900934,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681399,
+        1.9771093888030847e-17
+      ],
+      "transported_tau_outer": [
+        0.9168294041046277,
+        -0.3992489246909444,
+        0.004913237453895799
+      ],
+      "turns": 2.5
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M075-T2.5-GHALF",
+      "cross_norm_c": 0.022077518265758145,
+      "curve_id": "LOG-M075",
+      "delta_s1_deg": 178.73494859916616,
+      "delta_s1_rad": 3.1195133414382763,
+      "dot_d": -0.9997562618894793,
+      "family": "Logarithmic",
+      "growth_parameter": 0.1865443524363561,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 0.75,
+      "p_inner": [
+        -0.015750772835827015,
+        -0.024530375283801566,
+        0.9995749966078133
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "r_inner": 0.053384660228952954,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 1.9998781272314967,
+      "scale": "GHALF",
+      "span_rad": 15.707963267948966,
+      "tau_inner": [
+        -0.9262114291010158,
+        0.3769666213893787,
+        -0.005343684209484406
+      ],
+      "tau_outer": [
+        0.9070209143246251,
+        -0.4139007335074666,
+        -0.07745478538929888
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.529155908500551,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681398,
+        1.2027483270576835e-17
+      ],
+      "transported_tau_outer": [
+        0.9176696196714783,
+        -0.3973163575427034,
+        0.004709687994243402
+      ],
+      "turns": 2.5
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M100-T1-G30",
+      "cross_norm_c": 0.029917015855476434,
+      "curve_id": "LOG-M100",
+      "delta_s1_deg": 1.7143745445171565,
+      "delta_s1_rad": 0.02992148041420248,
+      "dot_d": 0.9995523859019613,
+      "family": "Logarithmic",
+      "growth_parameter": 0.2487258032484748,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 1.0,
+      "p_inner": [
+        0.06489475634884644,
+        0.10106759482729118,
+        0.992760802950162
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.20955054318024613,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.029920364237047494,
+      "scale": "G30",
+      "span_rad": 6.283185307179586,
+      "tau_inner": [
+        0.9455207423785201,
+        -0.32428612572894083,
+        -0.02879295732789409
+      ],
+      "tau_outer": [
+        0.9211340477638811,
+        -0.3747356479497953,
+        -0.10528656232290506
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.40319986962844606,
+      "transport_axis": [
+        0.8414709848078966,
+        -0.5403023058681398,
+        -8.842427754272138e-18
+      ],
+      "transported_tau_outer": [
+        0.9355531326844475,
+        -0.35227925371205016,
+        -0.025291566349228328
+      ],
+      "turns": 1.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M100-T1-GHALF",
+      "cross_norm_c": 0.02734848650040551,
+      "curve_id": "LOG-M100",
+      "delta_s1_deg": 1.5671482493608515,
+      "delta_s1_rad": 0.02735189681821198,
+      "dot_d": 0.9996259601901789,
+      "family": "Logarithmic",
+      "growth_parameter": 0.2487258032484748,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 1.0,
+      "p_inner": [
+        0.06145136266561784,
+        0.09570482690600304,
+        0.9935111051887798
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.20955054318024613,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.0273510442148411,
+      "scale": "GHALF",
+      "span_rad": 6.283185307179586,
+      "tau_inner": [
+        0.9456740921730855,
+        -0.32396923091758945,
+        -0.027284589263466347
+      ],
+      "tau_outer": [
+        0.9232315947468461,
+        -0.37039209649824517,
+        -0.10224048763982921
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.3860182066671393,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681397,
+        -1.8429869119933354e-17
+      ],
+      "transported_tau_outer": [
+        0.9365892105247325,
+        -0.3495888425027926,
+        -0.024254729976150066
+      ],
+      "turns": 1.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M100-T2-G30",
+      "cross_norm_c": 0.03153739612728502,
+      "curve_id": "LOG-M100",
+      "delta_s1_deg": 1.8072593649696633,
+      "delta_s1_rad": 0.03154262635622249,
+      "dot_d": 0.9995025726057489,
+      "family": "Logarithmic",
+      "growth_parameter": 0.2487258032484748,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 1.0,
+      "p_inner": [
+        0.013693493233777951,
+        0.021326352139795397,
+        0.999678785884479
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.04391143014713619,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.03154131875020199,
+      "scale": "G30",
+      "span_rad": 12.566370614359172,
+      "tau_inner": [
+        0.9469386180743119,
+        -0.321356273004377,
+        -0.006115504905479243
+      ],
+      "tau_outer": [
+        0.9211340477638811,
+        -0.3747356479497953,
+        -0.10528656232290506
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.49825192911151894,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        -1.0889875231671625e-17
+      ],
+      "transported_tau_outer": [
+        0.9363402133585573,
+        -0.35105344819026474,
+        -0.005336793173443531
+      ],
+      "turns": 2.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M100-T2-GHALF",
+      "cross_norm_c": 0.02880104382982723,
+      "curve_id": "LOG-M100",
+      "delta_s1_deg": 1.65040647939899,
+      "delta_s1_rad": 0.028805027061760344,
+      "dot_d": 0.9995851638926585,
+      "family": "Logarithmic",
+      "growth_parameter": 0.2487258032484748,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 1.0,
+      "p_inner": [
+        0.012957542955858582,
+        0.02018017749200185,
+        0.9997123898986839
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.04391143014713619,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.0288040312227921,
+      "scale": "GHALF",
+      "span_rad": 12.566370614359172,
+      "tau_inner": [
+        0.9469455270020442,
+        -0.32134199751827297,
+        -0.005787013200886989
+      ],
+      "tau_outer": [
+        0.9232315947468461,
+        -0.37039209649824517,
+        -0.10224048763982921
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.47601567641276765,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        -9.464025437761387e-18
+      ],
+      "transported_tau_outer": [
+        0.9373037401489941,
+        -0.3484760285464731,
+        -0.005114316296920039
+      ],
+      "turns": 2.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M100-T2.5-G30",
+      "cross_norm_c": 0.03159683491331163,
+      "curve_id": "LOG-M100",
+      "delta_s1_deg": 178.18933334537525,
+      "delta_s1_rad": 3.1099905588105203,
+      "dot_d": -0.9995006953591682,
+      "family": "Logarithmic",
+      "growth_parameter": 0.2487258032484748,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 1.0,
+      "p_inner": [
+        -0.00627002000067872,
+        -0.009764977582797763,
+        0.9999326637639149
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "r_inner": 0.020101199658048224,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 1.9997503320960688,
+      "scale": "G30",
+      "span_rad": 15.707963267948966,
+      "tau_inner": [
+        -0.946990820101822,
+        0.3212484114296134,
+        -0.0028008564455088572
+      ],
+      "tau_outer": [
+        0.9211340477638811,
+        -0.3747356479497953,
+        -0.10528656232290506
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5352036876439304,
+      "transport_axis": [
+        0.8414709848078966,
+        -0.5403023058681398,
+        5.9522928015463066e-18
+      ],
+      "transported_tau_outer": [
+        0.936369097843296,
+        -0.35100846327061025,
+        0.0024436277409796018
+      ],
+      "turns": 2.5
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M100-T2.5-GHALF",
+      "cross_norm_c": 0.028854269233746534,
+      "curve_id": "LOG-M100",
+      "delta_s1_deg": 178.3465426616463,
+      "delta_s1_rad": 3.112734378994259,
+      "dot_d": -0.9995836288910431,
+      "family": "Logarithmic",
+      "growth_parameter": 0.2487258032484748,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 1.0,
+      "p_inner": [
+        -0.005932883138441937,
+        -0.009239918029284281,
+        0.9999397105888324
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "r_inner": 0.020101199658048224,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 1.9997918036090876,
+      "scale": "GHALF",
+      "span_rad": 15.707963267948966,
+      "tau_inner": [
+        -0.9469922692304674,
+        0.3212454171986574,
+        -0.0026502729275477174
+      ],
+      "tau_outer": [
+        0.9232315947468461,
+        -0.37039209649824517,
+        -0.10224048763982921
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5109808940418914,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681399,
+        4.4340647407054305e-18
+      ],
+      "transported_tau_outer": [
+        0.9373299326840762,
+        -0.3484352360900079,
+        0.0023416971123323836
+      ],
+      "turns": 2.5
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M125-T1-G30",
+      "cross_norm_c": 0.03746307658361049,
+      "curve_id": "LOG-M125",
+      "delta_s1_deg": 2.1469785833359873,
+      "delta_s1_rad": 0.03747184524901644,
+      "dot_d": 0.9992980125532578,
+      "family": "Logarithmic",
+      "growth_parameter": 0.3109072540605935,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 1.25,
+      "p_inner": [
+        0.04407954081307311,
+        0.06864981736152106,
+        0.9966665423590472
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.14177869959217507,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.037469652967232696,
+      "scale": "G30",
+      "span_rad": 6.283185307179586,
+      "tau_inner": [
+        0.9631554756609203,
+        -0.2678589724086552,
+        -0.02414747615312385
+      ],
+      "tau_outer": [
+        0.9341882238805082,
+        -0.3322546326130306,
+        -0.12999700561998315
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.44192489631039517,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        -1.6224490750715946e-17
+      ],
+      "transported_tau_outer": [
+        0.9525400853470447,
+        -0.3036733018032499,
+        -0.021211119229247843
+      ],
+      "turns": 1.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M125-T1-GHALF",
+      "cross_norm_c": 0.03421640371465102,
+      "curve_id": "LOG-M125",
+      "delta_s1_deg": 1.960838262540591,
+      "delta_s1_rad": 0.0342230837804183,
+      "dot_d": 0.9994144474225075,
+      "family": "Logarithmic",
+      "growth_parameter": 0.3109072540605935,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 1.25,
+      "p_inner": [
+        0.04172363972983238,
+        0.06498071881595911,
+        0.9970138635294176
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.14177869959217507,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.0342214136906264,
+      "scale": "GHALF",
+      "span_rad": 6.283185307179586,
+      "tau_inner": [
+        0.9632371714965564,
+        -0.26767775853025866,
+        -0.022864143008871556
+      ],
+      "tau_outer": [
+        0.9366067315313751,
+        -0.32686730530311686,
+        -0.12619665278442888
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.42270027395050624,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681399,
+        0.0
+      ],
+      "transported_tau_outer": [
+        0.9535923614562274,
+        -0.30041375405002235,
+        -0.020326941479435645
+      ],
+      "turns": 1.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M125-T2-G30",
+      "cross_norm_c": 0.03838864249556366,
+      "curve_id": "LOG-M125",
+      "delta_s1_deg": 2.2000477859865484,
+      "delta_s1_rad": 0.03839807756667683,
+      "dot_d": 0.9992628843939658,
+      "family": "Logarithmic",
+      "growth_parameter": 0.3109072540605935,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 1.25,
+      "p_inner": [
+        0.0062700200006787195,
+        0.009764977582797764,
+        0.9999326637639149
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.020101199658048224,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.038395718668477276,
+      "scale": "G30",
+      "span_rad": 12.566370614359172,
+      "tau_inner": [
+        0.963924685507054,
+        -0.2661528359350775,
+        -0.0034450825596656614
+      ],
+      "tau_outer": [
+        0.9341882238805082,
+        -0.3322546326130306,
+        -0.12999700561998315
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5119938635526672,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681398,
+        -4.426070051792555e-18
+      ],
+      "transported_tau_outer": [
+        0.952998894939559,
+        -0.3029587481997224,
+        -0.003017139910058198
+      ],
+      "turns": 2.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M125-T2-GHALF",
+      "cross_norm_c": 0.035045614780831784,
+      "curve_id": "LOG-M125",
+      "delta_s1_deg": 2.008377073687992,
+      "delta_s1_rad": 0.03505279255742424,
+      "dot_d": 0.9993857137685297,
+      "family": "Logarithmic",
+      "growth_parameter": 0.3109072540605935,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 1.25,
+      "p_inner": [
+        0.005932883138441935,
+        0.009239918029284281,
+        0.9999397105888324
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.020101199658048224,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.0350509980305929,
+      "scale": "GHALF",
+      "span_rad": 12.566370614359172,
+      "tau_inner": [
+        0.9639263474449649,
+        -0.2661491499091607,
+        -0.003259862579927248
+      ],
+      "tau_outer": [
+        0.9366067315313751,
+        -0.32686730530311686,
+        -0.12619665278442888
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.4890191059581086,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681399,
+        -3.692785222128342e-18
+      ],
+      "transported_tau_outer": [
+        0.9540084781248553,
+        -0.29976569073594356,
+        -0.002890384662995044
+      ],
+      "turns": 2.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M125-T2.5-G30",
+      "cross_norm_c": 0.03840501375181397,
+      "curve_id": "LOG-M125",
+      "delta_s1_deg": 177.7990135179022,
+      "delta_s1_rad": 3.1031781926852995,
+      "dot_d": -0.9992622553257594,
+      "family": "Logarithmic",
+      "growth_parameter": 0.3109072540605935,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 1.25,
+      "p_inner": [
+        -0.002361019199538413,
+        -0.003677069539419653,
+        0.9999904523283918
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "r_inner": 0.007568807705431057,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 1.9996310936399042,
+      "scale": "G30",
+      "span_rad": 15.707963267948966,
+      "tau_inner": [
+        -0.963938314778658,
+        0.26612260748759947,
+        -0.0012973379211759656
+      ],
+      "tau_outer": [
+        0.9341882238805082,
+        -0.3322546326130306,
+        -0.12999700561998315
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5279686009497789,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        2.5825631343068297e-18
+      ],
+      "transported_tau_outer": [
+        0.9530070128091765,
+        -0.3029461053668724,
+        0.0011361248057534944
+      ],
+      "turns": 2.5
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M125-T2.5-GHALF",
+      "cross_norm_c": 0.03506027457794503,
+      "curve_id": "LOG-M125",
+      "delta_s1_deg": 177.99078246530922,
+      "delta_s1_rad": 3.106525192220636,
+      "dot_d": -0.9993851995834834,
+      "family": "Logarithmic",
+      "growth_parameter": 0.3109072540605935,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 1.25,
+      "p_inner": [
+        -0.002234054481290531,
+        -0.0034793337064617687,
+        0.9999914515822291
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "r_inner": 0.007568807705431057,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 1.999692576164388,
+      "scale": "GHALF",
+      "span_rad": 15.707963267948966,
+      "tau_inner": [
+        -0.9639385504558122,
+        0.2661220847783007,
+        -0.0012275741925485304
+      ],
+      "tau_outer": [
+        0.9366067315313751,
+        -0.32686730530311686,
+        -0.12619665278442888
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5041348349302336,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681399,
+        2.244492232279612e-18
+      ],
+      "transported_tau_outer": [
+        0.9540158367766804,
+        -0.2997542303147481,
+        0.0010883876621769764
+      ],
+      "turns": 2.5
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M150-T1-G30",
+      "cross_norm_c": 0.04406214482531131,
+      "curve_id": "LOG-M150",
+      "delta_s1_deg": 2.525392548150966,
+      "delta_s1_rad": 0.044076414870563796,
+      "dot_d": 0.9990287920742792,
+      "family": "Logarithmic",
+      "growth_parameter": 0.3730887048727122,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 1.5,
+      "p_inner": [
+        0.029877507268076205,
+        0.04653146061273485,
+        0.9984699082760038
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.0959253044777749,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.044072847099338744,
+      "scale": "G30",
+      "span_rad": 6.283185307179586,
+      "tau_inner": [
+        0.9768574099742457,
+        -0.21301871835230032,
+        -0.019303528432693094
+      ],
+      "tau_outer": [
+        0.944575120767354,
+        -0.2900790240071202,
+        -0.15372703424712028
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.4682727947201444,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        -3.843447534016043e-18
+      ],
+      "transported_tau_outer": [
+        0.966576555792262,
+        -0.25581381914583545,
+        -0.017001521308106574
+      ],
+      "turns": 1.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M150-T1-GHALF",
+      "cross_norm_c": 0.04021860528627508,
+      "curve_id": "LOG-M150",
+      "delta_s1_deg": 2.3049780234006305,
+      "delta_s1_rad": 0.0402294556944519,
+      "dot_d": 0.9991909045767113,
+      "family": "Logarithmic",
+      "growth_parameter": 0.3730887048727122,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 1.5,
+      "p_inner": [
+        0.028275329464599125,
+        0.04403621652532902,
+        0.9986297198550635
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.0959253044777749,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.04022674292777357,
+      "scale": "GHALF",
+      "span_rad": 6.283185307179586,
+      "tau_inner": [
+        0.9768986439817953,
+        -0.2129206704327791,
+        -0.018270946581539185
+      ],
+      "tau_outer": [
+        0.9472383145564243,
+        -0.2836990919120526,
+        -0.14917908930068297
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.44764365933429046,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        -8.015493865775416e-18
+      ],
+      "transported_tau_outer": [
+        0.9675889607982502,
+        -0.2520048382533136,
+        -0.016283870494547617
+      ],
+      "turns": 1.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M150-T2-G30",
+      "cross_norm_c": 0.04455823731384188,
+      "curve_id": "LOG-M150",
+      "delta_s1_deg": 2.5538444991903457,
+      "delta_s1_rad": 0.04457299509481719,
+      "dot_d": 0.9990067885092089,
+      "family": "Logarithmic",
+      "growth_parameter": 0.3730887048727122,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 1.5,
+      "p_inner": [
+        0.0028703604528970135,
+        0.004470321541885747,
+        0.9999858885285244
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.009201664039153823,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.04456930537468685,
+      "scale": "G30",
+      "span_rad": 12.566370614359172,
+      "tau_inner": [
+        0.9772487735056211,
+        -0.21208815692152577,
+        -0.001856980180170347
+      ],
+      "tau_outer": [
+        0.944575120767354,
+        -0.2900790240071202,
+        -0.15372703424712028
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5182862423674235,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681398,
+        -2.626288155007038e-18
+      ],
+      "transported_tau_outer": [
+        0.9668283876153558,
+        -0.25542161431923516,
+        -0.001633352272798844
+      ],
+      "turns": 2.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M150-T2-GHALF",
+      "cross_norm_c": 0.04066294824091186,
+      "curve_id": "LOG-M150",
+      "delta_s1_deg": 2.3304578436622783,
+      "delta_s1_rad": 0.04067416245083402,
+      "dot_d": 0.9991729202897547,
+      "family": "Logarithmic",
+      "growth_parameter": 0.3730887048727122,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 1.5,
+      "p_inner": [
+        0.002716007009555494,
+        0.004229930296898584,
+        0.9999873654179873
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.009201664039153823,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.04067135872441657,
+      "scale": "GHALF",
+      "span_rad": 12.566370614359172,
+      "tau_inner": [
+        0.9772491550126696,
+        -0.21208724983866287,
+        -0.0017571234719387478
+      ],
+      "tau_outer": [
+        0.9472383145564243,
+        -0.2836990919120526,
+        -0.14917908930068297
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.4949731503666507,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681399,
+        -1.3694953985278291e-18
+      ],
+      "transported_tau_outer": [
+        0.9678172103915278,
+        -0.25164936057359377,
+        -0.001564158835399482
+      ],
+      "turns": 2.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M150-T2.5-G30",
+      "cross_norm_c": 0.04456241137603231,
+      "curve_id": "LOG-M150",
+      "delta_s1_deg": 177.44591610687164,
+      "delta_s1_rad": 3.0970154802825482,
+      "dot_d": -0.9990066023267081,
+      "family": "Logarithmic",
+      "growth_parameter": 0.3730887048727122,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 1.5,
+      "p_inner": [
+        -0.0008890139416109578,
+        -0.0013845571799908063,
+        0.9999986463268972
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "r_inner": 0.0028499219477607514,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 1.9995032394705983,
+      "scale": "G30",
+      "span_rad": 15.707963267948966,
+      "tau_inner": [
+        -0.9772520690889547,
+        0.21208032124421228,
+        -0.0005751541609455225
+      ],
+      "tau_outer": [
+        0.944575120767354,
+        -0.2900790240071202,
+        -0.15372703424712028
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5252441773171153,
+      "transport_axis": [
+        0.8414709848078966,
+        -0.5403023058681399,
+        8.6489802026372365e-19
+      ],
+      "transported_tau_outer": [
+        0.9668305069171196,
+        -0.2554183137022975,
+        0.0005058852244896329
+      ],
+      "turns": 2.5
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M150-T2.5-GHALF",
+      "cross_norm_c": 0.040666686072429264,
+      "curve_id": "LOG-M150",
+      "delta_s1_deg": 177.6693278170753,
+      "delta_s1_rad": 3.1009147502131134,
+      "dot_d": -0.9991727681656893,
+      "family": "Logarithmic",
+      "growth_parameter": 0.3730887048727122,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 1.5,
+      "p_inner": [
+        -0.0008412061525452365,
+        -0.0013101009600011797,
+        0.9999987880031073
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "r_inner": 0.0028499219477607514,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 1.9995863413044654,
+      "scale": "GHALF",
+      "span_rad": 15.707963267948966,
+      "tau_inner": [
+        -0.9772521056868212,
+        0.21208023422806688,
+        -0.0005442246250306307
+      ],
+      "tau_outer": [
+        0.9472383145564243,
+        -0.2836990919120526,
+        -0.14917908930068297
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.501556918197934,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        6.765111274470488e-19
+      ],
+      "transported_tau_outer": [
+        0.9678191307752266,
+        -0.2516463697531869,
+        0.00048445384392115104
+      ],
+      "turns": 2.5
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M200-T1-G30",
+      "cross_norm_c": 0.05467358583226207,
+      "curve_id": "LOG-M200",
+      "delta_s1_deg": 3.1341284668210236,
+      "delta_s1_rad": 0.05470086092650872,
+      "dot_d": 0.9985042809183355,
+      "family": "Logarithmic",
+      "growth_parameter": 0.4974516064969496,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 2.0,
+      "p_inner": [
+        0.013693493233777946,
+        0.0213263521397954,
+        0.999678785884479
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.04391143014713619,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.054694041387787225,
+      "scale": "G30",
+      "span_rad": 6.283185307179586,
+      "tau_inner": [
+        0.9939534999219176,
+        -0.10922036290368425,
+        -0.01128504852263028
+      ],
+      "tau_outer": [
+        0.9579391108899841,
+        -0.20788819144833615,
+        -0.19782608443692803
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.49825192911151894,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        -3.629958410557208e-18
+      ],
+      "transported_tau_outer": [
+        0.9865104321728324,
+        -0.1633909949788312,
+        -0.010027460994634307
+      ],
+      "turns": 1.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M200-T1-GHALF",
+      "cross_norm_c": 0.0498545795468269,
+      "curve_id": "LOG-M200",
+      "delta_s1_deg": 2.857641600210791,
+      "delta_s1_rad": 0.04987525476563778,
+      "dot_d": 0.9987564872871709,
+      "family": "Logarithmic",
+      "growth_parameter": 0.4974516064969496,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 2.0,
+      "p_inner": [
+        0.012957542955858577,
+        0.020180177492001853,
+        0.9997123898986839
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.04391143014713619,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.04987008547875028,
+      "scale": "GHALF",
+      "span_rad": 6.283185307179586,
+      "tau_inner": [
+        0.9939630446375598,
+        -0.10919445294610015,
+        -0.01067882674427467
+      ],
+      "tau_outer": [
+        0.9608946449424838,
+        -0.19972182735681407,
+        -0.1918141626630131
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.47601567641276765,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        -3.785610175104555e-18
+      ],
+      "transported_tau_outer": [
+        0.987295504812147,
+        -0.15860492425826894,
+        -0.009595008012318634
+      ],
+      "turns": 1.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M200-T2-G30",
+      "cross_norm_c": 0.054801246467722865,
+      "curve_id": "LOG-M200",
+      "delta_s1_deg": 3.1414538648031507,
+      "delta_s1_rad": 0.05482871324031579,
+      "dot_d": 0.9984972826130193,
+      "family": "Logarithmic",
+      "growth_parameter": 0.4974516064969496,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 2.0,
+      "p_inner": [
+        0.0006014937072679257,
+        0.0009367709460303811,
+        0.9999993803325654
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.0019282136975668216,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.0548218457730241,
+      "scale": "G30",
+      "span_rad": 12.566370614359172,
+      "tau_inner": [
+        0.9940445696463406,
+        -0.10897315132749653,
+        -0.0004958289785742276
+      ],
+      "tau_outer": [
+        0.9579391108899841,
+        -0.20788819144833615,
+        -0.19782608443692803
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.522485521360852,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681399,
+        -4.345189831875148e-19
+      ],
+      "transported_tau_outer": [
+        0.98657896621839,
+        -0.16328425952687792,
+        -0.000440461362573974
+      ],
+      "turns": 2.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M200-T2-GHALF",
+      "cross_norm_c": 0.049968913078510854,
+      "curve_id": "LOG-M200",
+      "delta_s1_deg": 2.864200603968624,
+      "delta_s1_rad": 0.04998973097686265,
+      "dot_d": 0.9987507735795513,
+      "family": "Logarithmic",
+      "growth_parameter": 0.4974516064969496,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 2.0,
+      "p_inner": [
+        0.0005691476193095167,
+        0.0008863948987815881,
+        0.9999994451873816
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.0019282136975668216,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.049984526014530926,
+      "scale": "GHALF",
+      "span_rad": 12.566370614359172,
+      "tau_inner": [
+        0.9940445880715257,
+        -0.10897310131291207,
+        -0.0004691651699790001
+      ],
+      "tau_outer": [
+        0.9608946449424838,
+        -0.19972182735681407,
+        -0.1918141626630131
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.49894661244569044,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        -3.965204760867748e-19
+      ],
+      "transported_tau_outer": [
+        0.9873575576830577,
+        -0.15850828263777558,
+        -0.0004214515040444345
+      ],
+      "turns": 2.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M200-T2.5-G30",
+      "cross_norm_c": 0.054801482368076464,
+      "curve_id": "LOG-M200",
+      "delta_s1_deg": 176.8585325987607,
+      "delta_s1_rad": 3.086763704094097,
+      "dot_d": -0.9984972696659021,
+      "family": "Logarithmic",
+      "growth_parameter": 0.4974516064969496,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": 2.0,
+      "p_inner": [
+        -0.0001260434077527858,
+        -0.00019630097687601593,
+        0.9999999727894927
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "r_inner": 0.000404058227692718,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 1.9992484936424995,
+      "scale": "G30",
+      "span_rad": 15.707963267948966,
+      "tau_inner": [
+        -0.994044737962763,
+        0.10897269443788558,
+        -0.0001039013426877914
+      ],
+      "tau_outer": [
+        0.9579391108899841,
+        -0.20788819144833615,
+        -0.19782608443692803
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5238320587205937,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        1.4901759098952926e-19
+      ],
+      "transported_tau_outer": [
+        0.9865790928689614,
+        -0.16328406228029968,
+        9.229897246043618e-05
+      ],
+      "turns": 2.5
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "LOG-M200-T2.5-GHALF",
+      "cross_norm_c": 0.04996912434299152,
+      "curve_id": "LOG-M200",
+      "delta_s1_deg": 177.13578727632796,
+      "delta_s1_rad": 3.0916027110842017,
+      "dot_d": -0.9987507630096683,
+      "family": "Logarithmic",
+      "growth_parameter": 0.4974516064969496,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": 2.0,
+      "p_inner": [
+        -0.00011926525604030776,
+        -0.0001857446310401198,
+        0.9999999756373651
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "r_inner": 0.000404058227692718,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 1.9993752839372942,
+      "scale": "GHALF",
+      "span_rad": 15.707963267948966,
+      "tau_inner": [
+        -0.994044738771841,
+        0.10897269224166924,
+        -9.831391016645301e-05
+      ],
+      "tau_outer": [
+        0.9608946449424838,
+        -0.19972182735681407,
+        -0.1918141626630131
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5002207380122452,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        1.1302738462520272e-19
+      ],
+      "transported_tau_outer": [
+        0.9873576723506693,
+        -0.15850810405355148,
+        8.831543844353697e-05
+      ],
+      "turns": 2.5
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "GOLDEN-MEAN-T1-G30",
+      "cross_norm_c": 0.03694265076335498,
+      "curve_id": "GOLDEN-MEAN",
+      "delta_s1_deg": 2.1171397235147653,
+      "delta_s1_rad": 0.03695105890009507,
+      "dot_d": 0.9993173872972373,
+      "family": "Golden Mean logarithmic",
+      "growth_parameter": 0.30634896253003313,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": null,
+      "p_inner": [
+        0.0453513609021484,
+        0.0706305597926182,
+        0.99647106234336
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.1458980337503155,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.036948956758279194,
+      "scale": "G30",
+      "span_rad": 6.283185307179586,
+      "tau_inner": [
+        0.9620004586324254,
+        -0.2719458273623795,
+        -0.02450682703235909
+      ],
+      "tau_outer": [
+        0.9333232515854902,
+        -0.3353625431777215,
+        -0.12821728699071142
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.4395628882774489,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681398,
+        -1.6305939622946817e-17
+      ],
+      "transported_tau_outer": [
+        0.9513967834669879,
+        -0.30721468501368043,
+        -0.021524351804743866
+      ],
+      "turns": 1.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "GOLDEN-MEAN-T1-GHALF",
+      "cross_norm_c": 0.03374287003638881,
+      "curve_id": "GOLDEN-MEAN",
+      "delta_s1_deg": 1.933691104269844,
+      "delta_s1_rad": 0.03374927648603376,
+      "dot_d": 0.999430547222621,
+      "family": "Golden Mean logarithmic",
+      "growth_parameter": 0.30634896253003313,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": null,
+      "p_inner": [
+        0.04292836125452645,
+        0.06685696142457566,
+        0.9968386542009061
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.1458980337503155,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.03374767480521122,
+      "scale": "GHALF",
+      "span_rad": 6.283185307179586,
+      "tau_inner": [
+        0.962086196459168,
+        -0.2717566257372393,
+        -0.02320532160176738
+      ],
+      "tau_outer": [
+        0.9357209003658766,
+        -0.33005016304351126,
+        -0.1244720309685073
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.4204636826439572,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681398,
+        -1.6999435126866526e-17
+      ],
+      "transported_tau_outer": [
+        0.9524498243076683,
+        -0.30399640767140035,
+        -0.02062804642169208
+      ],
+      "turns": 1.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "GOLDEN-MEAN-T2-G30",
+      "cross_norm_c": 0.03790945618687576,
+      "curve_id": "GOLDEN-MEAN",
+      "delta_s1_deg": 2.172572432226945,
+      "delta_s1_rad": 0.03791854218042155,
+      "dot_d": 0.9992811782134272,
+      "family": "Golden Mean logarithmic",
+      "growth_parameter": 0.30634896253003313,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": null,
+      "p_inner": [
+        0.006639605520621474,
+        0.010340572926477207,
+        0.9999244912442552
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.021286236252208192,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.03791627055955668,
+      "scale": "G30",
+      "span_rad": 12.566370614359172,
+      "tau_inner": [
+        0.9628070143038392,
+        -0.27016605734984384,
+        -0.003599258724727874
+      ],
+      "tau_outer": [
+        0.9333232515854902,
+        -0.3353625431777215,
+        -0.12821728699071142
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.511309780031053,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681397,
+        -5.317758481405697e-18
+      ],
+      "transported_tau_outer": [
+        0.9518752636098331,
+        -0.30646949634311926,
+        -0.0031512440250455057
+      ],
+      "turns": 2.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "GOLDEN-MEAN-T2-GHALF",
+      "cross_norm_c": 0.034609051473046853,
+      "curve_id": "GOLDEN-MEAN",
+      "delta_s1_deg": 1.9833486548320407,
+      "delta_s1_rad": 0.034615964241819654,
+      "dot_d": 0.9994009273340385,
+      "family": "Golden Mean logarithmic",
+      "growth_parameter": 0.30634896253003313,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": null,
+      "p_inner": [
+        0.006282601543008043,
+        0.009784572174009524,
+        0.9999323932472752
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.021286236252208192,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.034614235971968395,
+      "scale": "GHALF",
+      "span_rad": 12.566370614359172,
+      "tau_inner": [
+        0.9628088625818783,
+        -0.2701619791246149,
+        -0.003405755314318055
+      ],
+      "tau_outer": [
+        0.9357209003658766,
+        -0.33005016304351126,
+        -0.1244720309685073
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.48837180026681853,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        -3.697283540007066e-18
+      ],
+      "transported_tau_outer": [
+        0.952883805701824,
+        -0.30332052169578605,
+        -0.003018931831796801
+      ],
+      "turns": 2.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "GOLDEN-MEAN-T2.5-G30",
+      "cross_norm_c": 0.03792750503157077,
+      "curve_id": "GOLDEN-MEAN",
+      "delta_s1_deg": 177.82639270090775,
+      "delta_s1_rad": 3.1036560495752523,
+      "dot_d": -0.9992804933361205,
+      "family": "Golden Mean logarithmic",
+      "growth_parameter": 0.30634896253003313,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": null,
+      "p_inner": [
+        -0.0025362672054778193,
+        -0.003950002137600052,
+        0.9999889823551935
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "r_inner": 0.008130618755783348,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 1.9996402143066239,
+      "scale": "G30",
+      "span_rad": 15.707963267948966,
+      "tau_inner": [
+        -0.9628220991374064,
+        0.2701327726988964,
+        -0.0013749642340226
+      ],
+      "tau_outer": [
+        0.9333232515854902,
+        -0.3353625431777215,
+        -0.12821728699071142
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5282929560460528,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681399,
+        3.0113156706489784e-18
+      ],
+      "transported_tau_outer": [
+        0.9518841989945941,
+        -0.3064555803058699,
+        0.0012037457424779467
+      ],
+      "turns": 2.5
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "GOLDEN-MEAN-T2.5-GHALF",
+      "cross_norm_c": 0.03462521345629203,
+      "curve_id": "GOLDEN-MEAN",
+      "delta_s1_deg": 178.0157247763981,
+      "delta_s1_rad": 3.106960517672193,
+      "dot_d": -0.999400367516996,
+      "family": "Golden Mean logarithmic",
+      "growth_parameter": 0.30634896253003313,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": null,
+      "p_inner": [
+        -0.0023998788273212213,
+        -0.0037375898239058137,
+        0.9999901354533066
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "r_inner": 0.008130618755783348,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 1.999700161282684,
+      "scale": "GHALF",
+      "span_rad": 15.707963267948966,
+      "tau_inner": [
+        -0.9628223688611426,
+        0.27013217755475305,
+        -0.0013010265736003409
+      ],
+      "tau_outer": [
+        0.9357209003658766,
+        -0.33005016304351126,
+        -0.1244720309685073
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5044417480594224,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        2.018919936626866e-18
+      ],
+      "transported_tau_outer": [
+        0.9528919056232135,
+        -0.303307906815645,
+        0.0011531959387618281
+      ],
+      "turns": 2.5
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "RECIPROCAL-T1-G30",
+      "cross_norm_c": 0.5460956573894696,
+      "curve_id": "RECIPROCAL",
+      "delta_s1_deg": 33.099568864568965,
+      "delta_s1_rad": 0.5776964576773295,
+      "dot_d": 0.8377228258680569,
+      "family": "Reciprocal",
+      "growth_parameter": null,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": null,
+      "p_inner": [
+        0.042696723643800824,
+        0.066496207220311,
+        0.9968727322057707
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.13730256169841298,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.5696967160374772,
+      "scale": "G30",
+      "span_rad": 6.283185307179586,
+      "tau_inner": [
+        0.906738480162534,
+        -0.4215572192500461,
+        -0.010716318897190425
+      ],
+      "tau_outer": [
+        0.9424148891056268,
+        0.0686390533819646,
+        -0.3273268353539886
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.4444925290409203,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        0.0
+      ],
+      "transported_tau_outer": [
+        0.9886970138115315,
+        0.14071919191238222,
+        -0.051733199279441644
+      ],
+      "turns": 1.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "RECIPROCAL-T1-GHALF",
+      "cross_norm_c": 0.5515480598486407,
+      "curve_id": "RECIPROCAL",
+      "delta_s1_deg": 33.47328129424022,
+      "delta_s1_rad": 0.5842189700307208,
+      "dot_d": 0.834143115824377,
+      "family": "Reciprocal",
+      "growth_parameter": null,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": null,
+      "p_inner": [
+        0.04041385951098212,
+        0.06294085698552153,
+        0.99719866048915
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.13730256169841298,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.5759459769381551,
+      "scale": "GHALF",
+      "span_rad": 6.283185307179586,
+      "tau_inner": [
+        0.9067807964065934,
+        -0.42148028859066505,
+        -0.01014660523297129
+      ],
+      "tau_outer": [
+        0.9452187336596601,
+        0.0809920711936564,
+        -0.3162306593968873
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.425131469816057,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681398,
+        0.0
+      ],
+      "transported_tau_outer": [
+        0.987848137887464,
+        0.1473834346354745,
+        -0.04933740637002279
+      ],
+      "turns": 1.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "RECIPROCAL-T2-G30",
+      "cross_norm_c": 0.5973655249154892,
+      "curve_id": "RECIPROCAL",
+      "delta_s1_deg": 36.68144935685511,
+      "delta_s1_rad": 0.6402120656806781,
+      "dot_d": 0.8019690951916054,
+      "family": "Reciprocal",
+      "growth_parameter": null,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": null,
+      "p_inner": [
+        0.022973099239659796,
+        0.03577848221510979,
+        0.9990956595450247
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.07371168224916112,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.6293344179502575,
+      "scale": "G30",
+      "span_rad": 12.566370614359172,
+      "tau_inner": [
+        0.8788455497471586,
+        -0.477096161664388,
+        -0.003122853618530601
+      ],
+      "tau_outer": [
+        0.9424148891056268,
+        0.0686390533819646,
+        -0.3273268353539886
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.48106698059427033,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        -1.8744635372345362e-17
+      ],
+      "transported_tau_outer": [
+        0.9894832874142775,
+        0.14194374049499092,
+        -0.027835201851706126
+      ],
+      "turns": 2.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "RECIPROCAL-T2-GHALF",
+      "cross_norm_c": 0.6026131594657084,
+      "curve_id": "RECIPROCAL",
+      "delta_s1_deg": 37.05728155267603,
+      "delta_s1_rad": 0.6467715749327532,
+      "dot_d": 0.7980334454386965,
+      "family": "Reciprocal",
+      "growth_parameter": null,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": null,
+      "p_inner": [
+        0.021739747055708348,
+        0.03385764999660382,
+        0.9991901935741069
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.07371168224916112,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.635557321665487,
+      "scale": "GHALF",
+      "span_rad": 12.566370614359172,
+      "tau_inner": [
+        0.8788526043144239,
+        -0.47708423266030364,
+        -0.002955475711958363
+      ],
+      "tau_outer": [
+        0.9452187336596601,
+        0.0809920711936564,
+        -0.3162306593968873
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.45975286973601437,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        -1.172832510228577e-17
+      ],
+      "transported_tau_outer": [
+        0.9885578907543958,
+        0.14848880923303004,
+        -0.026539972866920114
+      ],
+      "turns": 2.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "RECIPROCAL-T2.5-G30",
+      "cross_norm_c": 0.6083496747244587,
+      "curve_id": "RECIPROCAL",
+      "delta_s1_deg": 142.5297308736759,
+      "delta_s1_rad": 2.4876130857270584,
+      "dot_d": -0.7936691207692572,
+      "family": "Reciprocal",
+      "growth_parameter": null,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": null,
+      "p_inner": [
+        -0.018659222625521745,
+        -0.02906001745304305,
+        0.9994034964901013
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "r_inner": 0.05985169969330187,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 1.8940269907101417,
+      "scale": "G30",
+      "span_rad": 15.707963267948966,
+      "tau_inner": [
+        -0.8722114553694017,
+        0.4891246518887625,
+        -0.0020620468198325505
+      ],
+      "tau_outer": [
+        0.9424148891056268,
+        0.0686390533819646,
+        -0.3273268353539886
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5581404264584746,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        2.292832485739145e-17
+      ],
+      "transported_tau_outer": [
+        0.989592172693427,
+        0.14211331926983958,
+        0.02260832214056147
+      ],
+      "turns": 2.5
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "RECIPROCAL-T2.5-GHALF",
+      "cross_norm_c": 0.6135451647266021,
+      "curve_id": "RECIPROCAL",
+      "delta_s1_deg": 142.1537147353666,
+      "delta_s1_rad": 2.481050366072927,
+      "dot_d": -0.789659629739679,
+      "family": "Reciprocal",
+      "growth_parameter": null,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": null,
+      "p_inner": [
+        -0.017656900123016923,
+        -0.027498992645046613,
+        0.9994658769970857
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "r_inner": 0.05985169969330187,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 1.8919088930176735,
+      "scale": "GHALF",
+      "span_rad": 15.707963267948966,
+      "tau_inner": [
+        -0.872215286315959,
+        0.4891182744002288,
+        -0.0019514006539368856
+      ],
+      "tau_outer": [
+        0.9452187336596601,
+        0.0809920711936564,
+        -0.3162306593968873
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.532685487837417,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        1.5371226878952444e-17
+      ],
+      "transported_tau_outer": [
+        0.9886561402393292,
+        0.14864182373980858,
+        0.021555616492591356
+      ],
+      "turns": 2.5
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "ARCHIMEDES-ENDPOINT-MATCHED-T1-G30",
+      "cross_norm_c": 0.6174370017440006,
+      "curve_id": "ARCHIMEDES-ENDPOINT-MATCHED",
+      "delta_s1_deg": 38.12921137898454,
+      "delta_s1_rad": 0.6654802797521677,
+      "dot_d": 0.786620333373972,
+      "family": "Archimedean",
+      "growth_parameter": null,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": null,
+      "p_inner": [
+        0.04269672364380082,
+        0.06649620722031097,
+        0.9968727322057709
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.13730256169841293,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.6532681939694109,
+      "scale": "G30",
+      "span_rad": 6.283185307179586,
+      "tau_inner": [
+        0.976200671267518,
+        0.2095701584301005,
+        -0.05579066330874758
+      ],
+      "tau_outer": [
+        0.8908340089487767,
+        -0.45047674827909695,
+        -0.05903785023306605
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.4444925290409204,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681397,
+        -1.6136970966207596e-17
+      ],
+      "transported_tau_outer": [
+        0.8991816201182071,
+        -0.4374761141614103,
+        -0.009330786667197765
+      ],
+      "turns": 1.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "ARCHIMEDES-ENDPOINT-MATCHED-T1-GHALF",
+      "cross_norm_c": 0.6163343695762961,
+      "curve_id": "ARCHIMEDES-ENDPOINT-MATCHED",
+      "delta_s1_deg": 38.04894206634132,
+      "delta_s1_rad": 0.6640793159582308,
+      "dot_d": 0.7874845680259326,
+      "family": "Archimedean",
+      "growth_parameter": null,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": null,
+      "p_inner": [
+        0.04041385951098211,
+        0.0629408569855215,
+        0.99719866048915
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.13730256169841293,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.6519439116581539,
+      "scale": "GHALF",
+      "span_rad": 6.283185307179586,
+      "tau_inner": [
+        0.9762902517539196,
+        0.2099232623092582,
+        -0.0528163636736438
+      ],
+      "tau_outer": [
+        0.8921513813194712,
+        -0.44808093267951976,
+        -0.05735320896698805
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.42513146981605704,
+      "transport_axis": [
+        0.8414709848078964,
+        -0.5403023058681398,
+        0.0
+      ],
+      "transported_tau_outer": [
+        0.8998828679927698,
+        -0.4360398556114582,
+        -0.00894808423328032
+      ],
+      "turns": 1.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "ARCHIMEDES-ENDPOINT-MATCHED-T2-G30",
+      "cross_norm_c": 0.6602834348753532,
+      "curve_id": "ARCHIMEDES-ENDPOINT-MATCHED",
+      "delta_s1_deg": 41.32149272837082,
+      "delta_s1_rad": 0.7211960999489657,
+      "dot_d": 0.7510165015691767,
+      "family": "Archimedean",
+      "growth_parameter": null,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": null,
+      "p_inner": [
+        0.022973099239659834,
+        0.035778482215109854,
+        0.9990956595450247
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.07371168224916125,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.7056677666307613,
+      "scale": "G30",
+      "span_rad": 12.566370614359172,
+      "tau_inner": [
+        0.9768121527049936,
+        0.21197854754710813,
+        -0.03005185031998783
+      ],
+      "tau_outer": [
+        0.8695709535765438,
+        -0.4927795923176923,
+        -0.0318532587216657
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.4810669805942703,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        -1.8744635372345365e-17
+      ],
+      "transported_tau_outer": [
+        0.8741513353448715,
+        -0.48564607036983,
+        -0.002708735705073901
+      ],
+      "turns": 2.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "ARCHIMEDES-ENDPOINT-MATCHED-T2-GHALF",
+      "cross_norm_c": 0.6596815939499495,
+      "curve_id": "ARCHIMEDES-ENDPOINT-MATCHED",
+      "delta_s1_deg": 41.27559385715974,
+      "delta_s1_rad": 0.7203950135233835,
+      "dot_d": 0.7515452046308684,
+      "family": "Archimedean",
+      "growth_parameter": null,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": null,
+      "p_inner": [
+        0.021739747055708386,
+        0.03385764999660387,
+        0.9991901935741069
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "INTEGER_TURN",
+      "r_inner": 0.07371168224916125,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 0.7049181447077832,
+      "scale": "GHALF",
+      "span_rad": 12.566370614359172,
+      "tau_inner": [
+        0.976838183858755,
+        0.212080974651664,
+        -0.02843980918236861
+      ],
+      "tau_outer": [
+        0.8703244240421256,
+        -0.49150543357173626,
+        -0.030948435908809222
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.4597528697360143,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        -1.5637766803047696e-17
+      ],
+      "transported_tau_outer": [
+        0.8745658822493921,
+        -0.48489975379593847,
+        -0.0025973782898215062
+      ],
+      "turns": 2.0
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "ARCHIMEDES-ENDPOINT-MATCHED-T2.5-G30",
+      "cross_norm_c": 0.6693347892777466,
+      "curve_id": "ARCHIMEDES-ENDPOINT-MATCHED",
+      "delta_s1_deg": 137.98425573765053,
+      "delta_s1_rad": 2.4082795785358786,
+      "dot_d": -0.7429609275476836,
+      "family": "Archimedean",
+      "growth_parameter": null,
+      "image_pixel_data_used": false,
+      "k": 0.5773502691896257,
+      "log_multiplier": null,
+      "p_inner": [
+        -0.018659222625521738,
+        -0.02906001745304304,
+        0.9994034964901015
+      ],
+      "p_outer": [
+        0.2701511529340699,
+        0.42073549240394825,
+        0.8660254037844387
+      ],
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "r_inner": 0.05985169969330184,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 1.8670623597232545,
+      "scale": "G30",
+      "span_rad": 15.707963267948966,
+      "tau_inner": [
+        -0.9768969275690476,
+        -0.21231208896546755,
+        -0.024412492401930695
+      ],
+      "tau_outer": [
+        0.8645638736702724,
+        -0.5018559959694041,
+        -0.02588180159515002
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.5581404264584746,
+      "transport_axis": [
+        0.8414709848078963,
+        -0.5403023058681398,
+        1.9652849877764096e-17
+      ],
+      "transported_tau_outer": [
+        0.8682941913886382,
+        -0.49604637033940424,
+        0.0017876447783710388
+      ],
+      "turns": 2.5
+    },
+    {
+      "absolute_s1_state": "S1_DIRECTED_NOT_COMPATIBLE",
+      "cell_id": "ARCHIMEDES-ENDPOINT-MATCHED-T2.5-GHALF",
+      "cross_norm_c": 0.6688453081841119,
+      "curve_id": "ARCHIMEDES-ENDPOINT-MATCHED",
+      "delta_s1_deg": 138.02199242583367,
+      "delta_s1_rad": 2.408938207993473,
+      "dot_d": -0.7434016099794918,
+      "family": "Archimedean",
+      "growth_parameter": null,
+      "image_pixel_data_used": false,
+      "k": 0.5463024898437905,
+      "log_multiplier": null,
+      "p_inner": [
+        -0.017656900123016916,
+        -0.027498992645046603,
+        0.9994658769970857
+      ],
+      "p_outer": [
+        0.2590347239999258,
+        0.4034226801113349,
+        0.8775825618903728
+      ],
+      "parity_class": "ODD_HALF_INTEGER_TURN",
+      "r_inner": 0.05985169969330184,
+      "r_outer": 1.0,
+      "record_origin": "new_execution",
+      "residual_r_s1": 1.8672983746469078,
+      "scale": "GHALF",
+      "span_rad": 15.707963267948966,
+      "tau_inner": [
+        -0.9769141092876787,
+        -0.21237967888383255,
+        -0.023101841308895206
+      ],
+      "tau_outer": [
+        0.8651835054324871,
+        -0.5008244471016026,
+        -0.025147069668806137
+      ],
+      "technical_error": null,
+      "theta0": 1.0,
+      "transport_angle_rad": 0.532685487837417,
+      "transport_axis": [
+        0.8414709848078965,
+        -0.5403023058681398,
+        1.5371226878952444e-17
+      ],
+      "transported_tau_outer": [
+        0.8686377039962015,
+        -0.4954448515759819,
+        0.0017141304095152237
+      ],
+      "turns": 2.5
+    }
+  ],
+  "parity_analysis": [
+    {
+      "curve_id": "LOG-M050",
+      "parity_contrast_deg": 178.3245574664834,
+      "scale": "G30",
+      "state": "PARITY_SEPARATION_CONFIRMED"
+    },
+    {
+      "curve_id": "LOG-M050",
+      "parity_contrast_deg": 178.46621653050383,
+      "scale": "GHALF",
+      "state": "PARITY_SEPARATION_CONFIRMED"
+    },
+    {
+      "curve_id": "LOG-M075",
+      "parity_contrast_deg": 177.33685387080106,
+      "scale": "G30",
+      "state": "PARITY_SEPARATION_CONFIRMED"
+    },
+    {
+      "curve_id": "LOG-M075",
+      "parity_contrast_deg": 177.56554556390003,
+      "scale": "GHALF",
+      "state": "PARITY_SEPARATION_CONFIRMED"
+    },
+    {
+      "curve_id": "LOG-M100",
+      "parity_contrast_deg": 176.43833288684624,
+      "scale": "G30",
+      "state": "PARITY_SEPARATION_CONFIRMED"
+    },
+    {
+      "curve_id": "LOG-M100",
+      "parity_contrast_deg": 176.7465565096594,
+      "scale": "GHALF",
+      "state": "PARITY_SEPARATION_CONFIRMED"
+    },
+    {
+      "curve_id": "LOG-M125",
+      "parity_contrast_deg": 175.62927793469572,
+      "scale": "G30",
+      "state": "PARITY_SEPARATION_CONFIRMED"
+    },
+    {
+      "curve_id": "LOG-M125",
+      "parity_contrast_deg": 176.00955727396126,
+      "scale": "GHALF",
+      "state": "PARITY_SEPARATION_CONFIRMED"
+    },
+    {
+      "curve_id": "LOG-M150",
+      "parity_contrast_deg": 174.90766484395593,
+      "scale": "G30",
+      "state": "PARITY_SEPARATION_CONFIRMED"
+    },
+    {
+      "curve_id": "LOG-M150",
+      "parity_contrast_deg": 175.35283407193955,
+      "scale": "GHALF",
+      "state": "PARITY_SEPARATION_CONFIRMED"
+    },
+    {
+      "curve_id": "LOG-M200",
+      "parity_contrast_deg": 173.72090233174242,
+      "scale": "G30",
+      "state": "PARITY_SEPARATION_CONFIRMED"
+    },
+    {
+      "curve_id": "LOG-M200",
+      "parity_contrast_deg": 174.27501023351812,
+      "scale": "GHALF",
+      "state": "PARITY_SEPARATION_CONFIRMED"
+    },
+    {
+      "curve_id": "GOLDEN-MEAN",
+      "parity_contrast_deg": 175.68559805928518,
+      "scale": "G30",
+      "state": "PARITY_SEPARATION_CONFIRMED"
+    },
+    {
+      "curve_id": "GOLDEN-MEAN",
+      "parity_contrast_deg": 176.06084154434555,
+      "scale": "GHALF",
+      "state": "PARITY_SEPARATION_CONFIRMED"
+    }
+  ],
+  "reference_turn_recomputed": false,
+  "relative_log_vs_reciprocal": [
+    {
+      "curve_id": "LOG-M050",
+      "difference_vs_reciprocal_deg": -32.390689040532436,
+      "scale": "G30",
+      "turns": 1.0
+    },
+    {
+      "curve_id": "LOG-M050",
+      "difference_vs_reciprocal_deg": -32.82247485870735,
+      "scale": "GHALF",
+      "turns": 1.0
+    },
+    {
+      "curve_id": "LOG-M050",
+      "difference_vs_reciprocal_deg": 34.59003737782538,
+      "scale": "G30",
+      "turns": 1.5
+    },
+    {
+      "curve_id": "LOG-M050",
+      "difference_vs_reciprocal_deg": 35.03555756630436,
+      "scale": "GHALF",
+      "turns": 1.5
+    },
+    {
+      "curve_id": "LOG-M050",
+      "difference_vs_reciprocal_deg": -35.790322371003064,
+      "scale": "G30",
+      "turns": 2.0
+    },
+    {
+      "curve_id": "LOG-M050",
+      "difference_vs_reciprocal_deg": -36.242282031280745,
+      "scale": "GHALF",
+      "turns": 2.0
+    },
+    {
+      "curve_id": "LOG-M050",
+      "difference_vs_reciprocal_deg": 36.551731382446604,
+      "scale": "G30",
+      "turns": 2.5
+    },
+    {
+      "curve_id": "LOG-M050",
+      "difference_vs_reciprocal_deg": 37.00670354399054,
+      "scale": "GHALF",
+      "turns": 2.5
+    },
+    {
+      "curve_id": "LOG-M075",
+      "difference_vs_reciprocal_deg": -31.8711439815177,
+      "scale": "G30",
+      "turns": 1.0
+    },
+    {
+      "curve_id": "LOG-M075",
+      "difference_vs_reciprocal_deg": -32.348656357515694,
+      "scale": "GHALF",
+      "turns": 1.0
+    },
+    {
+      "curve_id": "LOG-M075",
+      "difference_vs_reciprocal_deg": 34.0833702501146,
+      "scale": "G30",
+      "turns": 1.5
+    },
+    {
+      "curve_id": "LOG-M075",
+      "difference_vs_reciprocal_deg": 34.57379155367866,
+      "scale": "GHALF",
+      "turns": 1.5
+    },
+    {
+      "curve_id": "LOG-M075",
+      "difference_vs_reciprocal_deg": -35.3074705730828,
+      "scale": "G30",
+      "turns": 2.0
+    },
+    {
+      "curve_id": "LOG-M075",
+      "difference_vs_reciprocal_deg": -35.801994292081524,
+      "scale": "GHALF",
+      "turns": 2.0
+    },
+    {
+      "curve_id": "LOG-M075",
+      "difference_vs_reciprocal_deg": 36.08538817572773,
+      "scale": "G30",
+      "turns": 2.5
+    },
+    {
+      "curve_id": "LOG-M075",
+      "difference_vs_reciprocal_deg": 36.581233863799554,
+      "scale": "GHALF",
+      "turns": 2.5
+    },
+    {
+      "curve_id": "LOG-M100",
+      "difference_vs_reciprocal_deg": -31.38519432005181,
+      "scale": "G30",
+      "turns": 1.0
+    },
+    {
+      "curve_id": "LOG-M100",
+      "difference_vs_reciprocal_deg": -31.906133044879372,
+      "scale": "GHALF",
+      "turns": 1.0
+    },
+    {
+      "curve_id": "LOG-M100",
+      "difference_vs_reciprocal_deg": 33.63134422889655,
+      "scale": "G30",
+      "turns": 1.5
+    },
+    {
+      "curve_id": "LOG-M100",
+      "difference_vs_reciprocal_deg": 34.16186191415804,
+      "scale": "GHALF",
+      "turns": 1.5
+    },
+    {
+      "curve_id": "LOG-M100",
+      "difference_vs_reciprocal_deg": -34.87418999188545,
+      "scale": "G30",
+      "turns": 2.0
+    },
+    {
+      "curve_id": "LOG-M100",
+      "difference_vs_reciprocal_deg": -35.40687507327704,
+      "scale": "GHALF",
+      "turns": 2.0
+    },
+    {
+      "curve_id": "LOG-M100",
+      "difference_vs_reciprocal_deg": 35.659602471699344,
+      "scale": "G30",
+      "turns": 2.5
+    },
+    {
+      "curve_id": "LOG-M100",
+      "difference_vs_reciprocal_deg": 36.192827926279705,
+      "scale": "GHALF",
+      "turns": 2.5
+    },
+    {
+      "curve_id": "LOG-M125",
+      "difference_vs_reciprocal_deg": -30.95259028123298,
+      "scale": "G30",
+      "turns": 1.0
+    },
+    {
+      "curve_id": "LOG-M125",
+      "difference_vs_reciprocal_deg": -31.512443031699632,
+      "scale": "GHALF",
+      "turns": 1.0
+    },
+    {
+      "curve_id": "LOG-M125",
+      "difference_vs_reciprocal_deg": 33.22894661190426,
+      "scale": "G30",
+      "turns": 1.5
+    },
+    {
+      "curve_id": "LOG-M125",
+      "difference_vs_reciprocal_deg": 33.79528424656755,
+      "scale": "GHALF",
+      "turns": 1.5
+    },
+    {
+      "curve_id": "LOG-M125",
+      "difference_vs_reciprocal_deg": -34.48140157086856,
+      "scale": "G30",
+      "turns": 2.0
+    },
+    {
+      "curve_id": "LOG-M125",
+      "difference_vs_reciprocal_deg": -35.048904478988035,
+      "scale": "GHALF",
+      "turns": 2.0
+    },
+    {
+      "curve_id": "LOG-M125",
+      "difference_vs_reciprocal_deg": 35.26928264422631,
+      "scale": "G30",
+      "turns": 2.5
+    },
+    {
+      "curve_id": "LOG-M125",
+      "difference_vs_reciprocal_deg": 35.83706772994262,
+      "scale": "GHALF",
+      "turns": 2.5
+    },
+    {
+      "curve_id": "LOG-M150",
+      "difference_vs_reciprocal_deg": -30.574176316418,
+      "scale": "G30",
+      "turns": 1.0
+    },
+    {
+      "curve_id": "LOG-M150",
+      "difference_vs_reciprocal_deg": -31.168303270839594,
+      "scale": "GHALF",
+      "turns": 1.0
+    },
+    {
+      "curve_id": "LOG-M150",
+      "difference_vs_reciprocal_deg": 32.871028519474066,
+      "scale": "G30",
+      "turns": 1.5
+    },
+    {
+      "curve_id": "LOG-M150",
+      "difference_vs_reciprocal_deg": 33.469513021592434,
+      "scale": "GHALF",
+      "turns": 1.5
+    },
+    {
+      "curve_id": "LOG-M150",
+      "difference_vs_reciprocal_deg": -34.127604857664764,
+      "scale": "G30",
+      "turns": 2.0
+    },
+    {
+      "curve_id": "LOG-M150",
+      "difference_vs_reciprocal_deg": -34.72682370901375,
+      "scale": "GHALF",
+      "turns": 2.0
+    },
+    {
+      "curve_id": "LOG-M150",
+      "difference_vs_reciprocal_deg": 34.91618523319573,
+      "scale": "G30",
+      "turns": 2.5
+    },
+    {
+      "curve_id": "LOG-M150",
+      "difference_vs_reciprocal_deg": 35.51561308170869,
+      "scale": "GHALF",
+      "turns": 2.5
+    },
+    {
+      "curve_id": "LOG-M200",
+      "difference_vs_reciprocal_deg": -29.96544039774794,
+      "scale": "G30",
+      "turns": 1.0
+    },
+    {
+      "curve_id": "LOG-M200",
+      "difference_vs_reciprocal_deg": -30.615639694029433,
+      "scale": "GHALF",
+      "turns": 1.0
+    },
+    {
+      "curve_id": "LOG-M200",
+      "difference_vs_reciprocal_deg": 32.281232287440844,
+      "scale": "G30",
+      "turns": 1.5
+    },
+    {
+      "curve_id": "LOG-M200",
+      "difference_vs_reciprocal_deg": 32.9338122226134,
+      "scale": "GHALF",
+      "turns": 1.5
+    },
+    {
+      "curve_id": "LOG-M200",
+      "difference_vs_reciprocal_deg": -33.53999549205196,
+      "scale": "G30",
+      "turns": 2.0
+    },
+    {
+      "curve_id": "LOG-M200",
+      "difference_vs_reciprocal_deg": -34.193080948707404,
+      "scale": "GHALF",
+      "turns": 2.0
+    },
+    {
+      "curve_id": "LOG-M200",
+      "difference_vs_reciprocal_deg": 34.32880172508479,
+      "scale": "G30",
+      "turns": 2.5
+    },
+    {
+      "curve_id": "LOG-M200",
+      "difference_vs_reciprocal_deg": 34.982072540961354,
+      "scale": "GHALF",
+      "turns": 2.5
+    },
+    {
+      "curve_id": "GOLDEN-MEAN",
+      "difference_vs_reciprocal_deg": -30.9824291410542,
+      "scale": "G30",
+      "turns": 1.0
+    },
+    {
+      "curve_id": "GOLDEN-MEAN",
+      "difference_vs_reciprocal_deg": -31.53959018997038,
+      "scale": "GHALF",
+      "turns": 1.0
+    },
+    {
+      "curve_id": "GOLDEN-MEAN",
+      "difference_vs_reciprocal_deg": 33.25689346449684,
+      "scale": "G30",
+      "turns": 1.5
+    },
+    {
+      "curve_id": "GOLDEN-MEAN",
+      "difference_vs_reciprocal_deg": 33.82073489912062,
+      "scale": "GHALF",
+      "turns": 1.5
+    },
+    {
+      "curve_id": "GOLDEN-MEAN",
+      "difference_vs_reciprocal_deg": -34.50887692462817,
+      "scale": "G30",
+      "turns": 2.0
+    },
+    {
+      "curve_id": "GOLDEN-MEAN",
+      "difference_vs_reciprocal_deg": -35.07393289784399,
+      "scale": "GHALF",
+      "turns": 2.0
+    },
+    {
+      "curve_id": "GOLDEN-MEAN",
+      "difference_vs_reciprocal_deg": 35.296661827231844,
+      "scale": "G30",
+      "turns": 2.5
+    },
+    {
+      "curve_id": "GOLDEN-MEAN",
+      "difference_vs_reciprocal_deg": 35.86201004103148,
+      "scale": "GHALF",
+      "turns": 2.5
+    }
+  ],
+  "variant": "A"
+}

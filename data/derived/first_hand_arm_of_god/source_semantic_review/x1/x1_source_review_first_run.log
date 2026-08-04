@@ -1,0 +1,10 @@
+========================================================================================
+FIRST HAND X1 SOURCE-SEMANTIC REVIEW PACKAGE
+========================================================================================
+Source image: data/source_snapshots/first_hand_arm_of_god/prepared/aog_p07_spherical_projection.png
+Dimensions: 2110x1260 px
+Pass-1 X1 samples: 110
+Pass-2 QC X1 samples: 119
+Segments: 5
+Output directory: /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/source_semantic_review/x1
+No fitted geometry or predicted curve was drawn.

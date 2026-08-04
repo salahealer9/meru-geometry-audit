@@ -1,0 +1,12 @@
+================================================================================================
+FIRST HAND SPHERICAL-RENDERING INVARIANT COMPARATOR
+================================================================================================
+AOG-LM-P07-GC-Y0: line-centre distance=5.570373 px, d/R=0.016292098
+AOG-LM-P07-GC-YAXIS: line-centre distance=0.104007 px, d/R=0.000304196
+AOG-LM-P07-GC-Y1: epsilon_power=-0.050489387, Delta_R=-8.743111 px, Delta_antipodal=2.438130 deg
+AOG-LM-P07-GC-X1: epsilon_power=-0.003122798, Delta_R=-0.534270 px, Delta_antipodal=0.178841 deg
+AOG-LM-P07-GC-SCAFFOLD-UR-UC-X1LL-LL [HOLDOUT]: epsilon_power=-0.006201981, Delta_R=-1.061898 px, Delta_antipodal=0.329589 deg
+Wrote /home/salahealer/meru-geometry-audit/data/derived/first_hand_arm_of_god/qc/first_hand_spherical_rendering_comparator.json
+Wrote /home/salahealer/meru-geometry-audit/reports/first_hand_spherical_rendering_comparator.md
+No curve was refitted and no optimizer was called.
+No construction-map scale or self-embedment score was computed.
