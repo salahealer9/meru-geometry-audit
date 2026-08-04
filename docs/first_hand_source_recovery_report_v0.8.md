@@ -1,315 +1,336 @@
-# First Hand Source-Recovery Report - Tier-A Tranche 2
+# First Hand Source-Recovery Report — Tier-A Tranche 3
 
 **Checkpoint:** `first_hand_construction_source_recovery_preregistration_v0.8`  
-**Status:** IN PROGRESS - TIER A NOT EXHAUSTED  
-**Newly completed in this tranche:** full *The Arm of God* inspection; *The Dirac String Trick - First Hand*  
+**Status:** IN PROGRESS — TIER A NOT EXHAUSTED  
+**Focus of tranche:** trace the claimed three algebraic FIRST HAND constructions  
 **Final construction-recovery state:** NOT YET ASSIGNED
 
 ## 1. Main result
 
-The complete inspection of *The Arm of God* resolves an important ambiguity in the source record.
+The registered search has verified the claim that three algebraic FIRST HAND constructions exist, but has **not recovered the constructions themselves**.
 
-The paper says the reciprocal spiral can be projected onto Continuous Creation by a "simple, meaningful, and well-defined construction."
+The load-bearing source remains *Some Notes on the Logarithmic and Golden Mean Spirals*, which states that Meru knows:
 
-The construction actually supplied in the document consists of:
+- three sets of specially arranged algebraic functions;
+- at least one geometric construction;
 
-1. the reciprocal / hyperbolic law
-   \[
-   r\theta=1;
-   \]
-2. projection of that spiral onto a cube-octahedral sphere;
-3. conversion of the planar infinite outer end into a finite spherical end;
-4. selection of an inner endpoint exactly
-   \[
-   1.5\text{ turns}=3\pi
-   \]
-   from the outer end;
-5. three reciprocal projections separated by
-   \[
-   120^\circ;
-   \]
-6. a discrete cube-octahedral / sphere-pack / tetrahedral scaffold.
+that produce apparently identical, self-embedding FIRST HAND vortex sculptures.
 
-Across the complete 16-page paper, no textual construction step is supplied that:
+The source does not:
 
-- makes the outer and inner endpoint tangents parallel;
-- bends the reciprocal projection into a finished self-embedding vortex;
-- defines a Dimpled-Sphere deformation;
-- or derives a unique continuous FIRST HAND shape from the spherical scaffold.
+- name the three algebraic sets;
+- give their equations;
+- give constants;
+- give their domains;
+- specify how they are assembled;
+- identify a separate publication containing them.
 
-The terms `parallel`, `self-embed`, and `bend` do not appear in the searchable document text.
+Exact-phrase and concept searches over the registered searchable Meru corpus repeatedly return to this same Golden Mean statement.
 
-Therefore the source-supported classification is:
+Current working state:
 
-`PARTIAL_UNDERDETERMINED_CONSTRUCTION`
+`CLAIM_VERIFIED_FUNCTION_SETS_NOT_RECOVERED`
 
-not:
-
-`REPRODUCIBLE_CONSTRUCTION_RECOVERED`.
+This is not yet the final corpus null because remaining registered audiovisual/archive items have not all been exhausted.
 
 ---
 
-## 2. Where the promised "well-defined construction" stops
+## 2. The public Meru construction trail points elsewhere
 
-The paper first introduces
+Two official Meru indexes were inspected specifically to determine where Meru directs readers who want to know how the FIRST HAND vortex is created.
+
+### 2.1 Coast / Shape of Information index
+
+The Meru Coast index states that the FIRST HAND vortex is based on the reciprocal spiral.
+
+For "more on the ways this vortex can be created," the public index points to:
+
+- *The Arm of God*;
+- and, separately, *Squaring the Circle* for a craftsman's construction version.
+
+No separate algebraic-function publication is named there.
+
+### 2.2 DVD supplementary-materials index
+
+Meru's supplementary-materials index maps the construction-relevant lecture series to:
+
+- *Continuous Creation: A General Projective Principle*;
+- *Squaring the Circle with Straight Edge and Compass*;
+- and related posters/gesture material.
+
+Again, no page or paper containing the three algebraic function sets is identified.
+
+Thus the Meru site's own public construction indexes currently resolve to the same already-recovered construction families:
+
+\[
+\text{reciprocal/spherical scaffold}
+\]
+
+\[
+\text{3,10 / Continuous Creation scaffold}
+\]
+
+\[
+\text{craft circle+tangent deformation}.
+\]
+
+They do not expose a fourth public formula source corresponding to the three claimed algebraic sets.
+
+---
+
+## 3. Most Asymmetric Spiral does not supply the missing map
+
+*The First Distinction and the Most Asymmetric Spiral* gives a detailed rationale for choosing the reciprocal / hyperbolic spiral.
+
+It identifies the desired planar law as the reciprocal spiral and says that it becomes the relevant vortex:
+
+> when it is drawn out into a full vortex on the surface of a dimpled-sphere torus, as described elsewhere.
+
+This is important wording.
+
+It separates:
+
+1. selection of the reciprocal radial law;
+2. from the later three-dimensional "drawn out" / carrier construction.
+
+The page does not specify that three-dimensional map.
+
+Therefore it remains:
+
+`PARTIAL_UNDERDETERMINED_CONSTRUCTION`
+
+for FIRST HAND recovery.
+
+The phrase "as described elsewhere" was followed through the registered Meru construction indexes; those routes lead back to *Arm of God*, Continuous Creation / 3,10 material, and the craft construction, not to an explicit algebraic-function set.
+
+---
+
+## 4. Continuous Creation remains a scaffold, not the missing function set
+
+*A Model of Continuous Creation* was inspected through the registered supplementary-materials trail.
+
+It identifies:
+
+- the Continuous Creation poster;
+- the 3,10 Torus Knot / Ring / Sphere / Tetrahelix / Hand poster;
+- animations of the 3,10 knot displaying three pairs of FIRST HAND models.
+
+This strengthens the discrete/topological provenance of the six-hand structure.
+
+It does not supply:
+
+- a parametric FIRST HAND curve;
+- a dimpled-sphere metric;
+- an exact reciprocal-to-carrier map;
+- a self-embedding endpoint equation;
+- any of the three claimed algebraic function sets.
+
+Classification:
+
+`PARTIAL_UNDERDETERMINED_CONSTRUCTION`.
+
+---
+
+## 5. Official 2009 construction video identified but not content-inspected
+
+Meru's video index and official page identify:
+
+*The Dynamics of a Circle and a Line* (2009)
+
+as:
+
+> the construction of the Meru First Hand model, and its philosophical meaning.
+
+The official page is:
+
+`https://meru.org/Videos/CircleLine.html`
+
+and embeds YouTube video ID:
+
+`8rwI7kZLepA`.
+
+The HTML contains no transcript.
+
+Search and direct caption-retrieval attempts did not recover the spoken content in the present audit environment.
+
+Therefore this source must **not** be classified from its title alone.
+
+Current state:
+
+`AUDIOVISUAL_CONSTRUCTION_SOURCE_CONTENT_NOT_RECOVERED`
+
+or, at the reference level:
+
+`OFFICIAL_VIDEO_IDENTIFIED_CONTENT_ACCESS_LIMITED`.
+
+If a transcript or locally reviewable copy is later available within the registered recovery process, the questions are already fixed:
+
+- does it give equations;
+- does it quantify the curl/bend;
+- does it derive endpoint parallelism;
+- does it identify any of the three algebraic sets?
+
+---
+
+## 6. Golden Mean current and old-site pages do not resolve the algebraic claim
+
+The current and old-site versions of the Golden Mean discussion both contain the same essential claim:
+
+- the desired generated FIRST HAND can be produced from three specially arranged algebraic function sets and at least one geometric construction;
+- all allegedly appear identical;
+- all allegedly self-embed because the endpoint directions are parallel;
+- a manually bent vortex can be visually indistinguishable from the generated form.
+
+Neither version provides the algebraic sets.
+
+Therefore duplication of the claim across page versions is evidence that the claim was persistent, but it is not additional construction disclosure.
+
+---
+
+## 7. No evidence that \(r\theta=1\) alone is one of the three finished-form function sets
+
+The registered corpus strongly identifies
 
 \[
 r\theta=1
 \]
 
-as the Unitary Reciprocal Spiral and says that it will later be geometrically projected onto Continuous Creation by a well-defined construction.
+as the reciprocal / hyperbolic spiral chosen for its asymmetry.
 
-The later construction page does indeed define a substantial transformation:
+However, the corpus also repeatedly distinguishes:
 
-- the flat reciprocal spiral is placed into a spherical coordinate construction;
-- the planar lines corresponding to the asymptotic axes become great circles;
-- the formerly infinite outer end becomes finite;
-- the inner endpoint is cut at a fixed \(3\pi\) separation;
-- three copies are spaced by 120 degrees.
+- the reciprocal spiral;
+- from the specially shaped 3-D FIRST HAND vortex derived from or based on it.
 
-Thus the phrase "well-defined construction" is not empty.
+Therefore the audit must **not** silently count \(r\theta=1\) itself as one of the "three sets of specially arranged algebraic functions."
 
-But the document does not proceed from that spherical construction to a unique endpoint-parallel finished FIRST HAND.
+That would collapse the missing shaping problem back into the seed radial law.
 
-The construction therefore has a clearly identifiable boundary:
+The correct current interpretation is:
 
-> **The Arm of God deterministically specifies a reciprocal/spherical scaffold, but not the final self-embedding shape.**
-
-This distinction is now source-supported by complete-document inspection.
+> the reciprocal function is a recovered ingredient; the alleged complete algebraic function sets that generate the finished self-embedding shape remain unrecovered.
 
 ---
 
-## 3. Consequence for Variant A
+## 8. TetraFlame Graphics remains a named missing publication
 
-The audit's Variant-A work was designed precisely around the reciprocal spiral projected onto a sphere-like carrier.
+*The Light in the Meeting Tent* explicitly refers readers to a paper on `TetraFlame Graphics`.
 
-The completed source inspection confirms that this was a historically relevant reconstruction class.
+Registered Meru-domain searches recover the citation but not a public copy of the paper itself.
 
-However, *The Arm of God* itself does not state that the spherical reciprocal projection already satisfies endpoint parallelism.
+No construction content is inferred from the title.
 
-It simply identifies the resulting shaded region between three projected spirals as the Tefillin HAND.
+Its current reference state is:
 
-Therefore the Variant-A endpoint mismatch should be interpreted as:
+`NAMED_PUBLICATION_NOT_RECOVERED_IN_REGISTERED_SEARCH`.
 
-> a test of whether the reciprocal/spherical scaffold, under the audit's preregistered metric operationalization, automatically possesses the later source-stated endpoint-parallel property.
+Based only on the surrounding 1986 sentence, the referenced paper concerns using flame letters as a notation for holographic / multidimensional objects; it is not explicitly identified there as the later FIRST HAND shaping construction.
 
-The result was negative.
-
-That is not contradicted anywhere in *The Arm of God*.
+Therefore it remains a bibliographic lead, not a recovered geometric source.
 
 ---
 
-## 4. Endpoint parallelism: current source map
+## 9. Working construction-source map after tranche 3
 
-After the sources inspected so far, three distinct situations must be separated.
+The public source map is now:
 
-### A. *The Arm of God*
+### A. Reciprocal seed law
 
-Provides reciprocal law, spherical projection, 1.5-turn trim, and 120-degree three-copy scaffold.
-
-It does **not** mention or derive endpoint parallelism.
-
-### B. *The Dirac String Trick - First Hand*
-
-Provides the in-sphere/out-sphere, hypersphere, 2-torus, Dirac ribbon, double-covering, and wine-dance interpretation of FIRST HAND.
-
-It does **not** mention or derive endpoint parallelism.
-
-### C. *Squaring the Circle*
-
-Provides a craftsman's operational construction.
-
-This source explicitly tells the maker to curl the ring into a 3-D vortex and bend the tangent line until it is parallel to the vortex end.
-
-Thus, among the inspected construction-relevant sources:
-
-> **The only source that explicitly addresses endpoint parallelism is the craft route, and there parallelism is imposed by deformation.**
-
-This is a strong source-recovery finding.
-
-It must not yet be generalized to the still-unrecovered three algebraic function sets or any other claimed geometric construction.
-
----
-
-## 5. Dirac String Trick result
-
-*The Dirac String Trick - First Hand* was inspected in full.
-
-It describes:
-
-- an in-sphere within an out-sphere as a hypersphere model;
-- a flexible ribbon connecting the two;
-- the twice-around / double-covering Dirac string motion;
-- the Philippine wine dance;
-- FIRST HAND as an expression of this process;
-- FIRST HAND as a section of the surface of a hypersphere modeled as an apple-shaped 2-torus;
-- a right/left pair of FIRST HAND forms;
-- a figure labeled `60-degree FIRST HAND Sculpture`.
-
-The source does not specify:
-
-- a parametric FIRST HAND curve;
-- a unique 2-torus metric;
-- a reciprocal-to-torus mapping;
-- a bending function;
-- an endpoint-parallel construction;
-- a self-embedment equation.
-
-Its primary state is therefore:
-
-`DESCRIPTIVE_ONLY`.
-
-The 60-degree label is retained as a named but unexplained construction parameter:
-
-`REFERENCED_PARAMETER_UNEXPLAINED`.
-
----
-
-## 6. The 49/99/one-sixth issue after visual inspection
-
-The *Arm of God* figure on the Tefillin HAND page visually reinforces that several structural descriptions coexist:
-
-- a 99-tetrahedra three-full-turn assembly;
-- 33-tetrahedra columns associated with triangular faces;
-- a 3,10 torus knot on a dimpled sphere;
-- a graphic explicitly showing `1 of 6 LEFT HANDS`;
-- prose saying the HAND is a `1/6th section`;
-- prose saying the full knot has 99 tetrahedra while each half and each HAND is 49 tetrahedra long.
-
-The visual record therefore does not justify treating the six HAND regions as six disjoint 49-tetrahedra arc segments.
-
-The source appears to be mixing at least:
-
-- surface-region decomposition;
-- tetrahedral-column length;
-- half-knot length;
-- and the 3,10 winding scaffold.
-
-The registered state remains:
-
-`49_99_ONE_SIXTH_RELATION_UNRESOLVED`.
-
-This is a sharpened source inconsistency/underdetermination question, not yet a numerical contradiction.
-
----
-
-## 7. Additional sphere-pack constraint
-
-Later *Arm of God* pages add further discrete structure:
-
-- the "thumb"-spiral is outlined sphere by sphere;
-- three similar spirals separated by 120 degrees are said to fit into the same sphere-pack without interference;
-- the three straight seven-sphere sections follow edges of square faces of the cube-octahedral sphere-pack.
-
-These are genuine additional construction constraints.
-
-They strengthen the discrete scaffold.
-
-They still do not specify the continuous curve between the discrete sphere/tetrahedral elements sufficiently to recover a unique finished FIRST HAND geometry.
-
----
-
-## 8. Turn-count status
-
-The complete paper is internally consistent with the later convention:
-
-- full 7-color-map structure: 3 turns;
-- FIRST HAND / selected reciprocal interval: 1.5 turns;
-- the 1.5-turn slingshot analogy is repeated explicitly.
-
-Combined with Meru's historical note that the older full-vortex count was 3.5 turns before the convention was changed to 3, the current state remains:
-
-`LATER_CONVENTION_RELATION_RESOLVED_EARLY_TRANSLATION_REQUIRED`.
-
-No new turn-count contradiction was found in the complete *Arm of God* inspection.
-
----
-
-## 9. Strongest current historical interpretation
-
-The source corpus inspected so far supports the following layered interpretation:
-
-### Deterministic layer
-
-The reciprocal law and substantial spherical/discrete scaffolding are specified.
-
-### Topological/dynamic layer
-
-The 3,10 knot, hypersphere, apple-shaped 2-torus, double covering, and wine-dance orbit are described.
-
-### Finished-shape layer
-
-The physical FIRST HAND is specially shaped.
-
-A deterministic source rule for that continuous shaping has not yet been recovered.
-
-### Endpoint layer
-
-Parallelism is explicitly required in the Golden Mean discussion.
-
-In the craftsman's *Squaring the Circle* route, it is achieved by bending.
-
-No inspected generated/algebraic route has yet been found that derives it.
-
----
-
-## 10. What the numerical work and source work now say together
-
-The completed numerical audit shows that the registered reciprocal constructions do not automatically achieve the required endpoint relation.
-
-The source audit now shows that:
-
-- *The Arm of God* does not claim or demonstrate endpoint parallelism for its spherical construction;
-- *The Dirac String Trick* does not supply the missing metric shaping rule;
-- *Squaring the Circle* explicitly adds manual deformation to impose the endpoint condition.
-
-Therefore the strongest current synthesis is:
-
-> **The reciprocal law and its spherical/topological scaffold are source-recoverable, but the public construction material inspected so far does not derive the endpoint-parallel finished FIRST HAND uniquely. The only recovered route that explicitly guarantees endpoint parallelism does so by instructing the maker to bend the form until the condition is satisfied.**
-
-This is stronger and more precise than saying simply that the reciprocal spiral "fails."
-
-It identifies the missing mathematical operation.
-
----
-
-## 11. What is still open
-
-Tier A remains open because the following registered high-value targets have not yet been exhausted:
-
-1. the three claimed algebraic function sets;
-2. any second deterministic geometric construction distinct from the craft route;
-3. *Dynamics of a Circle and a Line*, if retrievable;
-4. fuller TORUS Vol.2 #2/#4 material;
-5. TetraFlame Graphics;
-6. registered direct links that explicitly claim FIRST HAND construction;
-7. repository A01-A10 assets against the sharpened recovery questions;
-8. the meaning of the `60-degree FIRST HAND Sculpture` label.
-
-The final null state must not be assigned yet.
-
----
-
-## 12. Tranche-2 working state
-
-No reproducible finished FIRST HAND construction has yet been recovered.
-
-The current construction-level state remains:
-
-`PARTIAL_UNDERDETERMINED_CONSTRUCTION_FOUND`.
-
-But the location of the underdetermination is now much more precise:
+Recovered:
 
 \[
-\boxed{
-\text{reciprocal/scaffold recovered}
-\quad\longrightarrow\quad
-\text{continuous shaping rule missing}
-\quad\longrightarrow\quad
-\text{endpoint parallelism imposed in craft route}
-}
+r\theta=1.
 \]
 
-The next search priority is no longer *The Arm of God*.
+### B. Sphere / cube-octahedral projection
 
-It is the source trail for the claimed algebraic function sets and any construction source that purports to generate the finished FIRST HAND without manual bending.
+Substantially recovered in *The Arm of God*.
+
+### C. 3,10 / six-hand / tetrahedral scaffold
+
+Substantially recovered from Continuous Creation, the 3,10 poster, Appendix material, and *Arm of God*.
+
+### D. Craftsman's shaping route
+
+Recovered operationally:
+
+- circular ring;
+- tangent line;
+- cut;
+- curl into 3-D vortex;
+- bend tangent to parallel endpoint.
+
+Underdetermined continuously.
+
+### E. Three generated algebraic routes
+
+Existence claim recovered.
+
+Equations/names not recovered.
+
+### F. Additional generated geometric route(s)
+
+Existence claim recovered in Golden Mean source.
+
+No deterministic finished-form construction distinct from the underdetermined craft route has yet been recovered.
+
+---
+
+## 10. Strongest current finding on the algebraic question
+
+The strongest defensible statement is:
+
+> **The registered searchable Meru corpus repeatedly identifies the reciprocal spiral and several geometric/topological scaffolds, but the only source located that explicitly claims three algebraic function sets generate the finished self-embedding FIRST HAND does not disclose those sets. The Meru site's own public construction indexes direct readers instead to The Arm of God and the craftsman's Squaring the Circle route.**
+
+This materially lowers the likelihood that the three complete function sets are merely hidden under an obvious alternate title in the public website corpus.
+
+It does not prove they were never written down or never distributed elsewhere.
+
+---
+
+## 11. Implication for the phase null
+
+The likely final null is becoming more specific.
+
+If the remaining registered sources are exhausted without recovering a formula set, the correct conclusion will not be:
+
+> Meru provides no mathematics for FIRST HAND.
+
+That would be false.
+
+Meru does provide:
+
+- \(r\theta=1\);
+- spherical projection rules;
+- fixed turn counts;
+- 120-degree copy structure;
+- 3,10 topology;
+- tetrahedral/sphere-pack constraints.
+
+The correct null would be:
+
+> **The published registered corpus does not provide the missing deterministic continuous shaping rule that converts those recovered ingredients into the claimed finished endpoint-parallel FIRST HAND, despite explicitly asserting that multiple algebraic constructions exist.**
+
+That distinction is central.
+
+---
+
+## 12. Remaining Tier-A work
+
+The final published-corpus state is not yet assigned.
+
+Remaining registered items include:
+
+1. content recovery, if possible, from *The Dynamics of a Circle and a Line*;
+2. any fuller TORUS Vol.2 #2/#4 source material not already represented by the public poster/appendix;
+3. unresolved named construction/archive items logged in the reference tracker;
+4. repository A01-A10 assets under the sharpened recovery questions;
+5. any remaining registered direct Meru links admitted by the frozen vocabulary rule.
+
+Until those are exhausted, the construction state remains:
+
+`PARTIAL_UNDERDETERMINED_CONSTRUCTION_FOUND`
+
+with the algebraic sub-state:
+
+`CLAIM_VERIFIED_FUNCTION_SETS_NOT_RECOVERED`.
