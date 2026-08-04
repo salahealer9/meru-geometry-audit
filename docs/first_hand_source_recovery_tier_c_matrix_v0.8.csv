@@ -1,0 +1,8 @@
+source_id,source,role,classification,result
+TC01,"Tenen v. Winter, 15 F.Supp.2d 270",court decision,ARCHIVAL_PROVENANCE_ONLY,identifies 3-D sculpture and two 1992 Light registrations; pretrial court says mathematical-shape issue required expert testimony
+TC02,1998 Findings/Order,signed litigation findings/order,ARCHIVAL_PROVENANCE_ONLY,"lists copyrighted Ideal Hand / Hand Finger Width sculptures; no construction formula; technical statements treated as litigation findings, not science"
+TC03,1994 Complaint,pleading / exhibit provenance,ARCHIVAL_PROVENANCE_ONLY,documents Light registration/exhibits; exact registration chronology conflicts with later findings
+TC04,USCO visual-art identifying-material rules,official Copyright Office guidance,ARCHIVAL_PROVENANCE_ONLY,3-D sculptures use identifying material; registration does not imply enabling equations
+TC05,USCO public-record search guidance,official Copyright Office guidance,ARCHIVAL_PROVENANCE_ONLY,post-1978 registration records public/searchable; actual Tenen deposits not obtained
+TC06,US3909666A,patent,UNRELATED_TENEN_PATENT,Stanley N. Tenen ballast circuit; unrelated to FIRST HAND
+TC07,DE2420073A1,patent,UNRELATED_TENEN_PATENT,Herbert Berman / Stan Tenen motor-control patent; unrelated to FIRST HAND

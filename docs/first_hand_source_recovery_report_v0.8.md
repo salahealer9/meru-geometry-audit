@@ -1,32 +1,33 @@
-# First Hand Source-Recovery Report — Tiers A and B Closed
+# First Hand Source-Recovery Report — Tiers A-C Closed
 
 **Checkpoint:** `first_hand_construction_source_recovery_preregistration_v0.8`  
-**Tier A:** CLOSED  
-**Tier B:** CLOSED  
-**Tier C:** NEXT  
-**Final Tiers A-C construction state:** NOT YET ASSIGNED
+**Tiers A-C:** CLOSED  
+**Tier D:** OPTIONAL  
+**Final published-corpus state:** `NO_REPRODUCIBLE_PUBLISHED_FIRST_HAND_CONSTRUCTION_RECOVERED`
 
-Tier A recovered the reciprocal seed law and substantial spherical/topological/discrete scaffolding but no deterministic continuous shaping rule for the finished endpoint-parallel FIRST HAND.
+The registered published Meru/legal corpus contains substantial mathematics and construction scaffolding but no deterministic continuous finished-shape construction satisfying the preregistered recovery criterion.
 
-Tier B recovered the development history but no missing construction equations.
+Recovered:
+- \(r\theta=1\);
+- later 1.5-turn / \(3\pi\) span;
+- cube-octahedral spherical construction;
+- 120-degree three-copy relation;
+- 3,10 topology;
+- six-hand / seven-region structure;
+- 33/49/99 tetrahedral accounting;
+- tetrahedral and sphere-pack constraints;
+- Hebrew/Arabic projection outputs;
+- underdetermined craft curl/bend construction.
 
-The historical record now supports a staged evolution:
+Not recovered:
+- three claimed algebraic function sets;
+- fourteen alleged finished-model features;
+- unique Dimpled-Sphere metric;
+- optimum-hole metric;
+- deterministic continuous shaping rule;
+- generated endpoint-parallel derivation;
+- FIRST HAND construction patent.
 
-- abstract vortex/scaffold;
-- recognition around 1991-1992 that the model represents a human hand;
-- subsequent correction of handedness and other details;
-- years of mathematical refinement;
-- later investigation of algebraic definitions;
-- eventual public claim of three algebraic function sets and at least one geometric construction.
+The legal record confirms copyright protection of the sculptural expression, not publication of an enabling mathematical construction.
 
-A 1997 interview article says the mathematically perfected hand model incorporates fourteen explicit features, but does not enumerate them.
-
-A 1999 interview distinguishes arbitrary bending that can fake shadows from the meaningful Genesis-derived form and separately identifies \(r\theta=1\) as the reciprocal seed geometry.
-
-Meru's 2007 historical note says the public corpus reached a first mature plateau around 1999 and that later work continued more quietly/private, with some material released only after long delay.
-
-None of these Tier-B sources supplies the missing deterministic finished-shape construction.
-
-The three algebraic sets remain unrecovered, and the optimum Dimpled-Sphere hole remains undefined.
-
-The next registered phase is Tier C legal/registration provenance.
+Actual 1992 sculpture deposit material remains optional Tier D and is nonblocking.
