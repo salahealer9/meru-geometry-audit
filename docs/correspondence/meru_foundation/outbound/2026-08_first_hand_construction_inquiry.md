@@ -1,4 +1,5 @@
 **Sent to Meru Foundation meru@meru.org on 5 Aug 2026, 06:37**
+
 **Subject: Question regarding Stan Tenen’s FIRST HAND geometric construction**
 
 Dear Meru Foundation,
