@@ -1,0 +1,378 @@
+--- original/registered_pilots/p0a0/cases.py
++++ amended/registered_pilots/p0a0/cases.py
+@@ -7,6 +7,7 @@
+ import math
+ import numpy as np
+ from meru_geometry.p0a0 import engineering as e, oracles as o
++from meru_geometry.p0a0.boundaries import require, parse_pi_bounds
+ from meru_geometry.projections import orthographic_project
+ from meru_geometry.projection_orbits import (
+     camera_direction_classes, frame_planar_transform, planar_similarity_alignment)
+@@ -63,8 +64,8 @@
+         a,b = [e.ordered_match(f['path'],f['target'],reflection=x) for x in (False,True)]
+         near(a.relative_rms,o.similarity_error(f['path'],f['target']),score_tol)
+         near(b.relative_rms,o.similarity_error(f['path'],f['target'],True),score_tol)
+-        assert a.relative_rms > 1e-3 and not a.reflection_used
+-        assert b.reflection_used; near(b.relative_rms,0,score_tol)
++        require(a.relative_rms > 1e-3 and not a.reflection_used, "registered invariant 01 failed")
++        require(b.reflection_used, "registered invariant 02 failed"); near(b.relative_rms,0,score_tol)
+         raw.update(so2_absolute=a.absolute_rms,o2_absolute=b.absolute_rms)
+         result['normalized'] = {'so2':a.relative_rms,'o2':b.relative_rms}
+     elif case == 'S03':
+@@ -72,23 +73,23 @@
+         sampled = e.ordered_match(f['a'],f['b'],samples=config['arclength_samples'])
+         expected = np.column_stack((np.linspace(0,5,129),np.linspace(0,2,129)))
+         near(e.resample(f['a'],129),expected,tol); near(e.resample(f['b'],129),expected,tol)
+-        near(sampled.relative_rms,0,score_tol); assert indexed.relative_rms > .01
++        near(sampled.relative_rms,0,score_tol); require(indexed.relative_rms > .01, "registered invariant 03 failed")
+         raw.update(index_absolute=indexed.absolute_rms,resampled_absolute=sampled.absolute_rms)
+         result['normalized'] = {'index_relative':indexed.relative_rms,'resampled_relative':sampled.relative_rms}
+         result.update(state='EXPECTED_BLIND_SPOT',explanation='Index correspondence is sample-sensitive; straight-polyline arclength path tested separately.')
+     elif case == 'S04':
+         vertices = f['vertices']; edges = config['cases'][case]['edges']
+         a,b = [e.graph_counts(vertices,edges,f[k]) for k in ('one','two')]
+-        assert a['components']==b['components']==1
+-        assert a['exposed_endpoints']==b['exposed_endpoints']==2
+-        assert (a['labelled_endpoints'],b['labelled_endpoints'])==(2,4)
++        require(a['components']==b['components']==1, "registered invariant 04 failed")
++        require(a['exposed_endpoints']==b['exposed_endpoints']==2, "registered invariant 05 failed")
++        require((a['labelled_endpoints'],b['labelled_endpoints'])==(2,4), "registered invariant 06 failed")
+         d = e.support_distance(vertices,vertices); near(list(d.values()),[0,0],tol)
+         raw.update(support=d,one=a,two=b)
+         result.update(state='EXPECTED_BLIND_SPOT',explanation='Identical support cannot identify segmentation labels; labels were supplied, never inferred.')
+     elif case == 'S05':
+         pieces = f['pieces']; allv = pieces.reshape(-1,2)
+         a,b = graph(f['full']),e.graph_counts(allv,[[0,1],[2,3]],[[0,1],[2,3]])
+-        assert a['components']==1 and b['components']==2
++        require(a['components']==1 and b['components']==2, "registered invariant 07 failed")
+         near(pieces[1,0,0]-pieces[0,1,0],1/64,tol)
+         raster = config['raster']; outputs=[]
+         for shape in raster['shapes']:
+@@ -98,7 +99,7 @@
+             near(y,o.horizontal_coverage([[-1,.125],[.140625,1]],**kw),tol)
+             outputs.append({'shape':shape,'silhouette':e.silhouette_distance(x,y,raster['threshold']),
+                             'different_pixels':int(np.count_nonzero(x!=y))})
+-        assert outputs[0]['different_pixels']==0 and outputs[1]['different_pixels']>0
++        require(outputs[0]['different_pixels']==0 and outputs[1]['different_pixels']>0, "registered invariant 08 failed")
+         raw.update(full_graph=a,gapped_graph=b,gap=1/64)
+         result['sensitivity']={'rasters':outputs}
+         result.update(state='EXPECTED_BLIND_SPOT',explanation='Coarse raster conceals gap; exact supplied topology and finer grid retain it. No gap closing.')
+@@ -107,7 +108,7 @@
+         ga=graph(a); gb=e.graph_counts(b,[[0,1],[1,2],[3,4]],[[0,1,2],[3,4]])
+         d=e.support_distance(a,b); ref=o.nearest_support(a,b)
+         near(list(d.values()),list(ref.values()),tol); near(d['hausdorff'],math.sqrt(2)/100,tol)
+-        assert ga['components']==1 and gb['components']==2 and d['chamfer']<.01
++        require(ga['components']==1 and gb['components']==2 and d['chamfer']<.01, "registered invariant 09 failed")
+         comp=e.component_composite(d['chamfer'],1,2,f['weight'])
+         near(comp-d['chamfer'],.25,tol)
+         raw.update(support=d,composite=comp,graphs=[ga,gb])
+@@ -115,8 +116,8 @@
+     elif case == 'S07':
+         a=f['main']; b=np.vstack((a,f['spur'][1:]))
+         ga=graph(a); gb=e.graph_counts(b,[[0,1],[1,2],[1,3]],[[0,1,2],[1,3]])
+-        assert (ga['exposed_endpoints'],gb['exposed_endpoints'])==(2,3)
+-        assert (ga['junctions'],gb['junctions'])==(0,1)
++        require((ga['exposed_endpoints'],gb['exposed_endpoints'])==(2,3), "registered invariant 10 failed")
++        require((ga['junctions'],gb['junctions'])==(0,1), "registered invariant 11 failed")
+         d=e.support_distance(a,b); near(d['hausdorff'],1/32,tol)
+         near(list(d.values()),list(o.nearest_support(a,b).values()),tol)
+         raw.update(support=d,graphs=[ga,gb])
+@@ -132,8 +133,8 @@
+         result['normalized']={'support':nd,'rms_scales':[sa,sb]}
+         result['sensitivity']={'thresholds':[{'threshold':t,'raw_hidden':d['hausdorff']<=t,
+                                   'normalized_hidden':nd['hausdorff']<=t} for t in f['thresholds']]}
+-        assert not result['sensitivity']['thresholds'][0]['raw_hidden']
+-        assert result['sensitivity']['thresholds'][1]['raw_hidden']
++        require(not result['sensitivity']['thresholds'][0]['raw_hidden'], "registered invariant 12 failed")
++        require(result['sensitivity']['thresholds'][1]['raw_hidden'], "registered invariant 13 failed")
+         result.update(state='EXPECTED_BLIND_SPOT',explanation='Feature sensitivity is metric/normalization/threshold dependent; 0.05 raw threshold conceals the known notch.')
+     elif case == 'S09':
+         a=f['path']; reversed_path=a[::-1]; shifted=np.roll(a,f['shift'],axis=0)
+@@ -142,8 +143,8 @@
+         near(denied.relative_rms,o.similarity_error(a,reversed_path),score_tol)
+         near(opened.relative_rms,o.similarity_error(a,shifted),score_tol)
+         near([allowed.relative_rms,closed.relative_rms],[0,0],score_tol)
+-        assert denied.relative_rms>1e-4 and opened.relative_rms>1e-4
+-        assert opened.shift==0 and closed.shift==f['shift'] and allowed.reversed_order
++        require(denied.relative_rms>1e-4 and opened.relative_rms>1e-4, "registered invariant 14 failed")
++        require(opened.shift==0 and closed.shift==f['shift'] and allowed.reversed_order, "registered invariant 15 failed")
+         raw.update(allowed_reversal=allowed.reversed_order,closed_shift=closed.shift,open_shift=opened.shift)
+         result['normalized']={'reversal_denied':denied.relative_rms,'reversal_allowed':allowed.relative_rms,
+                               'closed_shift':closed.relative_rms,'open_shift':opened.relative_rms}
+@@ -155,28 +156,28 @@
+             rejects(lambda:e.resample(invalid)); rejects(lambda:e.support_distance(invalid,[[0,0]]))
+         expected=np.column_stack((np.linspace(0,1,129),np.zeros(129)))
+         near(e.resample(f['duplicates']),expected,tol)
+-        small=e.resample(f['small']); assert small[-1,0]==1e-12 and np.all(np.diff(small[:,0])>0)
++        small=e.resample(f['small']); require(small[-1,0]==1e-12 and np.all(np.diff(small[:,0])>0), "registered invariant 16 failed")
+         raw['inherited_small_alignment']=rejects(lambda:planar_similarity_alignment(f['small'],f['small']))
+         tiny_graph=e.graph_counts([[0,0],[1,0],[2,0],[2,1e-12]],[[0,1],[2,3]],[[0,1],[2,3]])
+-        assert tiny_graph['components']==2
++        require(tiny_graph['components']==2, "registered invariant 17 failed")
+         raw.update(duplicate_policy='consecutive exact duplicates removed for arclength only',tiny_graph=tiny_graph)
+         result.update(state='EXPECTED_BLIND_SPOT',explanation='Inherited alignment rejects tiny centred energy. Tiny nonzero edges are retained by the new graph/arclength utilities; no NaN becomes a match.')
+     elif case == 'S11':
+         ref=o.axis_landmark_extrema(f['weight'])
+-        result_local=e.local_planar_search([math.pi-.25,math.pi+.25],weight=f['weight'],xatol=f['xatol'],maxiter=f['maxiter'])
++        result_local=e.local_planar_search(parse_pi_bounds(f['local_bounds']),weight=f['weight'],xatol=f['xatol'],maxiter=f['maxiter'])
+         near(e.planar_axis_landmark_objective(0,f['weight']),ref['global_value'],tol)
+         near(e.planar_axis_landmark_objective(math.pi,f['weight']),ref['local_value'],tol)
+-        assert result_local['success']
++        require(result_local['success'], "registered invariant 18 failed")
+         near(result_local['value'],ref['local_value'],score_tol)
+-        assert result_local['value']-ref['global_value']>.39
++        require(result_local['value']-ref['global_value']>.39, "registered invariant 19 failed")
+         raw.update(local=result_local,analytic_oracle=ref,optimizer_oracle_discrepancy=result_local['value']-ref['global_value'])
+         result.update(state='EXPECTED_BLIND_SPOT',explanation='Deliberately bounded local search reaches competing local minimum; this is not a global optimizer certificate.')
+     elif case == 'S12':
+         rotations=tetrahedral_rotation_group(); duplicated=np.concatenate((rotations,rotations[:1]))
+-        assert len(camera_direction_classes(rotations))==len(camera_direction_classes(duplicated))==6
+-        assert len(camera_direction_classes(rotations,unoriented=True))==3
++        require(len(camera_direction_classes(rotations))==len(camera_direction_classes(duplicated))==6, "registered invariant 20 failed")
++        require(len(camera_direction_classes(rotations,unoriented=True))==3, "registered invariant 21 failed")
+         expected={(1.,0.,0.),(-1.,0.,0.),(0.,1.,0.),(0.,-1.,0.),(0.,0.,1.),(0.,0.,-1.)}
+-        assert {tuple(np.round(r[2],12)) for r in rotations}==expected
++        require({tuple(np.round(r[2],12)) for r in rotations}==expected, "registered invariant 22 failed")
+         q=f['roll_row']; roll=np.eye(3); roll[:2,:2]=q.T
+         errors=[]
+         for r in rotations:
+--- original/scripts/p0a0_registered_pilot.py
++++ amended/scripts/p0a0_registered_pilot.py
+@@ -1,7 +1,7 @@
+ #!/usr/bin/env python3
+ """Future named S00-S12 invocation ONLY after human freeze and authorization.
+ 
+-This file was written but not invoked during implementation. --help is safe.
++Registered execution is prohibited before freeze. Normal-mode --help is safe.
+ An explicit flag is an acknowledgement, not a substitute for human authority.
+ """
+ import argparse
+@@ -14,6 +14,7 @@
+ import traceback
+ 
+ BASE = 'd15865167b4e3c454e398bd498d9d681103096f7'
++EXPECTED_SIGNER = 'D4EC014EEFCC90E619D2AA59A91239ABCF512130'
+ ROOT = Path(__file__).resolve().parents[1]
+ 
+ 
+@@ -21,7 +22,28 @@
+     return subprocess.check_output(['git',*args],cwd=ROOT,stderr=subprocess.STDOUT)
+ 
+ 
++def reject_optimized_mode():
++    if sys.flags.optimize != 0:
++        raise RuntimeError('optimized Python mode is prohibited for the registered runner')
++
++
++def verify_expected_signer(status):
++    """Require one valid signature by the exact named signing key.
++
++    Called only after git verify-commit --raw succeeds. No human UID matching or
++    acceptance of arbitrary valid keys; a different signing subkey is rejected.
++    """
++    rows = [line.split() for line in status.decode('utf-8', errors='strict').splitlines()
++            if line.startswith('[GNUPG:] VALIDSIG ')]
++    if len(rows) != 1 or len(rows[0]) not in (11, 12):
++        raise ValueError('missing, malformed or multiple VALIDSIG signer records')
++    row = rows[0]
++    if row[2] != EXPECTED_SIGNER or (len(row) == 12 and row[11] != EXPECTED_SIGNER):
++        raise ValueError('signature does not match expected freeze-signer fingerprint')
++
++
+ def verify_boundary(commit):
++    reject_optimized_mode()
+     if len(commit)!=40 or any(c not in '0123456789abcdef' for c in commit) or commit==BASE:
+         raise ValueError('a distinct full implementation-freeze commit is required')
+     if git('rev-parse','HEAD').decode().strip()!=commit:
+@@ -29,7 +51,7 @@
+     if git('branch','--show-current').decode().strip()!='hebrew-projection-capacity-v0.9':
+         raise ValueError('wrong branch')
+     git('merge-base','--is-ancestor',BASE,commit)
+-    git('verify-commit',commit)
++    verify_expected_signer(git('verify-commit','--raw',commit))
+     if git('status','--porcelain'):
+         raise ValueError('require clean freeze worktree before run')
+     manifest_path='registered_pilots/p0a0/implementation_manifest.json'
+@@ -50,6 +72,7 @@
+ 
+ 
+ def main():
++    reject_optimized_mode()
+     parser=argparse.ArgumentParser(description=__doc__)
+     parser.add_argument('--freeze-commit',required=True)
+     parser.add_argument('--authorized-synthetic-run',action='store_true',required=True)
+--- original/src/meru_geometry/p0a0/boundaries.py
++++ amended/src/meru_geometry/p0a0/boundaries.py
+@@ -0,0 +1,34 @@
++"""Pre-freeze QC boundaries; no registered fixtures, IO or evaluation at import."""
++import math
++import re
++
++
++def require(condition, message):
++    """Preserve invariant failures even when Python removes assert statements."""
++    if not condition:
++        raise AssertionError(message)
++
++
++def parse_pi_bounds(value):
++    """Parse only [pi +/- unsigned rational, pi +/- unsigned rational].
++
++    No eval, names other than pi, arithmetic chains or zero denominators.
++    This parser binds the existing serialized bounds without changing geometry.
++    """
++    if not isinstance(value, str) or len(value) > 128:
++        raise ValueError('bounds must be a short pi/rational interval string')
++    match = re.fullmatch(
++        r'\[\s*pi\s*([+-])\s*(\d+)\s*/\s*([1-9]\d*)\s*,\s*'
++        r'pi\s*([+-])\s*(\d+)\s*/\s*([1-9]\d*)\s*\]', value,
++        flags=re.ASCII)
++    if match is None:
++        raise ValueError('invalid pi/rational bounds syntax')
++    groups = match.groups()
++    bounds = []
++    for start in (0, 3):
++        sign, numerator, denominator = groups[start:start+3]
++        offset = int(numerator)/int(denominator)
++        bounds.append(math.pi + (offset if sign == '+' else -offset))
++    if not all(math.isfinite(x) for x in bounds) or bounds[0] >= bounds[1]:
++        raise ValueError('bounds must be finite and strictly ordered')
++    return bounds
+--- original/tests/test_p0a0_qc_boundaries_dev.py
++++ amended/tests/test_p0a0_qc_boundaries_dev.py
+@@ -0,0 +1,135 @@
++"""Bounded amendment DEV checks. Never import/execute registered case modules."""
++import ast
++import importlib.util
++import math
++import os
++from pathlib import Path
++import subprocess
++import sys
++
++import pytest
++from meru_geometry.p0a0.boundaries import require, parse_pi_bounds
++
++ROOT = Path(__file__).resolve().parents[1]
++RUNNER = ROOT/'scripts/p0a0_registered_pilot.py'
++
++
++def load_runner():
++    spec = importlib.util.spec_from_file_location('p0a0_dev_qc_runner', RUNNER)
++    module = importlib.util.module_from_spec(spec)
++    spec.loader.exec_module(module)
++    return module
++
++
++def test_dev_registered_conditions_are_explicit_source_only():
++    # AST inspection does not import, compile for execution, or call any case.
++    tree = ast.parse((ROOT/'registered_pilots/p0a0/cases.py').read_text())
++    assert not any(isinstance(n, ast.Assert) for n in ast.walk(tree))
++    calls = [n for n in ast.walk(tree) if isinstance(n, ast.Call)
++             and isinstance(n.func, ast.Name) and n.func.id == 'require']
++    assert len(calls) == 22
++    assert all(len(n.args) == 2 and isinstance(n.args[1], ast.Constant) for n in calls)
++    bounds = [n for n in ast.walk(tree) if isinstance(n, ast.Call)
++              and isinstance(n.func, ast.Attribute) and n.func.attr == 'local_planar_search']
++    assert len(bounds) == 1
++    assert ast.dump(bounds[0].args[0]) == ast.dump(ast.parse("parse_pi_bounds(f['local_bounds'])",mode='eval').body)
++
++
++def test_dev_invariant_true_and_false():
++    require(17 > 9, 'DEV true')
++    with pytest.raises(AssertionError,match='DEV false'):
++        require(17 < 9, 'DEV false')
++
++
++@pytest.mark.parametrize('flag',['-O','-OO'])
++@pytest.mark.parametrize('condition',['17 > 9','17 < 9'])
++def test_dev_invariants_survive_optimization(flag, condition):
++    code = ('from meru_geometry.p0a0.boundaries import require; '
++            f'require({condition}, "DEV invariant sentinel")')
++    result = subprocess.run([sys.executable,flag,'-c',code],cwd=ROOT,
++                            capture_output=True,text=True)
++    if condition == '17 < 9':
++        assert result.returncode != 0
++        assert 'AssertionError: DEV invariant sentinel' in result.stderr
++    else:
++        assert result.returncode == 0, result.stderr
++
++
++@pytest.mark.parametrize('mode',['-O','-OO','PYTHONOPTIMIZE'])
++def test_dev_runner_rejects_optimization_before_arguments_or_io(mode, tmp_path):
++    env = os.environ.copy()
++    env.pop('PYTHONOPTIMIZE',None)
++    flags = [mode] if mode != 'PYTHONOPTIMIZE' else []
++    if mode == 'PYTHONOPTIMIZE': env['PYTHONOPTIMIZE'] = '1'
++    target = tmp_path/'must_not_exist.jsonl'
++    result = subprocess.run([sys.executable,*flags,str(RUNNER),'--output',str(target)],
++                            cwd=ROOT,env=env,capture_output=True,text=True)
++    assert result.returncode != 0
++    assert 'optimized Python mode is prohibited' in result.stderr
++    assert 'arguments are required' not in result.stderr
++    assert not target.exists()
++
++
++def test_dev_pi_bounds_unrelated_values():
++    # Deliberately not the registered interval, weight or objective.
++    assert parse_pi_bounds('[pi-2/7,pi+3/8]') == [math.pi-2/7,math.pi+3/8]
++    assert parse_pi_bounds('[ pi + 1/9 , pi + 4/9 ]') == [math.pi+1/9,math.pi+4/9]
++
++
++@pytest.mark.parametrize('value',[
++    None, [1,3], '[-2,3]', '[pi-2/0,pi+3/8]', '[pi+3/8,pi-2/7]',
++    '[pi+2/7,pi+2/7]', '[pi-NaN,pi+Infinity]',
++    '[pi-2/7,pi+3/8] trailing', '[pi-2/7,pi+3/8+1]',
++    "[__import__('os').getcwd(),pi+3/8]", '[pi-2/7,pi+3/8' , 'x'*129,
++])
++def test_dev_pi_bounds_reject_unsupported_or_inverted_inputs(value):
++    with pytest.raises(ValueError): parse_pi_bounds(value)
++
++
++def valid_status(signer, primary=None):
++    fields = f'[GNUPG:] VALIDSIG {signer} 2026-01-01 1 0 4 0 1 10 00'
++    return (fields + ('' if primary is None else ' '+primary) + '\n').encode()
++
++
++@pytest.mark.parametrize('include_primary',[False,True])
++def test_dev_expected_fingerprint_accepted(include_primary):
++    runner=load_runner()
++    runner.verify_expected_signer(valid_status(runner.EXPECTED_SIGNER,
++                                              runner.EXPECTED_SIGNER if include_primary else None))
++
++
++@pytest.mark.parametrize('kind',['wrong','wrong_primary','missing','malformed','multiple'])
++def test_dev_signer_status_fails_closed(kind):
++    runner=load_runner(); expected=runner.EXPECTED_SIGNER
++    value={'wrong':valid_status('A'*40),
++           'wrong_primary':valid_status(expected,'B'*40),
++           'missing':b'[GNUPG:] GOODSIG DEV\n',
++           'malformed':b'[GNUPG:] VALIDSIG short\n',
++           'multiple':valid_status(expected)*2}[kind]
++    with pytest.raises(ValueError): runner.verify_expected_signer(value)
++
++
++def test_dev_runner_connects_verified_signature_to_exact_signer(monkeypatch):
++    runner=load_runner(); commit='c'*40; calls=[]
++    def fake_git(*args):
++        calls.append(args)
++        if args==('rev-parse','HEAD'): return (commit+'\n').encode()
++        if args==('branch','--show-current'): return b'hebrew-projection-capacity-v0.9\n'
++        if args==('merge-base','--is-ancestor',runner.BASE,commit): return b''
++        if args==('verify-commit','--raw',commit): return valid_status('E'*40)
++        raise AssertionError('DEV guard crossed signature gate')
++    monkeypatch.setattr(runner,'git',fake_git)
++    with pytest.raises(ValueError,match='expected freeze-signer fingerprint'):
++        runner.verify_boundary(commit)
++    assert calls[-1]==('verify-commit','--raw',commit)
++
++
++def test_dev_invalid_signature_exit_propagates(monkeypatch):
++    runner=load_runner(); commit='d'*40
++    def fake_git(*args):
++        if args==('rev-parse','HEAD'): return commit.encode()
++        if args==('branch','--show-current'): return b'hebrew-projection-capacity-v0.9'
++        if args[0]=='merge-base': return b''
++        raise subprocess.CalledProcessError(1,['git',*args])
++    monkeypatch.setattr(runner,'git',fake_git)
++    with pytest.raises(subprocess.CalledProcessError): runner.verify_boundary(commit)

@@ -1,0 +1,29 @@
+{
+  "schema": "p0a0-fixtures-1",
+  "status": "PROPOSED_IMPLEMENTATION_ONLY_NOT_FROZEN",
+  "provenance": "Independent elementary coordinates designed without source imagery, fonts or glyphs",
+  "seed": 0,
+  "rng": "NONE: all formulas deterministic; seed reserved and unused",
+  "float": "IEEE754 binary64; JSON numbers converted with numpy.float64",
+  "absolute_tolerance": 1e-10,
+  "score_tolerance": 1e-9,
+  "relative_tolerance": 0,
+  "arclength_samples": 129,
+  "tie_rule": "Strict smaller score; exact ties keep first: no reversal, then reversal; shifts ascending. Analytic angle ties use smallest in [0,2pi). Near ties not merged.",
+  "raster": {"bounds": [-1.25,-0.25,1.25,0.25], "shapes": [[33,33],[257,257]], "width": 0.0078125, "supersample": 1, "threshold": 0.5, "dtype": "float64", "planned_bytes": [8712,528392]},
+  "cases": {
+    "S00": {"points": [[2,-3,5],[-4,7,1],[0.5,1.25,-2]], "matrix": [[0,0,1],[1,0,0],[0,1,0]], "axes": [0,1], "improper": [[1,0,0],[0,1,0],[0,0,-1]], "oracle": "scalar matrix multiplication; explicit invalid rotation/nonfinite rejection"},
+    "S01": {"path": [[0,0],[3,0],[2,1],[0.25,2]], "row_matrix": [[0.6,0.8],[-0.8,0.6]], "scale": 2.5, "translation": [4,-7], "oracle": "inverse construction; exact known row transform; analytic correlation oracle"},
+    "S02": {"path": [[0,0],[3,0],[0.25,1]], "reflection": [-1,1], "oracle": "scalene triangle: no proper similarity can identify mirror; analytic SO2/O2 residual"},
+    "S03": {"samples": 65, "formula": "t=i/64; A=(5t,2t); B=(5t^4,2t^4), i=0..64", "oracle": "identical straight-segment arclength parameterization; index correspondence sample-sensitive"},
+    "S04": {"vertices": [[0,0],[1,0],[2,0]], "edges": [[0,1],[1,2]], "one": [[0,1,2]], "two": [[0,1],[1,2]], "oracle": "same exact support/graph, labelled endpoints 2 vs 4; non-identifiability without labels"},
+    "S05": {"full": [[-1,0],[1,0]], "pieces": [[[-1,0],[0.125,0]],[[0.140625,0],[1,0]]], "oracle": "gap=1/64; graph components 1 vs 2; independent horizontal capsule raster oracle at both grids"},
+    "S06": {"main": [[0,0],[1,0],[2,0]], "extra": [[1,0.01],[1.01,0.01]], "weight": 0.25, "oracle": "components 1 vs 2; sampled H=sqrt(2)/100; composite adds exactly 1/4"},
+    "S07": {"main": [[0,0],[1,0],[2,0]], "spur": [[1,0],[1,0.03125]], "oracle": "explicit graph exposed endpoints 2 vs 3; junctions 0 vs 1; sampled H=1/32"},
+    "S08": {"plain": [[0,0],[1,0],[1.0625,0],[1.125,0],[2,0]], "notch": [[0,0],[1,0],[1.0625,0.03125],[1.125,0],[2,0]], "thresholds": [0.01,0.05], "oracle": "sampled H=1/32; mean=1/160; raw threshold hides at .05 but not .01; normalized result recorded separately"},
+    "S09": {"path": [[0,0],[3,0],[2.5,1],[0.5,2],[-0.25,0.75]], "shift": 2, "oracle": "reverse recovers only with reversal permission; closed shift recovers; open shift remains unmatched"},
+    "S10": {"zero": [[0,0],[0,0]], "duplicates": [[0,0],[0,0],[0.5,0],[1,0],[1,0]], "small": [[0,0],[1e-12,0]], "nonfinite_tokens": ["NaN","Infinity","-Infinity"], "oracle": "zero/nonfinite rejected; duplicate arclength accepted; tiny path retained by resampling; inherited alignment floor explicitly rejects"},
+    "S11": {"weight": 0.1, "local_bounds": "[pi-1/4,pi+1/4]", "xatol": 1e-12, "maxiter": 200, "oracle": "analytic stationary classification of axis normal plus landmark chord: global 0; local pi at 0.4; local optimizer never called globally certified"},
+    "S12": {"points": [[1,2,3],[4,-1,2],[-2,5,1],[0.25,-0.5,2]], "roll_row": [[0.6,0.8],[-0.8,0.6]], "oracle": "12 inherited frames: 6 signed directions/3 axes; add duplicate first frame; opposite direction requires det -1; axial roll equals planar proper rotation"}
+  }
+}

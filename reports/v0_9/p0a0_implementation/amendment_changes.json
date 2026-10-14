@@ -1,0 +1,42 @@
+{
+  "original_zip_sha256": "a6d54c700855140e7bec717ac58125cba1e5749aa7b04baaf00d778ca7323440",
+  "modified_from_original": [
+    "docs/v0_9/p0a0_human_freeze_commands.sh",
+    "docs/v0_9/p0a0_implementation_specification.md",
+    "registered_pilots/p0a0/cases.py",
+    "registered_pilots/p0a0/implementation_manifest.json",
+    "reports/v0_9/p0a0_implementation/QC_README.md",
+    "reports/v0_9/p0a0_implementation/changed_paths.txt",
+    "scripts/p0a0_registered_pilot.py"
+  ],
+  "unchanged_from_original": [
+    "registered_pilots/p0a0/fixture_config.json",
+    "registered_pilots/p0a0/fixtures.py",
+    "reports/v0_9/p0a0_implementation/collection.log",
+    "reports/v0_9/p0a0_implementation/dev_checks.log",
+    "reports/v0_9/p0a0_implementation/dev_checks_final.log",
+    "reports/v0_9/p0a0_implementation/environment.json",
+    "reports/v0_9/p0a0_implementation/inherited_baseline.log",
+    "reports/v0_9/p0a0_implementation/inherited_baseline_after_pytest_install.log",
+    "reports/v0_9/p0a0_implementation/integrity.json",
+    "reports/v0_9/p0a0_implementation/pip_freeze.txt",
+    "reports/v0_9/p0a0_implementation/static_checks.json",
+    "src/meru_geometry/p0a0/__init__.py",
+    "src/meru_geometry/p0a0/engineering.py",
+    "src/meru_geometry/p0a0/oracles.py",
+    "tests/test_p0a0_dev.py"
+  ],
+  "added_in_amendment": [
+    "reports/v0_9/p0a0_implementation/AMENDMENT_QC.md",
+    "reports/v0_9/p0a0_implementation/amendment_changes.json",
+    "reports/v0_9/p0a0_implementation/amendment_controlled_regressions.log",
+    "reports/v0_9/p0a0_implementation/amendment_dev_checks.log",
+    "reports/v0_9/p0a0_implementation/amendment_environment.json",
+    "reports/v0_9/p0a0_implementation/amendment_source.diff",
+    "reports/v0_9/p0a0_implementation/amendment_static_preservation_checks.json",
+    "src/meru_geometry/p0a0/boundaries.py",
+    "tests/test_p0a0_qc_boundaries_dev.py"
+  ],
+  "removed_from_original": [],
+  "inherited_tracked_modifications": []
+}

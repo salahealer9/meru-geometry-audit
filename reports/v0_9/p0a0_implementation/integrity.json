@@ -1,0 +1,62 @@
+{
+  "a09": [
+    {
+      "path": "references/key_geometric_assets.csv",
+      "unique_rows": 1,
+      "checked_fields": {
+        "asset_id": "A09",
+        "related_source": "S06",
+        "title": "First Hand Hebrew chart",
+        "source_page": "https://www.meru.org/Gestures/Alphachart.html",
+        "url": "https://www.meru.org/Gestures/frsthand873.jpg",
+        "commit_policy": "Local snapshot only; metadata committed"
+      },
+      "metadata_match": true
+    },
+    {
+      "path": "references/geometric_asset_snapshot_manifest.csv",
+      "unique_rows": 1,
+      "checked_fields": {
+        "asset_id": "A09",
+        "related_source": "S06",
+        "title": "First Hand Hebrew chart",
+        "source_page": "https://www.meru.org/Gestures/Alphachart.html",
+        "requested_url": "https://www.meru.org/Gestures/frsthand873.jpg",
+        "final_url": "https://www.meru.org/Gestures/frsthand873.jpg",
+        "retrieved_utc": "2026-07-26T13:43:53+00:00",
+        "format": "JPEG",
+        "mode": "RGB",
+        "width_px": "826",
+        "height_px": "787",
+        "bytes": "542620",
+        "sha256": "a091cbe95b9042cddb93bb5a57a07b406d5d1a6053e481faf2746b38a22dab68",
+        "local_path": "data/raw/geometric_assets/A09_frsthand873.jpg"
+      },
+      "metadata_match": true
+    }
+  ],
+  "raw_status": "A09_SNAPSHOT_NOT_LOCALLY_PRESENT",
+  "actual_image_bytes_hashed": false,
+  "initial_worktree": "clean",
+  "initial_workspace": "No existing checkout; cloned named branch from GitHub; no reset",
+  "protocol_blob": "0f8b663bfe2432685c9320a00c80fd6bcf436e38",
+  "protocol_sha256": "afee667eb578e329e80b8d28dc071ebebab3ae75a2e053b1f67d2c68f037743b",
+  "head": "d15865167b4e3c454e398bd498d9d681103096f7",
+  "parent": "8bf0babfd91bdefb0792e93707fd0b0da1c09767",
+  "branch": "hebrew-projection-capacity-v0.9",
+  "signature": "git verify-commit exit 0; Good signature; key trust unknown",
+  "fingerprint": "D4EC014EEFCC90E619D2AA59A91239ABCF512130",
+  "key_source": "https://github.com/salahealer9.gpg",
+  "key_import_note": "Initial key missing; public key import succeeded, gpg-agent startup warning; verification subsequently exit 0",
+  "origin_url": "https://github.com/salahealer9/meru-geometry-audit.git",
+  "upstream_head": "d15865167b4e3c454e398bd498d9d681103096f7",
+  "v0_8_0_commit": "85748bff0bfae383afcc0d885f4aec505a2885dd",
+  "signature_status": [
+    "[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-10-13 1791896982 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130"
+  ],
+  "signature_exit": 0,
+  "tag_signature_exit": 0,
+  "tag_signature_status": [
+    "[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-08-04 1785879905 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130"
+  ]
+}

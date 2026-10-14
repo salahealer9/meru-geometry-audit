@@ -1,0 +1,63 @@
+........................................................................ [  5%]
+........................................................................ [ 11%]
+........................F............................................... [ 17%]
+........................................................................ [ 23%]
+........................................................................ [ 29%]
+........................................................................ [ 35%]
+........................................................................ [ 41%]
+........................................................................ [ 47%]
+........................................................................ [ 52%]
+........................................................................ [ 58%]
+........................................................................ [ 64%]
+........................................................................ [ 70%]
+........................................................................ [ 76%]
+........................................................................ [ 82%]
+........................................................................ [ 88%]
+........................................................................ [ 94%]
+.......................................................................  [100%]
+=================================== FAILURES ===================================
+_______________ test_overlay_renders_from_verified_prepared_crop _______________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-0/test_overlay_renders_from_veri0')
+
+    def test_overlay_renders_from_verified_prepared_crop(
+        tmp_path: Path,
+    ) -> None:
+        """The full overlay path must use the verified crop manifest."""
+        module = load_module()
+    
+        analysis, rows, _ = (
+            module.build_expanded_analysis()
+        )
+    
+        output_path = (
+            tmp_path
+            / "expanded_neutral_overlay.png"
+        )
+    
+>       module.write_overlay(
+            output_path,
+            analysis,
+            rows,
+        )
+
+tests/test_first_hand_expanded_neutral_geometry_audit.py:322: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/audit_first_hand_expanded_neutral_geometry.py:1384: in write_overlay
+    verified_image = digitizer.verify_crop(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+crop = CropSpec(crop_id='AOG_P07_SPHERICAL_PROJECTION', source_page=7, output_path=PosixPath('/workspace/scratch/255e4cd6766b...906f6', pixel_sha256='afb1df2172f081fa426f2f86c56912079116f6441ba64df367861d00375fddc4', width_px=2110, height_px=1260)
+
+    def verify_crop(crop: CropSpec) -> Image.Image:
+        """Verify one prepared crop and return canonical RGB pixels."""
+        if not crop.output_path.exists():
+>           raise RuntimeError(
+                f"Prepared crop is missing: {crop.output_path}"
+            )
+E           RuntimeError: Prepared crop is missing: /workspace/scratch/255e4cd6766b/meru-geometry-audit/data/source_snapshots/first_hand_arm_of_god/prepared/aog_p07_spherical_projection.png
+
+scripts/digitize_first_hand_diagram_landmarks.py:216: RuntimeError
+=========================== short test summary info ============================
+FAILED tests/test_first_hand_expanded_neutral_geometry_audit.py::test_overlay_renders_from_verified_prepared_crop
+1 failed, 1222 passed, 1 deselected in 7.79s

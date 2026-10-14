@@ -1,0 +1,459 @@
+{
+  "algorithm_version": "p0a0-implementation-1",
+  "amendment": "bounded-independent-QC-1",
+  "artifacts": [
+    {
+      "bytes": 3884,
+      "path": "docs/v0_9/p0a0_human_freeze_commands.sh",
+      "sha256": "ed9821da1882056951bb905c496653ae0fb430701978c99327855f0c17d5ea11"
+    },
+    {
+      "bytes": 12065,
+      "path": "docs/v0_9/p0a0_implementation_specification.md",
+      "sha256": "e4b0008c1114a410876b5a573bad93a6961dec6dd96687af9941b0674e993ae2"
+    },
+    {
+      "bytes": 14859,
+      "path": "registered_pilots/p0a0/cases.py",
+      "sha256": "22171fbd5cf090c0f3e36e1aa0757eed4a51844c994d5fb3e1ee1c7616e10846"
+    },
+    {
+      "bytes": 3683,
+      "path": "registered_pilots/p0a0/fixture_config.json",
+      "sha256": "6d474c88a43d4a1c95bc1978e88fda2810d0af1791ef6dffa7c5fde92bfa6c42"
+    },
+    {
+      "bytes": 1082,
+      "path": "registered_pilots/p0a0/fixtures.py",
+      "sha256": "5e190bee624001d6f30f6bfece51f003ea2293f23bc481100ab79e99cf044582"
+    },
+    {
+      "bytes": 4994,
+      "path": "scripts/p0a0_registered_pilot.py",
+      "sha256": "f66c2f0bd0d1b9c8e4e5bae720ea993172fe8de36d33f165f83b1775e40524b1"
+    },
+    {
+      "bytes": 115,
+      "path": "src/meru_geometry/p0a0/__init__.py",
+      "sha256": "e8b7c82610b75247a7e72a25d9f32dfcd1b3f6c7b0da928292d3da7e934071d9"
+    },
+    {
+      "bytes": 1351,
+      "path": "src/meru_geometry/p0a0/boundaries.py",
+      "sha256": "d30e08de0eea5a20a7d15b64865654f592a27bf0773beb6bcd649807c4e6e3e1"
+    },
+    {
+      "bytes": 9504,
+      "path": "src/meru_geometry/p0a0/engineering.py",
+      "sha256": "13ced7dd7eb730e3de0c224b00b80f31d47bda1c86e300c21289ea895e52d78d"
+    },
+    {
+      "bytes": 3195,
+      "path": "src/meru_geometry/p0a0/oracles.py",
+      "sha256": "baf3417e5df28ac240901d7de7a1cb661d02ea31608cbaefadc938dda58adaa1"
+    },
+    {
+      "bytes": 3759,
+      "path": "tests/test_p0a0_dev.py",
+      "sha256": "f59029584d21b74bc9118528c673b6ea896fabfba8c77b59f27ca95c44b194e8"
+    },
+    {
+      "bytes": 5955,
+      "path": "tests/test_p0a0_qc_boundaries_dev.py",
+      "sha256": "3908339b9d499401b66f4c706bb0fba7f57ad1b3cf730421a471cca3921a5017"
+    }
+  ],
+  "configuration": "registered_pilots/p0a0/fixture_config.json",
+  "environment_record": "reports/v0_9/p0a0_implementation/environment.json",
+  "expected_freeze_signer": "D4EC014EEFCC90E619D2AA59A91239ABCF512130",
+  "hash_scope": "Each source/config/specification/command artifact below is hash-bound. Manifest itself is bound by future signed commit and external package SHA256SUMS; textual verification reports are bound by package SHA256SUMS.",
+  "layout_note": "Planned binary64 array sizes, not generated files; graph index lists remain JSON integers when passed to graph_counts; S11 geometric vectors are implicit in objective. No registered raster/image bytes materialized. Auxiliary distance matrices and temporaries follow source formulas.",
+  "optimized_python_permitted": false,
+  "oracle_version": "p0a0-analytic-scalar-1",
+  "original_implementation_zip_sha256": "a6d54c700855140e7bec717ac58125cba1e5749aa7b04baaf00d778ca7323440",
+  "packages_observed": {
+    "numpy": "2.3.5",
+    "pytest": "9.1.1",
+    "scipy": "1.17.0"
+  },
+  "planned_command": "python scripts/p0a0_registered_pilot.py --freeze-commit FULL_SIGNED_IMPLEMENTATION_COMMIT --authorized-synthetic-run --output ../p0a0_registered_pilot_once.jsonl",
+  "planned_principal_array_layouts": {
+    "S00": {
+      "camera": {
+        "bytes": 72,
+        "dtype": "float64",
+        "shape": [
+          3,
+          3
+        ]
+      },
+      "improper": {
+        "bytes": 72,
+        "dtype": "float64",
+        "shape": [
+          3,
+          3
+        ]
+      },
+      "points": {
+        "bytes": 72,
+        "dtype": "float64",
+        "shape": [
+          3,
+          3
+        ]
+      },
+      "projected": {
+        "bytes": 48,
+        "dtype": "float64",
+        "shape": [
+          3,
+          2
+        ]
+      }
+    },
+    "S01": {
+      "path": {
+        "bytes": 64,
+        "dtype": "float64",
+        "shape": [
+          4,
+          2
+        ]
+      },
+      "row_transform": {
+        "bytes": 32,
+        "dtype": "float64",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      "target": {
+        "bytes": 64,
+        "dtype": "float64",
+        "shape": [
+          4,
+          2
+        ]
+      },
+      "translation": {
+        "bytes": 16,
+        "dtype": "float64",
+        "shape": [
+          2
+        ]
+      }
+    },
+    "S02": {
+      "mirror": {
+        "bytes": 48,
+        "dtype": "float64",
+        "shape": [
+          3,
+          2
+        ]
+      },
+      "path": {
+        "bytes": 48,
+        "dtype": "float64",
+        "shape": [
+          3,
+          2
+        ]
+      }
+    },
+    "S03": {
+      "resampled_each": {
+        "bytes": 2064,
+        "dtype": "float64",
+        "shape": [
+          129,
+          2
+        ]
+      },
+      "unequal": {
+        "bytes": 1040,
+        "dtype": "float64",
+        "shape": [
+          65,
+          2
+        ]
+      },
+      "uniform": {
+        "bytes": 1040,
+        "dtype": "float64",
+        "shape": [
+          65,
+          2
+        ]
+      }
+    },
+    "S04": {
+      "edges": {
+        "bytes": 32,
+        "dtype": "float64",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      "vertices": {
+        "bytes": 48,
+        "dtype": "float64",
+        "shape": [
+          3,
+          2
+        ]
+      }
+    },
+    "S05": {
+      "combined_vertices": {
+        "bytes": 64,
+        "dtype": "float64",
+        "shape": [
+          4,
+          2
+        ]
+      },
+      "full": {
+        "bytes": 32,
+        "dtype": "float64",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      "pieces": {
+        "bytes": 64,
+        "dtype": "float64",
+        "shape": [
+          2,
+          2,
+          2
+        ]
+      },
+      "raster_high_each": {
+        "bytes": 528392,
+        "dtype": "float64",
+        "shape": [
+          257,
+          257
+        ]
+      },
+      "raster_low_each": {
+        "bytes": 8712,
+        "dtype": "float64",
+        "shape": [
+          33,
+          33
+        ]
+      }
+    },
+    "S06": {
+      "combined": {
+        "bytes": 80,
+        "dtype": "float64",
+        "shape": [
+          5,
+          2
+        ]
+      },
+      "extra": {
+        "bytes": 32,
+        "dtype": "float64",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      "main": {
+        "bytes": 48,
+        "dtype": "float64",
+        "shape": [
+          3,
+          2
+        ]
+      }
+    },
+    "S07": {
+      "combined": {
+        "bytes": 64,
+        "dtype": "float64",
+        "shape": [
+          4,
+          2
+        ]
+      },
+      "main": {
+        "bytes": 48,
+        "dtype": "float64",
+        "shape": [
+          3,
+          2
+        ]
+      },
+      "spur": {
+        "bytes": 32,
+        "dtype": "float64",
+        "shape": [
+          2,
+          2
+        ]
+      }
+    },
+    "S08": {
+      "normalized_each": {
+        "bytes": 80,
+        "dtype": "float64",
+        "shape": [
+          5,
+          2
+        ]
+      },
+      "notch": {
+        "bytes": 80,
+        "dtype": "float64",
+        "shape": [
+          5,
+          2
+        ]
+      },
+      "plain": {
+        "bytes": 80,
+        "dtype": "float64",
+        "shape": [
+          5,
+          2
+        ]
+      }
+    },
+    "S09": {
+      "path": {
+        "bytes": 80,
+        "dtype": "float64",
+        "shape": [
+          5,
+          2
+        ]
+      },
+      "reversed": {
+        "bytes": 80,
+        "dtype": "float64",
+        "shape": [
+          5,
+          2
+        ]
+      },
+      "shifted": {
+        "bytes": 80,
+        "dtype": "float64",
+        "shape": [
+          5,
+          2
+        ]
+      }
+    },
+    "S10": {
+      "duplicates": {
+        "bytes": 80,
+        "dtype": "float64",
+        "shape": [
+          5,
+          2
+        ]
+      },
+      "resampled_each": {
+        "bytes": 2064,
+        "dtype": "float64",
+        "shape": [
+          129,
+          2
+        ]
+      },
+      "small": {
+        "bytes": 32,
+        "dtype": "float64",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      "tiny_graph": {
+        "bytes": 64,
+        "dtype": "float64",
+        "shape": [
+          4,
+          2
+        ]
+      },
+      "zero": {
+        "bytes": 32,
+        "dtype": "float64",
+        "shape": [
+          2,
+          2
+        ]
+      }
+    },
+    "S11": {
+      "axis": {
+        "bytes": 16,
+        "dtype": "float64",
+        "shape": [
+          2
+        ]
+      },
+      "landmark": {
+        "bytes": 16,
+        "dtype": "float64",
+        "shape": [
+          2
+        ]
+      }
+    },
+    "S12": {
+      "frames": {
+        "bytes": 864,
+        "dtype": "float64",
+        "shape": [
+          12,
+          3,
+          3
+        ]
+      },
+      "points": {
+        "bytes": 96,
+        "dtype": "float64",
+        "shape": [
+          4,
+          3
+        ]
+      },
+      "projection_each": {
+        "bytes": 64,
+        "dtype": "float64",
+        "shape": [
+          4,
+          2
+        ]
+      },
+      "with_duplicate": {
+        "bytes": 936,
+        "dtype": "float64",
+        "shape": [
+          13,
+          3,
+          3
+        ]
+      }
+    }
+  },
+  "protocol_blob": "0f8b663bfe2432685c9320a00c80fd6bcf436e38",
+  "protocol_commit": "d15865167b4e3c454e398bd498d9d681103096f7",
+  "registered_execution_performed": false,
+  "rng": "NONE",
+  "schema": "p0a0-implementation-manifest-1",
+  "seed": 0,
+  "status": "PROPOSED_IMPLEMENTATION_ONLY_NOT_FROZEN"
+}
