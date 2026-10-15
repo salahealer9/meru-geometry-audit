@@ -1,0 +1,42 @@
+{
+  "raw_file": "p0a0_registered_pilot_once.jsonl",
+  "sha256": "4b4b27b0d5d9a95ffe864e2d2c83433be0ddd544b6122ebbea294857326817d6",
+  "bytes": 12052,
+  "records": 14,
+  "cases": [
+    "S00",
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11",
+    "S12"
+  ],
+  "state_counts": {
+    "PASS": 5,
+    "EXPECTED_BLIND_SPOT": 8,
+    "FAIL": 0,
+    "NOT_EVALUABLE": 0
+  },
+  "checks": {
+    "one_boundary_header": true,
+    "expected_freeze": true,
+    "header_manifest_matches_preflight": true,
+    "exactly_fourteen_records": true,
+    "thirteen_unique_ids": true,
+    "ids_in_registered_order": true,
+    "all_states_known": true,
+    "all_cases_have_raw_and_normalized": true,
+    "all_nonpass_explained": true,
+    "terminated_with_newline": true
+  },
+  "stdout_bytes": 0,
+  "stderr_bytes": 0,
+  "read_only_postprocessing_only": true
+}

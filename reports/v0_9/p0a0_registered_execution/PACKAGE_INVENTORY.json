@@ -1,0 +1,85 @@
+{
+  "package_type": "P0A0 single registered synthetic execution, independent QC pending",
+  "payload_files": [
+    {
+      "path": "CASE_MATRIX.md",
+      "bytes": 5902,
+      "sha256": "72ac330541f0c4f2b7143298769be0512dd7dd5fef9af682626f8bda54424d48"
+    },
+    {
+      "path": "ENGINEERING_QC.md",
+      "bytes": 11097,
+      "sha256": "59fd2760fd557770ac86e3155ae3602165be21bbcda538fdf51528614a36a006"
+    },
+    {
+      "path": "EXECUTION_TRANSCRIPT.md",
+      "bytes": 4394,
+      "sha256": "3c22a6877f98b648d8c100c8d9004981878a004459476d3dbaaa494a306a38b0"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 585,
+      "sha256": "4e2417c0b01b0d1a98c20e1273d3f66ead5e325ad8037d78ca63ca1993a050c3"
+    },
+    {
+      "path": "p0a0_registered_pilot_once.jsonl",
+      "bytes": 12052,
+      "sha256": "4b4b27b0d5d9a95ffe864e2d2c83433be0ddd544b6122ebbea294857326817d6"
+    },
+    {
+      "path": "postrun_checks.json",
+      "bytes": 1699,
+      "sha256": "55e7c9345122546ff69e6d2a11d093daa5125789c42e2c61a5811378008e322d"
+    },
+    {
+      "path": "preflight.json",
+      "bytes": 54755,
+      "sha256": "d16419c9c86c800f5d74bc2a2255855b3d1b8736f011348decf2a9d660fad730"
+    },
+    {
+      "path": "provenance_ledger.json",
+      "bytes": 8169,
+      "sha256": "97212f2904b1cd179ced41187a89f695223148fef90497f8433d71954a5f605f"
+    },
+    {
+      "path": "result_inventory.json",
+      "bytes": 903,
+      "sha256": "de1865cebcec3d571b5549893ad29477bf6bf62046c6480a6cb3dc62eeb0bceb"
+    },
+    {
+      "path": "runner_attempt.json",
+      "bytes": 391,
+      "sha256": "dae5c78406a7174cae7bb1836eb796cc655b0ad2f999c25286aac7b31f835d63"
+    },
+    {
+      "path": "runner_completion.json",
+      "bytes": 505,
+      "sha256": "a8b151f6d2346a4d3467a8f1b0a2251cf809344020cca4ece1fb11d989e4166c"
+    },
+    {
+      "path": "runner_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runner_stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "signature_setup.json",
+      "bytes": 1508,
+      "sha256": "5d9ed1c27af038fab33fdec616a39dc4f5ac83c908ed2b9c3dd0366ffbcaf60a"
+    }
+  ],
+  "raw_jsonl_preserved_byte_for_byte": true,
+  "runner_attempts": 1,
+  "runner_retries": 0,
+  "case_state_counts": {
+    "PASS": 5,
+    "EXPECTED_BLIND_SPOT": 8,
+    "FAIL": 0,
+    "NOT_EVALUABLE": 0
+  },
+  "self_hash_policy": "This inventory is covered by SHA256SUMS; SHA256SUMS is covered by the outer ZIP hash."
+}

@@ -1,0 +1,38 @@
+{
+  "initial_signature_check": "NO_PUBKEY; public key prerequisite restored before formal preflight; no runner invoked",
+  "public_key_source": "Previously fetched https://github.com/salahealer9.gpg",
+  "primary_fingerprint": "D4EC014EEFCC90E619D2AA59A91239ABCF512130",
+  "public_key_import_returncode": 2,
+  "d15865167b4e3c454e398bd498d9d681103096f7": {
+    "command": [
+      "git",
+      "verify-commit",
+      "--raw",
+      "d15865167b4e3c454e398bd498d9d681103096f7"
+    ],
+    "returncode": 0,
+    "machine_status_without_UID": [
+      "[GNUPG:] NEWSIG",
+      "[GNUPG:] KEY_CONSIDERED D4EC014EEFCC90E619D2AA59A91239ABCF512130 0",
+      "[GNUPG:] SIG_ID RoPmov4vwF/Rd425a5Pb9pWP+es 2026-10-13 1791896982",
+      "[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-10-13 1791896982 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130",
+      "[GNUPG:] TRUST_UNDEFINED 0 pgp"
+    ]
+  },
+  "24c00fc44e4d9d57adacd1e636e9e2d20d86a954": {
+    "command": [
+      "git",
+      "verify-commit",
+      "--raw",
+      "24c00fc44e4d9d57adacd1e636e9e2d20d86a954"
+    ],
+    "returncode": 0,
+    "machine_status_without_UID": [
+      "[GNUPG:] NEWSIG",
+      "[GNUPG:] KEY_CONSIDERED D4EC014EEFCC90E619D2AA59A91239ABCF512130 0",
+      "[GNUPG:] SIG_ID 6hIq84sjN04zN9zVjh4VHXruSWY 2026-10-14 1791962062",
+      "[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-10-14 1791962062 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130",
+      "[GNUPG:] TRUST_UNDEFINED 0 pgp"
+    ]
+  }
+}

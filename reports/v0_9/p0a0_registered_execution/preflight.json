@@ -1,0 +1,675 @@
+{
+  "utc": "2026-10-15T11:40:55.995040+00:00",
+  "registered_evaluations_before_preflight": 0,
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "24c00fc44e4d9d57adacd1e636e9e2d20d86a954\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD^"
+      ],
+      "returncode": 0,
+      "stdout": "d15865167b4e3c454e398bd498d9d681103096f7\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "d15865167b4e3c454e398bd498d9d681103096f7^"
+      ],
+      "returncode": 0,
+      "stdout": "8bf0babfd91bdefb0792e93707fd0b0da1c09767\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "returncode": 0,
+      "stdout": "hebrew-projection-capacity-v0.9\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "@{upstream}"
+      ],
+      "returncode": 0,
+      "stdout": "24c00fc44e4d9d57adacd1e636e9e2d20d86a954\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "merge-base",
+        "--is-ancestor",
+        "d15865167b4e3c454e398bd498d9d681103096f7",
+        "24c00fc44e4d9d57adacd1e636e9e2d20d86a954"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "hash-object",
+        "docs/p0a0_hebrew_projection_source_identity_and_synthetic_pilot_protocol_v0.9.md"
+      ],
+      "returncode": 0,
+      "stdout": "0f8b663bfe2432685c9320a00c80fd6bcf436e38\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "d15865167b4e3c454e398bd498d9d681103096f7",
+        "24c00fc44e4d9d57adacd1e636e9e2d20d86a954",
+        "--",
+        "docs/p0a0_hebrew_projection_source_identity_and_synthetic_pilot_protocol_v0.9.md"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--exit-code"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--exit-code"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "ls-files",
+        "-z"
+      ],
+      "returncode": 0,
+      "stdout": ".gitignore\u0000CHANGELOG.md\u0000CITATION.cff\u0000LICENSE\u0000README.md\u0000data/derived/.gitkeep\u0000data/derived/first_hand_arm_of_god/diagram_incidence_addendum_pass1.csv\u0000data/derived/first_hand_arm_of_god/diagram_incidence_addendum_pass2.csv\u0000data/derived/first_hand_arm_of_god/diagram_incidence_addendum_passes.sha256\u0000data/derived/first_hand_arm_of_god/diagram_landmark_passes.sha256\u0000data/derived/first_hand_arm_of_god/diagram_landmarks_pass1.csv\u0000data/derived/first_hand_arm_of_god/diagram_landmarks_pass2.csv\u0000data/derived/first_hand_arm_of_god/diagram_source_preparation.json\u0000data/derived/first_hand_arm_of_god/expanded_neutral_geometry_census.json\u0000data/derived/first_hand_arm_of_god/expanded_neutral_geometry_census_outputs.sha256\u0000data/derived/first_hand_arm_of_god/expanded_neutral_landmark_consensus.csv\u0000data/derived/first_hand_arm_of_god/first_hand_curve_geometry_audit.json\u0000data/derived/first_hand_arm_of_god/first_hand_curve_geometry_first_run.log\u0000data/derived/first_hand_arm_of_god/first_hand_curve_geometry_results.sha256\u0000data/derived/first_hand_arm_of_god/great_circle_segment_passes.sha256\u0000data/derived/first_hand_arm_of_god/great_circle_segments_pass1.csv\u0000data/derived/first_hand_arm_of_god/great_circle_segments_pass2.csv\u0000data/derived/first_hand_arm_of_god/planar_reciprocal_spiral_audit.json\u0000data/derived/first_hand_arm_of_god/qc/first_hand_curve_geometry_qc_sensitivity.json\u0000data/derived/first_hand_arm_of_god/qc/first_hand_curve_geometry_qc_sensitivity.sha256\u0000data/derived/first_hand_arm_of_god/qc/first_hand_curve_geometry_qc_sensitivity_first_run.log\u0000data/derived/first_hand_arm_of_god/qc/first_hand_curve_morphology_census.json\u0000data/derived/first_hand_arm_of_god/qc/first_hand_curve_morphology_census.sha256\u0000data/derived/first_hand_arm_of_god/qc/first_hand_curve_morphology_first_run.log\u0000data/derived/first_hand_arm_of_god/qc/first_hand_great_circle_reconstruction.json\u0000data/derived/first_hand_arm_of_god/qc/first_hand_great_circle_reconstruction.sha256\u0000data/derived/first_hand_arm_of_god/qc/first_hand_great_circle_reconstruction_first_run.log\u0000data/derived/first_hand_arm_of_god/qc/first_hand_linear_central_projective_reconstruction.json\u0000data/derived/first_hand_arm_of_god/qc/first_hand_linear_central_projective_reconstruction.sha256\u0000data/derived/first_hand_arm_of_god/qc/first_hand_linear_central_projective_reconstruction_first_run.log\u0000data/derived/first_hand_arm_of_god/qc/first_hand_parallel_family_equatorial_incidence.json\u0000data/derived/first_hand_arm_of_god/qc/first_hand_parallel_family_equatorial_incidence.sha256\u0000data/derived/first_hand_arm_of_god/qc/first_hand_parallel_family_equatorial_incidence_first_run.log\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_residual_bins.csv\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_residual_crosspass.csv\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_residual_morphology.json\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_residual_morphology.png\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_residual_morphology.sha256\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_residual_morphology_first_run.log\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_residual_segments.csv\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_shape.json\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_shape.png\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_shape.sha256\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_shape_first_run.log\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_shape_samples.csv\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_shape_segments.csv\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_translated_isotropic.json\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_translated_isotropic.png\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_translated_isotropic.sha256\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_translated_isotropic_first_run.log\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_translated_isotropic_segments.csv\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_translation_signature.json\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_translation_signature.png\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_translation_signature.sha256\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_translation_signature_first_run.log\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_translation_signature_occupancy.csv\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_reciprocal_spiral_translation_signature_radial.csv\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_rendering_comparator.json\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_rendering_comparator.sha256\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_rendering_comparator_first_run.log\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_spiral_endpoint_consistency.json\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_spiral_endpoint_consistency.sha256\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_spiral_endpoint_consistency_first_run.log\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_spiral_reproducibility.json\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_spiral_reproducibility.png\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_spiral_reproducibility.sha256\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_spiral_reproducibility_first_run.log\u0000data/derived/first_hand_arm_of_god/qc/first_hand_spherical_spiral_reproducibility_segments.csv\u0000data/derived/first_hand_arm_of_god/qc/first_hand_stereographic_plane_angles.json\u0000data/derived/first_hand_arm_of_god/qc/first_hand_stereographic_plane_angles.sha256\u0000data/derived/first_hand_arm_of_god/qc/first_hand_stereographic_plane_angles_first_run.log\u0000data/derived/first_hand_arm_of_god/qc/first_hand_three_curve_x1_reconciliation.json\u0000data/derived/first_hand_arm_of_god/qc/first_hand_three_curve_x1_reconciliation.sha256\u0000data/derived/first_hand_arm_of_god/qc/first_hand_three_curve_x1_reconciliation_first_run.log\u0000data/derived/first_hand_arm_of_god/qc/first_hand_three_curve_x1_reconciliation_sweep.csv\u0000data/derived/first_hand_arm_of_god/qc/first_hand_three_curve_x1_reconciliation_sweep.png\u0000data/derived/first_hand_arm_of_god/qc/great_circle_segments_pass2_qc.csv\u0000data/derived/first_hand_arm_of_god/qc/great_circle_segments_pass2_qc.sha256\u0000data/derived/first_hand_arm_of_god/qc/great_circle_segments_pass2_qc_manifest.json\u0000data/derived/first_hand_arm_of_god/source_semantic_review/x1/01_source_context.png\u0000data/derived/first_hand_arm_of_god/source_semantic_review/x1/02_x1_label_region_source_only.png\u0000data/derived/first_hand_arm_of_god/source_semantic_review/x1/03_x1_frozen_trace_points_overlay.png\u0000data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_01_S01_overlay.png\u0000data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_01_S01_source_only.png\u0000data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_02_S02_overlay.png\u0000data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_02_S02_source_only.png\u0000data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_03_S03_overlay.png\u0000data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_03_S03_source_only.png\u0000data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_04_S04_overlay.png\u0000data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_04_S04_source_only.png\u0000data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_05_S05_overlay.png\u0000data/derived/first_hand_arm_of_god/source_semantic_review/x1/segment_05_S05_source_only.png\u0000data/derived/first_hand_arm_of_god/source_semantic_review/x1/x1_segment_inventory.csv\u0000data/derived/first_hand_arm_of_god/source_semantic_review/x1/x1_source_review_first_run.log\u0000data/derived/first_hand_arm_of_god/source_semantic_review/x1/x1_source_review_manifest.json\u0000data/derived/first_hand_arm_of_god/source_semantic_review/x1/x1_source_review_outputs.sha256\u0000data/derived/first_hand_arm_of_god/spherical_map_family_audit.json\u0000data/derived/first_hand_arm_of_god/spherical_spiral_segments_pass1.csv\u0000data/derived/first_hand_arm_of_god/spherical_spiral_segments_pass1.sha256\u0000data/derived/first_hand_arm_of_god/spherical_spiral_segments_pass2.csv\u0000data/derived/first_hand_arm_of_god/spherical_spiral_segments_pass2.sha256\u0000data/derived/meru_3_10_digital/meru_10_3_braid_invariant_audit.json\u0000data/derived/meru_3_10_digital/meru_10_3_centerline_audit.json\u0000data/derived/meru_3_10_digital/meru_10_3_surface_embedding_audit.json\u0000data/derived/meru_3_10_digital/meru_10_3_surface_embedding_incident.json\u0000data/derived/meru_3_10_digital/meru_10_3_surface_embedding_remote.json\u0000data/manual_adjudications/A10_P03/A10_P03_tumble_correspondence.csv\u0000data/manual_adjudications/A10_P03/manual_parity_event_audit.csv\u0000data/manual_adjudications/A10_P03/manual_parity_family_review.csv\u0000data/manual_digitizations/A10_P03/cross_colour_endpoint_review.csv\u0000data/manual_digitizations/A10_P03/crossing_inventory.csv\u0000data/manual_digitizations/A10_P03/crossing_sign_review.csv\u0000data/manual_digitizations/A10_P03/digitization.csv\u0000data/manual_digitizations/A10_P03/digitization.json\u0000data/manual_digitizations/A10_P03/endpoint_adjudication.csv\u0000data/manual_digitizations/A10_P03/gauss_order_review.csv\u0000data/manual_digitizations/A10_P03/gauss_word.csv\u0000data/manual_digitizations/A10_P03/gauss_word.sha256\u0000data/manual_digitizations/A10_P03/residual_endpoint_review.csv\u0000data/manual_digitizations/A10_P03/signed_gauss_word.csv\u0000data/manual_digitizations/A10_P03/signed_gauss_word.sha256\u0000data/manual_digitizations/README.md\u0000data/source_claims/first_hand_arm_of_god_claims.csv\u0000data/source_claims/first_hand_diagram_landmark_registry.csv\u0000data/source_manifests/first_hand_arm_of_god/diagram_crop_manifest.csv\u0000data/source_manifests/first_hand_arm_of_god/official_asset_manifest.csv\u0000data/source_manifests/meru_3_10_digital/official_asset_manifest.csv\u0000docs/claims/claim_register.md\u0000docs/claims/evidence_boundary.md\u0000docs/claims/model_versions.md\u0000docs/correspondence/README.md\u0000docs/correspondence/meru_foundation/outbound/2026-08_first_hand_construction_inquiry.md\u0000docs/correspondence/meru_foundation/provenance/2026-10-13_correspondence_status.md\u0000docs/first_hand_analytic_s1_preregistration_v0.8.md\u0000docs/first_hand_archived_asset_reaudit_v0.8.csv\u0000docs/first_hand_blind_digitizer_instructions.md\u0000docs/first_hand_construction_source_recovery_closeout_v0.8.md\u0000docs/first_hand_construction_source_recovery_preregistration_v0.8.md\u0000docs/first_hand_curve_acquisition_qc.md\u0000docs/first_hand_curve_geometry_execution_note.md\u0000docs/first_hand_curve_geometry_protocol.md\u0000docs/first_hand_diagram_landmark_protocol.md\u0000docs/first_hand_expanded_neutral_geometry_census.md\u0000docs/first_hand_great_circle_reconstruction_protocol.md\u0000docs/first_hand_great_circle_segment_digitizer.md\u0000docs/first_hand_incidence_addendum_digitizer.md\u0000docs/first_hand_incidence_addendum_protocol.md\u0000docs/first_hand_linear_central_projective_reconstruction_protocol.md\u0000docs/first_hand_neutral_geometry_census.md\u0000docs/first_hand_parallel_family_equatorial_incidence_protocol.md\u0000docs/first_hand_s1_analytic_closeout_v0.8.md\u0000docs/first_hand_s1_comparator_closeout_v0.8.md\u0000docs/first_hand_s1_comparator_preregistration_v0.8.md\u0000docs/first_hand_s1_source_criterion_addendum_v0.8.md\u0000docs/first_hand_s1_truncation_parity_closeout_v0.8.md\u0000docs/first_hand_s1_truncation_parity_preregistration_v0.8.md\u0000docs/first_hand_self_embedment_protocol.md\u0000docs/first_hand_source_recovery_ledger_v0.8.csv\u0000docs/first_hand_source_recovery_references_v0.8.csv\u0000docs/first_hand_source_recovery_report_v0.8.md\u0000docs/first_hand_source_recovery_tier_a_closeout_v0.8.md\u0000docs/first_hand_source_recovery_tier_b_closeout_v0.8.md\u0000docs/first_hand_source_recovery_tier_b_matrix_v0.8.csv\u0000docs/first_hand_source_recovery_tier_c_closeout_v0.8.md\u0000docs/first_hand_source_recovery_tier_c_matrix_v0.8.csv\u0000docs/first_hand_spherical_reciprocal_spiral_residual_morphology_protocol.md\u0000docs/first_hand_spherical_reciprocal_spiral_shape_protocol.md\u0000docs/first_hand_spherical_reciprocal_spiral_translated_isotropic_objective_addendum.md\u0000docs/first_hand_spherical_reciprocal_spiral_translated_isotropic_protocol.md\u0000docs/first_hand_spherical_reciprocal_spiral_translation_signature_protocol.md\u0000docs/first_hand_spherical_rendering_comparator_protocol.md\u0000docs/first_hand_spherical_spiral_reproducibility_protocol.md\u0000docs/first_hand_spherical_spiral_trace_acquisition_protocol.md\u0000docs/first_hand_stereographic_plane_angle_protocol.md\u0000docs/first_hand_three_curve_x1_reconciliation_protocol.md\u0000docs/first_hand_variant_a_ambient_parallelism_closeout_v0.8.md\u0000docs/first_hand_variant_a_ambient_parallelism_preregistration_v0.8.md\u0000docs/first_hand_variant_b_source_geometry_specification_v0.8.md\u0000docs/first_hand_variant_b_swept_family_closeout_v0.8.md\u0000docs/first_hand_variant_b_swept_family_preregistration_v0.8.md\u0000docs/first_hand_variant_b_width_trend_addendum_v0.8.md\u0000docs/first_hand_x1_source_semantic_trace_audit_protocol.md\u0000docs/geometry/a10_p03_connectivity_graph_v0_6.md\u0000docs/geometry/a10_p03_cross_colour_candidate_audit_v0_6.md\u0000docs/geometry/a10_p03_cross_colour_matching_search_v0_7.md\u0000docs/geometry/a10_p03_crossing_candidate_census_v0_7.md\u0000docs/geometry/a10_p03_crossing_sign_census_v0_7.md\u0000docs/geometry/a10_p03_full_endpoint_matching_search_v0_7.md\u0000docs/geometry/a10_p03_gauss_parity_audit_v0_7.md\u0000docs/geometry/a10_p03_gauss_visit_census_v0_7.md\u0000docs/geometry/a10_p03_gauss_word_v0_7.md\u0000docs/geometry/a10_p03_global_cycle_v0_6.md\u0000docs/geometry/a10_p03_reviewed_order_sensitivity_v0_7.md\u0000docs/geometry/a10_p03_signed_gauss_word_v0_7.md\u0000docs/geometry/a10_p03_trace_analysis_v0_6.md\u0000docs/geometry/projection_orbit_audit.md\u0000docs/geometry/projection_orbit_results_v0_5.md\u0000docs/geometry/tetrahedron_symmetry.md\u0000docs/geometry/torus_embedding_baseline.md\u0000docs/p0a0_hebrew_projection_source_identity_and_synthetic_pilot_protocol_v0.9.md\u0000docs/source_audit/a10_p03_cross_colour_review_protocol.md\u0000docs/source_audit/a10_p03_cross_colour_review_results.md\u0000docs/source_audit/a10_p03_crossing_inventory_protocol.md\u0000docs/source_audit/a10_p03_crossing_review_protocol.md\u0000docs/source_audit/a10_p03_crossing_review_results.md\u0000docs/source_audit/a10_p03_crossing_sign_protocol.md\u0000docs/source_audit/a10_p03_crossing_sign_review_results.md\u0000docs/source_audit/a10_p03_digitization_protocol.md\u0000docs/source_audit/a10_p03_digitization_summary.md\u0000docs/source_audit/a10_p03_endpoint_adjudication_protocol.md\u0000docs/source_audit/a10_p03_endpoint_adjudication_results.md\u0000docs/source_audit/a10_p03_full_endpoint_matching_protocol.md\u0000docs/source_audit/a10_p03_gauss_order_review_results.md\u0000docs/source_audit/a10_p03_gauss_parity_protocol.md\u0000docs/source_audit/a10_p03_gauss_visit_protocol.md\u0000docs/source_audit/a10_p03_residual_endpoint_review_protocol.md\u0000docs/source_audit/a10_p03_residual_endpoint_review_results.md\u0000docs/source_audit/a10_p03_reviewed_order_sensitivity_protocol.md\u0000docs/source_audit/a10_p03_signed_gauss_word_protocol.md\u0000docs/source_audit/geometric_asset_audit_template.md\u0000docs/source_audit/geometric_panel_selection_v0_6.md\u0000docs/source_audit/primary_sources.md\u0000docs/source_audit/reconstruction_constraints_v0_6.md\u0000docs/source_audit/source_findings_v0_2.md\u0000docs/v0_9/p0a0_human_freeze_commands.sh\u0000docs/v0_9/p0a0_implementation_specification.md\u0000figures/a10_p03_boundary_fits.png\u0000figures/a10_p03_connectivity_graph.png\u0000figures/a10_p03_crossing_candidates.png\u0000figures/a10_p03_crossing_sign_census.png\u0000figures/a10_p03_crossing_sign_review.png\u0000figures/a10_p03_endpoint_candidates.png\u0000figures/a10_p03_gauss_order_review.png\u0000figures/a10_p03_gauss_parity_audit.png\u0000figures/a10_p03_global_cycle.png\u0000figures/a10_p03_normalized_trace.png\u0000figures/candidate_c0_reciprocal_torus_embedding.png\u0000figures/candidate_c0_tetrahedral_projections.png\u0000figures/canonical_torus_and_3_10_knot.png\u0000figures/first_hand_expanded_neutral_geometry_overlay.png\u0000figures/projection_orbit_error_matrices.png\u0000figures/reciprocal_spiral_baseline.png\u0000figures/regular_tetrahedron_baseline.png\u0000figures/tetrahedral_rotation_probe_projections.png\u0000figures/torus_knot_3_10_tetrahedral_projections.png\u0000pyproject.toml\u0000references/geometric_asset_panels.csv\u0000references/geometric_asset_snapshot_manifest.csv\u0000references/geometric_panel_crop_manifest.csv\u0000references/key_geometric_assets.csv\u0000references/primary_sources.csv\u0000references/source_asset_inventory.csv\u0000references/source_snapshot_manifest.csv\u0000registered_pilots/p0a0/cases.py\u0000registered_pilots/p0a0/fixture_config.json\u0000registered_pilots/p0a0/fixtures.py\u0000registered_pilots/p0a0/implementation_manifest.json\u0000release_notes/v0.7.0.md\u0000reports/A10_P03_manual_parity_event_audit.md\u0000reports/A10_P03_tumble_correspondence.md\u0000reports/arm_of_god_diagram_source_preparation.md\u0000reports/arm_of_god_source_lock.md\u0000reports/first_hand_coordinate_consistency_synthesis.md\u0000reports/first_hand_curve_geometry_audit.md\u0000reports/first_hand_curve_geometry_qc_sensitivity.md\u0000reports/first_hand_curve_morphology_census.md\u0000reports/first_hand_expanded_neutral_geometry_census.md\u0000reports/first_hand_great_circle_reconstruction.md\u0000reports/first_hand_linear_central_projective_reconstruction.md\u0000reports/first_hand_page7_digitization_phase_closeout.md\u0000reports/first_hand_parallel_family_equatorial_incidence.md\u0000reports/first_hand_planar_reciprocal_spiral_audit.md\u0000reports/first_hand_spherical_map_family_audit.md\u0000reports/first_hand_spherical_reciprocal_spiral_bin_morphology_interpretation.md\u0000reports/first_hand_spherical_reciprocal_spiral_residual_morphology.md\u0000reports/first_hand_spherical_reciprocal_spiral_residual_morphology_interpretation.md\u0000reports/first_hand_spherical_reciprocal_spiral_shape.md\u0000reports/first_hand_spherical_reciprocal_spiral_shape_interpretation.md\u0000reports/first_hand_spherical_reciprocal_spiral_translated_isotropic.md\u0000reports/first_hand_spherical_reciprocal_spiral_translated_isotropic_interpretation.md\u0000reports/first_hand_spherical_reciprocal_spiral_translation_signature.md\u0000reports/first_hand_spherical_reciprocal_spiral_translation_signature_identifiability.md\u0000reports/first_hand_spherical_reciprocal_spiral_translation_signature_interpretation.md\u0000reports/first_hand_spherical_rendering_comparator.md\u0000reports/first_hand_spherical_spiral_endpoint_consistency.md\u0000reports/first_hand_spherical_spiral_endpoint_interpretation.md\u0000reports/first_hand_spherical_spiral_endpoint_topology.md\u0000reports/first_hand_spherical_spiral_metadata_qc.md\u0000reports/first_hand_spherical_spiral_reproducibility.md\u0000reports/first_hand_spherical_spiral_segment_correspondence.md\u0000reports/first_hand_stereographic_plane_angles.md\u0000reports/first_hand_three_curve_x1_reconciliation.md\u0000reports/first_hand_x1_source_semantic_question1_ledger.md\u0000reports/first_hand_x1_source_semantic_question2_ledger.md\u0000reports/meru_10_3_braid_invariant_audit.md\u0000reports/meru_10_3_native_geometry_audit.md\u0000reports/meru_10_3_surface_embedding_audit.md\u0000reports/meru_3_10_digital_source_catalogue.md\u0000reports/v0_9/p0a0_implementation/AMENDMENT_QC.md\u0000reports/v0_9/p0a0_implementation/QC_README.md\u0000reports/v0_9/p0a0_implementation/amendment_changes.json\u0000reports/v0_9/p0a0_implementation/amendment_controlled_regressions.log\u0000reports/v0_9/p0a0_implementation/amendment_dev_checks.log\u0000reports/v0_9/p0a0_implementation/amendment_environment.json\u0000reports/v0_9/p0a0_implementation/amendment_source.diff\u0000reports/v0_9/p0a0_implementation/amendment_static_preservation_checks.json\u0000reports/v0_9/p0a0_implementation/changed_paths.txt\u0000reports/v0_9/p0a0_implementation/collection.log\u0000reports/v0_9/p0a0_implementation/dev_checks.log\u0000reports/v0_9/p0a0_implementation/dev_checks_final.log\u0000reports/v0_9/p0a0_implementation/environment.json\u0000reports/v0_9/p0a0_implementation/inherited_baseline.log\u0000reports/v0_9/p0a0_implementation/inherited_baseline_after_pytest_install.log\u0000reports/v0_9/p0a0_implementation/integrity.json\u0000reports/v0_9/p0a0_implementation/pip_freeze.txt\u0000reports/v0_9/p0a0_implementation/static_checks.json\u0000requirements.txt\u0000results/first_hand_s1_comparators_v0_8/s1_comparator_report.md\u0000results/first_hand_s1_comparators_v0_8/s1_comparator_results.csv\u0000results/first_hand_s1_comparators_v0_8/s1_comparator_results.json\u0000results/first_hand_s1_truncation_parity_v0_8/s1_truncation_parity_new_cells.csv\u0000results/first_hand_s1_truncation_parity_v0_8/s1_truncation_parity_report.md\u0000results/first_hand_s1_truncation_parity_v0_8/s1_truncation_parity_results.json\u0000results/first_hand_s1_v0_8/s1_report.md\u0000results/first_hand_s1_v0_8/s1_results.csv\u0000results/first_hand_s1_v0_8/s1_results.json\u0000results/first_hand_variant_a_ambient_parallelism_v0_8/ambient_parallelism_report.md\u0000results/first_hand_variant_a_ambient_parallelism_v0_8/ambient_parallelism_results.csv\u0000results/first_hand_variant_a_ambient_parallelism_v0_8/ambient_parallelism_results.json\u0000results/first_hand_variant_b_sweep_v0_8/variant_b_carrier_metrics.csv\u0000results/first_hand_variant_b_sweep_v0_8/variant_b_sweep_report.md\u0000results/first_hand_variant_b_sweep_v0_8/variant_b_sweep_results.csv\u0000results/first_hand_variant_b_sweep_v0_8/variant_b_sweep_results.json\u0000scripts/analyse_a10_p03_trace.py\u0000scripts/apply_first_hand_curve_acquisition_qc.py\u0000scripts/audit_a10_p03_gauss_parity.py\u0000scripts/audit_a10_p03_global_cycle.py\u0000scripts/audit_first_hand_curve_geometry.py\u0000scripts/audit_first_hand_curve_geometry_qc.py\u0000scripts/audit_first_hand_curve_morphology.py\u0000scripts/audit_first_hand_expanded_neutral_geometry.py\u0000scripts/audit_first_hand_great_circle_reconstruction.py\u0000scripts/audit_first_hand_linear_central_projective_reconstruction.py\u0000scripts/audit_first_hand_neutral_geometry.py\u0000scripts/audit_first_hand_parallel_family_equatorial_incidence.py\u0000scripts/audit_first_hand_planar_reciprocal.py\u0000scripts/audit_first_hand_spherical_map_family.py\u0000scripts/audit_first_hand_spherical_reciprocal_spiral_residual_morphology.py\u0000scripts/audit_first_hand_spherical_reciprocal_spiral_shape.py\u0000scripts/audit_first_hand_spherical_reciprocal_spiral_translated_isotropic.py\u0000scripts/audit_first_hand_spherical_reciprocal_spiral_translation_signature.py\u0000scripts/audit_first_hand_spherical_rendering_comparator.py\u0000scripts/audit_first_hand_spherical_spiral_endpoint_consistency.py\u0000scripts/audit_first_hand_spherical_spiral_reproducibility.py\u0000scripts/audit_first_hand_stereographic_plane_angles.py\u0000scripts/audit_first_hand_three_curve_x1_reconciliation.py\u0000scripts/audit_meru_10_3_braid_invariant.py\u0000scripts/audit_meru_10_3_centerline.py\u0000scripts/audit_meru_10_3_incident_faces.py\u0000scripts/audit_meru_10_3_surface_embedding.py\u0000scripts/audit_projection_orbits.py\u0000scripts/build_a10_p03_connectivity.py\u0000scripts/build_geometric_asset_contact_sheet.py\u0000scripts/build_geometric_panel_crops.py\u0000scripts/build_meru_10_3_braid_invariant_report.py\u0000scripts/build_meru_10_3_surface_certificate.py\u0000scripts/derive_a10_p03_crossing_signs.py\u0000scripts/derive_a10_p03_gauss_visits.py\u0000scripts/digitize_first_hand_diagram_landmarks.py\u0000scripts/digitize_first_hand_great_circle_segments.py\u0000scripts/digitize_first_hand_incidence_addendum.py\u0000scripts/digitize_first_hand_spherical_spiral.py\u0000scripts/digitize_geometric_panel.py\u0000scripts/fetch_geometric_assets.py\u0000scripts/fetch_primary_sources.py\u0000scripts/finalize_a10_p03_gauss_word.py\u0000scripts/finalize_a10_p03_signed_gauss_word.py\u0000scripts/find_a10_p03_crossing_candidates.py\u0000scripts/first_hand_s1.py\u0000scripts/first_hand_s1_comparators.py\u0000scripts/first_hand_s1_truncation_parity.py\u0000scripts/first_hand_variant_a_ambient_parallelism.py\u0000scripts/first_hand_variant_b_sweep.py\u0000scripts/inventory_source_assets.py\u0000scripts/p0a0_registered_pilot.py\u0000scripts/plot_reciprocal_spiral.py\u0000scripts/plot_tetrahedron_symmetry.py\u0000scripts/plot_torus_embedding.py\u0000scripts/prepare_a10_p03_cross_colour_review.py\u0000scripts/prepare_a10_p03_crossing_review.py\u0000scripts/prepare_a10_p03_endpoint_adjudication.py\u0000scripts/prepare_a10_p03_residual_endpoint_review.py\u0000scripts/prepare_arm_of_god_diagram_crops.py\u0000scripts/prepare_first_hand_x1_source_semantic_review.py\u0000scripts/search_a10_p03_cross_colour_matchings.py\u0000scripts/search_a10_p03_full_endpoint_matchings.py\u0000scripts/search_a10_p03_reviewed_order_sensitivity.py\u0000src/meru_geometry/__init__.py\u0000src/meru_geometry/connectivity.py\u0000src/meru_geometry/cross_colour_connectivity.py\u0000src/meru_geometry/crossing_candidates.py\u0000src/meru_geometry/crossing_review.py\u0000src/meru_geometry/crossing_signs.py\u0000src/meru_geometry/digitization.py\u0000src/meru_geometry/dimpled_torus.py\u0000src/meru_geometry/embeddings.py\u0000src/meru_geometry/endpoint_matching_search.py\u0000src/meru_geometry/endpoint_review.py\u0000src/meru_geometry/gauss_order_sensitivity.py\u0000src/meru_geometry/gauss_parity.py\u0000src/meru_geometry/gauss_visits.py\u0000src/meru_geometry/global_cycle.py\u0000src/meru_geometry/letterforms.py\u0000src/meru_geometry/null_models.py\u0000src/meru_geometry/p0a0/__init__.py\u0000src/meru_geometry/p0a0/boundaries.py\u0000src/meru_geometry/p0a0/engineering.py\u0000src/meru_geometry/p0a0/oracles.py\u0000src/meru_geometry/projection_orbits.py\u0000src/meru_geometry/projections.py\u0000src/meru_geometry/reciprocal_spiral.py\u0000src/meru_geometry/residual_connectivity.py\u0000src/meru_geometry/rotations.py\u0000src/meru_geometry/shape_metrics.py\u0000src/meru_geometry/signed_gauss.py\u0000src/meru_geometry/silhouettes.py\u0000src/meru_geometry/statistics.py\u0000src/meru_geometry/tetrahedron.py\u0000src/meru_geometry/torus.py\u0000src/meru_geometry/trace_analysis.py\u0000tests/__init__.py\u0000tests/test_a10_cross_colour_matching_space.py\u0000tests/test_a10_crossing_sign_inputs.py\u0000tests/test_a10_full_endpoint_matching_space.py\u0000tests/test_a10_gauss_order_sensitivity.py\u0000tests/test_a10_gauss_parity_baseline.py\u0000tests/test_a10_gauss_word_snapshot.py\u0000tests/test_a10_manual_parity_event_audit.py\u0000tests/test_a10_signed_gauss_word_snapshot.py\u0000tests/test_a10_tumble_correspondence.py\u0000tests/test_arm_of_god_diagram_source_preparation.py\u0000tests/test_connectivity.py\u0000tests/test_cross_colour_connectivity.py\u0000tests/test_crossing_candidates.py\u0000tests/test_crossing_review.py\u0000tests/test_crossing_signs.py\u0000tests/test_digitization.py\u0000tests/test_digitize_first_hand_spherical_spiral.py\u0000tests/test_embeddings.py\u0000tests/test_endpoint_matching_search.py\u0000tests/test_endpoint_review.py\u0000tests/test_first_hand_arm_of_god_source_registry.py\u0000tests/test_first_hand_blind_digitizer.py\u0000tests/test_first_hand_curve_acquisition_qc.py\u0000tests/test_first_hand_curve_geometry_audit.py\u0000tests/test_first_hand_curve_geometry_protocol.py\u0000tests/test_first_hand_curve_geometry_qc.py\u0000tests/test_first_hand_curve_morphology.py\u0000tests/test_first_hand_diagram_landmark_protocol.py\u0000tests/test_first_hand_expanded_neutral_geometry_audit.py\u0000tests/test_first_hand_great_circle_reconstruction.py\u0000tests/test_first_hand_great_circle_segment_digitizer.py\u0000tests/test_first_hand_incidence_addendum_digitizer.py\u0000tests/test_first_hand_incidence_addendum_protocol.py\u0000tests/test_first_hand_linear_central_projective_reconstruction.py\u0000tests/test_first_hand_neutral_geometry_audit.py\u0000tests/test_first_hand_parallel_family_equatorial_incidence.py\u0000tests/test_first_hand_planar_reciprocal_audit.py\u0000tests/test_first_hand_s1.py\u0000tests/test_first_hand_s1_comparators.py\u0000tests/test_first_hand_s1_truncation_parity.py\u0000tests/test_first_hand_spherical_map_family_audit.py\u0000tests/test_first_hand_spherical_reciprocal_spiral_residual_morphology.py\u0000tests/test_first_hand_spherical_reciprocal_spiral_shape.py\u0000tests/test_first_hand_spherical_reciprocal_spiral_translated_isotropic.py\u0000tests/test_first_hand_spherical_reciprocal_spiral_translation_signature.py\u0000tests/test_first_hand_spherical_rendering_comparator.py\u0000tests/test_first_hand_spherical_spiral_endpoint_consistency.py\u0000tests/test_first_hand_spherical_spiral_reproducibility.py\u0000tests/test_first_hand_stereographic_plane_angles.py\u0000tests/test_first_hand_three_curve_x1_reconciliation.py\u0000tests/test_first_hand_variant_a_ambient_parallelism.py\u0000tests/test_first_hand_variant_b_sweep.py\u0000tests/test_first_hand_x1_source_semantic_review.py\u0000tests/test_gauss_order_sensitivity.py\u0000tests/test_gauss_parity.py\u0000tests/test_gauss_visits.py\u0000tests/test_global_cycle.py\u0000tests/test_meru_10_3_braid_invariant_audit.py\u0000tests/test_meru_10_3_centerline_audit.py\u0000tests/test_meru_10_3_surface_embedding_audit.py\u0000tests/test_meru_3_10_digital_source_catalogue.py\u0000tests/test_p0a0_dev.py\u0000tests/test_p0a0_qc_boundaries_dev.py\u0000tests/test_projection_orbits.py\u0000tests/test_projections.py\u0000tests/test_reciprocal_spiral.py\u0000tests/test_residual_connectivity.py\u0000tests/test_rotations.py\u0000tests/test_signed_gauss.py\u0000tests/test_tetrahedron.py\u0000tests/test_torus.py\u0000tests/test_trace_analysis.py\u0000",
+      "stderr": ""
+    }
+  ],
+  "checks": [
+    {
+      "name": "git command completed",
+      "pass": true,
+      "details": [
+        "rev-parse",
+        "HEAD"
+      ]
+    },
+    {
+      "name": "exact HEAD",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "git command completed",
+      "pass": true,
+      "details": [
+        "rev-parse",
+        "HEAD^"
+      ]
+    },
+    {
+      "name": "exact parent",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "git command completed",
+      "pass": true,
+      "details": [
+        "rev-parse",
+        "d15865167b4e3c454e398bd498d9d681103096f7^"
+      ]
+    },
+    {
+      "name": "protocol parent",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "git command completed",
+      "pass": true,
+      "details": [
+        "branch",
+        "--show-current"
+      ]
+    },
+    {
+      "name": "named branch",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "git command completed",
+      "pass": true,
+      "details": [
+        "status",
+        "--porcelain"
+      ]
+    },
+    {
+      "name": "clean worktree",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "git command completed",
+      "pass": true,
+      "details": [
+        "rev-parse",
+        "@{upstream}"
+      ]
+    },
+    {
+      "name": "upstream matches",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "git command completed",
+      "pass": true,
+      "details": [
+        "merge-base",
+        "--is-ancestor",
+        "d15865167b4e3c454e398bd498d9d681103096f7",
+        "24c00fc44e4d9d57adacd1e636e9e2d20d86a954"
+      ]
+    },
+    {
+      "name": "git command completed",
+      "pass": true,
+      "details": [
+        "hash-object",
+        "docs/p0a0_hebrew_projection_source_identity_and_synthetic_pilot_protocol_v0.9.md"
+      ]
+    },
+    {
+      "name": "protocol blob",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "protocol SHA256",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "git command completed",
+      "pass": true,
+      "details": [
+        "diff",
+        "d15865167b4e3c454e398bd498d9d681103096f7",
+        "24c00fc44e4d9d57adacd1e636e9e2d20d86a954",
+        "--",
+        "docs/p0a0_hebrew_projection_source_identity_and_synthetic_pilot_protocol_v0.9.md"
+      ]
+    },
+    {
+      "name": "protocol unchanged at implementation freeze",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "manifest committed bytes",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "safe manifest path",
+      "pass": true,
+      "details": "docs/v0_9/p0a0_human_freeze_commands.sh"
+    },
+    {
+      "name": "manifest hash and length",
+      "pass": true,
+      "details": "docs/v0_9/p0a0_human_freeze_commands.sh"
+    },
+    {
+      "name": "artifact committed bytes",
+      "pass": true,
+      "details": "docs/v0_9/p0a0_human_freeze_commands.sh"
+    },
+    {
+      "name": "safe manifest path",
+      "pass": true,
+      "details": "docs/v0_9/p0a0_implementation_specification.md"
+    },
+    {
+      "name": "manifest hash and length",
+      "pass": true,
+      "details": "docs/v0_9/p0a0_implementation_specification.md"
+    },
+    {
+      "name": "artifact committed bytes",
+      "pass": true,
+      "details": "docs/v0_9/p0a0_implementation_specification.md"
+    },
+    {
+      "name": "safe manifest path",
+      "pass": true,
+      "details": "registered_pilots/p0a0/cases.py"
+    },
+    {
+      "name": "manifest hash and length",
+      "pass": true,
+      "details": "registered_pilots/p0a0/cases.py"
+    },
+    {
+      "name": "artifact committed bytes",
+      "pass": true,
+      "details": "registered_pilots/p0a0/cases.py"
+    },
+    {
+      "name": "safe manifest path",
+      "pass": true,
+      "details": "registered_pilots/p0a0/fixture_config.json"
+    },
+    {
+      "name": "manifest hash and length",
+      "pass": true,
+      "details": "registered_pilots/p0a0/fixture_config.json"
+    },
+    {
+      "name": "artifact committed bytes",
+      "pass": true,
+      "details": "registered_pilots/p0a0/fixture_config.json"
+    },
+    {
+      "name": "safe manifest path",
+      "pass": true,
+      "details": "registered_pilots/p0a0/fixtures.py"
+    },
+    {
+      "name": "manifest hash and length",
+      "pass": true,
+      "details": "registered_pilots/p0a0/fixtures.py"
+    },
+    {
+      "name": "artifact committed bytes",
+      "pass": true,
+      "details": "registered_pilots/p0a0/fixtures.py"
+    },
+    {
+      "name": "safe manifest path",
+      "pass": true,
+      "details": "scripts/p0a0_registered_pilot.py"
+    },
+    {
+      "name": "manifest hash and length",
+      "pass": true,
+      "details": "scripts/p0a0_registered_pilot.py"
+    },
+    {
+      "name": "artifact committed bytes",
+      "pass": true,
+      "details": "scripts/p0a0_registered_pilot.py"
+    },
+    {
+      "name": "safe manifest path",
+      "pass": true,
+      "details": "src/meru_geometry/p0a0/__init__.py"
+    },
+    {
+      "name": "manifest hash and length",
+      "pass": true,
+      "details": "src/meru_geometry/p0a0/__init__.py"
+    },
+    {
+      "name": "artifact committed bytes",
+      "pass": true,
+      "details": "src/meru_geometry/p0a0/__init__.py"
+    },
+    {
+      "name": "safe manifest path",
+      "pass": true,
+      "details": "src/meru_geometry/p0a0/boundaries.py"
+    },
+    {
+      "name": "manifest hash and length",
+      "pass": true,
+      "details": "src/meru_geometry/p0a0/boundaries.py"
+    },
+    {
+      "name": "artifact committed bytes",
+      "pass": true,
+      "details": "src/meru_geometry/p0a0/boundaries.py"
+    },
+    {
+      "name": "safe manifest path",
+      "pass": true,
+      "details": "src/meru_geometry/p0a0/engineering.py"
+    },
+    {
+      "name": "manifest hash and length",
+      "pass": true,
+      "details": "src/meru_geometry/p0a0/engineering.py"
+    },
+    {
+      "name": "artifact committed bytes",
+      "pass": true,
+      "details": "src/meru_geometry/p0a0/engineering.py"
+    },
+    {
+      "name": "safe manifest path",
+      "pass": true,
+      "details": "src/meru_geometry/p0a0/oracles.py"
+    },
+    {
+      "name": "manifest hash and length",
+      "pass": true,
+      "details": "src/meru_geometry/p0a0/oracles.py"
+    },
+    {
+      "name": "artifact committed bytes",
+      "pass": true,
+      "details": "src/meru_geometry/p0a0/oracles.py"
+    },
+    {
+      "name": "safe manifest path",
+      "pass": true,
+      "details": "tests/test_p0a0_dev.py"
+    },
+    {
+      "name": "manifest hash and length",
+      "pass": true,
+      "details": "tests/test_p0a0_dev.py"
+    },
+    {
+      "name": "artifact committed bytes",
+      "pass": true,
+      "details": "tests/test_p0a0_dev.py"
+    },
+    {
+      "name": "safe manifest path",
+      "pass": true,
+      "details": "tests/test_p0a0_qc_boundaries_dev.py"
+    },
+    {
+      "name": "manifest hash and length",
+      "pass": true,
+      "details": "tests/test_p0a0_qc_boundaries_dev.py"
+    },
+    {
+      "name": "artifact committed bytes",
+      "pass": true,
+      "details": "tests/test_p0a0_qc_boundaries_dev.py"
+    },
+    {
+      "name": "git command completed",
+      "pass": true,
+      "details": [
+        "diff",
+        "--exit-code"
+      ]
+    },
+    {
+      "name": "git command completed",
+      "pass": true,
+      "details": [
+        "diff",
+        "--cached",
+        "--exit-code"
+      ]
+    },
+    {
+      "name": "tracked content and index unchanged",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "git command completed",
+      "pass": true,
+      "details": [
+        "ls-files",
+        "-z"
+      ]
+    },
+    {
+      "name": "unique A09 row",
+      "pass": true,
+      "details": "references/key_geometric_assets.csv"
+    },
+    {
+      "name": "A09 frozen identity",
+      "pass": true,
+      "details": "references/key_geometric_assets.csv"
+    },
+    {
+      "name": "unique A09 row",
+      "pass": true,
+      "details": "references/geometric_asset_snapshot_manifest.csv"
+    },
+    {
+      "name": "A09 frozen identity",
+      "pass": true,
+      "details": "references/geometric_asset_snapshot_manifest.csv"
+    },
+    {
+      "name": "A09 absence retained",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "output path absent",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "normal Python mode",
+      "pass": true,
+      "details": null
+    },
+    {
+      "name": "frozen numerical dependency version",
+      "pass": true,
+      "details": "numpy"
+    },
+    {
+      "name": "frozen numerical dependency version",
+      "pass": true,
+      "details": "scipy"
+    }
+  ],
+  "status": "PASS",
+  "manifest_sha256": "07a7e530f9bb3dc2005dc9ff5d158f95f1f6bc2b6fe7872d973e1a5198215fd0",
+  "manifest_artifacts": [
+    {
+      "path": "docs/v0_9/p0a0_human_freeze_commands.sh",
+      "expected_sha256": "ed9821da1882056951bb905c496653ae0fb430701978c99327855f0c17d5ea11",
+      "actual_sha256": "ed9821da1882056951bb905c496653ae0fb430701978c99327855f0c17d5ea11",
+      "bytes": 3884,
+      "git_blob": "02e2e4fea79b6750505a3c3b07012b460922d2f1"
+    },
+    {
+      "path": "docs/v0_9/p0a0_implementation_specification.md",
+      "expected_sha256": "e4b0008c1114a410876b5a573bad93a6961dec6dd96687af9941b0674e993ae2",
+      "actual_sha256": "e4b0008c1114a410876b5a573bad93a6961dec6dd96687af9941b0674e993ae2",
+      "bytes": 12065,
+      "git_blob": "18570f24f68b7dcd7de8bb94e767c3024886b57f"
+    },
+    {
+      "path": "registered_pilots/p0a0/cases.py",
+      "expected_sha256": "22171fbd5cf090c0f3e36e1aa0757eed4a51844c994d5fb3e1ee1c7616e10846",
+      "actual_sha256": "22171fbd5cf090c0f3e36e1aa0757eed4a51844c994d5fb3e1ee1c7616e10846",
+      "bytes": 14859,
+      "git_blob": "138407ec697b814ed25c55d4afd206059909fd91"
+    },
+    {
+      "path": "registered_pilots/p0a0/fixture_config.json",
+      "expected_sha256": "6d474c88a43d4a1c95bc1978e88fda2810d0af1791ef6dffa7c5fde92bfa6c42",
+      "actual_sha256": "6d474c88a43d4a1c95bc1978e88fda2810d0af1791ef6dffa7c5fde92bfa6c42",
+      "bytes": 3683,
+      "git_blob": "08b723be04f4122e2bdaea542986ab5d0726892a"
+    },
+    {
+      "path": "registered_pilots/p0a0/fixtures.py",
+      "expected_sha256": "5e190bee624001d6f30f6bfece51f003ea2293f23bc481100ab79e99cf044582",
+      "actual_sha256": "5e190bee624001d6f30f6bfece51f003ea2293f23bc481100ab79e99cf044582",
+      "bytes": 1082,
+      "git_blob": "5bbf93f0e1486aed4921c78f136f21e4684ceece"
+    },
+    {
+      "path": "scripts/p0a0_registered_pilot.py",
+      "expected_sha256": "f66c2f0bd0d1b9c8e4e5bae720ea993172fe8de36d33f165f83b1775e40524b1",
+      "actual_sha256": "f66c2f0bd0d1b9c8e4e5bae720ea993172fe8de36d33f165f83b1775e40524b1",
+      "bytes": 4994,
+      "git_blob": "57b65e42514789fb4cbda39e2f2be7535af5f6bd"
+    },
+    {
+      "path": "src/meru_geometry/p0a0/__init__.py",
+      "expected_sha256": "e8b7c82610b75247a7e72a25d9f32dfcd1b3f6c7b0da928292d3da7e934071d9",
+      "actual_sha256": "e8b7c82610b75247a7e72a25d9f32dfcd1b3f6c7b0da928292d3da7e934071d9",
+      "bytes": 115,
+      "git_blob": "bc1a64d8cb74c40e89448ae4332111b5bbd00020"
+    },
+    {
+      "path": "src/meru_geometry/p0a0/boundaries.py",
+      "expected_sha256": "d30e08de0eea5a20a7d15b64865654f592a27bf0773beb6bcd649807c4e6e3e1",
+      "actual_sha256": "d30e08de0eea5a20a7d15b64865654f592a27bf0773beb6bcd649807c4e6e3e1",
+      "bytes": 1351,
+      "git_blob": "c32e76ff08a0e61afda91ebe331fdfa03df0313b"
+    },
+    {
+      "path": "src/meru_geometry/p0a0/engineering.py",
+      "expected_sha256": "13ced7dd7eb730e3de0c224b00b80f31d47bda1c86e300c21289ea895e52d78d",
+      "actual_sha256": "13ced7dd7eb730e3de0c224b00b80f31d47bda1c86e300c21289ea895e52d78d",
+      "bytes": 9504,
+      "git_blob": "93ad6a1c9ce5bfc906c0cd1a26232ca310384a0a"
+    },
+    {
+      "path": "src/meru_geometry/p0a0/oracles.py",
+      "expected_sha256": "baf3417e5df28ac240901d7de7a1cb661d02ea31608cbaefadc938dda58adaa1",
+      "actual_sha256": "baf3417e5df28ac240901d7de7a1cb661d02ea31608cbaefadc938dda58adaa1",
+      "bytes": 3195,
+      "git_blob": "43f24d4fe316d01a0e1ec8287a2df2ecddea04bc"
+    },
+    {
+      "path": "tests/test_p0a0_dev.py",
+      "expected_sha256": "f59029584d21b74bc9118528c673b6ea896fabfba8c77b59f27ca95c44b194e8",
+      "actual_sha256": "f59029584d21b74bc9118528c673b6ea896fabfba8c77b59f27ca95c44b194e8",
+      "bytes": 3759,
+      "git_blob": "ec5e995c8c965043b0484ab37a081280036ab3e7"
+    },
+    {
+      "path": "tests/test_p0a0_qc_boundaries_dev.py",
+      "expected_sha256": "3908339b9d499401b66f4c706bb0fba7f57ad1b3cf730421a471cca3921a5017",
+      "actual_sha256": "3908339b9d499401b66f4c706bb0fba7f57ad1b3cf730421a471cca3921a5017",
+      "bytes": 5955,
+      "git_blob": "54535b15d0710aea51090732afaed306499e782a"
+    }
+  ],
+  "tracked_paths_count": 508,
+  "a09_metadata": [
+    {
+      "path": "references/key_geometric_assets.csv",
+      "checked_fields": {
+        "asset_id": "A09",
+        "related_source": "S06",
+        "title": "First Hand Hebrew chart",
+        "source_page": "https://www.meru.org/Gestures/Alphachart.html",
+        "url": "https://www.meru.org/Gestures/frsthand873.jpg",
+        "commit_policy": "Local snapshot only; metadata committed"
+      },
+      "rows": 1
+    },
+    {
+      "path": "references/geometric_asset_snapshot_manifest.csv",
+      "checked_fields": {
+        "asset_id": "A09",
+        "related_source": "S06",
+        "title": "First Hand Hebrew chart",
+        "source_page": "https://www.meru.org/Gestures/Alphachart.html",
+        "requested_url": "https://www.meru.org/Gestures/frsthand873.jpg",
+        "final_url": "https://www.meru.org/Gestures/frsthand873.jpg",
+        "retrieved_utc": "2026-07-26T13:43:53+00:00",
+        "format": "JPEG",
+        "mode": "RGB",
+        "width_px": "826",
+        "height_px": "787",
+        "bytes": "542620",
+        "sha256": "a091cbe95b9042cddb93bb5a57a07b406d5d1a6053e481faf2746b38a22dab68",
+        "local_path": "data/raw/geometric_assets/A09_frsthand873.jpg"
+      },
+      "rows": 1
+    }
+  ],
+  "a09_raw_status": "A09_SNAPSHOT_NOT_LOCALLY_PRESENT",
+  "a09_actual_bytes_hashed": false,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "architecture": "x86_64",
+    "optimize": 0,
+    "PYTHONOPTIMIZE": null,
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "numpy_path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/__init__.py",
+    "scipy_path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy/__init__.py"
+  },
+  "non_evaluating_imports": [
+    "numpy",
+    "scipy",
+    "scipy.optimize.minimize_scalar"
+  ],
+  "inherited_evidence": {
+    "reports/v0_9/p0a0_implementation/amendment_controlled_regressions.log": {
+      "sha256": "d26227c0db698b33c96f8d5243aa18022d6291d9fbb5c9f76d010f2508c94bbd",
+      "bytes": 1475,
+      "text": "........................................................................ [  5%]\n........................................................................ [ 11%]\n........................................................................ [ 16%]\n........................................................................ [ 22%]\n........................................................................ [ 28%]\n........................................................................ [ 33%]\n........................................................................ [ 39%]\n........................................................................ [ 44%]\n........................................................................ [ 50%]\n........................................................................ [ 56%]\n........................................................................ [ 61%]\n........................................................................ [ 67%]\n........................................................................ [ 73%]\n........................................................................ [ 78%]\n........................................................................ [ 84%]\n........................................................................ [ 89%]\n........................................................................ [ 95%]\n.........................................................                [100%]\n1281 passed, 2 deselected in 7.50s\n"
+    },
+    "reports/v0_9/p0a0_implementation/amendment_dev_checks.log": {
+      "sha256": "c5a75fa1a4bb27a365319555e92dbae4683403443b01452195b8bbe007b6b5ad",
+      "bytes": 35,
+      "text": "..................................."
+    },
+    "reports/v0_9/p0a0_implementation/inherited_baseline_after_pytest_install.log": {
+      "sha256": "928ee7a734987d08e1f753e80776cbad9b9e2929499b3b614924a227dc852044",
+      "bytes": 3486,
+      "text": "........................................................................ [  5%]\n........................................................................ [ 11%]\n........................F............................................... [ 17%]\n........................................................................ [ 23%]\n........................................................................ [ 29%]\n........................................................................ [ 35%]\n........................................................................ [ 41%]\n........................................................................ [ 47%]\n........................................................................ [ 52%]\n........................................................................ [ 58%]\n........................................................................ [ 64%]\n........................................................................ [ 70%]\n........................................................................ [ 76%]\n........................................................................ [ 82%]\n........................................................................ [ 88%]\n........................................................................ [ 94%]\n.......................................................................  [100%]\n=================================== FAILURES ===================================\n_______________ test_overlay_renders_from_verified_prepared_crop _______________\n\ntmp_path = PosixPath('/tmp/pytest-of-root/pytest-0/test_overlay_renders_from_veri0')\n\n    def test_overlay_renders_from_verified_prepared_crop(\n        tmp_path: Path,\n    ) -> None:\n        \"\"\"The full overlay path must use the verified crop manifest.\"\"\"\n        module = load_module()\n    \n        analysis, rows, _ = (\n            module.build_expanded_analysis()\n        )\n    \n        output_path = (\n            tmp_path\n            / \"expanded_neutral_overlay.png\"\n        )\n    \n>       module.write_overlay(\n            output_path,\n            analysis,\n            rows,\n        )\n\ntests/test_first_hand_expanded_neutral_geometry_audit.py:322: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nscripts/audit_first_hand_expanded_neutral_geometry.py:1384: in write_overlay\n    verified_image = digitizer.verify_crop(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ncrop = CropSpec(crop_id='AOG_P07_SPHERICAL_PROJECTION', source_page=7, output_path=PosixPath('/workspace/scratch/255e4cd6766b...906f6', pixel_sha256='afb1df2172f081fa426f2f86c56912079116f6441ba64df367861d00375fddc4', width_px=2110, height_px=1260)\n\n    def verify_crop(crop: CropSpec) -> Image.Image:\n        \"\"\"Verify one prepared crop and return canonical RGB pixels.\"\"\"\n        if not crop.output_path.exists():\n>           raise RuntimeError(\n                f\"Prepared crop is missing: {crop.output_path}\"\n            )\nE           RuntimeError: Prepared crop is missing: /workspace/scratch/255e4cd6766b/meru-geometry-audit/data/source_snapshots/first_hand_arm_of_god/prepared/aog_p07_spherical_projection.png\n\nscripts/digitize_first_hand_diagram_landmarks.py:216: RuntimeError\n=========================== short test summary info ============================\nFAILED tests/test_first_hand_expanded_neutral_geometry_audit.py::test_overlay_renders_from_verified_prepared_crop\n1 failed, 1222 passed, 1 deselected in 7.79s\n"
+    }
+  }
+}

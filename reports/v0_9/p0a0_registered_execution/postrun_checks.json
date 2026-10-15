@@ -1,0 +1,73 @@
+{
+  "utc": "2026-10-15T11:42:26.413162+00:00",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--exit-code"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--exit-code"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "24c00fc44e4d9d57adacd1e636e9e2d20d86a954\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "hash-object",
+        "docs/p0a0_hebrew_projection_source_identity_and_synthetic_pilot_protocol_v0.9.md"
+      ],
+      "returncode": 0,
+      "stdout": "0f8b663bfe2432685c9320a00c80fd6bcf436e38\n",
+      "stderr": ""
+    }
+  ],
+  "manifest_files_unchanged": [
+    "docs/v0_9/p0a0_human_freeze_commands.sh",
+    "docs/v0_9/p0a0_implementation_specification.md",
+    "registered_pilots/p0a0/cases.py",
+    "registered_pilots/p0a0/fixture_config.json",
+    "registered_pilots/p0a0/fixtures.py",
+    "scripts/p0a0_registered_pilot.py",
+    "src/meru_geometry/p0a0/__init__.py",
+    "src/meru_geometry/p0a0/boundaries.py",
+    "src/meru_geometry/p0a0/engineering.py",
+    "src/meru_geometry/p0a0/oracles.py",
+    "tests/test_p0a0_dev.py",
+    "tests/test_p0a0_qc_boundaries_dev.py"
+  ],
+  "FROZEN_PROTOCOL_AND_IMPLEMENTATION_UNCHANGED": true,
+  "NO_COMMIT_NO_PUSH": true,
+  "NO_HEBREW_TARGET_ANALYSIS_PERFORMED": true
+}

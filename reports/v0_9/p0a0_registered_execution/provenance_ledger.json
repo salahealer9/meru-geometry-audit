@@ -1,0 +1,196 @@
+{
+  "repository": "https://github.com/salahealer9/meru-geometry-audit",
+  "branch": "hebrew-projection-capacity-v0.9",
+  "freeze_commit": "24c00fc44e4d9d57adacd1e636e9e2d20d86a954",
+  "protocol_commit": "d15865167b4e3c454e398bd498d9d681103096f7",
+  "references": [
+    {
+      "path": "docs/p0a0_hebrew_projection_source_identity_and_synthetic_pilot_protocol_v0.9.md",
+      "git_blob": "0f8b663bfe2432685c9320a00c80fd6bcf436e38",
+      "sha256": "afee667eb578e329e80b8d28dc071ebebab3ae75a2e053b1f67d2c68f037743b",
+      "bytes": 24412,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "docs/v0_9/p0a0_human_freeze_commands.sh",
+      "git_blob": "02e2e4fea79b6750505a3c3b07012b460922d2f1",
+      "sha256": "ed9821da1882056951bb905c496653ae0fb430701978c99327855f0c17d5ea11",
+      "bytes": 3884,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "docs/v0_9/p0a0_implementation_specification.md",
+      "git_blob": "18570f24f68b7dcd7de8bb94e767c3024886b57f",
+      "sha256": "e4b0008c1114a410876b5a573bad93a6961dec6dd96687af9941b0674e993ae2",
+      "bytes": 12065,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "pyproject.toml",
+      "git_blob": "282c42c7c2749c6166ca94c508153dcea7488a63",
+      "sha256": "e8daa3a6efe900475076afd60ae96a0795ebd28fcef37e07629c756516b7f519",
+      "bytes": 626,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "references/geometric_asset_snapshot_manifest.csv",
+      "git_blob": "f35b08a623a0dfa9b3e24835774a2779a247a420",
+      "sha256": "f6bfcc9872f97ec90a7154ef9a6a32288a03314b93782b27d367a75adcfaab71",
+      "bytes": 3851,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "references/key_geometric_assets.csv",
+      "git_blob": "c65d08e70274c0e6ae5fde874f65abdc27f38b63",
+      "sha256": "8d8ff6b149a2cab4cb892ae59af16ca9b063880d702d36c393a914d9c7877097",
+      "bytes": 2357,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "registered_pilots/p0a0/cases.py",
+      "git_blob": "138407ec697b814ed25c55d4afd206059909fd91",
+      "sha256": "22171fbd5cf090c0f3e36e1aa0757eed4a51844c994d5fb3e1ee1c7616e10846",
+      "bytes": 14859,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "registered_pilots/p0a0/fixture_config.json",
+      "git_blob": "08b723be04f4122e2bdaea542986ab5d0726892a",
+      "sha256": "6d474c88a43d4a1c95bc1978e88fda2810d0af1791ef6dffa7c5fde92bfa6c42",
+      "bytes": 3683,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "registered_pilots/p0a0/fixtures.py",
+      "git_blob": "5bbf93f0e1486aed4921c78f136f21e4684ceece",
+      "sha256": "5e190bee624001d6f30f6bfece51f003ea2293f23bc481100ab79e99cf044582",
+      "bytes": 1082,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "registered_pilots/p0a0/implementation_manifest.json",
+      "git_blob": "757e141c57fea614f3c04b041a018ab7387e48d7",
+      "sha256": "07a7e530f9bb3dc2005dc9ff5d158f95f1f6bc2b6fe7872d973e1a5198215fd0",
+      "bytes": 9684,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "reports/v0_9/p0a0_implementation/AMENDMENT_QC.md",
+      "git_blob": "ef3513b2913806d811d97fae30baa1e8746607a9",
+      "sha256": "927d7f1c615b6ef0eae7bbef897a056580d96a625d8d63b3d22d8e7c872e8a24",
+      "bytes": 5741,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "reports/v0_9/p0a0_implementation/amendment_controlled_regressions.log",
+      "git_blob": "660b8f11dc963e1c4786da6c80e19ea2be7599ce",
+      "sha256": "d26227c0db698b33c96f8d5243aa18022d6291d9fbb5c9f76d010f2508c94bbd",
+      "bytes": 1475,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "reports/v0_9/p0a0_implementation/amendment_dev_checks.log",
+      "git_blob": "81e6a57310bb9e1a3dee426896c9c1ce8afdd556",
+      "sha256": "c5a75fa1a4bb27a365319555e92dbae4683403443b01452195b8bbe007b6b5ad",
+      "bytes": 35,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "reports/v0_9/p0a0_implementation/inherited_baseline_after_pytest_install.log",
+      "git_blob": "4488a3d42f9a40c25b5e61d77bbe678c211db085",
+      "sha256": "928ee7a734987d08e1f753e80776cbad9b9e2929499b3b614924a227dc852044",
+      "bytes": 3486,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "scripts/p0a0_registered_pilot.py",
+      "git_blob": "57b65e42514789fb4cbda39e2f2be7535af5f6bd",
+      "sha256": "f66c2f0bd0d1b9c8e4e5bae720ea993172fe8de36d33f165f83b1775e40524b1",
+      "bytes": 4994,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "src/meru_geometry/__init__.py",
+      "git_blob": "0c836cfa1b6a6d9f34c704b35839584e71e0ef7b",
+      "sha256": "2f0055c7c7a50580905681c3b430e51d04581a0f508bb9f5ee088af214737360",
+      "bytes": 1755,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "src/meru_geometry/p0a0/__init__.py",
+      "git_blob": "bc1a64d8cb74c40e89448ae4332111b5bbd00020",
+      "sha256": "e8b7c82610b75247a7e72a25d9f32dfcd1b3f6c7b0da928292d3da7e934071d9",
+      "bytes": 115,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "src/meru_geometry/p0a0/boundaries.py",
+      "git_blob": "c32e76ff08a0e61afda91ebe331fdfa03df0313b",
+      "sha256": "d30e08de0eea5a20a7d15b64865654f592a27bf0773beb6bcd649807c4e6e3e1",
+      "bytes": 1351,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "src/meru_geometry/p0a0/engineering.py",
+      "git_blob": "93ad6a1c9ce5bfc906c0cd1a26232ca310384a0a",
+      "sha256": "13ced7dd7eb730e3de0c224b00b80f31d47bda1c86e300c21289ea895e52d78d",
+      "bytes": 9504,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "src/meru_geometry/p0a0/oracles.py",
+      "git_blob": "43f24d4fe316d01a0e1ec8287a2df2ecddea04bc",
+      "sha256": "baf3417e5df28ac240901d7de7a1cb661d02ea31608cbaefadc938dda58adaa1",
+      "bytes": 3195,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "src/meru_geometry/projection_orbits.py",
+      "git_blob": "c5dc04bced7a2966d435ce0d72ab3a5295a9652d",
+      "sha256": "2c0a8fea5d4e17fd51fed3918b3deba5c9a110d40f8e71850ded7ab65f479c44",
+      "bytes": 14112,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "src/meru_geometry/projections.py",
+      "git_blob": "166e80552cf7455dc44cab1d514629d6baa5e4ec",
+      "sha256": "b123c3ef225572711de231f113d164b8f6f7fc8d15eda533170b0b48bcd368a0",
+      "bytes": 2145,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "src/meru_geometry/rotations.py",
+      "git_blob": "5c13be90e6fccf629ec17171871046ab592da147",
+      "sha256": "10c0d5585edd86ffb478ee1f4dd4a9bce2327058c06c34fa52e1e5bdc6aeb77f",
+      "bytes": 4504,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "src/meru_geometry/tetrahedron.py",
+      "git_blob": "4f9e31909230a48d57728eda24890774c52c6f69",
+      "sha256": "c721c1a50e9076b33d974038d9482b8ee2d9457ff2eac9d75d13db0103a8a637",
+      "bytes": 2677,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "tests/test_p0a0_dev.py",
+      "git_blob": "ec5e995c8c965043b0484ab37a081280036ab3e7",
+      "sha256": "f59029584d21b74bc9118528c673b6ea896fabfba8c77b59f27ca95c44b194e8",
+      "bytes": 3759,
+      "role": "frozen reference; not redistributed"
+    },
+    {
+      "path": "tests/test_p0a0_qc_boundaries_dev.py",
+      "git_blob": "54535b15d0710aea51090732afaed306499e782a",
+      "sha256": "3908339b9d499401b66f4c706bb0fba7f57ad1b3cf730421a471cca3921a5017",
+      "bytes": 5955,
+      "role": "frozen reference; not redistributed"
+    }
+  ],
+  "execution_authority_handoff": {
+    "filename": "P0A0_REGISTERED_SYNTHETIC_EXECUTION_AGENT_HANDOFF(2).txt",
+    "sha256": "83e10376441ab4ee76da4559341c3a1f22eb6d15f0b44ebe59bc5e7fa5edeba3",
+    "bytes": 8680
+  },
+  "note": "Hashes identify source text/metadata. A09 metadata hash is not independent validation of source image bytes."
+}

@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "python",
+    "scripts/p0a0_registered_pilot.py",
+    "--freeze-commit",
+    "24c00fc44e4d9d57adacd1e636e9e2d20d86a954",
+    "--authorized-synthetic-run",
+    "--output",
+    "../p0a0_registered_pilot_once.jsonl"
+  ],
+  "cwd": "/workspace/scratch/255e4cd6766b/meru-geometry-audit-pilot",
+  "start_utc": "2026-10-15T11:41:40.899646+00:00",
+  "authorized_attempt_number": 1
+}
