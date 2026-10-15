@@ -1,0 +1,595 @@
+{
+  "scope": "P0A1_READ_ONLY_METHODOLOGY_REVIEW_PRE_QC",
+  "recovery_utc": "2026-10-15T16:44:37.010102+00:00",
+  "commits": [
+    {
+      "sha": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "parent": "5148712c07ac48742d3435dc14e01667280f94c3",
+      "tree": "db008bd0ccfeb4a4c9464f97384014c14a5192f5",
+      "commit_hash_verified": true,
+      "signature": {
+        "returncode": 0,
+        "validsig": "[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-10-15 1792067445 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130",
+        "github_verified": true,
+        "command": [
+          "gpg",
+          "--homedir",
+          "/workspace/scratch/255e4cd6766b/p0a1_recovery/gpg",
+          "--batch",
+          "--no-auto-key-retrieve",
+          "--status-fd",
+          "1",
+          "--verify",
+          "/workspace/scratch/255e4cd6766b/p0a1_recovery/input/5b0317f193c481d799e88b494ce370679fec43bc.asc",
+          "/workspace/scratch/255e4cd6766b/p0a1_recovery/input/5b0317f193c481d799e88b494ce370679fec43bc.payload"
+        ]
+      }
+    },
+    {
+      "sha": "5148712c07ac48742d3435dc14e01667280f94c3",
+      "parent": "24c00fc44e4d9d57adacd1e636e9e2d20d86a954",
+      "tree": "ba20f10bf6a0e415e9de191ee918d202d1c56889",
+      "commit_hash_verified": true,
+      "signature": {
+        "returncode": 0,
+        "validsig": "[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-10-15 1792066134 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130",
+        "github_verified": true,
+        "command": [
+          "gpg",
+          "--homedir",
+          "/workspace/scratch/255e4cd6766b/p0a1_recovery/gpg",
+          "--batch",
+          "--no-auto-key-retrieve",
+          "--status-fd",
+          "1",
+          "--verify",
+          "/workspace/scratch/255e4cd6766b/p0a1_recovery/input/5148712c07ac48742d3435dc14e01667280f94c3.asc",
+          "/workspace/scratch/255e4cd6766b/p0a1_recovery/input/5148712c07ac48742d3435dc14e01667280f94c3.payload"
+        ]
+      }
+    },
+    {
+      "sha": "24c00fc44e4d9d57adacd1e636e9e2d20d86a954",
+      "parent": "d15865167b4e3c454e398bd498d9d681103096f7",
+      "tree": "da82a9ee6db6fd93525d18660e67dcab0d51ae5f",
+      "commit_hash_verified": true,
+      "signature": {
+        "returncode": 0,
+        "validsig": "[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-10-14 1791962062 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130",
+        "github_verified": true,
+        "command": [
+          "gpg",
+          "--homedir",
+          "/workspace/scratch/255e4cd6766b/p0a1_recovery/gpg",
+          "--batch",
+          "--no-auto-key-retrieve",
+          "--status-fd",
+          "1",
+          "--verify",
+          "/workspace/scratch/255e4cd6766b/p0a1_recovery/input/24c00fc44e4d9d57adacd1e636e9e2d20d86a954.asc",
+          "/workspace/scratch/255e4cd6766b/p0a1_recovery/input/24c00fc44e4d9d57adacd1e636e9e2d20d86a954.payload"
+        ]
+      }
+    },
+    {
+      "sha": "d15865167b4e3c454e398bd498d9d681103096f7",
+      "parent": "8bf0babfd91bdefb0792e93707fd0b0da1c09767",
+      "tree": "e8e7eb61baf834ce21e57d747358764233a392b8",
+      "commit_hash_verified": true,
+      "signature": {
+        "returncode": 0,
+        "validsig": "[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-10-13 1791896982 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130",
+        "github_verified": true,
+        "command": [
+          "gpg",
+          "--homedir",
+          "/workspace/scratch/255e4cd6766b/p0a1_recovery/gpg",
+          "--batch",
+          "--no-auto-key-retrieve",
+          "--status-fd",
+          "1",
+          "--verify",
+          "/workspace/scratch/255e4cd6766b/p0a1_recovery/input/d15865167b4e3c454e398bd498d9d681103096f7.asc",
+          "/workspace/scratch/255e4cd6766b/p0a1_recovery/input/d15865167b4e3c454e398bd498d9d681103096f7.payload"
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "path": "docs/v0_9/p0a1_post_synthetic_methodology_qualification_protocol.md",
+      "commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "git_blob": "d0a20485e8a2793fae6ede040fc266e461c8f23f",
+      "sha256": "3ac8630623b0877ec08e5ae38d87e89daabd75bcb3502898a074ad5e0941e3cf",
+      "bytes": 34223,
+      "access": "frozen UTF-8 textual record; no linked source images or letter arrays accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a0_registered_execution/RESULTS_FREEZE_CLOSEOUT.md",
+      "commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "git_blob": "c2aac8681c46d35923036fbff1fa3f751c6ed345",
+      "sha256": "658e1bc205f9653861aa7bab23ff52d6ca734e6443969826310e59d3a879f740",
+      "bytes": 5712,
+      "access": "frozen UTF-8 textual record; no linked source images or letter arrays accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a0_registered_execution/CASE_MATRIX.md",
+      "commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "git_blob": "7af007a48a39cad9ace517cdc0bcd0f96f59e336",
+      "sha256": "72ac330541f0c4f2b7143298769be0512dd7dd5fef9af682626f8bda54424d48",
+      "bytes": 5902,
+      "access": "frozen UTF-8 textual record; no linked source images or letter arrays accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a0_registered_execution/ENGINEERING_QC.md",
+      "commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "git_blob": "577139fc0a6ce7dff3a6880ff23af84d7a4889ed",
+      "sha256": "59fd2760fd557770ac86e3155ae3602165be21bbcda538fdf51528614a36a006",
+      "bytes": 11097,
+      "access": "frozen UTF-8 textual record; no linked source images or letter arrays accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a0_registered_execution/P0A0_registered_execution_independent_QC_2026-10-15.md",
+      "commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "git_blob": "ddf14287da4ac6bc7dc4bcbd64cbb068953b7ce4",
+      "sha256": "99870bd9f80fb090ce532347f9639d125ea043322c1dd254214c3bf76f833fdc",
+      "bytes": 10305,
+      "access": "frozen UTF-8 textual record; no linked source images or letter arrays accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a0_registered_execution/p0a0_registered_pilot_once.jsonl",
+      "commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "git_blob": "c5248d2c92c2cf5e075454f62c9cac006549ad44",
+      "sha256": "4b4b27b0d5d9a95ffe864e2d2c83433be0ddd544b6122ebbea294857326817d6",
+      "bytes": 12052,
+      "access": "frozen UTF-8 textual record; no linked source images or letter arrays accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a0_registered_execution/P0A0_registered_execution_independent_verification_2026-10-15.json",
+      "commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "git_blob": "16e97636bb8d9e60980f323991b6bfbfaf9300bc",
+      "sha256": "3237420e3e9be234a400b1a3c523f2fd93411c2fa2f20c6aec142ebf4becb0ec",
+      "bytes": 1634,
+      "access": "frozen UTF-8 textual record; no linked source images or letter arrays accessed"
+    },
+    {
+      "path": "docs/p0a0_hebrew_projection_source_identity_and_synthetic_pilot_protocol_v0.9.md",
+      "commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "git_blob": "0f8b663bfe2432685c9320a00c80fd6bcf436e38",
+      "sha256": "afee667eb578e329e80b8d28dc071ebebab3ae75a2e053b1f67d2c68f037743b",
+      "bytes": 24412,
+      "access": "frozen UTF-8 textual record; no linked source images or letter arrays accessed"
+    },
+    {
+      "path": "docs/v0_9/p0a0_implementation_specification.md",
+      "commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "git_blob": "18570f24f68b7dcd7de8bb94e767c3024886b57f",
+      "sha256": "e4b0008c1114a410876b5a573bad93a6961dec6dd96687af9941b0674e993ae2",
+      "bytes": 12065,
+      "access": "frozen UTF-8 textual record; no linked source images or letter arrays accessed"
+    },
+    {
+      "path": "registered_pilots/p0a0/fixture_config.json",
+      "commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "git_blob": "08b723be04f4122e2bdaea542986ab5d0726892a",
+      "sha256": "6d474c88a43d4a1c95bc1978e88fda2810d0af1791ef6dffa7c5fde92bfa6c42",
+      "bytes": 3683,
+      "access": "frozen UTF-8 textual record; no linked source images or letter arrays accessed"
+    },
+    {
+      "path": "docs/geometry/projection_orbit_results_v0_5.md",
+      "commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "git_blob": "e1e9285550922d4ec6adfec3a25c90d38bb5714b",
+      "sha256": "4fb616035f3cb41e14bf053ef902909bf8a8fe42682e23b39c8c3417d5f9f36b",
+      "bytes": 3186,
+      "access": "frozen UTF-8 textual record; no linked source images or letter arrays accessed"
+    },
+    {
+      "path": "docs/first_hand_construction_source_recovery_closeout_v0.8.md",
+      "commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "git_blob": "76a342c3d5d84687b181d410deec7fdd3ba05502",
+      "sha256": "321affc70be6b0ab4862b4cc46b2f5f311fb86771d4fad11f8d45a2327f4941b",
+      "bytes": 10906,
+      "access": "frozen UTF-8 textual record; no linked source images or letter arrays accessed"
+    },
+    {
+      "path": "references/key_geometric_assets.csv",
+      "commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "git_blob": "c65d08e70274c0e6ae5fde874f65abdc27f38b63",
+      "sha256": "8d8ff6b149a2cab4cb892ae59af16ca9b063880d702d36c393a914d9c7877097",
+      "bytes": 2357,
+      "access": "frozen UTF-8 textual record; no linked source images or letter arrays accessed"
+    },
+    {
+      "path": "references/geometric_asset_snapshot_manifest.csv",
+      "commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "git_blob": "f35b08a623a0dfa9b3e24835774a2779a247a420",
+      "sha256": "f6bfcc9872f97ec90a7154ef9a6a32288a03314b93782b27d367a75adcfaab71",
+      "bytes": 3851,
+      "access": "frozen UTF-8 textual record; no linked source images or letter arrays accessed"
+    },
+    {
+      "path": "docs/first_hand_source_recovery_ledger_v0.8.csv",
+      "commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "git_blob": "adbc2a283607089794b27c61d82bbce8e157aef3",
+      "sha256": "f5c3b103babf9fc422e13bc46dd0635605660aa56574dfcb4cea769e9be548d4",
+      "bytes": 37082,
+      "access": "frozen UTF-8 textual record; no linked source images or letter arrays accessed"
+    },
+    {
+      "path": "docs/first_hand_source_recovery_references_v0.8.csv",
+      "commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "git_blob": "af47e35c6702948831a9c4d2599142520828c70b",
+      "sha256": "28c1dcb66519d7ca1f6b9d1e8baa09b42e9adf392a2978d5c1b35cd52d8f30b6",
+      "bytes": 8773,
+      "access": "frozen UTF-8 textual record; no linked source images or letter arrays accessed"
+    },
+    {
+      "path": "docs/first_hand_source_recovery_report_v0.8.md",
+      "commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "git_blob": "730691a2c46f4289ceb1650a843a5903c9106738",
+      "sha256": "0045611b57da343722a92371befd60fa8a922fb318a7457c2c0eacce50acc7ba",
+      "bytes": 1345,
+      "access": "frozen UTF-8 textual record; no linked source images or letter arrays accessed"
+    },
+    {
+      "path": "data/source_claims/first_hand_arm_of_god_claims.csv",
+      "commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "git_blob": "679c3b39089db00f1276962b7d1773b5dc564272",
+      "sha256": "088ce9af399e06007fb964ed40c82a9daeb5dd46166c47e2528a12f76fc124f9",
+      "bytes": 4052,
+      "access": "frozen UTF-8 textual record; no linked source images or letter arrays accessed"
+    }
+  ],
+  "changes": [
+    {
+      "commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "added": [
+        "docs/v0_9/p0a1_post_synthetic_methodology_qualification_protocol.md"
+      ],
+      "changed": [],
+      "removed": []
+    },
+    {
+      "commit": "5148712c07ac48742d3435dc14e01667280f94c3",
+      "added": [
+        "reports/v0_9/p0a0_registered_execution/CASE_MATRIX.md",
+        "reports/v0_9/p0a0_registered_execution/ENGINEERING_QC.md",
+        "reports/v0_9/p0a0_registered_execution/EXECUTION_TRANSCRIPT.md",
+        "reports/v0_9/p0a0_registered_execution/FREEZE_MANIFEST.sha256",
+        "reports/v0_9/p0a0_registered_execution/P0A0_registered_execution_independent_QC_2026-10-15.md",
+        "reports/v0_9/p0a0_registered_execution/P0A0_registered_execution_independent_verification_2026-10-15.json",
+        "reports/v0_9/p0a0_registered_execution/PACKAGE_INVENTORY.json",
+        "reports/v0_9/p0a0_registered_execution/RESULTS_FREEZE_CLOSEOUT.md",
+        "reports/v0_9/p0a0_registered_execution/SHA256SUMS",
+        "reports/v0_9/p0a0_registered_execution/environment.json",
+        "reports/v0_9/p0a0_registered_execution/original_execution_package.zip",
+        "reports/v0_9/p0a0_registered_execution/p0a0_registered_pilot_once.jsonl",
+        "reports/v0_9/p0a0_registered_execution/postrun_checks.json",
+        "reports/v0_9/p0a0_registered_execution/preflight.json",
+        "reports/v0_9/p0a0_registered_execution/provenance_ledger.json",
+        "reports/v0_9/p0a0_registered_execution/result_inventory.json",
+        "reports/v0_9/p0a0_registered_execution/runner_attempt.json",
+        "reports/v0_9/p0a0_registered_execution/runner_completion.json",
+        "reports/v0_9/p0a0_registered_execution/runner_stderr.txt",
+        "reports/v0_9/p0a0_registered_execution/runner_stdout.txt",
+        "reports/v0_9/p0a0_registered_execution/signature_setup.json"
+      ],
+      "changed": [],
+      "removed": []
+    },
+    {
+      "commit": "24c00fc44e4d9d57adacd1e636e9e2d20d86a954",
+      "added": [
+        "docs/v0_9/p0a0_human_freeze_commands.sh",
+        "docs/v0_9/p0a0_implementation_specification.md",
+        "registered_pilots/p0a0/cases.py",
+        "registered_pilots/p0a0/fixture_config.json",
+        "registered_pilots/p0a0/fixtures.py",
+        "registered_pilots/p0a0/implementation_manifest.json",
+        "reports/v0_9/p0a0_implementation/AMENDMENT_QC.md",
+        "reports/v0_9/p0a0_implementation/QC_README.md",
+        "reports/v0_9/p0a0_implementation/amendment_changes.json",
+        "reports/v0_9/p0a0_implementation/amendment_controlled_regressions.log",
+        "reports/v0_9/p0a0_implementation/amendment_dev_checks.log",
+        "reports/v0_9/p0a0_implementation/amendment_environment.json",
+        "reports/v0_9/p0a0_implementation/amendment_source.diff",
+        "reports/v0_9/p0a0_implementation/amendment_static_preservation_checks.json",
+        "reports/v0_9/p0a0_implementation/changed_paths.txt",
+        "reports/v0_9/p0a0_implementation/collection.log",
+        "reports/v0_9/p0a0_implementation/dev_checks.log",
+        "reports/v0_9/p0a0_implementation/dev_checks_final.log",
+        "reports/v0_9/p0a0_implementation/environment.json",
+        "reports/v0_9/p0a0_implementation/inherited_baseline.log",
+        "reports/v0_9/p0a0_implementation/inherited_baseline_after_pytest_install.log",
+        "reports/v0_9/p0a0_implementation/integrity.json",
+        "reports/v0_9/p0a0_implementation/pip_freeze.txt",
+        "reports/v0_9/p0a0_implementation/static_checks.json",
+        "scripts/p0a0_registered_pilot.py",
+        "src/meru_geometry/p0a0/__init__.py",
+        "src/meru_geometry/p0a0/boundaries.py",
+        "src/meru_geometry/p0a0/engineering.py",
+        "src/meru_geometry/p0a0/oracles.py",
+        "tests/test_p0a0_dev.py",
+        "tests/test_p0a0_qc_boundaries_dev.py"
+      ],
+      "changed": [],
+      "removed": []
+    }
+  ],
+  "v0_8_tag": {
+    "object": "12afd9f9d1cb4a9d000c0fd9555419f0383978e9",
+    "commit": "85748bff0bfae383afcc0d885f4aec505a2885dd",
+    "signature": {
+      "returncode": 0,
+      "validsig": "[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-08-04 1785879905 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130",
+      "github_verified": true,
+      "command": [
+        "gpg",
+        "--homedir",
+        "/workspace/scratch/255e4cd6766b/p0a1_recovery/gpg",
+        "--batch",
+        "--no-auto-key-retrieve",
+        "--status-fd",
+        "1",
+        "--verify",
+        "/workspace/scratch/255e4cd6766b/p0a1_recovery/input/v0_8_tag.asc",
+        "/workspace/scratch/255e4cd6766b/p0a1_recovery/input/v0_8_tag.payload"
+      ]
+    }
+  },
+  "v0_8_ancestry": {
+    "github_compare_status": "ahead",
+    "merge_base": "85748bff0bfae383afcc0d885f4aec505a2885dd",
+    "pre_p0a0_parent": "8bf0babfd91bdefb0792e93707fd0b0da1c09767",
+    "prior_session_local_merge_base_exit": 0
+  },
+  "remote_branch": {
+    "name": "hebrew-projection-capacity-v0.9",
+    "sha": "5b0317f193c481d799e88b494ce370679fec43bc"
+  },
+  "raw_results": {
+    "sha256": "4b4b27b0d5d9a95ffe864e2d2c83433be0ddd544b6122ebbea294857326817d6",
+    "bytes": 12052,
+    "records": 14,
+    "ordered_cases": [
+      "S00",
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06",
+      "S07",
+      "S08",
+      "S09",
+      "S10",
+      "S11",
+      "S12"
+    ],
+    "states": {
+      "PASS": 5,
+      "EXPECTED_BLIND_SPOT": 8,
+      "FAIL": 0,
+      "NOT_EVALUABLE": 0
+    },
+    "header": {
+      "freeze_commit": "24c00fc44e4d9d57adacd1e636e9e2d20d86a954",
+      "implementation_manifest_sha256": "07a7e530f9bb3dc2005dc9ff5d158f95f1f6bc2b6fe7872d973e1a5198215fd0",
+      "no_hebrew_inputs": true,
+      "scope": "SYNTHETIC_ONLY",
+      "type": "run_boundary"
+    },
+    "recomputed_scores": false
+  },
+  "original_execution_zip": {
+    "sha256": "5c1b371ddaa2803430705a87f6cba748f3f3cd929749f596a55e1cd53a387295",
+    "bytes": 30513,
+    "git_blob": "ac04fd931408fc470c1a2983380771021bea3c42"
+  },
+  "A09_metadata": {
+    "key_geometric_assets.csv": {
+      "asset_id": "A09",
+      "related_source": "S06",
+      "title": "First Hand Hebrew chart",
+      "url": "https://www.meru.org/Gestures/frsthand873.jpg",
+      "source_page": "https://www.meru.org/Gestures/Alphachart.html",
+      "research_role": "Later hand-shadowgram and letter correspondence chart",
+      "commit_policy": "Local snapshot only; metadata committed"
+    },
+    "geometric_asset_snapshot_manifest.csv": {
+      "asset_id": "A09",
+      "related_source": "S06",
+      "title": "First Hand Hebrew chart",
+      "requested_url": "https://www.meru.org/Gestures/frsthand873.jpg",
+      "source_page": "https://www.meru.org/Gestures/Alphachart.html",
+      "final_url": "https://www.meru.org/Gestures/frsthand873.jpg",
+      "retrieved_utc": "2026-07-26T13:43:53+00:00",
+      "http_status": "200",
+      "content_type": "image/jpeg",
+      "format": "JPEG",
+      "mode": "RGB",
+      "width_px": "826",
+      "height_px": "787",
+      "frames": "1",
+      "bytes": "542620",
+      "sha256": "a091cbe95b9042cddb93bb5a57a07b406d5d1a6053e481faf2746b38a22dab68",
+      "local_path": "data/raw/geometric_assets/A09_frsthand873.jpg",
+      "status": "success",
+      "error": ""
+    }
+  },
+  "prior_session_workspace_observations": {
+    "basis": "Actual tool outputs and report-authoring records preserved in this conversation before interruption; not newly reproduced local checkouts",
+    "pilot": {
+      "HEAD": "24c00fc44e4d9d57adacd1e636e9e2d20d86a954",
+      "branch": "hebrew-projection-capacity-v0.9",
+      "upstream": "origin/hebrew-projection-capacity-v0.9",
+      "tracking_ref": "24c00fc44e4d9d57adacd1e636e9e2d20d86a954",
+      "status": "clean"
+    },
+    "original": {
+      "HEAD": "d15865167b4e3c454e398bd498d9d681103096f7",
+      "branch": "hebrew-projection-capacity-v0.9",
+      "upstream": "origin/hebrew-projection-capacity-v0.9",
+      "tracking_ref": "d15865167b4e3c454e398bd498d9d681103096f7",
+      "untracked_paths_count": 31,
+      "tracked_and_staged_diffs": "empty"
+    },
+    "finalizer_result": "Completed successfully; its assertions checked final states identical to recorded initial states before building the now-lost archive.",
+    "A09_raw": "Absent in both prior checkouts; bytes never accessed."
+  },
+  "interruption_recovery": {
+    "workspace_reinitialized": true,
+    "prior_zip_filename": "P0A1_methodology_review_QC_package.zip",
+    "prior_zip_bytes": 60950,
+    "prior_zip_sha256": "b2862f343a889fc058d005445674c0b45c2a7656cd0cc9c54896398d47e7e124",
+    "prior_zip_state": "Built per preserved tool result, but not persisted before interruption; bytes unavailable; no claim to reproduce its checksum.",
+    "current_checkouts": "Both absent after workspace reinitialization. No checkout created, changed or restored. Prior local status is historical evidence only.",
+    "recovery_method": "Reconstitute completed M0–M8 methodology from visible prior authoring records; refresh source bytes and signatures to restore audit metadata; retain decisions and restrictions, add explicit recovery disclosure; create newly hashed review package.",
+    "old_report_prose_byte_identity": "NOT_CLAIMED; substantive contracts and proposed dispositions preserved.",
+    "library_search": "Exact filename and simpler title search found no retained matching review package."
+  },
+  "signature_setup": {
+    "current_public_key_source": "https://github.com/salahealer9.gpg",
+    "public_key_sha256": "af66fcd281d760d195aab4d1889215b5f4b09983fb718455a27c7cf7c58363b8",
+    "import_returncode": 2,
+    "detail": "Public key imported; gpg-agent startup failed. Subsequent four commit and tag detached checks all returned 0 with exact signing/primary fingerprint. No trust elevation or verification relaxation.",
+    "prior_P0A1_setup": "Initial NO_PUBKEY, then import return 2 and valid signatures; retained in historical record.",
+    "prior_P0A0_setup": "Historical nonzero initial import preceding successful signature checks remains a documented qualification."
+  },
+  "review_order": [
+    "M0",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8"
+  ],
+  "review_order_basis": "Original session author_review.py M1,M2; author_ledgers.py M3,M4,M5; author_closeout.py M6,M7,M8 after verified M0. Recovery is document reconstruction and packaging, not a second review or experiment.",
+  "information_barrier": {
+    "NO_HEBREW_TARGET_ANALYSIS_PERFORMED": true,
+    "NO_NEW_P0A0_EXECUTION": true,
+    "NO_SCIENTIFIC_CANDIDATE_NULL_TEST": true,
+    "NO_AGENT_GIT_WRITES": true,
+    "NO_NEW_NUMERICAL_EXPERIMENT": true,
+    "original_image_bytes_inspected": false,
+    "scientific_modules_imported": false,
+    "optimizer_calls": 0,
+    "DEV_or_regression_runs": 0,
+    "linked_Meru_content_fetched": false,
+    "A09_JPEG_hash_verified": false,
+    "CSV_access": "Full registry bytes hash-checked; only A09 rows inspected as metadata. Other CSVs are frozen textual claim audits.",
+    "tree_access": "Metadata only; no image/target-array blobs fetched.",
+    "python_scope": "Standard-library parsing, hash/signature/tree bookkeeping, formatting, CSV/JSON/ZIP validation only.",
+    "negative_assertion_scope": "Observed session actions and input/output records, not an exhaustive historical host audit."
+  },
+  "retained_limitations": [
+    "1281 controlled regressions passed, two inherited image tests deselected, not passed",
+    "Earlier missing historical crop retained, not repaired",
+    "Standalone DEV log lacks completion summary; 35 dots do not independently prove reported 59 passes",
+    "Historical nonzero key-import exit preceding successful signature verification",
+    "No proof of no other off-environment runs",
+    "A09 raw absent in registered workspace; metadata-only verification",
+    "Interrupted output lost; regenerated package has new bytes/hash and explicit recovery disclosure"
+  ],
+  "status": "PRE_QC_NOT_FROZEN",
+  "mandatory_provenance_mismatch": false,
+  "information_barrier_violation": false,
+  "retrieval_command_templates": {
+    "raw_text": "curl --max-time 45 -fsSL https://raw.githubusercontent.com/salahealer9/meru-geometry-audit/5b0317f193c481d799e88b494ce370679fec43bc/{sources.path} -o /workspace/scratch/255e4cd6766b/p0a1_recovery/input/{basename}",
+    "commits": "curl --max-time 45 -fsSL https://api.github.com/repos/salahealer9/meru-geometry-audit/git/commits/{commits.sha}",
+    "trees": "curl --max-time 45 -fsSL https://api.github.com/repos/salahealer9/meru-geometry-audit/git/trees/{commits.tree}?recursive=1",
+    "tag": "https://api.github.com/repos/salahealer9/meru-geometry-audit/git/tags/12afd9f9d1cb4a9d000c0fd9555419f0383978e9",
+    "ancestry": "https://api.github.com/repos/salahealer9/meru-geometry-audit/compare/85748bff0bfae383afcc0d885f4aec505a2885dd...8bf0babfd91bdefb0792e93707fd0b0da1c09767",
+    "branch": "https://api.github.com/repos/salahealer9/meru-geometry-audit/branches/hebrew-projection-capacity-v0.9",
+    "original_zip": "https://raw.githubusercontent.com/salahealer9/meru-geometry-audit/5b0317f193c481d799e88b494ce370679fec43bc/reports/v0_9/p0a0_registered_execution/original_execution_package.zip"
+  },
+  "recovery_actions": [
+    "Attempt to reopen prior ZIP returned FileNotFoundError; directory inventory confirmed prior workspace files absent",
+    "Search exact output filename and simplified P0A1 methodology title found no matching retained review ZIP",
+    "Refresh same frozen sources and signed metadata; verify.py restored commit/tree/blob/signature, original raw/ZIP and A09 metadata identity checks",
+    "restore_matrices.py and direct Markdown authoring reconstituted completed contracts and proposed decisions from conversation records; no new scientific input or method selection",
+    "package_review.py checks schema, exact IDs/labels, source hashes, text-only output, manifest and ZIP bookkeeping; no scientific functions evaluated"
+  ],
+  "handoff_access": {
+    "name": "P0A1_READ_ONLY_METHODOLOGY_QUALIFICATION_AGENT_HANDOFF(1).txt",
+    "basis": "Full attachment read locally in original session; complete text remains in conversation. Local attachment bytes lost on interruption; no newly computed attachment hash claimed."
+  },
+  "original_review_helper_errors": "Original M0 bookkeeping helper first expected case_id instead of actual case and then had an indentation error; fixed outside repository before M0 completed. No source/result edits or numerical evaluation.",
+  "output_structure_checks": {
+    "schemas": {
+      "representation_and_observability_matrix.csv": {
+        "rows": 7,
+        "fields": [
+          "representation_id",
+          "definition",
+          "observable_fields",
+          "unavailable_data",
+          "forward_loss",
+          "permissible_source",
+          "permissible_target",
+          "nuisance_group",
+          "normalization_obligations",
+          "degeneracies",
+          "metadata_requirements",
+          "source_supply_status",
+          "new_extraction_required",
+          "evidence"
+        ],
+        "IDs": [
+          "R3-C",
+          "R3-S",
+          "R2-O",
+          "R2-U",
+          "R2-G",
+          "R2-I",
+          "R2-H"
+        ],
+        "no_blank_cells": true
+      },
+      "method_admissibility.csv": {
+        "rows": 8,
+        "fields": [
+          "path_id",
+          "method",
+          "assessed_claim",
+          "disposition",
+          "input_contract",
+          "allowed_nuisance_group",
+          "p0a0_evidence",
+          "independent_oracle_scope",
+          "failure_state",
+          "observable_failure_modes",
+          "eventual_use_conditions",
+          "inferential_limits",
+          "next_gate",
+          "alternative_scoped_disposition"
+        ],
+        "IDs": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6",
+          "C7",
+          "C8"
+        ],
+        "no_blank_cells": true
+      }
+    },
+    "method_dispositions": {
+      "REJECTED_FOR_CLAIMED_PURPOSE": 1,
+      "CONDITIONALLY_ADMISSIBLE": 5,
+      "ADMISSIBLE_WITH_STATED_OBSERVABLES": 1,
+      "NOT_ESTABLISHED": 1
+    },
+    "independent_QC_performed": false,
+    "final_qualification_assigned": false
+  },
+  "frozen_sources_hash_recheck_before_packaging": true
+}

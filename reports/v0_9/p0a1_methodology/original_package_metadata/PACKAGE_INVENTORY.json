@@ -1,0 +1,71 @@
+{
+  "schema": "p0a1-read-only-review-recovered-1",
+  "status": "PRE_QC_NOT_FROZEN",
+  "freeze_refs": {
+    "p0a1_commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+    "p0a1_blob": "d0a20485e8a2793fae6ede040fc266e461c8f23f",
+    "p0a0_protocol": "d15865167b4e3c454e398bd498d9d681103096f7",
+    "p0a0_protocol_blob": "0f8b663bfe2432685c9320a00c80fd6bcf436e38",
+    "p0a0_implementation": "24c00fc44e4d9d57adacd1e636e9e2d20d86a954",
+    "p0a0_results": "5148712c07ac48742d3435dc14e01667280f94c3",
+    "signer": "D4EC014EEFCC90E619D2AA59A91239ABCF512130"
+  },
+  "files": [
+    {
+      "path": "P0A1_AGENT_README.txt",
+      "bytes": 5808,
+      "sha256": "6d085d186b46b10ccc646f2de3a63c695f9f85279ce22b322348b039103686ce"
+    },
+    {
+      "path": "reports/v0_9/p0a1_methodology/INDEPENDENT_QC_CHECKLIST.md",
+      "bytes": 8007,
+      "sha256": "2205f33d897a6d90ee79de9383a393dd2b8dfdec6ba2e96d93c021b2aaa9cd42"
+    },
+    {
+      "path": "reports/v0_9/p0a1_methodology/P0A1_METHOD_QUALIFICATION.md",
+      "bytes": 17342,
+      "sha256": "c5a865b23102e5107332d664976afa883fedfd3cde52caf62c07c1109653bd01"
+    },
+    {
+      "path": "reports/v0_9/p0a1_methodology/method_admissibility.csv",
+      "bytes": 9892,
+      "sha256": "9d01f2e4810431d01ace08d015189104729a809f15912d60529e9ccef849f41a"
+    },
+    {
+      "path": "reports/v0_9/p0a1_methodology/next_gate_dependency_map.md",
+      "bytes": 8308,
+      "sha256": "32b866bcace949b7f033473cdf9257a9b97323f1a881bbdcc57b449f33f3b23e"
+    },
+    {
+      "path": "reports/v0_9/p0a1_methodology/normalization_and_failure_ledger.md",
+      "bytes": 10729,
+      "sha256": "f3bf1f6794ddccb2e0684b4af3ac94479f463f2d761ef28c8fca867b481f07c1"
+    },
+    {
+      "path": "reports/v0_9/p0a1_methodology/optimizer_certification_requirements.md",
+      "bytes": 6180,
+      "sha256": "2f4e7700e8ba65dd880ba2051a9433e2de46e7bba6a0f7eea7e92406f0c2751f"
+    },
+    {
+      "path": "reports/v0_9/p0a1_methodology/provenance_and_information_barrier.json",
+      "bytes": 27736,
+      "sha256": "8490ec3aca3a3139b9b75d896636c4b6388cb7500fc9804e40a1f5b64c72636e"
+    },
+    {
+      "path": "reports/v0_9/p0a1_methodology/representation_and_observability_matrix.csv",
+      "bytes": 8984,
+      "sha256": "e56136f79b6d61a5ce4c734b779bd8a382da5b6a04a1cf05a7b5b6c3c32f44b2"
+    },
+    {
+      "path": "reports/v0_9/p0a1_methodology/source_constraint_ledger.md",
+      "bytes": 7936,
+      "sha256": "4352b599962c4cb03a76ed43467defb8f62cab1e6b72f70e9001be629e4e2fe5"
+    },
+    {
+      "path": "reports/v0_9/p0a1_methodology/symmetry_and_capacity_ledger.md",
+      "bytes": 11365,
+      "sha256": "9795923ed1a435e3ee23d72bcfaacff0d857d38ed49a896c054ef25ddcb6895a"
+    }
+  ],
+  "self_reference_policy": "11 payload files listed. SHA256SUMS covers these plus inventory, excluding itself. Inventory excludes itself and SHA256SUMS to avoid circular hashes. Outer ZIP hash covers all 13 members."
+}
