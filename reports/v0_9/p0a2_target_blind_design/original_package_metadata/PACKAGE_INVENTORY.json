@@ -1,0 +1,116 @@
+{
+  "phase": "P0A2",
+  "status": "PRE_INDEPENDENT_QC_NOT_FROZEN",
+  "payload_files": [
+    {
+      "path": "P0A2_DELIVERY_README.md",
+      "bytes": 2109,
+      "sha256": "d6afb94782e3cc420d8ad884c11f4ce52839a1da35e59a4647f6d2a400f5d15f"
+    },
+    {
+      "path": "reports/v0_9/p0a2_target_blind_design/INDEPENDENT_QC_CHECKLIST.md",
+      "bytes": 5353,
+      "sha256": "031582c3c3d3685ea0e2f6afa49945f07b4bb01ed4246951c62a8f3b9c704c07"
+    },
+    {
+      "path": "reports/v0_9/p0a2_target_blind_design/P0A2_NUMERICAL_DESIGN_REVIEW.md",
+      "bytes": 17107,
+      "sha256": "aa1da9a8da970c0d82f61ae112bdede5238c14ac7f43c693d0d0866c3409566b"
+    },
+    {
+      "path": "reports/v0_9/p0a2_target_blind_design/capacity_and_nuisance_budget.csv",
+      "bytes": 7527,
+      "sha256": "5b76e92ce612778918ea3531892bb71532a470dc560c676306e59fecf4d10dbc"
+    },
+    {
+      "path": "reports/v0_9/p0a2_target_blind_design/design_decision_register.csv",
+      "bytes": 11785,
+      "sha256": "5153f49e45ddb93f67843d290a80a8c67ea19e6419e115bbdc1353020fddbfd6"
+    },
+    {
+      "path": "reports/v0_9/p0a2_target_blind_design/direction_family_candidates.md",
+      "bytes": 10105,
+      "sha256": "f004e98755fd61a7d05328e603cd295a1f6d38e6fa09b16e16bdc0ce2acf10d3"
+    },
+    {
+      "path": "reports/v0_9/p0a2_target_blind_design/fairness_and_future_estimands.md",
+      "bytes": 8549,
+      "sha256": "febff1682297261d1ef6f468627ab3ba93130afabf19b36b981fa8e6cbba77e5"
+    },
+    {
+      "path": "reports/v0_9/p0a2_target_blind_design/historical_target_dependency_map.md",
+      "bytes": 10341,
+      "sha256": "8eb0f6f22e2328a3867593725d6735c77405c3ba38ebb24fbe083d611bc4a7b1"
+    },
+    {
+      "path": "reports/v0_9/p0a2_target_blind_design/numerical_error_failure_ledger.md",
+      "bytes": 18006,
+      "sha256": "cfad4a6df3e827ec033768eaf8c1f06e8efbeedb45d5cd641616d8d40db91478"
+    },
+    {
+      "path": "reports/v0_9/p0a2_target_blind_design/observation_operator_matrix.csv",
+      "bytes": 7474,
+      "sha256": "b31a9f53d02d25576bd22f95fec7ced2d61401748c866838664e30c9d256d27e"
+    },
+    {
+      "path": "reports/v0_9/p0a2_target_blind_design/provenance_and_information_barrier.json",
+      "bytes": 83747,
+      "sha256": "976631384068c50f7a3f76a1abe72eb8f605f88320e2053efbc59d3542e6c1d2"
+    },
+    {
+      "path": "reports/v0_9/p0a2_target_blind_design/score_normalization_candidates.md",
+      "bytes": 15889,
+      "sha256": "0ae826f44288dca643f3c1ec5450789e88ca291601041f154ac2065d2a4de86f"
+    },
+    {
+      "path": "reports/v0_9/p0a2_target_blind_design/solver_certification_matrix.csv",
+      "bytes": 4600,
+      "sha256": "35e6a9bc0dbce30e1df08f43725eb07ef97f4325eea51d03cbcf7e04a82e0017"
+    }
+  ],
+  "control_files": [
+    {
+      "path": "PACKAGE_INVENTORY.json",
+      "bytes": 3953,
+      "hash_location": "SHA256SUMS; no self hash"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 1821,
+      "hash_location": "Excluded from own manifest; outer ZIP hash delivered separately"
+    }
+  ],
+  "payload_file_count": 13,
+  "archive_member_count": 15,
+  "manifest_entry_count": 14,
+  "total_uncompressed_member_bytes": 208366,
+  "schema_checks": {
+    "observation_operator_matrix.csv": {
+      "rows": 11,
+      "columns": 14,
+      "unique_ids": true,
+      "nonempty_cells": true
+    },
+    "capacity_and_nuisance_budget.csv": {
+      "rows": 15,
+      "columns": 11,
+      "unique_ids": true,
+      "nonempty_cells": true
+    },
+    "solver_certification_matrix.csv": {
+      "rows": 4,
+      "columns": 16,
+      "unique_ids": true,
+      "nonempty_cells": true
+    },
+    "design_decision_register.csv": {
+      "rows": 43,
+      "columns": 9,
+      "unique_ids": true,
+      "nonempty_cells": true
+    }
+  },
+  "scientific_execution_performed": false,
+  "independent_QC": "PENDING",
+  "size_convention": "ZIP uncompressed size is sum of all 15 member byte lengths; outer ZIP compressed byte size/hash delivered separately."
+}

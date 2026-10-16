@@ -1,0 +1,778 @@
+{
+  "phase": "P0A2",
+  "created_utc": "2026-10-16T00:15:21.817614+00:00",
+  "source_root": "https://github.com/salahealer9/meru-geometry-audit",
+  "preregistration": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+  "expected_signing_and_primary_fingerprint": "D4EC014EEFCC90E619D2AA59A91239ABCF512130",
+  "key_import": {
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "gpg: keybox '/workspace/scratch/255e4cd6766b/p0a2_work/gpg/pubring.kbx' created\ngpg: /workspace/scratch/255e4cd6766b/p0a2_work/gpg/trustdb.gpg: trustdb created\ngpg: key A91239ABCF512130: public key \"Salah-Eddin Gherbi (Discovery Harmonic quantization of the solar system) <salahealer@gmail.com>\" imported\ngpg: error running '/usr/bin/gpg-agent': exit status 2\ngpg: failed to start gpg-agent '/usr/bin/gpg-agent': General error\ngpg: can't connect to the gpg-agent: General error\ngpg: Total number processed: 1\ngpg:               imported: 1\n",
+    "public_key_sha256": "af66fcd281d760d195aab4d1889215b5f4b09983fb718455a27c7cf7c58363b8",
+    "source": "https://github.com/salahealer9.gpg"
+  },
+  "commits": [
+    {
+      "sha": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "parent": "090a1db6c95976bbb5f0d69a3cc4a4603d165505",
+      "tree": "3d601c968c454ee78867b20fecc2b734423a221f",
+      "reconstructed_commit_object_matches": true,
+      "signature": {
+        "github_verified": true,
+        "github_reason": "valid",
+        "returncode": 0,
+        "validsig": "[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-10-15 1792084961 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130",
+        "stdout": "[GNUPG:] NEWSIG\n[GNUPG:] KEY_CONSIDERED D4EC014EEFCC90E619D2AA59A91239ABCF512130 0\n[GNUPG:] SIG_ID UdFYLBQxgRLqQMWNuN4WvLow4FQ 2026-10-15 1792084961\n[GNUPG:] GOODSIG A91239ABCF512130 Salah-Eddin Gherbi (Discovery Harmonic quantization of the solar system) <salahealer@gmail.com>\n[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-10-15 1792084961 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130\n[GNUPG:] TRUST_UNDEFINED 0 pgp\n",
+        "stderr": "gpg: Signature made Thu Oct 15 18:22:41 2026 BST\ngpg:                using RSA key D4EC014EEFCC90E619D2AA59A91239ABCF512130\ngpg: Good signature from \"Salah-Eddin Gherbi (Discovery Harmonic quantization of the solar system) <salahealer@gmail.com>\" [unknown]\ngpg:                 aka \"Salah-Eddin Gherbi (Scala Harmonica Harmonic Solar System Discovery) <salahealer@gmail.com>\" [unknown]\ngpg: WARNING: This key is not certified with a trusted signature!\ngpg:          There is no indication that the signature belongs to the owner.\nPrimary key fingerprint: D4EC 014E EFCC 90E6 19D2  AA59 A912 39AB CF51 2130\n",
+        "payload": "tree 3d601c968c454ee78867b20fecc2b734423a221f\nparent 090a1db6c95976bbb5f0d69a3cc4a4603d165505\nauthor Salah-Eddin Gherbi <salahealer@gmail.com> 1792084961 +0100\ncommitter Salah-Eddin Gherbi <salahealer@gmail.com> 1792084961 +0100\n\nPreregister P0A2 target-blind numerical methods and capacity design\n",
+        "armored_signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE1OwBTu/MkOYZ0qpZqRI5q89RITAFAmrRC+EACgkQqRI5q89R\nITD/SBAAnpMYBzQ0JJslrH3MUYIS5nTa8ToWzvxO18cGkmphSUZatqhSsN+ZiQlx\nyLC/2EtTcaDTPQMnUaKlfcaxC6/ZCCvwENrAqq+RcIcxmUUQ46dIbLMkAO2dJyiD\n9NehY0Km01Q8r9QwkHpnJuG4xP7fukhBDhZplSuq9E0YApVisHZdeVQSml9Zd+J0\nLq3qX2M6Ivg21Lp+nY5T0YOKZ3ROaZvO8bkcynE8BGZ8AD/MMej3mdQBUUjmLjEs\njCKyeYpoCOOdumxejHlCZYCof9YKUfGezypH3c57ulZsE9w2a3nPzCDmB0XUxoQn\nYVYm3+c4M33/pnXr/goWy8p5n7VCTV11P/r1eUew4A2KzvRa+fzmnX19CryR3MTK\nvqfnxlBK+0ge/Fu8ZLm8sgfFF4DFvOb5Rn0b6ENGpi6KW45aTs4vIezN80sDWz+m\nzALPXmEQqPm+MnrYv1PPb+ysw8Pa6VXMjuMRNwH4Ae5W5AHSQF9q+kDHdmrIsW2d\n8/fO0lBpqDvrbAGhol+BUyosEzWiqy3EHV8QO01stED3G9+N0iOZgsP4YjcYGH8Q\nioL3d6T/jlzvWi0gKAqyJtgXBqbXlWeYvulCobCVNaYlc6Y6O6dGO/6hM+xEoEtV\nsBok1MB2OAPD1JQvbi/AXG+hOcvNwaUDECn9M1dq2n4vYNoN8bo=\n=Zx0n\n-----END PGP SIGNATURE-----",
+        "command": [
+          "gpg",
+          "--homedir",
+          "/workspace/scratch/255e4cd6766b/p0a2_work/gpg",
+          "--batch",
+          "--no-auto-key-retrieve",
+          "--status-fd",
+          "1",
+          "--verify",
+          "/workspace/scratch/255e4cd6766b/p0a2_work/input/e917fa2974997703d6ccb60b0b25d0c668d12bd5.asc",
+          "/workspace/scratch/255e4cd6766b/p0a2_work/input/e917fa2974997703d6ccb60b0b25d0c668d12bd5.payload"
+        ],
+        "payload_sha256": "19ffa32605892dd9bd14888cc1cb0fd1b3126528d1fdea38ff61f2ac9f10b2a8"
+      }
+    },
+    {
+      "sha": "090a1db6c95976bbb5f0d69a3cc4a4603d165505",
+      "parent": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "tree": "5f11f759f71bc425edd2513031c42953b39b3668",
+      "reconstructed_commit_object_matches": true,
+      "signature": {
+        "github_verified": true,
+        "github_reason": "valid",
+        "returncode": 0,
+        "validsig": "[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-10-15 1792084378 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130",
+        "stdout": "[GNUPG:] NEWSIG\n[GNUPG:] KEY_CONSIDERED D4EC014EEFCC90E619D2AA59A91239ABCF512130 0\n[GNUPG:] SIG_ID EV83YZWmbadBJyZFWSSh0JPzdhs 2026-10-15 1792084378\n[GNUPG:] GOODSIG A91239ABCF512130 Salah-Eddin Gherbi (Discovery Harmonic quantization of the solar system) <salahealer@gmail.com>\n[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-10-15 1792084378 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130\n[GNUPG:] TRUST_UNDEFINED 0 pgp\n",
+        "stderr": "gpg: Signature made Thu Oct 15 18:12:58 2026 BST\ngpg:                using RSA key D4EC014EEFCC90E619D2AA59A91239ABCF512130\ngpg: Good signature from \"Salah-Eddin Gherbi (Discovery Harmonic quantization of the solar system) <salahealer@gmail.com>\" [unknown]\ngpg:                 aka \"Salah-Eddin Gherbi (Scala Harmonica Harmonic Solar System Discovery) <salahealer@gmail.com>\" [unknown]\ngpg: WARNING: This key is not certified with a trusted signature!\ngpg:          There is no indication that the signature belongs to the owner.\nPrimary key fingerprint: D4EC 014E EFCC 90E6 19D2  AA59 A912 39AB CF51 2130\n",
+        "payload": "tree 5f11f759f71bc425edd2513031c42953b39b3668\nparent 5b0317f193c481d799e88b494ce370679fec43bc\nauthor Salah-Eddin Gherbi <salahealer@gmail.com> 1792084378 +0100\ncommitter Salah-Eddin Gherbi <salahealer@gmail.com> 1792084378 +0100\n\nFreeze P0A1 methodology qualification and independent QC\n",
+        "armored_signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE1OwBTu/MkOYZ0qpZqRI5q89RITAFAmrRCZoACgkQqRI5q89R\nITBnzBAAli1W4sxyYqr/SJCZvnrFVnP6i3JRTCXhCSN4GV1ZWBKlKD+P6sLnzrGM\nB8h9l0Qby+LipTv3PkNMgbkhRYeuJ6aWpRvUjhM2qDVL2Ob3vNm2/SL+ey5WrBDE\nRP4z8OBUS1DUeJhpvPf407mTuU20siC4wauz3UfaEtKQBUw22F5dx69uQ+6miYp9\nKwXn2M3XkTBQf0Jwdf9BhskhZkLPODBoa23lWM3iNSHltgFfSrbRAqsplikpZ7GI\nB7eva5Fh2FqUzM0IZCscSJ/Kl32Xg0IqnqcQVi1wpJCriWz3RbRzbjrNAUeSsh4E\nw6Zq+qScquy0Bi455JfUgh/UQiLcXMyKbWpqkYfUmJsMEwRgXDrMjosnIXx+7rhp\n2nY0k7u4iW2/p4VrAR+wwYDXviCWx0nzGbHQnoaIWaEbHwCqSr47TC5xX3AWqU8E\n2VZ02xYc31gSLkpR+B393LlnZQbhDZbl8ey6znYy+WJxHtJoSQtAnQgbPpMw6Pm+\nlVhcqNzWQZxW4x2WD6m9VuehmuzkwfuolVxlnd4KeR6a38RWUeRcA7v4A1tlEXWv\nOxT623XHp0PU8wHzLQ0TDbUc936fHbp2hZ+7kZ2nuHZ/J8LhTe930OMd1419gzjb\nt7c7Xw6zahM7My4//EHoRlkK5XnBU/sjLQbB3BAGXZa3jXe7J9k=\n=KkBY\n-----END PGP SIGNATURE-----",
+        "command": [
+          "gpg",
+          "--homedir",
+          "/workspace/scratch/255e4cd6766b/p0a2_work/gpg",
+          "--batch",
+          "--no-auto-key-retrieve",
+          "--status-fd",
+          "1",
+          "--verify",
+          "/workspace/scratch/255e4cd6766b/p0a2_work/input/090a1db6c95976bbb5f0d69a3cc4a4603d165505.asc",
+          "/workspace/scratch/255e4cd6766b/p0a2_work/input/090a1db6c95976bbb5f0d69a3cc4a4603d165505.payload"
+        ],
+        "payload_sha256": "c9d949f7c2dd8e75e89d3fd1aa68a7d00c5ed38ac5faba480ce0c25189542a7c"
+      }
+    },
+    {
+      "sha": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "parent": "5148712c07ac48742d3435dc14e01667280f94c3",
+      "tree": "db008bd0ccfeb4a4c9464f97384014c14a5192f5",
+      "reconstructed_commit_object_matches": true,
+      "signature": {
+        "github_verified": true,
+        "github_reason": "valid",
+        "returncode": 0,
+        "validsig": "[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-10-15 1792067445 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130",
+        "stdout": "[GNUPG:] NEWSIG\n[GNUPG:] KEY_CONSIDERED D4EC014EEFCC90E619D2AA59A91239ABCF512130 0\n[GNUPG:] SIG_ID ZDoHffX/SqHPchBLX/QhGGTMY4s 2026-10-15 1792067445\n[GNUPG:] GOODSIG A91239ABCF512130 Salah-Eddin Gherbi (Discovery Harmonic quantization of the solar system) <salahealer@gmail.com>\n[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-10-15 1792067445 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130\n[GNUPG:] TRUST_UNDEFINED 0 pgp\n",
+        "stderr": "gpg: Signature made Thu Oct 15 13:30:45 2026 BST\ngpg:                using RSA key D4EC014EEFCC90E619D2AA59A91239ABCF512130\ngpg: Good signature from \"Salah-Eddin Gherbi (Discovery Harmonic quantization of the solar system) <salahealer@gmail.com>\" [unknown]\ngpg:                 aka \"Salah-Eddin Gherbi (Scala Harmonica Harmonic Solar System Discovery) <salahealer@gmail.com>\" [unknown]\ngpg: WARNING: This key is not certified with a trusted signature!\ngpg:          There is no indication that the signature belongs to the owner.\nPrimary key fingerprint: D4EC 014E EFCC 90E6 19D2  AA59 A912 39AB CF51 2130\n",
+        "payload": "tree db008bd0ccfeb4a4c9464f97384014c14a5192f5\nparent 5148712c07ac48742d3435dc14e01667280f94c3\nauthor Salah-Eddin Gherbi <salahealer@gmail.com> 1792067445 +0100\ncommitter Salah-Eddin Gherbi <salahealer@gmail.com> 1792067445 +0100\n\nPreregister P0A1 post-synthetic methodology qualification\n",
+        "armored_signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE1OwBTu/MkOYZ0qpZqRI5q89RITAFAmrQx3UACgkQqRI5q89R\nITAIWg//eU29KKcj4/sbrycrNG4LLITL+RxqY8d8ykD+jZVYqZMFsVK1oqcYz2f7\nQojBhO6atQODdRED4qB/XG94Rtq9REVC4iQ5w7+2UPZ9q8DAhckwjhFPByD+BWoF\n6EGmwJsslsb9hYyPT2QquJCFxh5nIbbTckpb2NR2WOCXu7fkz/Ei2YAT0VOqIwb+\nEmaDI1euZiwGNQdvU+pwjpr2DHiD9OLVVQLgU6UOMSFedgh3WHVZRKseiTm+iNsX\nthcSCXveIpU+goiohu5D9VMHgx5te8uv+ggnFFzhYXZ6wdZbwqYOrQ6m0jCCJG9H\nrqHS4ihaWCde4waWynzdQa1OeVY3AL+VY1hNDIqNmoTdbryXRpPL2bbt5AYuxjOI\nTqTpbN27i15zI5JnBy92B5D5ybWd1lAGCDa9Xx4s7twm28aOg7zovhkDcghtur7b\nwypiGBfXCg6CFDG2NXg4xedgR+DgS+7lBo0/4MpEb8tz4ZX3pw/6LJUzVQkNRNG0\n6jPRaWRegQufzK/IEtHheiGkRsfpmqPFbW9UnVL8SlUjaCMTqA1rw4AY3MRxZKbt\n4h1zCai73+KvcNlwgX85K9bZ0lMT+60IUVGVymVQAUBUNpIePcHpCEebFWy6yM+i\nHcNlNhzaiOsyCb2/1auci0KILPNMHE/P39CEY33FeZHf3XFH9fY=\n=WQUR\n-----END PGP SIGNATURE-----",
+        "command": [
+          "gpg",
+          "--homedir",
+          "/workspace/scratch/255e4cd6766b/p0a2_work/gpg",
+          "--batch",
+          "--no-auto-key-retrieve",
+          "--status-fd",
+          "1",
+          "--verify",
+          "/workspace/scratch/255e4cd6766b/p0a2_work/input/5b0317f193c481d799e88b494ce370679fec43bc.asc",
+          "/workspace/scratch/255e4cd6766b/p0a2_work/input/5b0317f193c481d799e88b494ce370679fec43bc.payload"
+        ],
+        "payload_sha256": "c9ba62c635a7c2b618fb247f17596695c1a70216545daf42d9a5086e90d9737b"
+      }
+    },
+    {
+      "sha": "5148712c07ac48742d3435dc14e01667280f94c3",
+      "parent": "24c00fc44e4d9d57adacd1e636e9e2d20d86a954",
+      "tree": "ba20f10bf6a0e415e9de191ee918d202d1c56889",
+      "reconstructed_commit_object_matches": true,
+      "signature": {
+        "github_verified": true,
+        "github_reason": "valid",
+        "returncode": 0,
+        "validsig": "[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-10-15 1792066134 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130",
+        "stdout": "[GNUPG:] NEWSIG\n[GNUPG:] KEY_CONSIDERED D4EC014EEFCC90E619D2AA59A91239ABCF512130 0\n[GNUPG:] SIG_ID Tr8BhXHlePB0zQzRt2BgWEZOIzE 2026-10-15 1792066134\n[GNUPG:] GOODSIG A91239ABCF512130 Salah-Eddin Gherbi (Discovery Harmonic quantization of the solar system) <salahealer@gmail.com>\n[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-10-15 1792066134 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130\n[GNUPG:] TRUST_UNDEFINED 0 pgp\n",
+        "stderr": "gpg: Signature made Thu Oct 15 13:08:54 2026 BST\ngpg:                using RSA key D4EC014EEFCC90E619D2AA59A91239ABCF512130\ngpg: Good signature from \"Salah-Eddin Gherbi (Discovery Harmonic quantization of the solar system) <salahealer@gmail.com>\" [unknown]\ngpg:                 aka \"Salah-Eddin Gherbi (Scala Harmonica Harmonic Solar System Discovery) <salahealer@gmail.com>\" [unknown]\ngpg: WARNING: This key is not certified with a trusted signature!\ngpg:          There is no indication that the signature belongs to the owner.\nPrimary key fingerprint: D4EC 014E EFCC 90E6 19D2  AA59 A912 39AB CF51 2130\n",
+        "payload": "tree ba20f10bf6a0e415e9de191ee918d202d1c56889\nparent 24c00fc44e4d9d57adacd1e636e9e2d20d86a954\nauthor Salah-Eddin Gherbi <salahealer@gmail.com> 1792066134 +0100\ncommitter Salah-Eddin Gherbi <salahealer@gmail.com> 1792066134 +0100\n\nFreeze P0A0 registered synthetic pilot results and independent QC\n",
+        "armored_signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE1OwBTu/MkOYZ0qpZqRI5q89RITAFAmrQwlYACgkQqRI5q89R\nITAm0hAAn33AvlzDPLmKtK/Ny1zZBEtnjO46H3e3bVvAyyKr1cPe59Y55DY/qp5H\nVAoAR6mAer6h8fhZoXbZAyl4QR37N/fZreUurPpSG7NE8Sf/iavvFH1bfgwonVjq\nVr1CP3juiamfBQV0nIBbSN5WUmrnW5c2JDEbRQkddt0jzdVIuZI2AgtSnzfvRLXt\nILe8lwo5Xz5EduBY3J7Sfl1gl8ssFFEBOAL4hqcDWotZswGh4KQSRmgFGcll34lA\ne9BXSOskceAuM1dPQWx8nvwxbV7ZL0PxkhGO609pl1e1TbTXfl9Hu12al4a3m/dF\nVSxCuLM2IFXDOZn1TA+H8Lk3Wdhb93bEojRZvK8UUn0xjumUsVIFbmQ7ANheI1Jx\ndLgteg5qrUGmY7tT67Q4jiQ90CqwBLVOKFBPm2sAM1/azc0S+eP9KL8f9oQtWP6B\nP6e261CUelKSf8RpRqkI8JOcD+pSZYLiafHk1hRLnMfrlb8RG2vD0Ql8PtF8NTX5\njdZBwWX/d1g0ZbYA8kF56GiIbX7O8gauDTeTUqBMn+CEWTaBOQFLtxBvAwDU063e\n4Z6N2ctoptN3OueXS/9VyFJMt8gTg79G6IYhymQVlsrZvx8LSI7cCGPvK79+hIGy\nTRt2vcJ9WTiqBFjfcXmmoPSymYqF+jjOTJxgUgGvTGjTWZYtwkE=\n=NUU9\n-----END PGP SIGNATURE-----",
+        "command": [
+          "gpg",
+          "--homedir",
+          "/workspace/scratch/255e4cd6766b/p0a2_work/gpg",
+          "--batch",
+          "--no-auto-key-retrieve",
+          "--status-fd",
+          "1",
+          "--verify",
+          "/workspace/scratch/255e4cd6766b/p0a2_work/input/5148712c07ac48742d3435dc14e01667280f94c3.asc",
+          "/workspace/scratch/255e4cd6766b/p0a2_work/input/5148712c07ac48742d3435dc14e01667280f94c3.payload"
+        ],
+        "payload_sha256": "3e1581b89f3d809dae46fad4a403f6327d8ef12f0143f98e4d8fddf85d162b0a"
+      }
+    },
+    {
+      "sha": "24c00fc44e4d9d57adacd1e636e9e2d20d86a954",
+      "parent": "d15865167b4e3c454e398bd498d9d681103096f7",
+      "tree": "da82a9ee6db6fd93525d18660e67dcab0d51ae5f",
+      "reconstructed_commit_object_matches": true,
+      "signature": {
+        "github_verified": true,
+        "github_reason": "valid",
+        "returncode": 0,
+        "validsig": "[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-10-14 1791962062 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130",
+        "stdout": "[GNUPG:] NEWSIG\n[GNUPG:] KEY_CONSIDERED D4EC014EEFCC90E619D2AA59A91239ABCF512130 0\n[GNUPG:] SIG_ID 6hIq84sjN04zN9zVjh4VHXruSWY 2026-10-14 1791962062\n[GNUPG:] GOODSIG A91239ABCF512130 Salah-Eddin Gherbi (Discovery Harmonic quantization of the solar system) <salahealer@gmail.com>\n[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-10-14 1791962062 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130\n[GNUPG:] TRUST_UNDEFINED 0 pgp\n",
+        "stderr": "gpg: Signature made Wed Oct 14 08:14:22 2026 BST\ngpg:                using RSA key D4EC014EEFCC90E619D2AA59A91239ABCF512130\ngpg: Good signature from \"Salah-Eddin Gherbi (Discovery Harmonic quantization of the solar system) <salahealer@gmail.com>\" [unknown]\ngpg:                 aka \"Salah-Eddin Gherbi (Scala Harmonica Harmonic Solar System Discovery) <salahealer@gmail.com>\" [unknown]\ngpg: WARNING: This key is not certified with a trusted signature!\ngpg:          There is no indication that the signature belongs to the owner.\nPrimary key fingerprint: D4EC 014E EFCC 90E6 19D2  AA59 A912 39AB CF51 2130\n",
+        "payload": "tree da82a9ee6db6fd93525d18660e67dcab0d51ae5f\nparent d15865167b4e3c454e398bd498d9d681103096f7\nauthor Salah-Eddin Gherbi <salahealer@gmail.com> 1791962062 +0100\ncommitter Salah-Eddin Gherbi <salahealer@gmail.com> 1791962062 +0100\n\nFreeze P0A0 implementation-only synthetic fixtures and oracles\n",
+        "armored_signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE1OwBTu/MkOYZ0qpZqRI5q89RITAFAmrPK84ACgkQqRI5q89R\nITCuiQ/9H4iiQza2NLVjaFT8kJxVtDc7XP1P88q9HDB/Ra4/znhOeYukkH8Du6a6\n9Dr6OWAMhC6vvJ0CVNpjcY6wigQ9ptYfjhQ3AfWPCKprrw1EPg9vSDuWiJUhxgur\nFntP6p9FE66OxLHupk3B7X1kiXSbvxnct20m7BCrb6wIC6I5PE5KDc00iPdfv6yg\nrQlqHcfroo/+kqz5d9zx2gXm/j3PnBq+rVEVgvn3ZqDKtQzHTddxGDqCVExDPbcs\niloIoRR+B22wvzjt+2HFY0TMSf9hNRNRWEEbMJ6TiRVZwU+WrbZajsdWbrOLF3BG\nRW79efSkwESc/M/uCsvPQ6zjFYD1CohEeWVVuvTMf2Wi/RJBD59bClkLclqLg+gr\nD5n2H1G8Q2VkB0l7xAQLjjWyaSODXY+NzbWEBr0EXAVLQQq4ghmc6/Ev/7ChCRrd\nZ6ezycg0WFSZ4FgP68heN5stf2U8B6a1k7J1veCnMuKCUSlnhkSOEyCFurCuagSY\n+bpA8K9Ir5p1HFttQOzteC+oOpE5Fbchgo8dK66qZSmnYMoUWUop2JpNfPOqJJcA\nahhkh3TRr5l5D/Q4tiWAxZ4MXQN5ipvtPefv1iyI8yI871o5p0K/AmrMTlFPusbd\ny5DlDnKfT5iVNMwaUYty89xBz6qs9y1lnB8OZQ08TmQ4SMgpkgE=\n=H++p\n-----END PGP SIGNATURE-----",
+        "command": [
+          "gpg",
+          "--homedir",
+          "/workspace/scratch/255e4cd6766b/p0a2_work/gpg",
+          "--batch",
+          "--no-auto-key-retrieve",
+          "--status-fd",
+          "1",
+          "--verify",
+          "/workspace/scratch/255e4cd6766b/p0a2_work/input/24c00fc44e4d9d57adacd1e636e9e2d20d86a954.asc",
+          "/workspace/scratch/255e4cd6766b/p0a2_work/input/24c00fc44e4d9d57adacd1e636e9e2d20d86a954.payload"
+        ],
+        "payload_sha256": "7a05eb0a8c1a197978d3e2b3f3ef9ccff79ebf9651d961387298e82620a9237c"
+      }
+    },
+    {
+      "sha": "d15865167b4e3c454e398bd498d9d681103096f7",
+      "parent": "8bf0babfd91bdefb0792e93707fd0b0da1c09767",
+      "tree": "e8e7eb61baf834ce21e57d747358764233a392b8",
+      "reconstructed_commit_object_matches": true,
+      "signature": {
+        "github_verified": true,
+        "github_reason": "valid",
+        "returncode": 0,
+        "validsig": "[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-10-13 1791896982 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130",
+        "stdout": "[GNUPG:] NEWSIG\n[GNUPG:] KEY_CONSIDERED D4EC014EEFCC90E619D2AA59A91239ABCF512130 0\n[GNUPG:] SIG_ID RoPmov4vwF/Rd425a5Pb9pWP+es 2026-10-13 1791896982\n[GNUPG:] GOODSIG A91239ABCF512130 Salah-Eddin Gherbi (Discovery Harmonic quantization of the solar system) <salahealer@gmail.com>\n[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-10-13 1791896982 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130\n[GNUPG:] TRUST_UNDEFINED 0 pgp\n",
+        "stderr": "gpg: Signature made Tue Oct 13 14:09:42 2026 BST\ngpg:                using RSA key D4EC014EEFCC90E619D2AA59A91239ABCF512130\ngpg: Good signature from \"Salah-Eddin Gherbi (Discovery Harmonic quantization of the solar system) <salahealer@gmail.com>\" [unknown]\ngpg:                 aka \"Salah-Eddin Gherbi (Scala Harmonica Harmonic Solar System Discovery) <salahealer@gmail.com>\" [unknown]\ngpg: WARNING: This key is not certified with a trusted signature!\ngpg:          There is no indication that the signature belongs to the owner.\nPrimary key fingerprint: D4EC 014E EFCC 90E6 19D2  AA59 A912 39AB CF51 2130\n",
+        "payload": "tree e8e7eb61baf834ce21e57d747358764233a392b8\nparent 8bf0babfd91bdefb0792e93707fd0b0da1c09767\nauthor Salah-Eddin Gherbi <salahealer@gmail.com> 1791896982 +0100\ncommitter Salah-Eddin Gherbi <salahealer@gmail.com> 1791896982 +0100\n\nPreregister P0A0 Hebrew projection synthetic pilot\n",
+        "armored_signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE1OwBTu/MkOYZ0qpZqRI5q89RITAFAmrOLZYACgkQqRI5q89R\nITBj2RAAs80+cMc8Ex27U3ZYjeOEmgVOl4R5DsIyUvWBhWA5NOhPMskYtviMUO1l\nPWWpZcqF99BA6foymySFD2Kr1I7ur6VeTq+ToGFUtQiOXf/aOMaWVcgS9IPKXrhc\nbNzOs1orcNqbb5llnP7y2Ex+UAIQu0bsX92YWt4vUMfEma1gG04v4yR+VQGk1DPa\nOmuajqFnqTpjTGuqU0Q+4iPzM64MD558uVv142bwUoHf4FCypXE1WyE/Mpjv9/LC\n0gXIOrDCZRpcNfHnPtMdfIIldreHs8unU7ybRJ+m90hMHjZ1K9GKVHp3tkyeDxzU\nKQhS3n5sYnQN7aOI40bf8RCqxk16tVh5f/jboPGcO9eMEwGcyszY3RAWHxLReWrk\nqcycbK74RDljjMPuNwdlaQ+g46juht3db3C8SXU7cknSLLojq0BlHN+fmZzUb6j1\n51kUvgBu9JVJEKj/4x581eKTPaXgKSU5ogW3N9w7uExPNCEG8yXdTgfx47t8wmep\npcsUjQfAoa/HBIOmYJ0UWUMoAlfmJRKZHp8mBPfknWGanTuNbR7iJU4dfW8HtjXn\nIOGM6N96HL3AzHDxj1IhwHS+oGZ4s0x6rnbA6YNbz2/9sEk11Z9aUbZyfSJmxKHM\nDJAfRPZpjjluYrpNGy/xv8nsxbqeW0uVcaNT1C4Zx08SCzF2Zf4=\n=bLBQ\n-----END PGP SIGNATURE-----",
+        "command": [
+          "gpg",
+          "--homedir",
+          "/workspace/scratch/255e4cd6766b/p0a2_work/gpg",
+          "--batch",
+          "--no-auto-key-retrieve",
+          "--status-fd",
+          "1",
+          "--verify",
+          "/workspace/scratch/255e4cd6766b/p0a2_work/input/d15865167b4e3c454e398bd498d9d681103096f7.asc",
+          "/workspace/scratch/255e4cd6766b/p0a2_work/input/d15865167b4e3c454e398bd498d9d681103096f7.payload"
+        ],
+        "payload_sha256": "28cdefeecf54912073ecdf6df286f400fe7cebc360899ba6a3dbd8583130ec94"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "path": "docs/v0_9/p0a2_target_blind_numerical_methods_capacity_solver_design_protocol.md",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "61585fb47cdb3ff2a3cfef07d3548fbd08084d0b",
+      "sha256": "c1c726d9c2cba81194c253b7a9153936da4b90153db4bb507e76841a29acda63",
+      "bytes": 28645,
+      "lines": 229,
+      "access": "frozen text only; no linked images or target data accessed"
+    },
+    {
+      "path": "docs/v0_9/p0a1_post_synthetic_methodology_qualification_protocol.md",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "d0a20485e8a2793fae6ede040fc266e461c8f23f",
+      "sha256": "3ac8630623b0877ec08e5ae38d87e89daabd75bcb3502898a074ad5e0941e3cf",
+      "bytes": 34223,
+      "lines": 286,
+      "access": "frozen text only; no linked images or target data accessed"
+    },
+    {
+      "path": "docs/p0a0_hebrew_projection_source_identity_and_synthetic_pilot_protocol_v0.9.md",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "0f8b663bfe2432685c9320a00c80fd6bcf436e38",
+      "sha256": "afee667eb578e329e80b8d28dc071ebebab3ae75a2e053b1f67d2c68f037743b",
+      "bytes": 24412,
+      "lines": 290,
+      "access": "frozen text only; no linked images or target data accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a1_methodology/P0A1_METHODOLOGY_DECISION_CLOSEOUT.md",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "7f4c410a2905213f8a0f6882eecc285bc291fb8e",
+      "sha256": "9a594db423b7c1ced14a60330c3d14e8d7386df3cc963bdfc47d9f33e06ffa7e",
+      "bytes": 10999,
+      "lines": 96,
+      "access": "frozen text only; no linked images or target data accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a1_methodology/P0A1_METHOD_QUALIFICATION.md",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "d82ac37d2e8bbfe53e337bfc828e8c80d206b3d8",
+      "sha256": "c5a865b23102e5107332d664976afa883fedfd3cde52caf62c07c1109653bd01",
+      "bytes": 17342,
+      "lines": 139,
+      "access": "frozen text only; no linked images or target data accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a1_methodology/representation_and_observability_matrix.csv",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "f3cbae041585411d21d4139c1351444765229383",
+      "sha256": "e56136f79b6d61a5ce4c734b779bd8a382da5b6a04a1cf05a7b5b6c3c32f44b2",
+      "bytes": 8984,
+      "lines": 8,
+      "access": "frozen text only; no linked images or target data accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a1_methodology/method_admissibility.csv",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "89a1148e1312a4ff16afd0cee6ef3e5a5e66cfc1",
+      "sha256": "9d01f2e4810431d01ace08d015189104729a809f15912d60529e9ccef849f41a",
+      "bytes": 9892,
+      "lines": 9,
+      "access": "frozen text only; no linked images or target data accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a1_methodology/normalization_and_failure_ledger.md",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "d22233a970558723abf70b1a1cfb62038874280b",
+      "sha256": "f3bf1f6794ddccb2e0684b4af3ac94479f463f2d761ef28c8fca867b481f07c1",
+      "bytes": 10729,
+      "lines": 80,
+      "access": "frozen text only; no linked images or target data accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a1_methodology/symmetry_and_capacity_ledger.md",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "94fcf8df6044f1129030acdc9752923c39b53e4a",
+      "sha256": "9795923ed1a435e3ee23d72bcfaacff0d857d38ed49a896c054ef25ddcb6895a",
+      "bytes": 11365,
+      "lines": 78,
+      "access": "frozen text only; no linked images or target data accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a1_methodology/optimizer_certification_requirements.md",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "a8ff092e54e24f8bc79598601d18914babe242e0",
+      "sha256": "2f4e7700e8ba65dd880ba2051a9433e2de46e7bba6a0f7eea7e92406f0c2751f",
+      "bytes": 6180,
+      "lines": 45,
+      "access": "frozen text only; no linked images or target data accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a1_methodology/source_constraint_ledger.md",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "79c99f826db184fcf95679b886abdee9644274d5",
+      "sha256": "4352b599962c4cb03a76ed43467defb8f62cab1e6b72f70e9001be629e4e2fe5",
+      "bytes": 7936,
+      "lines": 51,
+      "access": "frozen text only; no linked images or target data accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a1_methodology/next_gate_dependency_map.md",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "93724e278582cf2e078ea55b5cc2d3ffd03450bb",
+      "sha256": "32b866bcace949b7f033473cdf9257a9b97323f1a881bbdcc57b449f33f3b23e",
+      "bytes": 8308,
+      "lines": 53,
+      "access": "frozen text only; no linked images or target data accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a1_methodology/P0A1_recovered_methodology_independent_QC_2026-10-15.md",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "a2e71a3615a1209961da13658b548016d1c6b794",
+      "sha256": "4e829b67b85e1c743382a126b18061a1dc274a126e4704c9b1eba0a6d750f8a4",
+      "bytes": 10938,
+      "lines": 63,
+      "access": "frozen text only; no linked images or target data accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a0_registered_execution/RESULTS_FREEZE_CLOSEOUT.md",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "c2aac8681c46d35923036fbff1fa3f751c6ed345",
+      "sha256": "658e1bc205f9653861aa7bab23ff52d6ca734e6443969826310e59d3a879f740",
+      "bytes": 5712,
+      "lines": 62,
+      "access": "frozen text only; no linked images or target data accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a0_registered_execution/CASE_MATRIX.md",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "7af007a48a39cad9ace517cdc0bcd0f96f59e336",
+      "sha256": "72ac330541f0c4f2b7143298769be0512dd7dd5fef9af682626f8bda54424d48",
+      "bytes": 5902,
+      "lines": 23,
+      "access": "frozen text only; no linked images or target data accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a0_registered_execution/p0a0_registered_pilot_once.jsonl",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "c5248d2c92c2cf5e075454f62c9cac006549ad44",
+      "sha256": "4b4b27b0d5d9a95ffe864e2d2c83433be0ddd544b6122ebbea294857326817d6",
+      "bytes": 12052,
+      "lines": 14,
+      "access": "frozen text only; no linked images or target data accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a0_registered_execution/ENGINEERING_QC.md",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "577139fc0a6ce7dff3a6880ff23af84d7a4889ed",
+      "sha256": "59fd2760fd557770ac86e3155ae3602165be21bbcda538fdf51528614a36a006",
+      "bytes": 11097,
+      "lines": 195,
+      "access": "frozen text only; no linked images or target data accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a0_registered_execution/P0A0_registered_execution_independent_QC_2026-10-15.md",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "ddf14287da4ac6bc7dc4bcbd64cbb068953b7ce4",
+      "sha256": "99870bd9f80fb090ce532347f9639d125ea043322c1dd254214c3bf76f833fdc",
+      "bytes": 10305,
+      "lines": 101,
+      "access": "frozen text only; no linked images or target data accessed"
+    },
+    {
+      "path": "docs/geometry/projection_orbit_results_v0_5.md",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "e1e9285550922d4ec6adfec3a25c90d38bb5714b",
+      "sha256": "4fb616035f3cb41e14bf053ef902909bf8a8fe42682e23b39c8c3417d5f9f36b",
+      "bytes": 3186,
+      "lines": 77,
+      "access": "frozen text only; no linked images or target data accessed"
+    },
+    {
+      "path": "docs/first_hand_construction_source_recovery_closeout_v0.8.md",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "76a342c3d5d84687b181d410deec7fdd3ba05502",
+      "sha256": "321affc70be6b0ab4862b4cc46b2f5f311fb86771d4fad11f8d45a2327f4941b",
+      "bytes": 10906,
+      "lines": 397,
+      "access": "frozen text only; no linked images or target data accessed"
+    },
+    {
+      "path": "reports/v0_9/p0a0_implementation/AMENDMENT_QC.md",
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "git_blob": "ef3513b2913806d811d97fae30baa1e8746607a9",
+      "sha256": "927d7f1c615b6ef0eae7bbef897a056580d96a625d8d63b3d22d8e7c872e8a24",
+      "bytes": 5741,
+      "lines": 92,
+      "access": "D7 text-only exact inherited test-name citation verification; embedded historical commands not executed"
+    }
+  ],
+  "tree_changes": [
+    {
+      "commit": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+      "parent": "090a1db6c95976bbb5f0d69a3cc4a4603d165505",
+      "added": [
+        "docs/v0_9/p0a2_target_blind_numerical_methods_capacity_solver_design_protocol.md"
+      ],
+      "changed": [],
+      "removed": []
+    },
+    {
+      "commit": "090a1db6c95976bbb5f0d69a3cc4a4603d165505",
+      "parent": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "added": [
+        "reports/v0_9/p0a1_methodology/FREEZE_MANIFEST.sha256",
+        "reports/v0_9/p0a1_methodology/INDEPENDENT_QC_CHECKLIST.md",
+        "reports/v0_9/p0a1_methodology/P0A1_METHODOLOGY_DECISION_CLOSEOUT.md",
+        "reports/v0_9/p0a1_methodology/P0A1_METHOD_QUALIFICATION.md",
+        "reports/v0_9/p0a1_methodology/P0A1_recovered_methodology_independent_QC_2026-10-15.md",
+        "reports/v0_9/p0a1_methodology/method_admissibility.csv",
+        "reports/v0_9/p0a1_methodology/next_gate_dependency_map.md",
+        "reports/v0_9/p0a1_methodology/normalization_and_failure_ledger.md",
+        "reports/v0_9/p0a1_methodology/optimizer_certification_requirements.md",
+        "reports/v0_9/p0a1_methodology/original_package_metadata/P0A1_AGENT_README.txt",
+        "reports/v0_9/p0a1_methodology/original_package_metadata/PACKAGE_INVENTORY.json",
+        "reports/v0_9/p0a1_methodology/original_package_metadata/SHA256SUMS",
+        "reports/v0_9/p0a1_methodology/original_recovered_methodology_review_package.zip",
+        "reports/v0_9/p0a1_methodology/provenance_and_information_barrier.json",
+        "reports/v0_9/p0a1_methodology/representation_and_observability_matrix.csv",
+        "reports/v0_9/p0a1_methodology/source_constraint_ledger.md",
+        "reports/v0_9/p0a1_methodology/symmetry_and_capacity_ledger.md"
+      ],
+      "changed": [],
+      "removed": []
+    },
+    {
+      "commit": "5b0317f193c481d799e88b494ce370679fec43bc",
+      "parent": "5148712c07ac48742d3435dc14e01667280f94c3",
+      "added": [
+        "docs/v0_9/p0a1_post_synthetic_methodology_qualification_protocol.md"
+      ],
+      "changed": [],
+      "removed": []
+    },
+    {
+      "commit": "5148712c07ac48742d3435dc14e01667280f94c3",
+      "parent": "24c00fc44e4d9d57adacd1e636e9e2d20d86a954",
+      "added": [
+        "reports/v0_9/p0a0_registered_execution/CASE_MATRIX.md",
+        "reports/v0_9/p0a0_registered_execution/ENGINEERING_QC.md",
+        "reports/v0_9/p0a0_registered_execution/EXECUTION_TRANSCRIPT.md",
+        "reports/v0_9/p0a0_registered_execution/FREEZE_MANIFEST.sha256",
+        "reports/v0_9/p0a0_registered_execution/P0A0_registered_execution_independent_QC_2026-10-15.md",
+        "reports/v0_9/p0a0_registered_execution/P0A0_registered_execution_independent_verification_2026-10-15.json",
+        "reports/v0_9/p0a0_registered_execution/PACKAGE_INVENTORY.json",
+        "reports/v0_9/p0a0_registered_execution/RESULTS_FREEZE_CLOSEOUT.md",
+        "reports/v0_9/p0a0_registered_execution/SHA256SUMS",
+        "reports/v0_9/p0a0_registered_execution/environment.json",
+        "reports/v0_9/p0a0_registered_execution/original_execution_package.zip",
+        "reports/v0_9/p0a0_registered_execution/p0a0_registered_pilot_once.jsonl",
+        "reports/v0_9/p0a0_registered_execution/postrun_checks.json",
+        "reports/v0_9/p0a0_registered_execution/preflight.json",
+        "reports/v0_9/p0a0_registered_execution/provenance_ledger.json",
+        "reports/v0_9/p0a0_registered_execution/result_inventory.json",
+        "reports/v0_9/p0a0_registered_execution/runner_attempt.json",
+        "reports/v0_9/p0a0_registered_execution/runner_completion.json",
+        "reports/v0_9/p0a0_registered_execution/runner_stderr.txt",
+        "reports/v0_9/p0a0_registered_execution/runner_stdout.txt",
+        "reports/v0_9/p0a0_registered_execution/signature_setup.json"
+      ],
+      "changed": [],
+      "removed": []
+    },
+    {
+      "commit": "24c00fc44e4d9d57adacd1e636e9e2d20d86a954",
+      "parent": "d15865167b4e3c454e398bd498d9d681103096f7",
+      "added": [
+        "docs/v0_9/p0a0_human_freeze_commands.sh",
+        "docs/v0_9/p0a0_implementation_specification.md",
+        "registered_pilots/p0a0/cases.py",
+        "registered_pilots/p0a0/fixture_config.json",
+        "registered_pilots/p0a0/fixtures.py",
+        "registered_pilots/p0a0/implementation_manifest.json",
+        "reports/v0_9/p0a0_implementation/AMENDMENT_QC.md",
+        "reports/v0_9/p0a0_implementation/QC_README.md",
+        "reports/v0_9/p0a0_implementation/amendment_changes.json",
+        "reports/v0_9/p0a0_implementation/amendment_controlled_regressions.log",
+        "reports/v0_9/p0a0_implementation/amendment_dev_checks.log",
+        "reports/v0_9/p0a0_implementation/amendment_environment.json",
+        "reports/v0_9/p0a0_implementation/amendment_source.diff",
+        "reports/v0_9/p0a0_implementation/amendment_static_preservation_checks.json",
+        "reports/v0_9/p0a0_implementation/changed_paths.txt",
+        "reports/v0_9/p0a0_implementation/collection.log",
+        "reports/v0_9/p0a0_implementation/dev_checks.log",
+        "reports/v0_9/p0a0_implementation/dev_checks_final.log",
+        "reports/v0_9/p0a0_implementation/environment.json",
+        "reports/v0_9/p0a0_implementation/inherited_baseline.log",
+        "reports/v0_9/p0a0_implementation/inherited_baseline_after_pytest_install.log",
+        "reports/v0_9/p0a0_implementation/integrity.json",
+        "reports/v0_9/p0a0_implementation/pip_freeze.txt",
+        "reports/v0_9/p0a0_implementation/static_checks.json",
+        "scripts/p0a0_registered_pilot.py",
+        "src/meru_geometry/p0a0/__init__.py",
+        "src/meru_geometry/p0a0/boundaries.py",
+        "src/meru_geometry/p0a0/engineering.py",
+        "src/meru_geometry/p0a0/oracles.py",
+        "tests/test_p0a0_dev.py",
+        "tests/test_p0a0_qc_boundaries_dev.py"
+      ],
+      "changed": [],
+      "removed": []
+    }
+  ],
+  "v0_8_tag": {
+    "tag_object": "12afd9f9d1cb4a9d000c0fd9555419f0383978e9",
+    "tag_commit": "85748bff0bfae383afcc0d885f4aec505a2885dd",
+    "tag_object_hash_verified": true,
+    "signature": {
+      "github_verified": true,
+      "github_reason": "valid",
+      "returncode": 0,
+      "validsig": "[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-08-04 1785879905 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130",
+      "stdout": "[GNUPG:] NEWSIG\n[GNUPG:] KEY_CONSIDERED D4EC014EEFCC90E619D2AA59A91239ABCF512130 0\n[GNUPG:] SIG_ID m1UxLBnDlksVFWdR+p3IwQa413E 2026-08-04 1785879905\n[GNUPG:] GOODSIG A91239ABCF512130 Salah-Eddin Gherbi (Discovery Harmonic quantization of the solar system) <salahealer@gmail.com>\n[GNUPG:] VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 2026-08-04 1785879905 0 4 0 1 10 00 D4EC014EEFCC90E619D2AA59A91239ABCF512130\n[GNUPG:] TRUST_UNDEFINED 0 pgp\n",
+      "stderr": "gpg: Signature made Tue Aug  4 22:45:05 2026 BST\ngpg:                using RSA key D4EC014EEFCC90E619D2AA59A91239ABCF512130\ngpg: Good signature from \"Salah-Eddin Gherbi (Discovery Harmonic quantization of the solar system) <salahealer@gmail.com>\" [unknown]\ngpg:                 aka \"Salah-Eddin Gherbi (Scala Harmonica Harmonic Solar System Discovery) <salahealer@gmail.com>\" [unknown]\ngpg: WARNING: This key is not certified with a trusted signature!\ngpg:          There is no indication that the signature belongs to the owner.\nPrimary key fingerprint: D4EC 014E EFCC 90E6 19D2  AA59 A912 39AB CF51 2130\n",
+      "payload": "object 85748bff0bfae383afcc0d885f4aec505a2885dd\ntype commit\ntag v0.8.0\ntagger Salah-Eddin Gherbi <salahealer@gmail.com> 1785879905 +0100\n\nv0.8.0 — First Hand self-embedment and source-recovery checkpoint\n",
+      "armored_signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE1OwBTu/MkOYZ0qpZqRI5q89RITAFAmpyXWEACgkQqRI5q89R\nITAAWRAAgjDi714pLHbUYtkYtBflZEyRKLqiAf0ehZPEi1qcI71VBtCSdz87w47G\nNZZZTFb2ZhUNQ4+SG6ywrXyjPFNTFhQQo3wP+VUU8UUktKW8QpXKQGKY6hJCdlPG\nv7YPvuxGoxcpDpoE2tZxURBI/fuiKIJunFspcVRF6tv33QuDsCLQ251iYsh69j5w\n6wTC843piNO9fHp1hAXXC1YyM9ZjtRiV13pxj24P8eGx/PTSf43v7mEq3HyGc6wN\nFqx5bj2szCoQJGnGOXz7y+doORtlsyZId5iM1ikzqgsjROzTKoJK5vbyYQd725uS\nIToYXCt0mBrEnEtI5K/e91nxwyjLPqVqaWTVpOMtMQabNUZQfZshiwLotUjycBlv\nM9FqO2YZhYftCXmW2g1k1G4NXky43Lyjx+A8WOqyzeIuNrePYzTjzKFrxc2BNAyq\n+3l63W8l66bWF5C6YQ7gtoWsE9m335zzFaUb3agjefxGl3/vF9rt9pOh5GdIXLUF\ndYNkddgXVzbmRliuwhyPJwQiuoyrChfuDhjZvcDITEv3jN44rMxTETs7LOi8WZnm\nO5ccOV3+Mmi/LOUlGPp/bQkbBzG7Dgx/u0RQt7+Fe5VvxuC4K2pQyet73mccVDTj\ngqHOLmLI3FDgkeR7F52w9AH29xI/B06DC3dWDnvkqxKH9Utxg1g=\n=GGGB\n-----END PGP SIGNATURE-----\n",
+      "command": [
+        "gpg",
+        "--homedir",
+        "/workspace/scratch/255e4cd6766b/p0a2_work/gpg",
+        "--batch",
+        "--no-auto-key-retrieve",
+        "--status-fd",
+        "1",
+        "--verify",
+        "/workspace/scratch/255e4cd6766b/p0a2_work/input/v0_8_tag.asc",
+        "/workspace/scratch/255e4cd6766b/p0a2_work/input/v0_8_tag.payload"
+      ],
+      "payload_sha256": "46812334e6bdcd37a9c9539b5385aae359a596751c0f53ec53fa91deb594239d"
+    }
+  },
+  "v0_8_ancestry": {
+    "method": "fresh GitHub compare response; metadata only",
+    "status": "ahead",
+    "merge_base": "85748bff0bfae383afcc0d885f4aec505a2885dd",
+    "head": "8bf0babfd91bdefb0792e93707fd0b0da1c09767",
+    "response_sha256": "fd718dfde670d49eb05807456e6ef99f0cd7de6dba3dc3fbe39d095de7ab41c4"
+  },
+  "remote_branch": {
+    "name": "hebrew-projection-capacity-v0.9",
+    "observed_tip": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+    "equals_preregistration": true,
+    "authority": "Pinned commit, not moving branch"
+  },
+  "frozen_p0a0": {
+    "raw_sha256": "4b4b27b0d5d9a95ffe864e2d2c83433be0ddd544b6122ebbea294857326817d6",
+    "records": 14,
+    "states": {
+      "PASS": 5,
+      "EXPECTED_BLIND_SPOT": 8,
+      "FAIL": 0,
+      "NOT_EVALUABLE": 0
+    },
+    "scores_recomputed": false,
+    "rerun": false
+  },
+  "local_archive_checks": [
+    {
+      "local_path": "p0a1_recovery/input/original_execution_package.zip",
+      "bytes": 30513,
+      "sha256": "5c1b371ddaa2803430705a87f6cba748f3f3cd929749f596a55e1cd53a387295",
+      "git_blob": "ac04fd931408fc470c1a2983380771021bea3c42",
+      "frozen_git_path": "reports/v0_9/p0a0_registered_execution/original_execution_package.zip",
+      "byte_identity_checked_without_extracting": true
+    },
+    {
+      "local_path": "P0A1_methodology_review_QC_recovered_package.zip",
+      "bytes": 54360,
+      "sha256": "3345d7431b369d42a750a122525bbd286e48c9ac3de92002536aa84d90e915d3",
+      "git_blob": "272ea1d5896df874be1075f57499ee4e9f6b86e3",
+      "frozen_git_path": "reports/v0_9/p0a1_methodology/original_recovered_methodology_review_package.zip",
+      "byte_identity_checked_without_extracting": true
+    }
+  ],
+  "api_response_hashes": [
+    {
+      "file": "ancestry.json",
+      "sha256": "fd718dfde670d49eb05807456e6ef99f0cd7de6dba3dc3fbe39d095de7ab41c4",
+      "bytes": 34562
+    },
+    {
+      "file": "commit_090a1db.json",
+      "sha256": "a94662181db63c50589a7894d61156fb0d5b04a8ca49b8672d57311c1c9e8538",
+      "bytes": 2537
+    },
+    {
+      "file": "commit_24c00fc.json",
+      "sha256": "12356d6a37c6119f8af25cdf5b9695798b71e3481af212fc3db1dfe1d952156e",
+      "bytes": 2549
+    },
+    {
+      "file": "commit_5148712.json",
+      "sha256": "b9d2b0ec3c8cf377bde529ee8879c34751ca5a04662d1708e84f62c49ebcd19a",
+      "bytes": 2555
+    },
+    {
+      "file": "commit_5b0317f.json",
+      "sha256": "26087da8b6a57867c4ec62076fcac687836c103164e1cccc3fec58035f396c57",
+      "bytes": 2539
+    },
+    {
+      "file": "commit_d158651.json",
+      "sha256": "af6acedbd632a1b9d5317f283f6fe4897c4c2969fe74474774790c83d19945d8",
+      "bytes": 2525
+    },
+    {
+      "file": "commit_e917fa2.json",
+      "sha256": "4ee1bb9f8a67a36673132a14a4cc8500af4eb51eb89af15ebbe5bef2c88d5949",
+      "bytes": 2559
+    },
+    {
+      "file": "remote_branch.json",
+      "sha256": "8e8c9ceb2d5f3a15c89d6851db004a592d5d527420134e9ba32847d517df3bb1",
+      "bytes": 5889
+    },
+    {
+      "file": "tag.json",
+      "sha256": "990679371ecd50a57b1d3d2db11230c2c8fe60ca349195179e1b882389620701",
+      "bytes": 2781
+    },
+    {
+      "file": "tree_3d601c968c454ee78867b20fecc2b734423a221f.json",
+      "sha256": "046c588be896ac15091518796e06f06f734911ce359823f9f873b2d9c398fdef",
+      "bytes": 198509
+    },
+    {
+      "file": "tree_5f11f759f71bc425edd2513031c42953b39b3668.json",
+      "sha256": "acd41ae8e1d0974f8804a4faab0ca3adff6275ece48c2f7faa3d095f1acc2ec1",
+      "bytes": 198147
+    },
+    {
+      "file": "tree_ba20f10bf6a0e415e9de191ee918d202d1c56889.json",
+      "sha256": "16147596e178eba58e78b9294e4d7139274774556de4f728bdcc3eea15984165",
+      "bytes": 191284
+    },
+    {
+      "file": "tree_da82a9ee6db6fd93525d18660e67dcab0d51ae5f.json",
+      "sha256": "61240b587ee96cc35c4972464f2a74a408e8067b18415cd62f44f644dd5a99a5",
+      "bytes": 183767
+    },
+    {
+      "file": "tree_db008bd0ccfeb4a4c9464f97384014c14a5192f5.json",
+      "sha256": "de7c2b763ecf191c620e7a01eb057ec805e2aa5c1f5d858492bb359a6a112521",
+      "bytes": 191633
+    },
+    {
+      "file": "tree_e8e7eb61baf834ce21e57d747358764233a392b8.json",
+      "sha256": "db6bea3f25e0b05be7d6b4aaa69a07cdea7d3121e60633a0ceb25fd6e5f53e94",
+      "bytes": 171926
+    }
+  ],
+  "workspace": {
+    "repository_checkouts": "No meru-geometry-audit* directory available at initial bounded workspace listing; no repository cloned or modified. No claim of a current clean checkout.",
+    "writes": "New p0a2_work review/provenance/artifact files outside any repository only.",
+    "prior_states": "P0A0/P0A1 checkout observations in frozen records are historical, not a current status check."
+  },
+  "D0_status": "VERIFIED",
+  "mandatory_provenance_failure": false,
+  "information_barrier_failure": false,
+  "handoff": {
+    "local_path": "/workspace/scratch/255e4cd6766b/upload/P0A2_READ_ONLY_TARGET_BLIND_DESIGN_AGENT_HANDOFF(1).txt",
+    "bytes": 21017,
+    "sha256": "ac72e45c94fea6e2b0072b48f1def5fd9076b2c30755b89b4e18c21f275b43b3",
+    "read_in_full": true,
+    "Library_read": false
+  },
+  "protocol_read": {
+    "complete": true,
+    "lines": 229,
+    "source": "Pinned raw GitHub, exact signed commit",
+    "protocol_text": "# P0A2 — Target-Blind Numerical Methods, Effective-Capacity and Solver-Certification Design\n\n**Project:** Meru Geometry Audit  \n**Development line:** `v0.9` — Hebrew projection specificity and viewing-capacity audit  \n**Repository:** `salahealer9/meru-geometry-audit`  \n**Branch:** `hebrew-projection-capacity-v0.9`  \n**Date drafted:** 2026-10-15  \n**Status:** **DRAFT — NOT PREREGISTERED UNTIL HUMAN GPG-SIGNED COMMIT**  \n**Phase type:** target-blind design and independent proof/verification planning; **no registered numerical execution**  \n**Hebrew target image access:** **PROHIBITED**  \n**Agent repository writes:** **NO COMMIT / NO PUSH**\n\n## 0. Scientific question and narrow authority\n\nP0A0 established the limitations of synthetic shape methods; P0A1 qualified the representation and methodological choices **for further pre-target design**, not for Hebrew scoring. P0A2 asks:\n\n> Can we specify a fully auditable, source-independent numerical design for comparison observables, nested *effective* viewing freedom and whole-domain solver certification, so that subsequent implementation and validation can be frozen before Hebrew target appearances affect any choice?\n\nP0A2 shall distinguish three layers: (a) mathematical exact statements proved here; (b) **proposed** target-free numerical design choices to be independently reviewed and subsequently signed; and (c) unestablished target observations or historical physical-shadow mechanisms. Producing design documents is **not** a new experiment, successful matcher or authorization to inspect any target image.\n\nP0A2 does **not** choose the primary Hebrew score, final G1/G2 levels, historical physical shadow operator, Meru 3-D hand geometry, scientific candidate/null distributions, significance level, or Hebrew extraction convention by itself. It shall produce one or more **exact, independently checkable design candidates**, with a preferred conditional path only if its prerequisites are actually satisfiable. Exact implementation and synthetic certification require their own future frozen gate. If incompatible observational assumptions prevent a justified choice, an explicitly unresolved outcome is valid.\n\n### Verified immutable lineage, to be reverified in a later Work handoff\n\n| Checkpoint | GPG-signed commit / exact identity |\n|---|---|\n| v0.8 signed tag | `v0.8.0`, historical result `NO_REPRODUCIBLE_PUBLISHED_FIRST_HAND_CONSTRUCTION_RECOVERED` |\n| P0A0 protocol | `d15865167b4e3c454e398bd498d9d681103096f7` |\n| P0A0 protocol blob | `0f8b663bfe2432685c9320a00c80fd6bcf436e38` |\n| P0A0 implementation | `24c00fc44e4d9d57adacd1e636e9e2d20d86a954` |\n| P0A0 results | `5148712c07ac48742d3435dc14e01667280f94c3` |\n| P0A1 methodology protocol | `5b0317f193c481d799e88b494ce370679fec43bc` |\n| P0A1 protocol blob | `d0a20485e8a2793fae6ede040fc266e461c8f23f` |\n| **P0A1 decision/results freeze — expected direct parent of P0A2 preregistration** | **`090a1db6c95976bbb5f0d69a3cc4a4603d165505`** |\n| Expected signing fingerprint | `D4EC014EEFCC90E619D2AA59A91239ABCF512130` |\n\nOn 2026-10-15, GitHub independently verified the P0A1 freeze's GPG signature, parent `5b0317f193c481d799e88b494ce370679fec43bc`, 17 new frozen files and exact remote branch HEAD `090a1db6c95976bbb5f0d69a3cc4a4603d165505`. This statement does not replace future local Git status and identity checks.\n\n### Authoritative frozen inputs (read-only)\n\n- `reports/v0_9/p0a1_methodology/P0A1_METHODOLOGY_DECISION_CLOSEOUT.md`\n- `reports/v0_9/p0a1_methodology/P0A1_METHOD_QUALIFICATION.md`\n- `reports/v0_9/p0a1_methodology/representation_and_observability_matrix.csv`\n- `reports/v0_9/p0a1_methodology/method_admissibility.csv`\n- `reports/v0_9/p0a1_methodology/normalization_and_failure_ledger.md`\n- `reports/v0_9/p0a1_methodology/symmetry_and_capacity_ledger.md`\n- `reports/v0_9/p0a1_methodology/optimizer_certification_requirements.md`\n- `reports/v0_9/p0a1_methodology/source_constraint_ledger.md`\n- `reports/v0_9/p0a1_methodology/next_gate_dependency_map.md`\n- `reports/v0_9/p0a1_methodology/P0A1_recovered_methodology_independent_QC_2026-10-15.md`\n- `reports/v0_9/p0a0_registered_execution/RESULTS_FREEZE_CLOSEOUT.md`, `CASE_MATRIX.md`, `p0a0_registered_pilot_once.jsonl`\n- `docs/geometry/projection_orbit_results_v0_5.md`; `docs/first_hand_construction_source_recovery_closeout_v0.8.md`\n\nP0A0 raw JSONL SHA-256 remains `4b4b27b0d5d9a95ffe864e2d2c83433be0ddd544b6122ebbea294857326817d6`. Original agent P0A0 ZIP SHA-256 remains `5c1b371ddaa2803430705a87f6cba748f3f3cd929749f596a55e1cd53a387295`. The recovered P0A1 agent ZIP SHA-256 is `3345d7431b369d42a750a122525bbd286e48c9ac3de92002536aa84d90e915d3`. The interruption and reconstruction of P0A1's unsaved original draft remain disclosed; do not rewrite the recovered archive or its provenance.\n\n## 1. Frozen lessons and retained negative findings\n\nP0A0: **5 PASS, 8 EXPECTED_BLIND_SPOT, 0 FAIL, 0 NOT_EVALUABLE**, independently QC-reviewed. S03 disproved sample-index invariance, S04 showed stroke-label non-identifiability, S05 showed raster-resolution blindness, S06–S08 showed component/endpoint/notch limitations, S09 made reversal and closure semantics explicit, S10 retained tiny-scale rejection, S11 showed local result 0.4 versus analytic global 0, and S12 proved camera-roll redundancy and the six-signed/three-axis distinction.\n\nP0A1's human-frozen status is `P0A1_METHODOLOGY_QUALIFIED_FOR_PRETARGET_DESIGN`, **coexisting** with:\n\n- `P0A1_REPRESENTATION_INSUFFICIENT` (unsupplied target graph and historical physical-shadow information);\n- `P0A1_OPTIMIZATION_CERTIFICATION_DEFERRED`;\n- `P0A1_EFFECTIVE_CAPACITY_NOT_SPECIFIED` (G1/G2 and complete nuisance budget);\n- `P0A1_SOURCE_CONSTRAINT_UNRESOLVED` (three missing functions, unique shaping/carrier and physical optics).\n\nPreserve the exact method outcomes: C1 index Procrustes **rejected for claimed sampling invariance**; C2 resampled ordered Procrustes, C3 Chamfer, C4 Hausdorff, C6 raster and C7 composite **conditional**; C5 **admissible only with independently supplied graph observables**; C8 historical physical-shadow model **not established**. Do not upgrade these labels by definition or select the illustrative P0A0 penalty of 1/4 as a target metric.\n\nRetain the historical missing-crop/image-dependent regression exclusions, incomplete standalone DEV completion log, known GPG-key-import warning despite subsequent valid signatures and absence of A09 raw image from the registered agent environment. No P0A0 pilot rerun is justified.\n\n## 2. Strict information and execution barrier\n\n**Permitted:** read only frozen text, CSV, source code (inspection, not execution), existing synthetic results and historical textual provenance; reason with symbolic mathematics; design reproducible future algorithms, proof obligations, tests and bounded error specifications; prepare additive offline draft documents in a separate delivery directory.\n\n**Forbidden:** any download/open/decode/display/crop/OCR/skeletonization/tracing of A09, A06 or another Hebrew glyph/chart image; inspecting local source-derived glyph arrays, letter samples, fonts as proxy targets or any target-derived extraction; scoring/aligning geometry to letters; manual visual tuning; candidate-vs-null run; creating null objects for scored comparison; executing P0A0 S00–S12; new synthetic numerical sweeps, simulations, optimizers, projection rendering, test suites or benchmark runs; changing frozen source, tags, reports or version metadata; agent commits/pushes. This P0A2 *design review* has **zero numerical execution authority**.\n\nA09 identity is **metadata-only**: A09/S06, `First Hand Hebrew chart`, `https://www.meru.org/Gestures/frsthand873.jpg`, recorded JPEG 826×787, 542620 bytes, SHA-256 `a091cbe95b9042cddb93bb5a57a07b406d5d1a6053e481faf2746b38a22dab68`; the recorded bytes were **not** independently stream-hashed in P0A0 because its raw local snapshot was absent. Do not fetch it. No copyrighted chart, source image or trace enters the public review package. Meru email/archival replies require separate provenance intake.\n\n## 3. D1 — Conditional observation model and forward operators\n\nFor each of R3-C, R3-S, R2-O, R2-U, R2-G, R2-I, R2-H from P0A1 M1, declare whether its observables are (i) supplied by source-independent mathematics, (ii) independently observable but not yet acquired, or (iii) not historically established. Select **conditional modeling lanes** and forbidden transitions. At minimum:\n\n1. `L1_CENTRELINE_DIAGNOSTIC`: orthographic R3-C → R2-O with explicit order/visibility semantics, then optionally → R2-U under a declared sampling rule. **Not a physical hand shadow.**\n2. `L2_PLANAR_INK_DIAGNOSTIC`: R2-O or independently supplied stroke graph → fixed-width R2-I via registered rendering conventions. **Not historical occlusion/illumination.**\n3. `L3_PHYSICAL_SHADOW`: R3-S → R2-H is `NOT_ESTABLISHED` until a separately attested or explicitly acknowledged diagnostic 3-D carrier, optical scene and validation are frozen.\n4. `L4_TARGET_GRAPH`: R2-G counts/matching require independently justified labelled incidence and ambiguity/rights protocol; no support-to-graph inverse is available by default.\n\nA physical shadow can invalidate roll/SO(2) quotients if illumination/receiver geometries break the symmetry. No frame-count conclusion for L1 may be transferred to L3 without a proof of equivariance. Likewise a target extraction convention must be registered **before** access to any glyph pixels, but cannot be invented here as already observed.\n\nDeliver an operator compatibility/availability matrix including domain, codomain, preserved/lost data, possible nuisance actions, undecided observation metadata and next signed dependency for each lane.\n\n## 4. D2 — Exact score/normalization specification candidates\n\nDevelop **at least two distinct non-target metric-design lanes** for later selection, rather than claiming one universally optimal score. A useful pair is ordered arclength-resampled correspondence (only with genuinely sourced order) versus finite-support comparison accompanied by *separate* graph/raster diagnostics; alternatives are acceptable if justified. For each lane specify:\n\n- mathematical objective with all quantifiers and direction of optimization, inputs, units, score direction, allowable range *only if established*, normalization measure (sampling- versus arclength- versus component-weighted), centering/reference scale and treatment of scale sign/near-zero extent;\n- symmetric versus asymmetric comparison, correspondence and sampling bounds, metric versus pseudometric versus nonmetric status, and exact observation object measured; if a later segmentation is necessary, flag missing authority rather than assuming it;\n- fixed or optimizable nuisance list: planar translation, strictly positive scale, SO(2), optional separately declared O(2), open reversal, closed shift, stroke/component permutation, masks/cropping, and any allowed renderer parameters. Count each discretionary freedom separately;\n- admissible sampling/discretization and independent numerical reference path; preserve S03, S04, S05, S06, S07, S08, S09, S10 limitations as mandatory counterexamples;\n- total error *decomposition*: source/observation uncertainty, sampling/mesh, raster/optics when applicable, floating point, and optimization gap. Define which terms can be bounded and which cannot currently be known;\n- deterministic classifications `INVALID_INPUT`, `NOT_EVALUABLE`, `LOCAL_ONLY`, `BOUNDED_APPROXIMATION`, `GLOBAL_CERTIFIED` where applicable, with no NaN-to-zero conversion, no empty–empty perfect match, and explicit unachieved infima and timeouts;\n- dependency on rights/extraction and independent second chart, and an exact plan for *future* synthetic validation without running it now.\n\nDo not silently choose composite weights, image width, processing threshold, raster grid, target uncertainty tolerances or a future primary Hebrew statistic. Specify **unresolved decision slots** and the target-blind rationale needed to fill them. A score on an ordered open polyline cannot by itself be advertised as unlabeled glyph similarity.\n\n## 5. D3 — Effective viewing-capacity design and mathematical certification plan\n\nFor *orthographic ordered-centreline or compatible support* lanes with free planar SO(2), define the signed viewing map \\(n=R^\\mathsf{T}e_z\\) and quotient \\(SO(2)\\backslash SO(3)\\cong S^2\\). Opposite directions are not universally identified under SO(2); under separately allowed planar O(2), identify \\(n\\sim -n\\). The v0.5 group yields exactly G0 = `{±e_x, ±e_y, ±e_z}` (six signed directions) or three axes under O(2), conditional on object/observation semantics. Roll is **not a capacity dimension** under this quotient. Object-specific extra projection identities are not general-direction equivalences.\n\nRequire **at least two target-independent reproducible finite nested-capacity design candidates**, each described symbolically by exact coordinates or a deterministic generator, with canonical frame lifts, orientation precision, and proof obligations for no accidental duplicates and inclusion \\(G_0\\subsetneq G_1\\subsetneq G_2\\). Every proposed tier must retain G0 exactly. Include a reasoned review of this *illustrative, not yet selected* symmetric family:\n\n- G0 = six coordinate-axis unit vectors;\n- G1 may adjoin all eight cube-corner unit vectors \\((\\pm1,\\pm1,\\pm1)/\\sqrt3\\) → **14 distinct signed directions**;\n- G2 may further adjoin the twelve edge-direction unit vectors obtained from permutations of \\((\\pm1,\\pm1,0)/\\sqrt2\\) → **26 distinct signed directions**.\n\nThe 6/14/26 signed counts (3/7/13 axes under O(2)) are **combinatorial design examples**, **not historical Meru directions**, certified sphere-covering radii, selected final tiers, or a tested optimum. An alternative family must also be specified, not just an axial-roll augmentation. Do not tune tiers to target shapes. A finite direction count alone does not certify optimization over remaining planar similarity variables.\n\nFor each candidate design require: exact membership/set inclusion proof; quotient-distinct counts with reflection convention; minimum angular separation and angular covering radius *method and planned independent certificate* (values only if proved analytically, not guessed); ordering, antipodal pairing, tie handling, deterministic frame lift \\(n\\mapsto R_n\\) and seam/canonicalization; actual nuisance/fitting budget; per-object equivalence reporting without post-target selection; future implementation and reference-oracle instructions. Compare capacity families on *a priori geometric coverage and computational tractability*, never on Hebrew score performance.\n\nA continuous-domain proposal requires full parameter charts and a valid global numerical-bound strategy. A discretization statement \\(E_\\text{grid}-\\inf_{n\\in D}E(n)\\le L\\delta\\) is **conditional** on a proved uniform Lipschitz/continuity bound for the complete objective, its optimizable nuisances and exclusion domains; otherwise label `COVERAGE_ERROR_UNCERTIFIED`. Occlusion, normalization degeneracy and thresholded rasters may invalidate that condition.\n\nFor nested fixed objective and identical nuisance domains, derive the **infimum** inequality \\(\\inf_{G_2}E\\le\\inf_{G_1}E\\le\\inf_{G_0}E\\); only use `min` where attained. A lower optimized error follows from increased opportunity and demonstrates **no specificity** absent matched controls. Candidate and each future N0–N3 control must have the same metric, physical forward model, admissible domain, accuracy/failure policy and registered capacity definition.\n\n## 6. D4 — Whole-domain optimizer certification architecture\n\nDistinguish `GLOBAL_CERTIFIED` exact proof/exhaustion, `BOUNDED_APPROXIMATION` with proved feasible upper bound U and global lower bound L with U−L≤ε, and `LOCAL_ONLY` without completeness proof. S11's 0.4 local versus 0 global is a binding warning, **not** an optimizer to repair/reexecute here.\n\nFor each D2 score family × each proposed D3 capacity design, specify:\n\n1. objective and full continuous/discrete search domain, including camera, planar translation, rotation, s>0 with explicit attainment/zero-scale infimum policy, allowed reversals, shifts and permitted component assignments;\n2. analytically eliminable nuisances and the assumptions behind closed forms (e.g. genuine ordered correspondences) without conflating remaining minimization and global certification;\n3. independent validation oracle/certificate route: exact exhaustive finite search when truly finite, analytic proof, global interval lower/upper bounds, or proof-complete deterministic approximation. Multiple random starts, dense images and solver `success=True` are insufficient;\n4. branch completeness, tolerance, tie and near-tie classification; all sampling/float/renderer errors budgeted separately;\n5. worst-case cost/memory envelope and common accuracy/failure budget for candidates/controls, including how to record timeout/partial feasible candidates without presenting them as globally optimal;\n6. target-free, separately signed development fixtures and adversarial future certification plan (not executed here), covering S03–S12 pathologies **without replaying P0A0**;\n7. exact stop condition for an unbounded/unproved optimizer discrepancy and requirement for an amendment before further certification.\n\nIf no complete certificate is defensible for a family, explicitly classify that family `GLOBAL_CERTIFICATION_DEFERRED` and deny downstream *minimum*-score claims for it. A conditional lane can remain an engineering candidate when the limitations are visible.\n\n## 7. D5 — Fairness, capacity and later statistical estimands\n\nDefine matching-budget parity across candidate objects and proposed null families N0–N3 without choosing or sampling the nulls. The budget ledger must separately record: physical directions, roll quotient, reflection choice, translations/scales, ordered reversal/closed shift, stroke assignment/masking, shape-family parameters, and solver error envelopes. Nominal number of frames is **not** the number of effective independent tests and not a p-value correction by itself.\n\nState what is comparable under each observational lane and what changes the estimand. Controls must obey the same score/normalization, capacity sets and accuracy rules unless a **separate** historically constrained analysis is preregistered. No null distribution, object class, specific source-constrained sculpture, seed/sample size, inference result, effect threshold or power number is chosen or evaluated here.\n\nFor later confirmatory design only, write symbolic forms of: fixed-corpus per-letter error matrix, candidate-versus-null contrast by null level and capacity, object×capacity interaction, cross-candidate per-letter coherence, capacity-conditioned null calibration, minimum detectable advantage per null/view and multiplicity/finite-Monte-Carlo policy. The 22 basic letters are a fixed set, not IID replicates; 27 extended forms form a **separate declared alternative**, not optional extra data points. These symbolic forms confer no permission to inspect a glyph or assign a final primary statistic.\n\n## 8. D6 — Historical/rights/target boundary and next registered gates\n\nKeep five P0A1 provenance classes (`SOURCE_ATTESTED`, `SOURCE_CONSTRAINED_INTERPRETATION`, `INDEPENDENT_DIAGNOSTIC`, `NULL_CONTROL`, `UNRESOLVED`). Source attests a reciprocal seed law, a later 1.5-turn/3π convention, three 120° copies and tetrahedral motifs, but does not uniquely define the final endpoint-parallel 3-D hand, three alleged algebraic function sets, dimpled-sphere carrier/optics, or exact physical letter projections. Early and later turn-count conventions must not be conflated.\n\nA09/S06 is a hand-drawn, nonmetric shadowgram chart in the historical provenance ledger, **not** an inverse 3-D metric specification. No future metric may use unregistered reinterpretation of its hand drawing as ground-truth physical dimensions.\n\nDraft a precise future authority map before actual target exposure:\n\n- a **metadata-only target source/rights and annotation preregistration** fixing A09 version and permitted use, 22/27 symbol convention, inclusion/cropping, multi-stroke/ambiguity and missingness protocols **before any image pixels**;\n- an independent second-chart selection/uncertainty protocol using non-target metadata and declared independence rationale;\n- a new numerical **implementation/configuration freeze**, including approved target-blind score definition(s), permitted representation, G0/G1/G2 exact files, solver/reference code, seeds, errors, software/environment and nuisance budgets;\n- separately preregistered **target-free validation/certification** (new fixtures, implementation frozen first, one authorized run, independent QC); no silent return to P0A0;\n- source-constrained candidate model and N0–N3 null ensembles, matched constraints, fixed observables and sampling, source uncertainty and multiplicity/statistics;\n- a separate human authorization for target extraction and then scientific comparison only after all applicable gates.\n\nIf rights, source observables, optics or controls remain unavailable, report conditional paths and blockers, not invented historical methods. No interpretation about Genesis, historical causation, theological claims or universal alphabet generation is an admissible P0A2 conclusion.\n\n## 9. D7 — Proposed exact review outputs and independent QC criteria\n\nA subsequent Work-agent handoff shall perform **read-only research and symbolic design**, in this order:\n\n- `D0_FREEZE_AND_PROVENANCE`: verify branch/HEAD/parent, P0A2 signed protocol/blob, complete P0A0 and P0A1 frozen lineage, source hashes and unchanged input; disclose local checkout divergence rather than resetting it.\n- `D1_OBSERVATION_AND_OPERATOR_CONTRACT`: representation lane and forward-operator matrix, including lost fields/unknowns and no illegal physical-shadow inference.\n- `D2_SCORE_AND_NORMALIZATION_DESIGN`: ≥2 fully specified candidate lanes; explicit no-target-choice constraints; sampling, normalization, failure and approximation ledger.\n- `D3_CAPACITY_FAMILY_DESIGN`: ≥2 exact nested direction-family proposals; analyze 6/14/26 illustration, SO2/O2 distinction, separation/coverage *certification plan*, frame lifts, nuisance budget.\n- `D4_SOLVER_CERTIFICATION_PLAN`: formal whole-domain/exhaustion/interval and error proof obligations per family; separate GLOBAL_CERTIFIED, BOUNDED_APPROXIMATION, LOCAL_ONLY and deferred.\n- `D5_FAIRNESS_AND_ESTIMANDS`: cross-candidate/control capacity parity and symbolic later estimands, 22-letter fixed-corpus/multiplicity cautions.\n- `D6_HISTORICAL_AND_TARGET_BARRIER`: verified source constraint/rights/optics gaps, staged future signatures and explicit no-target statement.\n- `D7_DESIGN_DECISION_LEDGER_AND_QC`: route-by-route proposed accept/conditional/defer/reject statements, concrete unresolved numerical choices, independent checklist and prospective next-step recommendation.\n\nDeliver as an **additive review ZIP only**, with no automatic repository writes. Proposed file layout:\n\n- `reports/v0_9/p0a2_target_blind_design/P0A2_NUMERICAL_DESIGN_REVIEW.md`\n- `reports/v0_9/p0a2_target_blind_design/observation_operator_matrix.csv`\n- `reports/v0_9/p0a2_target_blind_design/score_normalization_candidates.md`\n- `reports/v0_9/p0a2_target_blind_design/direction_family_candidates.md`\n- `reports/v0_9/p0a2_target_blind_design/capacity_and_nuisance_budget.csv`\n- `reports/v0_9/p0a2_target_blind_design/solver_certification_matrix.csv`\n- `reports/v0_9/p0a2_target_blind_design/numerical_error_failure_ledger.md`\n- `reports/v0_9/p0a2_target_blind_design/fairness_and_future_estimands.md`\n- `reports/v0_9/p0a2_target_blind_design/historical_target_dependency_map.md`\n- `reports/v0_9/p0a2_target_blind_design/design_decision_register.csv`\n- `reports/v0_9/p0a2_target_blind_design/provenance_and_information_barrier.json`\n- `reports/v0_9/p0a2_target_blind_design/INDEPENDENT_QC_CHECKLIST.md`\n- top-level package inventory/complete SHA-256 manifest with exact relative paths and lengths.\n\nEach decision must label evidence as `[FROZEN RESULT]`, `[SOURCE ATTESTED]`, `[MATH DERIVATION]`, `[TARGET-BLIND DESIGN CANDIDATE]`, or `[UNRESOLVED]`. Cite exact frozen file/section and S00–S12 case IDs, not unverified external claims. Distinguish proved mathematical guarantees from proposed future certificates. Every required output must be independently reviewable without running a method or opening a target. If a formula, proof, bound or designation cannot be supplied without numerical execution, state `NOT_ESTABLISHED` and create a separately signed next-validation dependency.\n\nThe report must contain explicit statements: `NO_HEBREW_TARGET_ANALYSIS_PERFORMED`, `NO_NEW_NUMERICAL_EXECUTION`, `NO_P0A0_REPLAY`, `NO_CANDIDATE_NULL_EXECUTION`, `NO_AGENT_COMMIT_OR_PUSH`. Statements are bounded to inspected records and access paths, not unsupported assertions about all environments. Retain inherited missing-crop and logging caveats.\n\n## 10. D8 — Outcomes, stop conditions and freeze gates\n\nA sole eligible **qualified design** status, assignable only after independent QC and a later **human GPG-signed design decision freeze**, is:\n\n`P0A2_TARGET_BLIND_NUMERICAL_DESIGN_READY_FOR_IMPLEMENTATION_PLANNING`\n\nIt means the review offers at least one mathematically coherent conditional observation/metric route, at least two auditable distinct nested capacity-family proposals, explicit solver/error/failure certification routes, cross-object capacity fairness requirements and all required future gates. It is **not** a globally certified scorer, a chosen final metric, G1/G2 freeze, target-extraction authorization or a result about letters.\n\nValid coexisting non-success/limited states include:\n\n- `P0A2_OBSERVATION_MODEL_UNRESOLVED` — historical optics, target observables or graph semantics missing;\n- `P0A2_SCORE_SELECTION_DEFERRED` — no justified final primary score/weight or numerical precision yet;\n- `P0A2_CAPACITY_CERTIFICATION_DEFERRED` — exact final levels/covering certification or optics-dependent quotients remain missing;\n- `P0A2_SOLVER_CERTIFICATION_DEFERRED` — no completed whole-domain/global certificate;\n- `P0A2_CONTROL_FAIRNESS_NOT_SPECIFIED` — design still cannot equalize candidate and null freedoms;\n- `P0A2_SOURCE_CONSTRAINT_UNRESOLVED` — missing final historical construction/optics/archival facts;\n- `P0A2_INFORMATION_BARRIER_VIOLATION` — source glyph pixels/shapes or Hebrew scores affected the design: **STOP / QUARANTINE**;\n- `P0A2_PROVENANCE_MISMATCH` — frozen source IDs, hashes or signatures disagree: **STOP**.\n\nNo simulated data, new registered case, new numerical objective evaluation or Hebrew appearance may be used to justify a selection in this P0A2 phase. If more evidence is required, report the gap and preregister a separate target-free validation phase before execution. A negative design result is valid and may mandate redesign rather than retroactive changes to P0A0 or P0A1.\n\n### Human-reviewed gate sequence\n\n1. Review this **draft** against P0A1 decision closeout, all C1–C8 dispositions, target dependency ledger, G0 and S11 evidence. Confirm no source-image or numerical input is used to author it.\n2. Verify local `hebrew-projection-capacity-v0.9` clean HEAD `090a1db6c95976bbb5f0d69a3cc4a4603d165505` and signed commit. Check existing upstream tracking; do not reset a divergent checkout silently.\n3. Stage **only this protocol** at `docs/v0_9/p0a2_target_blind_numerical_methods_capacity_solver_design_protocol.md`; inspect `git diff --cached --check` and the entire staged diff.\n4. Human GPG-sign **protocol-only preregistration**, verify parent, signing fingerprint, protocol Git blob and remote push. Freeze authoring criteria **before** later Work design review.\n5. Prepare a separate read-only P0A2 Work handoff anchored to actual signed commit/blob. No commit/push; no executable tests, new synthetic run, target image access or results.\n6. Independent-QC the P0A2 review ZIP. Only then consider a separate human-signed P0A2 **design decision** freeze; no status or downstream execution is automatically approved.\n7. Later signed target metadata/rights, exact numerical implementation/solver validation, object/null and confirmatory gates remain distinct. Never assume P0A2 authorizes image pixels or scoring.\n\n**Status at issuance:** DRAFT / NOT YET PREREGISTERED. Preparing this document is not an experiment, method certification or v0.9 release.\n"
+  },
+  "public_key_armored": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\n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\n3YuzPuR4dI/TSIZli+V7BGnHHZ64IVF0kQ==\n=3ygn\n-----END PGP PUBLIC KEY BLOCK-----",
+  "review_order": [
+    {
+      "stage": "D0_FREEZE_AND_PROVENANCE",
+      "action": "Read full handoff/P2; fresh pinned GitHub identities; six detached GPG commit signatures and tag; complete trees, source blobs and raw/archive hash checks before D1."
+    },
+    {
+      "stage": "D1_OBSERVATION_AND_OPERATOR_CONTRACT",
+      "action": "Author seven representation and four lane rows, no inversion or optics promotion."
+    },
+    {
+      "stage": "D2_SCORE_AND_NORMALIZATION_DESIGN",
+      "action": "Author QO/QH exact objectives and symbolic derivations; error requirements subsequently expanded under D4."
+    },
+    {
+      "stage": "D3_CAPACITY_FAMILY_DESIGN",
+      "action": "Symbolically specify and prove A/B memberships/counts/nesting and frame lift; no coordinate enumeration."
+    },
+    {
+      "stage": "D4_SOLVER_CERTIFICATION_PLAN",
+      "action": "Author four combination rows and prospective independent-oracle/error/cost/failure proofs."
+    },
+    {
+      "stage": "D5_FAIRNESS_AND_ESTIMANDS",
+      "action": "Author 15-dimension parity ledger and symbolic future forms; no distributions chosen."
+    },
+    {
+      "stage": "D6_HISTORICAL_AND_TARGET_BARRIER",
+      "action": "Retain source taxonomy and construct G0-G6 future authority map."
+    },
+    {
+      "stage": "D7_DESIGN_DECISION_LEDGER_AND_QC",
+      "action": "Internal coverage/consistency audit, 43 dispositions, unfilled independent checklist; schemas, hashes and ZIP validation only. Extra frozen amendment text checked for exact inherited test names; no scientific reevaluation."
+    }
+  ],
+  "information_barrier": {
+    "NO_HEBREW_TARGET_ANALYSIS_PERFORMED": true,
+    "NO_NEW_NUMERICAL_EXECUTION": true,
+    "NO_P0A0_REPLAY": true,
+    "NO_CANDIDATE_NULL_EXECUTION": true,
+    "NO_AGENT_COMMIT_OR_PUSH": true,
+    "source_image_or_proxy_font_access": false,
+    "target_array_access": false,
+    "A09_actual_JPEG_byte_hash_verified": false,
+    "registered_fixture_import_or_execution": false,
+    "scientific_test_runs": 0,
+    "optimizer_calls": 0,
+    "objective_evaluations": 0,
+    "view_enumerator_implemented_or_run": false,
+    "scorer_generator_solver_implemented": false,
+    "null_objects_instantiated": false,
+    "repository_modifications": false,
+    "archival_reply_intake": false,
+    "allowed_reads": "Local handoff; pinned GitHub text/structured metadata; existing synthetic JSONL as records only; inherited ZIPs as whole bytes for hashes without extraction; public signing key; prior recovery bookkeeping code; delivery helper and skill instructions.",
+    "python_scope": "Standard-library retrieval, file/schema parsing and formatting, Git-object/hash/signature provenance, packaging/CRC/checksum bookkeeping only. No scientific modules.",
+    "network_scope": "GitHub pinned raw text, git metadata, branch and public key; final delivery service only. No Meru target URL fetched.",
+    "negative_assertion_scope": "Observed action and input/output records of this review, not an exhaustive audit of every historical host or session."
+  },
+  "inherited_limitations": [
+    "Frozen P0A0 5 PASS / 8 EXPECTED_BLIND_SPOT / 0 FAIL / 0 NOT_EVALUABLE unchanged.",
+    "1281 historical controlled regression passes; two image-dependent tests deselected, not passed. Missing historical crop unresolved; no suite run here.",
+    "Historical earlier 1222 passes / one missing-crop failure / one deselection remains evidence.",
+    "Standalone DEV log has 35 progress dots without complete finish summary; cannot independently prove reported 59.",
+    "Prior nonzero key import before successful verification retained; current import also return 2 before seven exit-0 expected-fingerprint verifications.",
+    "A09 raw image absent in registered workspace; only recorded metadata identity, not JPEG byte verification.",
+    "P0A1 original 60950-byte unsaved draft was lost; recovered 54360-byte ZIP is separately hashed authority, not claimed prose-byte-identical.",
+    "Single registered invocation and protected-file/negative-access claims do not prove absence of other off-environment executions.",
+    "v0.8 missing three functions, unique final shaping/carrier and historical physical-shadow law retained."
+  ],
+  "A09_metadata_only": {
+    "source": "P2 sections 2 and 8; frozen P1 source ledger",
+    "asset": "A09",
+    "source_id": "S06",
+    "title": "First Hand Hebrew chart",
+    "url": "https://www.meru.org/Gestures/frsthand873.jpg",
+    "recorded_dimensions": [
+      826,
+      787
+    ],
+    "recorded_bytes": 542620,
+    "recorded_format": "JPEG",
+    "recorded_sha256": "a091cbe95b9042cddb93bb5a57a07b406d5d1a6053e481faf2746b38a22dab68",
+    "actual_bytes_fetched_or_hashed": false
+  },
+  "retained_p0a1_authority": {
+    "decision_commit": "090a1db6c95976bbb5f0d69a3cc4a4603d165505",
+    "status": "P0A1_METHODOLOGY_QUALIFIED_FOR_PRETARGET_DESIGN",
+    "coexisting": [
+      "P0A1_REPRESENTATION_INSUFFICIENT",
+      "P0A1_OPTIMIZATION_CERTIFICATION_DEFERRED",
+      "P0A1_EFFECTIVE_CAPACITY_NOT_SPECIFIED",
+      "P0A1_SOURCE_CONSTRAINT_UNRESOLVED"
+    ],
+    "historical_draft_titles_unchanged": true
+  },
+  "final_source_preservation": {
+    "all_21_text_source_hashes_rechecked": true,
+    "initial_API_metadata_hashes_rechecked": true,
+    "inherited_archive_bytes_rechecked": true,
+    "repo_checkout_not_created_or_changed": true,
+    "scope": "Verified source copies and known archives plus observed no-write behavior; no exhaustive filesystem claim."
+  },
+  "proposed_positive_status": "P0A2_TARGET_BLIND_NUMERICAL_DESIGN_READY_FOR_IMPLEMENTATION_PLANNING",
+  "positive_status_assigned": false,
+  "limited_statuses": [
+    "P0A2_OBSERVATION_MODEL_UNRESOLVED",
+    "P0A2_SCORE_SELECTION_DEFERRED",
+    "P0A2_CAPACITY_CERTIFICATION_DEFERRED",
+    "P0A2_SOLVER_CERTIFICATION_DEFERRED",
+    "P0A2_CONTROL_FAIRNESS_NOT_SPECIFIED",
+    "P0A2_SOURCE_CONSTRAINT_UNRESOLVED"
+  ],
+  "independent_QC": "PENDING",
+  "human_decision_freeze": "NOT_PERFORMED",
+  "final_bookkeeping_utc": "2026-10-16T00:34:27.200084+00:00"
+}

@@ -1,0 +1,94 @@
+{
+  "phase": "P0A2",
+  "review_date": "2026-10-16",
+  "independent_QC": "PASS_WITH_RETAINED_QUALIFICATIONS",
+  "source_zip": {
+    "name": "P0A2_target_blind_design_QC_package(1).zip",
+    "size_bytes": 86054,
+    "sha256": "e5b6aaf8c0c5e00a2ff68d0ec4a48c168a6c45cf89e00b4bfccaa39662183286",
+    "archive_members": 15,
+    "uncompressed_bytes": 208366,
+    "zip_crc_ok": true,
+    "payload_hashes_verified": 13,
+    "payload_hashes_total": 13,
+    "manifest_hashes_verified": 14,
+    "manifest_hashes_total": 14
+  },
+  "remote": {
+    "repo": "salahealer9/meru-geometry-audit",
+    "branch": "hebrew-projection-capacity-v0.9",
+    "head": "e917fa2974997703d6ccb60b0b25d0c668d12bd5",
+    "parent": "090a1db6c95976bbb5f0d69a3cc4a4603d165505",
+    "protocol_blob": "61585fb47cdb3ff2a3cfef07d3548fbd08084d0b",
+    "signed_commit_chain_verified_by_github": 6,
+    "pinned_source_git_blobs_matched": 21,
+    "pinned_source_git_blobs_checked": 21,
+    "local_gpg_reverification_by_reviewer": false
+  },
+  "tables": {
+    "capacity_and_nuisance_budget.csv": {
+      "rows": 15,
+      "columns": 11,
+      "unique_first_field": true,
+      "empty_fields": 0
+    },
+    "design_decision_register.csv": {
+      "rows": 43,
+      "columns": 9,
+      "unique_first_field": true,
+      "empty_fields": 0
+    },
+    "observation_operator_matrix.csv": {
+      "rows": 11,
+      "columns": 14,
+      "unique_first_field": true,
+      "empty_fields": 0
+    },
+    "solver_certification_matrix.csv": {
+      "rows": 4,
+      "columns": 16,
+      "unique_first_field": true,
+      "empty_fields": 0
+    }
+  },
+  "qualitative_checks": {
+    "D0": true,
+    "D1": true,
+    "D2": true,
+    "D3": true,
+    "D4": true,
+    "D5": true,
+    "D6": true,
+    "D7": true,
+    "direction_A_signed": [
+      6,
+      14,
+      26
+    ],
+    "direction_B_signed": [
+      6,
+      18,
+      42
+    ],
+    "solver_combinations": 4,
+    "solvers_globally_certified": 0,
+    "actual_control_fairness_established": false,
+    "target_access_authorized": false
+  },
+  "recommended_only": "P0A2_TARGET_BLIND_NUMERICAL_DESIGN_READY_FOR_IMPLEMENTATION_PLANNING",
+  "limited_statuses": [
+    "P0A2_OBSERVATION_MODEL_UNRESOLVED",
+    "P0A2_SCORE_SELECTION_DEFERRED",
+    "P0A2_CAPACITY_CERTIFICATION_DEFERRED",
+    "P0A2_SOLVER_CERTIFICATION_DEFERRED",
+    "P0A2_CONTROL_FAIRNESS_NOT_SPECIFIED",
+    "P0A2_SOURCE_CONSTRAINT_UNRESOLVED"
+  ],
+  "human_freeze_performed": false,
+  "new_scientific_execution": false,
+  "notes": [
+    "21/21 means remote Git blob identities independently compared with agent provenance; this reviewer did not locally verify all detached signatures.",
+    "No source-target analysis, numerical optimization, project repository edit or experiments during independent QC.",
+    "Negative execution/access statements are bounded by available records, not exhaustive external-host logs."
+  ]
+}
