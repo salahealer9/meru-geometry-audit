@@ -1,0 +1,75 @@
+{
+  "phase": "P0A3C",
+  "date": "2026-10-19",
+  "input": {
+    "filename": "P0A3C_cumulative_implementation_candidate(1).zip",
+    "bytes": 4072330,
+    "sha256": "4d327ac4cf057598d3377b93c9a22ed19bd69d3ef2dd1d59242d9001c3db3bbe",
+    "zip_entries": 249,
+    "uncompressed_bytes": 12522452,
+    "crc": "PASS",
+    "checksum_entries_valid": 248,
+    "checksum_entries_total": 248,
+    "inventory_records_valid": 247,
+    "inventory_records_total": 247,
+    "unsafe_paths": 0,
+    "symlinks": 0
+  },
+  "provenance": {
+    "signed_commit": "01270ec3bff3c9a6352c5dadc90d5d9f12da0c0d",
+    "signed_parent": "8adbc226b1ef7234a9bedab02ca515a6c11e5c4f",
+    "protocol_git_blob": "1a54a5c0626d329e1c7389ca389a907139b8413f",
+    "github_commit_signature_verified": true,
+    "github_chain_signatures_checked": 10,
+    "signed_protocol_blob_verified_from_archive_bytes": true,
+    "signed_preservation_manifest_files_valid": 6,
+    "original_baseline_paths": 116,
+    "original_baseline_paths_missing": 0,
+    "original_baseline_paths_changed": [
+      "README.md",
+      "PACKAGE_INVENTORY.json",
+      "SHA256SUMS"
+    ],
+    "earlier_source_reference_test_bytes_changed": false
+  },
+  "dev_reproduction": {
+    "name": "tests/dev_v0_9/test_p0a3c_microcontracts.py",
+    "exit_code": 0,
+    "tests_passed": 22,
+    "tests_failed": 0,
+    "timeout_cap_seconds": 60,
+    "memory_limit_bytes": 1073741824,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "2b8a67259dfecba624abb0d3b8455743a9e78f393f2cb3c48e156f3df4b379e1",
+    "scope": "BOUNDED_DEV_ONLY_NOT_REGISTERED_CERTIFICATION"
+  },
+  "findings": {
+    "B01": "PARTIAL",
+    "B02": "PARTIAL",
+    "B03": "PARTIAL",
+    "B04": "PARTIAL",
+    "B05": "PARTIAL_INDEPENDENT_CHECKER_UNQUALIFIED",
+    "B06": "PARTIAL",
+    "B07": "UNRESOLVED_SEPARATE_GATE",
+    "B08": "UNRESOLVED_SEPARATE_GATE"
+  },
+  "decision": [
+    "PASS_INTEGRITY_AND_BOUNDED_DEV",
+    "P0A3C_IMPLEMENTATION_INCOMPLETE",
+    "P0A3C_INDEPENDENT_CHECKER_UNQUALIFIED",
+    "P0A3C_GLOBAL_NUMERICAL_CERTIFICATION_DEFERRED"
+  ],
+  "not_authorized": [
+    "P0A3C_FINITE_CAMERA_IMPLEMENTATION_READY_FOR_REGISTERED_TARGET_FREE_CERTIFICATION",
+    "P0A4_EXECUTION",
+    "HEBREW_TARGET_ACCESS",
+    "GLOBAL_CERTIFIED"
+  ],
+  "limitations": [
+    "No completed full-circle all-camera scientific run",
+    "No general exact QO zero/tie witness predicate",
+    "No hard-crash/resource envelope proof",
+    "Remote GitHub signatures verified; local detached signatures not independently rerun",
+    "No host-wide information-access audit"
+  ]
+}
