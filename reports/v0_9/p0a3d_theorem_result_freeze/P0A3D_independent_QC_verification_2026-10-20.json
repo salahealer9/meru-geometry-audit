@@ -1,0 +1,86 @@
+{
+  "crc_pass": true,
+  "detached_signatures_verified": 13,
+  "entries": 136,
+  "final_source_pin_details": {
+    "reference/v0_9/qo2d_exact/__init__.py": true,
+    "reference/v0_9/qo2d_exact/arithmetic.py": true,
+    "reference/v0_9/qo2d_exact/checker.py": true,
+    "src/meru_geometry/v0_9/qo2d_exact/__init__.py": true,
+    "src/meru_geometry/v0_9/qo2d_exact/algebra.py": true,
+    "src/meru_geometry/v0_9/qo2d_exact/core.py": true,
+    "tests/dev_v0_9/p0a3d/test_core.py": true
+  },
+  "final_source_pins_match": true,
+  "gpg_expected_fingerprint": "D4EC014EEFCC90E619D2AA59A91239ABCF512130",
+  "hebrew_target_access": false,
+  "historical_attempt_integrity": [
+    {
+      "attempt": 1,
+      "returncode": 0,
+      "source_hash": "6eba80d060c1d7fff9b567508afe015b94a30aa58ebd0a2a375d98f75ca7b85c",
+      "verified": {
+        "evidence": true,
+        "sources": true,
+        "stderr": true,
+        "stdout": true
+      }
+    },
+    {
+      "attempt": 2,
+      "returncode": 0,
+      "source_hash": "1fc73b2b38716fd37b9ebdef72eda9808e7b0dc387f9ac038652b3503d63cb1c",
+      "verified": {
+        "evidence": true,
+        "sources": true,
+        "stderr": true,
+        "stdout": true
+      }
+    },
+    {
+      "attempt": 3,
+      "returncode": 1,
+      "source_hash": "25d0ad102f6bae6ea86a76c74118025ee4f660e3316c2cc9023bd1f44759a1c8",
+      "verified": {
+        "evidence": true,
+        "sources": true,
+        "stderr": true,
+        "stdout": true
+      }
+    },
+    {
+      "attempt": 4,
+      "returncode": 0,
+      "source_hash": "fbaab36de3d11a3e186344b1d4e91cb9ea5da53bb5745048da3c8c99a9857ccd",
+      "verified": {
+        "evidence": true,
+        "sources": true,
+        "stderr": true,
+        "stdout": true
+      }
+    }
+  ],
+  "independent_dev": {
+    "count": 20,
+    "passed": 20,
+    "returncode": 0,
+    "seconds_observed_approx": 0.713,
+    "stderr_sha256": "f54690a4f1614ebc36c28c7726d15c379146e3ae61c177ec0a60a04f12ed5e41",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "input_bytes": 642047,
+  "input_file": "P0A3D_cumulative_proof_and_implementation_candidate.zip",
+  "input_sha256": "c2f99b0e78849de16c8dc8167bdf5d584d4f64ab2c8a787d6a0ed507cfa9f378",
+  "inventory_all_valid": true,
+  "inventory_entries": 134,
+  "manifest_entries": 135,
+  "manifest_full_coverage_and_all_match": true,
+  "qc_date": "2026-10-20",
+  "registered_science_execution": false,
+  "report_sha256": "d99e8d4513013f6b559b15d5dddd462d699cf4ac12a90aec750b5fb6bbc29520",
+  "signed_protocol_blob": "39944862b7ec7565188584c97695fdf925538f8a",
+  "signed_protocol_commit": "92de104cab58339df370acf96b8d849ecc2d888b",
+  "signed_protocol_parent": "923bab7855deaee6be49dd299bbdb0d6251844c1",
+  "software_qc": "IMPLEMENTATION_INCOMPLETE_NOT_CERTIFICATION_READY",
+  "theorem_qc": "MATHEMATICAL_THEOREM_QC_PASS_RECOMMENDED_SUBJECT_TO_HUMAN_SIGNED_FREEZE"
+}
