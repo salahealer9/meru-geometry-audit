@@ -1,0 +1,94 @@
+{
+  "archive": {
+    "crc": "PASS",
+    "entries": 303,
+    "font_image_absence": "PASS",
+    "inventory_verified": "301/301",
+    "paths_safe": true,
+    "python_ast_parse": "21/21",
+    "sha256sums_verified": "302/302",
+    "uncompressed_bytes": 21362112
+  },
+  "artifact": "P0A3E_cumulative_implementation_candidate.zip",
+  "artifact_sha256": "1e73c2685bd4eb8fba89e4e8ea609e97c7b4716805e83c64af374a4265522ea8",
+  "artifact_size_bytes": 968965,
+  "barriers": {
+    "Hebrew_targets": "no images/fonts in archive or QC",
+    "P0A0_replay": "none performed by QC",
+    "P0A4_registered_validation": "not performed",
+    "repository_writes": "none performed by QC"
+  },
+  "independent_qc": {
+    "E1": "PARTIAL",
+    "E2": "DEV_SUPPORTED_UNQUALIFIED",
+    "E3": "DEV_SUPPORTED_UNQUALIFIED",
+    "E4": "EXTERNAL_TRUST_ANCHOR_UNQUALIFIED",
+    "E5": "RESOURCE_CRASH_ENVELOPE_INCOMPLETE",
+    "E6": "BOUNDED_DEV_QC_PASS",
+    "P0A4": "NOT_AUTHORIZED",
+    "archive_integrity": "PASS",
+    "bounded_dev_reproducibility": "PASS on system interpreter; environment-dependent failure also preserved",
+    "frozen_source_preservation": "PASS",
+    "overall": "P0A3E_SOFTWARE_IMPLEMENTATION_INCOMPLETE",
+    "positive_ready_status": "NOT_AUTHORIZED",
+    "theorem": "P0A3D_EXACT_2D_QO_THEOREM_INDEPENDENTLY_VERIFIED remains frozen"
+  },
+  "independent_reference_imports_production": false,
+  "independent_reproductions": [
+    {
+      "executed": 6,
+      "fail": 1,
+      "interpreter": "/opt/pyvenv/bin/python",
+      "observed_state": "RESOURCE_INCOMPLETE rather than expected NOT_EVALUABLE",
+      "pass": 5,
+      "reason": "interpreter startup virtual-memory footprint above worker cap; fails closed; environment incompatibility",
+      "runtime_vm_size_kb_at_start": 416928,
+      "stderr_sha256": "c4506ce53147a2cf21983f28e6431bc90a05951a4c3d6c215e517110b1fa1460",
+      "worker_rlimit_as_bytes": 268435456
+    },
+    {
+      "evidence_sha256": "1ccc1c9ab7dc12ce490fec99dc228c2263567eb5e4d9b20806d709d093b4535b",
+      "executed": 32,
+      "exit_code": 0,
+      "fail": 0,
+      "interpreter": "/usr/bin/python3",
+      "pass": 32,
+      "registered_scientific_execution": false,
+      "stderr_sha256": "1d58c3e7d6775a2e1722148ce150187b8be9c80ba028cd0466dad878541fc82a",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "p0a3d_baseline": {
+    "historic_dev_attempts": "01-04 in signed prior checkpoint, not reexecuted",
+    "original_zip_sha256": "c2f99b0e78849de16c8dc8167bdf5d584d4f64ab2c8a787d6a0ed507cfa9f378",
+    "original_zip_size_bytes": 642047,
+    "unchanged_mathematical_kernels": [
+      "src/meru_geometry/v0_9/qo2d_exact/algebra.py",
+      "src/meru_geometry/v0_9/qo2d_exact/core.py",
+      "reference/v0_9/qo2d_exact/arithmetic.py"
+    ]
+  },
+  "p0a3e_dev_history": [
+    {
+      "id": "P0A3E_DEV_01",
+      "returncode": 1,
+      "stderr_sha256": "2569e28202fd6690b70e2654e6b515ab5a8d52105b495a6a5093db704c32d2de",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "id": "P0A3E_DEV_02",
+      "returncode": 0,
+      "stderr_sha256": "38eb2a1522af42046cc8b390446f137583065a41092c39a4040716806bd6517b",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "phase": "P0A3E",
+  "review_date": "2026-10-20",
+  "signed_protocol": {
+    "blob": "108866549d914005c391eedea234ca27cc8604b7",
+    "branch_head_matches": true,
+    "commit": "c48c7a60777200a172ae3c72f5b0402162370ec7",
+    "github_signature_attestation": "valid",
+    "parent": "59eb47f7500d57866e4935822b78a555d3bcb515"
+  }
+}
