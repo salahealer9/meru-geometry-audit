@@ -1,0 +1,33 @@
+{
+  "archive": {
+    "bytes": 40590,
+    "inventory_entries": 18,
+    "members": 20,
+    "name": "P0A3H_H-C0.zip",
+    "sha256": "6a81791baba88a21d325d759e55664ccde9a4d87388b25ff9ff6f8c2d962f233",
+    "sha256sums_non_self": 19
+  },
+  "blocker": "Preparation of registered negative-control cases H02-H05 interrupted twice by the platform safety system; not an execution or test failure; no workaround attempted",
+  "durable_copy": {
+    "artifact_version": "1792609994-47ba",
+    "b64_bytes": 54833,
+    "b64_sha256": "4638289bade5dd0b8e746479bbde37e3b9445503f4f379692170c2ca4a3f47a4",
+    "decode": "base64 -d P0A3H_H-C0.zip.b64.txt > P0A3H_H-C0.zip",
+    "locator": "https://claude.ai/artifact/XrzQoMskrGwcVBYfuPyE4j (private 'P0A3H Checkpoint Register')",
+    "path": "checkpoints/P0A3H_H-C0.zip.b64.txt"
+  },
+  "execution_status": "NO_P0A3H_EXECUTION_YET",
+  "fresh_readback": {
+    "cmp": "BYTE_IDENTICAL",
+    "crc": "PASS",
+    "directory": "/home/claude/P0A3H/readback_hc0 (new)",
+    "protocol_copy_matches_signed_content": true,
+    "sha256_size": "MATCH",
+    "source_lock_copy_matches": true,
+    "zipcheck": "PASS"
+  },
+  "generated_utc": "2026-10-21T19:14Z",
+  "h_c1": "NOT CONSTRUCTED",
+  "preflight_status": "P0A3H_PREFLIGHT_INCOMPLETE",
+  "receipt": "P0A3H_H-C0_RECEIPT"
+}
