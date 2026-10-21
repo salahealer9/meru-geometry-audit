@@ -1,0 +1,51 @@
+{
+ "activity": {
+  "P01_P06": 0,
+  "REV2_built": false,
+  "candidate_or_harness_executions": 0,
+  "git_writes": 0,
+  "installs": 0,
+  "mounts": 0,
+  "namespaces_created": 0
+ },
+ "basis": [
+  "REV1 sampling cannot bound transient high-water, out-of-tree /tmp files or post-final writes (reviewer W01 accepted; REV1 'always detected' comment was incorrect)",
+  "authenticated P1-C0 register records no user-namespace, mount, AppArmor/seccomp, cgroup or container capability data"
+ ],
+ "current_strict_contract_determination": "ENVIRONMENT_UNQUALIFIED",
+ "decisive_checks_require": "preregistered, witnessed non-candidate host capability probe",
+ "declared_residuals": [
+  "volatile tmpfs evidence lost on crash -> INCOMPLETE (R1 history relevant)",
+  "cap counts allocated pages; sparse-file apparent size; metadata bounded by nr_inodes",
+  "tmpfs charged to memory cgroup",
+  "cooperative-host model unchanged"
+ ],
+ "generated_utc": "2026-10-21T22:30Z",
+ "preserved_unchanged": {
+  "C1_witness_bundle": "3dc0fe51ac9cf3245fcfe58f78b0cad2dfc8992beb49404c9b681d1f7a70e553",
+  "REV1": "733352e73b23f97423965407b39121fc7baae47332a7fa7386aa46fca7c2bbeb",
+  "REV1_witness_bundle": "caf4439b98af730d77084a2d65ff3b7a2f9a6475562aacd6fe034fa1c0e27166",
+  "original_C1": "0ab255773debd5a68c21fa2555c954b347971d28902ee345beb1f254d02013d4"
+ },
+ "prospective_strict_mechanism": {
+  "candidate_source_change": false,
+  "feasibility": "CONDITIONAL_ON_HOST_CAPABILITIES_C1_C6_UNVERIFIED",
+  "kernel_enforced": true,
+  "name": "unprivileged user+mount namespace with a single tmpfs size=16777216 as the only writable attempt storage; /tmp bind into same tmpfs; all other writable mounts remounted bind,ro; export via pre-opened pipe after the attempt",
+  "privilege_escalation": false
+ },
+ "required_host_capabilities": {
+  "C1": "user namespaces permitted (max_user_namespaces>0; no userns restriction policy; container nesting)",
+  "C2": "tmpfs size-limited mount inside userns; ENOSPC at limit",
+  "C3": "bind over /tmp and bind,ro remount of all other writable mounts inside namespace",
+  "C4": "pinned util-linux /usr/bin/unshare and /usr/bin/mount",
+  "C5": "Python 3.11.2/OpenSSL 3.0.22/11 stdlib identities unchanged inside namespace",
+  "C6": "/proc process tree and /proc/self visible inside namespace"
+ },
+ "schema": "p0a3h-p1-w01-host-feasibility-1",
+ "signed_authority_paths": {
+  "A": "P1-A2-style amendment: authorize capability probe + namespace/tmpfs environment, pin unshare/mount, accept volatility; then C1-REV2 (external harness only) and fresh witness",
+  "B": "amendment replacing hard cap with monitored-storage claim, explicitly weaker",
+  "C": "amendment permitting operator root setup of disk-backed loop filesystem/quota"
+ }
+}

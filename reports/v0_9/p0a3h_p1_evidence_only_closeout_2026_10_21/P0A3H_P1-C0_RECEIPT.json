@@ -1,0 +1,14 @@
+{
+  "archive": {
+    "bytes": 348416,
+    "members": 20,
+    "sha256": "067efd1e0fb66bc7bf5c61df186d43558ef2a81f223ca90912f67bca23439f5e"
+  },
+  "authority": "82dc0d2b2f2b81f90ec60dfed8e3aade19555d40",
+  "created_utc": "2026-10-21T21:00:47.872463+00:00",
+  "operator_no_prior_p1_test": "SELF-ATTESTED VIA CLI FLAG",
+  "original_archive": "P0A3H_P1-C0.zip",
+  "p1_c1": "NOT BUILT",
+  "p1_dev_01": "NOT AUTHORIZED",
+  "status": "P0A3H_P1_C0_SUBMITTED_FOR_INDEPENDENT_BYTE_AND_SOURCE_QC"
+}

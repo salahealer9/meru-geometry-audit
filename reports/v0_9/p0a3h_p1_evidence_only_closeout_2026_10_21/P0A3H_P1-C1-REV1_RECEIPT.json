@@ -1,0 +1,68 @@
+{
+  "archive": {
+    "bytes": 376773,
+    "inventory_entries": 156,
+    "members": 158,
+    "name": "P0A3H_P1-C1-REV1.zip",
+    "sha256": "733352e73b23f97423965407b39121fc7baae47332a7fa7386aa46fca7c2bbeb",
+    "sha256sums_non_self": 157
+  },
+  "changed_external_files": [
+    "P1_DRIVER.py",
+    "P1_C2_PACKAGER.py",
+    "p1_verifier.py",
+    "p1_authority.py",
+    "locks/P1_EXPECTED_OUTCOMES.json",
+    "schemas/p1_authority_envelope.validation.schema.json"
+  ],
+  "durable_copy": {
+    "artifact_version": "1792620295-f589",
+    "b64_bytes": 508975,
+    "b64_sha256": "cc18c51cad19694296050bee2a8166f17564783d3e15c348b36df7162ce206cc",
+    "decode": "base64 -d P0A3H_P1-C1-REV1.zip.b64.txt > P0A3H_P1-C1-REV1.zip",
+    "locator": "https://claude.ai/artifact/4gyN929ag6wC3De7sS6Hqn (private 'P0A3H-P1 Checkpoint Register')",
+    "path": "checkpoints/P0A3H_P1-C1-REV1.zip.b64.txt"
+  },
+  "findings_addressed": {
+    "W01": "driver-enforced whole --work disk cap 16 MiB (apparent and allocated), 0.2 s sampling + process-tree kill + stage/final checks, runner RLIMIT_FSIZE 16 MiB, free-space gate, P1_DISK_LEDGER.json; declared residual: polling window, worker /tmp signature temp files recorded",
+    "W02": "release certificate + original C0 receipt + C1-REV1 receipt consumed, checked, copied byte-identically and receipted before any candidate invocation; packager enforces byte identity and journal order; human origin remains a separate requirement",
+    "W03": "schema not necessary for candidate authority decisions; required by A1 to be supplied and pinned; now executed by verifier as supplementary check (positives conform; N3 old lineage must violate)"
+  },
+  "fresh_readback": {
+    "candidate_trees_candidate_lock_ledger_diff_fixtures_comparators_byte_identical_to_original_C1": true,
+    "changed_files_exactly_three": true,
+    "cmp": "BYTE_IDENTICAL",
+    "crc": "PASS",
+    "derivative_eq_P1_CANDIDATE_LOCK": true,
+    "directory": "/home/claude/P0A3H_P1/readback_c1rev1 (new)",
+    "external_eq_P1_EXTERNAL_LOCK": true,
+    "kernels_identical": true,
+    "readback_script_note": "one readback assertion used a wrong expected count (7) for verifier schema call sites; the actual 6 sites (definition + P02/P05 via _success_run, P03, P04, P06A, P06B) were each confirmed individually",
+    "reference_eq_SOURCE_LOCK": true,
+    "sha256_size": "MATCH",
+    "sums_157_inventory_156": "PASS"
+  },
+  "generated_utc": "2026-10-21T22:05:28Z",
+  "locks": {
+    "P1_CANDIDATE_LOCK": "18c7d153e236560e0e99738f50137f46bb1dae94beaf125340835dadacaf106e (unchanged)",
+    "P1_EXTERNAL_LOCK": "b1ea930862758c32dea23932b8114de043e4a93b97ca4401c7e53efacdfab2c5 (was 9689d896\u2026)",
+    "SOURCE_LOCK": "abff7aa8df19f73e070d9f06ebd23334f8d98b45c1736d38399b845c69835902"
+  },
+  "pre_witness_counts": {
+    "P01_P06_executions": 0,
+    "candidate_imports": 0,
+    "git_writes": 0,
+    "signature_trials": 0,
+    "test_keys": 0,
+    "tests_or_dry_runs": 0
+  },
+  "receipt": "P0A3H_P1-C1-REV1_RECEIPT",
+  "release_required": "P0A3H-P1-C1 LOCK WITNESSED; SHA-256 <reviewer-verified 64-hex of C1-REV1>; AUTHORIZE ONE P0A3H_P1_DEV_01",
+  "static_tools": "ast.parse (3.11 grammar) and pyflakes (static analysis, installed from PyPI; found and pre-lock fixed one REV1 draft defect)",
+  "status": "P0A3H_P1_C1_REV1_PREEXECUTION_LOCK_SUBMITTED_FOR_EXTERNAL_WITNESS",
+  "supersedes_without_overwriting": {
+    "P0A3H_P1-C1.zip": "0ab255773debd5a68c21fa2555c954b347971d28902ee345beb1f254d02013d4",
+    "original_rechecked_byte_identical_in_same_readback": true,
+    "witness": "P0A3H_P1_C1_PREEXECUTION_WITNESS_WITHHELD_PENDING_CONTROL_COMPLETENESS"
+  }
+}

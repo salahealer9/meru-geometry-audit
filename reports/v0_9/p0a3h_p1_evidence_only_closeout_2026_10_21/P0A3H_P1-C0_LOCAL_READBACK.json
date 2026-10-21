@@ -1,0 +1,14 @@
+{
+  "archive": {
+    "bytes": 348416,
+    "members": 20,
+    "sha256": "067efd1e0fb66bc7bf5c61df186d43558ef2a81f223ca90912f67bca23439f5e"
+  },
+  "readback": {
+    "bytes": 348416,
+    "members": 20,
+    "sha256": "067efd1e0fb66bc7bf5c61df186d43558ef2a81f223ca90912f67bca23439f5e"
+  },
+  "status": "BYTE_IDENTICAL_SAME_HOST_COPY_ONLY",
+  "warning": "This is not independently observed durable remote upload; preserve original archive, then upload for reviewer"
+}

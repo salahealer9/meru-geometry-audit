@@ -1,0 +1,64 @@
+{
+  "archive": {
+    "bytes": 308794,
+    "inventory_entries": 147,
+    "members": 149,
+    "name": "P0A3H_P1-C1.zip",
+    "sha256": "0ab255773debd5a68c21fa2555c954b347971d28902ee345beb1f254d02013d4",
+    "sha256sums_non_self": 148
+  },
+  "durable_copy": {
+    "artifact_version": "1792618505-5a9e",
+    "b64_bytes": 417146,
+    "b64_sha256": "b27434e7b8dea722a2797f81d9bdb57090210ee40f3201bb848beb176ef5fc33",
+    "decode": "base64 -d P0A3H_P1-C1.zip.b64.txt > P0A3H_P1-C1.zip",
+    "locator": "https://claude.ai/artifact/4gyN929ag6wC3De7sS6Hqn (private 'P0A3H-P1 Checkpoint Register')",
+    "path": "checkpoints/P0A3H_P1-C1.zip.b64.txt"
+  },
+  "fresh_readback": {
+    "c0_receipt_unchanged": true,
+    "changed_files_exactly": [
+      "reference/v0_9/qo2d_exact/identity.py",
+      "schemas/v0_9/p0a3g/resource_policy.json",
+      "src/meru_geometry/v0_9/qo2d_exact/identity.py"
+    ],
+    "cmp": "BYTE_IDENTICAL",
+    "crc": "PASS",
+    "derivative_eq_P1_CANDIDATE_LOCK": true,
+    "directory": "/home/claude/P0A3H_P1/readback_c1 (new)",
+    "external_eq_P1_EXTERNAL_LOCK": true,
+    "kernels_identical": true,
+    "reference_eq_SOURCE_LOCK": true,
+    "sha256_size": "MATCH",
+    "sums_148_inventory_147": "PASS"
+  },
+  "generated_utc": "2026-10-21T21:35:34Z",
+  "inputs_authenticated": {
+    "A1": "82dc0d2b2f2b81f90ec60dfed8e3aade19555d40",
+    "P1": "4c1634e6660a02ebdea62195f13fc4810fd08d41",
+    "P1_C0": {
+      "bytes": 348416,
+      "readback_sha256": "821aaf495e60b710ecf8da1ac3da640a0e8366a3e6bb05b8a42d4e7bfbc98ec8",
+      "receipt_sha256": "469c1cc5d16555e5b8e56e906b4bd5a0dfc147a68c147d8eef932bacdc14bdd3",
+      "sha256": "067efd1e0fb66bc7bf5c61df186d43558ef2a81f223ca90912f67bca23439f5e"
+    }
+  },
+  "locks": {
+    "P1_CANDIDATE_LOCK": "18c7d153e236560e0e99738f50137f46bb1dae94beaf125340835dadacaf106e",
+    "P1_EXTERNAL_LOCK": "9689d89685a8fda8c87964198cadda8c477b782d8a870bcdb14270d2f57e3f0d",
+    "SOURCE_LOCK": "abff7aa8df19f73e070d9f06ebd23334f8d98b45c1736d38399b845c69835902",
+    "derivative_tree_digest": "d40ded355a70329da0a700421b2d195e88e3a7c3713d4f860b5152ca7b323d1d"
+  },
+  "pre_witness_counts": {
+    "P01_P06_executions": 0,
+    "candidate_imports": 0,
+    "dry_runs_or_previews": 0,
+    "git_writes": 0,
+    "signature_trials": 0,
+    "test_keys": 0,
+    "worker_or_parser_launches": 0
+  },
+  "receipt": "P0A3H_P1-C1_RECEIPT",
+  "release_required": "P0A3H-P1-C1 LOCK WITNESSED; SHA-256 <reviewer-verified 64-hex>; AUTHORIZE ONE P0A3H_P1_DEV_01",
+  "status": "P0A3H_P1_C1_PREEXECUTION_LOCK_SUBMITTED_FOR_EXTERNAL_WITNESS"
+}
