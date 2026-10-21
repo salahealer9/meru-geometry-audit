@@ -1,0 +1,13 @@
+{
+ "bytes": 56943,
+ "crc": "PASS",
+ "errors": [],
+ "inventory_entries": 15,
+ "inventory_verified": 15,
+ "members": 17,
+ "members_not_in_sums": [],
+ "path": "P0A3G_R2_C3_RECEIPT_CHAIN_CLOSEOUT_CANDIDATE.zip",
+ "sha256": "5c57483ddddd6b9d25332bedea2b590d1f0f4c7079df10baf3ef50cc66d5d362",
+ "sums_non_self_verified": 16,
+ "verdict": "PASS"
+}

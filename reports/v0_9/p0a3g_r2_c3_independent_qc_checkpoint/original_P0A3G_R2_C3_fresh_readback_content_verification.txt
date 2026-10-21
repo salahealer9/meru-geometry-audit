@@ -1,0 +1,19 @@
+members 17 | sums 16 == N-1: True | self-listed: False | inventory 15 == N-2: True | inventory listed in sums: True
+no dir entries: True | modes: ['0o100644']
+member set exactly as required: True
+receipt == signed CFINAL member: receipts/R2-C0_RECEIPT.json 1407 c2ee82bf82b25a69 True
+receipt == signed CFINAL member: receipts/R2-C1-REV1_LOCK_RECEIPT.md 6179 2827b38bdbdc6a6d True
+receipt == signed CFINAL member: receipts/R2-C1-REV1_RECEIPT.json 3035 3dcd2e71208d6815 True
+receipt == signed CFINAL member: receipts/rejected_R2-C1/R2-C1_LOCK_RECEIPT.md 6779 87ca678ffe3fb458 True
+receipt == signed CFINAL member: receipts/rejected_R2-C1/R2-C1_RECEIPT.json 2217 a505d6d6853db1fa True
+receipt == signed CFINAL member: receipts/R2-C2_RECEIPT.json 2665 9ecbeb9d17222c1e True
+post-CFINAL receipt == pinned: True
+recovery ZIP == pinned: 16281 True
+ledger: 75 75 [] True | ledger sha c37c0fb8b4c05e51
+provenance archives: [('original_P0A3G_R2_C0.zip', 'e99811f3'), ('original_P0A3G_R2_C1_REJECTED.zip', '740da699'), ('original_P0A3G_R2_C1_REV1.zip', 'b34a3cd2'), ('original_P0A3G_R2_C2.zip', '860d93dc'), ('original_P0A3G_R2_CFINAL.zip', '7c9770d1')] | receipts: 7 | commit f5e31de0 b34b2008
+embedded script identical to executed file: True | sha line present: True
+present: R2_QCF01_C2_PRIOR_RECEIPTS_OMITTED True
+present: P0A3G_R2_INDEPENDENT_QC_NOT_FULLY_QUALIFIED True
+present: P0A3G_R2_C3_RECEIPT_CHAIN_CANDIDATE_SUBMITTED_FOR_INDEPENDENT_QC True
+present: NOT AUTHORIZED True
+checklist verdict cells blank: True

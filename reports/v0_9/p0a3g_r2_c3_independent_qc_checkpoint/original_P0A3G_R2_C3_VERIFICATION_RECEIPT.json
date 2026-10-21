@@ -1,0 +1,68 @@
+{
+  "agent_submission": "P0A3G_R2_C3_RECEIPT_CHAIN_CANDIDATE_SUBMITTED_FOR_INDEPENDENT_QC",
+  "archive": {
+    "bytes": 56943,
+    "first_and_only_C3_package": true,
+    "inventory_entries": 15,
+    "members": 17,
+    "name": "P0A3G_R2_C3_RECEIPT_CHAIN_CLOSEOUT_CANDIDATE.zip",
+    "sha256": "5c57483ddddd6b9d25332bedea2b590d1f0f4c7079df10baf3ef50cc66d5d362",
+    "sha256sums_entries": 16
+  },
+  "authentication_scope": {
+    "github_badge": "NOT CHECKED",
+    "gpg": "git verify-commit VALIDSIG D4EC014EEFCC90E619D2AA59A91239ABCF512130 for f5e31de0, e491e1e9, 4b488825, 7de01ab2 and all 27 commits since v0.8.0; key from in-repo provenance file",
+    "ownertrust": "NOT ASSERTED"
+  },
+  "durable_copy": {
+    "artifact_version": "1792606751-7b92",
+    "b64_bytes": 76923,
+    "b64_sha256": "a3ad1fe5cfbfb5df1a0e8e27e508c1e33bb97c3ed178a591bcf6df5bfb4acba6",
+    "decode": "base64 -d FILE.zip.b64.txt > P0A3G_R2_C3_RECEIPT_CHAIN_CLOSEOUT_CANDIDATE.zip",
+    "locator": "https://claude.ai/artifact/PDchuKxE1d7t6y5Lsb3ZQC (private 'P0A3G-R2 Lock Register', section P0A3G-R2-C3)",
+    "path": "checkpoints/P0A3G_R2_C3_RECEIPT_CHAIN_CLOSEOUT_CANDIDATE.zip.b64.txt"
+  },
+  "forbidden_actions_performed": {
+    "G_or_H_tests": 0,
+    "c2_or_cfinal_modified": 0,
+    "candidate_import_or_execution": 0,
+    "git_writes": 0,
+    "keys_generated": 0,
+    "p0a4": 0,
+    "workers": 0
+  },
+  "fresh_readback": {
+    "cmp_with_built": "BYTE_IDENTICAL",
+    "crc": "PASS",
+    "directory": "/home/claude/P0A3G_R2_C3/readback_fresh (did not exist before retrieval)",
+    "embedded_check_script_identical_to_executed": true,
+    "inventory_N_minus_2": "PASS (15)",
+    "ledger": {
+      "checks": 75,
+      "failed": [],
+      "passed": 75,
+      "sha256": "c37c0fb8b4c05e5133781a3d9dd699aab906d6452cee7f634b5cc9258d9ff527"
+    },
+    "member_set_exactly_as_registered": true,
+    "no_dirs_symlinks_devices": "PASS (all members mode 0100644)",
+    "post_cfinal_receipt_equals_pinned": true,
+    "qc_checklist_blank": true,
+    "recovery_zip_equals_pinned": true,
+    "retained_statuses_present": [
+      "R2_QCF01_C2_PRIOR_RECEIPTS_OMITTED",
+      "P0A3G_R2_INDEPENDENT_QC_NOT_FULLY_QUALIFIED"
+    ],
+    "safe_unique_paths": "PASS",
+    "sha256_and_size": "MATCH",
+    "sha256sums_N_minus_1_not_self": "PASS (16 of 17, includes inventory)",
+    "six_cfinal_receipts_byte_identical_to_signed_original_CFINAL_members": true
+  },
+  "generated_utc": "2026-10-21T18:19:46Z",
+  "negative_findings": [],
+  "observations": [
+    "Recovery ZIP name differs between signed protocol (P0A3G_R2_ORIGINAL_PRIOR_RECEIPTS_READONLY_RECOVERY_2026-10-21.zip) and supplied file (ORIGINAL_P0A3G_R2_PRIOR_RECEIPTS_READONLY_RECOVERY_2026-10-21.zip); bytes/SHA-256 match the pin; supplied name preserved.",
+    "All receipts are agent-authored; their content is not external attestation.",
+    "One pre-run edit to the check script (recovery SHA256SUMS coverage made record-only); the observed recovery coverage was nevertheless complete (8 entries, none unlisted)."
+  ],
+  "receipt": "P0A3G_R2_C3_VERIFICATION_RECEIPT"
+}
