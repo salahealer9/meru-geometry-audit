@@ -1,0 +1,27 @@
+{
+  "L1_C1": "NOT BUILT",
+  "L1_DEV_01": "NOT AUTHORIZED",
+  "archive": "P0A3H_L1-C0.zip",
+  "assistant_authored_C0_builder_sha256": "1f2cf1b302f73309b166192b073110855f4c88039a59cf78365fc683a4c41226",
+  "bytes": 105474,
+  "checksum_rows": 20,
+  "created_utc": "2026-10-21T20:04:13.752956+00:00",
+  "durable_external_upload": "PENDING_HUMAN_UPLOAD_AND_INDEPENDENT_READBACK",
+  "executed_by_builder": "ARCHIVE/GIT/HASH/OS_METADATA_ONLY; NO_CANDIDATE_EXECUTION",
+  "history": "P0A3H_PREFLIGHT_INCOMPLETE; no previous H-C1",
+  "host_source": "Recorded passive P0 intake; fresh current Python, OpenSSL and kernel compared",
+  "inventory_rows": 19,
+  "local_operator_no_l1_tests": "SELF_REPORTED_EXPLICIT_CLI_FLAG",
+  "local_readback": {
+    "bytes": 105474,
+    "checksum_rows": 20,
+    "copy_path": "/home/salahealer/P0A3H_L1/L1_C0_20261021T200413Z/readback_separate_directory/P0A3H_L1-C0.zip",
+    "inventory_rows": 19,
+    "members": 21,
+    "sha256": "774e58c72921bdf97cf14cd9628278c4bab1c327086e9297879c8a46b4117e3a",
+    "status": "BYTE_IDENTICAL; SAME_HOST_LOCAL_COPY_ONLY"
+  },
+  "members": 21,
+  "sha256": "774e58c72921bdf97cf14cd9628278c4bab1c327086e9297879c8a46b4117e3a",
+  "status": "L1_C0_SUBMITTED_FOR_INDEPENDENT_BYTE_AND_SOURCE_QC"
+}

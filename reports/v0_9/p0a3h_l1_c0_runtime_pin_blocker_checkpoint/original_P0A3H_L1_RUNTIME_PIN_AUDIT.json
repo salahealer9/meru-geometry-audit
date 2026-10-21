@@ -1,0 +1,117 @@
+{
+  "audit": "P0A3H-L1 passive runtime pins at fixed absolute paths",
+  "collected_utc": "2026-10-21T20:14:16Z",
+  "current_collector": {
+    "dont_write_bytecode": true,
+    "executable": "/usr/bin/python3",
+    "isolated": 1,
+    "no_site": 1,
+    "version": "3.11.2 (main, Oct  7 2026, 12:35:07) [GCC 12.2.0]"
+  },
+  "python312_stdlib_files": {
+    "decimal.py": {
+      "error": "FileNotFoundError",
+      "exists": false,
+      "expected_sha256": null,
+      "match_expected": false,
+      "path": "/usr/lib/python3.12/decimal.py"
+    },
+    "fractions.py": {
+      "error": "FileNotFoundError",
+      "exists": false,
+      "expected_sha256": null,
+      "match_expected": false,
+      "path": "/usr/lib/python3.12/fractions.py"
+    },
+    "hashlib.py": {
+      "error": "FileNotFoundError",
+      "exists": false,
+      "expected_sha256": null,
+      "match_expected": false,
+      "path": "/usr/lib/python3.12/hashlib.py"
+    },
+    "json/__init__.py": {
+      "error": "FileNotFoundError",
+      "exists": false,
+      "expected_sha256": null,
+      "match_expected": false,
+      "path": "/usr/lib/python3.12/json/__init__.py"
+    },
+    "json/decoder.py": {
+      "error": "FileNotFoundError",
+      "exists": false,
+      "expected_sha256": null,
+      "match_expected": false,
+      "path": "/usr/lib/python3.12/json/decoder.py"
+    },
+    "json/encoder.py": {
+      "error": "FileNotFoundError",
+      "exists": false,
+      "expected_sha256": null,
+      "match_expected": false,
+      "path": "/usr/lib/python3.12/json/encoder.py"
+    },
+    "json/scanner.py": {
+      "error": "FileNotFoundError",
+      "exists": false,
+      "expected_sha256": null,
+      "match_expected": false,
+      "path": "/usr/lib/python3.12/json/scanner.py"
+    },
+    "pathlib.py": {
+      "error": "FileNotFoundError",
+      "exists": false,
+      "expected_sha256": null,
+      "match_expected": false,
+      "path": "/usr/lib/python3.12/pathlib.py"
+    },
+    "selectors.py": {
+      "error": "FileNotFoundError",
+      "exists": false,
+      "expected_sha256": null,
+      "match_expected": false,
+      "path": "/usr/lib/python3.12/selectors.py"
+    },
+    "subprocess.py": {
+      "error": "FileNotFoundError",
+      "exists": false,
+      "expected_sha256": null,
+      "match_expected": false,
+      "path": "/usr/lib/python3.12/subprocess.py"
+    },
+    "tempfile.py": {
+      "error": "FileNotFoundError",
+      "exists": false,
+      "expected_sha256": null,
+      "match_expected": false,
+      "path": "/usr/lib/python3.12/tempfile.py"
+    }
+  },
+  "requested_runtime_pins": {
+    "/usr/bin/openssl": {
+      "bytes": 976136,
+      "exists": true,
+      "expected_sha256": "b4f547c0f16272d1cc7f870330a6f2c243710c335e7a99c734ff7a0c6fdb2503",
+      "is_symlink": false,
+      "match_expected": false,
+      "path": "/usr/bin/openssl",
+      "realpath": "/usr/bin/openssl",
+      "regular_file": true,
+      "sha256": "66521161cfad981e189bbc746560e0cc71a141b3765b3fe3658704d877c6ad7d"
+    },
+    "/usr/bin/python3.12": {
+      "error": "FileNotFoundError",
+      "exists": false,
+      "expected_sha256": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f",
+      "match_expected": false,
+      "path": "/usr/bin/python3.12"
+    }
+  },
+  "restrictions": "No candidate/observer/worker/signature/H01-H07 invocation; checks files on disk only; not process attestation; symlink/TOCTOU remain separate concerns",
+  "status": "P0A3H_L1_RUNTIME_PIN_PREFLIGHT_BLOCKED",
+  "summary": {
+    "candidate_test_execution": "NOT_AUTHORIZED",
+    "pinned_absolute_binaries_match": false,
+    "python312_stdlib_paths_all_present": false
+  }
+}
