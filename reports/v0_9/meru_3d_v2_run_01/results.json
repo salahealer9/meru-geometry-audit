@@ -1,0 +1,995 @@
+{
+  "angle_display": "Approximate degrees only, not used for maxima or acceptance",
+  "b_g1_b_g2_equal_exact_squared_maxima": true,
+  "family_level_results": [
+    {
+      "antipodal_closure": true,
+      "constraint_planes": [
+        {
+          "coefficients": [
+            -1,
+            1,
+            0
+          ],
+          "name": "a>=b",
+          "rhs": "0"
+        },
+        {
+          "coefficients": [
+            0,
+            -1,
+            1
+          ],
+          "name": "b>=c",
+          "rhs": "0"
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            -1
+          ],
+          "name": "c>=0",
+          "rhs": "0"
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0
+          ],
+          "name": "A0:a<=1",
+          "rhs": "1"
+        }
+      ],
+      "covering_cosine_exact": "sqrt(3)/3",
+      "covering_radius_degrees_approx": 54.735610317245346,
+      "family": "A",
+      "intersection_census": {
+        "feasible_intersections_before_deduplication": 4,
+        "full_rank_intersections": 4,
+        "triple_intersections": 4
+      },
+      "level": "G0",
+      "max_squared_norm_exact": "3",
+      "signed_direction_count": 6,
+      "spherical_projective_radius_equal": true,
+      "strata": [
+        "A0"
+      ],
+      "unoriented_axis_count": 3,
+      "vertex_count": 4,
+      "vertices": [
+        {
+          "active_planes": [
+            "a>=b",
+            "b>=c",
+            "c>=0"
+          ],
+          "norm_squared": "0",
+          "vertex": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "b>=c",
+            "c>=0",
+            "A0:a<=1"
+          ],
+          "norm_squared": "1",
+          "vertex": [
+            "1",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "a>=b",
+            "c>=0",
+            "A0:a<=1"
+          ],
+          "norm_squared": "2",
+          "vertex": [
+            "1",
+            "1",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "a>=b",
+            "b>=c",
+            "A0:a<=1"
+          ],
+          "norm_squared": "3",
+          "vertex": [
+            "1",
+            "1",
+            "1"
+          ]
+        }
+      ],
+      "worst_chamber_vertices": [
+        [
+          "1",
+          "1",
+          "1"
+        ]
+      ],
+      "worst_unit_directions": [
+        [
+          "sqrt(3)/3",
+          "sqrt(3)/3",
+          "sqrt(3)/3"
+        ]
+      ]
+    },
+    {
+      "antipodal_closure": true,
+      "constraint_planes": [
+        {
+          "coefficients": [
+            -1,
+            1,
+            0
+          ],
+          "name": "a>=b",
+          "rhs": "0"
+        },
+        {
+          "coefficients": [
+            0,
+            -1,
+            1
+          ],
+          "name": "b>=c",
+          "rhs": "0"
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            -1
+          ],
+          "name": "c>=0",
+          "rhs": "0"
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0
+          ],
+          "name": "A0:a<=1",
+          "rhs": "1"
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1
+          ],
+          "name": "C:a+b+c<=sqrt(3)",
+          "rhs": "sqrt(3)"
+        }
+      ],
+      "covering_cosine_exact": "1/sqrt(5 - 2*sqrt(3))",
+      "covering_radius_degrees_approx": 36.20602311300311,
+      "family": "A",
+      "intersection_census": {
+        "feasible_intersections_before_deduplication": 6,
+        "full_rank_intersections": 10,
+        "triple_intersections": 10
+      },
+      "level": "G1",
+      "max_squared_norm_exact": "5 - 2*sqrt(3)",
+      "signed_direction_count": 14,
+      "spherical_projective_radius_equal": true,
+      "strata": [
+        "A0",
+        "C"
+      ],
+      "unoriented_axis_count": 7,
+      "vertex_count": 6,
+      "vertices": [
+        {
+          "active_planes": [
+            "a>=b",
+            "b>=c",
+            "c>=0"
+          ],
+          "norm_squared": "0",
+          "vertex": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "b>=c",
+            "c>=0",
+            "A0:a<=1"
+          ],
+          "norm_squared": "1",
+          "vertex": [
+            "1",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "c>=0",
+            "A0:a<=1",
+            "C:a+b+c<=sqrt(3)"
+          ],
+          "norm_squared": "5 - 2*sqrt(3)",
+          "vertex": [
+            "1",
+            "-1 + sqrt(3)",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "b>=c",
+            "A0:a<=1",
+            "C:a+b+c<=sqrt(3)"
+          ],
+          "norm_squared": "3 - sqrt(3)",
+          "vertex": [
+            "1",
+            "-1/2 + sqrt(3)/2",
+            "-1/2 + sqrt(3)/2"
+          ]
+        },
+        {
+          "active_planes": [
+            "a>=b",
+            "b>=c",
+            "C:a+b+c<=sqrt(3)"
+          ],
+          "norm_squared": "1",
+          "vertex": [
+            "sqrt(3)/3",
+            "sqrt(3)/3",
+            "sqrt(3)/3"
+          ]
+        },
+        {
+          "active_planes": [
+            "a>=b",
+            "c>=0",
+            "C:a+b+c<=sqrt(3)"
+          ],
+          "norm_squared": "3/2",
+          "vertex": [
+            "sqrt(3)/2",
+            "sqrt(3)/2",
+            "0"
+          ]
+        }
+      ],
+      "worst_chamber_vertices": [
+        [
+          "1",
+          "-1 + sqrt(3)",
+          "0"
+        ]
+      ],
+      "worst_unit_directions": [
+        [
+          "1/sqrt(5 - 2*sqrt(3))",
+          "(-1 + sqrt(3))/sqrt(5 - 2*sqrt(3))",
+          "0"
+        ]
+      ]
+    },
+    {
+      "antipodal_closure": true,
+      "constraint_planes": [
+        {
+          "coefficients": [
+            -1,
+            1,
+            0
+          ],
+          "name": "a>=b",
+          "rhs": "0"
+        },
+        {
+          "coefficients": [
+            0,
+            -1,
+            1
+          ],
+          "name": "b>=c",
+          "rhs": "0"
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            -1
+          ],
+          "name": "c>=0",
+          "rhs": "0"
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0
+          ],
+          "name": "A0:a<=1",
+          "rhs": "1"
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            1
+          ],
+          "name": "C:a+b+c<=sqrt(3)",
+          "rhs": "sqrt(3)"
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0
+          ],
+          "name": "E:a+b<=sqrt(2)",
+          "rhs": "sqrt(2)"
+        }
+      ],
+      "covering_cosine_exact": "1/sqrt(-2*sqrt(6) - 2*sqrt(2) + 9)",
+      "covering_radius_degrees_approx": 27.569276130480937,
+      "family": "A",
+      "intersection_census": {
+        "feasible_intersections_before_deduplication": 8,
+        "full_rank_intersections": 18,
+        "triple_intersections": 20
+      },
+      "level": "G2",
+      "max_squared_norm_exact": "-2*sqrt(6) - 2*sqrt(2) + 9",
+      "signed_direction_count": 26,
+      "spherical_projective_radius_equal": true,
+      "strata": [
+        "A0",
+        "C",
+        "E"
+      ],
+      "unoriented_axis_count": 13,
+      "vertex_count": 8,
+      "vertices": [
+        {
+          "active_planes": [
+            "a>=b",
+            "b>=c",
+            "c>=0"
+          ],
+          "norm_squared": "0",
+          "vertex": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "b>=c",
+            "c>=0",
+            "A0:a<=1"
+          ],
+          "norm_squared": "1",
+          "vertex": [
+            "1",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "c>=0",
+            "A0:a<=1",
+            "E:a+b<=sqrt(2)"
+          ],
+          "norm_squared": "4 - 2*sqrt(2)",
+          "vertex": [
+            "1",
+            "-1 + sqrt(2)",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "A0:a<=1",
+            "C:a+b+c<=sqrt(3)",
+            "E:a+b<=sqrt(2)"
+          ],
+          "norm_squared": "-2*sqrt(6) - 2*sqrt(2) + 9",
+          "vertex": [
+            "1",
+            "-1 + sqrt(2)",
+            "-sqrt(2) + sqrt(3)"
+          ]
+        },
+        {
+          "active_planes": [
+            "b>=c",
+            "A0:a<=1",
+            "C:a+b+c<=sqrt(3)"
+          ],
+          "norm_squared": "3 - sqrt(3)",
+          "vertex": [
+            "1",
+            "-1/2 + sqrt(3)/2",
+            "-1/2 + sqrt(3)/2"
+          ]
+        },
+        {
+          "active_planes": [
+            "a>=b",
+            "c>=0",
+            "E:a+b<=sqrt(2)"
+          ],
+          "norm_squared": "1",
+          "vertex": [
+            "sqrt(2)/2",
+            "sqrt(2)/2",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "a>=b",
+            "C:a+b+c<=sqrt(3)",
+            "E:a+b<=sqrt(2)"
+          ],
+          "norm_squared": "6 - 2*sqrt(6)",
+          "vertex": [
+            "sqrt(2)/2",
+            "sqrt(2)/2",
+            "-sqrt(2) + sqrt(3)"
+          ]
+        },
+        {
+          "active_planes": [
+            "a>=b",
+            "b>=c",
+            "C:a+b+c<=sqrt(3)"
+          ],
+          "norm_squared": "1",
+          "vertex": [
+            "sqrt(3)/3",
+            "sqrt(3)/3",
+            "sqrt(3)/3"
+          ]
+        }
+      ],
+      "worst_chamber_vertices": [
+        [
+          "1",
+          "-1 + sqrt(2)",
+          "-sqrt(2) + sqrt(3)"
+        ]
+      ],
+      "worst_unit_directions": [
+        [
+          "1/sqrt(-2*sqrt(6) - 2*sqrt(2) + 9)",
+          "(-1 + sqrt(2))/sqrt(-2*sqrt(6) - 2*sqrt(2) + 9)",
+          "(-sqrt(2) + sqrt(3))/sqrt(-2*sqrt(6) - 2*sqrt(2) + 9)"
+        ]
+      ]
+    },
+    {
+      "antipodal_closure": true,
+      "constraint_planes": [
+        {
+          "coefficients": [
+            -1,
+            1,
+            0
+          ],
+          "name": "a>=b",
+          "rhs": "0"
+        },
+        {
+          "coefficients": [
+            0,
+            -1,
+            1
+          ],
+          "name": "b>=c",
+          "rhs": "0"
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            -1
+          ],
+          "name": "c>=0",
+          "rhs": "0"
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0
+          ],
+          "name": "A0:a<=1",
+          "rhs": "1"
+        }
+      ],
+      "covering_cosine_exact": "sqrt(3)/3",
+      "covering_radius_degrees_approx": 54.735610317245346,
+      "family": "B",
+      "intersection_census": {
+        "feasible_intersections_before_deduplication": 4,
+        "full_rank_intersections": 4,
+        "triple_intersections": 4
+      },
+      "level": "G0",
+      "max_squared_norm_exact": "3",
+      "signed_direction_count": 6,
+      "spherical_projective_radius_equal": true,
+      "strata": [
+        "A0"
+      ],
+      "unoriented_axis_count": 3,
+      "vertex_count": 4,
+      "vertices": [
+        {
+          "active_planes": [
+            "a>=b",
+            "b>=c",
+            "c>=0"
+          ],
+          "norm_squared": "0",
+          "vertex": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "b>=c",
+            "c>=0",
+            "A0:a<=1"
+          ],
+          "norm_squared": "1",
+          "vertex": [
+            "1",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "a>=b",
+            "c>=0",
+            "A0:a<=1"
+          ],
+          "norm_squared": "2",
+          "vertex": [
+            "1",
+            "1",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "a>=b",
+            "b>=c",
+            "A0:a<=1"
+          ],
+          "norm_squared": "3",
+          "vertex": [
+            "1",
+            "1",
+            "1"
+          ]
+        }
+      ],
+      "worst_chamber_vertices": [
+        [
+          "1",
+          "1",
+          "1"
+        ]
+      ],
+      "worst_unit_directions": [
+        [
+          "sqrt(3)/3",
+          "sqrt(3)/3",
+          "sqrt(3)/3"
+        ]
+      ]
+    },
+    {
+      "antipodal_closure": true,
+      "constraint_planes": [
+        {
+          "coefficients": [
+            -1,
+            1,
+            0
+          ],
+          "name": "a>=b",
+          "rhs": "0"
+        },
+        {
+          "coefficients": [
+            0,
+            -1,
+            1
+          ],
+          "name": "b>=c",
+          "rhs": "0"
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            -1
+          ],
+          "name": "c>=0",
+          "rhs": "0"
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0
+          ],
+          "name": "A0:a<=1",
+          "rhs": "1"
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0
+          ],
+          "name": "E:a+b<=sqrt(2)",
+          "rhs": "sqrt(2)"
+        }
+      ],
+      "covering_cosine_exact": "sqrt(6)/3",
+      "covering_radius_degrees_approx": 35.264389682754654,
+      "family": "B",
+      "intersection_census": {
+        "feasible_intersections_before_deduplication": 6,
+        "full_rank_intersections": 9,
+        "triple_intersections": 10
+      },
+      "level": "G1",
+      "max_squared_norm_exact": "3/2",
+      "signed_direction_count": 18,
+      "spherical_projective_radius_equal": true,
+      "strata": [
+        "A0",
+        "E"
+      ],
+      "unoriented_axis_count": 9,
+      "vertex_count": 6,
+      "vertices": [
+        {
+          "active_planes": [
+            "a>=b",
+            "b>=c",
+            "c>=0"
+          ],
+          "norm_squared": "0",
+          "vertex": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "b>=c",
+            "c>=0",
+            "A0:a<=1"
+          ],
+          "norm_squared": "1",
+          "vertex": [
+            "1",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "c>=0",
+            "A0:a<=1",
+            "E:a+b<=sqrt(2)"
+          ],
+          "norm_squared": "4 - 2*sqrt(2)",
+          "vertex": [
+            "1",
+            "-1 + sqrt(2)",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "b>=c",
+            "A0:a<=1",
+            "E:a+b<=sqrt(2)"
+          ],
+          "norm_squared": "7 - 4*sqrt(2)",
+          "vertex": [
+            "1",
+            "-1 + sqrt(2)",
+            "-1 + sqrt(2)"
+          ]
+        },
+        {
+          "active_planes": [
+            "a>=b",
+            "c>=0",
+            "E:a+b<=sqrt(2)"
+          ],
+          "norm_squared": "1",
+          "vertex": [
+            "sqrt(2)/2",
+            "sqrt(2)/2",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "a>=b",
+            "b>=c",
+            "E:a+b<=sqrt(2)"
+          ],
+          "norm_squared": "3/2",
+          "vertex": [
+            "sqrt(2)/2",
+            "sqrt(2)/2",
+            "sqrt(2)/2"
+          ]
+        }
+      ],
+      "worst_chamber_vertices": [
+        [
+          "sqrt(2)/2",
+          "sqrt(2)/2",
+          "sqrt(2)/2"
+        ]
+      ],
+      "worst_unit_directions": [
+        [
+          "sqrt(3)/3",
+          "sqrt(3)/3",
+          "sqrt(3)/3"
+        ]
+      ]
+    },
+    {
+      "antipodal_closure": true,
+      "constraint_planes": [
+        {
+          "coefficients": [
+            -1,
+            1,
+            0
+          ],
+          "name": "a>=b",
+          "rhs": "0"
+        },
+        {
+          "coefficients": [
+            0,
+            -1,
+            1
+          ],
+          "name": "b>=c",
+          "rhs": "0"
+        },
+        {
+          "coefficients": [
+            0,
+            0,
+            -1
+          ],
+          "name": "c>=0",
+          "rhs": "0"
+        },
+        {
+          "coefficients": [
+            1,
+            0,
+            0
+          ],
+          "name": "A0:a<=1",
+          "rhs": "1"
+        },
+        {
+          "coefficients": [
+            1,
+            1,
+            0
+          ],
+          "name": "E:a+b<=sqrt(2)",
+          "rhs": "sqrt(2)"
+        },
+        {
+          "coefficients": [
+            2,
+            1,
+            0
+          ],
+          "name": "T:2a+b<=sqrt(5)",
+          "rhs": "sqrt(5)"
+        }
+      ],
+      "covering_cosine_exact": "sqrt(6)/3",
+      "covering_radius_degrees_approx": 35.264389682754654,
+      "family": "B",
+      "intersection_census": {
+        "feasible_intersections_before_deduplication": 8,
+        "full_rank_intersections": 16,
+        "triple_intersections": 20
+      },
+      "level": "G2",
+      "max_squared_norm_exact": "3/2",
+      "signed_direction_count": 42,
+      "spherical_projective_radius_equal": true,
+      "strata": [
+        "A0",
+        "E",
+        "T"
+      ],
+      "unoriented_axis_count": 21,
+      "vertex_count": 8,
+      "vertices": [
+        {
+          "active_planes": [
+            "a>=b",
+            "b>=c",
+            "c>=0"
+          ],
+          "norm_squared": "0",
+          "vertex": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "b>=c",
+            "c>=0",
+            "A0:a<=1"
+          ],
+          "norm_squared": "1",
+          "vertex": [
+            "1",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "c>=0",
+            "A0:a<=1",
+            "T:2a+b<=sqrt(5)"
+          ],
+          "norm_squared": "10 - 4*sqrt(5)",
+          "vertex": [
+            "1",
+            "-2 + sqrt(5)",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "b>=c",
+            "A0:a<=1",
+            "T:2a+b<=sqrt(5)"
+          ],
+          "norm_squared": "19 - 8*sqrt(5)",
+          "vertex": [
+            "1",
+            "-2 + sqrt(5)",
+            "-2 + sqrt(5)"
+          ]
+        },
+        {
+          "active_planes": [
+            "a>=b",
+            "c>=0",
+            "E:a+b<=sqrt(2)"
+          ],
+          "norm_squared": "1",
+          "vertex": [
+            "sqrt(2)/2",
+            "sqrt(2)/2",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "a>=b",
+            "b>=c",
+            "E:a+b<=sqrt(2)"
+          ],
+          "norm_squared": "3/2",
+          "vertex": [
+            "sqrt(2)/2",
+            "sqrt(2)/2",
+            "sqrt(2)/2"
+          ]
+        },
+        {
+          "active_planes": [
+            "c>=0",
+            "E:a+b<=sqrt(2)",
+            "T:2a+b<=sqrt(5)"
+          ],
+          "norm_squared": "20 - 6*sqrt(10)",
+          "vertex": [
+            "-sqrt(2) + sqrt(5)",
+            "-sqrt(5) + 2*sqrt(2)",
+            "0"
+          ]
+        },
+        {
+          "active_planes": [
+            "b>=c",
+            "E:a+b<=sqrt(2)",
+            "T:2a+b<=sqrt(5)"
+          ],
+          "norm_squared": "33 - 10*sqrt(10)",
+          "vertex": [
+            "-sqrt(2) + sqrt(5)",
+            "-sqrt(5) + 2*sqrt(2)",
+            "-sqrt(5) + 2*sqrt(2)"
+          ]
+        }
+      ],
+      "worst_chamber_vertices": [
+        [
+          "sqrt(2)/2",
+          "sqrt(2)/2",
+          "sqrt(2)/2"
+        ]
+      ],
+      "worst_unit_directions": [
+        [
+          "sqrt(3)/3",
+          "sqrt(3)/3",
+          "sqrt(3)/3"
+        ]
+      ]
+    }
+  ],
+  "g0_identical_exact_squared_maxima": true,
+  "global_geometric_decisions": "Exact SymPy signs/equalities; undecidable raises error",
+  "interpretation": "Finite orthographic direction-grid geometry only",
+  "platform": "Linux-6.6.143-09589-gf9e106250941-x86_64-with-glibc2.36",
+  "preregistration_blob": "3db104c82b961761dfd80b92f968f1538869bb36",
+  "preregistration_commit": "db007d7429efbd41a4953b86f5eea7e026964aa8",
+  "preregistration_path": "docs/v0_9/meru_3d_v2_target_blind_spherical_covering_radius_protocol_2026_10_22.md",
+  "python_version": "3.11.2 (main, Oct  7 2026, 12:35:07) [GCC 12.2.0]",
+  "stratum_counts": {
+    "A0": 6,
+    "C": 8,
+    "E": 12,
+    "T": 24
+  },
+  "study": "MERU_3D_V2",
+  "sympy_version": "1.11.1",
+  "timestamp_utc": "2026-10-22T08:57:05.319750+00:00"
+}

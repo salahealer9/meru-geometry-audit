@@ -1,0 +1,1016 @@
+{
+  "status": "PASS",
+  "number_of_checks": 146,
+  "passing_checks": 146,
+  "failing_checks": [],
+  "results_sha256": "92af306506afe95292170a00470f99b62f13f02a3687dab81467de34d349e4b3",
+  "origin": "separately implemented exact 3D chamber-polytope enumeration; original script not imported or executed",
+  "rows": [
+    {
+      "family": "A",
+      "level": "G0",
+      "vertices": 4,
+      "signed": 6,
+      "axes": 3,
+      "max_squared_norm": "3",
+      "cosine": "sqrt(3)/3",
+      "radius_degrees": 54.735610317245,
+      "worst_vertex": [
+        "1",
+        "1",
+        "1"
+      ],
+      "full_vertex_list": [
+        {
+          "point": [
+            "0",
+            "0",
+            "0"
+          ],
+          "squared_norm": "0"
+        },
+        {
+          "point": [
+            "1",
+            "1",
+            "1"
+          ],
+          "squared_norm": "3"
+        },
+        {
+          "point": [
+            "1",
+            "1",
+            "0"
+          ],
+          "squared_norm": "2"
+        },
+        {
+          "point": [
+            "1",
+            "0",
+            "0"
+          ],
+          "squared_norm": "1"
+        }
+      ],
+      "census": {
+        "triple_intersections": 4,
+        "full_rank_intersections": 4,
+        "feasible_intersections_before_deduplication": 4
+      }
+    },
+    {
+      "family": "A",
+      "level": "G1",
+      "vertices": 6,
+      "signed": 14,
+      "axes": 7,
+      "max_squared_norm": "5 - 2*sqrt(3)",
+      "cosine": "1/sqrt(5 - 2*sqrt(3))",
+      "radius_degrees": 36.206023113003,
+      "worst_vertex": [
+        "1",
+        "-1 + sqrt(3)",
+        "0"
+      ],
+      "full_vertex_list": [
+        {
+          "point": [
+            "0",
+            "0",
+            "0"
+          ],
+          "squared_norm": "0"
+        },
+        {
+          "point": [
+            "sqrt(3)/3",
+            "sqrt(3)/3",
+            "sqrt(3)/3"
+          ],
+          "squared_norm": "1"
+        },
+        {
+          "point": [
+            "sqrt(3)/2",
+            "sqrt(3)/2",
+            "0"
+          ],
+          "squared_norm": "3/2"
+        },
+        {
+          "point": [
+            "1",
+            "0",
+            "0"
+          ],
+          "squared_norm": "1"
+        },
+        {
+          "point": [
+            "1",
+            "-1/2 + sqrt(3)/2",
+            "-1/2 + sqrt(3)/2"
+          ],
+          "squared_norm": "3 - sqrt(3)"
+        },
+        {
+          "point": [
+            "1",
+            "-1 + sqrt(3)",
+            "0"
+          ],
+          "squared_norm": "5 - 2*sqrt(3)"
+        }
+      ],
+      "census": {
+        "triple_intersections": 10,
+        "full_rank_intersections": 10,
+        "feasible_intersections_before_deduplication": 6
+      }
+    },
+    {
+      "family": "A",
+      "level": "G2",
+      "vertices": 8,
+      "signed": 26,
+      "axes": 13,
+      "max_squared_norm": "-2*sqrt(6) - 2*sqrt(2) + 9",
+      "cosine": "1/sqrt(-2*sqrt(6) - 2*sqrt(2) + 9)",
+      "radius_degrees": 27.569276130481,
+      "worst_vertex": [
+        "1",
+        "-1 + sqrt(2)",
+        "-sqrt(2) + sqrt(3)"
+      ],
+      "full_vertex_list": [
+        {
+          "point": [
+            "0",
+            "0",
+            "0"
+          ],
+          "squared_norm": "0"
+        },
+        {
+          "point": [
+            "sqrt(3)/3",
+            "sqrt(3)/3",
+            "sqrt(3)/3"
+          ],
+          "squared_norm": "1"
+        },
+        {
+          "point": [
+            "sqrt(2)/2",
+            "sqrt(2)/2",
+            "0"
+          ],
+          "squared_norm": "1"
+        },
+        {
+          "point": [
+            "sqrt(2)/2",
+            "sqrt(2)/2",
+            "-sqrt(2) + sqrt(3)"
+          ],
+          "squared_norm": "6 - 2*sqrt(6)"
+        },
+        {
+          "point": [
+            "1",
+            "0",
+            "0"
+          ],
+          "squared_norm": "1"
+        },
+        {
+          "point": [
+            "1",
+            "-1/2 + sqrt(3)/2",
+            "-1/2 + sqrt(3)/2"
+          ],
+          "squared_norm": "3 - sqrt(3)"
+        },
+        {
+          "point": [
+            "1",
+            "-1 + sqrt(2)",
+            "0"
+          ],
+          "squared_norm": "4 - 2*sqrt(2)"
+        },
+        {
+          "point": [
+            "1",
+            "-1 + sqrt(2)",
+            "-sqrt(2) + sqrt(3)"
+          ],
+          "squared_norm": "-2*sqrt(6) - 2*sqrt(2) + 9"
+        }
+      ],
+      "census": {
+        "triple_intersections": 20,
+        "full_rank_intersections": 18,
+        "feasible_intersections_before_deduplication": 8
+      }
+    },
+    {
+      "family": "B",
+      "level": "G0",
+      "vertices": 4,
+      "signed": 6,
+      "axes": 3,
+      "max_squared_norm": "3",
+      "cosine": "sqrt(3)/3",
+      "radius_degrees": 54.735610317245,
+      "worst_vertex": [
+        "1",
+        "1",
+        "1"
+      ],
+      "full_vertex_list": [
+        {
+          "point": [
+            "0",
+            "0",
+            "0"
+          ],
+          "squared_norm": "0"
+        },
+        {
+          "point": [
+            "1",
+            "1",
+            "1"
+          ],
+          "squared_norm": "3"
+        },
+        {
+          "point": [
+            "1",
+            "1",
+            "0"
+          ],
+          "squared_norm": "2"
+        },
+        {
+          "point": [
+            "1",
+            "0",
+            "0"
+          ],
+          "squared_norm": "1"
+        }
+      ],
+      "census": {
+        "triple_intersections": 4,
+        "full_rank_intersections": 4,
+        "feasible_intersections_before_deduplication": 4
+      }
+    },
+    {
+      "family": "B",
+      "level": "G1",
+      "vertices": 6,
+      "signed": 18,
+      "axes": 9,
+      "max_squared_norm": "3/2",
+      "cosine": "sqrt(6)/3",
+      "radius_degrees": 35.264389682755,
+      "worst_vertex": [
+        "sqrt(2)/2",
+        "sqrt(2)/2",
+        "sqrt(2)/2"
+      ],
+      "full_vertex_list": [
+        {
+          "point": [
+            "0",
+            "0",
+            "0"
+          ],
+          "squared_norm": "0"
+        },
+        {
+          "point": [
+            "sqrt(2)/2",
+            "sqrt(2)/2",
+            "sqrt(2)/2"
+          ],
+          "squared_norm": "3/2"
+        },
+        {
+          "point": [
+            "sqrt(2)/2",
+            "sqrt(2)/2",
+            "0"
+          ],
+          "squared_norm": "1"
+        },
+        {
+          "point": [
+            "1",
+            "0",
+            "0"
+          ],
+          "squared_norm": "1"
+        },
+        {
+          "point": [
+            "1",
+            "-1 + sqrt(2)",
+            "-1 + sqrt(2)"
+          ],
+          "squared_norm": "7 - 4*sqrt(2)"
+        },
+        {
+          "point": [
+            "1",
+            "-1 + sqrt(2)",
+            "0"
+          ],
+          "squared_norm": "4 - 2*sqrt(2)"
+        }
+      ],
+      "census": {
+        "triple_intersections": 10,
+        "full_rank_intersections": 9,
+        "feasible_intersections_before_deduplication": 6
+      }
+    },
+    {
+      "family": "B",
+      "level": "G2",
+      "vertices": 8,
+      "signed": 42,
+      "axes": 21,
+      "max_squared_norm": "3/2",
+      "cosine": "sqrt(6)/3",
+      "radius_degrees": 35.264389682755,
+      "worst_vertex": [
+        "sqrt(2)/2",
+        "sqrt(2)/2",
+        "sqrt(2)/2"
+      ],
+      "full_vertex_list": [
+        {
+          "point": [
+            "0",
+            "0",
+            "0"
+          ],
+          "squared_norm": "0"
+        },
+        {
+          "point": [
+            "sqrt(2)/2",
+            "sqrt(2)/2",
+            "sqrt(2)/2"
+          ],
+          "squared_norm": "3/2"
+        },
+        {
+          "point": [
+            "sqrt(2)/2",
+            "sqrt(2)/2",
+            "0"
+          ],
+          "squared_norm": "1"
+        },
+        {
+          "point": [
+            "1",
+            "0",
+            "0"
+          ],
+          "squared_norm": "1"
+        },
+        {
+          "point": [
+            "1",
+            "-2 + sqrt(5)",
+            "-2 + sqrt(5)"
+          ],
+          "squared_norm": "19 - 8*sqrt(5)"
+        },
+        {
+          "point": [
+            "-sqrt(2) + sqrt(5)",
+            "-sqrt(5) + 2*sqrt(2)",
+            "-sqrt(5) + 2*sqrt(2)"
+          ],
+          "squared_norm": "33 - 10*sqrt(10)"
+        },
+        {
+          "point": [
+            "1",
+            "-2 + sqrt(5)",
+            "0"
+          ],
+          "squared_norm": "10 - 4*sqrt(5)"
+        },
+        {
+          "point": [
+            "-sqrt(2) + sqrt(5)",
+            "-sqrt(5) + 2*sqrt(2)",
+            "0"
+          ],
+          "squared_norm": "20 - 6*sqrt(10)"
+        }
+      ],
+      "census": {
+        "triple_intersections": 20,
+        "full_rank_intersections": 16,
+        "feasible_intersections_before_deduplication": 8
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "stratum_count_A0",
+      "pass": true
+    },
+    {
+      "name": "stratum_antipodal_A0",
+      "pass": true
+    },
+    {
+      "name": "reported_stratum_A0",
+      "pass": true
+    },
+    {
+      "name": "stratum_count_C",
+      "pass": true
+    },
+    {
+      "name": "stratum_antipodal_C",
+      "pass": true
+    },
+    {
+      "name": "reported_stratum_C",
+      "pass": true
+    },
+    {
+      "name": "stratum_count_E",
+      "pass": true
+    },
+    {
+      "name": "stratum_antipodal_E",
+      "pass": true
+    },
+    {
+      "name": "reported_stratum_E",
+      "pass": true
+    },
+    {
+      "name": "stratum_count_T",
+      "pass": true
+    },
+    {
+      "name": "stratum_antipodal_T",
+      "pass": true
+    },
+    {
+      "name": "reported_stratum_T",
+      "pass": true
+    },
+    {
+      "name": "declared_protocol_commit",
+      "pass": true
+    },
+    {
+      "name": "declared_protocol_blob",
+      "pass": true
+    },
+    {
+      "name": "declared_study",
+      "pass": true
+    },
+    {
+      "name": "result_keys_exact",
+      "pass": true
+    },
+    {
+      "name": "A_G0_planes_equal",
+      "pass": true
+    },
+    {
+      "name": "A_G0_counts_signed",
+      "pass": true
+    },
+    {
+      "name": "A_G0_counts_axes",
+      "pass": true
+    },
+    {
+      "name": "A_G0_antipodal_closure",
+      "pass": true
+    },
+    {
+      "name": "A_G0_sphere_axis_equality",
+      "pass": true
+    },
+    {
+      "name": "A_G0_triple_census",
+      "pass": true
+    },
+    {
+      "name": "A_G0_vertex_count",
+      "pass": true
+    },
+    {
+      "name": "A_G0_all_vertices_exact",
+      "pass": true
+    },
+    {
+      "name": "A_G0_reported_vertex_norms",
+      "pass": true
+    },
+    {
+      "name": "A_G0_full_norm_multiset",
+      "pass": true
+    },
+    {
+      "name": "A_G0_global_max_exact",
+      "pass": true
+    },
+    {
+      "name": "A_G0_winner_exact",
+      "pass": true
+    },
+    {
+      "name": "A_G0_cosine_exact",
+      "pass": true
+    },
+    {
+      "name": "A_G0_angle_presentational",
+      "pass": true
+    },
+    {
+      "name": "A_G0_vertex_0_active_planes",
+      "pass": true
+    },
+    {
+      "name": "A_G0_vertex_1_active_planes",
+      "pass": true
+    },
+    {
+      "name": "A_G0_vertex_2_active_planes",
+      "pass": true
+    },
+    {
+      "name": "A_G0_vertex_3_active_planes",
+      "pass": true
+    },
+    {
+      "name": "A_G0_worst_unit",
+      "pass": true
+    },
+    {
+      "name": "A_G1_planes_equal",
+      "pass": true
+    },
+    {
+      "name": "A_G1_counts_signed",
+      "pass": true
+    },
+    {
+      "name": "A_G1_counts_axes",
+      "pass": true
+    },
+    {
+      "name": "A_G1_antipodal_closure",
+      "pass": true
+    },
+    {
+      "name": "A_G1_sphere_axis_equality",
+      "pass": true
+    },
+    {
+      "name": "A_G1_triple_census",
+      "pass": true
+    },
+    {
+      "name": "A_G1_vertex_count",
+      "pass": true
+    },
+    {
+      "name": "A_G1_all_vertices_exact",
+      "pass": true
+    },
+    {
+      "name": "A_G1_reported_vertex_norms",
+      "pass": true
+    },
+    {
+      "name": "A_G1_full_norm_multiset",
+      "pass": true
+    },
+    {
+      "name": "A_G1_global_max_exact",
+      "pass": true
+    },
+    {
+      "name": "A_G1_winner_exact",
+      "pass": true
+    },
+    {
+      "name": "A_G1_cosine_exact",
+      "pass": true
+    },
+    {
+      "name": "A_G1_angle_presentational",
+      "pass": true
+    },
+    {
+      "name": "A_G1_vertex_0_active_planes",
+      "pass": true
+    },
+    {
+      "name": "A_G1_vertex_1_active_planes",
+      "pass": true
+    },
+    {
+      "name": "A_G1_vertex_2_active_planes",
+      "pass": true
+    },
+    {
+      "name": "A_G1_vertex_3_active_planes",
+      "pass": true
+    },
+    {
+      "name": "A_G1_vertex_4_active_planes",
+      "pass": true
+    },
+    {
+      "name": "A_G1_vertex_5_active_planes",
+      "pass": true
+    },
+    {
+      "name": "A_G1_worst_unit",
+      "pass": true
+    },
+    {
+      "name": "A_G2_planes_equal",
+      "pass": true
+    },
+    {
+      "name": "A_G2_counts_signed",
+      "pass": true
+    },
+    {
+      "name": "A_G2_counts_axes",
+      "pass": true
+    },
+    {
+      "name": "A_G2_antipodal_closure",
+      "pass": true
+    },
+    {
+      "name": "A_G2_sphere_axis_equality",
+      "pass": true
+    },
+    {
+      "name": "A_G2_triple_census",
+      "pass": true
+    },
+    {
+      "name": "A_G2_vertex_count",
+      "pass": true
+    },
+    {
+      "name": "A_G2_all_vertices_exact",
+      "pass": true
+    },
+    {
+      "name": "A_G2_reported_vertex_norms",
+      "pass": true
+    },
+    {
+      "name": "A_G2_full_norm_multiset",
+      "pass": true
+    },
+    {
+      "name": "A_G2_global_max_exact",
+      "pass": true
+    },
+    {
+      "name": "A_G2_winner_exact",
+      "pass": true
+    },
+    {
+      "name": "A_G2_cosine_exact",
+      "pass": true
+    },
+    {
+      "name": "A_G2_angle_presentational",
+      "pass": true
+    },
+    {
+      "name": "A_G2_vertex_0_active_planes",
+      "pass": true
+    },
+    {
+      "name": "A_G2_vertex_1_active_planes",
+      "pass": true
+    },
+    {
+      "name": "A_G2_vertex_2_active_planes",
+      "pass": true
+    },
+    {
+      "name": "A_G2_vertex_3_active_planes",
+      "pass": true
+    },
+    {
+      "name": "A_G2_vertex_4_active_planes",
+      "pass": true
+    },
+    {
+      "name": "A_G2_vertex_5_active_planes",
+      "pass": true
+    },
+    {
+      "name": "A_G2_vertex_6_active_planes",
+      "pass": true
+    },
+    {
+      "name": "A_G2_vertex_7_active_planes",
+      "pass": true
+    },
+    {
+      "name": "A_G2_worst_unit",
+      "pass": true
+    },
+    {
+      "name": "B_G0_planes_equal",
+      "pass": true
+    },
+    {
+      "name": "B_G0_counts_signed",
+      "pass": true
+    },
+    {
+      "name": "B_G0_counts_axes",
+      "pass": true
+    },
+    {
+      "name": "B_G0_antipodal_closure",
+      "pass": true
+    },
+    {
+      "name": "B_G0_sphere_axis_equality",
+      "pass": true
+    },
+    {
+      "name": "B_G0_triple_census",
+      "pass": true
+    },
+    {
+      "name": "B_G0_vertex_count",
+      "pass": true
+    },
+    {
+      "name": "B_G0_all_vertices_exact",
+      "pass": true
+    },
+    {
+      "name": "B_G0_reported_vertex_norms",
+      "pass": true
+    },
+    {
+      "name": "B_G0_full_norm_multiset",
+      "pass": true
+    },
+    {
+      "name": "B_G0_global_max_exact",
+      "pass": true
+    },
+    {
+      "name": "B_G0_winner_exact",
+      "pass": true
+    },
+    {
+      "name": "B_G0_cosine_exact",
+      "pass": true
+    },
+    {
+      "name": "B_G0_angle_presentational",
+      "pass": true
+    },
+    {
+      "name": "B_G0_vertex_0_active_planes",
+      "pass": true
+    },
+    {
+      "name": "B_G0_vertex_1_active_planes",
+      "pass": true
+    },
+    {
+      "name": "B_G0_vertex_2_active_planes",
+      "pass": true
+    },
+    {
+      "name": "B_G0_vertex_3_active_planes",
+      "pass": true
+    },
+    {
+      "name": "B_G0_worst_unit",
+      "pass": true
+    },
+    {
+      "name": "B_G1_planes_equal",
+      "pass": true
+    },
+    {
+      "name": "B_G1_counts_signed",
+      "pass": true
+    },
+    {
+      "name": "B_G1_counts_axes",
+      "pass": true
+    },
+    {
+      "name": "B_G1_antipodal_closure",
+      "pass": true
+    },
+    {
+      "name": "B_G1_sphere_axis_equality",
+      "pass": true
+    },
+    {
+      "name": "B_G1_triple_census",
+      "pass": true
+    },
+    {
+      "name": "B_G1_vertex_count",
+      "pass": true
+    },
+    {
+      "name": "B_G1_all_vertices_exact",
+      "pass": true
+    },
+    {
+      "name": "B_G1_reported_vertex_norms",
+      "pass": true
+    },
+    {
+      "name": "B_G1_full_norm_multiset",
+      "pass": true
+    },
+    {
+      "name": "B_G1_global_max_exact",
+      "pass": true
+    },
+    {
+      "name": "B_G1_winner_exact",
+      "pass": true
+    },
+    {
+      "name": "B_G1_cosine_exact",
+      "pass": true
+    },
+    {
+      "name": "B_G1_angle_presentational",
+      "pass": true
+    },
+    {
+      "name": "B_G1_vertex_0_active_planes",
+      "pass": true
+    },
+    {
+      "name": "B_G1_vertex_1_active_planes",
+      "pass": true
+    },
+    {
+      "name": "B_G1_vertex_2_active_planes",
+      "pass": true
+    },
+    {
+      "name": "B_G1_vertex_3_active_planes",
+      "pass": true
+    },
+    {
+      "name": "B_G1_vertex_4_active_planes",
+      "pass": true
+    },
+    {
+      "name": "B_G1_vertex_5_active_planes",
+      "pass": true
+    },
+    {
+      "name": "B_G1_worst_unit",
+      "pass": true
+    },
+    {
+      "name": "B_G2_planes_equal",
+      "pass": true
+    },
+    {
+      "name": "B_G2_counts_signed",
+      "pass": true
+    },
+    {
+      "name": "B_G2_counts_axes",
+      "pass": true
+    },
+    {
+      "name": "B_G2_antipodal_closure",
+      "pass": true
+    },
+    {
+      "name": "B_G2_sphere_axis_equality",
+      "pass": true
+    },
+    {
+      "name": "B_G2_triple_census",
+      "pass": true
+    },
+    {
+      "name": "B_G2_vertex_count",
+      "pass": true
+    },
+    {
+      "name": "B_G2_all_vertices_exact",
+      "pass": true
+    },
+    {
+      "name": "B_G2_reported_vertex_norms",
+      "pass": true
+    },
+    {
+      "name": "B_G2_full_norm_multiset",
+      "pass": true
+    },
+    {
+      "name": "B_G2_global_max_exact",
+      "pass": true
+    },
+    {
+      "name": "B_G2_winner_exact",
+      "pass": true
+    },
+    {
+      "name": "B_G2_cosine_exact",
+      "pass": true
+    },
+    {
+      "name": "B_G2_angle_presentational",
+      "pass": true
+    },
+    {
+      "name": "B_G2_vertex_0_active_planes",
+      "pass": true
+    },
+    {
+      "name": "B_G2_vertex_1_active_planes",
+      "pass": true
+    },
+    {
+      "name": "B_G2_vertex_2_active_planes",
+      "pass": true
+    },
+    {
+      "name": "B_G2_vertex_3_active_planes",
+      "pass": true
+    },
+    {
+      "name": "B_G2_vertex_4_active_planes",
+      "pass": true
+    },
+    {
+      "name": "B_G2_vertex_5_active_planes",
+      "pass": true
+    },
+    {
+      "name": "B_G2_vertex_6_active_planes",
+      "pass": true
+    },
+    {
+      "name": "B_G2_vertex_7_active_planes",
+      "pass": true
+    },
+    {
+      "name": "B_G2_worst_unit",
+      "pass": true
+    },
+    {
+      "name": "G0_shared_identical",
+      "pass": true
+    },
+    {
+      "name": "B_G1_G2_shared_radius",
+      "pass": true
+    },
+    {
+      "name": "B_analytic_diagonal_gap",
+      "pass": true
+    },
+    {
+      "name": "all_independent_checks_pass",
+      "pass": true
+    }
+  ]
+}
