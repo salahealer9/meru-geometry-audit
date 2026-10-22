@@ -1,0 +1,1 @@
+python3.11 -B /home/salahealer/meru-3d-v3/evidence/run_01/meru_3d_v3_standalone_calculator.py > /home/salahealer/meru-3d-v3/evidence/run_01/results.json 2> /home/salahealer/meru-3d-v3/evidence/run_01/stderr.txt

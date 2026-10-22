@@ -1,0 +1,156 @@
+{
+  "check_counts_by_topic": {
+    "algebra": 109,
+    "camera": 2034,
+    "general": 7,
+    "invariant": 1008,
+    "pair-matrix": 36,
+    "pairs": 18192,
+    "partitions": 144,
+    "provenance": 4,
+    "rank": 114,
+    "sets": 35
+  },
+  "checked_source_json": "results(3).json",
+  "failed": 0,
+  "failure_examples": [],
+  "notes": [
+    "Independent Fraction and integer-square radical-comparison implementation; no registered code imported or run",
+    "Complete per-camera Gram, oriented-minor, rank and status checks",
+    "Complete pairwise equality matrices checked entry by entry; class membership, size, SO2/O2 and antipodal guards verified",
+    "Operator-supplied exit_code.txt was not included in this upload; verify locally before signing."
+  ],
+  "passed": 21683,
+  "result": "PASS",
+  "six_row_summaries": [
+    {
+      "P_rank_one": 4,
+      "axes": 3,
+      "counts": {
+        "F": {
+          "O2": 3,
+          "SO2": 6
+        },
+        "L": {
+          "O2": 1,
+          "SO2": 1
+        },
+        "P": {
+          "O2": 3,
+          "SO2": 4
+        }
+      },
+      "family": "A",
+      "level": "G0",
+      "signed": 6
+    },
+    {
+      "P_rank_one": 4,
+      "axes": 7,
+      "counts": {
+        "F": {
+          "O2": 7,
+          "SO2": 14
+        },
+        "L": {
+          "O2": 2,
+          "SO2": 2
+        },
+        "P": {
+          "O2": 5,
+          "SO2": 8
+        }
+      },
+      "family": "A",
+      "level": "G1",
+      "signed": 14
+    },
+    {
+      "P_rank_one": 8,
+      "axes": 13,
+      "counts": {
+        "F": {
+          "O2": 13,
+          "SO2": 26
+        },
+        "L": {
+          "O2": 3,
+          "SO2": 3
+        },
+        "P": {
+          "O2": 9,
+          "SO2": 14
+        }
+      },
+      "family": "A",
+      "level": "G2",
+      "signed": 26
+    },
+    {
+      "P_rank_one": 4,
+      "axes": 3,
+      "counts": {
+        "F": {
+          "O2": 3,
+          "SO2": 6
+        },
+        "L": {
+          "O2": 1,
+          "SO2": 1
+        },
+        "P": {
+          "O2": 3,
+          "SO2": 4
+        }
+      },
+      "family": "B",
+      "level": "G0",
+      "signed": 6
+    },
+    {
+      "P_rank_one": 8,
+      "axes": 9,
+      "counts": {
+        "F": {
+          "O2": 9,
+          "SO2": 18
+        },
+        "L": {
+          "O2": 2,
+          "SO2": 2
+        },
+        "P": {
+          "O2": 7,
+          "SO2": 10
+        }
+      },
+      "family": "B",
+      "level": "G1",
+      "signed": 18
+    },
+    {
+      "P_rank_one": 16,
+      "axes": 21,
+      "counts": {
+        "F": {
+          "O2": 21,
+          "SO2": 42
+        },
+        "L": {
+          "O2": 4,
+          "SO2": 4
+        },
+        "P": {
+          "O2": 15,
+          "SO2": 22
+        }
+      },
+      "family": "B",
+      "level": "G2",
+      "signed": 42
+    }
+  ],
+  "source_json_sha256": "87664b25408c18c04368c72a03dd7fd18554b94f8e635308a11e7c1674aad960",
+  "study": "MERU_3D_V3_INDEPENDENT_READ_ONLY_QC",
+  "total_independent_checks": 21683
+}
